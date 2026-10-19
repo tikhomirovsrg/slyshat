@@ -1,0 +1,115 @@
+{
+  "episode": "market-basket-it",
+  "level": "A1",
+  "grammar": {
+    "title": "Количество: un chilo di, два числа и цена",
+    "explanation": "После обозначения количества ставится di: un chilo di pomodori, due bottiglie di acqua. Сам продукт обычно без артикля. Для цены: Quanto costa? при одном предмете, Quanto costano? при нескольких. Un chilo — килограмм, mezzo chilo — полкилограмма. Число uno перед существительным мужского рода часто принимает форму un.",
+    "examples": [
+      {
+        "text": "Vorrei un chilo di mele.",
+        "ru": "Я хотел бы килограмм яблок."
+      },
+      {
+        "text": "Quanto costano i pomodori?",
+        "ru": "Сколько стоят помидоры?"
+      },
+      {
+        "text": "Una bottiglia di acqua costa un euro.",
+        "ru": "Бутылка воды стоит один евро."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Покупки для простого обеда",
+    "kind": "рассказ",
+    "text": "Il sabato mattina Carlo va al mercato con una lista corta. Compra un chilo di mele e mezzo chilo di pomodori. Le mele costano due euro al chilo. I pomodori costano quattro euro al chilo. Carlo ha dieci euro e vuole comprare anche il pane. Al banco della frutta incontra sua zia. Lei cerca delle pere, ma oggi non ci sono. Carlo torna a casa con la sua borsa. Per pranzo prepara pane e pomodori; le mele sono per domani."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте предлог количества.",
+      "answer": "di",
+      "explanation": "После un chilo ставится di: un chilo di mele.",
+      "text": "Un chilo ___ mele.",
+      "id": "market-basket-it-q1"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите вопрос о цене нескольких помидоров.",
+      "answer": "Quanto costano i pomodori?",
+      "explanation": "Pomodori — множественное число, поэтому costano.",
+      "words": [
+        "i",
+        "Quanto",
+        "pomodori?",
+        "costano"
+      ],
+      "id": "market-basket-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Как сказать «полкилограмма»?",
+      "answer": "Mezzo chilo.",
+      "explanation": "Mezzo chilo означает половину килограмма.",
+      "options": [
+        "Mezzo chilo.",
+        "Due chili.",
+        "Un litro."
+      ],
+      "id": "market-basket-it-q3"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какова основная тема текста?",
+      "answer": "La spesa di Carlo al mercato.",
+      "explanation": "Рассказ описывает короткий поход Карло на рынок.",
+      "options": [
+        "La spesa di Carlo al mercato.",
+        "Il lavoro della zia in un bar.",
+        "Una cena al ristorante."
+      ],
+      "id": "market-basket-it-q4"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какого фрукта нет на рынке?",
+      "answer": "Le pere.",
+      "explanation": "Тётя ищет груши, но сегодня их нет.",
+      "options": [
+        "Le pere.",
+        "Le mele.",
+        "I limoni."
+      ],
+      "id": "market-basket-it-q5"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Сколько денег остаётся после яблок и помидоров, до покупки хлеба?",
+      "answer": "Sei euro.",
+      "explanation": "Яблоки стоят 2 евро, полкило помидоров — ещё 2; из 10 остаётся 6.",
+      "options": [
+        "Sei euro.",
+        "Quattro euro.",
+        "Otto euro."
+      ],
+      "id": "market-basket-it-q6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите список покупок для обеда в виде сообщения другу: три продукта, количество каждого, ваш бюджет и одно простое блюдо.",
+    "min": 40,
+    "max": 60,
+    "checklist": [
+      "Названы три продукта, количества и бюджет.",
+      "После обозначений количества правильно стоит di.",
+      "Числа и формы единственного/множественного числа согласованы.",
+      "Сообщение связано по смыслу и заканчивается планом обеда."
+    ]
+  }
+}

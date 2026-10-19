@@ -1,0 +1,115 @@
+{
+  "episode": "neighbour-en",
+  "level": "A1",
+  "grammar": {
+    "title": "Can: простая просьба и предложение помощи",
+    "explanation": "После can ставим начальную форму глагола без to: can bring. В вопросе can идёт перед подлежащим: Can you help? Форма can одинакова с I, you, he и другими местоимениями. Can I ...? помогает предложить действие или спросить разрешение.",
+    "examples": [
+      {
+        "text": "Can you bring some water?",
+        "ru": "Можешь принести воды?"
+      },
+      {
+        "text": "I can help after dinner.",
+        "ru": "Я могу помочь после ужина."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Стол для новых друзей",
+    "kind": "рассказ",
+    "text": "Sam is new in his building. His neighbour Eva invites him to dinner on Friday. There are four people at the table. Sam brings apple juice and a small cake. Eva makes soup, and her brother makes a salad. After dinner, Sam washes the cups. Eva dries them. They talk about their street and the shops near their homes. Sam is happy. Now he knows three people in his new building."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: о чём рассказ?",
+      "answer": "О знакомстве с соседями за ужином",
+      "explanation": "Сэм ужинает у соседки и знакомится с людьми в новом доме.",
+      "options": [
+        "О ремонте кухни",
+        "О знакомстве с соседями за ужином",
+        "О поездке в другой город"
+      ],
+      "id": "neighbour-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что Сэм приносит?",
+      "answer": "Яблочный сок и небольшой торт",
+      "explanation": "В тексте: Sam brings apple juice and a small cake.",
+      "options": [
+        "Суп и салат",
+        "Чашки и тарелки",
+        "Яблочный сок и небольшой торт"
+      ],
+      "id": "neighbour-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему Сэм рад после ужина?",
+      "answer": "У него появились знакомые в доме",
+      "explanation": "Раньше он был новым жильцом; теперь знает трёх соседей.",
+      "options": [
+        "У него появились знакомые в доме",
+        "Он нашёл новую работу",
+        "Ему подарили квартиру"
+      ],
+      "id": "neighbour-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите правильную форму: I can ___ after dinner.",
+      "answer": "help",
+      "explanation": "После can нужен глагол без to и без окончания -s.",
+      "options": [
+        "helps",
+        "to help",
+        "help"
+      ],
+      "id": "neighbour-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "vocabulary",
+      "prompt": "Впишите английское слово со значением «сосед / соседка».",
+      "answer": "neighbour",
+      "explanation": "Neighbour — человек, живущий рядом.",
+      "text": "Eva lives next door. She is my ___.",
+      "id": "neighbour-en-study-5",
+      "accepted": [
+        "neighbor"
+      ]
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите просьбу принести сок.",
+      "answer": "Can you bring some juice",
+      "explanation": "В вопросе can ставим перед you, затем глагол bring.",
+      "words": [
+        "some",
+        "you",
+        "juice",
+        "Can",
+        "bring"
+      ],
+      "id": "neighbour-en-study-6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите соседу сообщение перед общим ужином: поблагодарите за приглашение, назовите время прихода, предложите принести напиток или еду и помочь после ужина. Используйте одну фразу I can и один вопрос Can I или Can you.",
+    "min": 40,
+    "max": 60,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

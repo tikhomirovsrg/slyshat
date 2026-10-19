@@ -1,0 +1,112 @@
+{
+  "episode": "coffee-it",
+  "level": "A1",
+  "grammar": {
+    "title": "Настоящее время: essere и встречи с a",
+    "explanation": "Essere в настоящем времени: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono. Для времени встречи используйте a с артиклем: alle cinque, но all’una. Для места: al bar (a + il), alla fermata (a + la). В вопросе Dove sei? глагол уже указывает на собеседника.",
+    "examples": [
+      {
+        "text": "Sono al bar vicino alla piazza.",
+        "ru": "Я в баре рядом с площадью."
+      },
+      {
+        "text": "La pausa è alle cinque.",
+        "ru": "Перерыв в пять часов."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Маленький перерыв",
+    "kind": "рассказ",
+    "text": "Anna lavora in una libreria vicino alla piazza. Ogni pomeriggio ha una pausa alle quattro. Oggi incontra Luca al bar davanti alla libreria. Luca arriva presto e sceglie un tavolo fuori. Anna preferisce stare dentro perché fa freddo. Il bar non è grande, ma è tranquillo. Anna prende un tè e Luca un caffè. Parlano dei libri sul tavolo. Dopo venti minuti Anna torna al lavoro. Luca resta ancora un po’: oggi ha il pomeriggio libero."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте форму essere для io.",
+      "answer": "sono",
+      "explanation": "С io глагол essere имеет форму sono.",
+      "text": "Io ___ al bar.",
+      "id": "coffee-it-q1"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предложение о времени встречи.",
+      "answer": "La pausa è alle quattro.",
+      "explanation": "Для времени во множественном числе используем alle.",
+      "words": [
+        "alle",
+        "La",
+        "quattro.",
+        "è",
+        "pausa"
+      ],
+      "id": "coffee-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Как по-итальянски «перерыв»?",
+      "answer": "una pausa",
+      "explanation": "Pausa — перерыв; piazza — площадь; libreria — книжный магазин.",
+      "options": [
+        "una pausa",
+        "una piazza",
+        "una libreria"
+      ],
+      "id": "coffee-it-q3"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какова главная тема текста?",
+      "answer": "Un incontro durante una pausa.",
+      "explanation": "Анна встречается с Лукой в свой рабочий перерыв.",
+      "options": [
+        "Un incontro durante una pausa.",
+        "Un viaggio in treno.",
+        "Una festa in libreria."
+      ],
+      "id": "coffee-it-q4"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какой напиток выбирает Анна?",
+      "answer": "Un tè.",
+      "explanation": "В тексте: Anna prende un tè.",
+      "options": [
+        "Un tè.",
+        "Un caffè.",
+        "Un succo."
+      ],
+      "id": "coffee-it-q5"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему Лука может остаться дольше?",
+      "answer": "Non deve tornare al lavoro quel pomeriggio.",
+      "explanation": "У Луки свободный день после обеда; Анна возвращается на работу.",
+      "options": [
+        "Non deve tornare al lavoro quel pomeriggio.",
+        "Il bar è vicino alla stazione.",
+        "Aspetta il fratello di Anna."
+      ],
+      "id": "coffee-it-q6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите другу сообщение: предложите встретиться в кафе, назовите время и место, свой напиток и причину выбора места.",
+    "min": 40,
+    "max": 60,
+    "checklist": [
+      "Указаны место и время встречи.",
+      "Есть минимум две правильные формы essere в настоящем времени.",
+      "Предлоги al/alla и alle употреблены по смыслу.",
+      "Сообщение имеет приветствие, понятный порядок и завершение."
+    ]
+  }
+}

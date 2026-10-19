@@ -1,0 +1,155 @@
+{
+  "episode": "work-en",
+  "level": "B1",
+  "grammar": {
+    "title": "Первое условное: реальный рабочий план",
+    "explanation": "Первое условное описывает реальную возможность в будущем: if + Present Simple, затем will + начальная форма глагола. В придаточной части после if не ставим will для обычного условия. Части можно поменять местами. By обозначает крайний срок выполнения, а until — продолжительность до момента.",
+    "examples": [
+      {
+        "text": "If the figures arrive at eleven, I will send the draft by noon.",
+        "ru": "Если цифры придут в одиннадцать, я отправлю черновик к полудню."
+      },
+      {
+        "text": "We will wait until eleven.",
+        "ru": "Мы подождём до одиннадцати."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Как команда спасла презентацию",
+    "kind": "рассказ",
+    "text": "On Wednesday morning, a small design team learned that a client wanted to meet a day earlier than planned. The team had prepared several ideas, but the latest sales figures were not ready. At first, everyone tried to finish everything at once. Messages arrived every few minutes, and nobody knew which version of the presentation to use.\n\nRita, the project manager, stopped the discussion and asked one question: what did the client actually need to decide? The answer was simple. The client needed to choose between two designs, not approve the whole project. Rita divided the work. Dan would prepare pictures of the two options, while Mei would check the costs. Rita would write a short explanation of the differences.\n\nThey agreed to put their work in one shared folder by eleven. If the sales figures arrived in time, they would add them. If not, they would clearly mark them as missing and explain when they would be available.\n\nThe meeting went well. The client made a choice and thanked the team for being clear about what was still uncertain. Afterwards, Rita wrote down the plan they had used. She wanted the next urgent task to begin with a clear question, rather than a long list of unfinished work."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: что помогло команде?",
+      "answer": "Сосредоточение на нужном решении и разделение задач",
+      "explanation": "Рита выясняет, какое решение требуется, и распределяет ограниченный объём работы.",
+      "options": [
+        "Отмена встречи с клиентом",
+        "Сосредоточение на нужном решении и разделение задач",
+        "Попытка закончить весь проект сразу"
+      ],
+      "id": "work-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: за что отвечала Мэй?",
+      "answer": "За проверку стоимости",
+      "explanation": "В тексте: Mei would check the costs.",
+      "options": [
+        "За проверку стоимости",
+        "За подбор изображений",
+        "За написание всех объяснений"
+      ],
+      "id": "work-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: что показывает реакция клиента?",
+      "answer": "Честно обозначенная неопределённость не помешала решению",
+      "explanation": "Клиент выбрал дизайн и поблагодарил команду за ясность о том, что ещё неизвестно.",
+      "options": [
+        "Клиент не заметил нехватку данных",
+        "Клиент всегда предпочитает неполные отчёты",
+        "Честно обозначенная неопределённость не помешала решению"
+      ],
+      "id": "work-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: If the figures ___, we will update the slides.",
+      "answer": "arrive",
+      "explanation": "После if в реальном условии о будущем используется Present Simple.",
+      "options": [
+        "will arrive",
+        "arrive",
+        "arrived"
+      ],
+      "id": "work-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите by или until: отправить не позже 12:00.",
+      "answer": "by",
+      "explanation": "By noon задаёт крайний срок отправки.",
+      "text": "Please send the draft ___ noon.",
+      "id": "work-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите условное предложение.",
+      "answer": "If we finish early we will check the costs",
+      "explanation": "В части с if — Present Simple; в результате — will + check.",
+      "words": [
+        "costs",
+        "we",
+        "If",
+        "finish",
+        "will",
+        "early",
+        "we",
+        "check",
+        "the"
+      ],
+      "id": "work-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Соедините в одно предложение. Начните с If и сохраните остальные слова.",
+      "answer": "If we get the figures we will send the draft",
+      "explanation": "Условие выражается через if + get, результат — will send.",
+      "text": "We get the figures. We will send the draft.",
+      "accepted": [
+        "If we get the figures, we will send the draft."
+      ],
+      "id": "work-en-study-7"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает a rough draft в работе над презентацией?",
+      "answer": "Предварительный вариант",
+      "explanation": "Rough draft ещё предстоит проверять и дорабатывать.",
+      "options": [
+        "Окончательная утверждённая версия",
+        "Предварительный вариант",
+        "Список приглашённых"
+      ],
+      "id": "work-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Выберите выражение для «разделить работу между людьми».",
+      "answer": "split the work",
+      "explanation": "Split the work означает распределить работу на части.",
+      "options": [
+        "miss the deadline",
+        "cancel the meeting",
+        "split the work"
+      ],
+      "id": "work-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите коллеге письмо: встречу перенесли на день раньше, а у вас готова только часть материалов. Назовите обязательные части, распределите две задачи, укажите сроки с by и предложите запасной план с if. Честно обозначьте, какие данные ещё нужно проверить.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

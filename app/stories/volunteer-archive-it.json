@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "volunteer-archive-it",
+  "number": "20",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Чей голос останется на выставке",
+  "category": "Истории и обсуждения",
+  "summary": "Воспоминания о закрытой фабрике противоречат друг другу. Реши, как представить их точно, не выдав одну версию за общую память.",
+  "duration": "15–20 минут",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко координирует волонтёров, собирающих устные истории района."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Последняя подпись перед открытием",
+  "contextText": "Для выставки собрали рассказы бывших работников. Один вспоминает взаимопомощь, другой — тяжёлые условия; третья участница просит пересмотреть согласованный отрывок.",
+  "taskTitle": "Сохранить сложность и право на голос",
+  "taskText": "Сопоставь статус свидетельств, выбор редакции и согласие рассказчиков. Можно создать многоголосый стенд, отложить спорный фрагмент или провести обсуждение.",
+  "taskShort": "Устная история · контекст · согласие",
+  "skill": "Понимать скрытую позицию автора, возражения с оговорками и границы обобщений.",
+  "phraseLabels": [
+    "Не означает, что",
+    "С учётом того, что",
+    "Насколько позволят"
+  ],
+  "transferIntro": "Джулия разбирает публикацию опроса и интервью. Найди логический скачок, предел сравнения и условие, которое сохраняется при любом варианте.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Le testimonianze sulla fabbrica non coincidono: c’è chi ricorda solidarietà e chi esclusione. Il fatto che un racconto sia più vivido non implica che rappresenti l’intero quartiere. Considerato che una partecipante ha chiesto di rivedere il proprio estratto, pubblicherei soltanto ciò che sia stato riconfermato. Dovremmo rendere visibile anche la nostra scelta editoriale, nei limiti in cui i materiali lo consentano.",
+  "openingRu": "Свидетельства о фабрике не совпадают: одни вспоминают солидарность, другие — исключение. То, что один рассказ ярче, не означает, что он представляет весь район. Учитывая просьбу участницы пересмотреть свой отрывок, я бы публиковал лишь повторно подтверждённое. Нужно показать и наш редакторский выбор — в той мере, в какой позволяют материалы.",
+  "openingQuestion": {
+    "question": "Какой принцип предлагает Марко?",
+    "options": [
+      "Самый яркий рассказ представляет всех",
+      "Противоречащие рассказы нужно исключить",
+      "Проверить согласие и обозначить границы редакторского выбора"
+    ],
+    "answer": 2,
+    "explanation": "Марко связывает публикацию с повторным подтверждением и просит сделать видимым редакторский выбор. Яркость не равна представительности."
+  },
+  "phrases": [
+    {
+      "id": "volunteer-archive-implica",
+      "text": "Non implica che rappresenti l’intero quartiere.",
+      "ru": "Это не означает, что он представляет весь район.",
+      "part": "non implica che",
+      "why": "Implicare — логически влечь вывод. Отрицание оспаривает связь, не само существование свидетельства.",
+      "sound": "Не останавливайся на non: после che назван именно вывод, который отвергают.",
+      "example": "Una testimonianza non implica un consenso generale.",
+      "exampleRu": "Одно свидетельство не означает общего согласия."
+    },
+    {
+      "id": "volunteer-archive-considerato",
+      "text": "Considerato che ha chiesto una revisione, aspetterei.",
+      "ru": "С учётом того, что она попросила пересмотр, я бы подождал.",
+      "part": "considerato che",
+      "why": "Оборот вводит обстоятельство, которое должно повлиять на решение.",
+      "sound": "Отдели основание после che от рекомендации aspetterei.",
+      "example": "Considerato che mancano due fonti, manterrei una nota di cautela.",
+      "exampleRu": "Учитывая отсутствие двух источников, я бы сохранил оговорку."
+    },
+    {
+      "id": "volunteer-archive-limiti",
+      "text": "Nei limiti in cui i materiali lo consentano.",
+      "ru": "В той мере, в какой это позволяют материалы.",
+      "part": "nei limiti in cui",
+      "why": "Формула ограничивает масштаб обещания доступными основаниями.",
+      "sound": "Дождись глагола consentano: он указывает, что именно задаёт предел.",
+      "example": "Ricostruiamo i fatti nei limiti in cui siano documentati.",
+      "exampleRu": "Восстанавливаем события в той мере, в какой они документированы."
+    },
+    {
+      "id": "volunteer-archive-fermo",
+      "text": "Fermo restando il consenso di chi racconta.",
+      "ru": "При неизменном условии согласия рассказчика.",
+      "part": "fermo restando",
+      "why": "Оборот выделяет условие, которое сохраняется при любом из обсуждаемых вариантов.",
+      "sound": "Fermo restando — единый вводный блок; за ним идёт не новая опция, а неизменная граница.",
+      "example": "Possiamo abbreviare, fermo restando il senso originale.",
+      "exampleRu": "Можем сократить, сохранив исходный смысл."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "La bozza si intitola: la fabbrica che univa tutti. È efficace, ma attribuisce un accordo che le interviste non mostrano. Come riformuleresti il progetto?",
+      "ru": "Черновик озаглавлен: фабрика, объединявшая всех. Это выразительно, но приписывает согласие, которого интервью не показывают. Как бы ты переработал проект?",
+      "choices": [
+        {
+          "label": "Показать разные голоса",
+          "text": "Affiancherei gli estratti confermati, esplicitando che non esauriscono l’esperienza del quartiere.",
+          "next": "voices"
+        },
+        {
+          "label": "Отложить спорный отрывок",
+          "text": "Sospenderei l’estratto da rivedere, senza presentare l’assenza come un silenzio volontario.",
+          "next": "pause"
+        },
+        {
+          "label": "Добавить разговор с участниками",
+          "text": "Proporrei un incontro in cui discutere anche il modo in cui abbiamo selezionato i materiali.",
+          "next": "forum"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "voices": {
+      "text": "Abbiamo due estratti riconfermati, uno sulla solidarietà e uno sulle esclusioni. Accostarli senza contesto, però, potrebbe far credere che descrivano lo stesso reparto e lo stesso periodo.",
+      "ru": "Есть два повторно подтверждённых отрывка: о солидарности и об исключении. Но без контекста можно подумать, что речь об одном цехе и периоде.",
+      "choices": [
+        {
+          "label": "Добавить место, время и статус источника",
+          "text": "Indichiamo reparto, periodo e natura personale del ricordo, senza decretare un vincitore.",
+          "next": "context"
+        },
+        {
+          "label": "Сначала организовать обсуждение метода",
+          "text": "Condividiamo questi dubbi nell’incontro pubblico.",
+          "next": "forum"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "context": {
+      "text": "Le date risultano verificabili nei registri; le emozioni restano attribuite ai singoli. La partecipante che chiedeva la revisione preferisce, per ora, non comparire.",
+      "ru": "Даты можно проверить по журналам; чувства остаются приписаны конкретным людям. Участница, просившая пересмотр, пока предпочитает не появляться.",
+      "choices": [
+        {
+          "label": "Уважить отказ и обозначить ограниченность подборки",
+          "text": "Usiamo solo i due estratti e dichiariamo che la selezione è parziale, senza spiegare la sua assenza.",
+          "next": "voices-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "pause": {
+      "text": "Togliendo quell’estratto, la sezione sembrerebbe tutta favorevole alla fabbrica. Non potremmo colmare il vuoto con una frase inventata né lasciare il titolo iniziale.",
+      "ru": "Если убрать этот фрагмент, раздел покажется полностью благоприятным к фабрике. Нельзя заполнить пробел выдуманной фразой или оставить исходный заголовок.",
+      "choices": [
+        {
+          "label": "Сузить утверждение всей секции",
+          "text": "Rinominiamola: alcuni ricordi raccolti finora, segnalando che la ricerca continua.",
+          "next": "pause-check"
+        },
+        {
+          "label": "Перестроить стенд на подтверждённых контрастах",
+          "text": "Vediamo se i due estratti già riconfermati consentono un confronto corretto.",
+          "next": "voices"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "pause-check": {
+      "text": "La nota potrebbe spiegare che il lavoro è incompleto, senza rendere pubblica la richiesta personale. Intanto conserviamo il materiale in attesa di una decisione sul suo uso.",
+      "ru": "Пометка может объяснить незавершённость работы, не раскрывая личную просьбу. Пока сохраним материал в ожидании решения о его использовании.",
+      "choices": [
+        {
+          "label": "Отделить хранение от публикации",
+          "text": "Sì: il materiale resta fuori dalla mostra finché non ne concordiamo nuovamente l’uso.",
+          "next": "pause-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "forum": {
+      "text": "Un incontro non dovrebbe costringere le persone a difendere la propria memoria davanti agli altri. Potremmo discutere il metodo e offrire la possibilità di inviare osservazioni in privato.",
+      "ru": "Встреча не должна заставлять людей защищать свои воспоминания перед другими. Можем обсудить метод и дать возможность прислать замечания лично.",
+      "choices": [
+        {
+          "label": "Разделить метод и личные истории",
+          "text": "Presentiamo i criteri editoriali e lasciamo facoltativo qualsiasi racconto personale.",
+          "next": "forum-check"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "forum-check": {
+      "text": "Giulia propone una moderatrice e domande concordate prima. Nessuna registrazione automatica: un eventuale uso successivo delle voci richiederebbe un accordo distinto.",
+      "ru": "Джулия предлагает модератора и заранее согласованные вопросы. Автоматической записи не будет: дальнейшее использование голосов потребует отдельной договорённости.",
+      "choices": [
+        {
+          "label": "Зафиксировать рамки встречи",
+          "text": "Confermiamo questi limiti e raccogliamo osservazioni anche senza interventi pubblici.",
+          "next": "forum-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "voices-end": {
+      "text": "Il pannello mostra ricordi diversi con il loro contesto e riconosce la parzialità della selezione. La complessità non viene trasformata in un falso consenso.",
+      "ru": "Стенд показывает разные воспоминания с контекстом и признаёт частичность подборки. Сложность не превращается в ложное согласие.",
+      "choices": [],
+      "outcome": "voices",
+      "speaker": "Marco"
+    },
+    "pause-end": {
+      "text": "La sezione resta dichiaratamente provvisoria. L’assenza di un estratto non diventa una storia inventata sulle intenzioni di chi lo ha raccontato.",
+      "ru": "Раздел открыто остаётся предварительным. Отсутствие отрывка не превращается в вымышленную историю о намерениях рассказчика.",
+      "choices": [],
+      "outcome": "pause",
+      "speaker": "Marco"
+    },
+    "forum-end": {
+      "text": "L’incontro apre alla discussione delle scelte editoriali senza imporre testimonianze. Le osservazioni guideranno una revisione successiva, non un verdetto sulle memorie.",
+      "ru": "Встреча открывает обсуждение редакторских решений, не навязывая свидетельств. Замечания помогут последующей редакции, а не вынесению вердикта о воспоминаниях.",
+      "choices": [],
+      "outcome": "forum",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "voices": {
+      "title": "Многоголосие с контекстом",
+      "body": "Два подтверждённых фрагмента показаны с периодом, местом и указанием на личный характер воспоминаний. Частичность подборки названа прямо."
+    },
+    "pause": {
+      "title": "Осознанная пауза",
+      "body": "Спорный фрагмент снят с публикации, раздел обозначен предварительным. Личная просьба не раскрыта, использование будет согласовано заново."
+    },
+    "forum": {
+      "title": "Разговор о методе",
+      "body": "Запланирована встреча с модератором и необязательным личным участием. Публичная речь не приравнивается к согласию на запись и дальнейшее использование."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Il fatto che nessuno abbia contestato la bozza non implica che tutti l’abbiano letta o condivisa. Solleciterei un riscontro esplicito.",
+      "ru": "То, что никто не оспорил черновик, не означает, что все его прочитали или поддержали. Я бы запросила явный ответ.",
+      "question": "Какой вывод говорящая считает необоснованным?",
+      "options": [
+        "Молчание означает согласие всех",
+        "Черновик существует",
+        "Можно запросить обратную связь"
+      ],
+      "answer": 0,
+      "explanation": "Отсутствие возражений отделено от чтения и согласия. Non implica отвергает именно этот переход.",
+      "id": "it-volunteer-archive-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Pubblicheremo i dati nei limiti in cui siano confrontabili; le differenze di metodo saranno indicate, anziché nascoste per rendere il grafico più semplice.",
+      "ru": "Опубликуем данные в той мере, в какой они сопоставимы; различия методик укажем, а не спрячем ради простоты графика.",
+      "question": "Что ограничивает объём публикации?",
+      "options": [
+        "Красота графика",
+        "Сопоставимость данных",
+        "Желание убрать все пояснения"
+      ],
+      "answer": 1,
+      "explanation": "Nei limiti in cui siano confrontabili задаёт критерий. Простота не оправдывает скрытие методических различий.",
+      "id": "it-volunteer-archive-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Possiamo ridurre la durata dell’intervista, fermo restando che l’intervistata approvi il nuovo montaggio. Il consenso alla versione lunga non copre automaticamente ogni taglio.",
+      "ru": "Можем сократить интервью при условии одобрения нового монтажа участницей. Согласие на длинную версию не распространяется автоматически на любые сокращения.",
+      "question": "Что необходимо для сокращённой версии?",
+      "options": [
+        "Только согласие редактора",
+        "Ничего: старого согласия всегда достаточно",
+        "Одобрение нового монтажа участницей"
+      ],
+      "answer": 2,
+      "explanation": "Fermo restando выделяет неизменное требование; последняя фраза прямо исключает автоматическое распространение прежнего согласия.",
+      "id": "it-volunteer-archive-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

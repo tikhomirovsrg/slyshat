@@ -1,0 +1,153 @@
+{
+  "episode": "repair-en",
+  "level": "B1",
+  "grammar": {
+    "title": "Вежливые вопросы внутри предложения",
+    "explanation": "В косвенном вопросе после Could you tell me ...? или Do you know ...? порядок слов как в утверждении: when the plumber arrives, а не when does the plumber arrive. Если вопрос без вопросительного слова, используем if или whether. Главный вопросительный знак остаётся у всей вежливой просьбы.",
+    "examples": [
+      {
+        "text": "Could you tell me when the plumber arrives?",
+        "ru": "Не могли бы вы сказать, когда придёт сантехник?"
+      },
+      {
+        "text": "Do you know whether the water is off?",
+        "ru": "Вы знаете, перекрыта ли вода?"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Записка для мастера",
+    "kind": "рассказ",
+    "text": "When a small leak appeared under Ben's kitchen sink, his first problem was not finding a plumber. The building manager could arrange a visit the next morning. The difficulty was that Ben had to leave for work at nine, while the plumber could arrive at any time between ten and twelve.\n\nHis neighbour Alice offered to help. She could wait until half past eleven, but she had an appointment after that. Ben did not want her to miss it, so he asked the manager to call her before the plumber left his previous job. If the visit was going to be late, they would arrange another time.\n\nBefore leaving, Ben cleared the cupboard under the sink and wrote a short note. It described when he had first noticed the leak and where the water appeared. He also included his phone number and a photo taken the night before.\n\nThe plumber arrived at ten thirty. Alice let him in, and the repair took twenty minutes. Ben thanked her that evening and asked what had made the visit easy. She pointed to the note. Having the details in one place meant that she did not need to guess or remember a long conversation while answering the plumber's questions."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: что помогло организовать ремонт?",
+      "answer": "Ясные договорённости и записанные сведения",
+      "explanation": "Бен согласовал доступ и сроки, освободил шкаф и оставил мастеру нужные факты.",
+      "options": [
+        "Покупка новой кухни",
+        "Полная отмена рабочего дня",
+        "Ясные договорённости и записанные сведения"
+      ],
+      "id": "repair-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: до какого времени могла ждать Элис?",
+      "answer": "До 11:30",
+      "explanation": "Alice could wait until half past eleven.",
+      "options": [
+        "До 11:30",
+        "До 12:30",
+        "До 09:00"
+      ],
+      "id": "repair-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему записка особенно помогла соседке?",
+      "answer": "Ей не пришлось угадывать детали чужой проблемы",
+      "explanation": "В конце прямо объясняется: сведения в одном месте избавили Элис от догадок и запоминания.",
+      "options": [
+        "Она сама собиралась выполнять ремонт",
+        "Ей не пришлось угадывать детали чужой проблемы",
+        "Она не знала, где находится кухня"
+      ],
+      "id": "repair-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите правильный косвенный вопрос.",
+      "answer": "Could you tell me when the plumber arrives?",
+      "explanation": "Внутри косвенного вопроса используется порядок подлежащее + сказуемое.",
+      "options": [
+        "Could you tell me when does the plumber arrive?",
+        "Could you tell me when the plumber arrives?",
+        "Could you tell me when arrives the plumber?"
+      ],
+      "id": "repair-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите союз, вводящий косвенный вопрос с ответом «да / нет».",
+      "answer": "whether",
+      "explanation": "Whether вводит косвенный вопрос с ответом да или нет.",
+      "text": "Do you know ___ the water is off?",
+      "id": "repair-en-study-5",
+      "accepted": [
+        "if"
+      ]
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите косвенный вопрос.",
+      "answer": "Do you know where the note is",
+      "explanation": "Внутри вопроса where the note is используется прямой порядок слов.",
+      "words": [
+        "note",
+        "know",
+        "is",
+        "Do",
+        "where",
+        "you",
+        "the"
+      ],
+      "id": "repair-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Вставьте вопрос после Could you tell me, изменив порядок слов.",
+      "answer": "Could you tell me when the visit starts",
+      "explanation": "Does исчезает; starts согласуется с единственным числом visit.",
+      "text": "When does the visit start? → Could you tell me ...?",
+      "id": "repair-en-study-7",
+      "accepted": []
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что значит let the plumber in?",
+      "answer": "Впустить сантехника",
+      "explanation": "Let someone in — открыть доступ внутрь.",
+      "options": [
+        "Впустить сантехника",
+        "Отменить визит сантехника",
+        "Проводить сантехника наружу"
+      ],
+      "id": "repair-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает a time window from ten to twelve?",
+      "answer": "Период, в течение которого возможен приезд",
+      "explanation": "Time window — интервал, а не обещание приехать ровно в его начале.",
+      "options": [
+        "Обещание приехать ровно в десять",
+        "Двухчасовая продолжительность ремонта",
+        "Период, в течение которого возможен приезд"
+      ],
+      "id": "repair-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите управляющему дома о небольшой протечке. Опишите, когда её заметили, где она находится и когда кто-то сможет открыть дверь. Задайте два косвенных вопроса о визите мастера и предложите запасной вариант, если он опоздает. Укажите, какие сведения вы оставите для мастера.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

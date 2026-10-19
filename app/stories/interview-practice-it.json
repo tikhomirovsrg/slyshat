@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "interview-practice-it",
+  "number": "12",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Пример вместо списка качеств",
+  "category": "Работа и созвоны",
+  "summary": "Перед собеседованием Марко просит рассказать об опыте. Выбери пример и покажи, что именно ты сделал.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко помогает тебе подготовиться к разговору о работе."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Репетиция за столиком в кафе",
+  "contextText": "Ты откликнулся на роль помощника в культурном центре. Марко предлагает потренировать ответ о работе с людьми.",
+  "taskTitle": "Построить ясный рассказ об опыте",
+  "taskText": "Назови ситуацию, своё действие и результат. Можно опереться на оплачиваемую работу, волонтёрство или учебный проект.",
+  "taskShort": "Один пример · действие · результат",
+  "skill": "Распознавать просьбу привести пример и выстраивать рассказ в прошедшем времени.",
+  "phraseLabels": [
+    "Привести пример",
+    "Занимался",
+    "В итоге"
+  ],
+  "transferIntro": "Джулия пробует другие ответы на собеседовании. Найди ответственность, объяснение выбора и реальный результат.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Prima del colloquio proviamo una domanda concreta: mi racconti una situazione in cui hai risolto un problema con altre persone? Non basta dire che sei organizzato. Spiega di che cosa ti occupavi, che cosa è successo e come è andata a finire. Va bene anche un’esperienza di volontariato, purché il tuo ruolo sia chiaro.",
+  "openingRu": "Перед собеседованием попробуем конкретный вопрос: расскажешь о ситуации, когда решил проблему вместе с другими? Недостаточно сказать, что ты организованный. Объясни, за что отвечал, что произошло и чем всё закончилось. Подойдёт и волонтёрский опыт, если твоя роль будет понятна.",
+  "openingQuestion": {
+    "question": "Что Марко считает хорошим ответом?",
+    "options": [
+      "Список положительных качеств",
+      "Конкретную историю с ясной ролью",
+      "Только рассказ об оплачиваемой работе"
+    ],
+    "answer": 1,
+    "explanation": "Spiega ... che cosa è successo e come è andata a finire — нужен случай, действия и результат. Волонтёрство тоже подходит."
+  },
+  "phrases": [
+    {
+      "id": "interview-practice-esempio",
+      "text": "Puoi farmi un esempio concreto?",
+      "ru": "Можешь привести конкретный пример?",
+      "part": "un esempio concreto",
+      "why": "Fare un esempio — привести пример, а concreto требует реального случая.",
+      "sound": "Слова esempio concreto дают сигнал перейти от общего качества к истории.",
+      "example": "Ti faccio un esempio dal mio ultimo progetto.",
+      "exampleRu": "Приведу пример из последнего проекта."
+    },
+    {
+      "id": "interview-practice-occupavo",
+      "text": "Mi occupavo dell’accoglienza.",
+      "ru": "Я занимался встречей гостей.",
+      "part": "mi occupavo",
+      "why": "Imperfetto описывает постоянную обязанность в прошлом, фон истории.",
+      "sound": "Окончание avo отличает occupavo от настоящего occupo.",
+      "example": "Mi occupavo delle iscrizioni al corso.",
+      "exampleRu": "Я занимался записью на курс."
+    },
+    {
+      "id": "interview-practice-fine",
+      "text": "Come è andata a finire?",
+      "ru": "Чем всё закончилось?",
+      "part": "andata a finire",
+      "why": "Вопрос просит результат, а не дополнительные детали начала.",
+      "sound": "È andata a часто звучит тесно связанно; опора — finire.",
+      "example": "Alla fine abbiamo riaperto in tempo.",
+      "exampleRu": "В итоге мы снова открылись вовремя."
+    },
+    {
+      "id": "interview-practice-ruolo",
+      "text": "Il mio ruolo era coordinare i volontari.",
+      "ru": "Моя роль состояла в координации волонтёров.",
+      "part": "il mio ruolo",
+      "why": "Ruolo — конкретная ответственность в общей работе.",
+      "sound": "В mio сохраняется личный вклад: слушатель ждёт, что сделал именно ты.",
+      "example": "Il mio collega gestiva il budget.",
+      "exampleRu": "Мой коллега управлял бюджетом."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Scegli un episodio che ricordi bene. Hai un esempio dal lavoro, dal volontariato o da un progetto di studio?",
+      "ru": "Выбери случай, который хорошо помнишь. Есть пример с работы, из волонтёрства или учебного проекта?",
+      "choices": [
+        {
+          "label": "Рассказать о регистрации гостей",
+          "text": "Al festival mi occupavo delle iscrizioni.",
+          "next": "festival"
+        },
+        {
+          "label": "Рассказать о волонтёрстве",
+          "text": "Organizzavo i turni dei volontari.",
+          "next": "volunteer"
+        },
+        {
+          "label": "Использовать учебный проект",
+          "text": "Ho lavorato a una presentazione di gruppo.",
+          "next": "study"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "festival": {
+      "text": "Bene. Una mattina il sistema non funzionava. Evita di dire soltanto che eravate in difficoltà: che cosa hai fatto tu?",
+      "ru": "Хорошо. Однажды утром система не работала. Не ограничивайся словами, что были трудности: что сделал именно ты?",
+      "choices": [
+        {
+          "label": "Назвать своё действие",
+          "text": "Ho preparato un elenco su carta e separato le due file.",
+          "next": "festival-result"
+        },
+        {
+          "label": "Выбрать более знакомый пример",
+          "text": "Ricordo meglio il lavoro con i volontari.",
+          "next": "volunteer"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "festival-result": {
+      "text": "Adesso aggiungi il risultato senza esagerare. Le persone sono entrate tutte in orario o il ritardo si è soltanto ridotto?",
+      "ru": "Теперь добавь результат без преувеличения. Все вошли вовремя или задержка просто сократилась?",
+      "choices": [
+        {
+          "label": "Назвать точный результат",
+          "text": "Il ritardo è sceso da trenta a dieci minuti.",
+          "next": "work-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "volunteer": {
+      "text": "Due persone hanno annullato all’ultimo momento. Hai coperto tutto da solo oppure hai ridistribuito i compiti?",
+      "ru": "Два человека отменили участие в последний момент. Ты закрыл всё один или перераспределил задачи?",
+      "choices": [
+        {
+          "label": "Описать совместное решение",
+          "text": "Ho chiesto chi fosse disponibile e accorciato i turni.",
+          "next": "volunteer-result"
+        },
+        {
+          "label": "Взять пример из учёбы",
+          "text": "Preferisco raccontare il progetto di studio.",
+          "next": "study"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "volunteer-result": {
+      "text": "Questo mostra organizzazione e collaborazione. Che cosa avete potuto mantenere, e a che cosa avete rinunciato?",
+      "ru": "Это показывает организацию и сотрудничество. Что удалось сохранить, а от чего отказались?",
+      "choices": [
+        {
+          "label": "Обозначить результат и границу",
+          "text": "Abbiamo aperto il banco principale, rinunciando a quello secondario.",
+          "next": "volunteer-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "study": {
+      "text": "Il gruppo non era d’accordo sul tema. Come avete scelto una direzione senza perdere un’altra settimana?",
+      "ru": "Группа не могла согласовать тему. Как вы выбрали направление, не потеряв ещё неделю?",
+      "choices": [
+        {
+          "label": "Объяснить критерии",
+          "text": "Ho proposto di confrontare tre temi con gli stessi criteri.",
+          "next": "study-result"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "study-result": {
+      "text": "Quali criteri? Dire solo che avete votato non spiega il ragionamento.",
+      "ru": "Какие критерии? Если сказать лишь, что вы проголосовали, ход рассуждений останется неясным.",
+      "choices": [
+        {
+          "label": "Назвать критерии и результат",
+          "text": "Fonti disponibili e tempo necessario. Abbiamo scelto e consegnato in tempo.",
+          "next": "study-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "work-end": {
+      "text": "Il tuo esempio ha una difficoltà, un’azione personale e un risultato misurabile. Tienilo sotto un minuto.",
+      "ru": "В примере есть трудность, личное действие и измеримый результат. Уложи его в минуту.",
+      "choices": [],
+      "outcome": "work",
+      "speaker": "Marco"
+    },
+    "volunteer-end": {
+      "text": "Hai mostrato come decidi quando le risorse diminuiscono. Non hai promesso di riuscire a fare sempre tutto.",
+      "ru": "Ты показал, как принимаешь решение при сокращении ресурсов. Не обещал всегда успевать всё.",
+      "choices": [],
+      "outcome": "volunteer",
+      "speaker": "Marco"
+    },
+    "study-end": {
+      "text": "Anche lo studio offre un esempio utile: hai aiutato il gruppo a scegliere con criteri condivisi.",
+      "ru": "Учёба тоже даёт полезный пример: ты помог группе выбрать по общим критериям.",
+      "choices": [],
+      "outcome": "study",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "work": {
+      "title": "Конкретный результат",
+      "body": "Ты объяснил замену сломанной системы и честно назвал сокращение задержки с 30 до 10 минут."
+    },
+    "volunteer": {
+      "title": "Приоритеты и сотрудничество",
+      "body": "Ты перераспределил смены и сохранил главный пункт, отказавшись от второстепенного."
+    },
+    "study": {
+      "title": "Решение по критериям",
+      "body": "Ты показал, как группа выбрала тему по наличию источников и времени, а затем сдала работу вовремя."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Mi occupavo degli ordini, mentre la mia collega gestiva i resi. Un giorno ho notato un errore nell’indirizzo.",
+      "ru": "Я занималась заказами, а коллега — возвратами. Однажды заметила ошибку в адресе.",
+      "question": "Какая обязанность была у говорящей?",
+      "options": [
+        "Возвраты",
+        "Дизайн сайта",
+        "Заказы"
+      ],
+      "answer": 2,
+      "explanation": "Mi occupavo degli ordini — постоянная обязанность говорящей. Resi — задача коллеги.",
+      "id": "it-interview-practice-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Puoi farmi un esempio di una scelta difficile? Mi interessa il motivo della decisione, non soltanto il risultato.",
+      "ru": "Приведёшь пример трудного выбора? Меня интересует причина решения, а не только результат.",
+      "question": "Что просят особенно объяснить?",
+      "options": [
+        "Почему приняли решение",
+        "Только итоговую цифру",
+        "Список всех коллег"
+      ],
+      "answer": 0,
+      "explanation": "Il motivo della decisione — причина решения; non soltanto il risultato расширяет ожидаемый ответ.",
+      "id": "it-interview-practice-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Alla fine non abbiamo aumentato le vendite, ma abbiamo dimezzato il tempo di risposta ai clienti.",
+      "ru": "В итоге продажи не выросли, но время ответа клиентам сократилось вдвое.",
+      "question": "Какой результат достигнут?",
+      "options": [
+        "Продажи удвоились",
+        "Ответ клиентам стал вдвое быстрее",
+        "Число клиентов сократилось"
+      ],
+      "answer": 1,
+      "explanation": "Abbiamo dimezzato il tempo di risposta — вдвое сократили время ответа. Продажи не выросли.",
+      "id": "it-interview-practice-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

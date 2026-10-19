@@ -1,0 +1,146 @@
+{
+  "episode": "festival-invitation-it",
+  "level": "B2",
+  "grammar": {
+    "title": "Двойные местоимения: me lo, te la, glieli",
+    "explanation": "Когда косвенное и прямое местоимения стоят вместе, mi/ti/ci/vi меняются на me/te/ce/ve: mi + lo → me lo. Gli и le перед lo/la/li/le образуют слитные glielo/gliela/glieli/gliele: a Luca + il programma → glielo. В passato prossimo причастие согласуется с прямой частью: le informazioni → gliele ho mandate.",
+    "examples": [
+      {
+        "text": "Il programma? Te lo mando stasera.",
+        "ru": "Программу? Я пришлю её тебе сегодня вечером."
+      },
+      {
+        "text": "Le informazioni per Marta? Gliele ho mandate.",
+        "ru": "Информацию для Марты? Я ей её отправил."
+      },
+      {
+        "text": "I biglietti? Ce li consegnano all’ingresso.",
+        "ru": "Билеты? Нам их выдадут на входе."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Приглашение с понятными условиями",
+    "kind": "письмо",
+    "text": "Cara Francesca, ti mando qualche dettaglio sul festival di sabato, perché il mio primo messaggio era probabilmente troppo vago. Mi farebbe piacere vederti, ma l’invito non implica che tu debba restare per tutta la giornata o aiutarci nell’organizzazione. So che hai già altri impegni e non vorrei metterti in difficoltà. Il programma comincia alle undici con un incontro gratuito. Nel pomeriggio ci sono due laboratori per cui occorre prenotare, mentre il concerto serale richiede un biglietto. Se ti interessa un laboratorio, posso mandarti il collegamento per l’iscrizione. Non ho prenotato al tuo posto, perché preferisco che tu scelga in base ai tuoi tempi. Ti avevo anche parlato di una possibile cena con gli artisti. Per ora è soltanto un’idea: non sappiamo ancora quante persone potranno partecipare né quanto costerà. Appena avrò informazioni precise, te le comunicherò. Non considerarla quindi una parte già confermata dell’invito. Se decidi di venire soltanto al concerto, possiamo incontrarci direttamente all’ingresso. Io quel pomeriggio seguirò l’accoglienza e potrei non rispondere subito al telefono. Ti lascio perciò anche il numero del punto informazioni. Puoi darmi una risposta entro giovedì, ma va benissimo anche se questa volta non riesci. Preferisco una decisione serena a un sì dato per cortesia. Spero comunque che riusciremo a trovare presto un’occasione per vederci con calma. Un abbraccio, Nadia."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Замените a te + il programma двойным местоимением.",
+      "answer": "Te lo",
+      "explanation": "Ti перед lo меняется на te: te lo mando.",
+      "text": "Il programma? ___ mando stasera.",
+      "id": "festival-invitation-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Замените a Francesca + le informazioni одним двойным местоимением.",
+      "answer": "Gliele",
+      "explanation": "Le (ей) + le (их, ж. р.) → gliele; причастие mandate согласуется с le informazioni.",
+      "text": "Le informazioni per Francesca? ___ ho mandate ieri.",
+      "id": "festival-invitation-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите правильную форму: i biglietti + a noi.",
+      "answer": "Ce li consegnano.",
+      "explanation": "Ci меняется на ce, а i biglietti заменяется на li.",
+      "options": [
+        "Ce li consegnano.",
+        "Ci lo consegnano.",
+        "Ce le consegnano."
+      ],
+      "id": "festival-invitation-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает dare un sì per cortesia?",
+      "answer": "Accettare soprattutto per non dispiacere a qualcuno.",
+      "explanation": "Это согласие из вежливости, которое может не отражать реального желания.",
+      "options": [
+        "Accettare soprattutto per non dispiacere a qualcuno.",
+        "Accettare perché tutti i dettagli sono già confermati.",
+        "Rifiutare senza ascoltare la proposta."
+      ],
+      "id": "festival-invitation-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите фразу с двойным местоимением.",
+      "answer": "Te lo mando stasera.",
+      "explanation": "Te lo ставится перед mando: тебе (te) это (lo) отправлю сегодня вечером.",
+      "words": [
+        "lo",
+        "stasera.",
+        "Te",
+        "mando"
+      ],
+      "id": "festival-invitation-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Замените a Marco и il programma двойным местоимением; сохраните глагол.",
+      "answer": "Glielo mando.",
+      "explanation": "A Marco → gli, il programma → lo; вместе glielo.",
+      "text": "Mando il programma a Marco.",
+      "id": "festival-invitation-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Зачем Надя пишет это письмо?",
+      "answer": "Per chiarire l’invito e lasciare libertà di scelta.",
+      "explanation": "Надя уточняет условия и прямо снимает ожидание полного участия или помощи.",
+      "options": [
+        "Per chiarire l’invito e lasciare libertà di scelta.",
+        "Per assegnare a Francesca un turno di lavoro.",
+        "Per annunciare che ogni attività è gratuita."
+      ],
+      "id": "festival-invitation-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что пока не подтверждено?",
+      "answer": "La cena con gli artisti.",
+      "explanation": "Ужин — пока только идея, неизвестны количество мест и цена.",
+      "options": [
+        "La cena con gli artisti.",
+        "L’incontro gratuito delle undici.",
+        "La necessità del biglietto per il concerto."
+      ],
+      "id": "festival-invitation-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему Надя не записала Франческу на мастерскую?",
+      "answer": "Vuole che scelga secondo i propri tempi.",
+      "explanation": "Она прямо объясняет, что предпочитает оставить решение Франческе.",
+      "options": [
+        "Vuole che scelga secondo i propri tempi.",
+        "Non conosce nessun modo per iscriversi.",
+        "È sicura che Francesca non ama i laboratori."
+      ],
+      "id": "festival-invitation-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите другу уточнение к приглашению на фестиваль: разделите бесплатные, платные и неподтверждённые части, предложите удобный вариант участия и оставьте возможность отказаться.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Условия и степень подтверждения каждой части ясны.",
+      "Есть минимум три двойных местоимения в подходящем контексте.",
+      "При необходимости согласовано причастие после прямого местоимения.",
+      "Тон приглашения уважает свободу адресата и не создаёт скрытого обязательства."
+    ]
+  }
+}

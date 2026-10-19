@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "book-club-it",
+  "number": "08",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Книжный клуб без спойлеров",
+  "category": "Истории и обсуждения",
+  "summary": "Ты не дочитал рассказ, а обсуждение уже началось. Выбери, как участвовать без лишних спойлеров.",
+  "duration": "15–20 минут",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко ведёт небольшую встречу читателей в кафе Sole."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Разговор после первых глав",
+  "contextText": "Джулия привела тебя в книжный клуб Марко. Ты прочитал только половину истории об исчезнувшем письме.",
+  "taskTitle": "Высказать мнение и не узнать финал",
+  "taskText": "Уточни границу обсуждения, обсуди поступок героя или попроси краткое введение.",
+  "taskShort": "Прочитана половина · без финала",
+  "skill": "Улавливать мнение, причину и ограничение senza svelare il finale.",
+  "phraseLabels": [
+    "По моему мнению",
+    "Пока что",
+    "Не раскрывать финал"
+  ],
+  "transferIntro": "Джулия обсуждает фильм и подкаст. Различай оценку, ограничение и аргумент.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Benvenuto al nostro gruppo! Oggi parliamo del racconto che Giulia ci ha consigliato. Secondo me la protagonista nasconde qualcosa, ma per ora discutiamo solo le prime tre parti. Non voglio svelare il finale a chi non ha finito. Puoi raccontare un’impressione, fare una domanda oppure ascoltare gli altri prima di intervenire.",
+  "openingRu": "Добро пожаловать в наш клуб! Сегодня говорим о рассказе, который посоветовала Джулия. По-моему, главная героиня что-то скрывает, но пока обсуждаем только первые три части. Не хочу раскрывать финал тем, кто не дочитал. Можно поделиться впечатлением, задать вопрос или сначала послушать других.",
+  "openingQuestion": {
+    "question": "Как Марко защищает тех, кто не дочитал?",
+    "options": [
+      "Обсуждает только первые три части",
+      "Отменяет встречу",
+      "Сразу пересказывает весь финал"
+    ],
+    "answer": 0,
+    "explanation": "Per ora discutiamo solo le prime tre parti — пока обсуждаем только первые три части."
+  },
+  "phrases": [
+    {
+      "id": "book-club-secondo",
+      "text": "Secondo me la protagonista nasconde qualcosa.",
+      "ru": "По-моему, главная героиня что-то скрывает.",
+      "part": "secondo me",
+      "why": "Secondo me вводит мнение, которое можно обсуждать.",
+      "sound": "Слушай secondo me как сигнал личной версии, не доказательства.",
+      "example": "Secondo me il viaggio lo ha cambiato.",
+      "exampleRu": "По-моему, поездка его изменила."
+    },
+    {
+      "id": "book-club-ora",
+      "text": "Per ora discutiamo solo le prime tre parti.",
+      "ru": "Пока обсуждаем лишь первые три части.",
+      "part": "per ora",
+      "why": "Per ora — пока что: границы обсуждения могут измениться позже.",
+      "sound": "Слово solo ограничивает объём; обрати внимание и на число tre.",
+      "example": "Per ora conosco solo il suo nome.",
+      "exampleRu": "Пока я знаю только его имя."
+    },
+    {
+      "id": "book-club-finale",
+      "text": "Non voglio svelare il finale.",
+      "ru": "Не хочу раскрывать финал.",
+      "part": "svelare il finale",
+      "why": "Svelare означает раскрыть то, что было скрыто.",
+      "sound": "В начале svelare слышно зв: это не отдельное служебное слово.",
+      "example": "Puoi parlarne senza svelare il finale?",
+      "exampleRu": "Можешь рассказать об этом, не раскрывая финал?"
+    },
+    {
+      "id": "book-club-accordo",
+      "text": "Non sono del tutto d’accordo.",
+      "ru": "Я не совсем согласен.",
+      "part": "del tutto d’accordo",
+      "why": "Del tutto — полностью. Отрицание позволяет мягко выразить несогласие.",
+      "sound": "Не теряй non; конец d’accordo сам по себе звучит как согласие.",
+      "example": "Sono d’accordo sul personaggio, ma non sulla scelta.",
+      "exampleRu": "Согласен насчёт героя, но не насчёт его выбора."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Hai letto fino alla partenza della protagonista o sei ancora all’arrivo della lettera?",
+      "ru": "Ты дочитал до отъезда героини или пока до появления письма?",
+      "choices": [
+        {
+          "label": "Обозначить границу и версию",
+          "text": "Sono alla lettera. Secondo me ha paura.",
+          "next": "opinion"
+        },
+        {
+          "label": "Попросить введение",
+          "text": "Mi riassumi l’inizio senza il finale?",
+          "next": "summary"
+        },
+        {
+          "label": "Сначала послушать",
+          "text": "Preferisco ascoltare prima di parlare.",
+          "next": "listen"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "opinion": {
+      "text": "È possibile. Io pensavo che fosse arrabbiata. Quale dettaglio ti fa pensare alla paura?",
+      "ru": "Возможно. Я думал, что она сердится. Какая деталь заставляет тебя думать о страхе?",
+      "choices": [
+        {
+          "label": "Привести наблюдение",
+          "text": "Rilegge la lettera, ma non apre la porta.",
+          "next": "detail"
+        },
+        {
+          "label": "Попросить восстановить начало",
+          "text": "Non ricordo bene. Rivediamo l’inizio.",
+          "next": "summary"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "detail": {
+      "text": "Bel dettaglio. Possiamo dire che evita qualcuno, ma non sappiamo ancora chi. Manteniamo aperte entrambe le ipotesi.",
+      "ru": "Хорошая деталь. Можно сказать, что она кого-то избегает, но мы пока не знаем кого. Оставим обе версии открытыми.",
+      "choices": [
+        {
+          "label": "Зафиксировать осторожный вывод",
+          "text": "Sì, è un’ipotesi, non una certezza.",
+          "next": "opinion-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "summary": {
+      "text": "All’inizio torna al paese dopo dieci anni. Trova una lettera senza firma dentro un libro della madre. Fin qui ci sei?",
+      "ru": "В начале она возвращается в городок через десять лет. Находит неподписанное письмо в книге матери. До этого момента всё понятно?",
+      "choices": [
+        {
+          "label": "Уточнить важную связь",
+          "text": "Il libro era della madre, non la lettera?",
+          "next": "clarify"
+        },
+        {
+          "label": "Перейти к своей версии",
+          "text": "Sì. Il silenzio della madre mi incuriosisce.",
+          "next": "detail"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "clarify": {
+      "text": "Esatto: sappiamo a chi apparteneva il libro, non chi ha scritto la lettera. Ci fermiamo qui prima della partenza.",
+      "ru": "Верно: знаем, кому принадлежала книга, но не кто написал письмо. Остановимся здесь, до отъезда.",
+      "choices": [
+        {
+          "label": "Выбрать дочитать самостоятельно",
+          "text": "Grazie. Leggerò le altre parti prima del prossimo incontro.",
+          "next": "summary-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "listen": {
+      "text": "Certo. Ti faccio un segno prima di passare alla quarta parte. Intanto puoi annotare una parola che senti spesso.",
+      "ru": "Конечно. Подам знак перед переходом к четвёртой части. Пока можешь записать слово, которое часто слышишь.",
+      "choices": [
+        {
+          "label": "Попросить объяснить слово",
+          "text": "Tutti dicono fiducia. Che cosa significa qui?",
+          "next": "word"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "word": {
+      "text": "Qui fiducia significa credere che una persona sia sincera. La domanda è: la protagonista può fidarsi della madre?",
+      "ru": "Здесь fiducia означает веру в искренность человека. Вопрос в том, может ли героиня доверять матери.",
+      "choices": [
+        {
+          "label": "Поделиться короткой реакцией",
+          "text": "Adesso capisco. Per me la fiducia è il tema centrale.",
+          "next": "listen-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "opinion-end": {
+      "text": "Hai proposto una lettura e l’hai sostenuta con un dettaglio, senza anticipare il finale.",
+      "ru": "Ты предложил трактовку и подкрепил её деталью, не забегая к финалу.",
+      "choices": [],
+      "outcome": "opinion",
+      "speaker": "Marco"
+    },
+    "summary-end": {
+      "text": "Ti mando il numero delle pagine per la prossima volta. Il mistero della firma resta tutto da scoprire.",
+      "ru": "Пришлю страницы к следующей встрече. Тайна подписи пока остаётся нераскрытой.",
+      "choices": [],
+      "outcome": "summary",
+      "speaker": "Marco"
+    },
+    "listen-end": {
+      "text": "Ottimo punto. La prossima volta possiamo iniziare proprio dalla fiducia e ascoltare la tua idea.",
+      "ru": "Хорошая мысль. В следующий раз можем начать именно с доверия и выслушать твою идею.",
+      "choices": [],
+      "outcome": "listen",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "opinion": {
+      "title": "Своя версия",
+      "body": "Ты объяснил предположение деталью из рассказа и оставил место другой трактовке."
+    },
+    "summary": {
+      "title": "Контекст без спойлера",
+      "body": "Ты выяснил, что известно о книге и письме. Дальше дочитаешь самостоятельно."
+    },
+    "listen": {
+      "title": "От слушания к участию",
+      "body": "Ты начал с наблюдения, уточнил слово fiducia и назвал тему рассказа."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Secondo me il film non è triste. Il finale è aperto, ma lascia una possibilità ai personaggi.",
+      "ru": "По-моему, фильм не грустный. Финал открытый, но оставляет героям возможность.",
+      "question": "Как говорящая воспринимает фильм?",
+      "options": [
+        "Как однозначно грустный",
+        "Как оставляющий надежду",
+        "Как комедию без сюжета"
+      ],
+      "answer": 1,
+      "explanation": "Non è triste и lascia una possibilità показывают, что она видит возможность, а не безнадёжность.",
+      "id": "it-book-club-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Per ora ascoltiamo solo il primo episodio del podcast. Del secondo parliamo venerdì.",
+      "ru": "Пока слушаем только первый выпуск подкаста. Второй обсудим в пятницу.",
+      "question": "Что обсуждают в пятницу?",
+      "options": [
+        "Первый выпуск",
+        "Все выпуски сразу",
+        "Второй выпуск"
+      ],
+      "answer": 2,
+      "explanation": "Del secondo parliamo venerdì — о втором говорим в пятницу.",
+      "id": "it-book-club-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Non sono del tutto d’accordo: il personaggio sbaglia, però cerca di riparare il danno.",
+      "ru": "Я не совсем согласна: герой ошибается, но пытается исправить ущерб.",
+      "question": "Какую позицию выражает говорящая?",
+      "options": [
+        "Частично возражает и объясняет почему",
+        "Полностью согласна",
+        "Отказывается говорить о герое"
+      ],
+      "answer": 0,
+      "explanation": "Non sono del tutto d’accordo — мягкое несогласие. Però вводит аргумент в защиту героя.",
+      "id": "it-book-club-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

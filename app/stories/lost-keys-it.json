@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "lost-keys-it",
+  "number": "07",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Ключи между двумя карманами",
+  "category": "Повседневная жизнь",
+  "summary": "Ключей нет, а телефон почти разряжен. Восстанови последовательность событий и выбери, где искать.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия помогает восстановить путь после прогулки."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Возвращение с рынка",
+  "contextText": "После рынка и кафе ты не можешь найти ключи. Джулия была рядом и помнит некоторые детали маршрута.",
+  "taskTitle": "Найти ключи или попасть домой",
+  "taskText": "Отдели уверенные воспоминания от предположений. Проверь кафе, сумку или запасной комплект у Марко.",
+  "taskShort": "Телефон 5% · три зацепки",
+  "skill": "Слышать последовательность prima/dopo и различать forse от уверенного ricordo.",
+  "phraseLabels": [
+    "Сначала и потом",
+    "Возможно",
+    "Запасной комплект"
+  ],
+  "transferIntro": "Марко рассказывает о забытых вещах. Замечай порядок действий и степень уверенности.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Calma, ricostruiamo il percorso. Prima siamo andati al mercato, poi al bar. Ricordo che hai aperto la borsa per pagare il caffè, ma forse le chiavi erano nella tasca della giacca. Marco ha una copia di riserva, però oggi lavora fuori città. Prima di chiamarlo, controlliamo bene dove sei passato.",
+  "openingRu": "Спокойно, восстановим маршрут. Сначала были на рынке, потом в кафе. Помню, ты открывал сумку, чтобы заплатить за кофе, но, возможно, ключи были в кармане куртки. У Марко есть запасной комплект, однако сегодня он работает за городом. Прежде чем ему звонить, проверим, где ты был.",
+  "openingQuestion": {
+    "question": "Что Джулия помнит наверняка?",
+    "options": [
+      "Ключи остались на рынке",
+      "Марко сейчас дома",
+      "Ты открывал сумку в кафе"
+    ],
+    "answer": 2,
+    "explanation": "Ricordo che hai aperto la borsa — уверенное воспоминание. Место ключей вводится словом forse: возможно."
+  },
+  "phrases": [
+    {
+      "id": "lost-keys-prima",
+      "text": "Prima siamo andati al mercato, poi al bar.",
+      "ru": "Сначала были на рынке, потом в кафе.",
+      "part": "prima al mercato, poi al bar",
+      "why": "Prima и poi помогают восстановить порядок событий.",
+      "sound": "Сделай мысленно две остановки: после prima и после poi.",
+      "example": "Prima chiamo, poi esco.",
+      "exampleRu": "Сначала позвоню, потом выйду."
+    },
+    {
+      "id": "lost-keys-forse",
+      "text": "Forse erano nella tasca.",
+      "ru": "Возможно, они были в кармане.",
+      "part": "forse",
+      "why": "Forse обозначает догадку, а не подтверждённый факт.",
+      "sound": "Forse часто звучит в начале фразы: замечай его до подробностей.",
+      "example": "Forse il negozio è ancora aperto.",
+      "exampleRu": "Возможно, магазин ещё открыт."
+    },
+    {
+      "id": "lost-keys-riserva",
+      "text": "Marco ha una copia di riserva.",
+      "ru": "У Марко есть запасной комплект.",
+      "part": "una copia di riserva",
+      "why": "Copia di riserva здесь означает запасные ключи.",
+      "sound": "Опорное слово riserva: ударение на ser.",
+      "example": "Tengo una batteria di riserva.",
+      "exampleRu": "Держу запасной аккумулятор."
+    },
+    {
+      "id": "lost-keys-ricordo",
+      "text": "Mi ricordo di averle messe qui.",
+      "ru": "Помню, что положил их сюда.",
+      "part": "mi ricordo",
+      "why": "Mi ricordo — помню; non mi ricordo — не помню.",
+      "sound": "Короткое non полностью меняет достоверность сообщения.",
+      "example": "Non mi ricordo il numero della porta.",
+      "exampleRu": "Не помню номер двери."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Il telefono è quasi scarico. Facciamo una verifica alla volta: da dove vuoi cominciare?",
+      "ru": "Телефон почти разряжен. Будем проверять по одному: с чего хочешь начать?",
+      "choices": [
+        {
+          "label": "Позвонить в кафе",
+          "text": "Chiamo il bar. Forse sono sul tavolo.",
+          "next": "bar"
+        },
+        {
+          "label": "Ещё раз проверить вещи",
+          "text": "Controlliamo la borsa e la giacca.",
+          "next": "bag"
+        },
+        {
+          "label": "Попросить запасные ключи",
+          "text": "Chiediamo a Marco la copia.",
+          "next": "spare"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "bar": {
+      "text": "Il barista ha trovato un mazzo con un portachiavi rosso. Il tuo però è verde, giusto?",
+      "ru": "Бариста нашёл связку с красным брелоком. Но твой ведь зелёный?",
+      "choices": [
+        {
+          "label": "Проверить точное описание",
+          "text": "Il mio è verde, a forma di foglia. Può guardare ancora?",
+          "next": "bar-check"
+        },
+        {
+          "label": "Искать у себя",
+          "text": "Allora non sono i miei. Controlliamo la borsa.",
+          "next": "bag"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "bar-check": {
+      "text": "Ha guardato sotto la sedia: c’è un altro mazzo con una foglia verde. Tiene il bar aperto ancora venti minuti.",
+      "ru": "Он посмотрел под стулом: там другая связка с зелёным листом. Кафе открыто ещё двадцать минут.",
+      "choices": [
+        {
+          "label": "Вернуться сразу",
+          "text": "Sono i miei! Torno subito al bar.",
+          "next": "bar-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "bag": {
+      "text": "Nella tasca grande non ci sono. Hai una tasca interna con la cerniera? Al mercato hai spostato il portafoglio.",
+      "ru": "В большом отделении их нет. Есть внутренний карман на молнии? На рынке ты перекладывал кошелёк.",
+      "choices": [
+        {
+          "label": "Проверить внутренний карман",
+          "text": "Sì, apro la cerniera.",
+          "next": "bag-check"
+        },
+        {
+          "label": "Отложить поиск и попросить запасные",
+          "text": "Non riesco a cercare qui. Chiediamo a Marco.",
+          "next": "spare"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "bag-check": {
+      "text": "Senti quel rumore? Le chiavi sono dietro il portafoglio, nella tasca interna. Il portachiavi è verde.",
+      "ru": "Слышишь этот звук? Ключи за кошельком, во внутреннем кармане. Брелок зелёный.",
+      "choices": [
+        {
+          "label": "Подтвердить находку",
+          "text": "Eccole! Le metto sempre in questa tasca da ora in poi.",
+          "next": "bag-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "spare": {
+      "text": "Marco risponde che torna alle otto. Ma sua sorella è a casa e può consegnarti la copia adesso.",
+      "ru": "Марко ответил, что вернётся в восемь. Но его сестра дома и может передать запасные ключи сейчас.",
+      "choices": [
+        {
+          "label": "Уточнить адрес сестры",
+          "text": "È nell’appartamento di Marco?",
+          "next": "spare-check"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "spare-check": {
+      "text": "Sì, al terzo piano. Marco l’ha avvisata. Prima ricarichiamo il telefono qui, così puoi chiamare quando arrivi.",
+      "ru": "Да, на третьем этаже. Марко её предупредил. Сначала здесь подзарядим телефон, чтобы позвонить по прибытии.",
+      "choices": [
+        {
+          "label": "Забрать запасные",
+          "text": "Va bene. Poi cercherò gli altri con calma.",
+          "next": "spare-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "bar-end": {
+      "text": "Il barista ti restituisce il mazzo verde. Abbiamo distinto una somiglianza da una vera conferma.",
+      "ru": "Бариста возвращает связку с зелёным брелоком. Мы отличили похожую находку от настоящего подтверждения.",
+      "choices": [],
+      "outcome": "bar",
+      "speaker": "Giulia"
+    },
+    "bag-end": {
+      "text": "Problema risolto senza altre telefonate. Adesso sappiamo anche quando hai cambiato tasca.",
+      "ru": "Всё решилось без новых звонков. Теперь знаем и когда ты сменил карман.",
+      "choices": [],
+      "outcome": "bag",
+      "speaker": "Giulia"
+    },
+    "spare-end": {
+      "text": "Hai la copia e puoi entrare. Le chiavi originali restano da cercare domani lungo il percorso.",
+      "ru": "Запасные ключи у тебя, можно войти. Оригиналы ещё нужно поискать завтра по маршруту.",
+      "choices": [],
+      "outcome": "spare",
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "bar": {
+      "title": "Зелёный брелок",
+      "body": "Первое описание не совпало. Ты попросил проверить ещё раз и нашёл свои ключи под стулом в кафе."
+    },
+    "bag": {
+      "title": "Внутренний карман",
+      "body": "Подробный поиск помог найти ключи за кошельком. Догадка о кафе не понадобилась."
+    },
+    "spare": {
+      "title": "Доступ домой восстановлен",
+      "body": "Ты получил запасной комплект у сестры Марко. Это решило вопрос с дверью, но не поиск оригиналов."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Prima ho lasciato la bici in cortile, poi sono salito a prendere il casco. Il lucchetto era già chiuso.",
+      "ru": "Сначала я оставил велосипед во дворе, потом поднялся за шлемом. Замок уже был закрыт.",
+      "question": "За чем говорящий поднялся домой?",
+      "options": [
+        "За велосипедом",
+        "За шлемом",
+        "За замком"
+      ],
+      "answer": 1,
+      "explanation": "Poi sono salito a prendere il casco — потом поднялся за шлемом. Замок был закрыт ещё до этого.",
+      "id": "it-lost-keys-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Forse ho dimenticato il quaderno in biblioteca. Sono sicuro, invece, di avere la tessera nel portafoglio.",
+      "ru": "Возможно, я забыл тетрадь в библиотеке. А вот читательский билет точно у меня в кошельке.",
+      "question": "Что известно точно?",
+      "options": [
+        "Тетрадь в библиотеке",
+        "Тетрадь дома",
+        "Билет в кошельке"
+      ],
+      "answer": 2,
+      "explanation": "Sono sicuro — уверен; forse выражает только предположение о тетради.",
+      "id": "it-lost-keys-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "La batteria principale è scarica, ma quella di riserva è nel cassetto in basso.",
+      "ru": "Основной аккумулятор разряжен, но запасной лежит в нижнем ящике.",
+      "question": "Где запасной аккумулятор?",
+      "options": [
+        "В нижнем ящике",
+        "В верхнем ящике",
+        "В сумке"
+      ],
+      "answer": 0,
+      "explanation": "Di riserva обозначает запасной; nel cassetto in basso — в нижнем ящике.",
+      "id": "it-lost-keys-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

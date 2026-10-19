@@ -1,0 +1,147 @@
+{
+  "episode": "rainy-trip-it",
+  "level": "B2",
+  "grammar": {
+    "title": "Congiuntivo presente после мнения, желания и необходимости",
+    "explanation": "После выражений мнения, желания или необходимости часто употребляется congiuntivo: penso che sia, voglio che venga, è importante che abbiano. У регулярных -are окончания единственного числа -i; у -ere/-ire — -a. Частые формы: essere → sia, siano; avere → abbia, abbiano. Если субъект один, после volere обычно нужен инфинитив: voglio partire.",
+    "examples": [
+      {
+        "text": "È importante che tutti abbiano un’alternativa.",
+        "ru": "Важно, чтобы у всех был запасной вариант."
+      },
+      {
+        "text": "Penso che il museo sia una buona scelta.",
+        "ru": "Я думаю, что музей — хороший выбор."
+      },
+      {
+        "text": "Voglio che tu scelga senza fretta.",
+        "ru": "Я хочу, чтобы ты выбрал без спешки."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Дождь как повод уточнить планы",
+    "kind": "рассказ",
+    "text": "Il programma del fine settimana prevedeva una lunga passeggiata in montagna, ma venerdì le previsioni annunciavano pioggia continua. Nel gruppo è iniziata subito una discussione sulle alternative. Alcuni proponevano un museo, altri preferivano rinviare tutto. Giada, che aveva organizzato il viaggio, si è accorta che nessuno aveva ancora spiegato che cosa cercasse davvero in quella giornata. Ha chiesto a ciascuno di indicare una priorità, senza proporre subito una soluzione. Per Luca era importante muoversi all’aperto; per Serena contava soprattutto passare tempo insieme. Andrea aveva bisogno di rientrare presto, mentre Giada desiderava evitare un’altra giornata passata a coordinare spostamenti complicati. Da queste risposte è nato un piano diverso. Al mattino sarebbero andati in una cittadina raggiungibile in treno, con una breve passeggiata possibile anche in caso di pioggia leggera. Se il tempo fosse peggiorato, avrebbero visitato una piccola mostra vicino alla stazione. Il pranzo sarebbe stato l’unico momento comune fissato in anticipo; dopo, ciascuno avrebbe potuto rientrare o fermarsi. Luca inizialmente era deluso, perché la proposta non sostituiva davvero un’escursione. Gli altri non hanno cercato di convincerlo del contrario. Hanno riconosciuto la differenza e deciso di organizzare la camminata in un’altra occasione. Il nuovo programma non soddisfaceva ogni desiderio, ma rendeva espliciti i compromessi. Giada ha inviato orari e costi in un solo messaggio, chiedendo una conferma entro sera per poter chiudere l’organizzazione."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте congiuntivo presente глагола essere для il museo.",
+      "answer": "sia",
+      "explanation": "После penso che в этом выражении мнения используется congiuntivo: sia.",
+      "text": "Penso che il museo ___ una buona alternativa.",
+      "id": "rainy-trip-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте congiuntivo presente глагола avere для tutti.",
+      "answer": "abbiano",
+      "explanation": "Подлежащее tutti — множественное число: abbiano.",
+      "text": "È importante che tutti ___ gli orari.",
+      "id": "rainy-trip-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите правильную форму при одном субъекте.",
+      "answer": "Voglio partire presto.",
+      "explanation": "При одинаковом субъекте волеизъявления и действия нормативный обычный выбор — volere + инфинитив.",
+      "options": [
+        "Voglio partire presto.",
+        "Voglio partiremo presto.",
+        "Voglio parta presto."
+      ],
+      "id": "rainy-trip-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает rendere espliciti i compromessi?",
+      "answer": "Dire chiaramente a che cosa si rinuncia per trovare un accordo.",
+      "explanation": "Esplicito — явно выраженный; компромисс предполагает осознанные уступки.",
+      "options": [
+        "Dire chiaramente a che cosa si rinuncia per trovare un accordo.",
+        "Promettere che nessuno rinuncerà a nulla.",
+        "Nascondere le differenze tra le proposte."
+      ],
+      "id": "rainy-trip-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите фразу с congiuntivo.",
+      "answer": "È importante che tutti partecipino.",
+      "explanation": "После оценки необходимости è importante che: congiuntivo partecipino.",
+      "words": [
+        "che",
+        "È",
+        "tutti",
+        "importante",
+        "partecipino."
+      ],
+      "id": "rainy-trip-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Введите мнение словами Penso che и замените è нужной формой; напишите всё предложение.",
+      "answer": "Penso che il piano sia realistico.",
+      "explanation": "После penso che форма essere — sia.",
+      "text": "Il piano è realistico.",
+      "id": "rainy-trip-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что помогло группе выбрать новый план?",
+      "answer": "Chiarire prima le priorità delle persone.",
+      "explanation": "Джада сначала просит назвать приоритеты, и только затем появляется решение.",
+      "options": [
+        "Chiarire prima le priorità delle persone.",
+        "Votare subito per il museo senza discutere.",
+        "Garantire che avrebbe smesso di piovere."
+      ],
+      "id": "rainy-trip-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какой общий момент был заранее закреплён для всех?",
+      "answer": "Il pranzo.",
+      "explanation": "В тексте обед назван единственным общим событием с заранее согласованным временем.",
+      "options": [
+        "Il pranzo.",
+        "Il ritorno a casa.",
+        "La visita obbligatoria alla mostra."
+      ],
+      "id": "rainy-trip-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему группа признаёт разочарование Луки?",
+      "answer": "Sa che il nuovo piano non equivale a una vera escursione.",
+      "explanation": "Участники не выдают другой формат за полную замену похода и договариваются провести поход позже.",
+      "options": [
+        "Sa che il nuovo piano non equivale a una vera escursione.",
+        "Vuole escluderlo dai prossimi viaggi.",
+        "Ha deciso di annullare anche il pranzo."
+      ],
+      "id": "rainy-trip-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите группе новый план дождливого выходного. Укажите три разных приоритета, общее мероприятие и свободный выбор после него; объясните, какой компромисс остаётся.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Учтены разные приоритеты, а не только список мест.",
+      "Использованы минимум три формы congiuntivo после мнения или необходимости.",
+      "Гарантии отделены от погодных условий и запасных вариантов.",
+      "План связан логически и заканчивается ясным запросом подтверждения."
+    ]
+  }
+}

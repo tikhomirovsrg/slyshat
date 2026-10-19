@@ -1,0 +1,119 @@
+{
+  "episode": "lunch-en",
+  "level": "A2",
+  "grammar": {
+    "title": "Приглашение: would like и want",
+    "explanation": "Would like + to + глагол — вежливый способ выразить желание: I would like to join you. В вопросе Would you like to ...? получается приглашение. После want тоже используется to + глагол, но формулировка обычно более прямая. В коротком ответе на приглашение можно сказать Yes, I’d like to.",
+    "examples": [
+      {
+        "text": "Would you like to have lunch with us?",
+        "ru": "Хочешь пообедать с нами?"
+      },
+      {
+        "text": "I would like to come, but I finish work at one.",
+        "ru": "Я хотел бы прийти, но заканчиваю работу в час."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Место за большим столом",
+    "kind": "рассказ",
+    "text": "On Monday, Dan starts a new job. At lunchtime, three people from his office walk towards a café. One of them, Ruth, asks if he would like to join them. Dan says yes, but he has brought food from home. Ruth explains that the café has a garden where people can eat their own food if they buy a drink. Dan buys a tea and sits with the group. They talk about books and weekend plans over a cup of tea, not work. The next day, Dan invites another new colleague to lunch. He remembers how a simple invitation made his first day easier."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: что помогает Дэну в первый день?",
+      "answer": "Приглашение пообедать с коллегами",
+      "explanation": "Совместный обед помогает новичку познакомиться с группой.",
+      "options": [
+        "Возможность уйти с работы раньше",
+        "Приглашение пообедать с коллегами",
+        "Покупка новой книги"
+      ],
+      "id": "lunch-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: при каком условии в саду кафе можно есть свою еду?",
+      "answer": "Нужно купить напиток",
+      "explanation": "Своя еда разрешена if they buy a drink; Дэн покупает чай.",
+      "options": [
+        "Нужно забронировать стол заранее",
+        "Нужно прийти после двух",
+        "Нужно купить напиток"
+      ],
+      "id": "lunch-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему Дэн приглашает другого новичка на следующий день?",
+      "answer": "Он хочет так же помочь новому коллеге освоиться",
+      "explanation": "Он помнит, как простое приглашение облегчило его собственный первый день.",
+      "options": [
+        "Он хочет так же помочь новому коллеге освоиться",
+        "Ему поручили провести рабочее совещание",
+        "Он забыл принести обед"
+      ],
+      "id": "lunch-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: Would you like ___ us for lunch?",
+      "answer": "to join",
+      "explanation": "После would like используется to + начальная форма.",
+      "options": [
+        "joining",
+        "join",
+        "to join"
+      ],
+      "id": "lunch-en-study-4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите вежливое приглашение.",
+      "answer": "Would you like to have lunch with us",
+      "explanation": "Would ставится перед you, затем like to have.",
+      "words": [
+        "us",
+        "like",
+        "lunch",
+        "Would",
+        "have",
+        "you",
+        "with",
+        "to"
+      ],
+      "id": "lunch-en-study-5"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что значит join us for lunch?",
+      "answer": "Присоединиться к нам за обедом",
+      "explanation": "Join us — стать участником общей встречи или занятия.",
+      "options": [
+        "Присоединиться к нам за обедом",
+        "Купить обед для всего офиса",
+        "Уйти сразу после обеда"
+      ],
+      "id": "lunch-en-study-6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите новому коллеге приглашение на обед. Укажите день, время и место, объясните, кто ещё придёт и можно ли принести свою еду. Задайте вопрос с Would you like и предложите другой день, если коллеге неудобно. Завершите дружелюбно.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

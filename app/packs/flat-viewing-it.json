@@ -1,0 +1,147 @@
+{
+  "episode": "flat-viewing-it",
+  "level": "B2",
+  "grammar": {
+    "title": "Будущее в прошлом в косвенной речи",
+    "explanation": "Если о будущем сообщали в прошлом, итальянский часто использует condizionale passato: Ha detto: «Riparerò la finestra» → Ha detto che avrebbe riparato la finestra. Форма состоит из condizionale avere/essere + причастие. Временные указатели меняются по точке отсчёта: domani → il giorno dopo, se сообщение пересказывается позже.",
+    "examples": [
+      {
+        "text": "Il proprietario ha detto che avrebbe riparato la finestra.",
+        "ru": "Владелец сказал, что починит окно."
+      },
+      {
+        "text": "Mi ha spiegato che sarebbe tornata il giorno dopo.",
+        "ru": "Она объяснила мне, что вернётся на следующий день."
+      },
+      {
+        "text": "Ha detto che il cortile era silenzioso.",
+        "ru": "Он сказал, что двор был тихим."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Обещание в объявлении и в договоре",
+    "kind": "рассказ",
+    "text": "Prima di visitare un appartamento, Chiara aveva preparato una lista di domande sul rumore, sulle spese e sui lavori previsti. L’annuncio descriveva la casa come luminosa e ben collegata, ma non diceva nulla sull’isolamento delle finestre. Durante la visita il proprietario ha spiegato che la strada era tranquilla soprattutto nel fine settimana. Chiara lavorava spesso da casa e gli ha chiesto se fosse possibile tornare in un giorno feriale. Lui ha accettato e ha aggiunto che avrebbe sostituito le finestre prima dell’inverno. Non aveva ancora una data precisa, perché aspettava un preventivo. Chiara ha annotato la risposta senza considerarla una conferma dei lavori. Alla seconda visita, il traffico si sentiva chiaramente nella stanza che avrebbe usato come studio. Il cortile, invece, era silenzioso. Spostare lì la scrivania avrebbe risolto una parte del problema, ma la stanza sul cortile era più piccola e poco luminosa. Chiara non ha scartato subito l’appartamento. Ha chiesto un riepilogo scritto delle spese e dei lavori, distinguendo quelli già approvati da quelli soltanto ipotizzati. Ha anche confrontato il costo complessivo con quello di un’altra casa più lontana dal centro. Prima di decidere, voleva sapere se il prezzo riflettesse davvero i compromessi richiesti. Una promessa plausibile non era per lei equivalente a una condizione definita: poteva apprezzare la disponibilità del proprietario e, nello stesso tempo, chiedere elementi verificabili."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте вспомогательный глагол в condizionale passato для lui.",
+      "answer": "avrebbe",
+      "explanation": "Будущее относительно прошедшего ha detto: avrebbe sostituito.",
+      "text": "Ha detto che ___ sostituito le finestre.",
+      "id": "flat-viewing-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Пересказываем слова женщины; вставьте tornare с согласованием.",
+      "answer": "tornata",
+      "explanation": "С essere причастие согласуется с женщиной: tornata.",
+      "text": "Ha spiegato che sarebbe ___ il giorno dopo.",
+      "id": "flat-viewing-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Как передать позже: Ha detto: «Verrò domani»?",
+      "answer": "Ha detto che sarebbe venuto il giorno dopo.",
+      "explanation": "Будущее в прошлом — sarebbe venuto; domani меняется на il giorno dopo.",
+      "options": [
+        "Ha detto che sarebbe venuto il giorno dopo.",
+        "Ha detto che sarebbe venuto il giorno prima.",
+        "Ha detto che era venuto il giorno prima."
+      ],
+      "id": "flat-viewing-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что такое un preventivo per i lavori?",
+      "answer": "Una stima del costo prima di eseguire i lavori.",
+      "explanation": "Preventivo — предварительный расчёт стоимости; он ещё не доказывает выполнения работ.",
+      "options": [
+        "Una stima del costo prima di eseguire i lavori.",
+        "Una ricevuta che prova che i lavori sono già pagati.",
+        "Una regola che vieta qualsiasi lavoro."
+      ],
+      "id": "flat-viewing-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите сообщение о будущем в прошлом.",
+      "answer": "Ha detto che avrebbe scritto.",
+      "explanation": "Avrebbe scritto указывает на действие после момента, когда человек об этом сказал.",
+      "words": [
+        "che",
+        "detto",
+        "avrebbe",
+        "Ha",
+        "scritto."
+      ],
+      "id": "flat-viewing-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Передайте косвенной речью после Ha detto che; говорящий — мужчина.",
+      "answer": "Ha detto che sarebbe tornato presto.",
+      "explanation": "Tornerò переходит в sarebbe tornato; essere требует согласования tornato.",
+      "text": "«Tornerò presto».",
+      "id": "flat-viewing-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какую проблему исследует рассказ?",
+      "answer": "Come valutare un alloggio distinguendo fatti e promesse.",
+      "explanation": "Кьяра проверяет шум, расходы и степень определённости будущих работ.",
+      "options": [
+        "Come valutare un alloggio distinguendo fatti e promesse.",
+        "Come eliminare tutte le spese di una casa.",
+        "Come convincere un proprietario a vendere subito."
+      ],
+      "id": "flat-viewing-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему даты замены окон ещё не было?",
+      "answer": "Il proprietario aspettava un preventivo.",
+      "explanation": "Владелец ждал предварительный расчёт стоимости, поэтому срок не был определён.",
+      "options": [
+        "Il proprietario aspettava un preventivo.",
+        "Chiara aveva già rifiutato l’appartamento.",
+        "Il cortile era chiuso per lavori."
+      ],
+      "id": "flat-viewing-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что показывает повторный визит Кьяры в будний день?",
+      "answer": "Vuole verificare la casa nelle condizioni in cui ci lavorerebbe.",
+      "explanation": "Она работает дома, а тишина в выходной не описывает её обычный рабочий день.",
+      "options": [
+        "Vuole verificare la casa nelle condizioni in cui ci lavorerebbe.",
+        "Non ha ascoltato nessuna risposta del proprietario.",
+        "Ha già deciso di firmare senza altre domande."
+      ],
+      "id": "flat-viewing-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите партнёру о просмотренной квартире. Передайте два обещания владельца в косвенной речи, опишите один проверенный плюс и один компромисс, затем перечислите условия для решения.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Проверенные факты отделены от обещаний и предположений.",
+      "Будущее в прошлом выражено минимум двумя формами condizionale passato.",
+      "Временные указатели и местоимения согласованы с пересказом.",
+      "Решение связано с вашими требованиями к жилью и уточняющими вопросами."
+    ]
+  }
+}

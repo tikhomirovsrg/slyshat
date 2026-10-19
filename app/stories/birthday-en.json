@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "birthday-en",
+  "number": "12",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Сюрприз чуть не раскрылся",
+  "category": "Знакомства и общение",
+  "summary": "Майя увидела приглашение раньше времени. Спаси день рождения, не запутав друзей новыми объяснениями.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "secondSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Твоя коллега и подруга. Спокойно обсуждает трудные решения."
+  },
+  "contextTitle": "Подготовка для Майи",
+  "contextText": "Ты и Оливер готовите вечер для Майи. Она увидела уведомление в общем чате и думает, что друзья встречаются без неё.",
+  "taskTitle": "Сохранить заботу, а не только тайну",
+  "taskText": "Пойми, что именно известно Майе, и выбери честный способ объяснить встречу или изменить формат.",
+  "taskShort": "Майя расстроилась",
+  "skill": "Слышать косвенные признаки, причины тревоги и различать «уже знает» и «подозревает».",
+  "phraseLabels": [
+    "Случайно заметила",
+    "Догадаться",
+    "Пустить в курс"
+  ],
+  "transferIntro": "Эмма рассказывает о других сюрпризах. Выдели, кто что знает и какого действия ждёт.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "Maya caught a glimpse of the group message on my phone. She doesn't know about the birthday dinner, but she's guessed that we're planning something without her. I don't want her to feel left out just to keep a surprise. Could we let her in on part of the plan?",
+  "openingRu": "Майя мельком увидела сообщение группы на моём телефоне. Она не знает про праздничный ужин, но догадалась, что мы что-то планируем без неё. Не хочу, чтобы ради сюрприза она чувствовала себя исключённой. Может, посвятим её хотя бы в часть плана?",
+  "openingQuestion": {
+    "question": "Что Майя знает наверняка из слов Оливера?",
+    "options": [
+      "Все детали праздничного ужина",
+      "Что никто не хочет её видеть",
+      "Что друзья что-то планируют без неё"
+    ],
+    "answer": 2,
+    "explanation": "Она guessed that we're planning something without her. Про birthday dinner ещё не знает; чувство исключённости — тревога Оливера."
+  },
+  "phrases": [
+    {
+      "id": "glimpse",
+      "text": "She caught a glimpse of the message.",
+      "ru": "Она мельком увидела сообщение.",
+      "part": "caught a glimpse",
+      "why": "Catch a glimpse — кратко увидеть часть чего-то.",
+      "sound": "Ударение на glimpse; краткий a между caught и glimpse легко пропустить.",
+      "example": "I caught a glimpse of the gift.",
+      "exampleRu": "Я мельком увидел подарок."
+    },
+    {
+      "id": "guessed",
+      "text": "She's guessed that we're planning something.",
+      "ru": "Она догадалась, что мы что-то планируем.",
+      "part": "she's guessed",
+      "why": "Guess может означать догадку по признакам, а не подтверждённое знание деталей.",
+      "sound": "She's здесь she has; окончание guessed компактное, но смысл завершённого предположения важен.",
+      "example": "He's guessed where we're going.",
+      "exampleRu": "Он догадался, куда мы идём."
+    },
+    {
+      "id": "let-in",
+      "text": "Let's let her in on part of the plan.",
+      "ru": "Давай посвятим её в часть плана.",
+      "part": "let her in on",
+      "why": "Let someone in on something — поделиться закрытой информацией.",
+      "sound": "In on идут подряд; вместе они указывают на информацию, а не вход в комнату.",
+      "example": "I'll let you in on a secret.",
+      "exampleRu": "Открою тебе секрет."
+    },
+    {
+      "id": "left-out",
+      "text": "I don't want her to feel left out.",
+      "ru": "Не хочу, чтобы она чувствовала себя исключённой.",
+      "part": "feel left out",
+      "why": "Feel left out — чувствовать, что тебя забыли или не включили в общую жизнь.",
+      "sound": "Left out связывается; don't want относится ко всему неприятному результату.",
+      "example": "Ask him along so he doesn't feel left out.",
+      "exampleRu": "Позови его тоже, чтобы он не чувствовал себя лишним."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Oliver",
+      "text": "We can tell her about dinner and keep the guests a surprise, reveal everything, or ask what kind of evening she'd actually enjoy.",
+      "ru": "Можно рассказать про ужин и сохранить в тайне гостей, раскрыть всё или спросить, какой вечер ей самой понравится.",
+      "choices": [
+        {
+          "label": "Раскрыть только ужин",
+          "text": "Let's tell her we've booked dinner, but keep the guests a surprise.",
+          "next": "partial"
+        },
+        {
+          "label": "Рассказать весь план",
+          "text": "I'd rather tell her everything than leave her worried.",
+          "next": "open"
+        },
+        {
+          "label": "Дать Майе выбрать формат",
+          "text": "Let's ask how she wants to spend her birthday.",
+          "next": "choice"
+        }
+      ]
+    },
+    "partial": {
+      "speaker": "Oliver",
+      "text": "That could work. But she dislikes being the centre of attention. Should we warn her that other people will be there?",
+      "ru": "Так можно. Но она не любит быть в центре внимания. Стоит предупредить, что там будут другие люди?",
+      "choices": [
+        {
+          "label": "Обозначить размер встречи",
+          "text": "Tell her it's a small group, and ask if that sounds comfortable.",
+          "next": "partial-confirm"
+        },
+        {
+          "label": "Раскрыть список гостей",
+          "text": "Let's simply tell her who's coming.",
+          "next": "open"
+        }
+      ]
+    },
+    "partial-confirm": {
+      "speaker": "Oliver",
+      "text": "She says a small dinner sounds lovely, as long as there's no singing in the restaurant. We can keep the cake for afterwards.",
+      "ru": "Она говорит, что маленький ужин — прекрасно, если в ресторане не будут петь. Торт можно оставить на потом.",
+      "choices": [
+        {
+          "label": "Уважить условие",
+          "text": "No singing. Let's tell the others and bring the cake out at home.",
+          "next": "partial-end"
+        }
+      ]
+    },
+    "partial-end": {
+      "speaker": "Oliver",
+      "text": "She's looking forward to it now. She knows the size and the place, while the handmade card can still be a surprise.",
+      "ru": "Теперь она ждёт вечер. Знает размер компании и место, а открытка, сделанная нами, всё ещё останется сюрпризом.",
+      "choices": [],
+      "outcome": "partial"
+    },
+    "open": {
+      "speaker": "Oliver",
+      "text": "All right. I'll explain that the message was about her dinner, not a separate event. Should I ask her to help choose the food?",
+      "ru": "Хорошо. Объясню, что сообщение было о её ужине, а не о какой-то встрече без неё. Предложить ей помочь выбрать еду?",
+      "choices": [
+        {
+          "label": "Включить её в подготовку",
+          "text": "Yes. Send her the guest list and let her choose the menu.",
+          "next": "open-confirm"
+        },
+        {
+          "label": "Сначала спросить её желания",
+          "text": "Before sending the details, let's ask what she wants.",
+          "next": "choice"
+        }
+      ]
+    },
+    "open-confirm": {
+      "speaker": "Oliver",
+      "text": "She's relieved. She likes the guest list, but she'd prefer the quieter room upstairs to the main restaurant.",
+      "ru": "Она с облегчением выдохнула. Гости ей нравятся, но она предпочла бы тихую комнату наверху главному залу.",
+      "choices": [
+        {
+          "label": "Изменить помещение",
+          "text": "Let's check the upstairs room and update everyone once it's confirmed.",
+          "next": "open-end"
+        }
+      ]
+    },
+    "open-end": {
+      "speaker": "Oliver",
+      "text": "The upstairs room is available. Maya chose the food herself, and the evening feels like her celebration again.",
+      "ru": "Комната наверху свободна. Майя сама выбрала еду, и вечер снова стал её праздником.",
+      "choices": [],
+      "outcome": "open"
+    },
+    "choice": {
+      "speaker": "Oliver",
+      "text": "She's told me she's tired after a difficult week. She'd love to see us, but a whole restaurant evening feels like too much.",
+      "ru": "Она сказала, что устала после тяжёлой недели. Рада была бы нас увидеть, но целый вечер в ресторане — слишком много.",
+      "choices": [
+        {
+          "label": "Предложить короткую домашнюю встречу",
+          "text": "What about cake at home for an hour, with no pressure to stay longer?",
+          "next": "choice-confirm"
+        }
+      ]
+    },
+    "choice-confirm": {
+      "speaker": "Oliver",
+      "text": "She likes that. The restaurant will let us cancel today, and everyone can come at four instead of seven.",
+      "ru": "Ей нравится. Ресторан позволит отменить бронь сегодня, а все могут прийти в четыре вместо семи.",
+      "choices": [
+        {
+          "label": "Подтвердить новый план",
+          "text": "Let's cancel the booking and tell everyone: her place, four until five.",
+          "next": "choice-end"
+        }
+      ]
+    },
+    "choice-end": {
+      "speaker": "Oliver",
+      "text": "Done. Maya knows we're coming, and we've kept the part that matters: time with friends, at a pace she can enjoy.",
+      "ru": "Готово. Майя знает, что мы придём, и мы сохранили главное: время с друзьями в удобном для неё ритме.",
+      "choices": [],
+      "outcome": "choice"
+    }
+  },
+  "outcomes": {
+    "partial": {
+      "title": "Небольшой сюрприз без тревоги",
+      "body": "Майя знает про маленький ужин. Пения в ресторане не будет; открытка и торт дома сохранят элемент неожиданности."
+    },
+    "open": {
+      "title": "Праздник вместе с именинницей",
+      "body": "Вы раскрыли план. Майя выбрала еду и тихую комнату наверху; друзья получили обновлённое приглашение."
+    },
+    "choice": {
+      "title": "Час с друзьями дома",
+      "body": "По желанию Майи ресторан отменён. Друзья придут к ней на торт с 16:00 до 17:00."
+    }
+  },
+  "transfer": [
+    {
+      "id": "birthday-gift",
+      "speaker": "Emma",
+      "text": "Leo knows we're visiting, but he hasn't guessed that his sister is coming too. Please don't mention her name yet.",
+      "ru": "Лео знает о нашем визите, но ещё не догадался, что приедет и его сестра. Пока не упоминай её имя.",
+      "question": "Что ещё остаётся сюрпризом?",
+      "options": [
+        "Визит сестры",
+        "Сам факт встречи",
+        "Адрес квартиры"
+      ],
+      "answer": 0,
+      "explanation": "He hasn't guessed that his sister is coming too — секретом остаётся именно сестра."
+    },
+    {
+      "id": "birthday-exclude",
+      "speaker": "Emma",
+      "text": "I thought the team lunch was invitation-only, so I felt left out. It turns out the message simply went to the wrong chat.",
+      "ru": "Я думала, что на командный обед зовут избранных, и почувствовала себя лишней. Оказалось, сообщение просто ушло не в тот чат.",
+      "question": "Почему она не получила приглашение?",
+      "options": [
+        "Её намеренно исключили",
+        "Сообщение отправили не в тот чат",
+        "Обед отменили"
+      ],
+      "answer": 1,
+      "explanation": "It turns out вводит выяснившееся объяснение: wrong chat, а не намеренное исключение."
+    },
+    {
+      "id": "birthday-brief",
+      "speaker": "Emma",
+      "text": "Let Nina in on the travel plan, but don't tell her about the concert tickets. She needs to know what time to pack.",
+      "ru": "Расскажи Нине о поездке, но не о билетах на концерт. Ей нужно знать, к какому времени собраться.",
+      "question": "Какую информацию пока нужно сохранить в тайне?",
+      "options": [
+        "Время сборов",
+        "План поездки",
+        "Билеты на концерт"
+      ],
+      "answer": 2,
+      "explanation": "But don't tell her about the concert tickets отделяет секрет от информации, которой нужно поделиться."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "episode": "interview-en",
+  "level": "B2",
+  "grammar": {
+    "title": "Третье условное: другой вариант прошлого",
+    "explanation": "Третье условное описывает нереализованный вариант прошлого: if + had + третья форма, затем would have + третья форма. Оно помогает спокойно разобрать решение задним числом. Это не утверждение о том, что действительно произошло. Для реального будущего используйте другую конструкцию, например if + Present Simple, will + глагол.",
+    "examples": [
+      {
+        "text": "If I had checked the rota, I would have noticed the gap.",
+        "ru": "Если бы я проверил график, я бы заметил пробел."
+      },
+      {
+        "text": "We would have started earlier if the keys had arrived.",
+        "ru": "Мы бы начали раньше, если бы привезли ключи."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Небольшой пример на собеседовании",
+    "kind": "письмо",
+    "text": "Dear Lena, You asked how my interview went. The hardest question was not about my qualifications. The interviewer wanted an example of a decision I had made when a plan failed. I began describing a community event that our team had organised. I listed the number of visitors and the money we raised, but she gently interrupted. She wanted to know what I had done personally.\n\nI chose a smaller example. A volunteer had been due to leave at noon, but the person replacing him was delayed. I checked which jobs needed continuous cover and moved another volunteer to the welcome desk. I also asked the organiser to pause one activity for ten minutes. This meant that nobody had to miss an appointment or work without a break.\n\nThe interviewer then asked what I would change next time. I admitted that I had not checked the replacement volunteer's arrival time in advance. If I had confirmed it earlier, I would have spotted the problem before the event began.\n\nI do not know whether I will get the job. However, the conversation helped me understand that a convincing answer does not need to make me sound responsible for everything. A clear account of one decision, its limits and its effect can show more than a dramatic story about the whole team. Best, Chris"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: какой вывод делает Крис?",
+      "answer": "Конкретное личное решение убедительнее общих успехов команды",
+      "explanation": "Интервьюер просит личный вклад; Крис видит ценность ограниченного, ясного примера.",
+      "options": [
+        "Нужно присваивать себе результаты команды",
+        "Лучше избегать рассказов об ошибках",
+        "Конкретное личное решение убедительнее общих успехов команды"
+      ],
+      "id": "interview-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что Крис попросил организатора сделать?",
+      "answer": "Остановить одно занятие на десять минут",
+      "explanation": "Он попросил pause one activity for ten minutes.",
+      "options": [
+        "Остановить одно занятие на десять минут",
+        "Отменить всё мероприятие",
+        "Продлить смену уходящего волонтёра"
+      ],
+      "id": "interview-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему признание ошибки уместно в ответе?",
+      "answer": "Оно показывает, что Крис понял, как улучшить подготовку",
+      "explanation": "Крис называет конкретную проверку, которая заранее обнаружила бы проблему.",
+      "options": [
+        "Оно гарантирует предложение работы",
+        "Оно показывает, что Крис понял, как улучшить подготовку",
+        "Оно доказывает, что задержки всегда неизбежны"
+      ],
+      "id": "interview-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: If I ___ the rota, I would have noticed the gap.",
+      "answer": "had checked",
+      "explanation": "В условии о нереализованном прошлом используется Past Perfect.",
+      "options": [
+        "had checked",
+        "would check",
+        "have checked"
+      ],
+      "id": "interview-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите have или had: часть результата третьего условного.",
+      "answer": "have",
+      "explanation": "Результат строится как would have + третья форма.",
+      "text": "We would ___ avoided the delay.",
+      "id": "interview-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите результат нереального прошлого условия.",
+      "answer": "I would have asked for help",
+      "explanation": "Would have + asked описывает действие, которое могло бы произойти.",
+      "words": [
+        "help",
+        "have",
+        "I",
+        "asked",
+        "would",
+        "for"
+      ],
+      "id": "interview-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Переформулируйте как нереальное условие о прошлом. Начните If I had; используйте confirm it earlier и spot the problem.",
+      "answer": "If I had confirmed it earlier I would have spotted the problem",
+      "explanation": "If + had confirmed описывает нереализованное условие; would have spotted — его воображаемый результат.",
+      "text": "I did not confirm it earlier, so I did not spot the problem.",
+      "accepted": [
+        "If I had confirmed it earlier, I would have spotted the problem."
+      ],
+      "id": "interview-en-study-7"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает take responsibility for a decision?",
+      "answer": "Признать свою ответственность за решение",
+      "explanation": "Речь о собственной роли и ответственности, а не о присвоении работы других.",
+      "options": [
+        "Скрыть последствия решения",
+        "Признать свою ответственность за решение",
+        "Передать решение случайному человеку"
+      ],
+      "id": "interview-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Какое предложение относится к возможному будущему, а не альтернативному прошлому?",
+      "answer": "If I check the rota, I will notice any gaps.",
+      "explanation": "Present Simple после if и will в результате описывают реальную будущую возможность.",
+      "options": [
+        "If I had checked, I would have noticed.",
+        "I would have noticed if I had checked.",
+        "If I check the rota, I will notice any gaps."
+      ],
+      "id": "interview-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Подготовьте письменный ответ на вопрос собеседования о сложном решении. Кратко опишите ситуацию, собственную ответственность, конкретное действие и наблюдаемый результат. Отделите вклад команды от своего. Закончите выводом о подготовке на будущее и одним третьим условным предложением о том, что вы сделали бы иначе.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

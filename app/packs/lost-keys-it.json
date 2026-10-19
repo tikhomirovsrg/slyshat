@@ -1,0 +1,116 @@
+{
+  "episode": "lost-keys-it",
+  "level": "A2",
+  "grammar": {
+    "title": "Passato prossimo с essere и последовательность",
+    "explanation": "Многие глаголы движения и изменения состояния образуют passato prossimo с essere: sono andato, è arrivata, siamo usciti. Причастие согласуется с подлежащим в роде и числе. Это не правило для любого движения: например, camminare обычно употребляется с avere. Для последовательности используйте prima, poi, alla fine.",
+    "examples": [
+      {
+        "text": "Lucia è uscita alle nove.",
+        "ru": "Лючия вышла в девять."
+      },
+      {
+        "text": "Siamo tornati al mercato.",
+        "ru": "Мы вернулись на рынок."
+      },
+      {
+        "text": "I ragazzi sono arrivati presto.",
+        "ru": "Ребята приехали рано."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Возвращение по своим следам",
+    "kind": "рассказ",
+    "text": "Questa mattina Lucia è uscita di casa per comprare il pane. Prima è andata al bancomat, poi ha incontrato un’amica vicino al ponte. Hanno parlato per dieci minuti e Lucia ha mostrato una fotografia sul telefono. Quando è arrivata al forno, non ha trovato il portafoglio. Non era nella borsa né nella tasca del cappotto. Lucia è tornata subito al ponte, ma non ha visto niente. Alla fine ha telefonato all’amica. Il portafoglio era nella borsa dell’amica: Lucia lo ha lasciato lì mentre cercava il telefono. Le due amiche si sono incontrate di nuovo al forno. Questa volta hanno comprato anche due piccoli dolci."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Лючия говорит о себе. Дополните причастием tornare.",
+      "answer": "tornata",
+      "explanation": "С essere причастие согласуется с говорящей: Lucia → tornata.",
+      "text": "Sono ___ al ponte.",
+      "id": "lost-keys-it-q1"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предложение.",
+      "answer": "I ragazzi sono arrivati presto.",
+      "explanation": "Ragazzi — мужской род множественного числа: sono arrivati.",
+      "words": [
+        "arrivati",
+        "I",
+        "presto.",
+        "sono",
+        "ragazzi"
+      ],
+      "id": "lost-keys-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что такое un portafoglio?",
+      "answer": "Un oggetto per tenere soldi e carte.",
+      "explanation": "Portafoglio — кошелёк; forno здесь — булочная, ponte — мост.",
+      "options": [
+        "Un oggetto per tenere soldi e carte.",
+        "Un negozio che vende pane.",
+        "Un posto per attraversare il fiume."
+      ],
+      "id": "lost-keys-it-q3"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какова главная тема текста?",
+      "answer": "La ricerca di un portafoglio.",
+      "explanation": "Лючия восстанавливает маршрут, чтобы найти кошелёк.",
+      "options": [
+        "La ricerca di un portafoglio.",
+        "La scelta di un nuovo telefono.",
+        "L’apertura di una panetteria."
+      ],
+      "id": "lost-keys-it-q4"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Куда Лючия пошла сразу после выхода из дома?",
+      "answer": "Al bancomat.",
+      "explanation": "Маркер prima вводит первый пункт маршрута: банкомат.",
+      "options": [
+        "Al bancomat.",
+        "Al forno.",
+        "A casa dell’amica."
+      ],
+      "id": "lost-keys-it-q5"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что объясняет отсутствие кошелька на мосту?",
+      "answer": "Il portafoglio era rimasto con l’amica.",
+      "explanation": "Кошелёк был в сумке подруги, поэтому возвращение к мосту не помогло.",
+      "options": [
+        "Il portafoglio era rimasto con l’amica.",
+        "Lucia non aveva portato il portafoglio.",
+        "Il fornaio aveva preso il portafoglio."
+      ],
+      "id": "lost-keys-it-q6"
+    }
+  ],
+  "writing": {
+    "prompt": "Опишите другу, как вы потеряли и нашли вещь: три места по маршруту, момент обнаружения пропажи и решение. Пишите от своего лица.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Есть начало маршрута, обнаружение пропажи и развязка.",
+      "Использованы минимум две формы passato prossimo с essere.",
+      "Причастия согласованы с выбранным рассказчиком.",
+      "Последовательность ясна благодаря prima, poi и alla fine."
+    ]
+  }
+}

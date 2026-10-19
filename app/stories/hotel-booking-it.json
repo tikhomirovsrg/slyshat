@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "id": "hotel-booking-it",
+  "number": "05",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Один номер, две ночи",
+  "category": "Поездки",
+  "summary": "В гостинице осталось два разных номера. Разберись с завтраком, шумом и отменой брони.",
+  "duration": "15–20 минут",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия собирает информацию для вашей поездки."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Бронирование перед поездкой",
+  "contextText": "Вы с Джулией едете на выставку в Бельмаре. Ты выбираешь двухместный номер на две ночи и хочешь тишины.",
+  "taskTitle": "Уложиться в €180 за две ночи",
+  "taskText": "Уточни полную цену и условия отмены. Можно выбрать тихий номер, бюджетный тариф или другое место.",
+  "taskShort": "Две ночи · тихо · до €180",
+  "skill": "Слышать включённые услуги и отличать цену за ночь от полной стоимости.",
+  "phraseLabels": [
+    "За ночь",
+    "Включено",
+    "Бесплатная отмена"
+  ],
+  "transferIntro": "Марко прислал условия других вариантов жилья. Проверь, что оплачивается отдельно и когда возможна отмена.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Ho chiamato l’albergo vicino alla mostra. Una camera sul cortile costa novanta euro a notte, con colazione inclusa. Quella sulla strada costa settanta, ma la colazione si paga a parte. Possiamo cancellare gratuitamente solo la camera più cara, fino a giovedì. Per entrambe il bagno è privato e l’arrivo è previsto dopo le tre.",
+  "openingRu": "Я позвонила в гостиницу рядом с выставкой. Номер во двор стоит девяносто евро за ночь, завтрак включён. Номер на улицу стоит семьдесят, но завтрак оплачивается отдельно. Бесплатная отмена доступна только для более дорогого номера, до четверга. В обоих есть собственная ванная, заезд после трёх.",
+  "openingQuestion": {
+    "question": "В каком номере завтрак входит в цену?",
+    "options": [
+      "В номере во двор",
+      "В номере на улицу",
+      "В обоих номерах"
+    ],
+    "answer": 0,
+    "explanation": "Sul cortile — во двор; сразу после цены звучит con colazione inclusa."
+  },
+  "phrases": [
+    {
+      "id": "hotel-booking-notte",
+      "text": "Costa novanta euro a notte.",
+      "ru": "Стоит девяносто евро за ночь.",
+      "part": "a notte",
+      "why": "A notte — цена одной ночи. Для полной суммы нужно учесть продолжительность проживания.",
+      "sound": "Лови a notte после цены: это важнее, чем узнавание отдельного числа.",
+      "example": "Il parcheggio costa dieci euro a notte.",
+      "exampleRu": "Парковка стоит десять евро за ночь."
+    },
+    {
+      "id": "hotel-booking-inclusa",
+      "text": "La colazione è inclusa.",
+      "ru": "Завтрак включён.",
+      "part": "è inclusa",
+      "why": "Inclusa означает включена в стоимость. A parte — оплачивается отдельно.",
+      "sound": "Ударение в inclusa на clu; не путай с esclusa — исключена.",
+      "example": "La cena non è inclusa nel prezzo.",
+      "exampleRu": "Ужин не включён в цену."
+    },
+    {
+      "id": "hotel-booking-cancellare",
+      "text": "Possiamo cancellare gratuitamente fino a giovedì.",
+      "ru": "Можем бесплатно отменить до четверга.",
+      "part": "cancellare gratuitamente",
+      "why": "Gratuitamente говорит об отсутствии платы, а fino a ограничивает срок.",
+      "sound": "Длинное gratuitamente можно узнать по началу gratui; затем ищи день после fino a.",
+      "example": "Posso cancellare la prenotazione?",
+      "exampleRu": "Можно отменить бронирование?"
+    },
+    {
+      "id": "hotel-booking-cortile",
+      "text": "Vorrei una camera sul cortile.",
+      "ru": "Я бы хотел номер с окнами во двор.",
+      "part": "sul cortile",
+      "why": "Sul cortile описывает сторону, куда выходят окна.",
+      "sound": "У cortile ударение на ti; запомни блок camera sul cortile целиком.",
+      "example": "La finestra dà sul giardino.",
+      "exampleRu": "Окно выходит в сад."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "La camera sul cortile costa centottanta euro per due notti. Quella sulla strada costa centoquaranta. Che cosa vuoi controllare?",
+      "ru": "Номер во двор стоит 180 евро за две ночи. На улицу — 140. Что хочешь уточнить?",
+      "choices": [
+        {
+          "label": "Уточнить тишину",
+          "text": "La camera sul cortile è tranquilla?",
+          "next": "quiet"
+        },
+        {
+          "label": "Проверить завтрак дешёвого номера",
+          "text": "Quanto costa la colazione a parte?",
+          "next": "breakfast"
+        },
+        {
+          "label": "Узнать о другом жилье",
+          "text": "C’è un’alternativa vicino alla mostra?",
+          "next": "alternative"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "quiet": {
+      "text": "Sì, non dà sulla strada. È al secondo piano e c’è l’ascensore. La cancellazione è gratuita fino a giovedì alle diciotto.",
+      "ru": "Да, окна не на улицу. Это второй этаж, есть лифт. Отмена бесплатна до четверга, 18:00.",
+      "choices": [
+        {
+          "label": "Уточнить поздний заезд",
+          "text": "Arriviamo alle nove di sera. Va bene?",
+          "next": "arrival"
+        },
+        {
+          "label": "Выбрать экономный тариф",
+          "text": "Preferisco spendere meno.",
+          "next": "budget"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "arrival": {
+      "text": "Sì. La reception chiude alle dieci. Se arriviamo dopo, dobbiamo chiedere un codice per la porta.",
+      "ru": "Да. Стойка регистрации закрывается в десять. Если приедем позже, нужно запросить код от двери.",
+      "choices": [
+        {
+          "label": "Выбрать тихий номер",
+          "text": "Prenotiamo quella sul cortile e avvisiamo dell’orario.",
+          "next": "quiet-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "breakfast": {
+      "text": "Sono otto euro a persona al giorno. Per due persone e due mattine fanno trentadue euro in più.",
+      "ru": "Это восемь евро с человека в день. За двоих на два утра получится ещё 32 евро.",
+      "choices": [
+        {
+          "label": "Отказаться от завтрака",
+          "text": "Facciamo colazione al bar. Ci sono altri costi?",
+          "next": "budget"
+        },
+        {
+          "label": "Предпочесть включённый завтрак",
+          "text": "Allora scelgo la camera sul cortile.",
+          "next": "quiet"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "budget": {
+      "text": "No, il totale resta centoquaranta euro. Però il pagamento non è rimborsabile e il sabato sera la strada è rumorosa.",
+      "ru": "Нет, итог остаётся 140 евро. Но оплата невозвратная, и в субботу вечером на улице шумно.",
+      "choices": [
+        {
+          "label": "Принять условия ради экономии",
+          "text": "Va bene. Porterò i tappi per le orecchie.",
+          "next": "budget-end"
+        },
+        {
+          "label": "Поискать другой вариант",
+          "text": "Il rumore mi preoccupa. Vediamo l’alternativa.",
+          "next": "alternative"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "alternative": {
+      "text": "C’è una pensione a dieci minuti a piedi. Costa centosessanta euro in totale, senza colazione, ma ha solo camere con letti separati.",
+      "ru": "Есть пансион в десяти минутах пешком. Всего 160 евро без завтрака, но остались только номера с раздельными кроватями.",
+      "choices": [
+        {
+          "label": "Уточнить отмену",
+          "text": "Possiamo cancellare anche lì?",
+          "next": "pension"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "pension": {
+      "text": "Sì, fino a mercoledì. È in una via pedonale e possiamo lasciare i bagagli prima del check-in.",
+      "ru": "Да, до среды. Он на пешеходной улице, и мы можем оставить багаж до заселения.",
+      "choices": [
+        {
+          "label": "Выбрать пансион",
+          "text": "I letti separati vanno bene. Prenotiamo lì.",
+          "next": "pension-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "quiet-end": {
+      "text": "Confermo due notti, camera sul cortile e colazione per due. Il totale è centottanta euro.",
+      "ru": "Подтверждаю две ночи, номер во двор и завтрак на двоих. Итог — 180 евро.",
+      "choices": [],
+      "outcome": "quiet",
+      "speaker": "Giulia"
+    },
+    "budget-end": {
+      "text": "Prenoto la camera sulla strada senza colazione. Ti mando le condizioni prima del pagamento.",
+      "ru": "Бронирую номер на улицу без завтрака. Пришлю условия до оплаты.",
+      "choices": [],
+      "outcome": "budget",
+      "speaker": "Giulia"
+    },
+    "pension-end": {
+      "text": "La pensione ha confermato. Due letti separati, centosessanta euro e cancellazione entro mercoledì.",
+      "ru": "Пансион подтвердил. Две отдельные кровати, 160 евро, отмена до среды.",
+      "choices": [],
+      "outcome": "pension",
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "quiet": {
+      "title": "Тихий номер с завтраком",
+      "body": "€180 за две ночи для двоих. Отмена бесплатна до четверга, 18:00; о заезде в 21:00 предупредили."
+    },
+    "budget": {
+      "title": "Экономия с условиями",
+      "body": "€140 за две ночи без завтрака. Ты учёл шум с улицы и невозвратную оплату."
+    },
+    "pension": {
+      "title": "Третье предложение",
+      "body": "Пансион на пешеходной улице стоит €160. Кровати раздельные, завтрак не включён, отмена до среды."
+    }
+  },
+  "transfer": [
+    {
+      "text": "L’appartamento costa sessanta euro a notte. La pulizia finale costa trenta euro una volta sola. Per tre notti paghi duecentodieci euro.",
+      "ru": "Квартира стоит шестьдесят евро за ночь. Финальная уборка — тридцать евро один раз. За три ночи заплатишь 210 евро.",
+      "question": "Как оплачивается уборка?",
+      "options": [
+        "Каждую ночь",
+        "Один раз за проживание",
+        "Она бесплатна"
+      ],
+      "answer": 1,
+      "explanation": "Una volta sola — только один раз. Плату за уборку не умножают на число ночей.",
+      "id": "it-hotel-booking-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Il deposito bagagli è incluso, ma il parcheggio si paga a parte. Non serve prenotarlo.",
+      "ru": "Хранение багажа включено, но парковка оплачивается отдельно. Бронировать её не нужно.",
+      "question": "Какая услуга включена?",
+      "options": [
+        "Хранение багажа",
+        "Парковка",
+        "Обе услуги"
+      ],
+      "answer": 0,
+      "explanation": "Deposito bagagli è incluso — хранение багажа включено. A parte относится к парковке.",
+      "id": "it-hotel-booking-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Puoi cancellare gratuitamente entro lunedì. Da martedì perdi l’acconto, anche se la camera non è ancora stata pagata tutta.",
+      "ru": "Можно бесплатно отменить до понедельника включительно. Со вторника задаток теряется, даже если номер ещё не оплачен полностью.",
+      "question": "Что произойдёт при отмене во вторник?",
+      "options": [
+        "Вернут весь задаток",
+        "Потребуют оплатить завтрак",
+        "Задаток не вернут"
+      ],
+      "answer": 2,
+      "explanation": "Da martedì perdi l’acconto — со вторника теряешь задаток.",
+      "id": "it-hotel-booking-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

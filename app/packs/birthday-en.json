@@ -1,0 +1,153 @@
+{
+  "episode": "birthday-en",
+  "level": "B1",
+  "grammar": {
+    "title": "Present Perfect с already, yet и just",
+    "explanation": "Present Perfect образуется из have/has + третья форма глагола и связывает прошлое с настоящим результатом. Already означает «уже», just — «только что» и обычно стоит между have/has и основным глаголом. Yet в вопросах и отрицаниях часто ставится в конце и означает «уже / ещё». С конкретным законченным временем, например yesterday, обычно нужен Past Simple.",
+    "examples": [
+      {
+        "text": "We have already booked a table.",
+        "ru": "Мы уже забронировали столик."
+      },
+      {
+        "text": "She has not seen the invitation yet.",
+        "ru": "Она ещё не видела приглашение."
+      },
+      {
+        "text": "Have you told her yet?",
+        "ru": "Ты уже ей сказал?"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Праздник для именинницы",
+    "kind": "рассказ",
+    "text": "For her sister's birthday, Olivia wanted to organise a surprise that everyone would remember. She booked a large table at a lively restaurant and invited twelve people. Her sister, Grace, knew nothing about the plan. Olivia imagined the moment when Grace would enter and see all her friends.\n\nA week before the birthday, Grace mentioned that work had been exhausting. She hoped to spend the weekend quietly, perhaps walking by the river with one or two people. Olivia suddenly realised that the perfect celebration in her imagination might not be perfect for her sister.\n\nShe spoke to Grace without revealing every detail. She explained that some friends wanted to celebrate with her and asked what would feel comfortable. Grace smiled with relief. She wanted to see everyone, but not in a crowded restaurant. Together, they chose an afternoon picnic in a nearby garden. People could arrive at different times, and Grace could leave whenever she needed to.\n\nOlivia changed the booking and told the guests about the new plan. She kept one small surprise: each friend would bring a photograph and write a memory on the back. On the day, Grace spent an hour looking through them. The celebration was quieter than Olivia had planned, but it felt much more personal."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: почему Оливия меняет праздник?",
+      "answer": "Она учитывает реальные желания сестры",
+      "explanation": "Грейс устала; формат меняют после разговора о том, что ей комфортно.",
+      "options": [
+        "Она учитывает реальные желания сестры",
+        "Она хочет пригласить больше людей",
+        "Она забыла оплатить ресторан"
+      ],
+      "id": "birthday-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: какой сюрприз остаётся?",
+      "answer": "Фотографии с воспоминаниями друзей",
+      "explanation": "Каждый друг приносит фотографию и записывает воспоминание на обороте.",
+      "options": [
+        "Поездка за город",
+        "Песни в ресторане",
+        "Фотографии с воспоминаниями друзей"
+      ],
+      "id": "birthday-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: что значит улыбка облегчения Грейс?",
+      "answer": "Ей важно иметь возможность повлиять на формат",
+      "explanation": "После вопроса о комфорте Грейс говорит, что хочет видеть друзей, но в другом месте.",
+      "options": [
+        "Она ждала дорогого подарка",
+        "Ей важно иметь возможность повлиять на формат",
+        "Она не хочет видеть ни одного друга"
+      ],
+      "id": "birthday-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: Olivia has already ___ the guests.",
+      "answer": "told",
+      "explanation": "После has нужна третья форма: tell — told — told.",
+      "options": [
+        "tell",
+        "told",
+        "telling"
+      ],
+      "id": "birthday-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите yet или already: «ещё не».",
+      "answer": "yet",
+      "explanation": "В отрицательном предложении yet в конце означает «ещё».",
+      "text": "Grace has not seen the photographs ___.",
+      "id": "birthday-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите вопрос.",
+      "answer": "Have you invited everyone yet",
+      "explanation": "Вопрос Present Perfect начинается с have, далее подлежащее и третья форма.",
+      "words": [
+        "everyone",
+        "yet",
+        "invited",
+        "Have",
+        "you"
+      ],
+      "id": "birthday-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Объедините в одно предложение с already. Начните We have.",
+      "answer": "We have already booked the garden",
+      "explanation": "Have + already + booked выражает уже имеющийся результат.",
+      "text": "The garden is booked. We did it earlier.",
+      "id": "birthday-en-study-7",
+      "accepted": []
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает feel left out?",
+      "answer": "Чувствовать, что тебя не включили в общее дело",
+      "explanation": "Left out описывает ощущение исключённости.",
+      "options": [
+        "Чувствовать, что тебя не включили в общее дело",
+        "Радоваться отмене встречи",
+        "Хотеть первым уйти домой"
+      ],
+      "id": "birthday-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите время с yesterday: Yesterday she ___ the booking.",
+      "answer": "changed",
+      "explanation": "Yesterday обозначает завершённое время, поэтому используется Past Simple.",
+      "options": [
+        "has changed",
+        "have changed",
+        "changed"
+      ],
+      "id": "birthday-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите друзьям письмо об изменении сюрприза на день рождения. Объясните желания именинника, новый формат и уже выполненные приготовления. Укажите, что ещё не сделано, и попросите каждого о конкретной помощи. Используйте Present Perfect с already и yet, а также один Past Simple с указанием времени.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

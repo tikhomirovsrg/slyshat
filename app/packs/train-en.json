@@ -1,0 +1,115 @@
+{
+  "episode": "train-en",
+  "level": "A2",
+  "grammar": {
+    "title": "Сравнение вариантов: cheaper, faster, more comfortable",
+    "explanation": "Короткие прилагательные обычно образуют сравнительную степень с -er: cheap → cheaper. У длинных используем more: more comfortable. После сравнения с конкретным вторым вариантом ставим than. Цена и скорость — разные характеристики: cheaper не означает faster.",
+    "examples": [
+      {
+        "text": "The bus is cheaper than the train.",
+        "ru": "Автобус дешевле поезда."
+      },
+      {
+        "text": "The direct train is more comfortable.",
+        "ru": "Прямой поезд удобнее."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Два билета к морю",
+    "kind": "рассказ",
+    "text": "Tom wants to visit his sister by the sea on Saturday. There are two ways to travel. A direct train costs twenty pounds and takes one hour. A bus costs twelve pounds, but the journey takes two hours. Tom has a small bag and a book. His sister finishes work at one, so he does not need to arrive early. He chooses the bus at ten and buys a sandwich for the journey. At twelve he reaches the town. He walks along the beach before meeting his sister. The cheaper ticket gives him enough money to buy them both lunch."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: почему Том выбирает автобус?",
+      "answer": "Он может сэкономить, потому что не спешит",
+      "explanation": "Сестра работает до часа; автобус прибывает в двенадцать и стоит дешевле.",
+      "options": [
+        "Он хочет приехать раньше всех",
+        "Ему нужен самый быстрый маршрут",
+        "Он может сэкономить, потому что не спешит"
+      ],
+      "id": "train-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: сколько длится поездка на автобусе?",
+      "answer": "Два часа",
+      "explanation": "В тексте сказано: the journey takes two hours.",
+      "options": [
+        "Один час",
+        "Два часа",
+        "Три часа"
+      ],
+      "id": "train-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: что Том может сделать благодаря дешёвому билету?",
+      "answer": "Угостить сестру обедом",
+      "explanation": "Сэкономленных денег хватает на обед для двоих: buy them both lunch.",
+      "options": [
+        "Угостить сестру обедом",
+        "Купить обратный авиабилет",
+        "Провести ночь в отеле"
+      ],
+      "id": "train-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Сравните цены: The bus is ___ than the train.",
+      "answer": "cheaper",
+      "explanation": "Cheap образует сравнительную степень cheaper.",
+      "options": [
+        "cheap",
+        "cheaper",
+        "more cheap"
+      ],
+      "id": "train-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "vocabulary",
+      "prompt": "Впишите английское прилагательное со значением «прямой, без пересадки».",
+      "answer": "direct",
+      "explanation": "Direct train — поезд без пересадки.",
+      "text": "I do not want to change trains. I need a ___ train.",
+      "id": "train-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите сравнение.",
+      "answer": "The train is faster than the bus",
+      "explanation": "Порядок: предмет сравнения + is + faster than + второй предмет.",
+      "words": [
+        "faster",
+        "bus",
+        "The",
+        "than",
+        "is",
+        "train",
+        "the"
+      ],
+      "id": "train-en-study-6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите другу о двух маршрутах на выходные. Укажите цену, время отправления и длительность каждого. Сравните маршруты минимум два раза, выберите один и объясните, почему он подходит вашим планам. Завершите предложением, где встретиться.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

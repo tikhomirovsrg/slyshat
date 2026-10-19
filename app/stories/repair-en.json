@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "repair-en",
+  "number": "11",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Капля под раковиной",
+  "category": "Повседневная жизнь",
+  "summary": "В квартире появилась протечка. Вместе с Эммой согласуй доступ мастера и пойми, что сделать до его прихода.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Твоя коллега и подруга. Спокойно обсуждает трудные решения."
+  },
+  "secondSpeaker": {
+    "id": "Leo",
+    "name": "Лео",
+    "bio": "Коллега Эммы: помогает с проектами и собирает друзей на выходных."
+  },
+  "contextTitle": "Сообщение от соседки",
+  "contextText": "Эмма зашла полить твои растения и заметила воду под кухонной раковиной. Ты на работе до 17:00, она может остаться только до полудня.",
+  "taskTitle": "Организовать ремонт без неопределённого ожидания",
+  "taskText": "Уточни состояние протечки, выбери окно приезда и договорись, кто встретит мастера.",
+  "taskShort": "Ты дома после 17:00",
+  "skill": "Понимать условные действия, временные интервалы и ответственность за доступ.",
+  "phraseLabels": [
+    "Капает",
+    "Перекрыть",
+    "В промежутке"
+  ],
+  "transferIntro": "Лео согласует обслуживание в других местах. Слушай, кто должен быть на месте и в какой промежуток.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "There's a slow drip under your kitchen sink. I've put a bowl underneath, but it fills up in about an hour. The building manager can send someone between ten and twelve, or after five this evening. He asked whether anyone could let them in and whether the water has been turned off.",
+  "openingRu": "Под кухонной раковиной медленно капает. Я поставила миску, но она наполняется примерно за час. Управляющий может прислать мастера между десятью и двенадцатью или сегодня после пяти. Он спросил, сможет ли кто-нибудь впустить мастера и перекрыта ли вода.",
+  "openingQuestion": {
+    "question": "Какие варианты приезда назвала Эмма?",
+    "options": [
+      "Ровно в десять или ровно в пять",
+      "Между 10:00 и 12:00 или после 17:00",
+      "Только завтра утром"
+    ],
+    "answer": 1,
+    "explanation": "Between ten and twelve — окно в два часа, after five — после пяти, а не ровно в пять."
+  },
+  "phrases": [
+    {
+      "id": "drip",
+      "text": "There's a slow drip under the sink.",
+      "ru": "Под раковиной медленно капает.",
+      "part": "a slow drip",
+      "why": "Drip — отдельные капли или медленная течь; слово не означает сильный поток.",
+      "sound": "Короткое drip отличается от drop; контекст sink помогает понять проблему.",
+      "example": "The tap has been dripping all night.",
+      "exampleRu": "Из крана капало всю ночь."
+    },
+    {
+      "id": "turn-off",
+      "text": "Has the water been turned off?",
+      "ru": "Вода перекрыта?",
+      "part": "turned off",
+      "why": "Turn off — отключить подачу; здесь речь о воде.",
+      "sound": "Off несёт результат действия; не путай с on.",
+      "example": "Could you turn the heating off?",
+      "exampleRu": "Можешь выключить отопление?"
+    },
+    {
+      "id": "between",
+      "text": "Someone can come between ten and twelve.",
+      "ru": "Мастер может прийти между десятью и двенадцатью.",
+      "part": "between ten and twelve",
+      "why": "Between задаёт интервал, поэтому нужно быть доступным в течение окна.",
+      "sound": "Слушай оба числа по сторонам and, а не только первое.",
+      "example": "The delivery is due between two and four.",
+      "exampleRu": "Доставку ждут между двумя и четырьмя."
+    },
+    {
+      "id": "let-in",
+      "text": "Could you let the plumber in?",
+      "ru": "Можешь впустить сантехника?",
+      "part": "let the plumber in",
+      "why": "Let someone in — обеспечить человеку доступ внутрь.",
+      "sound": "In может находиться далеко от let; дослушай, кого и куда впускают.",
+      "example": "I'll let the electrician in.",
+      "exampleRu": "Я впущу электрика."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Emma",
+      "text": "The manager says the small valve under the sink controls this tap. Would you like me to turn it off while we arrange the visit?",
+      "ru": "Управляющий говорит, что маленький вентиль под раковиной перекрывает этот кран. Перекрыть его, пока договариваемся о визите?",
+      "choices": [
+        {
+          "label": "Выбрать утро с Эммой",
+          "text": "Yes, please. Could you stay for the morning visit?",
+          "next": "morning"
+        },
+        {
+          "label": "Запланировать вечер с собой",
+          "text": "Please turn it off. I'll meet the plumber after five.",
+          "next": "evening"
+        },
+        {
+          "label": "Попросить управляющего встретить мастера",
+          "text": "Yes. Could the manager let the plumber in instead?",
+          "next": "manager"
+        }
+      ]
+    },
+    "morning": {
+      "speaker": "Emma",
+      "text": "I can stay until twelve, but I have to leave then. If they're delayed, I won't be able to wait longer.",
+      "ru": "Могу остаться до двенадцати, но потом нужно уйти. Если они задержатся, дольше ждать не смогу.",
+      "choices": [
+        {
+          "label": "Согласовать крайнее время",
+          "text": "Could we ask them to call you by eleven if they're running late?",
+          "next": "morning-confirm"
+        },
+        {
+          "label": "Выбрать вечер без ожидания Эммы",
+          "text": "Let's book the evening instead so you don't have to wait.",
+          "next": "evening"
+        }
+      ]
+    },
+    "morning-confirm": {
+      "speaker": "Emma",
+      "text": "They've agreed to call by eleven. If they can't arrive before twelve, they'll move the visit to this evening and contact you.",
+      "ru": "Согласились позвонить до одиннадцати. Если не успеют приехать до двенадцати, перенесут визит на вечер и свяжутся с тобой.",
+      "choices": [
+        {
+          "label": "Подтвердить план и резерв",
+          "text": "Great. You wait until twelve at the latest; I'll handle any evening visit.",
+          "next": "morning-end"
+        }
+      ]
+    },
+    "morning-end": {
+      "speaker": "Emma",
+      "text": "The valve is off and the drip has stopped. I'll stay for the morning slot and message you once the plumber arrives.",
+      "ru": "Вентиль закрыт, капать перестало. Останусь на утреннее окно и напишу, когда придёт мастер.",
+      "choices": [],
+      "outcome": "morning"
+    },
+    "evening": {
+      "speaker": "Emma",
+      "text": "They can offer a window from five thirty to seven. You'll need to keep the cupboard under the sink clear.",
+      "ru": "Они предлагают промежуток с 17:30 до 19:00. Нужно освободить шкафчик под раковиной.",
+      "choices": [
+        {
+          "label": "Уточнить, чем можно пользоваться",
+          "text": "Can I use the bathroom tap while the kitchen water is off?",
+          "next": "evening-confirm"
+        },
+        {
+          "label": "Передать встречу управляющему",
+          "text": "Actually, could the manager handle the visit while I'm out?",
+          "next": "manager"
+        }
+      ]
+    },
+    "evening-confirm": {
+      "speaker": "Emma",
+      "text": "The manager says yes; this valve only affects the kitchen tap. I've moved the cleaning bottles out of the cupboard already.",
+      "ru": "Управляющий говорит, можно: этот вентиль перекрывает только кухонный кран. Я уже убрала чистящие средства из шкафчика.",
+      "choices": [
+        {
+          "label": "Подтвердить окно и доступ",
+          "text": "I'll be home by five and keep the kitchen clear until they arrive.",
+          "next": "evening-end"
+        }
+      ]
+    },
+    "evening-end": {
+      "speaker": "Emma",
+      "text": "The evening slot is booked under your number. The plumber will call you fifteen minutes before arriving.",
+      "ru": "Вечернее окно записали на твой номер. Сантехник позвонит за пятнадцать минут до приезда.",
+      "choices": [],
+      "outcome": "evening"
+    },
+    "manager": {
+      "speaker": "Emma",
+      "text": "He can do that, but he needs your permission by text. He'll use the spare key and stay while the plumber works.",
+      "ru": "Он может, но нужно твоё разрешение сообщением. Он воспользуется запасным ключом и останется на время ремонта.",
+      "choices": [
+        {
+          "label": "Согласовать ограниченный доступ",
+          "text": "I'll text permission for this repair and ask him to lock up afterwards.",
+          "next": "manager-confirm"
+        }
+      ]
+    },
+    "manager-confirm": {
+      "speaker": "Emma",
+      "text": "Good. He's chosen the morning slot and will send you a photo of the repair. I'll leave once he arrives.",
+      "ru": "Хорошо. Он выбрал утреннее окно и пришлёт тебе фотографию ремонта. Я уйду, когда он придёт.",
+      "choices": [
+        {
+          "label": "Подтвердить передачу ответственности",
+          "text": "Thanks. Please hand over to him, and I'll follow up this afternoon.",
+          "next": "manager-end"
+        }
+      ]
+    },
+    "manager-end": {
+      "speaker": "Emma",
+      "text": "He's here now, and the water is off. I'll leave the bowl in place until the plumber has checked everything.",
+      "ru": "Он уже здесь, вода перекрыта. Оставлю миску на месте, пока сантехник всё не проверит.",
+      "choices": [],
+      "outcome": "manager"
+    }
+  },
+  "outcomes": {
+    "morning": {
+      "title": "Утренний визит с резервом",
+      "body": "Эмма ждёт до 12:00. При задержке ей позвонят до 11:00 и перенесут визит на вечер к тебе."
+    },
+    "evening": {
+      "title": "Мастер вечером",
+      "body": "Ты встретишь сантехника между 17:30 и 19:00. Кухонная вода перекрыта, шкафчик освобождён, звонок будет за 15 минут."
+    },
+    "manager": {
+      "title": "Встречает управляющий",
+      "body": "Ты согласовал доступ на этот ремонт. Управляющий впустит мастера, останется с ним и закроет квартиру после работы."
+    }
+  },
+  "transfer": [
+    {
+      "id": "repair-delivery",
+      "speaker": "Leo",
+      "text": "The courier can come between one and three, but someone needs to be there for the whole window, not just at one.",
+      "ru": "Курьер может приехать между часом и тремя, но кто-то должен быть на месте весь промежуток, а не только в час.",
+      "question": "Сколько времени нужно быть доступным?",
+      "options": [
+        "Только в 13:00",
+        "Любые пятнадцать минут",
+        "С 13:00 до 15:00"
+      ],
+      "answer": 2,
+      "explanation": "For the whole window подчёркивает весь интервал between one and three."
+    },
+    {
+      "id": "repair-heating",
+      "speaker": "Leo",
+      "text": "Please leave the heating off until the engineer has checked it. The hot water in the bathroom is still available.",
+      "ru": "Пожалуйста, не включайте отопление, пока инженер его не проверит. Горячей водой в ванной по-прежнему можно пользоваться.",
+      "question": "Что должно оставаться выключенным?",
+      "options": [
+        "Отопление",
+        "Вся вода в квартире",
+        "Освещение"
+      ],
+      "answer": 0,
+      "explanation": "Heating off — отопление выключено. Горячая вода явно доступна."
+    },
+    {
+      "id": "repair-access",
+      "speaker": "Leo",
+      "text": "I'll let the electrician in, but I can't stay for the inspection. Could you take over at half past ten?",
+      "ru": "Я впущу электрика, но не могу остаться на проверку. Можешь сменить меня в половине одиннадцатого?",
+      "question": "Что Лео просит тебя сделать?",
+      "options": [
+        "Вызвать электрика",
+        "Сменить его в 10:30",
+        "Принести запасной ключ завтра"
+      ],
+      "answer": 1,
+      "explanation": "Take over — перенять обязанность; at half past ten задаёт время передачи."
+    }
+  ]
+}

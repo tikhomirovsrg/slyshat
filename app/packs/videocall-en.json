@@ -1,0 +1,153 @@
+{
+  "episode": "videocall-en",
+  "level": "B2",
+  "grammar": {
+    "title": "Будущее после until, once и after",
+    "explanation": "В придаточном времени после until, once и after обычно не используем will для будущего: We will launch once the client approves. Present Perfect подчёркивает завершённость перед следующим действием: once the client has approved. Not ... until означает, что действие не произойдёт раньше указанного события. Review и approval могут быть разными этапами.",
+    "examples": [
+      {
+        "text": "We will publish once the client has approved the draft.",
+        "ru": "Мы опубликуем материал, когда клиент утвердит черновик."
+      },
+      {
+        "text": "We won't launch until the review is complete.",
+        "ru": "Мы не запустимся, пока проверка не будет завершена."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Четыре строки после звонка",
+    "kind": "статья",
+    "text": "A poor connection does more than make a meeting uncomfortable. It can remove the small words that determine what a team is expected to do. During one project call, I heard a colleague mention Friday and launch in the same sentence. I wrote 'launch on Friday' in my notes. Another colleague had heard the word review and recorded a different plan.\n\nFortunately, we compared our notes before the call ended. The missing sentence explained that Friday was the internal review date. The client had not approved the draft, so there was no confirmed launch date. If we had ended the call without checking, two people would have worked towards different outcomes.\n\nWe agreed to finish future calls with four written lines: the action, the person responsible, the deadline and any condition that still needed to be met. For that project, the condition was client approval. The notes also distinguished the time for submitting the draft from the time of the review meeting.\n\nThis habit did not solve every communication problem. People still needed to ask questions when a phrase was unclear. However, the short summary made uncertainty visible instead of hiding it behind polite agreement. It also gave anyone with a weak connection a chance to correct the record before a misunderstanding became a promise to someone outside the team."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: чем полезно письменное завершение звонка?",
+      "answer": "Оно помогает согласовать действия и заметить неопределённость",
+      "explanation": "Четыре строки фиксируют общий план и условия, которые ещё не выполнены.",
+      "options": [
+        "Оно делает все встречи ненужными",
+        "Оно помогает согласовать действия и заметить неопределённость",
+        "Оно автоматически улучшает интернет"
+      ],
+      "id": "videocall-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: чем была пятница в реальном плане?",
+      "answer": "Днём внутренней проверки",
+      "explanation": "Friday was the internal review date, а дата запуска не подтверждена.",
+      "options": [
+        "Днём публичного запуска",
+        "Днём оплаты проекта",
+        "Днём внутренней проверки"
+      ],
+      "id": "videocall-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: в чём риск вежливого согласия без проверки?",
+      "answer": "Оно может скрыть различное понимание договорённости",
+      "explanation": "Текст противопоставляет visible uncertainty и polite agreement, за которым может скрываться ошибка.",
+      "options": [
+        "Оно может скрыть различное понимание договорённости",
+        "Оно всегда означает несогласие",
+        "Оно позволяет клиенту сразу одобрить черновик"
+      ],
+      "id": "videocall-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: We will launch once the client ___ the draft.",
+      "answer": "has approved",
+      "explanation": "После once для завершённого будущего условия подходит Present Perfect.",
+      "options": [
+        "will have approved",
+        "has approved",
+        "would approve"
+      ],
+      "id": "videocall-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите союз: запуск произойдёт только после завершения проверки.",
+      "answer": "until",
+      "explanation": "Not ... until означает «не раньше, чем». В этой фразе before также передаёт, что запуск не будет предшествовать завершению проверки.",
+      "text": "We will not launch ___ the review is complete.",
+      "id": "videocall-en-study-5",
+      "accepted": [
+        "before"
+      ]
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите порядок действий.",
+      "answer": "We will call after the client replies",
+      "explanation": "После after в придаточном о будущем используется replies, без will.",
+      "words": [
+        "replies",
+        "will",
+        "after",
+        "call",
+        "We",
+        "client",
+        "the"
+      ],
+      "id": "videocall-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Замените not before на not until; остальные слова сохраните.",
+      "answer": "We will not publish until the client approves",
+      "explanation": "Not before и not until здесь задают одинаковую нижнюю границу времени.",
+      "text": "We will not publish before the client approves.",
+      "id": "videocall-en-study-7",
+      "accepted": []
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает a provisional date?",
+      "answer": "Предварительная дата, которая может измениться",
+      "explanation": "Provisional противопоставляется окончательно подтверждённому.",
+      "options": [
+        "Дата, которая уже прошла",
+        "Предварительная дата, которая может измениться",
+        "Неизменная официальная дата"
+      ],
+      "id": "videocall-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что значит Your voice is cutting out?",
+      "answer": "Голос периодически пропадает",
+      "explanation": "Cutting out описывает прерывание звука при связи.",
+      "options": [
+        "Голос слишком тихий по характеру",
+        "Вы завершили разговор",
+        "Голос периодически пропадает"
+      ],
+      "id": "videocall-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите коллегам письмо после звонка с плохой связью. Кратко обозначьте возникшее недоразумение и зафиксируйте действие, ответственного, срок сдачи и время проверки. Отдельно объясните условие запуска с until или once и то, что ещё не подтверждено. Попросите исправить неверные пункты до конкретного времени.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "bookclub-en",
+  "number": "06",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Кому верить в этой книге?",
+  "category": "Истории и обсуждения",
+  "summary": "В книжном клубе спорят о поступке героини. Отдели текст от догадок и выбери тему встречи.",
+  "duration": "15–20 минут",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "secondSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Твоя соседка и подруга. Любит знакомить людей и искать истории вокруг."
+  },
+  "contextTitle": "Первый вечер книжного клуба",
+  "contextText": "После ужина у соседей Оливер пригласил тебя обсудить роман. Ты прочитал только первые шесть глав и не хочешь узнать финал.",
+  "taskTitle": "Обсудить книгу без спойлеров",
+  "taskText": "Обозначь границу прочитанного, пойми аргумент Оливера и выбери безопасный формат разговора.",
+  "taskShort": "До шестой главы",
+  "skill": "Различать уверенное утверждение, предположение и вежливое несогласие.",
+  "phraseLabels": [
+    "Я склонен думать",
+    "Насколько я понял",
+    "Не выдавай финал"
+  ],
+  "transferIntro": "Майя обсуждает другие истории. Определи, где факт, где предположение и чего она просит.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "I tend to think Nora was trying to protect her brother, rather than deceive him. As far as I understood, she hadn't read the letter when she hid it. But I'm only on chapter six, so please don't give anything away if you've finished the book.",
+  "openingRu": "Мне скорее кажется, что Нора пыталась защитить брата, а не обмануть его. Насколько я понял, она ещё не прочитала письмо, когда спрятала его. Но я только на шестой главе, так что, пожалуйста, не раскрывай ничего, если уже дочитал книгу.",
+  "openingQuestion": {
+    "question": "В чём Оливер не уверен полностью?",
+    "options": [
+      "Что он дочитал книгу",
+      "Что Нора пыталась защитить брата",
+      "Что обсуждается фильм"
+    ],
+    "answer": 1,
+    "explanation": "I tend to think выражает склонность к мнению, а не доказанный факт. Оливер предлагает своё объяснение поступка."
+  },
+  "phrases": [
+    {
+      "id": "tend",
+      "text": "I tend to think she meant well.",
+      "ru": "Я склонен думать, что она хотела как лучше.",
+      "part": "I tend to think",
+      "why": "Эта конструкция обозначает мнение, которое человек готов пересмотреть.",
+      "sound": "В tend to звук d может быть слабым; слушай связку перед think.",
+      "example": "I tend to agree with you.",
+      "exampleRu": "Я скорее согласен с тобой."
+    },
+    {
+      "id": "understood",
+      "text": "As far as I understood, she hadn't read it.",
+      "ru": "Насколько я понял, она этого не читала.",
+      "part": "As far as I understood",
+      "why": "Так обозначают предел своего понимания, оставляя место уточнению.",
+      "sound": "В длинном вступлении ищи смысловой акцент на understood.",
+      "example": "As far as I remember, the door was locked.",
+      "exampleRu": "Насколько я помню, дверь была заперта."
+    },
+    {
+      "id": "give-away",
+      "text": "Please don't give anything away.",
+      "ru": "Пожалуйста, ничего не раскрывай.",
+      "part": "give anything away",
+      "why": "В обсуждении сюжета give away — выдать развязку или важную тайну.",
+      "sound": "Don't меняет просьбу на запрет; не теряй отрицание в быстрой речи.",
+      "example": "The title gives the ending away.",
+      "exampleRu": "Название выдаёт концовку."
+    },
+    {
+      "id": "point",
+      "text": "What makes you say that?",
+      "ru": "Почему ты так думаешь?",
+      "part": "What makes you say that",
+      "why": "Вопрос просит обосновать мнение и не обязательно выражает спор.",
+      "sound": "What makes you часто звучит слитно; сильнее слышны say и that.",
+      "example": "What makes you think he knew?",
+      "exampleRu": "Почему ты думаешь, что он знал?"
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Oliver",
+      "text": "We're at the same point in the book, then. Do you think hiding the letter was a kind thing to do?",
+      "ru": "Значит, мы остановились в одном месте книги. Как думаешь, спрятать письмо было добрым поступком?",
+      "choices": [
+        {
+          "label": "Попросить доказательство",
+          "text": "What makes you say she was protecting him?",
+          "next": "evidence"
+        },
+        {
+          "label": "Мягко возразить",
+          "text": "I see it differently. He should have been allowed to read it.",
+          "next": "disagree"
+        },
+        {
+          "label": "Предложить формат без догадок",
+          "text": "Could we compare what the two characters actually know?",
+          "next": "facts"
+        }
+      ]
+    },
+    "evidence": {
+      "speaker": "Oliver",
+      "text": "She says he's already worried about the journey. I took that as her reason, although the narrator doesn't confirm it.",
+      "ru": "Она говорит, что он и так волнуется из-за поездки. Я понял это как её причину, хотя рассказчик этого не подтверждает.",
+      "choices": [
+        {
+          "label": "Выделить интерпретацию",
+          "text": "So that's your interpretation, not something she says directly?",
+          "next": "evidence-confirm"
+        },
+        {
+          "label": "Перейти к известным фактам",
+          "text": "Let's list what we know before guessing her motive.",
+          "next": "facts"
+        }
+      ]
+    },
+    "evidence-confirm": {
+      "speaker": "Oliver",
+      "text": "Exactly. Maybe I trusted her too quickly. Shall we read the next two chapters before deciding?",
+      "ru": "Именно. Возможно, я слишком быстро ей поверил. Прочитаем следующие две главы, прежде чем решать?",
+      "choices": [
+        {
+          "label": "Отложить вывод",
+          "text": "Yes. Let's revisit that question after chapter eight.",
+          "next": "evidence-end"
+        }
+      ]
+    },
+    "evidence-end": {
+      "speaker": "Oliver",
+      "text": "Good plan. I'll write the question down, and nobody needs to defend a final answer tonight.",
+      "ru": "Хороший план. Запишу вопрос, и сегодня никому не нужно отстаивать окончательный ответ.",
+      "choices": [],
+      "outcome": "later"
+    },
+    "disagree": {
+      "speaker": "Oliver",
+      "text": "That's fair. I was judging her intention, and you're looking at what her brother loses. Those aren't quite the same question.",
+      "ru": "Справедливо. Я оценивал её намерение, а ты — то, что теряет брат. Это не совсем один и тот же вопрос.",
+      "choices": [
+        {
+          "label": "Сделать различие темой встречи",
+          "text": "Could that be our discussion topic: good intentions and bad results?",
+          "next": "disagree-confirm"
+        },
+        {
+          "label": "Вернуться к фактам",
+          "text": "Before we debate it, let's check what the letter actually says.",
+          "next": "facts"
+        }
+      ]
+    },
+    "disagree-confirm": {
+      "speaker": "Oliver",
+      "text": "Yes, provided we use examples from the first six chapters. I'll remind the people who have finished not to spoil anything.",
+      "ru": "Да, если будем использовать примеры только из первых шести глав. Напомню тем, кто дочитал, не раскрывать сюжет.",
+      "choices": [
+        {
+          "label": "Подтвердить границу",
+          "text": "Great. I'll bring one example from chapter four.",
+          "next": "disagree-end"
+        }
+      ]
+    },
+    "disagree-end": {
+      "speaker": "Oliver",
+      "text": "And I'll bring a different one. We can disagree about Nora without turning it into a competition.",
+      "ru": "А я принесу другой. Можно не соглашаться насчёт Норы, не превращая разговор в соревнование.",
+      "choices": [],
+      "outcome": "debate"
+    },
+    "facts": {
+      "speaker": "Oliver",
+      "text": "Good idea. We know the letter arrived on Tuesday. We don't know who sent it, and we haven't seen what's inside.",
+      "ru": "Хорошая идея. Мы знаем, что письмо пришло во вторник. Не знаем отправителя и не видели содержимого.",
+      "choices": [
+        {
+          "label": "Предложить две колонки",
+          "text": "Let's make a list of facts and a separate list of guesses.",
+          "next": "facts-confirm"
+        }
+      ]
+    },
+    "facts-confirm": {
+      "speaker": "Oliver",
+      "text": "That would help the whole group. Could you keep the facts list? I'll collect the theories without saying which one is right.",
+      "ru": "Это поможет всей группе. Ты можешь вести список фактов? А я соберу версии, не говоря, какая правильная.",
+      "choices": [
+        {
+          "label": "Согласиться вести факты",
+          "text": "I'll do that. We'll label anything uncertain as a guess.",
+          "next": "facts-end"
+        }
+      ]
+    },
+    "facts-end": {
+      "speaker": "Oliver",
+      "text": "Brilliant. We have a way to include everyone, even people who haven't read beyond chapter six.",
+      "ru": "Отлично. Теперь могут участвовать все, даже те, кто не прочитал дальше шестой главы.",
+      "choices": [],
+      "outcome": "facts"
+    }
+  },
+  "outcomes": {
+    "later": {
+      "title": "Вывод после восьмой главы",
+      "body": "Вы заметили, что мотив героини — интерпретация, и решили вернуться к вопросу после двух следующих глав."
+    },
+    "debate": {
+      "title": "Спор с общей границей",
+      "body": "Вы обсудите намерения и последствия на примерах из первых шести глав, не раскрывая финал."
+    },
+    "facts": {
+      "title": "Факты отдельно от версий",
+      "body": "Ты ведёшь список подтверждённых событий, Оливер — список предположений. В разговоре смогут участвовать все."
+    }
+  },
+  "transfer": [
+    {
+      "id": "book-podcast",
+      "speaker": "Maya",
+      "text": "As far as I remember, the witness heard a car, but she didn't see who was driving it.",
+      "ru": "Насколько я помню, свидетельница слышала машину, но не видела, кто был за рулём.",
+      "question": "Что свидетельница действительно заметила?",
+      "options": [
+        "Лицо водителя",
+        "Номер машины",
+        "Звук машины"
+      ],
+      "answer": 2,
+      "explanation": "Heard a car — слышала машину. Didn't see исключает визуальное подтверждение личности."
+    },
+    {
+      "id": "book-series",
+      "speaker": "Maya",
+      "text": "Don't give the result away. I've seen the first episode of the competition, but not the final.",
+      "ru": "Не выдавай результат. Я видела первый выпуск конкурса, но не финал.",
+      "question": "О чём просит Майя?",
+      "options": [
+        "Не называть победителя",
+        "Посмотреть финал вместе прямо сейчас",
+        "Объяснить правила"
+      ],
+      "answer": 0,
+      "explanation": "Give the result away означает раскрыть результат, который она ещё не знает."
+    },
+    {
+      "id": "book-review",
+      "speaker": "Maya",
+      "text": "I tend to prefer the stage version. The film explains more, but I enjoyed imagining the missing details myself.",
+      "ru": "Мне скорее ближе сценическая версия. Фильм объясняет больше, но мне нравилось самой додумывать детали.",
+      "question": "Почему она предпочитает спектакль?",
+      "options": [
+        "Он короче фильма",
+        "Он оставляет простор воображению",
+        "В нём всё объяснено"
+      ],
+      "answer": 1,
+      "explanation": "Imagining the missing details — самостоятельно додумывать недостающие детали; это названная причина предпочтения."
+    }
+  ]
+}

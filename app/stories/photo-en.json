@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "photo-en",
+  "number": "20",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Фотография, которой нужна подпись",
+  "category": "Истории и обсуждения",
+  "summary": "В старой книге нашёлся снимок для районной выставки. Семейные воспоминания спорят с пометкой на обороте.",
+  "duration": "15–20 минут",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Твоя соседка и подруга. Любит знакомить людей и искать истории вокруг."
+  },
+  "secondSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "contextTitle": "После книжной ярмарки",
+  "contextText": "Майя нашла в подаренной семейной книге фотографию у старого магазина. Организатор выставки хочет подписать её как «Дедушка Майи руководит помощью после наводнения 1968 года». Тётя помнит другой год и другое событие.",
+  "taskTitle": "Выбрать, что можно рассказать публично",
+  "taskText": "Раздели видимое на снимке, семейный рассказ и проверенный источник. Согласуй дальнейшее использование с семьёй и не превращай сомнение в красивую легенду.",
+  "taskShort": "Сильная история · слабая атрибуция",
+  "skill": "Распознавать оговорки о доказательности, сослагательные условия и границу между правдоподобием и подтверждением.",
+  "phraseLabels": [
+    "При всей убедительности",
+    "Будь мы готовы",
+    "Это ещё не доказывает"
+  ],
+  "transferIntro": "Оливер оценивает другие источники. Следи за тем, какой вывод поддерживают сведения, и за тем, где уверенность превышает доказательства.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "For all its apparent certainty, the note on the back may have been written decades later. My aunt remembers a shop closure, not a flood. Were we to publish the proposed caption now, we'd turn one plausible account into an established fact. I'd rather preserve the uncertainty than let a compelling story outrun the evidence.",
+  "openingRu": "При всей внешней уверенности пометка на обороте могла появиться десятилетия спустя. Тётя помнит закрытие магазина, а не наводнение. Опубликуй мы предложенную подпись сейчас, мы превратили бы одну правдоподобную версию в установленный факт. Я предпочла бы сохранить неопределённость, а не позволить красивой истории обогнать доказательства.",
+  "openingQuestion": {
+    "question": "Почему Майя сомневается в предложенной подписи?",
+    "options": [
+      "Правдоподобную версию выдают за установленный факт",
+      "На фотографии вообще нет людей",
+      "Она точно доказала, что тётя ошиблась"
+    ],
+    "answer": 0,
+    "explanation": "Plausible account и established fact противопоставлены: версия выглядит убедительно, но пока не доказана; тётину память тоже не объявляют истиной."
+  },
+  "phrases": [
+    {
+      "id": "for-all",
+      "text": "For all its apparent certainty, the note may be wrong.",
+      "ru": "При всей внешней уверенности пометка может быть неверной.",
+      "part": "For all its apparent certainty",
+      "why": "For all здесь уступка: наличие убедительной формы не гарантирует достоверность.",
+      "sound": "После certainty обычно идёт пауза и ограничивающий аргумент; apparent значит «кажущийся».",
+      "example": "For all his experience, he still checked the source.",
+      "exampleRu": "При всём своём опыте он всё равно проверил источник."
+    },
+    {
+      "id": "were-to",
+      "text": "Were we to publish it now, we'd imply certainty.",
+      "ru": "Опубликуй мы это сейчас, мы создали бы впечатление уверенности.",
+      "part": "Were we to publish",
+      "why": "Инверсия заменяет if we were to publish в гипотетическом условии.",
+      "sound": "Were в начале не вопрос; связка were ... to задаёт возможный сценарий.",
+      "example": "Were the date confirmed, we could update the caption.",
+      "exampleRu": "Если бы дата подтвердилась, можно было бы обновить подпись."
+    },
+    {
+      "id": "doesnt-establish",
+      "text": "That doesn't establish who organised the event.",
+      "ru": "Это ещё не доказывает, кто организовал событие.",
+      "part": "doesn't establish",
+      "why": "Establish в работе с источниками — убедительно подтвердить, а не просто предположить.",
+      "sound": "Отрицание относится к силе доказательства, не обязательно к ложности самой версии.",
+      "example": "The receipt establishes the price, not the purpose.",
+      "exampleRu": "Квитанция подтверждает цену, а не цель покупки."
+    },
+    {
+      "id": "qualified",
+      "text": "We could use a carefully qualified caption.",
+      "ru": "Можно дать подпись с точными оговорками.",
+      "part": "a qualified caption",
+      "why": "Qualified здесь означает снабжённый ограничениями или оговорками, а не профессиональный.",
+      "sound": "Слушай контекст caption: речь о степени уверенности формулировки.",
+      "example": "She offered qualified support for the proposal.",
+      "exampleRu": "Она поддержала предложение с оговорками."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Maya",
+      "text": "We could verify the date and use a narrower caption, record the family accounts privately first, or leave the photograph out of this exhibition. What would you be comfortable defending?",
+      "ru": "Можно проверить дату и дать более узкую подпись, сначала записать семейные воспоминания для личного архива или не включать снимок в эту выставку. Какой выбор ты готов обосновать?",
+      "choices": [
+        {
+          "label": "Проверить конкретное утверждение",
+          "text": "Let's see what the archive can establish, then limit the caption to that.",
+          "next": "archive"
+        },
+        {
+          "label": "Сначала услышать семью",
+          "text": "I'd start with the family accounts, provided people agree to be recorded.",
+          "next": "family"
+        },
+        {
+          "label": "Не публиковать снимок пока",
+          "text": "The deadline shouldn't decide the truth. We can leave this photograph out for now.",
+          "next": "withhold"
+        }
+      ]
+    },
+    "archive": {
+      "speaker": "Maya",
+      "text": "The town archive has a newspaper image of the same storefront and crowd, dated June 1971. It describes a charity sale, but neither names my grandfather nor identifies the person in charge.",
+      "ru": "В городском архиве есть газетный снимок того же магазина и толпы, датированный июнем 1971 года. Там говорится о благотворительной распродаже, но дедушка не назван и руководитель не указан.",
+      "choices": [
+        {
+          "label": "Ограничить подпись подтверждённым",
+          "text": "Then we can date the event and describe the sale, but shouldn't claim who led it.",
+          "next": "archive-confirm"
+        },
+        {
+          "label": "Сначала согласовать семейный контекст",
+          "text": "Before publishing even that, let's speak to the family.",
+          "next": "family"
+        }
+      ]
+    },
+    "archive-confirm": {
+      "speaker": "Maya",
+      "text": "The family is happy for this copy to be shown with the archive credit. They'd like the uncertain identification to be explicit, and the organiser agrees to remove the claim about leadership.",
+      "ru": "Семья согласна выставить эту копию со ссылкой на архив. Они хотят явно отметить неуверенность в идентификации, и организатор согласен убрать утверждение о руководстве.",
+      "choices": [
+        {
+          "label": "Подтвердить подпись с оговоркой",
+          "text": "Let's say 'Charity sale, June 1971; the man by the doorway is believed by the family to be my grandfather.'",
+          "next": "archive-end"
+        }
+      ]
+    },
+    "archive-end": {
+      "speaker": "Maya",
+      "text": "That tells a smaller story, but one we can support. We've preserved the family attribution as an attribution, rather than silently upgrading it to proof.",
+      "ru": "История стала скромнее, зато обоснованной. Мы сохранили семейную версию именно как версию, а не незаметно повысили её до доказательства.",
+      "choices": [],
+      "outcome": "caption"
+    },
+    "family": {
+      "speaker": "Maya",
+      "text": "My aunt would like to talk, but she doesn't want her recording online. My uncle recalls the flood story, although he admits he heard it from someone else rather than witnessing it.",
+      "ru": "Тётя хочет рассказать, но не хочет записи в интернете. Дядя помнит версию о наводнении, хотя признаёт, что слышал её от другого человека, а не видел событие.",
+      "choices": [
+        {
+          "label": "Разделить память и пересказ",
+          "text": "Let's record their accounts separately, note which parts are firsthand, and keep the files private.",
+          "next": "family-confirm"
+        },
+        {
+          "label": "Не торопить решение о выставке",
+          "text": "Then let's leave the image out until they're comfortable with a public version.",
+          "next": "withhold"
+        }
+      ]
+    },
+    "family-confirm": {
+      "speaker": "Maya",
+      "text": "They've both agreed to that. We'll also note when each interview was made, so later readers don't mistake a present-day recollection for a statement recorded at the time.",
+      "ru": "Оба согласились. Укажем и дату каждого интервью, чтобы позднее сегодняшние воспоминания не приняли за свидетельства, записанные тогда же.",
+      "choices": [
+        {
+          "label": "Сохранить разногласие без искусственного итога",
+          "text": "We'll preserve both accounts, including the disagreement, and ask again before any public use.",
+          "next": "family-end"
+        }
+      ]
+    },
+    "family-end": {
+      "speaker": "Maya",
+      "text": "The exhibition will go ahead without this photograph. Meanwhile, our family archive will contain richer accounts whose limits and permissions remain visible.",
+      "ru": "Выставка пройдёт без этой фотографии. А в семейном архиве появятся более подробные рассказы с явно обозначенными границами достоверности и разрешениями.",
+      "choices": [],
+      "outcome": "private"
+    },
+    "withhold": {
+      "speaker": "Maya",
+      "text": "The organiser is disappointed because the picture would make a strong centrepiece. She's asked whether we could simply add a question mark to the dramatic caption.",
+      "ru": "Организатор разочарована: снимок стал бы сильным центром выставки. Она спросила, нельзя ли просто добавить вопросительный знак к эффектной подписи.",
+      "choices": [
+        {
+          "label": "Объяснить предел такой оговорки",
+          "text": "A question mark wouldn't undo the impression created by the claim. Could we show how local stories are investigated instead?",
+          "next": "withhold-confirm"
+        }
+      ]
+    },
+    "withhold-confirm": {
+      "speaker": "Maya",
+      "text": "She'll accept a short panel about the missing evidence, using no photograph or personal names. We can explain why some histories remain open without turning the family's disagreement into a spectacle.",
+      "ru": "Она согласна на короткий стенд о недостающих доказательствах без фотографии и личных имён. Объясним, почему истории иногда остаются открытыми, не превращая семейное разногласие в зрелище.",
+      "choices": [
+        {
+          "label": "Выбрать прозрачный отказ от легенды",
+          "text": "Let's contribute that panel and keep the photograph for a later, better-supported account.",
+          "next": "withhold-end"
+        }
+      ]
+    },
+    "withhold-end": {
+      "speaker": "Maya",
+      "text": "We've met the exhibition deadline with an honest account of the research process. The photograph can wait; its absence doesn't require us to invent a conclusion.",
+      "ru": "Мы успели к выставке с честным рассказом об исследовании. Фотография подождёт; её отсутствие не требует придумывать вывод.",
+      "choices": [],
+      "outcome": "withhold"
+    }
+  },
+  "outcomes": {
+    "caption": {
+      "title": "Подпись, которую можно обосновать",
+      "body": "Архив подтвердил благотворительную распродажу в июне 1971 года. С согласия семьи снимок публикуется с атрибуцией: личность у двери — семейная версия, руководство не заявлено."
+    },
+    "private": {
+      "title": "Сначала семейный архив",
+      "body": "Вы сохраняете два рассказа отдельно, отмечая прямое свидетельство и пересказ, даты и условия доступа. Для выставки снимок пока не используется."
+    },
+    "withhold": {
+      "title": "История о границах знания",
+      "body": "Вместо драматичной подписи с вопросительным знаком выставка получит обезличенный стенд о поиске доказательств. Фото остаётся для будущего исследования."
+    }
+  },
+  "transfer": [
+    {
+      "id": "photo-letter",
+      "speaker": "Oliver",
+      "text": "The letter confirms that she intended to travel in May; it doesn't establish that the journey took place. Treating an intention as an outcome would erase precisely the uncertainty we're trying to investigate.",
+      "ru": "Письмо подтверждает, что она собиралась ехать в мае; оно не доказывает, что поездка состоялась. Принять намерение за результат — значит стереть именно ту неопределённость, которую мы исследуем.",
+      "question": "Что письмо действительно подтверждает?",
+      "options": [
+        "Состоявшуюся поездку",
+        "Намерение отправиться в мае",
+        "Точный день прибытия"
+      ],
+      "answer": 1,
+      "explanation": "Intended to travel подтверждает план; doesn't establish ... took place сохраняет открытым вопрос о факте поездки."
+    },
+    {
+      "id": "photo-source",
+      "speaker": "Oliver",
+      "text": "For all the detail in his account, he wasn't present at the meeting. His recollection may tell us how the decision was later understood, rather than why it was originally made.",
+      "ru": "При всей подробности рассказа он не был на встрече. Его воспоминание может показать позднейшее понимание решения, а не исходную причину его принятия.",
+      "question": "Какую ценность рассказа допускает Оливер?",
+      "options": [
+        "Точную стенограмму встречи",
+        "Доказательство исходных мотивов",
+        "Сведения о позднейшем понимании решения"
+      ],
+      "answer": 2,
+      "explanation": "May tell us ... later understood ограничивает полезный вывод; rather than исключает уверенность в первоначальном мотиве."
+    },
+    {
+      "id": "photo-caption",
+      "speaker": "Oliver",
+      "text": "Were another source to corroborate the date, we'd still need to qualify the identification. Confirmation of when a picture was taken doesn't automatically confirm who appears in it.",
+      "ru": "Даже если другой источник подтвердит дату, идентификация всё равно потребует оговорки. Подтверждение времени снимка автоматически не подтверждает, кто на нём.",
+      "question": "Какой вопрос останется после подтверждения даты?",
+      "options": [
+        "Кто изображён на снимке",
+        "Существует ли сама фотография",
+        "Нужно ли проверять календарь"
+      ],
+      "answer": 0,
+      "explanation": "We'd still need to qualify the identification — личность остаётся отдельным неподтверждённым вопросом."
+    }
+  ]
+}

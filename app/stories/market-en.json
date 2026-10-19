@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "market-en",
+  "number": "10",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Ужин начинается на рынке",
+  "category": "Повседневная жизнь",
+  "summary": "Нужного ингредиента нет. Измени рецепт так, чтобы хватило на гостей и всё было готово вовремя.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Твоя соседка и подруга. Любит знакомить людей и искать истории вокруг."
+  },
+  "secondSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "contextTitle": "Субботний рынок",
+  "contextText": "Майя хочет приготовить ужин для четверых после вашей поездки. Вы у овощной лавки; дома уже есть паста, масло и томаты.",
+  "taskTitle": "Купить замену и сохранить замысел ужина",
+  "taskText": "Один гость не ест молочные продукты. Выбери замену баклажанам, уточни количество и договорись о приготовлении.",
+  "taskShort": "Четверо гостей · без молочного",
+  "skill": "Распознавать замены, количество и условия приготовления в обычной быстрой речи.",
+  "phraseLabels": [
+    "Закончились",
+    "Подойдёт вместо",
+    "На четверых"
+  ],
+  "transferIntro": "Оливер планирует другое меню. Слушай, что заменяют, на сколько человек и почему.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "They've run out of aubergines, so our original recipe won't work. The seller says courgettes would do instead, as long as we cook them quickly rather than roast them for an hour. We're cooking for four, and remember that Emma doesn't eat dairy. Shall we change the dish or try another stall?",
+  "openingRu": "Баклажаны закончились, поэтому исходный рецепт не получится. Продавец говорит, что вместо них подойдут кабачки, если быстро их приготовить, а не запекать целый час. Готовим на четверых, и помни, что Эмма не ест молочные продукты. Изменим блюдо или поищем в другой лавке?",
+  "openingQuestion": {
+    "question": "Что нужно изменить при замене на кабачки?",
+    "options": [
+      "Готовить дольше часа",
+      "Добавить молочный соус",
+      "Готовить быстро, не запекать час"
+    ],
+    "answer": 2,
+    "explanation": "As long as вводит условие замены: cook them quickly. Долгое запекание прямо исключено."
+  },
+  "phrases": [
+    {
+      "id": "run-out",
+      "text": "They've run out of aubergines.",
+      "ru": "У них закончились баклажаны.",
+      "part": "run out of",
+      "why": "Run out of — исчерпать запас, временно не иметь товара.",
+      "sound": "Out of часто звучит слитно; ключевой предмет назван после него.",
+      "example": "We've run out of rice.",
+      "exampleRu": "У нас закончился рис."
+    },
+    {
+      "id": "do-instead",
+      "text": "Courgettes would do instead.",
+      "ru": "Вместо них подойдут кабачки.",
+      "part": "would do instead",
+      "why": "Do здесь означает «подойти, сгодиться», а instead обозначает замену.",
+      "sound": "Would может быть очень коротким; do несёт значение пригодности.",
+      "example": "A smaller bowl would do.",
+      "exampleRu": "Миска поменьше подойдёт."
+    },
+    {
+      "id": "for-four",
+      "text": "We're cooking for four.",
+      "ru": "Мы готовим на четверых.",
+      "part": "for four",
+      "why": "Первое for — предлог, второе four — число людей.",
+      "sound": "Два похожих слова могут звучать как один блок; конечное four обычно ударное.",
+      "example": "Is that enough for six?",
+      "exampleRu": "Этого хватит на шестерых?"
+    },
+    {
+      "id": "as-long",
+      "text": "That will work as long as we leave out the cheese.",
+      "ru": "Это подойдёт, если не добавлять сыр.",
+      "part": "as long as",
+      "why": "As long as вводит условие, а не всегда длительность.",
+      "sound": "Поймай блок as long as и дослушай конкретное условие.",
+      "example": "It's fine as long as it isn't too spicy.",
+      "exampleRu": "Подойдёт, если не слишком остро."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Maya",
+      "text": "We have three ways forward: use courgettes, look for aubergines, or make something different with what we've already got.",
+      "ru": "Есть три варианта: взять кабачки, поискать баклажаны или приготовить другое из того, что уже есть.",
+      "choices": [
+        {
+          "label": "Взять замену",
+          "text": "Let's try courgettes. How many would we need?",
+          "next": "courgettes"
+        },
+        {
+          "label": "Сохранить рецепт",
+          "text": "Could we check the stall at the other end?",
+          "next": "aubergines"
+        },
+        {
+          "label": "Изменить блюдо",
+          "text": "What could we make with the tomatoes and pasta at home?",
+          "next": "pasta"
+        }
+      ]
+    },
+    "courgettes": {
+      "speaker": "Maya",
+      "text": "The seller suggests three medium ones for four people. We can slice them thinly and fry them just before dinner.",
+      "ru": "Продавец советует три средних на четверых. Нарежем их тонко и быстро обжарим перед ужином.",
+      "choices": [
+        {
+          "label": "Уточнить соус без молочного",
+          "text": "Could we use lemon and herbs instead of cheese?",
+          "next": "courgettes-confirm"
+        },
+        {
+          "label": "Выбрать меньше готовки в последний момент",
+          "text": "I'd rather have everything ready early. What about tomato pasta?",
+          "next": "pasta"
+        }
+      ]
+    },
+    "courgettes-confirm": {
+      "speaker": "Maya",
+      "text": "Yes. Let's get a lemon and some basil. You can chop those while I cook the courgettes; it should take ten minutes.",
+      "ru": "Да. Возьмём лимон и базилик. Ты можешь их нарезать, пока я готовлю кабачки; это займёт десять минут.",
+      "choices": [
+        {
+          "label": "Подтвердить покупки и роли",
+          "text": "Three courgettes, a lemon and basil. I'll do the chopping.",
+          "next": "courgettes-end"
+        }
+      ]
+    },
+    "courgettes-end": {
+      "speaker": "Maya",
+      "text": "That's our new plan. We'll keep the sauce dairy-free and cook the courgettes when everyone arrives.",
+      "ru": "Вот новый план. Соус будет без молочных продуктов, а кабачки приготовим, когда все придут.",
+      "choices": [],
+      "outcome": "courgettes"
+    },
+    "aubergines": {
+      "speaker": "Maya",
+      "text": "They do have aubergines there, but they're much smaller. The seller says we'd need six, not the three in the recipe.",
+      "ru": "Там есть баклажаны, но намного меньше. Продавец говорит, понадобится шесть, а не три, как в рецепте.",
+      "choices": [
+        {
+          "label": "Проверить время приготовления",
+          "text": "Would the smaller ones still need an hour in the oven?",
+          "next": "aubergines-confirm"
+        },
+        {
+          "label": "Отказаться от лишних покупок",
+          "text": "Let's use the pasta at home instead.",
+          "next": "pasta"
+        }
+      ]
+    },
+    "aubergines-confirm": {
+      "speaker": "Maya",
+      "text": "No, about forty minutes if we cut them in half. We can use the tomato sauce and leave the cheese out completely.",
+      "ru": "Нет, около сорока минут, если разрезать пополам. Можно взять томатный соус и совсем не добавлять сыр.",
+      "choices": [
+        {
+          "label": "Согласовать новый объём и время",
+          "text": "Let's buy six and start forty minutes before dinner.",
+          "next": "aubergines-end"
+        }
+      ]
+    },
+    "aubergines-end": {
+      "speaker": "Maya",
+      "text": "Good. We kept the main idea, but adjusted the quantity and cooking time instead of following the recipe blindly.",
+      "ru": "Хорошо. Мы сохранили идею, но изменили количество и время приготовления, а не следовали рецепту вслепую.",
+      "choices": [],
+      "outcome": "aubergines"
+    },
+    "pasta": {
+      "speaker": "Maya",
+      "text": "A tomato sauce would be easy. We've got enough pasta for four, but we'd need beans if we want to make it more filling.",
+      "ru": "Томатный соус сделать легко. Пасты на четверых хватит, но понадобятся бобы, если хотим сделать блюдо сытнее.",
+      "choices": [
+        {
+          "label": "Выбрать сытную замену",
+          "text": "Let's get a tin of white beans and some parsley.",
+          "next": "pasta-confirm"
+        }
+      ]
+    },
+    "pasta-confirm": {
+      "speaker": "Maya",
+      "text": "That works. We can make the sauce this afternoon and cook the pasta when people arrive. No dairy needed.",
+      "ru": "Подходит. Соус приготовим днём, а пасту — когда придут гости. Молочные продукты не нужны.",
+      "choices": [
+        {
+          "label": "Подтвердить последовательность",
+          "text": "I'll make the sauce early, and you can cook the pasta later.",
+          "next": "pasta-end"
+        }
+      ]
+    },
+    "pasta-end": {
+      "speaker": "Maya",
+      "text": "Perfect. We've only bought two extra ingredients, and dinner will be ready without a rush.",
+      "ru": "Отлично. Купили только два дополнительных ингредиента, и ужин будет готов без спешки.",
+      "choices": [],
+      "outcome": "pasta"
+    }
+  },
+  "outcomes": {
+    "courgettes": {
+      "title": "Быстрая замена",
+      "body": "Вы купили три кабачка, лимон и базилик. Кабачки готовятся десять минут перед ужином, соус без молочного."
+    },
+    "aubergines": {
+      "title": "Рецепт с поправками",
+      "body": "Вы нашли шесть маленьких баклажанов. Их нужно разрезать и запекать около сорока минут, сыр исключили."
+    },
+    "pasta": {
+      "title": "Новое блюдо из запасов",
+      "body": "К домашней пасте и томатам добавили белые бобы и петрушку. Соус готовится заранее, паста — к приходу гостей."
+    }
+  },
+  "transfer": [
+    {
+      "id": "market-soup",
+      "speaker": "Oliver",
+      "text": "I've made soup for six, but only four people are coming. We can freeze what's left rather than make a second dish.",
+      "ru": "Я приготовил суп на шестерых, но придут только четверо. Можно заморозить остаток вместо приготовления второго блюда.",
+      "question": "Что он предлагает сделать с лишним супом?",
+      "options": [
+        "Заморозить",
+        "Отдать продавцу",
+        "Добавить в новое блюдо"
+      ],
+      "answer": 0,
+      "explanation": "Freeze what's left — заморозить остаток. Супа больше, чем требуется."
+    },
+    {
+      "id": "market-yoghurt",
+      "speaker": "Oliver",
+      "text": "The sauce usually has yoghurt in it. Coconut milk would do instead, as long as you choose the unsweetened kind.",
+      "ru": "Обычно в соусе йогурт. Вместо него подойдёт кокосовое молоко, если выбрать без сахара.",
+      "question": "Какое молоко подойдёт?",
+      "options": [
+        "Любое сладкое",
+        "Кокосовое без сахара",
+        "Только обычное коровье"
+      ],
+      "answer": 1,
+      "explanation": "Unsweetened — без сахара; это условие после as long as."
+    },
+    {
+      "id": "market-bread",
+      "speaker": "Oliver",
+      "text": "They've run out of the large loaves. Two small ones cost the same and should be enough for everyone.",
+      "ru": "Большие буханки закончились. Две маленькие стоят столько же, и их должно хватить на всех.",
+      "question": "Что он советует купить?",
+      "options": [
+        "Одну большую буханку",
+        "Четыре маленьких",
+        "Две маленьких буханки"
+      ],
+      "answer": 2,
+      "explanation": "Two small ones — предлагаемая замена отсутствующей большой буханке."
+    }
+  ]
+}

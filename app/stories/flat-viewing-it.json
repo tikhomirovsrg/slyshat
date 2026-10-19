@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "id": "flat-viewing-it",
+  "number": "15",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Квартира с «небольшой особенностью»",
+  "category": "Повседневная жизнь",
+  "summary": "Хозяин отвечает уклончиво. Переведи в конкретные вопросы слова о тишине, расходах и ремонте.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия сопровождает тебя на просмотр квартиры."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "После просмотра жилья",
+  "contextText": "Ты ищешь комнату для спокойной работы. Квартира нравится, но Джулия заметила расплывчатые ответы хозяина.",
+  "taskTitle": "Оценить условия до решения",
+  "taskText": "Уточни обязательные расходы и шум. Можно продолжить переговоры, попросить второй просмотр или отказаться.",
+  "taskShort": "Работа из дома · общий бюджет €800",
+  "skill": "Распознавать смягчённые формулировки и запрашивать проверяемые детали.",
+  "phraseLabels": [
+    "Не совсем тихо",
+    "Не считая расходов",
+    "Потребуется уточнить"
+  ],
+  "transferIntro": "Марко обсуждает другие объявления. Услышь, какие факты скрываются за удобными формулировками.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "L’appartamento mi piace, ma alcune risposte del proprietario erano vaghe. Quando hai chiesto del rumore, ha detto che il quartiere è vivace, soprattutto la sera. L’affitto sarebbe di settecento euro, escluse le spese, che andrebbero chiarite. Prima di decidere, chiederei un secondo sopralluogo oppure un riepilogo scritto di ciò che è incluso e di ciò che resta da sistemare.",
+  "openingRu": "Квартира мне нравится, но некоторые ответы хозяина были расплывчатыми. На вопрос о шуме он сказал, что район оживлённый, особенно вечером. Аренда составила бы семьсот евро без дополнительных расходов, которые следует уточнить. До решения я попросила бы второй просмотр или письменный список того, что включено и что ещё надо привести в порядок.",
+  "openingQuestion": {
+    "question": "Почему слово vivace заслуживает уточнения?",
+    "options": [
+      "Оно гарантирует тишину",
+      "Им ответили на вопрос о шуме без конкретики",
+      "Оно означает отсутствие соседей"
+    ],
+    "answer": 1,
+    "explanation": "В контексте вопроса о rumore слово vivace — оживлённый — может смягчать описание шума. Нужны конкретные сведения."
+  },
+  "phrases": [
+    {
+      "id": "flat-viewing-vivace",
+      "text": "Il quartiere è vivace, soprattutto la sera.",
+      "ru": "Район оживлённый, особенно вечером.",
+      "part": "soprattutto la sera",
+      "why": "Vivace само по себе положительно, но в ответе о шуме может скрывать неудобство.",
+      "sound": "Слушай soprattutto: оно указывает время, когда характеристика особенно заметна.",
+      "example": "La zona è animata fino a tardi.",
+      "exampleRu": "В районе оживлённо допоздна."
+    },
+    {
+      "id": "flat-viewing-escluse",
+      "text": "Settecento euro, escluse le spese.",
+      "ru": "Семьсот евро без дополнительных расходов.",
+      "part": "escluse le spese",
+      "why": "Escluse означает, что названная сумма ещё не полная.",
+      "sound": "Не перепутай escluse с incluse: начальная часть меняет бюджет.",
+      "example": "Il prezzo è di cento euro, tasse escluse.",
+      "exampleRu": "Цена — сто евро без налогов."
+    },
+    {
+      "id": "flat-viewing-chiarite",
+      "text": "Le spese andrebbero chiarite.",
+      "ru": "Расходы следовало бы уточнить.",
+      "part": "andrebbero chiarite",
+      "why": "Andrebbero + причастие выражает, что действие желательно или необходимо выполнить.",
+      "sound": "Условное andrebbero смягчает совет, но не отменяет его важности.",
+      "example": "Le condizioni andrebbero messe per iscritto.",
+      "exampleRu": "Условия стоило бы изложить письменно."
+    },
+    {
+      "id": "flat-viewing-sopralluogo",
+      "text": "Chiederei un secondo sopralluogo.",
+      "ru": "Я попросил бы повторный просмотр.",
+      "part": "chiederei",
+      "why": "Condizionale делает рекомендацию менее прямолинейной.",
+      "sound": "Окончание rei помогает отличить совет от уже сделанного запроса.",
+      "example": "Tornerei qui in un orario diverso.",
+      "exampleRu": "Я бы вернулся сюда в другое время."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Il tuo limite è ottocento euro in tutto e lavori spesso da casa. Quale dubbio vuoi sciogliere per primo?",
+      "ru": "Твой предел — восемьсот евро за всё, и ты часто работаешь из дома. Какое сомнение выясним первым?",
+      "choices": [
+        {
+          "label": "Раскрыть полную стоимость",
+          "text": "Vorrei sapere quanto si paga davvero ogni mese.",
+          "next": "cost"
+        },
+        {
+          "label": "Проверить вечерний шум",
+          "text": "Tornerei quando il locale sotto casa è aperto.",
+          "next": "noise"
+        },
+        {
+          "label": "Обсудить состояние окна",
+          "text": "Mi preoccupa la finestra che non si chiude.",
+          "next": "window"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "cost": {
+      "text": "Le spese fisse sono novanta euro, mentre elettricità e internet sono separati. Quindi il totale supererebbe il tuo limite anche prima dell’inverno.",
+      "ru": "Постоянные расходы — девяносто евро, а электричество и интернет отдельно. Значит, итог превысит твой предел ещё до зимы.",
+      "choices": [
+        {
+          "label": "Обсудить меньшую аренду",
+          "text": "Chiediamo se accetterebbe seicentocinquanta euro.",
+          "next": "negotiate"
+        },
+        {
+          "label": "Отказаться из-за бюджета",
+          "text": "Non voglio un impegno superiore al mio budget.",
+          "next": "decline-check"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "negotiate": {
+      "text": "Accetterebbe seicentocinquanta, ma non promette un importo fisso per le utenze. Possiamo chiedere le bollette precedenti prima di confermare.",
+      "ru": "Он согласился бы на 650, но не обещает фиксированную сумму коммунальных услуг. Можем попросить прежние счета до подтверждения.",
+      "choices": [
+        {
+          "label": "Продолжить только после проверки",
+          "text": "Chiediamole insieme al riepilogo scritto. Per ora non confermo.",
+          "next": "negotiate-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "noise": {
+      "text": "Il proprietario propone domani alle diciotto. Il locale, però, apre alle venti: un’altra visita diurna non chiarirebbe il problema.",
+      "ru": "Хозяин предлагает завтра в шесть. Но заведение открывается в восемь: ещё один дневной просмотр проблему не прояснит.",
+      "choices": [
+        {
+          "label": "Попросить релевантное время",
+          "text": "Vorrei tornare alle ventuno, anche solo per dieci minuti.",
+          "next": "visit-check"
+        },
+        {
+          "label": "Не продолжать поиск здесь",
+          "text": "Se non possiamo verificare il rumore, preferisco rinunciare.",
+          "next": "decline-check"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "visit-check": {
+      "text": "Ha accettato per venerdì alle ventuno. Potremo ascoltare dalla stanza con la finestra chiusa, proprio come durante il lavoro.",
+      "ru": "Он согласился на пятницу, 21:00. Послушаем из комнаты с закрытым окном, как во время работы.",
+      "choices": [
+        {
+          "label": "Отложить решение до просмотра",
+          "text": "Perfetto. Deciderò dopo la visita, non prima.",
+          "next": "visit-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "window": {
+      "text": "Dice che la sistemerà appena possibile. Non ha indicato né una data né chi farà il lavoro.",
+      "ru": "Говорит, починит как можно скорее. Не назвал ни дату, ни исполнителя.",
+      "choices": [
+        {
+          "label": "Попросить конкретный срок",
+          "text": "Chiediamo che il lavoro sia finito prima dell’ingresso.",
+          "next": "repair-check"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "repair-check": {
+      "text": "Non se la sente di prometterlo prima del mese prossimo. Per te significherebbe iniziare a lavorare con la finestra ancora guasta.",
+      "ru": "Он не готов обещать ремонт раньше следующего месяца. Для тебя это означает начать работать со всё ещё неисправным окном.",
+      "choices": [
+        {
+          "label": "Отказаться из-за неподтверждённого ремонта",
+          "text": "Allora questa soluzione non fa per me.",
+          "next": "decline-check"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "decline-check": {
+      "text": "Possiamo ringraziarlo e spiegare il vincolo concreto, senza discutere su quanto l’appartamento sia bello.",
+      "ru": "Можем поблагодарить и назвать конкретное ограничение, не споря о том, насколько хороша квартира.",
+      "choices": [
+        {
+          "label": "Закрыть переговоры вежливо",
+          "text": "Grazie per la visita, ma le condizioni non corrispondono alle mie esigenze.",
+          "next": "decline-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "negotiate-end": {
+      "text": "Hai una proposta più bassa, non ancora un accordo. I dati sulle spese saranno il prossimo criterio di scelta.",
+      "ru": "Есть предложение ниже, но ещё не договорённость. Следующий критерий выбора — данные о расходах.",
+      "choices": [],
+      "outcome": "negotiate",
+      "speaker": "Giulia"
+    },
+    "visit-end": {
+      "text": "Il secondo sopralluogo è fissato nell’orario utile. La parola vivace verrà confrontata con ciò che sentirai davvero.",
+      "ru": "Повторный просмотр назначен на нужное время. Слово «оживлённый» проверишь тем, что действительно услышишь.",
+      "choices": [],
+      "outcome": "visit",
+      "speaker": "Giulia"
+    },
+    "decline-end": {
+      "text": "La ricerca continua con criteri più precisi. Hai riconosciuto un limite prima di impegnarti.",
+      "ru": "Поиск продолжается с более точными критериями. Ты заметил ограничение до принятия обязательств.",
+      "choices": [],
+      "outcome": "decline",
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "negotiate": {
+      "title": "Переговоры без обещания",
+      "body": "Аренду готовы снизить до €650. Ты запросил прежние счета и письменную сводку до решения."
+    },
+    "visit": {
+      "title": "Проверка в правильный час",
+      "body": "Следующий просмотр в пятницу в 21:00 позволит проверить реальный вечерний шум."
+    },
+    "decline": {
+      "title": "Обоснованный отказ",
+      "body": "Ты назвал конкретное несоответствие бюджету или условиям работы и продолжил поиск."
+    }
+  },
+  "transfer": [
+    {
+      "text": "La stanza è compatta, ma ben organizzata. Se ti serve spazio per un grande tavolo da lavoro, conviene misurarla prima.",
+      "ru": "Комната компактная, но хорошо организована. Если нужен большой рабочий стол, лучше сначала измерить её.",
+      "question": "Какой скрытый вопрос стоит проверить?",
+      "options": [
+        "Можно ли завести питомца",
+        "Есть ли интернет",
+        "Хватит ли площади для стола"
+      ],
+      "answer": 2,
+      "explanation": "Compatta мягко указывает на небольшой размер; дальнейшая фраза связывает это с рабочим столом.",
+      "id": "it-flat-viewing-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Il canone comprende il riscaldamento; l’acqua viene conteggiata a parte secondo il consumo.",
+      "ru": "Арендная плата включает отопление; воду считают отдельно по расходу.",
+      "question": "Что оплачивается отдельно?",
+      "options": [
+        "Вода",
+        "Отопление",
+        "Обе услуги"
+      ],
+      "answer": 0,
+      "explanation": "A parte secondo il consumo относится к воде; comprende включает отопление.",
+      "id": "it-flat-viewing-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Ci hanno assicurato che il lavoro verrà fatto, ma non entro quale data. Non lo considererei ancora risolto.",
+      "ru": "Нас заверили, что работу сделают, но не сказали к какой дате. Я бы пока не считал вопрос решённым.",
+      "question": "Чего не хватает в обещании?",
+      "options": [
+        "Названия города",
+        "Срока выполнения",
+        "Согласия вообще выполнять работу"
+      ],
+      "answer": 1,
+      "explanation": "Ma non entro quale data указывает именно на отсутствие срока, а не самого обещания.",
+      "id": "it-flat-viewing-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

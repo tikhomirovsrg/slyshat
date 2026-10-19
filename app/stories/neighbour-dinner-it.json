@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "id": "neighbour-dinner-it",
+  "number": "03",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Ужин на общей террасе",
+  "category": "Знакомства и общение",
+  "summary": "Знакомство с соседями начинается с ужина. Разберись, что принести и как предупредить об ограничениях.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия, твоя соседка и организатор вечера."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Первое приглашение от соседей",
+  "contextText": "Ты недавно переехал. Джулия зовёт на общий ужин; ты не ешь мясо и можешь остаться только до девяти.",
+  "taskTitle": "Присоединиться и договориться о еде",
+  "taskText": "Уточни состав блюда и предложи посильную помощь. Можно прийти к ужину, заглянуть позже или встретиться завтра.",
+  "taskShort": "Без мяса · до 21:00",
+  "skill": "Распознавать приглашение, просьбу принести еду и предлог senza — без.",
+  "phraseLabels": [
+    "В складчину",
+    "Без мяса",
+    "Немного помочь"
+  ],
+  "transferIntro": "Марко записал три сообщения о других встречах. Услышь, кто что приносит и какая помощь нужна.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Ciao! Sabato facciamo una cena sulla terrazza del palazzo. Ognuno porta qualcosa, così nessuno deve cucinare tutto. Marco prepara una pasta senza carne. Ti va di venire alle sette e mezza? Se hai tempo, puoi darci una mano ad apparecchiare. Non devi conoscere già tutti: ti presento io i vicini.",
+  "openingRu": "Привет! В субботу устраиваем ужин на террасе нашего дома. Каждый что-нибудь приносит, так что никому не приходится готовить всё. Марко делает пасту без мяса. Хочешь прийти в половине восьмого? Если есть время, поможешь накрыть на стол. Необязательно уже всех знать: я сама познакомлю тебя с соседями.",
+  "openingQuestion": {
+    "question": "Что Джулия просит сделать с едой?",
+    "options": [
+      "Каждому что-нибудь принести",
+      "Оплатить общий заказ",
+      "Ничего не приносить"
+    ],
+    "answer": 0,
+    "explanation": "Ognuno porta qualcosa — каждый приносит что-нибудь. Это общий ужин, к которому все могут добавить своё блюдо."
+  },
+  "phrases": [
+    {
+      "id": "neighbour-dinner-ognuno",
+      "text": "Ognuno porta qualcosa.",
+      "ru": "Каждый что-нибудь приносит.",
+      "part": "porta qualcosa",
+      "why": "Ognuno означает каждый, а qualcosa — что-нибудь; конкретное блюдо ещё не выбрано.",
+      "sound": "В qualcosa ударение падает на co. Лови два смысловых слова: ognuno и porta.",
+      "example": "Ognuno porta una bevanda.",
+      "exampleRu": "Каждый приносит напиток."
+    },
+    {
+      "id": "neighbour-dinner-senza",
+      "text": "Marco prepara una pasta senza carne.",
+      "ru": "Марко готовит пасту без мяса.",
+      "part": "senza carne",
+      "why": "Senza исключает ингредиент; con, наоборот, означает с.",
+      "sound": "Слушай короткое senza перед названием продукта. От него зависит смысл всей просьбы.",
+      "example": "Vorrei una pizza senza formaggio.",
+      "exampleRu": "Я бы хотел пиццу без сыра."
+    },
+    {
+      "id": "neighbour-dinner-mano",
+      "text": "Puoi darci una mano?",
+      "ru": "Можешь нам помочь?",
+      "part": "darci una mano",
+      "why": "Dare una mano — помочь. В darci окончание ci означает нам.",
+      "sound": "Слушай darci una mano единым выражением; не ищи буквальную руку.",
+      "example": "Ti do una mano con le borse.",
+      "exampleRu": "Я помогу тебе с сумками."
+    },
+    {
+      "id": "neighbour-dinner-restare",
+      "text": "Posso restare fino alle nove.",
+      "ru": "Могу остаться до девяти.",
+      "part": "fino alle nove",
+      "why": "Fino a задаёт конец промежутка, а dopo — время после него.",
+      "sound": "В fino alle гласные соприкасаются. Опорные слова — fino и nove.",
+      "example": "Resto fino alla fine del concerto.",
+      "exampleRu": "Останусь до конца концерта."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Che cosa ti andrebbe di portare? Abbiamo già la pasta, ma mancano il pane e qualcosa da bere.",
+      "ru": "Что тебе хотелось бы принести? Паста уже есть, а хлеба и напитков не хватает.",
+      "choices": [
+        {
+          "label": "Уточнить, подходит ли паста",
+          "text": "La pasta è davvero senza carne?",
+          "next": "food"
+        },
+        {
+          "label": "Предложить хлеб",
+          "text": "Posso portare il pane e aiutare.",
+          "next": "help"
+        },
+        {
+          "label": "Предупредить о позднем приходе",
+          "text": "Posso passare dopo cena?",
+          "next": "late"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "food": {
+      "text": "Sì, ci sono zucchine e pomodori. Il formaggio sarà in una ciotola a parte. Tu mangi latticini?",
+      "ru": "Да, там кабачки и помидоры. Сыр будет отдельно в миске. Ты ешь молочные продукты?",
+      "choices": [
+        {
+          "label": "Согласиться и принести напитки",
+          "text": "Sì. Porto acqua e succo, ma vado via alle nove.",
+          "next": "timing"
+        },
+        {
+          "label": "Предложить свой салат",
+          "text": "Preferisco portare anche un’insalata.",
+          "next": "salad"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "help": {
+      "text": "Grazie! Vieni alle sette: apparecchiamo insieme. Porta il pane per sei persone, non per tutto il palazzo.",
+      "ru": "Спасибо! Приходи в семь: вместе накроем. Принеси хлеб на шестерых, а не на весь дом.",
+      "choices": [
+        {
+          "label": "Подтвердить помощь",
+          "text": "Per sei persone, va bene. Devo andare via alle nove.",
+          "next": "timing"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "salad": {
+      "text": "Ottima idea. Porta solo una ciotola piccola; saremo in sei. Ti tengo un posto vicino a Marco.",
+      "ru": "Отличная идея. Принеси только небольшую миску; нас будет шестеро. Сохраню тебе место рядом с Марко.",
+      "choices": [
+        {
+          "label": "Уточнить своё время",
+          "text": "Grazie. Posso restare fino alle nove.",
+          "next": "timing"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "timing": {
+      "text": "Nessun problema. Iniziamo a mangiare alle sette e mezza. Prima che tu vada, ti presento la vicina del secondo piano.",
+      "ru": "Ничего страшного. Начинаем есть в 19:30. Прежде чем ты уйдёшь, познакомлю с соседкой со второго этажа.",
+      "choices": [
+        {
+          "label": "Подтвердить ужин",
+          "text": "Perfetto, ci vediamo sabato sulla terrazza.",
+          "next": "dinner-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "late": {
+      "text": "Alle otto e mezza serviamo il dolce. Puoi passare per mezz’ora, oppure ci vediamo domani in cortile.",
+      "ru": "В 20:30 подаём десерт. Можешь заглянуть на полчаса, или увидимся завтра во дворе.",
+      "choices": [
+        {
+          "label": "Прийти к десерту",
+          "text": "Passo alle otto e mezza e porto della frutta.",
+          "next": "dessert"
+        },
+        {
+          "label": "Предложить завтра",
+          "text": "Domani è meglio. A che ora?",
+          "next": "tomorrow"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "dessert": {
+      "text": "Ti aspettiamo! Non suonare a ogni appartamento: usa il campanello con il mio nome.",
+      "ru": "Будем ждать! Не звони во все квартиры: используй звонок с моим именем.",
+      "choices": [
+        {
+          "label": "Подтвердить звонок",
+          "text": "Suono da te, allora. A sabato!",
+          "next": "dessert-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "dinner-end": {
+      "text": "A sabato! Sono contenta che tu venga. Non serve portare altro.",
+      "ru": "До субботы! Я рада, что ты придёшь. Больше ничего не нужно.",
+      "choices": [],
+      "outcome": "dinner",
+      "speaker": "Giulia"
+    },
+    "dessert-end": {
+      "text": "Con la frutta abbiamo anche un dolce leggero. Ti presento i vicini appena arrivi.",
+      "ru": "С фруктами у нас будет и лёгкий десерт. Познакомлю тебя с соседями сразу, как придёшь.",
+      "choices": [],
+      "outcome": "dessert",
+      "speaker": "Giulia"
+    },
+    "coffee-end": {
+      "text": "Perfetto, ti aspetto domani in cortile. Conoscerai i vicini un po’ alla volta.",
+      "ru": "Отлично, жду завтра во дворе. Постепенно познакомишься с соседями.",
+      "choices": [],
+      "outcome": "coffee",
+      "speaker": "Giulia"
+    },
+    "tomorrow": {
+      "text": "Domani alle undici sono in cortile con Marco. Beviamo un caffè e ti raccontiamo della cena.",
+      "ru": "Завтра в одиннадцать мы с Марко будем во дворе. Выпьем кофе и расскажем об ужине.",
+      "choices": [
+        {
+          "label": "Согласиться на кофе",
+          "text": "Alle undici in cortile, d’accordo.",
+          "next": "coffee-end"
+        }
+      ],
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "dinner": {
+      "title": "Ужин вместе",
+      "body": "Ты уточнил еду, предложил свой вклад и сообщил, что уйдёшь в 21:00. Ужин начнётся в 19:30."
+    },
+    "dessert": {
+      "title": "Короткий визит",
+      "body": "Ты придёшь в 20:30 с фруктами. У тебя полчаса на десерт и знакомство."
+    },
+    "coffee": {
+      "title": "Знакомство завтра",
+      "body": "Встреча состоится завтра в 11:00 во дворе. Ты выбрал удобный момент вместо спешки."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Per il picnic ognuno porta il proprio piatto. Le bevande le porto io.",
+      "ru": "На пикник каждый приносит свою тарелку. Напитки принесу я.",
+      "question": "Что нужно принести слушателю?",
+      "options": [
+        "Напитки для всех",
+        "Свою тарелку",
+        "Весь обед"
+      ],
+      "answer": 1,
+      "explanation": "Il proprio piatto — свою тарелку. Bevande относятся к тому, что принесёт говорящий.",
+      "id": "it-neighbour-dinner-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "La torta è senza latte, ma contiene uova. Per Luca preparo della frutta.",
+      "ru": "Торт без молока, но содержит яйца. Для Луки приготовлю фрукты.",
+      "question": "Что есть в торте?",
+      "options": [
+        "Молоко",
+        "Только фрукты",
+        "Яйца"
+      ],
+      "answer": 2,
+      "explanation": "Senza latte исключает молоко; contiene uova прямо указывает на яйца.",
+      "id": "it-neighbour-dinner-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Puoi darci una mano a spostare le sedie prima della riunione? Non serve arrivare prima delle dieci.",
+      "ru": "Можешь помочь нам передвинуть стулья перед собранием? Раньше десяти приходить не нужно.",
+      "question": "О какой помощи просят?",
+      "options": [
+        "Передвинуть стулья",
+        "Готовить ужин",
+        "Встретить гостей в девять"
+      ],
+      "answer": 0,
+      "explanation": "Darci una mano a spostare le sedie — помочь передвинуть стулья.",
+      "id": "it-neighbour-dinner-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

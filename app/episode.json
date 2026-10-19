@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "id": "coffee-01",
+  "title": "Успеем выпить кофе?",
+  "opening": "Hey, are we still on for coffee? I'm running a bit late. Could we make it half past six instead? There's a little place just round the corner from the station.",
+  "openingRu": "Привет! Мы всё ещё встречаемся за кофе? Я немного опаздываю. Давай вместо этого в половине седьмого? Есть небольшое кафе за углом от станции.",
+  "phrases": [
+    {
+      "id": "still-on",
+      "ru": "Договорённость о встрече за кофе в силе?",
+      "part": "still on for coffee",
+      "why": "Still on означает, что план остаётся в силе. Вопрос относится к договорённости, а не к самому кофе.",
+      "sound": "Слушай связку still on целиком. Короткие are we обычно менее заметны, чем still и coffee.",
+      "example": "Are we still on for tomorrow?",
+      "exampleRu": "Наша договорённость на завтра в силе?",
+      "text": "Are we still on for coffee?"
+    },
+    {
+      "id": "running-late",
+      "ru": "Я немного опаздываю.",
+      "part": "running a bit late",
+      "why": "Running late — устойчивое выражение об опоздании. Оно не означает, что человек бежит.",
+      "sound": "Попробуй услышать опорные слова running и late. Между ними короткое a bit звучит слитно.",
+      "example": "Sorry, I'm running ten minutes late.",
+      "exampleRu": "Извини, я опаздываю на десять минут.",
+      "text": "I'm running a bit late."
+    },
+    {
+      "id": "make-it",
+      "ru": "Можем вместо этого встретиться в 18:30?",
+      "part": "half past six",
+      "why": "Make it + время — договориться на это время. Half past six — половина седьмого, 6:30. Instead показывает, что время меняют.",
+      "sound": "В первую очередь поймай время. Затем переслушай вместо чего его предлагают: это помогает слово instead.",
+      "example": "Could we make it quarter past seven instead?",
+      "exampleRu": "Можем вместо этого встретиться в 19:15?",
+      "text": "Could we make it half past six instead?"
+    },
+    {
+      "id": "round-corner",
+      "ru": "Прямо за углом от станции.",
+      "part": "round the corner",
+      "why": "Ориентир — станция, а кафе находится рядом, за углом. Это ещё не точный адрес: можно попросить ориентир.",
+      "sound": "Station несёт основную информацию о месте. Короткие the и from могут звучать слабее.",
+      "example": "The bakery is just round the corner.",
+      "exampleRu": "Пекарня прямо за углом.",
+      "text": "Just round the corner from the station."
+    },
+    {
+      "id": "takeaway",
+      "ru": "Мы могли бы взять кофе с собой.",
+      "part": "coffee to go",
+      "why": "To go в заказе еды или напитков означает «с собой».",
+      "sound": "Услышь coffee to go как одно смысловое сочетание.",
+      "example": "Could I get a latte to go, please?",
+      "exampleRu": "Можно латте с собой, пожалуйста?",
+      "text": "We could get our coffee to go."
+    },
+    {
+      "id": "opposite",
+      "ru": "Оно напротив книжного магазина, а не рядом с ним.",
+      "part": "opposite the bookshop",
+      "why": "Opposite — напротив. Next to — рядом. Маленькое not меняет смысл второй части.",
+      "sound": "При повторе обрати внимание на противопоставление opposite и not next to.",
+      "example": "Meet me opposite the main entrance.",
+      "exampleRu": "Встретимся напротив главного входа.",
+      "text": "It's opposite the bookshop, not next to it."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Maya",
+      "text": "I can get there at half past six. Does that still work for you?",
+      "ru": "Я могу быть там в 18:30. Тебе всё ещё подходит?",
+      "choices": [
+        {
+          "label": "Уточнить время",
+          "next": "clarify",
+          "text": "Sorry, did you say six thirty?"
+        },
+        {
+          "label": "Встретиться ненадолго: уйти нужно в 18:50",
+          "next": "short",
+          "text": "That works, but I need to leave at six fifty."
+        },
+        {
+          "label": "Предложить кофе с собой",
+          "next": "take",
+          "text": "Could we get our coffee to go?"
+        },
+        {
+          "label": "Предложить завтра",
+          "next": "tomorrow",
+          "text": "I'm a bit short on time. How about tomorrow?"
+        }
+      ]
+    },
+    "clarify": {
+      "speaker": "Maya",
+      "text": "Yes, six thirty. Half past six. Sorry about the change of plan!",
+      "ru": "Да, шесть тридцать. Половина седьмого. Извини за изменение планов!",
+      "choices": [
+        {
+          "label": "Подтвердить короткую встречу до 18:50",
+          "next": "short",
+          "text": "No problem. I can stay until six fifty."
+        },
+        {
+          "label": "Взять кофе с собой",
+          "next": "take",
+          "text": "Let's get our coffee to go."
+        },
+        {
+          "label": "Перенести на завтра",
+          "next": "tomorrow",
+          "text": "Could we meet tomorrow instead?"
+        }
+      ]
+    },
+    "short": {
+      "speaker": "Maya",
+      "text": "Twenty minutes is fine! The cafe is by the north exit of the station. Do you know the bookshop there?",
+      "ru": "Двадцать минут — отлично! Кафе у северного выхода со станции. Знаешь книжный магазин там?",
+      "choices": [
+        {
+          "label": "Уточнить, где кафе относительно книжного",
+          "next": "landmark",
+          "text": "Is the cafe next to the bookshop?"
+        },
+        {
+          "label": "Попросить повторить, какой выход",
+          "next": "exit",
+          "text": "Which exit did you say?"
+        }
+      ]
+    },
+    "exit": {
+      "speaker": "Maya",
+      "text": "The north exit. Turn left when you come out. You'll see the bookshop across the road.",
+      "ru": "Северный выход. Поверни налево, когда выйдешь. Увидишь книжный магазин через дорогу.",
+      "choices": [
+        {
+          "label": "Уточнить, рядом ли с ним кафе",
+          "next": "landmark",
+          "text": "And is the cafe next to the bookshop?"
+        }
+      ]
+    },
+    "landmark": {
+      "speaker": "Maya",
+      "text": "It's opposite the bookshop, not next to it. It's called Little Corner. I'll wait outside.",
+      "ru": "Оно напротив книжного, а не рядом. Называется Little Corner. Я подожду снаружи.",
+      "choices": [
+        {
+          "label": "Подтвердить место и время",
+          "next": "short-confirm",
+          "text": "Great. Outside Little Corner at six thirty, then."
+        },
+        {
+          "label": "Предложить взять напитки с собой",
+          "next": "take",
+          "text": "Actually, shall we get our coffee to go?"
+        }
+      ]
+    },
+    "short-confirm": {
+      "speaker": "Maya",
+      "text": "Perfect. We can catch up for twenty minutes. I'll make sure you're on your way by six fifty.",
+      "ru": "Отлично. Поболтаем двадцать минут. Я прослежу, чтобы ты ушёл к 18:50.",
+      "choices": [
+        {
+          "label": "Договорились, до встречи!",
+          "next": "short-end",
+          "text": "Sounds good. See you there!"
+        }
+      ]
+    },
+    "short-end": {
+      "speaker": "Maya",
+      "text": "See you soon!",
+      "ru": "До скорого!",
+      "outcome": "short",
+      "choices": []
+    },
+    "take": {
+      "speaker": "Maya",
+      "text": "Good idea. I'll order before you arrive. Would you like a latte, or do you prefer black coffee?",
+      "ru": "Хорошая идея. Я закажу до твоего прихода. Тебе латте или предпочитаешь чёрный кофе?",
+      "choices": [
+        {
+          "label": "Латте на овсяном молоке",
+          "next": "oat",
+          "text": "A latte with oat milk, please."
+        },
+        {
+          "label": "Чёрный кофе без сахара",
+          "next": "black",
+          "text": "Black coffee, no sugar, please."
+        }
+      ]
+    },
+    "oat": {
+      "speaker": "Maya",
+      "text": "One oat latte. Got it. I'll meet you outside the north exit at six thirty, with both coffees.",
+      "ru": "Один латте на овсяном. Поняла. Встретимся снаружи у северного выхода в 18:30, я принесу оба кофе.",
+      "choices": [
+        {
+          "label": "Уточнить: теперь у выхода, не у кафе?",
+          "next": "take-location",
+          "text": "So, outside the station, not the cafe?"
+        },
+        {
+          "label": "Подтвердить встречу у северного выхода",
+          "next": "take-confirm",
+          "text": "Thanks! I'll see you at the north exit."
+        }
+      ]
+    },
+    "black": {
+      "speaker": "Maya",
+      "text": "Black coffee, no sugar. Got it. I'll meet you outside the north exit at six thirty, with both coffees.",
+      "ru": "Чёрный кофе без сахара. Поняла. Встретимся снаружи у северного выхода в 18:30, я принесу оба кофе.",
+      "choices": [
+        {
+          "label": "Уточнить новое место встречи",
+          "next": "take-location",
+          "text": "So, outside the station, not the cafe?"
+        },
+        {
+          "label": "Подтвердить встречу у северного выхода",
+          "next": "take-confirm",
+          "text": "Thanks! I'll see you at the north exit."
+        }
+      ]
+    },
+    "take-location": {
+      "speaker": "Maya",
+      "text": "Exactly. Outside the station. That way we can walk together, and you won't have to rush.",
+      "ru": "Именно. Снаружи у станции. Так мы сможем пройтись вместе и тебе не придётся спешить.",
+      "choices": [
+        {
+          "label": "Поблагодарить и напомнить про 18:50",
+          "next": "take-confirm",
+          "text": "That's really helpful. I still need to leave at six fifty."
+        }
+      ]
+    },
+    "take-confirm": {
+      "speaker": "Maya",
+      "text": "Of course. We'll have twenty minutes for a walk. Text me when you get there.",
+      "ru": "Конечно. У нас будет двадцать минут на прогулку. Напиши, когда придёшь.",
+      "choices": [
+        {
+          "label": "Договорились, напишу по прибытии",
+          "next": "take-end",
+          "text": "Will do. See you soon!"
+        }
+      ]
+    },
+    "take-end": {
+      "speaker": "Maya",
+      "text": "See you at the station!",
+      "ru": "Увидимся у станции!",
+      "outcome": "take",
+      "choices": []
+    },
+    "tomorrow": {
+      "speaker": "Maya",
+      "text": "Tomorrow works. I have a meeting until quarter past five, but I'm free after that. What time suits you?",
+      "ru": "Завтра подходит. У меня встреча до 17:15, а после я свободна. Какое время тебе удобно?",
+      "choices": [
+        {
+          "label": "Предложить 17:30",
+          "next": "tomorrow-half",
+          "text": "How about half past five?"
+        },
+        {
+          "label": "Предложить 18:00",
+          "next": "tomorrow-six",
+          "text": "Would six o'clock work?"
+        },
+        {
+          "label": "Уточнить, когда заканчивается её встреча",
+          "next": "tomorrow-clarify",
+          "text": "Sorry, what time does your meeting finish?"
+        }
+      ]
+    },
+    "tomorrow-clarify": {
+      "speaker": "Maya",
+      "text": "At five fifteen. So I can be at the cafe by half past five.",
+      "ru": "В 17:15. Так что к 17:30 я могу быть в кафе.",
+      "choices": [
+        {
+          "label": "Выбрать 17:30",
+          "next": "tomorrow-half",
+          "text": "Half past five sounds good."
+        },
+        {
+          "label": "Выбрать 18:00",
+          "next": "tomorrow-six",
+          "text": "Let's make it six, if that's okay."
+        }
+      ]
+    },
+    "tomorrow-half": {
+      "speaker": "Maya",
+      "text": "Half past five it is. Shall we meet inside Little Corner? I'll book a table by the window.",
+      "ru": "Тогда в 17:30. Встретимся внутри Little Corner? Я забронирую столик у окна.",
+      "choices": [
+        {
+          "label": "Подтвердить: завтра внутри кафе в 17:30",
+          "next": "tomorrow-end",
+          "text": "Perfect. Inside the cafe tomorrow at five thirty."
+        }
+      ]
+    },
+    "tomorrow-six": {
+      "speaker": "Maya",
+      "text": "Six o'clock is good. Shall we meet inside Little Corner? I'll book a table by the window.",
+      "ru": "18:00 подходит. Встретимся внутри Little Corner? Я забронирую столик у окна.",
+      "choices": [
+        {
+          "label": "Подтвердить: завтра внутри кафе в 18:00",
+          "next": "tomorrow-end",
+          "text": "Perfect. Inside the cafe tomorrow at six."
+        }
+      ]
+    },
+    "tomorrow-end": {
+      "speaker": "Maya",
+      "text": "Lovely. Looking forward to it. Have a good evening!",
+      "ru": "Отлично. Буду ждать встречи. Хорошего вечера!",
+      "outcome": "tomorrow",
+      "choices": []
+    }
+  },
+  "transfer": [
+    {
+      "id": "transfer-time",
+      "speaker": "Oliver",
+      "text": "Hi! Our table is booked for quarter past seven, but let's meet ten minutes earlier outside the restaurant.",
+      "ru": "Привет! Столик забронирован на 19:15, но давай встретимся на десять минут раньше снаружи у ресторана.",
+      "question": "Во сколько нужно встретиться?",
+      "options": [
+        "В 19:05",
+        "В 19:15",
+        "В 19:25"
+      ],
+      "answer": 0,
+      "explanation": "Quarter past seven — 19:15. Ten minutes earlier — на десять минут раньше. Значит, встреча в 19:05."
+    },
+    {
+      "id": "transfer-place",
+      "speaker": "Oliver",
+      "text": "The entrance is opposite the library. Wait outside, please. Don't go in yet; I'll be there in a minute.",
+      "ru": "Вход напротив библиотеки. Подожди снаружи, пожалуйста. Пока не заходи: я буду через минуту.",
+      "question": "Где тебя просят подождать?",
+      "options": [
+        "Внутри библиотеки",
+        "Снаружи у входа напротив библиотеки",
+        "Внутри ресторана"
+      ],
+      "answer": 1,
+      "explanation": "Wait outside — подожди снаружи. Opposite the library — напротив библиотеки. Don't go in yet — пока не заходи."
+    },
+    {
+      "id": "transfer-plan",
+      "speaker": "Oliver",
+      "text": "I'm running a little late. Could we make it tomorrow instead? I'm free after half past four.",
+      "ru": "Я немного опаздываю. Можем вместо этого встретиться завтра? Я свободен после 16:30.",
+      "question": "Какое предложение подходит?",
+      "options": [
+        "Сегодня в 16:45",
+        "Завтра в 16:15",
+        "Завтра в 16:45"
+      ],
+      "answer": 2,
+      "explanation": "Tomorrow instead — завтра вместо сегодняшнего дня. After half past four — после 16:30. Подходит завтра в 16:45."
+    }
+  ],
+  "number": "01",
+  "language": "en",
+  "locale": "en-GB",
+  "category": "Знакомства и общение",
+  "summary": "Майя опаздывает. У тебя свои планы на вечер. Сможете договориться?",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Новая знакомая. Всегда рада хорошему кофе."
+  },
+  "secondSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг, который зовёт тебя на ужин."
+  },
+  "contextTitle": "Встреча после работы",
+  "contextText": "Вы с Майей договорились выпить кофе рядом со станцией. Она прислала голосовое — кажется, планы меняются.",
+  "taskTitle": "Тебе нужно уйти в 18:50",
+  "taskText": "Выясни новое время, выбери удобный вариант и договорись о месте.",
+  "taskShort": "Уйти в 18:50",
+  "skill": "Услышать изменение планов и договориться.",
+  "phraseLabels": [
+    "Договорённость",
+    "Опоздание",
+    "Новое время"
+  ],
+  "transferIntro": "Оливер зовёт тебя на ужин. Послушай новые сообщения и выдели нужные детали.",
+  "duration": "15–20 минут",
+  "repair": "Could you say that again?",
+  "checkText": "Hi! Are you ready to start?",
+  "openingQuestion": {
+    "question": "На какое время Майя предлагает перенести встречу?",
+    "options": [
+      "18:15",
+      "18:30",
+      "18:50"
+    ],
+    "answer": 1,
+    "explanation": "Half past six — половина седьмого, 18:30. А 18:50 — время, когда тебе нужно уйти."
+  },
+  "outcomes": {
+    "short": {
+      "title": "Время на маленькую встречу",
+      "body": "Вы встречаетесь у Little Corner в 18:30. У вас двадцать минут: тебе нужно уйти в 18:50."
+    },
+    "take": {
+      "title": "Кофе и прогулка",
+      "body": "Майя принесёт напитки к северному выходу станции в 18:30. Вы сможете поговорить по дороге."
+    },
+    "tomorrow": {
+      "title": "Встреча без спешки",
+      "body": "Вы выбрали удобное время на завтра и встретитесь внутри Little Corner."
+    }
+  }
+}

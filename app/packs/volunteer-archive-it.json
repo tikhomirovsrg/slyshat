@@ -1,0 +1,147 @@
+{
+  "episode": "volunteer-archive-it",
+  "level": "C1",
+  "grammar": {
+    "title": "Пассив и номинализация в аргументированном тексте",
+    "explanation": "Пассив переносит фокус на объект: i volontari hanno rivisto la didascalia → la didascalia è stata rivista dai volontari. Причастия согласуются с подлежащим пассива. Номинализация превращает действие в существительное: verificare le fonti → la verifica delle fonti. Она помогает сжать аргумент, но может скрывать действующее лицо; при важной ответственности укажите его явно.",
+    "examples": [
+      {
+        "text": "Le testimonianze sono state raccolte dai volontari.",
+        "ru": "Свидетельства были собраны волонтёрами."
+      },
+      {
+        "text": "La revisione delle didascalie richiede tempo.",
+        "ru": "Пересмотр подписей требует времени."
+      },
+      {
+        "text": "Il consenso dei partecipanti è stato verificato dal gruppo.",
+        "ru": "Группа проверила согласие участников."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Кто говорит от имени архива",
+    "kind": "эссе",
+    "text": "Un archivio di quartiere non conserva soltanto documenti: propone anche un modo di collegarli e interpretarli. Quando un gruppo di volontari ha preparato una mostra sulle trasformazioni di una piazza, questa responsabilità è emersa nella scelta delle didascalie. Una fotografia poteva illustrare un miglioramento urbanistico oppure la perdita di uno spazio di incontro, a seconda della voce privilegiata. Le prime bozze presentavano il cambiamento come un progresso condiviso. Alcune testimonianze, però, descrivevano esperienze diverse. Una commerciante ricordava nuove opportunità, mentre un residente raccontava la scomparsa di abitudini quotidiane. I volontari hanno deciso di non fondere queste prospettive in una frase apparentemente neutrale. Le hanno affiancate, precisando chi parlava e a quale esperienza faceva riferimento. Un secondo problema riguardava l’uso delle registrazioni. Alcune persone avevano accettato di essere intervistate senza immaginare che la propria voce sarebbe stata riprodotta durante la mostra. Il gruppo ha quindi ricontattato gli interessati, spiegando il contesto previsto e proponendo anche citazioni anonime o la rinuncia all’inclusione. Una testimonianza particolarmente efficace è stata esclusa perché la persona non desiderava renderla pubblica. Quella rinuncia non ha impoverito il progetto: ha reso visibile un limite che gli organizzatori avevano scelto di rispettare. La qualità di un archivio partecipato non si misura soltanto dalla quantità di materiali esposti, ma anche dalla chiarezza delle decisioni editoriali. Rendere riconoscibili le fonti, le interpretazioni e le omissioni motivate permette al pubblico di discutere il racconto senza confonderlo con una versione definitiva della memoria collettiva."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Дополните причастием rivedere, согласовав его с la didascalia.",
+      "answer": "rivista",
+      "explanation": "В пассиве причастие согласуется с подлежащим женского рода: rivista.",
+      "text": "La didascalia è stata ___ dai volontari.",
+      "id": "volunteer-archive-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Образуйте существительное на -zione от interpretare.",
+      "answer": "interpretazione",
+      "explanation": "Interpretare → interpretazione; номинализация называет процесс существительным.",
+      "text": "L’___ delle fonti deve essere esplicita.",
+      "id": "volunteer-archive-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Какая пассивная фраза сохраняет указанного деятеля?",
+      "answer": "Le fonti sono state verificate dai volontari.",
+      "explanation": "Дополнение dai volontari сохраняет информацию о том, кто проверял источники.",
+      "options": [
+        "Le fonti sono state verificate dai volontari.",
+        "Le fonti sono state verificate.",
+        "La verifica delle fonti è terminata."
+      ],
+      "id": "volunteer-archive-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает omissioni motivate в заключении?",
+      "answer": "Esclusioni di materiali accompagnate da una ragione esplicita.",
+      "explanation": "Omissioni — пропуски или исключения; motivate — обоснованные, имеющие объяснимую причину.",
+      "options": [
+        "Esclusioni di materiali accompagnate da una ragione esplicita.",
+        "Errori di trascrizione che nessuno ha notato.",
+        "Informazioni aggiunte per rendere il racconto più vivace."
+      ],
+      "id": "volunteer-archive-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите пассивное предложение.",
+      "answer": "Le didascalie sono state riviste.",
+      "explanation": "Подлежащее женского рода множественного числа требует state riviste.",
+      "words": [
+        "sono",
+        "Le",
+        "state",
+        "didascalie",
+        "riviste."
+      ],
+      "id": "volunteer-archive-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Преобразуйте в пассив passato prossimo, начав с La didascalia и сохранив деятеля.",
+      "answer": "La didascalia è stata rivista dai volontari.",
+      "explanation": "Объект становится подлежащим; hanno rivisto → è stata rivista; деятель вводится da.",
+      "text": "I volontari hanno rivisto la didascalia.",
+      "id": "volunteer-archive-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какой тезис отстаивает эссе?",
+      "answer": "Un archivio deve rendere leggibili le proprie scelte e responsabilità.",
+      "explanation": "Текст связывает качество архива с прозрачностью источников, интерпретаций и обоснованных исключений.",
+      "options": [
+        "Un archivio deve rendere leggibili le proprie scelte e responsabilità.",
+        "Una mostra deve includere ogni documento disponibile.",
+        "La memoria collettiva può essere ridotta a una sola voce neutrale."
+      ],
+      "id": "volunteer-archive-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему исключили одно выразительное свидетельство?",
+      "answer": "La persona non voleva che fosse reso pubblico.",
+      "explanation": "После уточнения контекста человек не захотел публичного использования своего свидетельства.",
+      "options": [
+        "La persona non voleva che fosse reso pubblico.",
+        "La registrazione non conteneva nessun ricordo della piazza.",
+        "Tutti i volontari avevano la stessa opinione del residente."
+      ],
+      "id": "volunteer-archive-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Зачем разные воспоминания поместили рядом, сохранив указание говорящего?",
+      "answer": "Per mostrare la pluralità delle esperienze senza appiattirle.",
+      "explanation": "Сопоставление сохраняет различие перспектив и не выдаёт искусственное обобщение за нейтральность.",
+      "options": [
+        "Per mostrare la pluralità delle esperienze senza appiattirle.",
+        "Per dimostrare che una delle due persone mentiva.",
+        "Per evitare ogni responsabilità nella scelta delle didascalie."
+      ],
+      "id": "volunteer-archive-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите редакционную записку команде локального архива: предложите, как показать противоречащие воспоминания, уточнить согласие на публикацию и объяснить исключение одного материала. Обоснуйте критерии.",
+    "min": 190,
+    "max": 230,
+    "checklist": [
+      "Аргумент различает источник, интерпретацию и редакционное решение.",
+      "Есть минимум две номинализации и одно корректное пассивное предложение.",
+      "Вопрос ответственности не скрыт: понятно, кто принимает и проверяет решения.",
+      "Записка имеет тезис, обоснование, конкретную процедуру и пределы предложенного решения."
+    ]
+  }
+}

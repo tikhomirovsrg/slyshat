@@ -1,0 +1,156 @@
+{
+  "episode": "photo-en",
+  "level": "C1",
+  "grammar": {
+    "title": "Сообщаем чужую версию: is believed to have",
+    "explanation": "Конструкции is believed / thought / said to позволяют указать, что информация является сообщаемой версией. Для события раньше момента сообщения используем to have + третья форма: is thought to have taken. Если сам предмет подвергся действию, нужен пассив: is thought to have been taken. Такая грамматика сама по себе не называет источник и не доказывает версию: в содержании стоит уточнить, кто и на каком основании так считает.",
+    "examples": [
+      {
+        "text": "The photograph is thought to have been taken in 1932.",
+        "ru": "Предполагается, что фотография была сделана в 1932 году."
+      },
+      {
+        "text": "The woman is believed to have lived in Bristol.",
+        "ru": "Считается, что женщина жила в Бристоле."
+      },
+      {
+        "text": "The date is said to be approximate.",
+        "ru": "Говорят, что дата приблизительная."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Кому принадлежит история снимка?",
+    "kind": "эссе",
+    "text": "An old family photograph appeared to offer a simple story: two sisters outside a railway station, apparently preparing to leave their hometown. A date written on the back seemed to place the scene just before a major family move. My first impulse was to publish the image with a confident account of their departure.\n\nThen an aunt questioned the identification. She recognised one woman but thought the other was a neighbour, not her sister. A cousin noticed that the station sign belonged to a different town. Neither observation settled the matter, yet both weakened the account I had already begun composing. The handwritten date might have recorded the day the photograph was printed or added to an album, rather than the day it was taken.\n\nI separated what the image showed from what relatives remembered and what I inferred. I also asked the living people connected to the story whether they were comfortable with public discussion. Permission to scan a family album did not necessarily include permission to attach a speculative personal history to it.\n\nIn the end, we shared the photograph privately with a short list of open questions. Several relatives contributed details, some of which contradicted one another. The uncertainty remained, but the conversation became richer. A cautious caption would not have diminished the photograph's value. It would have preserved room for other people's knowledge and avoided turning an attractive interpretation into a family fact that later readers might struggle to correct."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: как автор предлагает работать с семейным снимком?",
+      "answer": "Разделять данные и версии, учитывая согласие связанных людей",
+      "explanation": "Автор отделяет видимое от воспоминаний и выводов, а также уточняет допустимость публичного обсуждения.",
+      "options": [
+        "Выбирать самую интересную версию и публиковать её",
+        "Считать воспоминание старшего родственника окончательным",
+        "Разделять данные и версии, учитывая согласие связанных людей"
+      ],
+      "id": "photo-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что заметил двоюродный родственник?",
+      "answer": "Название станции относилось к другому городу",
+      "explanation": "A cousin noticed that the station sign belonged to a different town.",
+      "options": [
+        "Название станции относилось к другому городу",
+        "На фотографии точно были две сестры",
+        "Дата была напечатана современной камерой"
+      ],
+      "id": "photo-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему согласия на сканирование оказалось недостаточно?",
+      "answer": "Оно не обязательно разрешает публично приписывать людям предположительную историю",
+      "explanation": "Текст различает разрешение сделать цифровую копию и разрешение связать её с публичным личным повествованием.",
+      "options": [
+        "Сканирование всегда запрещает обсуждать снимок",
+        "Оно не обязательно разрешает публично приписывать людям предположительную историю",
+        "Только профессиональный архив вправе составить подпись"
+      ],
+      "id": "photo-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Какая фраза означает, что снимок, предположительно, сделали в прошлом?",
+      "answer": "The photograph is thought to have been taken in 1932.",
+      "explanation": "To have been taken — перфектный пассивный инфинитив: снимок сделали раньше момента сообщения.",
+      "options": [
+        "The photograph is thought to take in 1932.",
+        "The photograph is thought to have been taken in 1932.",
+        "The photograph is thought to have taken in 1932."
+      ],
+      "id": "photo-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Дополните перфектный пассивный инфинитив одним словом.",
+      "answer": "been",
+      "explanation": "После to have для пассива перед taken нужно been.",
+      "text": "The image is believed to have ___ taken before the move.",
+      "id": "photo-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите осторожное сообщение о прошлом женщины.",
+      "answer": "She is believed to have lived in Bristol",
+      "explanation": "Is believed to have lived передаёт сообщаемую версию о более ранней жизни.",
+      "words": [
+        "Bristol",
+        "have",
+        "believed",
+        "She",
+        "in",
+        "to",
+        "lived",
+        "is"
+      ],
+      "id": "photo-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Начните с The date is said и сохраните approximate.",
+      "answer": "The date is said to be approximate",
+      "explanation": "It is said that ... преобразуется в подлежащее + is said + to be.",
+      "text": "It is said that the date is approximate.",
+      "id": "photo-en-study-7",
+      "accepted": []
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает corroborate an account?",
+      "answer": "Подтвердить версию дополнительными независимыми сведениями",
+      "explanation": "Corroborate — дать дополнительное подтверждение; повтор той же версии сам по себе независимым свидетельством не становится.",
+      "options": [
+        "Подтвердить версию дополнительными независимыми сведениями",
+        "Сделать версию эмоционально привлекательнее",
+        "Убрать из версии все даты"
+      ],
+      "id": "photo-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Какая подпись корректно отделяет предположение от установленного факта?",
+      "answer": "The location remains uncertain; one relative suggests Bristol.",
+      "explanation": "Фраза обозначает неопределённость места и приписывает версию конкретному источнику.",
+      "options": [
+        "This definitely shows the sisters leaving Bristol.",
+        "Everyone agrees that the date proves the departure.",
+        "The location remains uncertain; one relative suggests Bristol."
+      ],
+      "id": "photo-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите родственникам предложение по работе со старой фотографией: укажите два видимых факта, две противоречащие версии и сведения, которые ещё нужно проверить. Отдельно обсудите согласие на публичную публикацию и предложите осторожную подпись. Используйте is believed/thought to have и ясно назовите источник версии. Завершите планом дальнейшей проверки, не объявляя догадку фактом.",
+    "min": 190,
+    "max": 230,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

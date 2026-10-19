@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "id": "train-it",
+  "number": "02",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Da quale binario?",
+  "category": "Поездки",
+  "summary": "Поезд отменён. Спроси о билетах, платформах и пересадке.",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Сотрудник справочной службы на станции."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Путешественница, которая уточняет новый маршрут."
+  },
+  "contextTitle": "На железнодорожной станции",
+  "contextText": "В этой учебной истории ты едешь в город Бельмаре. Поезд отменили, и ты обращаешься в справочную службу.",
+  "taskTitle": "Приехать до 14:00, бюджет — €20",
+  "taskText": "Узнай время прибытия и стоимость. Выбери прямой поезд, пересадку или автобус.",
+  "taskShort": "До 14:00 · до €20",
+  "skill": "Услышать время, номер платформы, цену и необходимость пересадки.",
+  "phraseLabels": [
+    "Поезд отменён",
+    "Платформа",
+    "Пересадка"
+  ],
+  "transferIntro": "Джулия сообщает детали других поездок. Здесь новые времена и платформы.",
+  "duration": "15–20 минут",
+  "repair": "Puoi ripetere, per favore?",
+  "checkText": "Ciao! Sei pronto per iniziare?",
+  "opening": "Il treno delle undici e quarantacinque è stato cancellato. Il prossimo diretto parte alle dodici e dieci dal binario tre. Ci sono anche un regionale e un autobus.",
+  "openingRu": "Поезд в 11:45 отменён. Следующий прямой отправляется в 12:10 с третьей платформы. Ещё есть региональный поезд и автобус.",
+  "openingQuestion": {
+    "question": "Когда отправляется следующий прямой поезд?",
+    "options": [
+      "В 11:45",
+      "В 12:10",
+      "В 13:20"
+    ],
+    "answer": 1,
+    "explanation": "Parte alle dodici e dieci — отправляется в 12:10. Отменённый поезд был в 11:45."
+  },
+  "phrases": [
+    {
+      "id": "cancellato",
+      "text": "Il treno è stato cancellato.",
+      "ru": "Поезд отменён.",
+      "part": "è stato cancellato",
+      "why": "Cancellato — отменён. In ritardo — опаздывает: в этом случае поезд всё ещё ожидается.",
+      "sound": "В первую очередь поймай cancellato, чтобы понять, что старый план больше не работает.",
+      "example": "Il treno è in ritardo di dieci minuti.",
+      "exampleRu": "Поезд опаздывает на десять минут."
+    },
+    {
+      "id": "binario",
+      "text": "Parte dal binario tre.",
+      "ru": "Отправляется с третьей платформы.",
+      "part": "dal binario tre",
+      "why": "Binario в объявлении указывает номер пути или платформы. Parte — отправляется, arriva — прибывает.",
+      "sound": "Услышь число после binario отдельно от времени отправления.",
+      "example": "Da quale binario parte il treno?",
+      "exampleRu": "С какой платформы отправляется поезд?"
+    },
+    {
+      "id": "cambiare",
+      "text": "Devo cambiare treno?",
+      "ru": "Мне нужно пересесть на другой поезд?",
+      "part": "cambiare treno",
+      "why": "Cambiare treno — сделать пересадку. Diretto — прямой поезд.",
+      "sound": "Сочетание cambiare treno обозначает одно действие — пересадку.",
+      "example": "Devi cambiare a San Pietro.",
+      "exampleRu": "Нужно пересесть в Сан-Пьетро."
+    },
+    {
+      "id": "solo-andata",
+      "text": "Un biglietto di sola andata, per favore.",
+      "ru": "Билет в одну сторону, пожалуйста.",
+      "part": "sola andata",
+      "why": "Sola andata — в одну сторону. Andata e ritorno — туда и обратно.",
+      "sound": "Слушай блок andata e ritorno целиком и замечай дополнительное ritorno.",
+      "example": "Quanto costa il biglietto?",
+      "exampleRu": "Сколько стоит билет?"
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Marco",
+      "text": "Il diretto costa venti euro. Il regionale costa quattordici e l’autobus dodici. Quale preferisci?",
+      "ru": "Прямой поезд стоит двадцать евро, региональный — четырнадцать, автобус — двенадцать. Что предпочитаешь?",
+      "choices": [
+        {
+          "label": "Уточнить прибытие прямого поезда",
+          "text": "A che ora arriva il diretto?",
+          "next": "direct"
+        },
+        {
+          "label": "Узнать о региональном поезде",
+          "text": "Devo cambiare con il regionale?",
+          "next": "regional"
+        },
+        {
+          "label": "Узнать об автобусе",
+          "text": "A che ora arriva l’autobus?",
+          "next": "bus"
+        }
+      ]
+    },
+    "direct": {
+      "speaker": "Marco",
+      "text": "Arriva alle tredici e venti. Non devi cambiare. Il posto è incluso nel prezzo.",
+      "ru": "Прибывает в 13:20. Пересаживаться не нужно. Место включено в цену.",
+      "choices": [
+        {
+          "label": "Уточнить платформу",
+          "text": "Da quale binario parte?",
+          "next": "platform"
+        },
+        {
+          "label": "Рассмотреть более дешёвый вариант",
+          "text": "Preferisco spendere meno. Mi parli del regionale?",
+          "next": "regional"
+        }
+      ]
+    },
+    "platform": {
+      "speaker": "Marco",
+      "text": "Il diretto costa venti euro e arriva alle tredici e venti. Parte dal binario tre alle dodici e dieci. Il sottopassaggio è sulla destra.",
+      "ru": "Прямой поезд стоит 20 евро и прибывает в 13:20. Отправление с третьей платформы в 12:10. Подземный переход справа.",
+      "choices": [
+        {
+          "label": "Купить билет в одну сторону",
+          "text": "Un biglietto di sola andata, per favore.",
+          "next": "direct-end"
+        }
+      ]
+    },
+    "direct-end": {
+      "speaker": "Marco",
+      "text": "Ecco il biglietto. Binario tre. Buon viaggio!",
+      "ru": "Вот билет. Третья платформа. Счастливого пути!",
+      "choices": [],
+      "outcome": "direct"
+    },
+    "regional": {
+      "speaker": "Marco",
+      "text": "Sì, devi cambiare a San Pietro. Parti alle undici e cinquantacinque e arrivi alle tredici e trentacinque.",
+      "ru": "Да, нужно пересесть в Сан-Пьетро. Отправление в 11:55, прибытие в 13:35.",
+      "choices": [
+        {
+          "label": "Уточнить время на пересадку",
+          "text": "Quanto tempo ho per cambiare?",
+          "next": "change"
+        },
+        {
+          "label": "Выбрать прямой поезд",
+          "text": "Preferisco il diretto.",
+          "next": "platform"
+        }
+      ]
+    },
+    "change": {
+      "speaker": "Marco",
+      "text": "Hai dieci minuti. Il secondo treno parte dal binario accanto. Il primo parte da qui dal binario due.",
+      "ru": "У тебя десять минут. Второй поезд отправляется с соседней платформы. Первый отсюда — со второй платформы.",
+      "choices": [
+        {
+          "label": "Купить региональный билет за €14",
+          "text": "Va bene. Prendo il regionale.",
+          "next": "regional-end"
+        }
+      ]
+    },
+    "regional-end": {
+      "speaker": "Marco",
+      "text": "Ecco il biglietto da quattordici euro. Ricorda di cambiare a San Pietro.",
+      "ru": "Вот билет за четырнадцать евро. Не забудь пересесть в Сан-Пьетро.",
+      "choices": [],
+      "outcome": "regional"
+    },
+    "bus": {
+      "speaker": "Marco",
+      "text": "L’autobus parte a mezzogiorno e arriva alle tredici e quaranta. La fermata è davanti alla stazione.",
+      "ru": "Автобус отправляется в полдень и прибывает в 13:40. Остановка перед станцией.",
+      "choices": [
+        {
+          "label": "Уточнить способ оплаты",
+          "text": "Posso pagare con la carta?",
+          "next": "payment"
+        },
+        {
+          "label": "Вернуться к прямому поезду",
+          "text": "Preferisco prendere il treno diretto.",
+          "next": "direct"
+        }
+      ]
+    },
+    "payment": {
+      "speaker": "Marco",
+      "text": "Sì, puoi pagare con la carta direttamente sul bus. Cerca la fermata B.",
+      "ru": "Да, можно заплатить картой прямо в автобусе. Ищи остановку B.",
+      "choices": [
+        {
+          "label": "Выбрать автобус за €12",
+          "text": "Grazie. Prendo l’autobus dalla fermata B.",
+          "next": "bus-end"
+        }
+      ]
+    },
+    "bus-end": {
+      "speaker": "Marco",
+      "text": "Perfetto. Costa dodici euro e arrivi prima delle due. Buon viaggio!",
+      "ru": "Отлично. Он стоит двенадцать евро, и ты прибываешь до двух. Счастливого пути!",
+      "choices": [],
+      "outcome": "bus"
+    }
+  },
+  "outcomes": {
+    "direct": {
+      "title": "Без пересадки",
+      "body": "Прямой поезд за €20 отправляется в 12:10 с платформы 3 и прибывает в 13:20."
+    },
+    "regional": {
+      "title": "Пересадка понятна",
+      "body": "Билет €14, отправление в 11:55 с платформы 2. Пересадка в Сан-Пьетро, прибытие в 13:35."
+    },
+    "bus": {
+      "title": "Автобус до Бельмаре",
+      "body": "Автобус за €12 отправляется от остановки B в 12:00, прибывает в 13:40. Можно платить картой."
+    }
+  },
+  "transfer": [
+    {
+      "id": "it-train-time",
+      "speaker": "Giulia",
+      "text": "Il treno parte alle nove e un quarto e arriva alle dieci e mezza.",
+      "ru": "Поезд отправляется в 9:15 и прибывает в 10:30.",
+      "question": "Во сколько отправление?",
+      "options": [
+        "В 9:45",
+        "В 10:30",
+        "В 9:15"
+      ],
+      "answer": 2,
+      "explanation": "Parte — отправляется. Nove e un quarto — 9:15. Arriva относится к прибытию."
+    },
+    {
+      "id": "it-train-platform",
+      "speaker": "Giulia",
+      "text": "Attenzione: il treno parte dal binario cinque, non dal binario due.",
+      "ru": "Внимание: поезд отправляется с пятой платформы, а не со второй.",
+      "question": "Куда нужно идти?",
+      "options": [
+        "На пятую платформу",
+        "На вторую платформу",
+        "К автобусу"
+      ],
+      "answer": 0,
+      "explanation": "Dal binario cinque — с пятой платформы. Non dal binario due — не со второй."
+    },
+    {
+      "id": "it-train-ticket",
+      "speaker": "Giulia",
+      "text": "Il biglietto di sola andata costa dodici euro. Andata e ritorno costa venti euro.",
+      "ru": "Билет в одну сторону стоит двенадцать евро. Туда и обратно — двадцать.",
+      "question": "Сколько стоит билет туда и обратно?",
+      "options": [
+        "€12",
+        "€20",
+        "€32"
+      ],
+      "answer": 1,
+      "explanation": "Andata e ritorno — туда и обратно. Его цена — venti euro, двадцать евро."
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "hike-en",
+  "number": "19",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Развернуться — значит подвести?",
+  "category": "Истории и обсуждения",
+  "summary": "Друзья оплатили поход к вершине, но условия изменились. Обсуди цену уже принятого решения и честный выбор для группы.",
+  "duration": "15–20 минут",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Leo",
+    "name": "Лео",
+    "bio": "Коллега Эммы: помогает с проектами и собирает друзей на выходных."
+  },
+  "secondSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Твоя коллега и подруга. Спокойно обсуждает трудные решения."
+  },
+  "contextTitle": "Утро долгожданного похода",
+  "contextText": "Лео собрал друзей на платный поход с гидом. Прогноз ухудшился, и гид предлагает низкую тропу вместо вершины. Часть группы считает замену бессмысленной.",
+  "taskTitle": "Отделить потерянные расходы от сегодняшнего решения",
+  "taskText": "Разбери аргументы о деньгах, ожиданиях и неопределённости. Выбери план, не обещая погоде измениться и не заставляя друзей соглашаться.",
+  "taskShort": "Разные ожидания · один честный план",
+  "skill": "Слышать уступки, контрфактические условия и квалифицированные выводы в сложном групповом споре.",
+  "phraseLabels": [
+    "Как бы ни хотелось",
+    "Если бы мы знали",
+    "Из этого не следует"
+  ],
+  "transferIntro": "Эмма обсуждает другие решения под неопределённостью. Определи, что следует из аргумента, а что говорящий специально не утверждает.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "Much as I'd like to stick to the original plan, having paid for the guide doesn't make the exposed route a better choice today. Had we known the forecast would change, we'd have booked differently. That's not to say the whole day is wasted; the question is which alternative still offers something people actually want.",
+  "openingRu": "Как бы мне ни хотелось придерживаться исходного плана, оплата гида не делает открытый маршрут лучшим выбором сегодня. Знай мы, что прогноз изменится, забронировали бы иначе. Это не значит, что весь день потерян; вопрос в том, какая альтернатива всё ещё даёт людям то, что им действительно нужно.",
+  "openingQuestion": {
+    "question": "Какой вывод Лео отвергает?",
+    "options": [
+      "Оплаченный гид не определяет лучший маршрут",
+      "Отказ от исходного маршрута означает, что весь день потерян",
+      "У участников могут быть разные ожидания"
+    ],
+    "answer": 1,
+    "explanation": "That's not to say the whole day is wasted специально исключает вывод о полностью потерянном дне."
+  },
+  "phrases": [
+    {
+      "id": "much-as",
+      "text": "Much as I'd like to go, the conditions have changed.",
+      "ru": "Как бы мне ни хотелось пойти, условия изменились.",
+      "part": "Much as I'd like to",
+      "why": "Уступительная конструкция признаёт сильное желание перед аргументом против него.",
+      "sound": "Пауза после вступления отделяет желание от решающего довода; не принимай начало за согласие.",
+      "example": "Much as I admire the idea, I can't support the timetable.",
+      "exampleRu": "Как бы я ни ценил идею, этот график я поддержать не могу."
+    },
+    {
+      "id": "had-known",
+      "text": "Had we known, we'd have booked differently.",
+      "ru": "Знай мы заранее, забронировали бы иначе.",
+      "part": "Had we known",
+      "why": "Инверсия заменяет if we had known в нереальном условии о прошлом.",
+      "sound": "Had в начале не вопрос: дальше следует we'd have с несбывшимся результатом.",
+      "example": "Had I realised the cost, I'd have asked first.",
+      "exampleRu": "Если бы я понимал стоимость, сначала бы спросил."
+    },
+    {
+      "id": "not-say",
+      "text": "That's not to say the whole day is wasted.",
+      "ru": "Из этого не следует, что весь день потерян.",
+      "part": "That's not to say",
+      "why": "Фраза ограничивает вывод из предыдущего аргумента и не даёт его чрезмерно обобщить.",
+      "sound": "Not сохраняет границу вывода; после say идёт именно то, чего говорящий не утверждает.",
+      "example": "The draft needs work. That's not to say we should start again.",
+      "exampleRu": "Черновик требует доработки. Это не значит, что нужно начинать заново."
+    },
+    {
+      "id": "regardless",
+      "text": "The fee is gone regardless of what we choose now.",
+      "ru": "Деньги уже потрачены независимо от нашего сегодняшнего выбора.",
+      "part": "regardless of",
+      "why": "Regardless of отделяет фактор, который не изменится при любом варианте решения.",
+      "sound": "Слушай целиком regardless of; следующее условие объявляется не влияющим на данный факт.",
+      "example": "We need a clear plan regardless of who joins us.",
+      "exampleRu": "Нужен ясный план независимо от того, кто присоединится."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Leo",
+      "text": "Some people want a walk at any altitude; others came specifically for the summit. Before choosing, should we compare the lower route, ask about postponement, or allow the group to split its plans?",
+      "ru": "Кому-то важна прогулка на любой высоте; другие приехали именно ради вершины. Сравним низкий маршрут, спросим о переносе или позволим группе выбрать разные планы?",
+      "choices": [
+        {
+          "label": "Оценить альтернативу по её содержанию",
+          "text": "Let's judge the lower route on its own merits, rather than as a failed summit attempt.",
+          "next": "lower"
+        },
+        {
+          "label": "Проверить перенос без обещаний",
+          "text": "Could the guide explain what postponement would actually involve?",
+          "next": "postpone"
+        },
+        {
+          "label": "Признать разные предпочтения",
+          "text": "We needn't force one compromise on everyone. Could we offer two clear options?",
+          "next": "split"
+        }
+      ]
+    },
+    "lower": {
+      "speaker": "Leo",
+      "text": "The guide says the sheltered valley route is suitable under today's conditions and includes the old quarry. It would take three hours, though we'd lose the panoramic view people were expecting.",
+      "ru": "Гид говорит, что защищённый маршрут по долине подходит при сегодняшних условиях и включает старую каменоломню. Он займёт три часа, но панорамного вида, которого ждали люди, не будет.",
+      "choices": [
+        {
+          "label": "Честно описать компромисс",
+          "text": "Let's state that trade-off plainly and ask whether the walk itself appeals to them.",
+          "next": "lower-confirm"
+        },
+        {
+          "label": "Не решать за всех",
+          "text": "If the view was the whole point for some people, let's offer separate plans.",
+          "next": "split"
+        }
+      ]
+    },
+    "lower-confirm": {
+      "speaker": "Leo",
+      "text": "Everyone has now said yes to the valley, including those who were disappointed. The guide will reassess at the start; agreeing now doesn't commit us to continuing if his advice changes.",
+      "ru": "Теперь все согласились на долину, даже те, кто был разочарован. Гид снова оценит условия на старте; согласие сейчас не обязывает продолжать, если его рекомендации изменятся.",
+      "choices": [
+        {
+          "label": "Сохранить возможность пересмотра",
+          "text": "Then let's go with that understanding, and treat any further change as a fresh decision.",
+          "next": "lower-end"
+        }
+      ]
+    },
+    "lower-end": {
+      "speaker": "Leo",
+      "text": "We've chosen the valley because today's group wants that walk, not because yesterday's payment obliges us to finish a different one.",
+      "ru": "Мы выбрали долину, потому что сегодняшний состав хочет эту прогулку, а не потому, что вчерашняя оплата обязывает закончить другой маршрут.",
+      "choices": [],
+      "outcome": "lower"
+    },
+    "postpone": {
+      "speaker": "Leo",
+      "text": "They'll transfer half the fee to another date, but they can't promise better weather. We'd also have to check everyone's availability, so postponing the summit doesn't automatically create a shared trip.",
+      "ru": "Они перенесут половину оплаты на другую дату, но лучшей погоды обещать не могут. Нужно ещё проверить доступность всех: перенос вершины сам по себе не создаёт новую общую поездку.",
+      "choices": [
+        {
+          "label": "Принять перенос как отдельное решение",
+          "text": "Let's retain the credit and choose a new date only after checking who still wants to come.",
+          "next": "postpone-confirm"
+        },
+        {
+          "label": "Не связывать всех будущей датой",
+          "text": "That may suit only part of the group. Let's separate today's options.",
+          "next": "split"
+        }
+      ]
+    },
+    "postpone-confirm": {
+      "speaker": "Leo",
+      "text": "That seems fair. The credit is valid for six months, and no one has to commit today. For this afternoon, the town museum has room for all of us.",
+      "ru": "Справедливо. Зачёт действует шесть месяцев, сегодня никому не нужно обещать участие. А на этот день в городском музее есть место для всех.",
+      "choices": [
+        {
+          "label": "Разделить сегодняшний и будущий планы",
+          "text": "Let's visit the museum today and discuss a new hike next week, without calling it guaranteed.",
+          "next": "postpone-end"
+        }
+      ]
+    },
+    "postpone-end": {
+      "speaker": "Leo",
+      "text": "The credit is confirmed, today's museum visit is agreed, and the next summit attempt remains a proposal rather than a promise.",
+      "ru": "Зачёт подтверждён, сегодня идём в музей, а новая попытка дойти до вершины остаётся предложением, не обещанием.",
+      "choices": [],
+      "outcome": "postpone"
+    },
+    "split": {
+      "speaker": "Leo",
+      "text": "Four people would enjoy the guided valley walk; three would rather stay in town. The guide can take the smaller walking group, and there's no requirement for everyone to make the same choice.",
+      "ru": "Четверым понравится прогулка по долине с гидом; трое предпочитают остаться в городе. Гид может пойти с меньшей группой, всем выбирать одно и то же не требуется.",
+      "choices": [
+        {
+          "label": "Согласовать самостоятельность и общую встречу",
+          "text": "Let's make both choices equally acceptable and agree where we'll meet afterwards.",
+          "next": "split-confirm"
+        }
+      ]
+    },
+    "split-confirm": {
+      "speaker": "Leo",
+      "text": "The walking group will follow the guide's revised route. The others will visit the museum, and we'll all meet at the station café at four. Nobody is heading up to the summit separately.",
+      "ru": "Пешеходная группа пойдёт по изменённому маршруту с гидом. Остальные посетят музей, а все встретимся в кафе у вокзала в четыре. Отдельно к вершине никто не идёт.",
+      "choices": [
+        {
+          "label": "Подтвердить отсутствие скрытого давления",
+          "text": "Good. Let's share those plans without implying that staying in town means letting the group down.",
+          "next": "split-end"
+        }
+      ]
+    },
+    "split-end": {
+      "speaker": "Leo",
+      "text": "We've kept a shared end to the day while allowing different preferences. The compromise is in the meeting point, not in pretending everyone wanted the same experience.",
+      "ru": "Мы сохранили общий финал дня и позволили предпочтениям различаться. Компромисс — общая встреча, а не притворство, будто все хотели одного.",
+      "choices": [],
+      "outcome": "split"
+    }
+  },
+  "outcomes": {
+    "lower": {
+      "title": "Долина как самостоятельный выбор",
+      "body": "Все выбрали трёхчасовой маршрут по долине, понимая, что панорамы не будет. Гид повторно оценит условия на старте; решение допускает пересмотр."
+    },
+    "postpone": {
+      "title": "Перенос без ложной гарантии",
+      "body": "Половина оплаты сохранена на шесть месяцев. Сегодня группа идёт в музей, а новый поход обсудит отдельно без обещания погоды и общего участия."
+    },
+    "split": {
+      "title": "Разные планы, общая встреча",
+      "body": "Четверо идут по долине с гидом, трое — в музей. Все встречаются в 16:00 у вокзала; самостоятельного выхода к вершине нет."
+    }
+  },
+  "transfer": [
+    {
+      "id": "hike-cost",
+      "speaker": "Emma",
+      "text": "The venue deposit is non-refundable. That doesn't, in itself, justify spending twice as much on catering for an event we no longer need.",
+      "ru": "Задаток за помещение не возвращается. Сам по себе этот факт не оправдывает вдвое большие расходы на еду для мероприятия, которое больше не нужно.",
+      "question": "Какова роль уже потраченного задатка в аргументе?",
+      "options": [
+        "Он обязывает провести событие",
+        "Он гарантирует будущую выгоду",
+        "Он сам по себе не оправдывает новые расходы"
+      ],
+      "answer": 2,
+      "explanation": "Doesn't, in itself, justify ограничивает силу аргумента: прошлые расходы не доказывают необходимость новых."
+    },
+    {
+      "id": "hike-counterfactual",
+      "speaker": "Emma",
+      "text": "Had the supplier warned us earlier, we could have changed the order. As it is, our choice is between accepting the delay and paying for an alternative.",
+      "ru": "Предупреди нас поставщик раньше, мы могли бы изменить заказ. Сейчас же выбор между задержкой и оплатой альтернативы.",
+      "question": "Что она отделяет от нынешнего выбора?",
+      "options": [
+        "Упущенную возможность изменить заказ раньше",
+        "Обещание немедленной доставки",
+        "Подтверждённую отмену заказа"
+      ],
+      "answer": 0,
+      "explanation": "Had ... warned и could have changed описывают несостоявшуюся возможность; as it is возвращает к текущим вариантам."
+    },
+    {
+      "id": "hike-concession",
+      "speaker": "Emma",
+      "text": "Much as I value everyone's input, reopening the entire discussion would leave us without a decision. We can record the unresolved concerns without pretending we've settled them.",
+      "ru": "Как бы я ни ценила вклад каждого, повторное открытие всей дискуссии оставит нас без решения. Можно записать нерешённые опасения, не притворяясь, что они сняты.",
+      "question": "Что Эмма предлагает сделать с оставшимися опасениями?",
+      "options": [
+        "Объявить их ошибочными",
+        "Зафиксировать как нерешённые",
+        "Полностью начать обсуждение заново"
+      ],
+      "answer": 1,
+      "explanation": "Record ... without pretending ... settled означает сохранить возражения открытыми, не останавливая принятие решения."
+    }
+  ]
+}

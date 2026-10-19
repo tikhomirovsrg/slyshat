@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "meeting-update-it",
+  "number": "11",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Созвон и изменившийся срок",
+  "category": "Работа и созвоны",
+  "summary": "На созвоне изменили срок макета, а звук прерывался. Уточни главное и возьми реалистичную часть работы.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия координирует небольшой проект городской выставки."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Первый рабочий созвон",
+  "contextText": "Вы готовите афишу выставки с Марко и Джулией. Ты отвечаешь за текст, но в разговоре пропустил часть обновления.",
+  "taskTitle": "Подтвердить срок и объём",
+  "taskText": "Выясни, что нужно завтра, а что может подождать. Выбери полный текст, короткую версию или проверку готового материала.",
+  "taskShort": "Завтра 12:00 · черновик",
+  "skill": "Распознавать изменение срока, ответственность и разницу между черновиком и финалом.",
+  "phraseLabels": [
+    "Перенести раньше",
+    "К назначенному сроку",
+    "Черновик"
+  ],
+  "transferIntro": "Марко распределяет работу на других мероприятиях. Слушай отдельно срок, результат и ответственного.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Vi aggiorno sulla mostra: il tipografo ci ha chiesto di anticipare la consegna. Non serve il testo definitivo domani, ma una bozza entro mezzogiorno. Marco si occupa delle fotografie, io dell’impaginazione. Per favore, ditemi oggi se riuscite a preparare la vostra parte, così possiamo ridurre il lavoro o dividerlo in modo diverso.",
+  "openingRu": "Обновление по выставке: типография попросила сдать материалы раньше. Завтра не нужен окончательный текст, но нужен черновик к полудню. Марко занимается фотографиями, я — вёрсткой. Пожалуйста, сегодня скажите, сможете ли подготовить свою часть, чтобы мы могли сократить объём или иначе распределить работу.",
+  "openingQuestion": {
+    "question": "Что нужно к завтрашнему полудню?",
+    "options": [
+      "Готовые напечатанные афиши",
+      "Черновик текста",
+      "Окончательные фотографии"
+    ],
+    "answer": 1,
+    "explanation": "Una bozza entro mezzogiorno — черновик к полудню. Non serve il testo definitivo исключает финальную версию."
+  },
+  "phrases": [
+    {
+      "id": "meeting-update-anticipare",
+      "text": "Dobbiamo anticipare la consegna.",
+      "ru": "Нужно перенести сдачу на более ранний срок.",
+      "part": "anticipare la consegna",
+      "why": "Anticipare — сделать раньше; rimandare — отложить.",
+      "sound": "Слушай глагол перед consegna: он определяет направление изменения.",
+      "example": "Anticipiamo la riunione alle nove.",
+      "exampleRu": "Перенесём встречу на девять, раньше прежнего времени."
+    },
+    {
+      "id": "meeting-update-entro",
+      "text": "Una bozza entro mezzogiorno.",
+      "ru": "Черновик к полудню.",
+      "part": "entro mezzogiorno",
+      "why": "Entro — не позднее указанного срока; dopo — после него.",
+      "sound": "В mezzogiorno ориентир — середина дня, не полночь.",
+      "example": "Mandami il file entro venerdì.",
+      "exampleRu": "Пришли файл не позднее пятницы."
+    },
+    {
+      "id": "meeting-update-bozza",
+      "text": "Non serve il testo definitivo, ma una bozza.",
+      "ru": "Нужен не окончательный текст, а черновик.",
+      "part": "una bozza",
+      "why": "Bozza — версия для обсуждения, definitiva — окончательная.",
+      "sound": "Двойное zz в bozza слышится отчётливо; свяжи слово с предварительной версией.",
+      "example": "Questa è solo la prima bozza.",
+      "exampleRu": "Это лишь первый черновик."
+    },
+    {
+      "id": "meeting-update-occupa",
+      "text": "Marco si occupa delle fotografie.",
+      "ru": "Марко занимается фотографиями.",
+      "part": "si occupa di",
+      "why": "Occuparsi di обозначает ответственность за часть работы.",
+      "sound": "Si occupa звучит связанно; затем слушай конкретную задачу.",
+      "example": "Mi occupo della traduzione.",
+      "exampleRu": "Я занимаюсь переводом."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "La connessione si è interrotta un momento. Quale parte vuoi ricontrollare prima di decidere?",
+      "ru": "Связь на мгновение прервалась. Какую часть хочешь уточнить перед решением?",
+      "choices": [
+        {
+          "label": "Уточнить срок",
+          "text": "Hai detto domani entro mezzogiorno?",
+          "next": "deadline"
+        },
+        {
+          "label": "Уточнить объём",
+          "text": "Quanto deve essere lunga la bozza?",
+          "next": "scope"
+        },
+        {
+          "label": "Сообщить об ограничении",
+          "text": "Domani mattina non posso scrivere. Posso revisionare oggi.",
+          "next": "review"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "deadline": {
+      "text": "Esatto. Oggi mi basta una conferma della disponibilità. Domani alle dodici serve una bozza di trecento parole.",
+      "ru": "Именно. Сегодня достаточно подтверждения, что сможешь. Завтра в двенадцать нужен черновик на триста слов.",
+      "choices": [
+        {
+          "label": "Взяться за текст",
+          "text": "Posso preparare trecento parole. Mi mandi le informazioni?",
+          "next": "full"
+        },
+        {
+          "label": "Сократить объём",
+          "text": "Trecento sono troppe. Possiamo ridurre?",
+          "next": "scope"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "full": {
+      "text": "Ti mando titolo, luogo e orari. Il prezzo del biglietto non è ancora confermato: lascia quel punto vuoto.",
+      "ru": "Пришлю название, место и время. Цена билета ещё не подтверждена: оставь этот пункт пустым.",
+      "choices": [
+        {
+          "label": "Повторить договорённость",
+          "text": "Bozza di trecento parole entro domani alle dodici, senza prezzo.",
+          "next": "full-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "scope": {
+      "text": "L’ideale sono trecento parole, ma possiamo partire con cento parole e tre informazioni essenziali: luogo, data e orario.",
+      "ru": "В идеале триста слов, но можем начать со ста и трёх важных сведений: место, дата и время.",
+      "choices": [
+        {
+          "label": "Выбрать краткую версию",
+          "text": "Posso fare la versione breve entro le dieci.",
+          "next": "short"
+        },
+        {
+          "label": "Предложить только редактуру",
+          "text": "Preferisco revisionare un testo già scritto.",
+          "next": "review"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "short": {
+      "text": "Va bene. La useremo per la pagina iniziale. La storia completa della mostra arriverà nella seconda versione.",
+      "ru": "Хорошо. Используем её для первой страницы. Полная история выставки появится во второй версии.",
+      "choices": [
+        {
+          "label": "Подтвердить разделение",
+          "text": "Cento parole domani alle dieci; il testo lungo dopo.",
+          "next": "short-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "review": {
+      "text": "Ho già un vecchio testo di Marco. Puoi controllare che le date e i nomi siano aggiornati? Lo stile lo sistemerò io.",
+      "ru": "У меня уже есть старый текст Марко. Можешь проверить актуальность дат и имён? Стиль исправлю я.",
+      "choices": [
+        {
+          "label": "Уточнить время передачи",
+          "text": "Entro che ora ti serve il controllo?",
+          "next": "review-time"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "review-time": {
+      "text": "Oggi entro le sei. Segna i dubbi con un commento, senza inventare le informazioni mancanti.",
+      "ru": "Сегодня к шести. Отметь сомнения комментарием, не придумывая недостающие данные.",
+      "choices": [
+        {
+          "label": "Принять конкретную задачу",
+          "text": "Controllo date e nomi entro le sei e segnalo i dubbi.",
+          "next": "review-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "full-end": {
+      "text": "Perfetto, abbiamo un responsabile e un orario chiaro. Ti mando subito il materiale.",
+      "ru": "Отлично, есть ответственный и чёткое время. Сразу пришлю материалы.",
+      "choices": [],
+      "outcome": "full",
+      "speaker": "Giulia"
+    },
+    "short-end": {
+      "text": "Con la versione breve possiamo partire senza aspettare tutto. Aggiungo io la nota per la seconda versione.",
+      "ru": "С краткой версией можем начать, не дожидаясь всего. Я добавлю пометку о второй версии.",
+      "choices": [],
+      "outcome": "short",
+      "speaker": "Giulia"
+    },
+    "review-end": {
+      "text": "La tua verifica ci evita errori nei dati. La scrittura completa resta a me e a Marco.",
+      "ru": "Твоя проверка поможет избежать ошибок в данных. Полный текст остаётся за мной и Марко.",
+      "choices": [],
+      "outcome": "review",
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "full": {
+      "title": "Полный черновик",
+      "body": "Ты подготовишь 300 слов к завтрашним 12:00. Неподтверждённую цену оставишь пустой."
+    },
+    "short": {
+      "title": "Короткая первая версия",
+      "body": "Ты сдашь 100 слов завтра в 10:00. Историю выставки добавят позже."
+    },
+    "review": {
+      "title": "Проверка по силам",
+      "body": "До сегодняшних 18:00 ты сверишь даты и имена и отметишь вопросы. Авторство текста взяли коллеги."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Anticipiamo la prova a martedì. La presentazione pubblica resta venerdì, come previsto.",
+      "ru": "Переносим репетицию раньше, на вторник. Публичная презентация остаётся в пятницу, как планировали.",
+      "question": "Что перенесли?",
+      "options": [
+        "Публичную презентацию",
+        "Печать афиш",
+        "Репетицию"
+      ],
+      "answer": 2,
+      "explanation": "Anticipiamo la prova — переносим репетицию. Resta venerdì означает, что публичное событие не сдвинули.",
+      "id": "it-meeting-update-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Entro le quattro mi serve solo l’elenco dei nomi. Le fotografie possono arrivare domattina.",
+      "ru": "К четырём мне нужен только список имён. Фото могут прийти завтра утром.",
+      "question": "Что обязательно к четырём?",
+      "options": [
+        "Список имён",
+        "Фотографии",
+        "Всё сразу"
+      ],
+      "answer": 0,
+      "explanation": "Solo l’elenco dei nomi ограничивает срочную задачу одним списком.",
+      "id": "it-meeting-update-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Io mi occupo del suono. Giulia segue le luci, mentre tu controlli i sottotitoli.",
+      "ru": "Я занимаюсь звуком. Джулия — светом, а ты проверяешь субтитры.",
+      "question": "За что отвечает слушатель?",
+      "options": [
+        "За свет",
+        "За субтитры",
+        "За звук"
+      ],
+      "answer": 1,
+      "explanation": "Tu controlli i sottotitoli — ты проверяешь субтитры; io и Giulia относятся к другим участникам.",
+      "id": "it-meeting-update-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

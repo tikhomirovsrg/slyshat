@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "videocall-en",
+  "number": "16",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Самая важная фраза пропала",
+  "category": "Работа и созвоны",
+  "summary": "На созвоне связь оборвалась в момент решения. Восстанови договорённость, не выдавая догадку за согласие.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Leo",
+    "name": "Лео",
+    "bio": "Коллега Эммы: помогает с проектами и собирает друзей на выходных."
+  },
+  "secondSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Твоя коллега и подруга. Спокойно обсуждает трудные решения."
+  },
+  "contextTitle": "Созвон из шумного места",
+  "contextText": "Лео подключился из коворкинга, где начались ремонтные работы. Ты расслышал «Friday» и «not approved», но не понял, что именно перенесли.",
+  "taskTitle": "Получить точное решение и зафиксировать ответственность",
+  "taskText": "Выбери удобный способ восстановить сообщение: повтор, чат или короткий новый звонок. Уточни статус пятницы.",
+  "taskShort": "Пятница: срок или проверка?",
+  "skill": "Замечать потерю смысловой связи, переспрашивать конкретный фрагмент и подтверждать отрицание.",
+  "phraseLabels": [
+    "Ты пропадаешь",
+    "Последняя часть",
+    "Правильно ли понял"
+  ],
+  "transferIntro": "Эмма ведёт другой звонок. В каждом фрагменте отличи техническую проблему от самого решения.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "Sorry, there's drilling next door, and your voice keeps cutting out as well. I caught the bit about Friday, but I missed what you said about approval. Before we move on, could we check whether Friday is the launch date or just the date when someone reviews the draft? I don't want us working towards different deadlines.",
+  "openingRu": "Извини, за стеной сверлят, и твой голос тоже всё время пропадает. Часть про пятницу я услышал, но пропустил слова о согласовании. Прежде чем двигаться дальше, уточним: в пятницу запуск или только проверка черновика? Не хочу, чтобы мы работали по разным срокам.",
+  "openingQuestion": {
+    "question": "Какую неоднозначность нужно устранить?",
+    "options": [
+      "Какой микрофон купить",
+      "Кто работает в соседней комнате",
+      "Пятница — запуск или проверка черновика"
+    ],
+    "answer": 2,
+    "explanation": "Whether ... launch date or ... reviews the draft прямо называет два возможных смысла услышанного Friday."
+  },
+  "phrases": [
+    {
+      "id": "cutting",
+      "text": "Your voice keeps cutting out.",
+      "ru": "Твой голос постоянно пропадает.",
+      "part": "keeps cutting out",
+      "why": "Keep + -ing обозначает повторение; cut out — внезапно исчезать о звуке.",
+      "sound": "Out завершает фразовый глагол; это пропадающий звук, не просьба говорить тише.",
+      "example": "The sound cut out halfway through.",
+      "exampleRu": "Звук пропал на середине."
+    },
+    {
+      "id": "missed",
+      "text": "I missed the last part about approval.",
+      "ru": "Я не расслышал последнюю часть о согласовании.",
+      "part": "missed the last part",
+      "why": "Можно точно назвать пропущенный кусок, не просить повторять всё.",
+      "sound": "Last part — смысловой блок; about вводит нужную тему.",
+      "example": "I caught the time, but missed the address.",
+      "exampleRu": "Время я расслышал, а адрес нет."
+    },
+    {
+      "id": "right",
+      "text": "Have I got that right?",
+      "ru": "Я правильно понял?",
+      "part": "Have I got that right",
+      "why": "Фраза проверяет собственное понимание после пересказа.",
+      "sound": "Вопрос часто произносится быстро; right в конце выделяется интонацией.",
+      "example": "Friday is for review, not release. Have I got that right?",
+      "exampleRu": "Пятница — для проверки, не выпуска. Я верно понял?"
+    },
+    {
+      "id": "move-on",
+      "text": "Before we move on, can we confirm the deadline?",
+      "ru": "Прежде чем перейти дальше, уточним срок?",
+      "part": "before we move on",
+      "why": "Так можно вежливо остановить переход к новой теме.",
+      "sound": "Before сигнализирует, что сначала нужно закрыть прежний вопрос.",
+      "example": "Let's confirm the owner before we move on.",
+      "exampleRu": "Давай определим ответственного, прежде чем идти дальше."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Leo",
+      "text": "We could turn off video and repeat the key point, put it in the chat, or take a five-minute break while I find somewhere quieter.",
+      "ru": "Можно выключить видео и повторить главное, написать в чат или сделать пятиминутный перерыв, пока я найду тихое место.",
+      "choices": [
+        {
+          "label": "Повторить без видео",
+          "text": "Let's turn off video. Please repeat only the decision about Friday.",
+          "next": "audio"
+        },
+        {
+          "label": "Перейти к письменной фиксации",
+          "text": "Could you put the date, owner and approval status in the chat?",
+          "next": "chat"
+        },
+        {
+          "label": "Сделать короткий перерыв",
+          "text": "Let's pause for five minutes and reconnect somewhere quieter.",
+          "next": "break"
+        }
+      ]
+    },
+    "audio": {
+      "speaker": "Leo",
+      "text": "That's clearer. Friday is the review date. We won't launch until the client has approved the draft, and that hasn't happened yet.",
+      "ru": "Теперь лучше. Пятница — дата проверки. Запуска не будет до согласования черновика клиентом, а этого пока не произошло.",
+      "choices": [
+        {
+          "label": "Проверить отрицание и статус",
+          "text": "So no launch on Friday is confirmed; we only have a review booked?",
+          "next": "audio-confirm"
+        },
+        {
+          "label": "Зафиксировать письменно",
+          "text": "Please put that distinction in the chat too.",
+          "next": "chat"
+        }
+      ]
+    },
+    "audio-confirm": {
+      "speaker": "Leo",
+      "text": "Exactly. You're preparing the draft, and Emma will ask the client for approval after Friday's review. She'll confirm the launch date separately.",
+      "ru": "Именно. Ты готовишь черновик, Эмма запросит согласование клиента после пятничной проверки. Дату запуска она подтвердит отдельно.",
+      "choices": [
+        {
+          "label": "Подтвердить свою задачу",
+          "text": "I'll prepare the draft for review and leave the launch date unconfirmed.",
+          "next": "audio-end"
+        }
+      ]
+    },
+    "audio-end": {
+      "speaker": "Leo",
+      "text": "Good. We've recovered the missing point, and I'll send a short written summary after the call.",
+      "ru": "Хорошо. Восстановили пропущенный смысл, после звонка пришлю короткое письменное резюме.",
+      "choices": [],
+      "outcome": "audio"
+    },
+    "chat": {
+      "speaker": "Leo",
+      "text": "I've typed: 'Draft review: Friday. Owner: you. Client approval: pending. Launch: not yet scheduled.' Can you see all four lines?",
+      "ru": "Я написал: «Проверка черновика: пятница. Ответственный: ты. Согласование клиента: ожидается. Запуск: пока не назначен». Все четыре строки видны?",
+      "choices": [
+        {
+          "label": "Уточнить время своего срока",
+          "text": "Yes. What time on Friday should the draft be ready?",
+          "next": "chat-confirm"
+        },
+        {
+          "label": "Перенести обсуждение деталей",
+          "text": "I can see them. Let's reconnect somewhere quiet for the remaining questions.",
+          "next": "break"
+        }
+      ]
+    },
+    "chat-confirm": {
+      "speaker": "Leo",
+      "text": "By ten, for an internal review at eleven. I'll add those times so nobody mistakes the review meeting for your submission deadline.",
+      "ru": "К десяти, для внутренней проверки в одиннадцать. Добавлю время, чтобы никто не перепутал время встречи со сроком твоей отправки.",
+      "choices": [
+        {
+          "label": "Подтвердить две точки времени",
+          "text": "Draft by ten, review at eleven, client approval afterwards. That's clear.",
+          "next": "chat-end"
+        }
+      ]
+    },
+    "chat-end": {
+      "speaker": "Leo",
+      "text": "The chat now has the complete plan. I'll copy it into our shared notes before we finish.",
+      "ru": "В чате теперь полный план. Скопирую его в общие заметки до завершения звонка.",
+      "choices": [],
+      "outcome": "chat"
+    },
+    "break": {
+      "speaker": "Leo",
+      "text": "I can use a quiet room downstairs, but I need three minutes to get there. Shall we reconnect on the same link at twenty past?",
+      "ru": "Могу перейти в тихую комнату внизу, дорога займёт три минуты. Подключимся по той же ссылке в двадцать минут?",
+      "choices": [
+        {
+          "label": "Согласовать точное возвращение",
+          "text": "Yes, at ten twenty on this link. Please keep the decision open until then.",
+          "next": "break-confirm"
+        }
+      ]
+    },
+    "break-confirm": {
+      "speaker": "Leo",
+      "text": "I'm back, and the connection is stable. To be clear, the draft is due Friday at ten; the launch depends on approval after the eleven o'clock review.",
+      "ru": "Я вернулся, связь стабильная. Для ясности: черновик нужен в пятницу к десяти; запуск зависит от согласования после проверки в одиннадцать.",
+      "choices": [
+        {
+          "label": "Повторить порядок действий",
+          "text": "I'll submit at ten. We'll review at eleven, then ask for approval before setting a launch date.",
+          "next": "break-end"
+        }
+      ]
+    },
+    "break-end": {
+      "speaker": "Leo",
+      "text": "Exactly. The pause cost us five minutes, but we've avoided sending the client an invented launch date.",
+      "ru": "Именно. Перерыв занял пять минут, зато мы не отправили клиенту выдуманную дату запуска.",
+      "choices": [],
+      "outcome": "break"
+    }
+  },
+  "outcomes": {
+    "audio": {
+      "title": "Смысл восстановлен голосом",
+      "body": "Пятница — только проверка. Ты готовишь черновик, Эмма запросит согласование, дата запуска пока не подтверждена."
+    },
+    "chat": {
+      "title": "Четыре строки вместо догадки",
+      "body": "В чате зафиксированы черновик к 10:00, проверка в 11:00, ожидаемое согласование и пока не назначенный запуск."
+    },
+    "break": {
+      "title": "Короткая пауза, ясный порядок",
+      "body": "После перерыва вы подтвердили последовательность: черновик, проверка, согласование, затем дата запуска."
+    }
+  },
+  "transfer": [
+    {
+      "id": "call-negative",
+      "speaker": "Emma",
+      "text": "You're breaking up. I heard 'cancel', but not the word before it. Did you say we should cancel, or that we shouldn't?",
+      "ru": "Ты пропадаешь. Я услышала cancel, но не слово перед ним. Ты сказал, что нужно отменить или что не нужно?",
+      "question": "Что Эмма пытается восстановить?",
+      "options": [
+        "Наличие отрицания в решении",
+        "Имя участника",
+        "Время начала звонка"
+      ],
+      "answer": 0,
+      "explanation": "Should или shouldn't меняет действие на противоположное; нужно расслышать отрицание."
+    },
+    {
+      "id": "call-owner",
+      "speaker": "Emma",
+      "text": "Let me check I've got that right: you'll send the figures, and I'll explain them to the client. We aren't both sending separate reports.",
+      "ru": "Проверю понимание: ты пришлёшь цифры, а я объясню их клиенту. Мы не отправляем два отдельных отчёта.",
+      "question": "За что отвечает Эмма?",
+      "options": [
+        "Собрать все цифры",
+        "Объяснить цифры клиенту",
+        "Отправить второй независимый отчёт"
+      ],
+      "answer": 1,
+      "explanation": "I'll explain them to the client — задача Эммы. Separate reports прямо исключены."
+    },
+    {
+      "id": "call-status",
+      "speaker": "Emma",
+      "text": "The date in the calendar is provisional. Please don't announce it until I've checked the speaker's availability.",
+      "ru": "Дата в календаре предварительная. Не объявляй её, пока я не проверю доступность докладчика.",
+      "question": "Какой статус у даты?",
+      "options": [
+        "Окончательно утверждена",
+        "Уже отменена",
+        "Предварительная, ждёт проверки"
+      ],
+      "answer": 2,
+      "explanation": "Provisional означает предварительная. Don't announce until задаёт условие объявления."
+    }
+  ]
+}

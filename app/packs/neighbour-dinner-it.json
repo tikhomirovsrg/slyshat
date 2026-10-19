@@ -1,0 +1,115 @@
+{
+  "episode": "neighbour-dinner-it",
+  "level": "A1",
+  "grammar": {
+    "title": "Существительные и прилагательные: род и число",
+    "explanation": "Прилагательное согласуется с существительным. У многих прилагательных окончания -o/-a в единственном числе и -i/-e во множественном: piccolo, piccola, piccoli, piccole. Определённый артикль тоже зависит от рода и числа: il tavolo, i tavoli; la sedia, le sedie. Прилагательные на -e имеют множественное число -i: grande → grandi.",
+    "examples": [
+      {
+        "text": "Il tavolo è piccolo.",
+        "ru": "Стол маленький."
+      },
+      {
+        "text": "Le sedie sono nuove.",
+        "ru": "Стулья новые."
+      },
+      {
+        "text": "I piatti sono grandi.",
+        "ru": "Тарелки большие."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Первый вечер во дворе",
+    "kind": "рассказ",
+    "text": "Nel palazzo di Sara ci sono sei famiglie. Il venerdì sera i vicini mangiano insieme nel cortile. Sara prepara una grande insalata e porta quattro piatti. Paolo porta il pane fresco. Due bambini mettono le sedie vicino al tavolo. Il cortile è piccolo, ma tutti trovano un posto. Durante la cena Sara conosce una vicina nuova. Si chiama Ada e abita al secondo piano. Anche Ada ama cucinare. Per la prossima cena preparano una torta insieme."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Дополните прилагательное nuovo в нужной форме.",
+      "answer": "nuove",
+      "explanation": "Sedie — существительное женского рода во множественном числе: nuove.",
+      "text": "Le sedie sono ___.",
+      "id": "neighbour-dinner-it-q1"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предложение.",
+      "answer": "Il pane è fresco.",
+      "explanation": "Pane — мужской род единственного числа, поэтому fresco.",
+      "words": [
+        "fresco.",
+        "Il",
+        "è",
+        "pane"
+      ],
+      "id": "neighbour-dinner-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Какое слово обозначает соседку?",
+      "answer": "Una vicina.",
+      "explanation": "Vicina — соседка; finestra — окно; valigia — чемодан.",
+      "options": [
+        "Una vicina.",
+        "Una finestra.",
+        "Una valigia."
+      ],
+      "id": "neighbour-dinner-it-q3"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "О чём рассказ?",
+      "answer": "Una cena tra vicini.",
+      "explanation": "Соседи ужинают во дворе и знакомятся.",
+      "options": [
+        "Una cena tra vicini.",
+        "Una lezione a scuola.",
+        "Una visita al museo."
+      ],
+      "id": "neighbour-dinner-it-q4"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что приносит Паоло?",
+      "answer": "Il pane fresco.",
+      "explanation": "Паоло приносит свежий хлеб; тарелки приносит Сара.",
+      "options": [
+        "Il pane fresco.",
+        "Una torta.",
+        "Quattro piatti."
+      ],
+      "id": "neighbour-dinner-it-q5"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему Сара и Ада решают готовить вместе?",
+      "answer": "A tutte e due piace cucinare.",
+      "explanation": "Обе любят готовить, поэтому планируют общий пирог.",
+      "options": [
+        "A tutte e due piace cucinare.",
+        "Lavorano nello stesso ristorante.",
+        "Non hanno una cucina."
+      ],
+      "id": "neighbour-dinner-it-q6"
+    }
+  ],
+  "writing": {
+    "prompt": "Представьте, что вы приглашаете новую соседку на общий ужин. Назовите место, участников и два блюда; опишите стол или двор двумя прилагательными.",
+    "min": 40,
+    "max": 60,
+    "checklist": [
+      "Понятно, кого, куда и на какое событие приглашаете.",
+      "Два прилагательных согласованы с существительными.",
+      "Артикли il/la/i/le использованы по смыслу.",
+      "Есть короткое вступление, детали ужина и приглашение ответить."
+    ]
+  }
+}

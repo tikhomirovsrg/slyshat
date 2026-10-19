@@ -1,0 +1,147 @@
+{
+  "episode": "ferry-change-it",
+  "level": "B2",
+  "grammar": {
+    "title": "Период ipotetico второго типа",
+    "explanation": "Для маловероятного или воображаемого условия в настоящем/будущем употребляются se + congiuntivo imperfetto и condizionale presente: se partissimo, arriveremmo. Это гипотеза, а не гарантия. В условной части после se нельзя механически ставить condizionale. У essere формы fossi, fossimo; у potere — potessi, potessimo.",
+    "examples": [
+      {
+        "text": "Se partissimo ora, arriveremmo prima di sera.",
+        "ru": "Если бы мы выехали сейчас, то приехали бы до вечера."
+      },
+      {
+        "text": "Se il mare fosse calmo, prenderemmo il traghetto.",
+        "ru": "Если бы море было спокойным, мы бы поехали на пароме."
+      },
+      {
+        "text": "Potremmo aspettare, se avessimo più tempo.",
+        "ru": "Мы могли бы подождать, если бы у нас было больше времени."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Не каждый запасной маршрут подходит",
+    "kind": "статья",
+    "text": "Quando una traversata viene annullata, trovare un mezzo alternativo sembra il primo problema da risolvere. In realtà, la scelta dipende soprattutto dallo scopo del viaggio. Un collegamento che funziona per un turista può essere inutile per chi deve arrivare a un appuntamento preciso. Durante un’interruzione del servizio per il vento, quattro amici hanno ricevuto due proposte. Un autobus li avrebbe portati a un porto più lontano, da cui un traghetto forse sarebbe partito nel pomeriggio. In alternativa, potevano rinviare il viaggio al giorno successivo mantenendo la prenotazione. Nessuna delle due soluzioni garantiva l’arrivo previsto. Uno degli amici, Pietro, voleva raggiungere l’isola per una cerimonia che cominciava alle quattro. Gli altri avevano programmato soltanto qualche giorno di vacanza. All’inizio tutti erano orientati verso l’autobus, perché sembrava una possibilità concreta di partire subito. Poi hanno chiesto quanto durasse il trasferimento e se fosse già confermata la seconda traversata. La risposta ha chiarito che avrebbero potuto trascorrere diverse ore in attesa senza arrivare in tempo. Pietro ha quindi deciso di chiedere il rimborso e di partecipare alla cerimonia a distanza. Gli altri hanno spostato la partenza. La decisione comune non è stata scegliere lo stesso mezzo, ma rispettare priorità diverse. Prima di separarsi, hanno controllato le condizioni delle rispettive prenotazioni e condiviso le informazioni ricevute per iscritto, così da evitare nuovi equivoci."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте congiuntivo imperfetto глагола partire для noi.",
+      "answer": "partissimo",
+      "explanation": "В гипотетическом условии: se + congiuntivo imperfetto, здесь partissimo.",
+      "text": "Se ___ ora, arriveremmo prima di sera.",
+      "id": "ferry-change-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте condizionale presente глагола potere для noi.",
+      "answer": "potremmo",
+      "explanation": "Следствие при воображаемом условии выражается condizionale presente: potremmo.",
+      "text": "Se avessimo più tempo, ___ aspettare.",
+      "id": "ferry-change-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите правильное гипотетическое условие.",
+      "answer": "Se il mare fosse calmo, partiremmo.",
+      "explanation": "Стандартная модель второго типа: se fosse + partiremmo.",
+      "options": [
+        "Se il mare fosse calmo, partiremmo.",
+        "Se il mare sarebbe calmo, partiremmo.",
+        "Se il mare fosse calmo, partiremo ieri."
+      ],
+      "id": "ferry-change-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает rinviare la partenza?",
+      "answer": "Spostare la partenza a un momento successivo.",
+      "explanation": "Rinviare — отложить на более поздний срок.",
+      "options": [
+        "Spostare la partenza a un momento successivo.",
+        "Confermare che la partenza è già avvenuta.",
+        "Ridurre il costo del biglietto alla metà."
+      ],
+      "id": "ferry-change-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите условное предложение.",
+      "answer": "Se avessi più tempo, aspetterei.",
+      "explanation": "Avessi — congiuntivo imperfetto, aspetterei — condizionale presente.",
+      "words": [
+        "tempo,",
+        "Se",
+        "più",
+        "aspetterei.",
+        "avessi"
+      ],
+      "id": "ferry-change-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Преобразуйте в гипотезу второго типа: arrivare → congiuntivo imperfetto, telefonare → condizionale presente.",
+      "answer": "Se arrivassi presto, telefonerei.",
+      "explanation": "Условие становится воображаемым: arrivassi / telefonerei.",
+      "text": "Se arrivo presto, telefono.",
+      "id": "ferry-change-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "В чём основной вывод статьи?",
+      "answer": "Un’alternativa va valutata in base allo scopo del viaggio.",
+      "explanation": "Потребность успеть к церемонии и гибкий отпуск требуют разных решений.",
+      "options": [
+        "Un’alternativa va valutata in base allo scopo del viaggio.",
+        "Partire subito è sempre la scelta più ragionevole.",
+        "Gli amici devono necessariamente viaggiare insieme."
+      ],
+      "id": "ferry-change-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что не было подтверждено в предложении с автобусом?",
+      "answer": "La partenza della seconda traversata.",
+      "explanation": "Паром из другого порта только предполагался; его рейс ещё не подтвердили.",
+      "options": [
+        "La partenza della seconda traversata.",
+        "L’esistenza della cerimonia.",
+        "La possibilità di comunicare per iscritto."
+      ],
+      "id": "ferry-change-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему решение Пьетро соответствует его приоритету?",
+      "answer": "Preferisce partecipare alla cerimonia a distanza anziché rischiare di perderla in attesa.",
+      "explanation": "Его цель — участие в церемонии в определённое время, а не сама поездка.",
+      "options": [
+        "Preferisce partecipare alla cerimonia a distanza anziché rischiare di perderla in attesa.",
+        "Vuole spendere più tempo possibile nel porto lontano.",
+        "Non desidera più parlare con gli altri amici."
+      ],
+      "id": "ferry-change-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите участникам поездки об отменённом пароме: сравните два запасных маршрута, отделите подтверждённые факты от предположений и предложите решение с учётом разных приоритетов.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Сравниваются срок, неопределённость и цель поездки.",
+      "Использованы минимум два условных предложения второго типа.",
+      "Возможность не представлена как подтверждённая гарантия.",
+      "Вывод опирается на сравнение и допускает разные решения для участников."
+    ]
+  }
+}

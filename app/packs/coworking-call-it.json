@@ -1,0 +1,146 @@
+{
+  "episode": "coworking-call-it",
+  "level": "B1",
+  "grammar": {
+    "title": "Ci и ne: место и количество",
+    "explanation": "Ci может заменять место, уже названное в разговоре: nella sala → ci lavoro. Ne заменяет предмет после количественного выражения: di minuti → ne ho quindici. Число сохраняется, заменяемое существительное убирается. Оба местоимения обычно стоят перед личной формой глагола; не путайте ci «там» с ne «из них, этого количества».",
+    "examples": [
+      {
+        "text": "La sala è libera? Ci entro tra poco.",
+        "ru": "Комната свободна? Я скоро туда зайду."
+      },
+      {
+        "text": "Hai venti minuti? Ne ho soltanto dieci.",
+        "ru": "У тебя есть двадцать минут? У меня только десять."
+      },
+      {
+        "text": "Il salone è rumoroso. Non ci lavoro volentieri.",
+        "ru": "Общий зал шумный. Я не люблю там работать."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Пятнадцать минут тишины",
+    "kind": "рассказ",
+    "text": "Nel nuovo spazio di lavoro condiviso, ogni stanza ha una funzione diversa. Il salone è adatto agli incontri informali, la sala riunioni ai gruppi e le piccole cabine alle telefonate. Le regole sembrano semplici finché due esigenze non si presentano nello stesso momento. Martedì Lorenzo doveva parlare con una collega che lavorava all’estero. La chiamata richiedeva circa mezz’ora e comprendeva alcuni dati riservati. La sala riunioni era occupata per altri venti minuti. Una cabina era disponibile, ma il regolamento permetteva di usarla soltanto per quindici minuti quando altre persone aspettavano. Lorenzo ha proposto alla collega di scegliere i punti da discutere a voce. Hanno deciso di discutere subito la questione più urgente in cabina e di continuare per iscritto. Per i dettagli meno urgenti hanno prenotato la sala nel pomeriggio. Prima di iniziare, Lorenzo ha controllato il microfono con una breve prova e ha chiuso la porta. La soluzione non ha eliminato ogni difficoltà: la collega ha dovuto modificare il proprio programma. Tuttavia, nessuno ha sentito informazioni riservate e la cabina è tornata disponibile in orario. Alla fine Lorenzo ha proposto di aggiungere al sistema di prenotazione la durata prevista delle chiamate. Un’informazione così piccola poteva aiutare tutti a scegliere lo spazio adatto senza interrompere il lavoro degli altri."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Замените nella cabina местоимением места.",
+      "answer": "ci",
+      "explanation": "Ci заменяет уже названное место: entra nella cabina → ci entra.",
+      "text": "La cabina è libera e Lorenzo ___ entra.",
+      "id": "coworking-call-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Замените di minuti, сохранив число.",
+      "answer": "ne",
+      "explanation": "Ne заменяет количественно определяемое существительное minuti, число остаётся.",
+      "text": "Hai trenta minuti? No, ___ ho quindici.",
+      "id": "coworking-call-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Какая фраза означает «У меня их две» о комнатах?",
+      "answer": "Ne ho due.",
+      "explanation": "Ne употребляется с количеством; ci здесь не заменяет «из них».",
+      "options": [
+        "Ne ho due.",
+        "Ci ho due.",
+        "Le ho di due."
+      ],
+      "id": "coworking-call-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает dati riservati?",
+      "answer": "Informazioni che non devono essere ascoltate da tutti.",
+      "explanation": "Riservati — конфиденциальные, предназначенные для ограниченного круга людей.",
+      "options": [
+        "Informazioni che non devono essere ascoltate da tutti.",
+        "Informazioni già pubblicate su un manifesto.",
+        "Numeri usati solo per scegliere l’orario."
+      ],
+      "id": "coworking-call-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предложение о количестве времени.",
+      "answer": "Ne ho solo quindici.",
+      "explanation": "Ne ставится перед ho, а количество quindici сохраняется.",
+      "words": [
+        "solo",
+        "Ne",
+        "quindici.",
+        "ho"
+      ],
+      "id": "coworking-call-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Замените nella sala местоимением ci; сохраните остальное.",
+      "answer": "Ci lavoro ogni mattina.",
+      "explanation": "Местоимение ci заменяет nella sala и стоит перед lavoro.",
+      "text": "Lavoro nella sala ogni mattina.",
+      "id": "coworking-call-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какую задачу решает Лоренцо?",
+      "answer": "Organizzare una chiamata riservata con spazi e tempi limitati.",
+      "explanation": "Он сочетает краткую звонковую часть, переписку и более позднюю встречу.",
+      "options": [
+        "Organizzare una chiamata riservata con spazi e tempi limitati.",
+        "Convincere la collega a trasferirsi nel suo ufficio.",
+        "Sostituire tutte le riunioni con messaggi scritti."
+      ],
+      "id": "coworking-call-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что участники обсуждают в кабине?",
+      "answer": "La questione più urgente.",
+      "explanation": "В кабине решили обсудить именно самый срочный вопрос.",
+      "options": [
+        "La questione più urgente.",
+        "Tutti i dettagli per mezz’ora.",
+        "Soltanto il nuovo regolamento."
+      ],
+      "id": "coworking-call-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Чем запись длительности звонка может помочь другим?",
+      "answer": "Consente di scegliere meglio gli spazi disponibili.",
+      "explanation": "Прогноз длительности улучшает планирование; полной гарантии он не даёт.",
+      "options": [
+        "Consente di scegliere meglio gli spazi disponibili.",
+        "Garantisce che nessuna chiamata durerà troppo.",
+        "Elimina la necessità di proteggere i dati."
+      ],
+      "id": "coworking-call-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите администратору коворкинга о звонке, для которого вам нужны тишина и тридцать минут. Предложите два варианта использования комнат и одно улучшение бронирования.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Названы длительность, требования и два реалистичных варианта.",
+      "Есть хотя бы одно ci для места и одно ne для количества.",
+      "Ограничения связаны с предлагаемыми решениями.",
+      "Письмо заканчивается конкретной просьбой или предложением."
+    ]
+  }
+}

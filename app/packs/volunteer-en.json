@@ -1,0 +1,116 @@
+{
+  "episode": "volunteer-en",
+  "level": "A1",
+  "grammar": {
+    "title": "Can и can’t: что я могу сделать",
+    "explanation": "Can + глагол без to сообщает о возможности или умении. Can’t означает «не могу»: I can’t stay. После can и can’t глагол не меняется. В короткой договорённости назовите действие и время: I can help until twelve. Until показывает, до какого момента вы можете помогать.",
+    "examples": [
+      {
+        "text": "I can carry the books.",
+        "ru": "Я могу перенести книги."
+      },
+      {
+        "text": "I can't stay after twelve.",
+        "ru": "Я не могу остаться после двенадцати."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Утро на книжном празднике",
+    "kind": "рассказ",
+    "text": "It is Saturday. Mia helps at a book festival. She starts at ten and leaves at twelve. She can put books on tables, but she cannot carry the heavy boxes. Her friend Tom carries them. The children's books go on a blue table. The other books go on a green table. At twelve, Mia gives Tom the list of books. Then she goes home for lunch with her family."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: о чём рассказ?",
+      "answer": "О помощи на книжном празднике",
+      "explanation": "Мия и Том помогают подготовить книжный праздник.",
+      "options": [
+        "О выборе книги в магазине",
+        "О помощи на книжном празднике",
+        "О семейном обеде в кафе"
+      ],
+      "id": "volunteer-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: где лежат детские книги?",
+      "answer": "На синем столе",
+      "explanation": "The children’s books go on a blue table.",
+      "options": [
+        "На синем столе",
+        "В зелёной коробке",
+        "На зелёном столе"
+      ],
+      "id": "volunteer-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему тяжёлые коробки несёт Том?",
+      "answer": "Мия не может их нести",
+      "explanation": "В тексте сказано: she cannot carry the heavy boxes; затем их несёт Том.",
+      "options": [
+        "Мия не любит читать",
+        "Том уходит раньше Мии",
+        "Мия не может их нести"
+      ],
+      "id": "volunteer-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: Mia can ___ with the books.",
+      "answer": "help",
+      "explanation": "После can нужна начальная форма без to.",
+      "options": [
+        "helps",
+        "help",
+        "to help"
+      ],
+      "id": "volunteer-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "vocabulary",
+      "prompt": "Впишите предлог: помощь продолжается до двенадцати.",
+      "answer": "until",
+      "explanation": "Until twelve показывает, когда помощь заканчивается.",
+      "text": "I can stay ___ twelve.",
+      "id": "volunteer-en-study-5",
+      "accepted": [
+        "till"
+      ]
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите отрицание.",
+      "answer": "I cannot carry the heavy boxes",
+      "explanation": "Cannot ставится перед начальной формой carry.",
+      "words": [
+        "heavy",
+        "cannot",
+        "boxes",
+        "I",
+        "the",
+        "carry"
+      ],
+      "id": "volunteer-en-study-6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите организатору книжного праздника короткое сообщение. Укажите, во сколько вы придёте и уйдёте. Назовите две задачи, с которыми можете помочь, и одну, которую выполнить не можете. Используйте can и can’t и предложите, кому передать работу перед уходом.",
+    "min": 40,
+    "max": 60,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

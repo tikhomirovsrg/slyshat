@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "wrong-delivery-it",
+  "number": "06",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Посылка не по адресу",
+  "category": "Повседневная жизнь",
+  "summary": "Курьер перепутал этаж. По голосовому сообщению выясни, чья коробка у Марко и как обменяться.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко, сосед, которому досталась чужая коробка."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Две похожие фамилии",
+  "contextText": "Ты ждёшь настольную лампу. Марко получил коробку с твоим именем, а у твоей двери лежит пакет для него.",
+  "taskTitle": "Вернуть посылки владельцам",
+  "taskText": "Сверь имя и содержимое, затем выбери передачу лично, через консьержа или вечером.",
+  "taskShort": "Сверить адрес · обменяться",
+  "skill": "Понимать притяжательные слова и различать местонахождение человека и предмета.",
+  "phraseLabels": [
+    "По ошибке",
+    "На твоё имя",
+    "Оставить у кого-то"
+  ],
+  "transferIntro": "В сообщениях Джулии перепутаны другие вещи. Следи за mio и tuo, а также за изменением адреса.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Ciao, credo che il corriere abbia lasciato una scatola da me per sbaglio. Sull’etichetta c’è il tuo nome, ma il numero dell’appartamento è poco leggibile. Non l’ho aperta. Io invece aspettavo un pacco piccolo con dei libri. Fra mezz’ora esco, quindi dimmi se puoi passare o se la lascio alla portineria.",
+  "openingRu": "Привет, кажется, курьер по ошибке оставил у меня коробку. На этикетке твоё имя, но номер квартиры плохо читается. Я её не открывал. А я ждал маленькую посылку с книгами. Через полчаса ухожу, так что скажи, можешь ли зайти или мне оставить её у консьержа.",
+  "openingQuestion": {
+    "question": "Почему Марко считает, что коробка твоя?",
+    "options": [
+      "Он открыл её",
+      "На этикетке твоё имя",
+      "Курьер позвонил тебе"
+    ],
+    "answer": 1,
+    "explanation": "Sull’etichetta c’è il tuo nome — на этикетке твоё имя. Марко прямо говорит, что коробку не открывал."
+  },
+  "phrases": [
+    {
+      "id": "wrong-delivery-sbaglio",
+      "text": "È arrivata da me per sbaglio.",
+      "ru": "Она попала ко мне по ошибке.",
+      "part": "per sbaglio",
+      "why": "Per sbaglio объясняет случайную ошибку.",
+      "sound": "В sbaglio сочетание gli звучит мягко; узнавай выражение целиком.",
+      "example": "Ho preso il tuo ombrello per sbaglio.",
+      "exampleRu": "Я по ошибке взял твой зонт."
+    },
+    {
+      "id": "wrong-delivery-nome",
+      "text": "Sull’etichetta c’è il tuo nome.",
+      "ru": "На этикетке твоё имя.",
+      "part": "il tuo nome",
+      "why": "Tuo относится к собеседнику; mio — к говорящему.",
+      "sound": "Замечай tuo перед nome: это подсказка о владельце.",
+      "example": "La prenotazione è a mio nome.",
+      "exampleRu": "Бронирование на моё имя."
+    },
+    {
+      "id": "wrong-delivery-lasciare",
+      "text": "La lascio alla portineria.",
+      "ru": "Я оставлю её у консьержа.",
+      "part": "alla portineria",
+      "why": "La заменяет коробку. Portineria — помещение или служба консьержа.",
+      "sound": "В lascio сочетание sci звучит как мягкое ш.",
+      "example": "Lascio le chiavi alla reception.",
+      "exampleRu": "Оставлю ключи на стойке регистрации."
+    },
+    {
+      "id": "wrong-delivery-passare",
+      "text": "Posso passare fra dieci minuti.",
+      "ru": "Могу зайти через десять минут.",
+      "part": "passare fra dieci minuti",
+      "why": "Passare в этом контексте — заглянуть, зайти.",
+      "sound": "Fra перед временем обозначает отсчёт от настоящего момента.",
+      "example": "Passo da te dopo il lavoro.",
+      "exampleRu": "Зайду к тебе после работы."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "La scatola è lunga e abbastanza leggera. Aspettavi una lampada?",
+      "ru": "Коробка длинная и довольно лёгкая. Ты ждал лампу?",
+      "choices": [
+        {
+          "label": "Подтвердить и предложить обмен",
+          "text": "Sì. Ho qui un pacco di libri per te.",
+          "next": "exchange"
+        },
+        {
+          "label": "Попросить оставить внизу",
+          "text": "Sì, ma non posso salire. La lasci in portineria?",
+          "next": "desk"
+        },
+        {
+          "label": "Предложить вечер",
+          "text": "Sì. Possiamo scambiarci i pacchi stasera?",
+          "next": "evening"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "exchange": {
+      "text": "Perfetto. Sono al terzo piano, porta a sinistra. Il citofono non funziona: bussa due volte.",
+      "ru": "Отлично. Я на третьем этаже, дверь слева. Домофон не работает: постучи два раза.",
+      "choices": [
+        {
+          "label": "Уточнить дверь",
+          "text": "A sinistra uscendo dall’ascensore?",
+          "next": "door"
+        },
+        {
+          "label": "Изменить способ передачи",
+          "text": "Ho una chiamata adesso. Meglio la portineria.",
+          "next": "desk"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "door": {
+      "text": "Esatto, non la porta vicino alle scale. Porta pure il mio pacco, così facciamo un solo viaggio.",
+      "ru": "Именно, не дверь у лестницы. Принеси и мою посылку, чтобы обойтись одним походом.",
+      "choices": [
+        {
+          "label": "Подтвердить обмен",
+          "text": "Arrivo fra dieci minuti con i libri.",
+          "next": "exchange-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "desk": {
+      "text": "La portineria chiude alle dodici. Adesso sono le undici e venti. Riesci a ritirarla prima?",
+      "ru": "Консьерж уходит в двенадцать. Сейчас 11:20. Успеешь забрать раньше?",
+      "choices": [
+        {
+          "label": "Успеть до закрытия",
+          "text": "Sì, scendo alle undici e mezza.",
+          "next": "desk-check"
+        },
+        {
+          "label": "Перенести на вечер",
+          "text": "No, non faccio in tempo. Tienila fino a stasera.",
+          "next": "evening"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "desk-check": {
+      "text": "Allora scrivo il tuo appartamento sul pacco. Lascia anche i miei libri alla portinaia e dille il mio nome.",
+      "ru": "Тогда напишу номер твоей квартиры на посылке. Оставь мои книги консьержке и назови моё имя.",
+      "choices": [
+        {
+          "label": "Подтвердить два действия",
+          "text": "Ritiro la lampada e lascio i libri per Marco.",
+          "next": "desk-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "evening": {
+      "text": "Rientro alle sette. Posso passare da te alle sette e un quarto, se sei in casa.",
+      "ru": "Вернусь в семь. Могу зайти к тебе в 19:15, если будешь дома.",
+      "choices": [
+        {
+          "label": "Согласовать время",
+          "text": "Sì, alle sette e un quarto sono a casa.",
+          "next": "evening-check"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "evening-check": {
+      "text": "Bene. Tengo la scatola qui, lontano dalla porta. Tu puoi tenere i libri fino ad allora?",
+      "ru": "Хорошо. Оставлю коробку здесь, подальше от двери. Ты можешь до этого времени подержать книги у себя?",
+      "choices": [
+        {
+          "label": "Согласиться хранить книги",
+          "text": "Certo, li tengo io. Suona quando arrivi.",
+          "next": "evening-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "exchange-end": {
+      "text": "Ecco la tua lampada. Grazie per aver portato i libri!",
+      "ru": "Вот твоя лампа. Спасибо, что принёс книги!",
+      "choices": [],
+      "outcome": "exchange",
+      "speaker": "Marco"
+    },
+    "desk-end": {
+      "text": "La scatola è in portineria con il tuo nome. La portinaia aspetta i miei libri.",
+      "ru": "Коробка у консьержа с твоим именем. Консьержка ждёт мои книги.",
+      "choices": [],
+      "outcome": "desk",
+      "speaker": "Marco"
+    },
+    "evening-end": {
+      "text": "Ci vediamo alle sette e un quarto da te. Finalmente ogni pacco troverà la porta giusta.",
+      "ru": "Увидимся у тебя в 19:15. Наконец каждая посылка попадёт в правильную дверь.",
+      "choices": [],
+      "outcome": "evening",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "exchange": {
+      "title": "Обмен у двери",
+      "body": "Ты нашёл нужную дверь на третьем этаже и обменял книги на свою лампу."
+    },
+    "desk": {
+      "title": "Передача через консьержа",
+      "body": "Ты заберёшь лампу в 11:30, до закрытия, и оставишь книги для Марко."
+    },
+    "evening": {
+      "title": "Вечером без спешки",
+      "body": "Каждый сохранит чужую посылку до 19:15, когда Марко зайдёт к тебе."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Ho ritirato la tua giacca per sbaglio. La mia è blu, la tua è nera.",
+      "ru": "Я по ошибке забрала твою куртку. Моя синяя, твоя чёрная.",
+      "question": "Какого цвета куртка слушателя?",
+      "options": [
+        "Синяя",
+        "Красная",
+        "Чёрная"
+      ],
+      "answer": 2,
+      "explanation": "La tua è nera — твоя чёрная. La mia относится к говорящей.",
+      "id": "it-wrong-delivery-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Il pacco non è più dal vicino. L’ha lasciato al negozio sotto casa, che chiude alle sei.",
+      "ru": "Посылка больше не у соседа. Он оставил её в магазине под домом, который закрывается в шесть.",
+      "question": "Где посылка сейчас?",
+      "options": [
+        "В магазине",
+        "У соседа",
+        "На почте"
+      ],
+      "answer": 0,
+      "explanation": "Non è più отменяет старое местонахождение; новое — al negozio.",
+      "id": "it-wrong-delivery-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Passo fra un quarto d’ora. Se non ci sei, torno domani; non lascio i documenti sul pianerottolo.",
+      "ru": "Зайду через четверть часа. Если тебя не будет, вернусь завтра; не оставлю документы на лестничной площадке.",
+      "question": "Что будет, если дома никого нет?",
+      "options": [
+        "Документы оставят у двери",
+        "Вернутся завтра",
+        "Передадут документы соседу"
+      ],
+      "answer": 1,
+      "explanation": "Torno domani — вернусь завтра. Последняя фраза исключает оставление у двери.",
+      "id": "it-wrong-delivery-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

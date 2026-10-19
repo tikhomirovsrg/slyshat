@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "bus-en",
+  "number": "09",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Автобус уже ушёл",
+  "category": "Поездки",
+  "summary": "До экскурсии у маяка час, а следующий автобус слишком поздно. Сравни три новых плана.",
+  "duration": "15–20 минут",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "secondSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Твоя соседка и подруга. Любит знакомить людей и искать истории вокруг."
+  },
+  "contextTitle": "Остановка у порта",
+  "contextText": "Во второй день поездки вы с Оливером собирались на экскурсию у маяка в 15:00. Сейчас 14:00; до остановки вы дошли слишком поздно.",
+  "taskTitle": "Выбрать реальный маршрут",
+  "taskText": "Выясни время отправления и длительность дороги. Реши, важнее ли экскурсия сегодня, цена или спокойная прогулка.",
+  "taskShort": "Экскурсия в 15:00",
+  "skill": "Отличать время отправления от прибытия и слышать условия пересадки.",
+  "phraseLabels": [
+    "Только что ушёл",
+    "Успеть на",
+    "Вместо этого"
+  ],
+  "transferIntro": "Майя объясняет другие маршруты. Сначала пойми связь между двумя частями поездки.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "We've just missed the bus to the lighthouse. The next one doesn't leave until three, which is when our tour starts. We could catch the ferry at quarter past two, but we'd still have a fifteen-minute walk at the other end. Or we could change our plans and explore the harbour instead.",
+  "openingRu": "Мы только что пропустили автобус до маяка. Следующий отправляется только в три, как раз когда начинается экскурсия. Можно успеть на паром в 14:15, но на другом берегу ещё пятнадцать минут пешком. Или можно изменить планы и вместо этого погулять по гавани.",
+  "openingQuestion": {
+    "question": "Почему следующий автобус не подходит для экскурсии?",
+    "options": [
+      "Он вообще не едет к маяку",
+      "Он отправляется в момент начала экскурсии",
+      "Он ходит только утром"
+    ],
+    "answer": 1,
+    "explanation": "Doesn't leave until three — отправляется лишь в 15:00. В это время экскурсия уже начинается."
+  },
+  "phrases": [
+    {
+      "id": "just-missed",
+      "text": "We've just missed the bus.",
+      "ru": "Мы только что пропустили автобус.",
+      "part": "just missed",
+      "why": "Just с прошедшим событием подчёркивает, что оно произошло совсем недавно.",
+      "sound": "В just missed соседние согласные звучат тесно; смысловой акцент на missed.",
+      "example": "You've just missed Oliver.",
+      "exampleRu": "Ты только что разминулся с Оливером."
+    },
+    {
+      "id": "catch",
+      "text": "Could we catch the ferry at quarter past two?",
+      "ru": "Успеем ли мы на паром в четверть третьего?",
+      "part": "catch the ferry",
+      "why": "Catch транспорт — успеть на него и поехать, а не поймать рукой.",
+      "sound": "Quarter past two — 14:15; не путай past с to.",
+      "example": "We can catch the last train.",
+      "exampleRu": "Мы можем успеть на последний поезд."
+    },
+    {
+      "id": "instead",
+      "text": "Let's explore the harbour instead.",
+      "ru": "Давай вместо этого погуляем по гавани.",
+      "part": "instead",
+      "why": "Instead показывает замену прежнего плана.",
+      "sound": "Instead обычно звучит заметно в конце фразы и меняет направление разговора.",
+      "example": "We could walk instead of waiting.",
+      "exampleRu": "Можно пойти пешком вместо ожидания."
+    },
+    {
+      "id": "until",
+      "text": "The next one doesn't leave until three.",
+      "ru": "Следующий отправляется только в три.",
+      "part": "doesn't leave until",
+      "why": "Отрицание с until означает «не раньше чем», а не длительность поездки.",
+      "sound": "Слушай doesn't вместе с until: это единое ограничение по времени.",
+      "example": "The shop doesn't open until ten.",
+      "exampleRu": "Магазин открывается только в десять."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Oliver",
+      "text": "The ferry, a shared taxi, or a slower afternoon here: which should we check first?",
+      "ru": "Паром, такси на двоих или спокойный день здесь — что сначала проверим?",
+      "choices": [
+        {
+          "label": "Узнать время парома в пути",
+          "text": "How long does the ferry crossing take?",
+          "next": "ferry"
+        },
+        {
+          "label": "Посчитать такси",
+          "text": "How much would a taxi cost between us?",
+          "next": "taxi"
+        },
+        {
+          "label": "Перенести экскурсию",
+          "text": "Could we move our lighthouse booking to tomorrow?",
+          "next": "harbour"
+        }
+      ]
+    },
+    "ferry": {
+      "speaker": "Oliver",
+      "text": "Twenty minutes. If it leaves on time at two fifteen, we'd reach the other side at two thirty-five and the lighthouse at two fifty.",
+      "ru": "Двадцать минут. Если отплывёт вовремя в 14:15, будем на другом берегу в 14:35, а у маяка в 14:50.",
+      "choices": [
+        {
+          "label": "Проверить время посадки",
+          "text": "Do we need to be at the gate before two fifteen?",
+          "next": "ferry-confirm"
+        },
+        {
+          "label": "Выбрать менее рискованный путь",
+          "text": "That's quite tight. Let's check the taxi.",
+          "next": "taxi"
+        }
+      ]
+    },
+    "ferry-confirm": {
+      "speaker": "Oliver",
+      "text": "The gate closes five minutes before departure. It's a six-minute walk from here, so we need to leave now.",
+      "ru": "Посадка заканчивается за пять минут до отправления. Отсюда идти шесть минут, поэтому нужно выходить сейчас.",
+      "choices": [
+        {
+          "label": "Принять маршрут и выйти сейчас",
+          "text": "Let's go. We'll aim for the gate before two ten.",
+          "next": "ferry-end"
+        }
+      ]
+    },
+    "ferry-end": {
+      "speaker": "Oliver",
+      "text": "We've made it to the gate. The boat's on time, so we'll have ten minutes to spare at the lighthouse.",
+      "ru": "Мы успели к посадке. Паром идёт вовремя, так что у маяка останется десять минут в запасе.",
+      "choices": [],
+      "outcome": "ferry"
+    },
+    "taxi": {
+      "speaker": "Oliver",
+      "text": "It's thirty pounds altogether, so fifteen each. The driver can come in five minutes, and the journey takes twenty.",
+      "ru": "Всего тридцать фунтов, по пятнадцать с каждого. Водитель приедет через пять минут, дорога занимает двадцать.",
+      "choices": [
+        {
+          "label": "Уточнить точку высадки",
+          "text": "Can the driver drop us at the lighthouse entrance?",
+          "next": "taxi-confirm"
+        },
+        {
+          "label": "Отказаться от расходов",
+          "text": "I'd rather save the money and explore here.",
+          "next": "harbour"
+        }
+      ]
+    },
+    "taxi-confirm": {
+      "speaker": "Oliver",
+      "text": "Yes, at the visitor entrance, not the café below the hill. I'll confirm that before we book.",
+      "ru": "Да, у входа для посетителей, а не у кафе внизу холма. Я уточню это до заказа.",
+      "choices": [
+        {
+          "label": "Подтвердить сумму и адрес",
+          "text": "Fifteen each is fine. Please book it to the visitor entrance.",
+          "next": "taxi-end"
+        }
+      ]
+    },
+    "taxi-end": {
+      "speaker": "Oliver",
+      "text": "Booked. We'll get there around two twenty-five, with time to look around before the tour.",
+      "ru": "Заказано. Приедем примерно в 14:25 и успеем осмотреться до экскурсии.",
+      "choices": [],
+      "outcome": "taxi"
+    },
+    "harbour": {
+      "speaker": "Oliver",
+      "text": "There are two spaces tomorrow at eleven. They can move our booking without a fee if we call before half past two.",
+      "ru": "Завтра в одиннадцать есть два места. Бронь перенесут бесплатно, если позвонить до 14:30.",
+      "choices": [
+        {
+          "label": "Перенести бронь сейчас",
+          "text": "Let's call now, then find somewhere to walk by the water.",
+          "next": "harbour-confirm"
+        }
+      ]
+    },
+    "harbour-confirm": {
+      "speaker": "Oliver",
+      "text": "They've moved it. There's a trail around the harbour that takes an hour, and we can stop at the fish market afterwards.",
+      "ru": "Бронь перенесли. Вокруг гавани есть маршрут на час, после него можно зайти на рыбный рынок.",
+      "choices": [
+        {
+          "label": "Выбрать спокойный день",
+          "text": "That sounds good. We'll take the earlier bus tomorrow.",
+          "next": "harbour-end"
+        }
+      ]
+    },
+    "harbour-end": {
+      "speaker": "Oliver",
+      "text": "Tomorrow's tour is confirmed for eleven. Today we can enjoy the harbour without watching the clock.",
+      "ru": "Завтрашняя экскурсия подтверждена на одиннадцать. Сегодня можем спокойно гулять по гавани.",
+      "choices": [],
+      "outcome": "harbour"
+    }
+  },
+  "outcomes": {
+    "ferry": {
+      "title": "Паром и прогулка",
+      "body": "Вы успели к посадке до 14:10. При своевременном отправлении будете у маяка в 14:50."
+    },
+    "taxi": {
+      "title": "Запас времени за доплату",
+      "body": "Такси стоит по 15 фунтов с человека и довезёт ко входу для посетителей примерно в 14:25."
+    },
+    "harbour": {
+      "title": "Сегодня гавань, завтра маяк",
+      "body": "Вы бесплатно перенесли экскурсию на 11:00 завтра. Сегодня остаётесь гулять у воды."
+    }
+  },
+  "transfer": [
+    {
+      "id": "bus-connection",
+      "speaker": "Maya",
+      "text": "The train gets in at ten past four. The village bus leaves at twenty past, from the stop outside the station.",
+      "ru": "Поезд прибывает в 16:10. Автобус в деревню отправляется в 16:20 с остановки у вокзала.",
+      "question": "Сколько времени между прибытием и автобусом?",
+      "options": [
+        "Десять минут",
+        "Двадцать минут",
+        "Полчаса"
+      ],
+      "answer": 0,
+      "explanation": "Разница между ten past four и twenty past four — десять минут."
+    },
+    {
+      "id": "bus-closed",
+      "speaker": "Maya",
+      "text": "The bridge doesn't reopen until Monday. Until then, use the footpath beside the river.",
+      "ru": "Мост откроют только в понедельник. До этого пользуйтесь тропинкой вдоль реки.",
+      "question": "Как пройти до понедельника?",
+      "options": [
+        "По мосту",
+        "По тропинке у реки",
+        "Через закрытый вокзал"
+      ],
+      "answer": 1,
+      "explanation": "Doesn't reopen until Monday исключает мост раньше понедельника; предложен footpath."
+    },
+    {
+      "id": "bus-instead",
+      "speaker": "Maya",
+      "text": "The coach is full. We could take the train instead, though we'd have to change once at Milton.",
+      "ru": "В междугороднем автобусе нет мест. Можно вместо него поехать на поезде, но придётся один раз пересесть в Милтоне.",
+      "question": "Какое условие у поездки на поезде?",
+      "options": [
+        "Нужно ехать стоя",
+        "Нужны две пересадки",
+        "Нужна одна пересадка в Милтоне"
+      ],
+      "answer": 2,
+      "explanation": "Though вводит неудобство альтернативы: change once at Milton."
+    }
+  ]
+}

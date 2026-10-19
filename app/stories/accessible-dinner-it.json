@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "id": "accessible-dinner-it",
+  "number": "19",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Стол, за которым есть место каждому",
+  "category": "Знакомства и общение",
+  "summary": "Ресторан называет вход доступным, но детали расходятся. Согласуй условия так, чтобы никто не стал исключением из общего плана.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия организует общий ужин после выставки."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Ужин для команды выставки",
+  "contextText": "Выбираете ресторан на восемь человек. Один участник пользуется коляской, другому трудно следить за разговором в шуме. Джулия получила неоднозначный ответ.",
+  "taskTitle": "Проверить обещания и согласовать приоритеты",
+  "taskText": "Различи доброжелательное намерение и действующую возможность. Уточни вход, туалет, расположение стола и приемлемые альтернативы.",
+  "taskShort": "Восемь человек · общий разговор",
+  "skill": "Понимать уступки, скрытые допущения и ограничения обещаний в сложной речи.",
+  "phraseLabels": [
+    "Насколько нам известно",
+    "При том что",
+    "Не перекладывать неудобство"
+  ],
+  "transferIntro": "Марко рассматривает другие условия участия. Выдели уступку, оспариваемое допущение и обязательное условие.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Il ristoratore sostiene che il locale sia accessibile, salvo un piccolo gradino che il personale aiuterebbe a superare. Pur apprezzandone la disponibilità, non darei per scontato che questa soluzione vada bene a tutti. A quanto ci risulta, inoltre, la sala tranquilla è al piano superiore. Occorre chiarire quali condizioni siano effettive, senza chiedere agli ospiti di adattarsi per non creare problemi.",
+  "openingRu": "Ресторатор утверждает, что заведение доступно, кроме маленькой ступеньки, преодолеть которую помог бы персонал. Ценя готовность помочь, я бы не считала само собой разумеющимся, что такое решение всем подходит. Кроме того, насколько нам известно, тихий зал наверху. Нужно уточнить реальные условия, не требуя от гостей подстроиться, чтобы не создавать проблем.",
+  "openingQuestion": {
+    "question": "Какую проблему Джулия видит в ответе ресторана?",
+    "options": [
+      "Ресторан прямо отказал всей группе",
+      "Готовность помочь выдают за подтверждённую доступность",
+      "Тихого зала вообще нет"
+    ],
+    "answer": 1,
+    "explanation": "Персонал готов помочь, но наличие ступеньки и расположение тихого зала требуют проверки. Pur apprezzandone не означает принятия решения."
+  },
+  "phrases": [
+    {
+      "id": "accessible-dinner-risulta",
+      "text": "A quanto ci risulta, la sala è al piano superiore.",
+      "ru": "Насколько нам известно, зал находится наверху.",
+      "part": "a quanto ci risulta",
+      "why": "Оборот ограничивает достоверность источником текущих сведений и допускает уточнение.",
+      "sound": "Слушай его до утверждения: он снижает категоричность, не отменяя сам факт.",
+      "example": "A quanto mi risulta, l’ingresso laterale è chiuso.",
+      "exampleRu": "Насколько мне известно, боковой вход закрыт."
+    },
+    {
+      "id": "accessible-dinner-pur",
+      "text": "Pur apprezzandone la disponibilità, chiederei altri dettagli.",
+      "ru": "Ценя его готовность помочь, я всё же попросила бы подробности.",
+      "part": "pur apprezzandone",
+      "why": "Pur + герундий выражает уступку. Ne отсылает к ранее названному человеку.",
+      "sound": "Главное возражение обычно идёт после уступки: дождись второй части.",
+      "example": "Pur comprendendo il limite, non possiamo ignorarlo.",
+      "exampleRu": "Хотя мы понимаем ограничение, игнорировать его нельзя."
+    },
+    {
+      "id": "accessible-dinner-scontato",
+      "text": "Non darei per scontato che vada bene a tutti.",
+      "ru": "Я бы не считала очевидным, что это всем подходит.",
+      "part": "dare per scontato",
+      "why": "Выражение означает принять непроверенное допущение как данность; здесь его оспаривают.",
+      "sound": "Non относится к целому обороту, а che вводит проверяемое предположение.",
+      "example": "Non diamo per scontato che possano restare fino a tardi.",
+      "exampleRu": "Не будем считать само собой разумеющимся, что они могут остаться допоздна."
+    },
+    {
+      "id": "accessible-dinner-a-scapito",
+      "text": "Non vorrei risolvere un problema a scapito di qualcuno.",
+      "ru": "Не хотелось бы решить проблему за чей-то счёт.",
+      "part": "a scapito di",
+      "why": "A scapito di показывает, на кого ложится отрицательное последствие выбора.",
+      "sound": "Сохрани в памяти, кто назван после di: это сторона, чьи интересы могут пострадать.",
+      "example": "La velocità non deve andare a scapito della chiarezza.",
+      "exampleRu": "Скорость не должна достигаться за счёт ясности."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Il ristorante propone di portare una persona al piano superiore e sistemare lì il gruppo. Prima di accettare, che cosa dovremmo verificare o mettere in discussione?",
+      "ru": "Ресторан предлагает поднять одного человека наверх и разместить там группу. Что нужно проверить или поставить под вопрос до согласия?",
+      "choices": [
+        {
+          "label": "Запросить самостоятельный доступ",
+          "text": "Vorrei sapere se esiste un percorso senza gradini, non presumere che qualcuno accetti di essere sollevato.",
+          "next": "access"
+        },
+        {
+          "label": "Исследовать первый этаж",
+          "text": "Verifichiamo se una zona tranquilla al piano terra risolva entrambe le esigenze.",
+          "next": "ground"
+        },
+        {
+          "label": "Сравнить другую площадку",
+          "text": "Considererei un altro locale, purché ne verificassimo davvero le condizioni.",
+          "next": "alternative"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "access": {
+      "text": "Ci mandano le misure: l’ingresso laterale ha una rampa, ma il bagno al piano terra è stato trasformato in deposito. La promessa di accessibilità riguardava soltanto l’entrata.",
+      "ru": "Прислали размеры: у бокового входа пандус, но туалет на первом этаже превратили в склад. Обещание доступности касалось только входа.",
+      "choices": [
+        {
+          "label": "Уточнить реальную возможность освободить",
+          "text": "Il bagno potrebbe essere ripristinato e verificato prima che confermiamo?",
+          "next": "restore"
+        },
+        {
+          "label": "Отказаться от неполной доступности",
+          "text": "Non basta poter entrare. Confrontiamo l’altra proposta.",
+          "next": "alternative"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "restore": {
+      "text": "Il gestore si impegna a liberarlo oggi e a inviare foto e misure. Nonostante ciò, la sala tranquilla resterebbe raggiungibile soltanto per le scale.",
+      "ru": "Управляющий обещает освободить его сегодня и прислать фото и размеры. Но тихий зал всё равно доступен только по лестнице.",
+      "choices": [
+        {
+          "label": "Проверить общий стол внизу",
+          "text": "Allora valutiamo il piano terra, senza dividere il gruppo.",
+          "next": "ground"
+        },
+        {
+          "label": "Не строить план на срочных обещаниях",
+          "text": "Preferisco una soluzione già operativa.",
+          "next": "alternative"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "ground": {
+      "text": "Al piano terra c’è un tavolo lontano dalla cucina. Sarebbe silenzioso prima delle otto, dopodiché inizia la musica; possono tenerla spenta fino alle nove, ma solo con accordo scritto.",
+      "ru": "Внизу есть стол далеко от кухни. До восьми там тихо, затем музыка; её могут не включать до девяти, но лишь по письменной договорённости.",
+      "choices": [
+        {
+          "label": "Согласовать проверяемые условия",
+          "text": "Chiediamo bagno disponibile, tavolo riservato e musica spenta fino alle nove, poi sentiamo gli ospiti.",
+          "next": "conditions"
+        },
+        {
+          "label": "Сократить ужин по согласованию",
+          "text": "Potremmo cenare prima delle otto, se l’orario fosse comodo per tutti.",
+          "next": "early"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "conditions": {
+      "text": "Le condizioni sono state confermate e gli ospiti, dopo aver visto le informazioni, le ritengono adatte. Resta essenziale che l’accordo sia noto al personale in servizio.",
+      "ru": "Условия подтвердили, гости изучили сведения и считают их подходящими. Важно, чтобы договорённость знал персонал, который будет работать.",
+      "choices": [
+        {
+          "label": "Закрепить ответственного на вечер",
+          "text": "Indichiamo un referente e chiediamo conferma al responsabile del turno.",
+          "next": "conditions-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "early": {
+      "text": "Tutti possono arrivare alle sei e mezza; nessuno deve saltare il lavoro. Il bagno ripristinato è stato verificato e la cena finirebbe prima dell’avvio della musica.",
+      "ru": "Все могут прийти в 18:30; никому не нужно пропускать работу. Восстановленный туалет проверен, ужин закончится до музыки.",
+      "choices": [
+        {
+          "label": "Выбрать согласованное раннее время",
+          "text": "Confermiamo dalle sei e mezza alle otto, con lo stesso tavolo per tutti.",
+          "next": "early-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "alternative": {
+      "text": "Il centro culturale ha ingresso e bagno senza gradini e una sala senza musica. Il catering costa cinque euro in più a persona; possiamo coprirli con il fondo comune, se il gruppo approva.",
+      "ru": "В культурном центре вход и туалет без ступенек, зал без музыки. Кейтеринг дороже на пять евро с человека; можем покрыть их общим фондом, если группа одобрит.",
+      "choices": [
+        {
+          "label": "Обсудить цену как общий расход",
+          "text": "Presentiamo la differenza come costo dell’evento, non come spesa di un singolo ospite.",
+          "next": "alternative-check"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "alternative-check": {
+      "text": "Il gruppo approva e i due ospiti confermano che le informazioni rispondono alle loro esigenze. Anche il percorso dalla fermata è stato controllato insieme a loro.",
+      "ru": "Группа одобрила, оба гостя подтвердили, что условия отвечают их потребностям. Вместе с ними проверили и путь от остановки.",
+      "choices": [
+        {
+          "label": "Перенести общий ужин",
+          "text": "Prenotiamo il centro e comunichiamo a tutti il nuovo indirizzo.",
+          "next": "alternative-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "conditions-end": {
+      "text": "Il tavolo resta al piano terra, con bagno disponibile e musica sospesa fino alle nove. La disponibilità verbale è diventata un accordo verificato.",
+      "ru": "Стол внизу, туалет доступен, музыка выключена до девяти. Устная готовность превратилась в проверенную договорённость.",
+      "choices": [],
+      "outcome": "conditions",
+      "speaker": "Giulia"
+    },
+    "early-end": {
+      "text": "L’orario è cambiato per accordo di tutti. Nessuno viene separato dal gruppo né deve accettare un aiuto non desiderato.",
+      "ru": "Время изменили по общему согласию. Никого не отделяют от группы и не заставляют принимать нежелательную помощь.",
+      "choices": [],
+      "outcome": "early",
+      "speaker": "Giulia"
+    },
+    "alternative-end": {
+      "text": "Il centro ospiterà l’intero gruppo. Il costo aggiuntivo rientra nell’organizzazione collettiva, senza attribuirlo a chi ha espresso un’esigenza.",
+      "ru": "Центр примет всю группу. Доплата входит в общий бюджет, её не приписывают тому, кто сообщил о потребности.",
+      "choices": [],
+      "outcome": "alternative",
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "conditions": {
+      "title": "Подтверждённые условия",
+      "body": "Доступный туалет, стол внизу, музыка выключена до 21:00. Гости согласились после проверки, ответственному передали договорённость."
+    },
+    "early": {
+      "title": "Общее согласие на ранний ужин",
+      "body": "Все смогут прийти с 18:30 до 20:00. Проверены туалет и общий стол; время удобно всем."
+    },
+    "alternative": {
+      "title": "Площадка для всей группы",
+      "body": "Ужин перенесён в культурный центр с проверенным доступом и тишиной. Доплата €5 с человека покрыта общим фондом."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Pur essendo disponibile un interprete, non è detto che il materiale inviato all’ultimo momento gli consenta di prepararsi adeguatamente.",
+      "ru": "Хотя переводчик доступен, материалы, присланные в последний момент, не обязательно позволят ему как следует подготовиться.",
+      "question": "Какое допущение оспаривается?",
+      "options": [
+        "Наличие переводчика само по себе гарантирует готовность",
+        "Переводчик совсем недоступен",
+        "Материалы не нужны никому"
+      ],
+      "answer": 0,
+      "explanation": "Уступка признаёт наличие специалиста; non è detto ставит под сомнение достаточность времени подготовки.",
+      "id": "it-accessible-dinner-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "A quanto risulta dalla scheda, l’ingresso è privo di barriere. Non ne consegue, però, che lo siano anche i servizi interni.",
+      "ru": "Судя по описанию, у входа нет препятствий. Однако из этого не следует, что внутренние помещения столь же доступны.",
+      "question": "Какое заключение обоснованно?",
+      "options": [
+        "Всё здание проверено",
+        "Вход описан, внутренние условия ещё требуют проверки",
+        "Вход точно закрыт"
+      ],
+      "answer": 1,
+      "explanation": "Non ne consegue запрещает переносить свойство входа на остальные помещения без проверки.",
+      "id": "it-accessible-dinner-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Accetteremmo un costo maggiore, purché non venisse scaricato sui soli partecipanti che hanno richiesto l’adattamento.",
+      "ru": "Мы согласились бы на большую стоимость, если её не переложат лишь на участников, запросивших адаптацию.",
+      "question": "Какое условие выдвигает группа?",
+      "options": [
+        "Полное отсутствие расходов",
+        "Отказ от адаптации",
+        "Доплату не возлагают только на запросивших её"
+      ],
+      "answer": 2,
+      "explanation": "Purché non venisse scaricato sui soli ... ограничивает способ распределения, а не саму возможность дополнительных расходов.",
+      "id": "it-accessible-dinner-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

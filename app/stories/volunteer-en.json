@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "volunteer-en",
+  "number": "14",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "На празднике не хватает рук",
+  "category": "Знакомства и общение",
+  "summary": "Перед районным праздником один волонтёр заболел. Выбери посильную роль и согласуй передачу смены.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Leo",
+    "name": "Лео",
+    "bio": "Коллега Эммы: помогает с проектами и собирает друзей на выходных."
+  },
+  "secondSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Твоя коллега и подруга. Спокойно обсуждает трудные решения."
+  },
+  "contextTitle": "Утро районного праздника",
+  "contextText": "Лео организует книжную ярмарку и детские занятия. Ты можешь помочь с 10:00 до 12:00, но никогда не работал с кассой.",
+  "taskTitle": "Помочь в пределах своего времени и опыта",
+  "taskText": "Выясни обязанности, доступное обучение и замену после полудня. Не обещай остаться на весь день.",
+  "taskShort": "Два часа · без опыта кассы",
+  "skill": "Улавливать просьбы о временной замене, распределение задач и границы обязательства.",
+  "phraseLabels": [
+    "Подменить",
+    "Показать, как",
+    "Передать смену"
+  ],
+  "transferIntro": "Эмма распределяет задачи на другом мероприятии. Пойми, кому и когда передают ответственность.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "We need help this morning. One volunteer is ill. Can you sit at the welcome desk, put the books on the tables, or help people find their room? You don't need to stay all day. Tell me when you need to leave, and I'll show you what to do.",
+  "openingRu": "Сегодня утром нужна помощь. Один волонтёр заболел. Можешь посидеть на стойке встречи, разложить книги на столах или помочь людям найти нужную комнату? Оставаться на весь день не нужно. Скажи, когда тебе нужно уйти, и я покажу, что делать.",
+  "openingQuestion": {
+    "question": "Что Лео говорит об обязательстве по времени?",
+    "options": [
+      "Нужно остаться до закрытия",
+      "Можно помочь часть дня",
+      "Нужно работать только ночью"
+    ],
+    "answer": 1,
+    "explanation": "You don't need to stay all day — не нужно оставаться на весь день. Можно заранее сказать время ухода."
+  },
+  "phrases": [
+    {
+      "id": "cover",
+      "text": "Could you cover the welcome desk?",
+      "ru": "Можешь подменить человека на стойке встречи?",
+      "part": "cover the welcome desk",
+      "why": "Cover a job — временно выполнять чужую работу.",
+      "sound": "После cover ищи место или обязанность, а не буквальное покрытие.",
+      "example": "Can you cover my shift on Saturday?",
+      "exampleRu": "Можешь подменить меня в субботнюю смену?"
+    },
+    {
+      "id": "talk-through",
+      "text": "We can talk you through the job.",
+      "ru": "Мы можем объяснить тебе, как выполнять работу.",
+      "part": "talk you through",
+      "why": "Talk someone through — шаг за шагом объяснить процесс.",
+      "sound": "You между talk и through может звучать очень коротко.",
+      "example": "I'll talk you through the booking form.",
+      "exampleRu": "Я объясню, как заполнить форму бронирования."
+    },
+    {
+      "id": "hand-over",
+      "text": "I'll hand over to Emma at noon.",
+      "ru": "В полдень передам смену Эмме.",
+      "part": "hand over to",
+      "why": "Hand over — передать ответственность, работу или управление.",
+      "sound": "To после over указывает, кому передают задачу.",
+      "example": "Please hand over before you leave.",
+      "exampleRu": "Пожалуйста, передай дела перед уходом."
+    },
+    {
+      "id": "short",
+      "text": "We're short of people this morning.",
+      "ru": "Сегодня утром нам не хватает людей.",
+      "part": "short of people",
+      "why": "Short of — испытывать нехватку чего-то.",
+      "sound": "Short of связывается; следующее существительное объясняет, чего мало.",
+      "example": "We're short of chairs, not tables.",
+      "exampleRu": "Нам не хватает стульев, а не столов."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Leo",
+      "text": "Which job would you like? At the desk, you check names. At the book stall, you put books on tables. At the entrance, you help people find their room.",
+      "ru": "Какую работу хочешь? За стойкой проверяешь имена. У книжного прилавка раскладываешь книги на столах. У входа помогаешь людям найти комнату.",
+      "choices": [
+        {
+          "label": "Уточнить работу на стойке",
+          "text": "I can check names, but I haven't used a till before.",
+          "next": "desk"
+        },
+        {
+          "label": "Выбрать подготовку прилавка",
+          "text": "I could help set up the books until noon.",
+          "next": "books"
+        },
+        {
+          "label": "Встречать гостей занятий",
+          "text": "I can direct people, provided I know where everything is.",
+          "next": "directions"
+        }
+      ]
+    },
+    "desk": {
+      "speaker": "Leo",
+      "text": "There's no till at the welcome desk. People already have tickets. You find their name and give them a wristband.",
+      "ru": "На стойке кассы нет. У людей уже есть билеты. Ты находишь имя и выдаёшь браслет.",
+      "choices": [
+        {
+          "label": "Уточнить сложные случаи",
+          "text": "What should I do if someone's name isn't on the list?",
+          "next": "desk-confirm"
+        },
+        {
+          "label": "Предпочесть другую задачу",
+          "text": "I'd be more comfortable helping with the books.",
+          "next": "books"
+        }
+      ]
+    },
+    "desk-confirm": {
+      "speaker": "Leo",
+      "text": "Ask them to wait beside the desk and call me. Don't send them away. Emma will take over from you at five to twelve.",
+      "ru": "Попроси подождать рядом со стойкой и позвони мне. Не отправляй их обратно. Эмма сменит тебя без пяти двенадцать.",
+      "choices": [
+        {
+          "label": "Подтвердить задачу и передачу",
+          "text": "Names and wristbands; I call you if there's a problem, then hand over at eleven fifty-five.",
+          "next": "desk-end"
+        }
+      ]
+    },
+    "desk-end": {
+      "speaker": "Leo",
+      "text": "Exactly. Here's the list and my number. I'll stay beside you for the first few arrivals.",
+      "ru": "Именно. Вот список и мой номер. Первых нескольких посетителей встретим вместе.",
+      "choices": [],
+      "outcome": "desk"
+    },
+    "books": {
+      "speaker": "Leo",
+      "text": "Great. Fiction goes on the left, children's books on the right, and anything damaged goes in this box for me to check.",
+      "ru": "Отлично. Художественные книги слева, детские справа, а всё повреждённое — в этот ящик, чтобы я проверил.",
+      "choices": [
+        {
+          "label": "Согласовать конец задачи",
+          "text": "Once the stall is ready, can I leave before noon?",
+          "next": "books-confirm"
+        },
+        {
+          "label": "Выбрать встречу гостей",
+          "text": "If someone else can lift the boxes, I could direct visitors instead.",
+          "next": "directions"
+        }
+      ]
+    },
+    "books-confirm": {
+      "speaker": "Leo",
+      "text": "Yes. You only need to put the books out. You don't need to sell them. Please leave the price labels for me. Some books are already reserved.",
+      "ru": "Да. Нужно только разложить книги. Продавать их не нужно. Ценники оставь мне. Некоторые книги уже отложены.",
+      "choices": [
+        {
+          "label": "Подтвердить границы помощи",
+          "text": "I'll sort and arrange the books, and leave pricing and sales to you.",
+          "next": "books-end"
+        }
+      ]
+    },
+    "books-end": {
+      "speaker": "Leo",
+      "text": "The stall's ready, and the damaged books are set aside. Thanks — you can head off whenever you need to.",
+      "ru": "Прилавок готов, повреждённые книги отложены. Спасибо — можешь уходить, когда нужно.",
+      "choices": [],
+      "outcome": "books"
+    },
+    "directions": {
+      "speaker": "Leo",
+      "text": "The art workshop is upstairs, but the storytelling session has moved to the garden. The printed signs still show the old room.",
+      "ru": "Занятие искусством наверху, а рассказы перенесли в сад. На печатных указателях всё ещё старая комната.",
+      "choices": [
+        {
+          "label": "Проверить информацию и обновить знак",
+          "text": "Let's correct the storytelling sign before visitors arrive.",
+          "next": "directions-confirm"
+        }
+      ]
+    },
+    "directions-confirm": {
+      "speaker": "Leo",
+      "text": "Good catch. Emma will bring a new sign, and I'll show you the step-free route to both places. Sam will replace you at noon.",
+      "ru": "Хорошо заметил. Эмма принесёт новый указатель, а я покажу путь без ступенек к обоим местам. Сэм сменит тебя в полдень.",
+      "choices": [
+        {
+          "label": "Подтвердить нужные маршруты",
+          "text": "I'll learn both routes and hand over the updated map to Sam at twelve.",
+          "next": "directions-end"
+        }
+      ]
+    },
+    "directions-end": {
+      "speaker": "Leo",
+      "text": "You're all set. Visitors will get the current information, and Sam knows exactly when to take over.",
+      "ru": "Всё готово. Посетители получат актуальную информацию, а Сэм точно знает, когда сменить тебя.",
+      "choices": [],
+      "outcome": "directions"
+    }
+  },
+  "outcomes": {
+    "desk": {
+      "title": "Стойка с поддержкой",
+      "body": "Ты отмечаешь имена и выдаёшь браслеты, проблемы передаёшь Лео. Эмма сменит тебя в 11:55."
+    },
+    "books": {
+      "title": "Подготовка без кассы",
+      "body": "Ты расставил книги, отделил повреждённые и оставил цены Лео. После подготовки можно уходить."
+    },
+    "directions": {
+      "title": "Верные указатели",
+      "body": "Вы обновили место рассказов, проверили маршруты без ступенек и согласовали передачу карты Сэму в 12:00."
+    }
+  },
+  "transfer": [
+    {
+      "id": "volunteer-shift",
+      "speaker": "Emma",
+      "text": "I can cover the first hour, but I'll need someone to take over at ten. I can't stay until lunchtime.",
+      "ru": "Я могу подменить в первый час, но в десять меня нужно сменить. До обеда остаться не могу.",
+      "question": "Когда Эмме нужна замена?",
+      "options": [
+        "В 10:00",
+        "В 12:00",
+        "После обеда"
+      ],
+      "answer": 0,
+      "explanation": "Take over at ten — смена в десять. Until lunchtime прямо исключено."
+    },
+    {
+      "id": "volunteer-stock",
+      "speaker": "Emma",
+      "text": "We're short of cups, but we've got plenty of plates. Please count the cups before you order anything else.",
+      "ru": "Нам не хватает стаканчиков, но тарелок много. Пожалуйста, посчитай стаканчики до заказа чего-либо ещё.",
+      "question": "Чего не хватает?",
+      "options": [
+        "Тарелок",
+        "Стаканчиков",
+        "Волонтёров"
+      ],
+      "answer": 1,
+      "explanation": "Short of cups обозначает нехватку; plenty of plates — достаточный запас."
+    },
+    {
+      "id": "volunteer-training",
+      "speaker": "Emma",
+      "text": "You won't need to run the projector on your own. I'll talk you through the first session, then stay nearby in case you need help.",
+      "ru": "Тебе не придётся управлять проектором совсем одному. Я объясню всё на первой сессии, а потом останусь рядом на случай помощи.",
+      "question": "Какую поддержку обещает Эмма?",
+      "options": [
+        "Только инструкцию по почте",
+        "Никакой после включения",
+        "Объяснение на первой сессии и помощь рядом"
+      ],
+      "answer": 2,
+      "explanation": "Talk you through the first session и stay nearby описывают два этапа поддержки."
+    }
+  ]
+}

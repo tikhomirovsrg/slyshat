@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "lostbag-en",
+  "number": "07",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Синяя сумка исчезла",
+  "category": "Поездки",
+  "summary": "На вокзале пропала сумка Оливера. Восстанови последовательность и реши, что успеть до отправления.",
+  "duration": "15–20 минут",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "secondSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Твоя соседка и подруга. Любит знакомить людей и искать истории вокруг."
+  },
+  "contextTitle": "Перед поездкой",
+  "contextText": "Вы с Оливером едете на выходные. До поезда двадцать пять минут, а синей сумки нет. Билеты и документы у него в кармане.",
+  "taskTitle": "Найти сумку или оставить точное описание",
+  "taskText": "Выясни, где сумку видели в последний раз, не перепутай похожую и согласуй план до отправления.",
+  "taskShort": "25 минут до поезда",
+  "skill": "Слышать последовательность событий, описание предмета и степень уверенности.",
+  "phraseLabels": [
+    "В последний раз",
+    "Возможно, оставил",
+    "Отличительный признак"
+  ],
+  "transferIntro": "Майя помогает в бюро находок. В новых сообщениях выдели место, признак и следующий шаг.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "I can't find my blue bag. I last had it when we bought coffee, before we went to the ticket machine. I might have left it under the table. It looks quite ordinary, but there's a yellow ribbon on the handle. Luckily, my passport and tickets are in my coat.",
+  "openingRu": "Не могу найти синюю сумку. В последний раз она была у меня, когда мы покупали кофе, до того как пошли к билетному автомату. Возможно, я оставил её под столом. Она довольно обычная, но на ручке жёлтая ленточка. К счастью, паспорт и билеты у меня в пальто.",
+  "openingQuestion": {
+    "question": "Где Оливер точно помнит свою сумку?",
+    "options": [
+      "У билетного автомата",
+      "В поезде",
+      "Во время покупки кофе"
+    ],
+    "answer": 2,
+    "explanation": "I last had it when we bought coffee — последнее подтверждённое место. Под столом — только предположение: might have."
+  },
+  "phrases": [
+    {
+      "id": "last-had",
+      "text": "I last had it when we bought coffee.",
+      "ru": "В последний раз она была у меня, когда мы покупали кофе.",
+      "part": "I last had it",
+      "why": "Так восстанавливают последнее известное положение предмета.",
+      "sound": "Had it связывается; слово last выделяет последний подтверждённый момент.",
+      "example": "I last saw my keys by the door.",
+      "exampleRu": "Последний раз я видел ключи у двери."
+    },
+    {
+      "id": "might-left",
+      "text": "I might have left it under the table.",
+      "ru": "Возможно, я оставил её под столом.",
+      "part": "might have left",
+      "why": "Might have + причастие означает предположение о прошлом.",
+      "sound": "Have часто сокращается до слабого звука; не принимай догадку за уверенность.",
+      "example": "She might have taken the earlier train.",
+      "exampleRu": "Возможно, она уехала предыдущим поездом."
+    },
+    {
+      "id": "ribbon",
+      "text": "There's a yellow ribbon on the handle.",
+      "ru": "На ручке жёлтая ленточка.",
+      "part": "on the handle",
+      "why": "Описание маленькой детали помогает отличить похожие вещи.",
+      "sound": "Сильные слова yellow, ribbon, handle важнее коротких служебных слов.",
+      "example": "There's a red sticker on the case.",
+      "exampleRu": "На чемодане красная наклейка."
+    },
+    {
+      "id": "hand-in",
+      "text": "Has anyone handed a bag in?",
+      "ru": "Никто не сдавал найденную сумку?",
+      "part": "handed a bag in",
+      "why": "Hand in в бюро находок — передать найденную вещь сотруднику.",
+      "sound": "In может отделяться от handed предметом; слушай фразу до конца.",
+      "example": "Someone handed my wallet in.",
+      "exampleRu": "Кто-то сдал мой кошелёк."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Oliver",
+      "text": "We've got twenty-five minutes. Should we check the café, ask at the information desk, or call the station's lost property office?",
+      "ru": "У нас двадцать пять минут. Проверим кафе, спросим у стойки информации или позвоним в бюро находок вокзала?",
+      "choices": [
+        {
+          "label": "Вернуться в кафе",
+          "text": "Let's check under the table first.",
+          "next": "cafe"
+        },
+        {
+          "label": "Спросить у стойки",
+          "text": "Let's give the information desk a description.",
+          "next": "desk"
+        },
+        {
+          "label": "Позвонить в бюро находок",
+          "text": "I'll call lost property while you watch the departure board.",
+          "next": "phone"
+        }
+      ]
+    },
+    "cafe": {
+      "speaker": "Oliver",
+      "text": "The table's empty, but the person behind the counter has a blue bag. I can't see the handle from here.",
+      "ru": "Под столом пусто, но за стойкой у сотрудника синяя сумка. Отсюда не видно ручки.",
+      "choices": [
+        {
+          "label": "Проверить отличительную деталь",
+          "text": "Could you ask whether it has a yellow ribbon?",
+          "next": "cafe-confirm"
+        },
+        {
+          "label": "Не брать похожую без проверки",
+          "text": "Let's ask the information desk if another one was found.",
+          "next": "desk"
+        }
+      ]
+    },
+    "cafe-confirm": {
+      "speaker": "Oliver",
+      "text": "It does. They want me to name something inside. There's a green notebook and a pair of walking boots.",
+      "ru": "Есть ленточка. Меня просят назвать что-нибудь внутри. Там зелёный блокнот и походные ботинки.",
+      "choices": [
+        {
+          "label": "Назвать содержимое и забрать сумку",
+          "text": "Tell them about the notebook and boots, then we can collect it.",
+          "next": "cafe-end"
+        }
+      ]
+    },
+    "cafe-end": {
+      "speaker": "Oliver",
+      "text": "It's mine! We still have twelve minutes, and our platform is just across the hall. Thanks for checking properly.",
+      "ru": "Моя! У нас ещё двенадцать минут, а платформа прямо через зал. Спасибо, что всё проверили.",
+      "choices": [],
+      "outcome": "found"
+    },
+    "desk": {
+      "speaker": "Oliver",
+      "text": "The information desk says a cleaner took a blue bag to the office beside platform four. That office closes in ten minutes.",
+      "ru": "У стойки говорят, что уборщик отнёс синюю сумку в офис у четвёртой платформы. Он закрывается через десять минут.",
+      "choices": [
+        {
+          "label": "Разделиться с ясной точкой встречи",
+          "text": "You collect it. I'll wait by the platform four entrance.",
+          "next": "desk-confirm"
+        },
+        {
+          "label": "Оформить получение позже",
+          "text": "Let's phone the office and arrange to collect it on Sunday.",
+          "next": "phone"
+        }
+      ]
+    },
+    "desk-confirm": {
+      "speaker": "Oliver",
+      "text": "All right. If I'm not back in eight minutes, call me. Please don't board without me; our train leaves from platform six.",
+      "ru": "Хорошо. Если я не вернусь через восемь минут, позвони. Пожалуйста, не садись без меня: наш поезд идёт с шестой платформы.",
+      "choices": [
+        {
+          "label": "Повторить место и план",
+          "text": "I'll wait at four, then we'll go to six together.",
+          "next": "desk-end"
+        }
+      ]
+    },
+    "desk-end": {
+      "speaker": "Oliver",
+      "text": "They checked the ribbon and the contents. I've got it. Let's head to platform six now.",
+      "ru": "Они проверили ленточку и содержимое. Сумка у меня. Пойдём теперь на шестую платформу.",
+      "choices": [],
+      "outcome": "office"
+    },
+    "phone": {
+      "speaker": "Oliver",
+      "text": "The office can record the details, but they can't confirm they've found it yet. They'll need a phone number and our return date.",
+      "ru": "В бюро могут записать описание, но пока не могут подтвердить, что сумка найдена. Им нужны номер телефона и дата возвращения.",
+      "choices": [
+        {
+          "label": "Оставить описание и контакт",
+          "text": "Give them your number and say we'll be back on Sunday afternoon.",
+          "next": "phone-confirm"
+        }
+      ]
+    },
+    "phone-confirm": {
+      "speaker": "Oliver",
+      "text": "Done. I've also described the ribbon. I can borrow a jumper from you, but I'll need to buy a toothbrush at our destination.",
+      "ru": "Готово. Я также описал ленточку. Свитер могу взять у тебя, но на месте придётся купить зубную щётку.",
+      "choices": [
+        {
+          "label": "Продолжить поездку с планом",
+          "text": "Let's catch the train and check for a message when we arrive.",
+          "next": "phone-end"
+        }
+      ]
+    },
+    "phone-end": {
+      "speaker": "Oliver",
+      "text": "We've filed the report and kept the reference number. If they find the bag, they'll call before we return on Sunday.",
+      "ru": "Мы оставили заявление и сохранили его номер. Если сумку найдут, нам позвонят до возвращения в воскресенье.",
+      "choices": [],
+      "outcome": "report"
+    }
+  },
+  "outcomes": {
+    "found": {
+      "title": "Сумка в кафе",
+      "body": "Ленточка и содержимое подтвердили, что сумка Оливера. Вы успеваете к поезду."
+    },
+    "office": {
+      "title": "Получение у четвёртой платформы",
+      "body": "Оливер забрал сумку, пока ты ждал в согласованном месте. Вместе вы идёте на шестую платформу."
+    },
+    "report": {
+      "title": "Поездка продолжается",
+      "body": "Ты помог оставить точное описание, телефон и дату возвращения. Сумка пока не найдена; вы уезжаете с номером заявления."
+    }
+  },
+  "transfer": [
+    {
+      "id": "bag-umbrella",
+      "speaker": "Maya",
+      "text": "The umbrella was handed in at reception, not at the café. Ask for the black one with a wooden handle.",
+      "ru": "Зонт сдали на ресепшен, не в кафе. Спроси чёрный, с деревянной ручкой.",
+      "question": "Куда идти за зонтом?",
+      "options": [
+        "На ресепшен",
+        "В кафе",
+        "На платформу"
+      ],
+      "answer": 0,
+      "explanation": "At reception называет место; not at the café исключает кафе."
+    },
+    {
+      "id": "bag-wallet",
+      "speaker": "Maya",
+      "text": "I might have dropped my wallet on the bus. I paid for lunch before I got on, so I definitely had it then.",
+      "ru": "Возможно, я выронила кошелёк в автобусе. Я заплатила за обед перед посадкой, значит, тогда он точно был у меня.",
+      "question": "Что известно точно?",
+      "options": [
+        "Кошелёк в автобусе",
+        "Кошелёк был у неё при оплате обеда",
+        "Кошелёк забрал водитель"
+      ],
+      "answer": 1,
+      "explanation": "Definitely had it then подтверждает момент оплаты. Место потери обозначено лишь might have."
+    },
+    {
+      "id": "bag-case",
+      "speaker": "Maya",
+      "text": "There are two grey cases here. One has wheels, but yours is the smaller one with the broken zip, isn't it?",
+      "ru": "Здесь два серых чемодана. Один на колёсах, но твой — меньший, со сломанной молнией, верно?",
+      "question": "Какую вещь она пытается опознать?",
+      "options": [
+        "Большой серый чемодан на колёсах",
+        "Чёрный чемодан с замком",
+        "Маленький серый чемодан со сломанной молнией"
+      ],
+      "answer": 2,
+      "explanation": "Smaller и broken zip — два признака нужной вещи; wheels относятся к другой."
+    }
+  ]
+}

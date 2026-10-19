@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "old-letter-it",
+  "number": "10",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Письмо без последней страницы",
+  "category": "Истории и обсуждения",
+  "summary": "В книге обнаружилось старое письмо. Помоги Марко понять просьбу и выбрать бережный способ продолжить поиск.",
+  "duration": "15–20 минут",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко разбирает семейный архив перед выставкой."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Находка в семейной коробке",
+  "contextText": "После разговора в книжном клубе Марко проверил книги бабушки. В одной оказалось настоящее письмо с незавершённой историей.",
+  "taskTitle": "Понять, кому и зачем писали",
+  "taskText": "Отдели адресата от автора, найди просьбу и реши, к кому обратиться за продолжением.",
+  "taskShort": "Письмо · просьба · недостающий лист",
+  "skill": "Слышать местоимения, причины и незавершённые условия в рассказе.",
+  "phraseLabels": [
+    "Адресовано",
+    "Не хватает",
+    "Вернуть"
+  ],
+  "transferIntro": "Джулия читает другие просьбы. Не перепутай автора с адресатом и действие со сроком.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Ho trovato una lettera dentro un vecchio atlante di mia nonna. È indirizzata a Elena, ma non c’è la firma perché manca l’ultima pagina. L’autore chiede di restituire una fotografia prima di partire. Non dice per quale città. Giulia pensa che la data possa aiutarci: è il giorno prima della grande festa del paese.",
+  "openingRu": "Я нашёл письмо в старом атласе бабушки. Оно адресовано Елене, но подписи нет, потому что отсутствует последняя страница. Автор просит вернуть фотографию перед отъездом. Не говорит, в какой город. Джулия думает, что поможет дата: это день перед большим городским праздником.",
+  "openingQuestion": {
+    "question": "О чём просит автор письма?",
+    "options": [
+      "Прислать атлас",
+      "Приехать на праздник",
+      "Вернуть фотографию"
+    ],
+    "answer": 2,
+    "explanation": "Chiede di restituire una fotografia — просит вернуть фотографию. Ни поездка адресата, ни отправка атласа не названы."
+  },
+  "phrases": [
+    {
+      "id": "old-letter-indirizzata",
+      "text": "È indirizzata a Elena.",
+      "ru": "Оно адресовано Елене.",
+      "part": "indirizzata a",
+      "why": "После indirizzata a назван получатель, а не автор.",
+      "sound": "Замечай предлог a перед именем; он показывает направление письма.",
+      "example": "La busta è indirizzata a mio padre.",
+      "exampleRu": "Конверт адресован моему отцу."
+    },
+    {
+      "id": "old-letter-manca",
+      "text": "Manca l’ultima pagina.",
+      "ru": "Не хватает последней страницы.",
+      "part": "manca",
+      "why": "Mancare — отсутствовать, не хватать.",
+      "sound": "L’ultima звучит слитно: артикль не отдельная часть слова.",
+      "example": "Mancano due fotografie nell’album.",
+      "exampleRu": "В альбоме не хватает двух фотографий."
+    },
+    {
+      "id": "old-letter-restituire",
+      "text": "Chiede di restituire una fotografia.",
+      "ru": "Просит вернуть фотографию.",
+      "part": "restituire",
+      "why": "Restituire означает вернуть вещь владельцу, не просто отправить.",
+      "sound": "У restituire ударение ближе к концу, на ui.",
+      "example": "Devo restituire il libro alla biblioteca.",
+      "exampleRu": "Мне нужно вернуть книгу в библиотеку."
+    },
+    {
+      "id": "old-letter-prima",
+      "text": "Prima di partire.",
+      "ru": "Перед отъездом.",
+      "part": "prima di",
+      "why": "Prima di + глагол обозначает действие, до которого нужно успеть.",
+      "sound": "Слушай три слова блоком; город назначения здесь вообще не указан.",
+      "example": "Chiamami prima di uscire.",
+      "exampleRu": "Позвони мне перед выходом."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Nella scatola ci sono anche un album, un programma della festa e il numero di mia zia. Da dove cominciamo?",
+      "ru": "В коробке ещё есть альбом, программа праздника и номер тёти. С чего начнём?",
+      "choices": [
+        {
+          "label": "Посмотреть альбом",
+          "text": "Cerchiamo la fotografia nell’album.",
+          "next": "album"
+        },
+        {
+          "label": "Уточнить дату по программе",
+          "text": "Guardiamo il programma della festa.",
+          "next": "programme"
+        },
+        {
+          "label": "Спросить родственницу",
+          "text": "Chiamiamo tua zia prima di fare ipotesi.",
+          "next": "aunt"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "album": {
+      "text": "C’è una foto staccata: due sorelle davanti a un cinema. Dietro leggo: a Elena, per ricordare la nostra prima serata.",
+      "ru": "Есть отклеившаяся фотография: две сестры перед кинотеатром. На обороте: Елене, в память о нашем первом вечере.",
+      "choices": [
+        {
+          "label": "Проверить, кто эти сёстры",
+          "text": "Tua nonna aveva una sorella di nome Elena?",
+          "next": "sisters"
+        },
+        {
+          "label": "Спросить тётю напрямую",
+          "text": "La zia potrebbe riconoscerle.",
+          "next": "aunt"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "sisters": {
+      "text": "Sì, Elena era sua sorella. La foto spiega il legame, ma non ci dice chi ha scritto la lettera.",
+      "ru": "Да, Елена была её сестрой. Снимок объясняет связь, но не говорит, кто написал письмо.",
+      "choices": [
+        {
+          "label": "Сохранить осторожную подпись",
+          "text": "Annotiamo i nomi, lasciando l’autore sconosciuto.",
+          "next": "album-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "programme": {
+      "text": "La festa era il ventiquattro giugno del 1962. La lettera dice ventitré giugno, ma l’anno è macchiato.",
+      "ru": "Праздник был 24 июня 1962 года. В письме — 23 июня, но год залит пятном.",
+      "choices": [
+        {
+          "label": "Проверить ежегодность праздника",
+          "text": "La festa si faceva ogni anno nello stesso giorno?",
+          "next": "date-check"
+        },
+        {
+          "label": "Попросить семейное воспоминание",
+          "text": "Chiediamo alla zia se ricorda quell’anno.",
+          "next": "aunt"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "date-check": {
+      "text": "Sì, ogni anno. Quindi il programma suggerisce una possibilità, non prova che la lettera sia del 1962.",
+      "ru": "Да, ежегодно. Значит, программа подсказывает вариант, но не доказывает, что письмо написано в 1962 году.",
+      "choices": [
+        {
+          "label": "Записать вопрос для архива",
+          "text": "Segniamo la data come ipotesi e chiediamo all’archivio.",
+          "next": "archive-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "aunt": {
+      "text": "La zia riconosce la scrittura del nonno. Dice che l’ultima pagina potrebbe essere tra le ricette, perché la nonna usava i fogli come segnalibri.",
+      "ru": "Тётя узнаёт почерк дедушки. Говорит, последняя страница может быть среди рецептов: бабушка использовала листки как закладки.",
+      "choices": [
+        {
+          "label": "Проверить книгу рецептов",
+          "text": "Guardiamo il quaderno delle ricette.",
+          "next": "recipe"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "recipe": {
+      "text": "Eccola! È firmata Paolo. Scrive che vuole portare la foto alla sorella in ospedale, non trasferirsi in un’altra città.",
+      "ru": "Вот она! Подписано: Паоло. Он пишет, что хочет отвезти фото сестре в больницу, а не переехать в другой город.",
+      "choices": [
+        {
+          "label": "Соединить страницы и сообщить тёте",
+          "text": "Riuniamo le pagine e ringraziamo tua zia.",
+          "next": "letter-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "album-end": {
+      "text": "La foto ritrova due nomi. La lettera resta anonima: abbiamo chiarito una parte senza inventare il resto.",
+      "ru": "У фотографии снова есть два имени. Письмо остаётся анонимным: часть прояснили, остальное не выдумываем.",
+      "choices": [],
+      "outcome": "album",
+      "speaker": "Marco"
+    },
+    "archive-end": {
+      "text": "Prepariamo una richiesta all’archivio con la scansione della data. Il programma rimane un indizio da verificare.",
+      "ru": "Готовим запрос в архив со сканом даты. Программа остаётся зацепкой, которую нужно проверить.",
+      "choices": [],
+      "outcome": "archive",
+      "speaker": "Marco"
+    },
+    "letter-end": {
+      "text": "Le due pagine tornano insieme. Ora la richiesta della fotografia ha un motivo preciso e un autore.",
+      "ru": "Две страницы снова вместе. Теперь у просьбы о фотографии есть конкретная причина и автор.",
+      "choices": [],
+      "outcome": "letter",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "album": {
+      "title": "Имена на фотографии",
+      "body": "Ты установил семейную связь, но сохранил неизвестность автора письма."
+    },
+    "archive": {
+      "title": "Вопрос для архива",
+      "body": "Ежегодный праздник не доказывает год письма. Вы подготовили проверку вместо поспешного вывода."
+    },
+    "letter": {
+      "title": "Последняя страница найдена",
+      "body": "Тётя узнала почерк, а книга рецептов сохранила подпись и объяснение: фото просили для сестры в больнице."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Il messaggio è indirizzato a Lucia, ma lo ha scritto suo fratello per ringraziarla del regalo.",
+      "ru": "Сообщение адресовано Лучии, но написал его брат, чтобы поблагодарить за подарок.",
+      "question": "Кто написал сообщение?",
+      "options": [
+        "Лучия",
+        "Её брат",
+        "Автор подарка не назван"
+      ],
+      "answer": 1,
+      "explanation": "Lo ha scritto suo fratello — его написал её брат. Indirizzato a Lucia указывает получателя.",
+      "id": "it-old-letter-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Mancano due pagine del contratto. Prima di firmare, chiedi una copia completa.",
+      "ru": "В договоре не хватает двух страниц. До подписания попроси полную копию.",
+      "question": "Что предлагают сделать сначала?",
+      "options": [
+        "Попросить полную копию",
+        "Подписать имеющиеся страницы",
+        "Вернуть подарок"
+      ],
+      "answer": 0,
+      "explanation": "Prima di firmare ограничивает порядок: сначала copia completa, затем возможна подпись.",
+      "id": "it-old-letter-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Puoi restituirmi la macchina fotografica domani? Stasera non mi serve più.",
+      "ru": "Можешь вернуть мне фотоаппарат завтра? Сегодня вечером он мне больше не нужен.",
+      "question": "Когда просят вернуть фотоаппарат?",
+      "options": [
+        "Прямо сейчас",
+        "Сегодня вечером",
+        "Завтра"
+      ],
+      "answer": 2,
+      "explanation": "Restituirmi ... domani — вернуть мне завтра. Non mi serve più снимает срочность сегодня.",
+      "id": "it-old-letter-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

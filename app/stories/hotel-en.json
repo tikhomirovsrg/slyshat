@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "hotel-en",
+  "number": "08",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Номер с неожиданным видом",
+  "category": "Поездки",
+  "summary": "После дороги выяснилось, что номер выходит на шумный двор. Обсуди замену и условия без лишних расходов.",
+  "duration": "15–20 минут",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Твоя соседка и подруга. Любит знакомить людей и искать истории вокруг."
+  },
+  "secondSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "contextTitle": "Позднее заселение",
+  "contextText": "Вы с Майей приехали в отель после долгой дороги. У вас номер с двумя отдельными кроватями, а утром тебе нужен спокойный час для звонка.",
+  "taskTitle": "Сохранить бюджет и понять условия замены",
+  "taskText": "Разберись, какие номера доступны сегодня и завтра. Не потеряй важные условия ради слова «улучшенный».",
+  "taskShort": "Тишина · отдельные кровати",
+  "skill": "Слышать оговорки, условные предложения и разницу между доступностью сейчас и позже.",
+  "phraseLabels": [
+    "Выходит на",
+    "При условии",
+    "Без доплаты"
+  ],
+  "transferIntro": "Оливер передаёт другие объявления отеля. Отследи условия, исключения и время.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "Our room faces the courtyard, and there's a wedding downstairs tonight. Reception can move us to a quieter room, provided we don't mind sharing a double bed. A twin room on the other side will be free tomorrow. They say either change would be at no extra charge.",
+  "openingRu": "Наш номер выходит во двор, а внизу сегодня свадьба. На ресепшене могут переселить нас в более тихий номер, если мы не против одной двуспальной кровати. Номер с двумя отдельными кроватями с другой стороны освободится завтра. За любой из переездов доплачивать не нужно.",
+  "openingQuestion": {
+    "question": "Что доступно уже сегодня?",
+    "options": [
+      "Тихий номер с двуспальной кроватью",
+      "Тихий номер с двумя отдельными кроватями",
+      "Только платный люкс"
+    ],
+    "answer": 0,
+    "explanation": "Сегодня предлагают a double bed. A twin room будет свободен tomorrow; обе замены без доплаты."
+  },
+  "phrases": [
+    {
+      "id": "faces",
+      "text": "Our room faces the courtyard.",
+      "ru": "Наш номер выходит во двор.",
+      "part": "faces the courtyard",
+      "why": "Face указывает, куда обращены окна.",
+      "sound": "Не путай faces с places: после room глагол описывает расположение.",
+      "example": "Does the room face the street?",
+      "exampleRu": "Окна номера выходят на улицу?"
+    },
+    {
+      "id": "provided",
+      "text": "We can move, provided we don't mind a double bed.",
+      "ru": "Мы можем переехать, если не против двуспальной кровати.",
+      "part": "provided",
+      "why": "Provided вводит условие, от которого зависит предложение.",
+      "sound": "После provided внимательно слушай ограничение; don't mind означает «не против».",
+      "example": "You can check in early, provided the room is ready.",
+      "exampleRu": "Можно заселиться раньше, если номер готов."
+    },
+    {
+      "id": "charge",
+      "text": "The change is at no extra charge.",
+      "ru": "Замена без доплаты.",
+      "part": "at no extra charge",
+      "why": "No extra charge — дополнительных расходов нет.",
+      "sound": "No несёт важное отрицание перед extra charge.",
+      "example": "Breakfast is included at no extra charge.",
+      "exampleRu": "Завтрак включён без доплаты."
+    },
+    {
+      "id": "twin",
+      "text": "We booked a twin room.",
+      "ru": "Мы бронировали номер с двумя отдельными кроватями.",
+      "part": "a twin room",
+      "why": "Twin — две отдельные кровати; double — одна двуспальная.",
+      "sound": "Услышь контраст twin и double, а не только общее room.",
+      "example": "Is there a twin room available tomorrow?",
+      "exampleRu": "Есть ли номер с двумя кроватями на завтра?"
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Maya",
+      "text": "I'd like some sleep, but we booked separate beds for a reason. Which option should we ask about first?",
+      "ru": "Мне хочется выспаться, но отдельные кровати мы бронировали не просто так. О каком варианте спросим сначала?",
+      "choices": [
+        {
+          "label": "Уточнить тихий номер сегодня",
+          "text": "Could the quiet double room have an extra bed?",
+          "next": "extra"
+        },
+        {
+          "label": "Сохранить две кровати завтра",
+          "text": "Let's ask when the quiet twin room will be ready tomorrow.",
+          "next": "tomorrow"
+        },
+        {
+          "label": "Уточнить условия в текущем номере",
+          "text": "Could they help us manage the noise tonight without moving?",
+          "next": "stay"
+        }
+      ]
+    },
+    "extra": {
+      "speaker": "Maya",
+      "text": "They can't add a bed there, but they've offered two single rooms for tonight at the same total price. Tomorrow we'd move into the quiet twin.",
+      "ru": "Туда нельзя добавить кровать, но нам предложили два одноместных номера на эту ночь за ту же общую цену. Завтра переедем в тихий двухместный.",
+      "choices": [
+        {
+          "label": "Проверить отсутствие доплаты за оба номера",
+          "text": "Does the same total price cover both single rooms?",
+          "next": "extra-confirm"
+        },
+        {
+          "label": "Выбрать один переезд вместо двух",
+          "text": "I'd rather stay together tonight and move tomorrow.",
+          "next": "tomorrow"
+        }
+      ]
+    },
+    "extra-confirm": {
+      "speaker": "Maya",
+      "text": "Yes. They've put it in writing, including breakfast for both of us. The single rooms are on the same floor.",
+      "ru": "Да. Нам это записали, включая завтрак для обоих. Одноместные номера на одном этаже.",
+      "choices": [
+        {
+          "label": "Принять подтверждённый вариант",
+          "text": "Let's take the two singles tonight and the twin tomorrow.",
+          "next": "extra-end"
+        }
+      ]
+    },
+    "extra-end": {
+      "speaker": "Maya",
+      "text": "Sorted. We'll sleep separately tonight, then leave our bags with reception while they prepare tomorrow's room.",
+      "ru": "Договорились. Сегодня спим в разных номерах, а завтра оставим сумки на ресепшене, пока готовят новый номер.",
+      "choices": [],
+      "outcome": "singles"
+    },
+    "tomorrow": {
+      "speaker": "Maya",
+      "text": "The quiet twin should be ready by noon. They can store our bags, but your morning call is at ten.",
+      "ru": "Тихий номер с отдельными кроватями будет готов к полудню. Сумки можно оставить у них, но твой утренний звонок в десять.",
+      "choices": [
+        {
+          "label": "Попросить место для звонка",
+          "text": "Could they reserve a quiet room for my call at ten?",
+          "next": "tomorrow-confirm"
+        },
+        {
+          "label": "Остаться и решить только шум",
+          "text": "If moving is awkward, let's see what they can do tonight.",
+          "next": "stay"
+        }
+      ]
+    },
+    "tomorrow-confirm": {
+      "speaker": "Maya",
+      "text": "There's a small meeting room free from half past nine until eleven. Reception will reserve it for you without charge.",
+      "ru": "Небольшая переговорная свободна с половины десятого до одиннадцати. Её забронируют для тебя бесплатно.",
+      "choices": [
+        {
+          "label": "Подтвердить звонок и переезд",
+          "text": "That works. I'll take the call there and we'll move at noon.",
+          "next": "tomorrow-end"
+        }
+      ]
+    },
+    "tomorrow-end": {
+      "speaker": "Maya",
+      "text": "I've confirmed the twin room for tomorrow and the meeting room for ten. We only need to pack once in the morning.",
+      "ru": "Я подтвердила номер с двумя кроватями на завтра и переговорную на десять. Утром соберёмся один раз.",
+      "choices": [],
+      "outcome": "tomorrow"
+    },
+    "stay": {
+      "speaker": "Maya",
+      "text": "The music is due to stop at eleven. They can bring earplugs now, and the courtyard doors will be closed during the speeches.",
+      "ru": "Музыка должна закончиться в одиннадцать. Беруши могут принести сейчас, а во время речей двери во двор закроют.",
+      "choices": [
+        {
+          "label": "Проверить запасной вариант",
+          "text": "If it's still loud after eleven, can we call reception?",
+          "next": "stay-confirm"
+        }
+      ]
+    },
+    "stay-confirm": {
+      "speaker": "Maya",
+      "text": "Yes, the night manager will be here. They've also reserved the meeting room for your call, so you won't need to work in our room.",
+      "ru": "Да, здесь будет ночной управляющий. Для твоего звонка также оставили переговорную, так что работать в номере не придётся.",
+      "choices": [
+        {
+          "label": "Остаться с конкретным планом",
+          "text": "Let's stay here, use the meeting room, and call if the music continues.",
+          "next": "stay-end"
+        }
+      ]
+    },
+    "stay-end": {
+      "speaker": "Maya",
+      "text": "All right. We've kept our separate beds, avoided moving, and know who to contact if the noise doesn't stop.",
+      "ru": "Хорошо. Сохранили отдельные кровати, избежали переезда и знаем, кому звонить, если шум не прекратится.",
+      "choices": [],
+      "outcome": "stay"
+    }
+  },
+  "outcomes": {
+    "singles": {
+      "title": "Два номера на одну ночь",
+      "body": "Сегодня вы ночуете в двух одноместных номерах за прежнюю общую цену, завтра переезжаете в тихий номер с двумя кроватями."
+    },
+    "tomorrow": {
+      "title": "Переезд после звонка",
+      "body": "Звонок в 10:00 пройдёт в бесплатной переговорной. К 12:00 будет готов тихий номер с отдельными кроватями."
+    },
+    "stay": {
+      "title": "Остаться с понятными условиями",
+      "body": "Вы остаётесь в своём номере. Музыка должна закончиться в 23:00; для звонка есть переговорная, при шуме можно обратиться к ночному управляющему."
+    }
+  },
+  "transfer": [
+    {
+      "id": "hotel-breakfast",
+      "speaker": "Oliver",
+      "text": "Breakfast is included, but room service isn't. If you eat downstairs, there's no extra charge.",
+      "ru": "Завтрак включён, но доставка в номер — нет. Если поесть внизу, доплаты не будет.",
+      "question": "Когда за завтрак не нужно доплачивать?",
+      "options": [
+        "Если его принесут в номер",
+        "Если поесть внизу",
+        "Только после десяти"
+      ],
+      "answer": 1,
+      "explanation": "But отделяет исключение: room service не включён. Downstairs — вариант без доплаты."
+    },
+    {
+      "id": "hotel-pool",
+      "speaker": "Oliver",
+      "text": "You can use the pool before checking in, provided you leave your bags at reception. The changing rooms are beside it.",
+      "ru": "Можно пользоваться бассейном до заселения, если оставить сумки на ресепшене. Раздевалки рядом с бассейном.",
+      "question": "Какое условие нужно выполнить?",
+      "options": [
+        "Сначала получить ключ от номера",
+        "Доплатить за полотенце",
+        "Оставить сумки на ресепшене"
+      ],
+      "answer": 2,
+      "explanation": "Provided вводит условие: leave your bags at reception."
+    },
+    {
+      "id": "hotel-checkout",
+      "speaker": "Oliver",
+      "text": "Late checkout isn't available on Sunday. We can keep your luggage until six, though, so you won't need to carry it around.",
+      "ru": "Поздний выезд в воскресенье недоступен. Но багаж можем хранить до шести, так что носить его с собой не придётся.",
+      "question": "Что отель всё же предлагает?",
+      "options": [
+        "Хранение багажа до шести",
+        "Номер до шести",
+        "Бесплатную дополнительную ночь"
+      ],
+      "answer": 0,
+      "explanation": "Though вводит доступную альтернативу: хранение багажа. Поздний выезд исключён."
+    }
+  ]
+}

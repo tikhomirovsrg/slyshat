@@ -1,0 +1,157 @@
+{
+  "episode": "hike-en",
+  "level": "C1",
+  "grammar": {
+    "title": "Условие без if: Had we, Were we to, Should",
+    "explanation": "В более формальной речи if можно убрать, меняя порядок слов. Had we checked ... = If we had checked ... — нереальный вариант прошлого. Were we to continue ... = If we were to continue ... — гипотетическое будущее. Should conditions change ... = If conditions should change ... — возможное изменение. Такая инверсия не делает условие более достоверным; она меняет форму и стиль.",
+    "examples": [
+      {
+        "text": "Had we checked earlier, we would have changed the route.",
+        "ru": "Если бы мы проверили раньше, мы бы изменили маршрут."
+      },
+      {
+        "text": "Were we to continue, we would miss the last bus.",
+        "ru": "Если бы мы продолжили, мы бы пропустили последний автобус."
+      },
+      {
+        "text": "Should conditions change, we will turn back.",
+        "ru": "Если условия изменятся, мы повернём назад."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Цена возвращения",
+    "kind": "эссе",
+    "text": "Halfway along a mountain route, our group reached a sheltered junction. The ridge ahead was hidden by cloud, and the latest forecast suggested stronger winds later in the afternoon. We had already spent weeks planning the walk and paid for transport that could not be refunded. Turning back felt like admitting that the preparation had been wasted.\n\nOne member argued that the forecast was uncertain. He was right, but uncertainty did not favour continuing automatically. It included the possibility of worse conditions as well as better ones. Another member pointed out that the lower path would still take us through an area none of us had visited. We were choosing between two experiences, not between an achievement and nothing.\n\nWe agreed to assess only the consequences that our present decision could change. The transport money was gone regardless of which path we took. The remaining daylight, everyone's energy and our ability to reach the bus were still relevant. We also asked the quietest walker for her view. She had been struggling with the pace but had not wanted to disappoint anyone.\n\nWe chose the lower path. Later, the clouds lifted, and for a moment our caution seemed unnecessary. Yet a favourable outcome on the ridge would not have proved that continuing had been the wiser decision. Decisions must be judged against the information available at the time. The day remained worthwhile because we adjusted the plan without pretending that the original goal was our only possible reward."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: что автор считает основой решения?",
+      "answer": "Последствия, которые ещё можно изменить, и доступные сведения",
+      "explanation": "Группа отделяет невозвратные затраты от будущих последствий и оценивает имеющиеся данные.",
+      "options": [
+        "Стремление оправдать уже потраченные деньги",
+        "Последствия, которые ещё можно изменить, и доступные сведения",
+        "Уверенность в том, что прогноз обязательно ошибётся"
+      ],
+      "id": "hike-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что выяснилось, когда спросили самую молчаливую участницу?",
+      "answer": "Ей было трудно выдерживать темп",
+      "explanation": "She had been struggling with the pace, но не хотела никого разочаровывать.",
+      "options": [
+        "Она уже ходила по нижней тропе",
+        "Она забронировала другой автобус",
+        "Ей было трудно выдерживать темп"
+      ],
+      "id": "hike-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: зачем автор упоминает, что облака позже рассеялись?",
+      "answer": "Чтобы показать, что поздний благоприятный исход не доказывает ошибочность прежнего решения",
+      "explanation": "Качество решения оценивается по информации на момент выбора, а не только по позднему исходу.",
+      "options": [
+        "Чтобы показать, что поздний благоприятный исход не доказывает ошибочность прежнего решения",
+        "Чтобы доказать, что прогнозы всегда бесполезны",
+        "Чтобы признать, что группа знала погоду заранее"
+      ],
+      "id": "hike-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите точный эквивалент: Had we checked the forecast, we would have left earlier.",
+      "answer": "If we had checked the forecast, we would have left earlier.",
+      "explanation": "Had we checked — инверсия в нереальном условии о прошлом.",
+      "options": [
+        "If we check the forecast, we will leave earlier.",
+        "If we had checked the forecast, we would have left earlier.",
+        "If we were checking the forecast, we would leave earlier."
+      ],
+      "id": "hike-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите Had, Were или Should для нереализованного прошлого.",
+      "answer": "Had",
+      "explanation": "Had + подлежащее + третья форма заменяет If + Past Perfect.",
+      "text": "___ we listened earlier, we would have changed the plan.",
+      "id": "hike-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите инвертированное условие о возможном изменении.",
+      "answer": "Should conditions change we will turn back",
+      "explanation": "Should conditions change вводит возможное будущее условие.",
+      "words": [
+        "back",
+        "conditions",
+        "will",
+        "Should",
+        "turn",
+        "change",
+        "we"
+      ],
+      "id": "hike-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Уберите if с помощью инверсии; сохраните все остальные слова и формы.",
+      "answer": "Were we to continue we would miss the bus",
+      "explanation": "If we were to continue превращается в Were we to continue.",
+      "text": "If we were to continue, we would miss the bus.",
+      "accepted": [
+        "Were we to continue, we would miss the bus."
+      ],
+      "id": "hike-en-study-7"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает sunk costs в логике этого эссе?",
+      "answer": "Уже понесённые затраты, которые нельзя вернуть текущим решением",
+      "explanation": "Транспорт оплачен без возврата независимо от выбранной тропы.",
+      "options": [
+        "Уже понесённые затраты, которые нельзя вернуть текущим решением",
+        "Будущие расходы, которых легко избежать",
+        "Деньги, необходимые только для нижней тропы"
+      ],
+      "id": "hike-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Какой вывод сохраняет неопределённость прогноза?",
+      "answer": "Conditions may improve, but they could also worsen.",
+      "explanation": "Фраза признаёт обе возможности, не превращая неопределённость в гарантию.",
+      "options": [
+        "An uncertain forecast proves the ridge is safe.",
+        "The forecast guarantees stronger winds.",
+        "Conditions may improve, but they could also worsen."
+      ],
+      "id": "hike-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите участникам похода обоснование изменения маршрута при неопределённом прогнозе. Разделите невозвратные затраты и будущие последствия, сопоставьте два варианта, учтите мнение менее уверенного участника и предложите критерий следующего решения. Используйте условную инверсию и честно обозначьте пределы доступных сведений. Не подменяйте аргумент поздним результатом.",
+    "min": 190,
+    "max": 230,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

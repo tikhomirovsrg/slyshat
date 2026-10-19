@@ -1,0 +1,152 @@
+{
+  "episode": "hotel-en",
+  "level": "B2",
+  "grammar": {
+    "title": "Условия: provided that и unless",
+    "explanation": "Provided that / providing that означает «при условии, что» и вводит необходимое условие. Unless означает «если не»: We will stay unless it is noisy = мы останемся, если не будет шумно. В обычных условиях о будущем после этих союзов используем Present Simple, а не will. При замене unless на if not важно сохранить смысл отрицания.",
+    "examples": [
+      {
+        "text": "We can move, provided that the price stays the same.",
+        "ru": "Мы можем переехать при условии, что цена останется прежней."
+      },
+      {
+        "text": "We will keep the room unless the noise continues.",
+        "ru": "Мы оставим номер, если шум не продолжится."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Что значит «номер лучше»?",
+    "kind": "статья",
+    "text": "A hotel upgrade sounds like good news, but a more expensive room is not automatically a more suitable one. When my colleague and I travelled to a conference, reception offered us a larger room with a view of the square. Our original room overlooked a service courtyard. We were pleased until we asked one more question: how many beds were there?\n\nThe larger room had one double bed. We had booked two separate beds because we were colleagues, not a couple. The receptionist had focused on the room's size and view, while we were thinking about privacy and sleep. Nobody had intended to create a problem; we were simply using different definitions of 'better'.\n\nWe explained our priorities and asked what else was available. Reception found two small single rooms for the first night, followed by a twin room for the rest of our stay. The total price would remain unchanged, and breakfast was included. Before accepting, we asked for the arrangement in writing, including the time when we would need to move our bags.\n\nThe experience taught me to describe requirements before discussing attractive extras. A balcony may be pleasant, but it cannot replace a suitable bed or a quiet place to work. Clear questions do not make a guest difficult. They help the hotel offer something that actually solves the guest's problem."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: что автор советует уточнять в первую очередь?",
+      "answer": "Требования, от которых зависит удобство",
+      "explanation": "Автор предлагает сначала обсуждать необходимые условия, а уже затем приятные дополнения.",
+      "options": [
+        "Самый дорогой доступный номер",
+        "Требования, от которых зависит удобство",
+        "Вид с самого высокого этажа"
+      ],
+      "id": "hotel-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что гостиница предложила на первую ночь в итоге?",
+      "answer": "Два небольших одноместных номера",
+      "explanation": "Reception found two small single rooms for the first night.",
+      "options": [
+        "Номер с одной двуспальной кроватью",
+        "Прежний номер с балконом",
+        "Два небольших одноместных номера"
+      ],
+      "id": "hotel-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему первоначальное предложение не подошло?",
+      "answer": "Сотрудник и гости по-разному понимали улучшение",
+      "explanation": "Сотрудник оценивал размер и вид; для гостей важнее были отдельные кровати и приватность.",
+      "options": [
+        "Сотрудник и гости по-разному понимали улучшение",
+        "Гости не хотели завтракать",
+        "Гостиница потребовала двойную оплату"
+      ],
+      "id": "hotel-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: We will move provided that the price ___ the same.",
+      "answer": "stays",
+      "explanation": "После provided that условие будущего выражается Present Simple.",
+      "options": [
+        "will stay",
+        "stayed",
+        "stays"
+      ],
+      "id": "hotel-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите один союз: «Мы оставим этот номер, если шум не продолжится».",
+      "answer": "unless",
+      "explanation": "Unless вводит отрицательное условие без дополнительного not.",
+      "text": "We will keep this room ___ the noise continues.",
+      "id": "hotel-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите условие.",
+      "answer": "We can stay provided that breakfast is included",
+      "explanation": "Provided that означает «при условии, что».",
+      "words": [
+        "included",
+        "can",
+        "that",
+        "We",
+        "breakfast",
+        "stay",
+        "is",
+        "provided"
+      ],
+      "id": "hotel-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Перепишите с unless вместо if ... not. Сохраните остальные слова.",
+      "answer": "We will stay unless the noise continues",
+      "explanation": "If the noise does not continue заменяется на unless the noise continues.",
+      "text": "We will stay if the noise does not continue.",
+      "id": "hotel-en-study-7",
+      "accepted": []
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает at no extra charge?",
+      "answer": "Без дополнительной оплаты",
+      "explanation": "Extra charge — дополнительный платёж; no исключает его.",
+      "options": [
+        "Без предварительного бронирования",
+        "Без дополнительной оплаты",
+        "Без завтрака"
+      ],
+      "id": "hotel-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Какой номер обычно имеет две отдельные кровати?",
+      "answer": "A twin room",
+      "explanation": "Twin room обозначает номер с двумя отдельными кроватями; double — обычно с одной двуспальной.",
+      "options": [
+        "A twin room",
+        "A single room",
+        "A double room"
+      ],
+      "id": "hotel-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите в отель письмо после неподходящей замены номера. Объясните исходное бронирование, две обязательные потребности и почему предложенный вариант не подходит. Предложите приемлемую альтернативу с provided that и условие с unless. Попросите письменно подтвердить цену, услуги и время переезда.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

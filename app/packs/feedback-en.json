@@ -1,0 +1,154 @@
+{
+  "episode": "feedback-en",
+  "level": "B2",
+  "grammar": {
+    "title": "Уступка: although и despite",
+    "explanation": "Although вводит целое предложение с подлежащим и сказуемым: although the report is clear. Despite ставится перед существительным, местоимением или формой на -ing: despite the clear report; despite working hard. После despite не ставим of. Уступка позволяет признать сильную сторону и затем назвать проблему без логического противоречия.",
+    "examples": [
+      {
+        "text": "Although the report is clear, it needs a shorter introduction.",
+        "ru": "Хотя отчёт понятен, ему нужно более короткое вступление."
+      },
+      {
+        "text": "Despite working hard, we missed one important question.",
+        "ru": "Несмотря на усердную работу, мы упустили один важный вопрос."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Просьба, которую можно выполнить",
+    "kind": "статья",
+    "text": "Feedback becomes useful when the person receiving it can identify a next action. At a design workshop, a colleague described my presentation as 'not quite confident enough'. I understood that she wanted a change, but I could not tell whether she meant the evidence, the visual style or the way I spoke. My first response was to defend the amount of research I had done. That did not help either of us.\n\nI asked her to point to one moment that had created the impression. She chose a slide containing three possible recommendations without saying which one I supported. The issue was not my voice or the quality of the research. I had left the audience to make a decision that I was supposed to guide.\n\nWe agreed on a specific revision: I would state my preferred option, explain the strongest reason for it and acknowledge one limitation. I would keep the other options in an appendix. Before rewriting the whole presentation, I showed her a revised version of that single slide.\n\nThe experience changed how I give feedback too. I now try to separate an observation from my interpretation of it, then describe the effect on the audience. This does not remove subjective judgement. It gives us something concrete to discuss and makes it easier to check whether a proposed change addresses the original concern."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: что делает обратную связь полезной?",
+      "answer": "Связь конкретного наблюдения с выполнимым изменением",
+      "explanation": "Автор уточняет конкретный слайд, эффект для аудитории и согласовывает проверяемую правку.",
+      "options": [
+        "Максимально общая оценка личности",
+        "Отсутствие любых субъективных мнений",
+        "Связь конкретного наблюдения с выполнимым изменением"
+      ],
+      "id": "feedback-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что было неясно на спорном слайде?",
+      "answer": "Какой из трёх вариантов поддерживает автор",
+      "explanation": "Слайд содержал три рекомендации без указания предпочтения автора.",
+      "options": [
+        "Какой из трёх вариантов поддерживает автор",
+        "Сколько людей посетило встречу",
+        "Какая программа использована для слайда"
+      ],
+      "id": "feedback-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: зачем автор сначала показал один исправленный слайд?",
+      "answer": "Чтобы проверить, решает ли правка исходную проблему",
+      "explanation": "Один слайд позволяет согласовать направление изменения до переработки всей презентации.",
+      "options": [
+        "Чтобы отказаться от остальных исследований",
+        "Чтобы проверить, решает ли правка исходную проблему",
+        "Чтобы скрыть от коллеги весь проект"
+      ],
+      "id": "feedback-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите союз: ___ the report is clear, the opening is too long.",
+      "answer": "Although",
+      "explanation": "После although идёт полное предложение: the report is clear.",
+      "options": [
+        "Despite",
+        "Although",
+        "Despite of"
+      ],
+      "id": "feedback-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите despite или although перед существительным.",
+      "answer": "despite",
+      "explanation": "Перед the detailed research без сказуемого используется despite.",
+      "text": "The recommendation was unclear ___ the detailed research.",
+      "id": "feedback-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите уступительную конструкцию.",
+      "answer": "Despite working hard we missed the main question",
+      "explanation": "После despite допустима форма -ing; затем основная часть предложения.",
+      "words": [
+        "question",
+        "Despite",
+        "missed",
+        "hard",
+        "the",
+        "working",
+        "we",
+        "main"
+      ],
+      "id": "feedback-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Замените Although we worked hard на Despite working hard; сохраните основную часть.",
+      "answer": "Despite working hard we missed the deadline",
+      "explanation": "Despite + working передаёт уступку без отдельного подлежащего в первой части.",
+      "text": "Although we worked hard, we missed the deadline.",
+      "accepted": [
+        "Despite working hard, we missed the deadline."
+      ],
+      "id": "feedback-en-study-7"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Какая просьба наиболее конкретна и выполнима?",
+      "answer": "State your preferred option on slide three.",
+      "explanation": "Указаны действие, нужная информация и место правки.",
+      "options": [
+        "Be much better.",
+        "Sound more impressive.",
+        "State your preferred option on slide three."
+      ],
+      "id": "feedback-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает address a concern?",
+      "answer": "Рассмотреть и постараться решить обозначенную проблему",
+      "explanation": "Address здесь означает заняться вопросом, а не назвать почтовый адрес.",
+      "options": [
+        "Записать почтовый адрес коллеги",
+        "Рассмотреть и постараться решить обозначенную проблему",
+        "Не упоминать спорную тему"
+      ],
+      "id": "feedback-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите коллеге ответ на расплывчатый отзыв о вашей презентации. Кратко перескажите, как вы его поняли, задайте вопрос о конкретном фрагменте и предложите проверяемую правку. Признайте сильную сторону и ограничение с although или despite. Укажите, какой небольшой пример вы покажете до полной переработки.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

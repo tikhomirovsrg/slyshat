@@ -1,0 +1,147 @@
+{
+  "episode": "birthday-plan-it",
+  "level": "B2",
+  "grammar": {
+    "title": "Нереальное условие в прошлом",
+    "explanation": "Для условия, которое не выполнилось в прошлом, используется se + congiuntivo trapassato и condizionale passato: se avessi chiesto, avrei capito. Обе формы составные: avessi/avessi avuto, fossi + причастие; avrei/sarei + причастие. С essere причастие согласуется с подлежащим. Такая конструкция помогает обсуждать альтернативу прошлому, не смешивая её с планом на будущее.",
+    "examples": [
+      {
+        "text": "Se avessimo chiesto prima, avremmo scelto un posto più tranquillo.",
+        "ru": "Если бы мы спросили раньше, то выбрали бы более тихое место."
+      },
+      {
+        "text": "Se fosse arrivata prima, avrebbe incontrato tutti.",
+        "ru": "Если бы она пришла раньше, то встретила бы всех."
+      },
+      {
+        "text": "Sarei rimasto a casa, se avessi saputo della festa.",
+        "ru": "Я остался бы дома, если бы знал о вечеринке."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Сюрприз, который пришлось изменить",
+    "kind": "рассказ",
+    "text": "L’anno precedente gli amici di Valerio avevano organizzato una festa a sorpresa in un locale molto affollato. Lui aveva sorriso e ringraziato tutti, ma era andato via presto. Per mesi gli organizzatori avevano interpretato quella partenza come semplice stanchezza, senza chiedergli come avesse vissuto la serata. Quando si è avvicinato il compleanno successivo, Marta ha proposto di ripetere l’idea in un posto ancora più grande. Paolo, invece, ricordava che Valerio evitava spesso gli ambienti rumorosi. Non voleva trasformare un’impressione in una certezza, così gli ha chiesto quale tipo di serata gli sarebbe piaciuto condividere con gli amici. Valerio ha risposto che avrebbe preferito una cena breve, con poche persone, senza discorsi pubblici. La sorpresa poteva riguardare un piccolo regalo, ma non il numero degli invitati o il luogo. Alcuni amici sono rimasti delusi: avevano già immaginato decorazioni, musica e un lungo video. Poi hanno riconosciuto che stavano progettando la festa che piaceva a loro. Il nuovo programma prevedeva un tavolo tranquillo e un album di fotografie da sfogliare liberamente. Nessuno avrebbe chiesto a Valerio di commentarle davanti a tutti. Marta ha scritto al gruppo che, se avessero fatto quella domanda l’anno prima, avrebbero probabilmente evitato parte del disagio. Non potevano cambiare il passato, ma potevano usare la risposta ricevuta per organizzare meglio il presente, senza pretendere che la gratitudine cancellasse le preferenze del festeggiato."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте вспомогательный глагол для noi в congiuntivo trapassato.",
+      "answer": "avessimo",
+      "explanation": "Условие о несостоявшемся прошлом: se avessimo chiesto.",
+      "text": "Se ___ chiesto prima, avremmo capito.",
+      "id": "birthday-plan-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте condizionale avere для noi.",
+      "answer": "avremmo",
+      "explanation": "Следствие в прошлом: avremmo scelto.",
+      "text": "Se avessimo saputo del rumore, ___ scelto un altro posto.",
+      "id": "birthday-plan-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите нереальное условие о прошлом.",
+      "answer": "Se fossi arrivato prima, avrei visto tutti.",
+      "explanation": "Fossi arrivato + avrei visto описывает альтернативу уже прошедшему событию.",
+      "options": [
+        "Se fossi arrivato prima, avrei visto tutti.",
+        "Se arrivassi domani, vedrei tutti.",
+        "Se arrivo presto, vedo tutti."
+      ],
+      "id": "birthday-plan-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает il festeggiato?",
+      "answer": "La persona per cui si organizza la festa.",
+      "explanation": "Festeggiato — тот, в чью честь устраивается праздник.",
+      "options": [
+        "La persona per cui si organizza la festa.",
+        "La persona che porta sempre il conto.",
+        "Il proprietario del locale scelto."
+      ],
+      "id": "birthday-plan-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите фразу о прошлом.",
+      "answer": "Se avessi chiesto, avrei capito.",
+      "explanation": "Avessi chiesto — congiuntivo trapassato; avrei capito — condizionale passato.",
+      "words": [
+        "avessi",
+        "avrei",
+        "Se",
+        "chiesto,",
+        "capito."
+      ],
+      "id": "birthday-plan-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Перенесите всё условное предложение в нереальное прошлое; говорящий — мужчина.",
+      "answer": "Se fossi arrivato presto, avrei visto Paolo.",
+      "explanation": "Arrivare образует составное время с essere; vedere — с avere, причастие visto.",
+      "text": "Se arrivassi presto, vedrei Paolo.",
+      "id": "birthday-plan-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какую идею раскрывает история?",
+      "answer": "La festa dovrebbe rispettare le preferenze di chi viene festeggiato.",
+      "explanation": "Друзья переходят от своих ожиданий к прямо выраженным предпочтениям Валерио.",
+      "options": [
+        "La festa dovrebbe rispettare le preferenze di chi viene festeggiato.",
+        "Una sorpresa riesce solo se gli invitati sono numerosi.",
+        "La gratitudine dimostra sempre che una festa è piaciuta."
+      ],
+      "id": "birthday-plan-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какая часть праздника могла остаться сюрпризом?",
+      "answer": "Un piccolo regalo.",
+      "explanation": "Валерио допускает неожиданный небольшой подарок, но не место и число гостей.",
+      "options": [
+        "Un piccolo regalo.",
+        "Il luogo della cena.",
+        "Il numero degli invitati."
+      ],
+      "id": "birthday-plan-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему прежняя улыбка Валерио оказалась недостаточным основанием для нового плана?",
+      "answer": "Poteva esprimere gratitudine senza indicare vero benessere.",
+      "explanation": "Благодарность и улыбка не отменяют дискомфорта и личных предпочтений.",
+      "options": [
+        "Poteva esprimere gratitudine senza indicare vero benessere.",
+        "Dimostrava che voleva un locale ancora più grande.",
+        "Significava che aveva già visto il regalo."
+      ],
+      "id": "birthday-plan-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите организаторам дня рождения короткое письмо: объясните, что не сработало раньше, сформулируйте два нереальных условия о прошлом и предложите новый план на основе ответа именинника.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Предпочтения именинника отделены от ожиданий организаторов.",
+      "Есть два правильных сочетания se + congiuntivo trapassato / condizionale passato.",
+      "При essere проверено согласование причастий.",
+      "Прошлый опыт ведёт к конкретному плану, без обвинений и догадок вместо фактов."
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "episode": "museum-en",
+  "level": "B1",
+  "grammar": {
+    "title": "Пассив: is made и was made",
+    "explanation": "В пассиве важнее предмет или результат, чем тот, кто совершил действие. Present Simple Passive: am/is/are + третья форма. Past Simple Passive: was/were + третья форма. Исполнителя можно добавить через by, если он важен. Дата в подписи помогает выбрать время, но сначала проверьте, к какому предмету она относится.",
+    "examples": [
+      {
+        "text": "The copy is displayed beside the original.",
+        "ru": "Копия выставлена рядом с оригиналом."
+      },
+      {
+        "text": "The frame was made in 1920.",
+        "ru": "Раму изготовили в 1920 году."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Две даты на одной картине",
+    "kind": "рассказ",
+    "text": "During a visit to a local museum, Jack noticed two different dates beside a portrait. The large label said 1880, but a small card on the frame said 1925. He thought someone had made a mistake and took a photograph to show his teacher. Before leaving, however, he asked a museum volunteer about the difference.\n\nThe volunteer explained that the portrait had been painted in 1880. Its first frame was damaged during a move, so the museum ordered a replacement in 1925. Both dates were correct, but they described different things. She then showed Jack a page in the museum's online collection. It included photographs of the painting before and after the new frame was added.\n\nJack changed the note under his photograph. Instead of writing that the museum had made an error, he explained what each date meant. In class the following week, he used the example in a short presentation about checking information.\n\nHis teacher asked whether the volunteer's explanation was enough on its own. Jack said that the collection record had helped him check it. He had not discovered a dramatic mistake, but he had learned a useful habit: when two facts seem to disagree, first ask whether they are really describing the same thing."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: чему учится Джек?",
+      "answer": "Проверять, к чему относятся разные сведения",
+      "explanation": "Даты относятся к картине и новой раме; важно установить предмет каждого утверждения.",
+      "options": [
+        "Выбирать самую раннюю дату",
+        "Проверять, к чему относятся разные сведения",
+        "Считать все подписи ошибочными"
+      ],
+      "id": "museum-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: почему раму заменили?",
+      "answer": "Её повредили при переезде",
+      "explanation": "В тексте: Its first frame was damaged during a move.",
+      "options": [
+        "Она была слишком дорогой",
+        "Её подарили школе",
+        "Её повредили при переезде"
+      ],
+      "id": "museum-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: зачем Джеку пригодилась запись в коллекции?",
+      "answer": "Она помогла проверить объяснение волонтёра",
+      "explanation": "Джек говорит, что collection record helped him check it.",
+      "options": [
+        "Она помогла проверить объяснение волонтёра",
+        "Она позволила купить оригинал",
+        "Она доказала, что портрет написан в 1925 году"
+      ],
+      "id": "museum-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите пассив: The frame ___ in 1925.",
+      "answer": "was made",
+      "explanation": "1925 — законченное прошлое; frame в единственном числе, поэтому was made.",
+      "options": [
+        "is make",
+        "was made",
+        "were made"
+      ],
+      "id": "museum-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите третью форму write.",
+      "answer": "written",
+      "explanation": "Пассив строится с третьей формой: write — wrote — written.",
+      "text": "The label was ___ by a museum worker.",
+      "id": "museum-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предложение в пассиве.",
+      "answer": "The original is displayed upstairs",
+      "explanation": "Предмет The original + is + третья форма displayed.",
+      "words": [
+        "upstairs",
+        "displayed",
+        "The",
+        "is",
+        "original"
+      ],
+      "id": "museum-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Перепишите в пассиве. Начните The museum и сохраните by local volunteers.",
+      "answer": "The museum was opened by local volunteers",
+      "explanation": "Дополнение становится подлежащим; opened превращается в was opened.",
+      "text": "Local volunteers opened the museum.",
+      "id": "museum-en-study-7",
+      "accepted": []
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает a reproduction в музее?",
+      "answer": "Копия произведения или предмета",
+      "explanation": "Reproduction обозначает воспроизведение оригинала.",
+      "options": [
+        "Копия произведения или предмета",
+        "Имя автора картины",
+        "Ошибка в дате"
+      ],
+      "id": "museum-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Какое действие означает compare two labels?",
+      "answer": "Сравнить две подписи",
+      "explanation": "Compare — найти сходства и различия, сопоставляя сведения.",
+      "options": [
+        "Заменить обе подписи",
+        "Удалить одну подпись",
+        "Сравнить две подписи"
+      ],
+      "id": "museum-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите заметку для школьного или личного блога о предмете с двумя датами. Объясните, что сначала показалось ошибкой, кого вы спросили и какой источник проверили. Уточните значение каждой даты и сформулируйте один вывод о проверке информации. Используйте два предложения в пассиве.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "coworking-call-it",
+  "number": "13",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Тихое место для звонка",
+  "category": "Работа и созвоны",
+  "summary": "Переговорная занята, а созвон через десять минут. Выясни, где получится слышать и быть услышанным.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия работает с тобой над выставкой из общего офиса."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Работа из коворкинга",
+  "contextText": "Тебе нужен двадцатиминутный звонок с коллегой. В общем зале шумно; Джулия выяснила условия переговорной и телефонной кабины.",
+  "taskTitle": "Провести разговор до 15:00",
+  "taskText": "Согласуй время, помещение и запасной способ связи. Важно понять собеседника, а не только подключиться.",
+  "taskShort": "Звонок 20 минут · до 15:00",
+  "skill": "Различать доступность помещения, ограничение длительности и просьбы проверить звук.",
+  "phraseLabels": [
+    "Освободится",
+    "Слышно с перебоями",
+    "Вместить по времени"
+  ],
+  "transferIntro": "Марко сообщает новые ограничения помещений и связи. Рассчитай доступное время и услышь конкретное действие.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "La sala riunioni si libera alle due e quaranta, ma tu hai la chiamata alle due e mezza. La cabina telefonica è disponibile subito, anche se puoi usarla soltanto per quindici minuti. Nel salone oggi si sente a scatti per via dei lavori. Possiamo spostare l’inizio oppure dividere il colloquio tra voce e messaggi.",
+  "openingRu": "Переговорная освободится в 14:40, а твой звонок в 14:30. Телефонная кабина свободна сразу, хотя пользоваться ею можно только пятнадцать минут. В общем зале сегодня из-за работ звук прерывается. Можем сдвинуть начало или разделить разговор на голосовую и письменную часть.",
+  "openingQuestion": {
+    "question": "Почему кабина не подходит для всего двадцатиминутного звонка?",
+    "options": [
+      "Там нет двери",
+      "Ею можно пользоваться только 15 минут",
+      "Она свободна лишь вечером"
+    ],
+    "answer": 1,
+    "explanation": "Soltanto per quindici minuti — только на пятнадцать минут, тогда как требуется двадцать."
+  },
+  "phrases": [
+    {
+      "id": "coworking-call-libera",
+      "text": "La sala si libera alle due e quaranta.",
+      "ru": "Комната освободится в 14:40.",
+      "part": "si libera",
+      "why": "Si libera сообщает момент окончания чужой брони.",
+      "sound": "Не путай si libera с è libera: сейчас свободна только во втором случае.",
+      "example": "Il tavolo si libera fra poco.",
+      "exampleRu": "Столик скоро освободится."
+    },
+    {
+      "id": "coworking-call-scatti",
+      "text": "Ti sento a scatti.",
+      "ru": "Я слышу тебя с перебоями.",
+      "part": "a scatti",
+      "why": "A scatti описывает прерывистый звук.",
+      "sound": "Двойное tt в scatti коротко задерживает звук; фраза пригодится для быстрой просьбы.",
+      "example": "Ti sento piano, puoi avvicinarti?",
+      "exampleRu": "Тебя тихо слышно, можешь подойти ближе?"
+    },
+    {
+      "id": "coworking-call-soltanto",
+      "text": "Puoi usarla soltanto per quindici minuti.",
+      "ru": "Можно пользоваться ею лишь пятнадцать минут.",
+      "part": "soltanto per",
+      "why": "Soltanto ограничивает доступное время, а не время ожидания.",
+      "sound": "Лови число после per, отличая его от часов после alle.",
+      "example": "Abbiamo soltanto dieci minuti per decidere.",
+      "exampleRu": "У нас только десять минут на решение."
+    },
+    {
+      "id": "coworking-call-spostare",
+      "text": "Possiamo spostare l’inizio di dieci minuti?",
+      "ru": "Можем сдвинуть начало на десять минут?",
+      "part": "spostare l’inizio",
+      "why": "Di dieci minuti означает величину сдвига, не точное время.",
+      "sound": "Сопоставь spostare с новым временем, которое предложат дальше.",
+      "example": "Spostiamo la chiamata alle tre.",
+      "exampleRu": "Перенесём звонок на три."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Il collega può aspettare dieci minuti? Se sì, la sala sarebbe libera in tempo per finire alle tre.",
+      "ru": "Коллега может подождать десять минут? Если да, переговорная освободится вовремя, чтобы закончить к трём.",
+      "choices": [
+        {
+          "label": "Перенести начало",
+          "text": "Gli chiedo di iniziare alle due e quaranta.",
+          "next": "delay"
+        },
+        {
+          "label": "Сократить голосовую часть",
+          "text": "Uso la cabina e mando il resto per iscritto.",
+          "next": "booth"
+        },
+        {
+          "label": "Проверить другое подключение",
+          "text": "Proviamo il mio telefono nel cortile.",
+          "next": "courtyard"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "delay": {
+      "text": "Ha risposto che va bene, ma deve chiudere alle tre precise. Prepariamo l’ordine delle domande prima di entrare.",
+      "ru": "Он ответил, что подходит, но ровно в три должен закончить. Подготовим порядок вопросов перед входом.",
+      "choices": [
+        {
+          "label": "Выделить главное",
+          "text": "Comincio dalle due decisioni urgenti.",
+          "next": "room-check"
+        },
+        {
+          "label": "Решить письменно часть вопросов",
+          "text": "Allora preferisco la cabina e un riepilogo scritto.",
+          "next": "booth"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "room-check": {
+      "text": "La sala ha il microfono, ma va selezionato sul computer. Facciamo una prova: mi senti senza eco?",
+      "ru": "В комнате есть микрофон, но его надо выбрать на компьютере. Проверим: слышишь меня без эха?",
+      "choices": [
+        {
+          "label": "Подтвердить проверку",
+          "text": "Sì, adesso ti sento bene. Iniziamo alle due e quaranta.",
+          "next": "room-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "booth": {
+      "text": "Prenoto la cabina dalle due e mezza alle due e quarantacinque. Quali punti richiedono davvero una conversazione?",
+      "ru": "Бронирую кабину с 14:30 до 14:45. Какие вопросы действительно требуют разговора?",
+      "choices": [
+        {
+          "label": "Разделить обсуждение и факты",
+          "text": "Discutiamo la scelta del titolo; date e nomi li mando dopo.",
+          "next": "booth-check"
+        },
+        {
+          "label": "Выбрать улицу для полного звонка",
+          "text": "Preferisco parlare per venti minuti. Proviamo fuori.",
+          "next": "courtyard"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "booth-check": {
+      "text": "Bene. Avvisa subito del limite di tempo, così il collega non pensa che la linea sia caduta quando chiudi.",
+      "ru": "Хорошо. Сразу предупреди об ограничении, чтобы коллега не подумал об обрыве связи, когда закончишь.",
+      "choices": [
+        {
+          "label": "Предупредить и назначить письмо",
+          "text": "Ho quindici minuti; alle tre ti mando il riepilogo.",
+          "next": "booth-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "courtyard": {
+      "text": "Qui il segnale è buono, però passa un camion ogni tanto. Usiamo le cuffie e chiudiamo la porta verso la strada.",
+      "ru": "Здесь сигнал хороший, но иногда проезжает грузовик. Используем наушники и закроем дверь со стороны улицы.",
+      "choices": [
+        {
+          "label": "Проверить качество голоса",
+          "text": "Mi senti bene anche quando passa il camion?",
+          "next": "outside-check"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "outside-check": {
+      "text": "Con le cuffie sì. Se torna il rumore, fermati e chiedi di ripetere l’ultima frase invece di indovinare.",
+      "ru": "С наушниками да. Если шум вернётся, остановись и попроси повторить последнюю фразу, а не угадывай.",
+      "choices": [
+        {
+          "label": "Подтвердить запасной приём",
+          "text": "D’accordo. Inizio fuori e segnalo subito se non capisco.",
+          "next": "outside-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "room-end": {
+      "text": "La prova audio è riuscita. Hai venti minuti in una stanza tranquilla e due decisioni in cima alla lista.",
+      "ru": "Проверка звука прошла. У тебя двадцать минут в тихой комнате и два решения во главе списка.",
+      "choices": [],
+      "outcome": "room",
+      "speaker": "Giulia"
+    },
+    "booth-end": {
+      "text": "Il titolo è deciso entro il tempo della cabina. Il resto arriva in un messaggio riepilogativo.",
+      "ru": "Название выбрано за время в кабине. Остальное придёт в итоговом сообщении.",
+      "choices": [],
+      "outcome": "booth",
+      "speaker": "Giulia"
+    },
+    "outside-end": {
+      "text": "Il telefono regge la chiamata in cortile. Chiedendo una ripetizione, recuperi anche la frase coperta dal rumore.",
+      "ru": "Телефон выдержал звонок во дворе. Попросив повторить, ты разобрал и фразу, которую заглушил шум.",
+      "choices": [],
+      "outcome": "outside",
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "room": {
+      "title": "Двадцать тихих минут",
+      "body": "Вы перенесли начало на 14:40, проверили микрофон и закончили к 15:00."
+    },
+    "booth": {
+      "title": "Голос и письменный итог",
+      "body": "В кабине за 15 минут обсудили название. Даты и имена отправлены письменно."
+    },
+    "outside": {
+      "title": "Связь во дворе",
+      "body": "Наушники и проверка позволили провести полный звонок. Неразборчивую фразу ты попросил повторить."
+    }
+  },
+  "transfer": [
+    {
+      "text": "La stanza è libera dalle undici, ma la prenotazione successiva inizia alle undici e venti.",
+      "ru": "Комната свободна с одиннадцати, но следующая бронь начинается в 11:20.",
+      "question": "Какой звонок помещается в этот промежуток?",
+      "options": [
+        "С 11:00 до 11:15",
+        "С 10:50 до 11:10",
+        "С 11:10 до 11:40"
+      ],
+      "answer": 0,
+      "explanation": "Доступно 11:00–11:20. Только первый вариант целиком внутри промежутка.",
+      "id": "it-coworking-call-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Ti sento a scatti. Spegniamo il video e lasciamo soltanto l’audio; magari la connessione migliora.",
+      "ru": "Слышу тебя с перебоями. Выключим видео и оставим только звук; возможно, связь улучшится.",
+      "question": "Что предлагают выключить?",
+      "options": [
+        "Микрофон",
+        "Видео",
+        "Весь компьютер"
+      ],
+      "answer": 1,
+      "explanation": "Spegniamo il video — выключим видео; lasciamo ... l’audio означает сохранить звук.",
+      "id": "it-coworking-call-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Spostiamo l’inizio di un quarto d’ora: dalle quattro alle quattro e un quarto. La durata resta mezz’ora.",
+      "ru": "Сдвинем начало на четверть часа: с четырёх на 16:15. Продолжительность по-прежнему полчаса.",
+      "question": "Когда теперь закончится звонок?",
+      "options": [
+        "В 16:15",
+        "В 16:30",
+        "В 16:45"
+      ],
+      "answer": 2,
+      "explanation": "Новое начало 16:15, длительность mezz’ora — полчаса; конец 16:45.",
+      "id": "it-coworking-call-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

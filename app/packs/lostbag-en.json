@@ -1,0 +1,111 @@
+{
+  "episode": "lostbag-en",
+  "level": "A2",
+  "grammar": {
+    "title": "Past Simple: что произошло вчера",
+    "explanation": "Для завершённых событий в прошлом используем Past Simple. У правильных глаголов добавляем -ed: check → checked. Некоторые формы нужно запомнить: leave → left, find → found. В вопросе с did основной глагол возвращается в начальную форму: Where did you leave it?",
+    "examples": [
+      {
+        "text": "I left my bag on the bus.",
+        "ru": "Я оставил сумку в автобусе."
+      },
+      {
+        "text": "Where did you find it?",
+        "ru": "Где ты её нашёл?"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Записка внутри сумки",
+    "kind": "рассказ",
+    "text": "Yesterday Lily left her sports bag on a bus. She noticed it when she reached the swimming pool. Her phone was in her pocket, so she called the bus company. A worker asked about the bag's colour and the things inside. Lily described a red bag with a blue towel and black shoes. She also remembered a name card in a small pocket. An hour later, the company called her back. The driver found the bag at the last stop. Lily collected it from the office after her swim. That evening, she put a name card in her other bag too."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: о чём рассказ?",
+      "answer": "О том, как Лили вернула забытую сумку",
+      "explanation": "Лили звонит в компанию, описывает вещи и забирает найденную сумку.",
+      "options": [
+        "О том, как Лили вернула забытую сумку",
+        "О покупке спортивной обуви",
+        "О выборе нового бассейна"
+      ],
+      "id": "lostbag-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: где водитель нашёл сумку?",
+      "answer": "На последней остановке",
+      "explanation": "В тексте: The driver found the bag at the last stop.",
+      "options": [
+        "У бассейна",
+        "На последней остановке",
+        "Возле дома Лили"
+      ],
+      "id": "lostbag-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: зачем вечером Лили кладёт карточку в другую сумку?",
+      "answer": "Чтобы потерянную сумку было легче опознать",
+      "explanation": "Карточка с именем помогала описать первую сумку; Лили хочет так же обозначить вторую.",
+      "options": [
+        "Чтобы записать расписание плавания",
+        "Чтобы водитель сменил маршрут",
+        "Чтобы потерянную сумку было легче опознать"
+      ],
+      "id": "lostbag-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите Past Simple: Yesterday I ___ my bag on a bus.",
+      "answer": "left",
+      "explanation": "Прошедшая форма leave — left.",
+      "options": [
+        "leave",
+        "leaving",
+        "left"
+      ],
+      "id": "lostbag-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Заполните пропуск начальной формой find.",
+      "answer": "find",
+      "explanation": "После did используется начальная форма глагола.",
+      "text": "Where did the driver ___ the bag?",
+      "id": "lostbag-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Какое слово означает «забрать найденную вещь»?",
+      "answer": "collect",
+      "explanation": "Collect a bag — прийти и забрать сумку.",
+      "options": [
+        "cancel",
+        "collect",
+        "describe"
+      ],
+      "id": "lostbag-en-study-6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите сообщение в бюро находок. Укажите, что и когда вы потеряли, где в последний раз видели вещь, её цвет и две отличительные детали. Спросите, нашли ли её и где можно забрать. Используйте минимум два глагола в Past Simple.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

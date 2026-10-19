@@ -1,0 +1,146 @@
+{
+  "episode": "old-letter-it",
+  "level": "B1",
+  "grammar": {
+    "title": "Местоимения прямого дополнения: lo, la, li, le",
+    "explanation": "Lo, la, li, le заменяют известный предмет и ставятся перед спрягаемым глаголом: leggo la lettera → la leggo. Перед avere в passato prossimo lo и la обычно сокращаются до l’; причастие согласуется с этими местоимениями: l’ho trovata (la lettera), li ho letti (i documenti). Перед инфинитивом местоимение может присоединяться к его сокращённой форме: leggere → leggerla.",
+    "examples": [
+      {
+        "text": "La lettera? L’ho trovata ieri.",
+        "ru": "Письмо? Я нашёл его вчера."
+      },
+      {
+        "text": "I documenti? Li abbiamo letti insieme.",
+        "ru": "Документы? Мы прочитали их вместе."
+      },
+      {
+        "text": "Vorrei leggerla con calma.",
+        "ru": "Я хотел бы спокойно его прочитать."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Письмо, которое не нужно дописывать",
+    "kind": "рассказ",
+    "text": "Dopo aver trovato una vecchia lettera senza firma, Matteo ha invitato sua zia a guardare insieme i documenti di famiglia. Sperava che lei riconoscesse la scrittura. La zia ha osservato il foglio a lungo, ma non ha dato una risposta sicura. Ricordava una cugina che scriveva in modo simile e che aveva abitato nello stesso paese. Matteo voleva telefonarle subito. Prima, però, la zia gli ha suggerito di fotografare la lettera e di annotare dove era stata trovata. Il luogo poteva essere utile: il foglio era dentro un libro appartenuto al nonno, non in una scatola di corrispondenza. Hanno controllato anche le pagine vicine per cercare un secondo foglio, senza successo. Quando hanno parlato con la cugina, lei ha riconosciuto il riferimento a una festa, ma non la scrittura. Ha raccontato un episodio che spiegava perché una fotografia dovesse essere restituita. Matteo ha registrato il racconto con il suo permesso e ha conservato l’audio accanto alla copia della lettera. Alla fine mancavano ancora il nome dell’autore e l’ultima pagina. Matteo ha preparato una cartella con i fatti verificati e le domande aperte. Non ha inventato una conclusione: desiderava lasciare ai prossimi lettori la possibilità di continuare la ricerca. La zia ha trovato questa scelta più rispettosa di una risposta affrettata."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Заменяем la lettera: дополните причастием trovare с согласованием.",
+      "answer": "trovata",
+      "explanation": "L’ заменяет la lettera; с прямым местоимением la причастие согласуется: trovata.",
+      "text": "La lettera? L’ho ___ ieri.",
+      "id": "old-letter-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте прямое местоимение для i documenti.",
+      "answer": "Li",
+      "explanation": "I documenti — мужской род множественного числа: li.",
+      "text": "I documenti? ___ abbiamo letti insieme.",
+      "id": "old-letter-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите правильное присоединение la к leggere.",
+      "answer": "Vorrei leggerla.",
+      "explanation": "У инфинитива отбрасывается конечное -e, затем добавляется la.",
+      "options": [
+        "Vorrei leggerla.",
+        "Vorrei leggerela.",
+        "Vorrei la leggerea."
+      ],
+      "id": "old-letter-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает una risposta affrettata?",
+      "answer": "Una risposta data troppo in fretta.",
+      "explanation": "Affrettata — поспешная, сделанная без достаточного обдумывания.",
+      "options": [
+        "Una risposta data troppo in fretta.",
+        "Una risposta scritta in un’altra lingua.",
+        "Una risposta che arriva per posta."
+      ],
+      "id": "old-letter-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите фразу о письме.",
+      "answer": "La leggo con calma.",
+      "explanation": "Прямое местоимение la стоит перед личной формой leggo.",
+      "words": [
+        "con",
+        "La",
+        "calma.",
+        "leggo"
+      ],
+      "id": "old-letter-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Замените i documenti на li и сохраните время; напишите предложение.",
+      "answer": "Li leggo.",
+      "explanation": "Местоимение li заменяет существительное и ставится перед глаголом.",
+      "text": "Leggo i documenti.",
+      "id": "old-letter-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какой подход к семейной истории показан в тексте?",
+      "answer": "Conservare le prove e riconoscere ciò che resta incerto.",
+      "explanation": "Маттео сохраняет документы и отделяет подтверждённые факты от открытых вопросов.",
+      "options": [
+        "Conservare le prove e riconoscere ciò che resta incerto.",
+        "Inventare una firma per completare la lettera.",
+        "Eliminare i documenti che non danno risposte immediate."
+      ],
+      "id": "old-letter-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Где была найдена исходная страница письма?",
+      "answer": "Dentro un libro del nonno.",
+      "explanation": "Место находки — книга дедушки — специально фиксируется как полезная информация.",
+      "options": [
+        "Dentro un libro del nonno.",
+        "In una scatola della cugina.",
+        "Nell’archivio della scuola."
+      ],
+      "id": "old-letter-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему решение Маттео нравится тёте?",
+      "answer": "Rispetta i limiti delle informazioni disponibili.",
+      "explanation": "Маттео не придумывает финал и сохраняет возможность дальнейшего поиска.",
+      "options": [
+        "Rispetta i limiti delle informazioni disponibili.",
+        "Dimostra che la cugina ha scritto la lettera.",
+        "Permette di vendere più facilmente il libro."
+      ],
+      "id": "old-letter-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите родственнику о найденном письме: где оно было, что удалось установить и какие вопросы остались. Попросите проверить одну конкретную деталь.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Отделены установленные факты от предположений.",
+      "Есть минимум три прямых местоимения lo/la/li/le.",
+      "При passato prossimo с прямым местоимением проверено согласование.",
+      "Письмо завершается ясной, ограниченной просьбой."
+    ]
+  }
+}

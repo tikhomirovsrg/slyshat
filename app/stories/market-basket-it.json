@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "id": "market-basket-it",
+  "number": "04",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Рынок перед закрытием",
+  "category": "Повседневная жизнь",
+  "summary": "На рынке заканчиваются помидоры. Уточни количество, зрелость и замену в пределах бюджета.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко помогает собрать продукты для соседского ужина."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Последние полчаса на рынке",
+  "contextText": "Вы с Марко покупаете продукты для ужина на шестерых. На овощи осталось восемь евро; дорогие продукты можно заменить.",
+  "taskTitle": "Собрать овощи за €8",
+  "taskText": "Сравни два вида помидоров, уточни цену за килограмм и реши, нужен ли базилик.",
+  "taskShort": "Овощи на шестерых · €8",
+  "skill": "Различать цену за килограмм, общий вес и ограниченное количество товара.",
+  "phraseLabels": [
+    "За килограмм",
+    "Заканчивается",
+    "Более спелые"
+  ],
+  "transferIntro": "Джулия покупает другие продукты. Отделяй вес от цены и замечай, что уже есть в продаже.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Siamo arrivati quasi alla chiusura del mercato. I pomodori grandi costano quattro euro al chilo, ma ne sono rimasti pochi. Quelli piccoli costano tre euro e sono più maturi. Per la cena ci serve circa un chilo e mezzo. Ho anche visto del basilico, però dobbiamo controllare quanto ci resta.",
+  "openingRu": "Мы пришли почти к закрытию рынка. Большие помидоры стоят четыре евро за килограмм, но их осталось мало. Маленькие стоят три евро и более спелые. Для ужина нам нужно около полутора килограммов. Я ещё видел базилик, но надо проверить, сколько денег осталось.",
+  "openingQuestion": {
+    "question": "Какие помидоры дешевле?",
+    "options": [
+      "Большие",
+      "Оба вида по одной цене",
+      "Маленькие"
+    ],
+    "answer": 2,
+    "explanation": "Quelli piccoli costano tre euro — маленькие стоят три евро, большие — четыре за килограмм."
+  },
+  "phrases": [
+    {
+      "id": "market-basket-chilo",
+      "text": "Costano quattro euro al chilo.",
+      "ru": "Стоят четыре евро за килограмм.",
+      "part": "al chilo",
+      "why": "Al chilo сообщает цену единицы веса, а не всей покупки.",
+      "sound": "Отдели число цены от слова chilo; короткое al связывает их.",
+      "example": "Le mele costano due euro al chilo.",
+      "exampleRu": "Яблоки стоят два евро за килограмм."
+    },
+    {
+      "id": "market-basket-rimasti",
+      "text": "Ne sono rimasti pochi.",
+      "ru": "Их осталось мало.",
+      "part": "rimasti pochi",
+      "why": "Ne заменяет уже названные продукты. Pochi означает мало, а не ни одного.",
+      "sound": "Смысловой акцент — pochi. Не нужно сначала переводить короткое ne.",
+      "example": "Di questi quaderni ne sono rimasti due.",
+      "exampleRu": "Этих тетрадей осталось две."
+    },
+    {
+      "id": "market-basket-maturi",
+      "text": "Quelli piccoli sono più maturi.",
+      "ru": "Маленькие более спелые.",
+      "part": "più maturi",
+      "why": "Più перед прилагательным делает сравнение: более спелые.",
+      "sound": "Услышь più и следующее прилагательное вместе; ударение в maturi на tu.",
+      "example": "Cerco delle pere meno mature.",
+      "exampleRu": "Я ищу менее спелые груши."
+    },
+    {
+      "id": "market-basket-mezzo",
+      "text": "Un chilo e mezzo, per favore.",
+      "ru": "Полтора килограмма, пожалуйста.",
+      "part": "un chilo e mezzo",
+      "why": "E mezzo добавляет половину к названной единице.",
+      "sound": "Пауза после chilo может быть короткой: не теряй добавку e mezzo.",
+      "example": "Vorrei mezzo chilo di pesche.",
+      "exampleRu": "Я хотел бы полкилограмма персиков."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Abbiamo otto euro. Preferisci i pomodori piccoli per l’insalata o quelli grandi da cuocere?",
+      "ru": "У нас восемь евро. Предпочитаешь маленькие помидоры для салата или большие для готовки?",
+      "choices": [
+        {
+          "label": "Спросить про маленькие",
+          "text": "Sono abbastanza sodi per l’insalata?",
+          "next": "small"
+        },
+        {
+          "label": "Уточнить остаток больших",
+          "text": "Quanti pomodori grandi sono rimasti?",
+          "next": "large"
+        },
+        {
+          "label": "Рассмотреть замену",
+          "text": "Possiamo prendere altre verdure?",
+          "next": "other"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "small": {
+      "text": "Sì, ma vanno mangiati stasera. Un chilo e mezzo costa quattro euro e cinquanta. Il basilico costa un euro.",
+      "ru": "Да, но их нужно съесть сегодня вечером. Полтора килограмма стоят 4,50 евро. Базилик стоит один евро.",
+      "choices": [
+        {
+          "label": "Добавить базилик",
+          "text": "Prendiamo anche il basilico.",
+          "next": "herbs"
+        },
+        {
+          "label": "Оставить сдачу на хлеб",
+          "text": "Solo i pomodori. Il resto serve per il pane.",
+          "next": "salad-check"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "herbs": {
+      "text": "Con il basilico spendiamo cinque euro e cinquanta. Ci restano due euro e cinquanta per il pane.",
+      "ru": "С базиликом потратим 5,50 евро. На хлеб останется 2,50 евро.",
+      "choices": [
+        {
+          "label": "Подтвердить салат",
+          "text": "Va bene, facciamo un’insalata profumata.",
+          "next": "salad-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "salad-check": {
+      "text": "Allora spendiamo quattro euro e cinquanta e usiamo le erbe che Giulia ha già sul balcone.",
+      "ru": "Тогда потратим 4,50 евро и используем зелень, которая уже есть у Джулии на балконе.",
+      "choices": [
+        {
+          "label": "Подтвердить покупку",
+          "text": "Perfetto, chiediamo a Giulia le erbe.",
+          "next": "salad-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "large": {
+      "text": "Ne è rimasto solo un chilo. Costa quattro euro. Non basta per sei persone, ma possiamo aggiungere zucchine.",
+      "ru": "Остался только килограмм. Он стоит четыре евро. На шестерых не хватит, но можно добавить кабачки.",
+      "choices": [
+        {
+          "label": "Уточнить цену кабачков",
+          "text": "Quanto costano le zucchine?",
+          "next": "courgettes"
+        },
+        {
+          "label": "Выбрать маленькие для салата",
+          "text": "Allora preferisco quelli piccoli.",
+          "next": "small"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "courgettes": {
+      "text": "Un chilo costa due euro. Pomodori e zucchine insieme vengono sei euro: possiamo cuocerli al forno.",
+      "ru": "Килограмм стоит два евро. Помидоры с кабачками вместе обойдутся в шесть евро: можем запечь их.",
+      "choices": [
+        {
+          "label": "Купить овощи для запекания",
+          "text": "Prendiamo un chilo di ciascuno.",
+          "next": "oven-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "other": {
+      "text": "Ci sono peperoni a due euro al chilo. Però Giulia non li digerisce bene. Le carote costano un euro e cinquanta.",
+      "ru": "Есть перцы по два евро за килограмм. Но Джулия их плохо переносит. Морковь стоит 1,50 евро.",
+      "choices": [
+        {
+          "label": "Выбрать морковь и кабачки",
+          "text": "Facciamo carote e zucchine.",
+          "next": "substitute"
+        },
+        {
+          "label": "Вернуться к помидорам",
+          "text": "Meglio i pomodori piccoli.",
+          "next": "small"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "substitute": {
+      "text": "Un chilo di carote e uno di zucchine costano tre euro e cinquanta. Li tagliamo sottili per cuocerli presto.",
+      "ru": "Килограмм моркови и килограмм кабачков стоят 3,50 евро. Тонко нарежем, чтобы быстро приготовить.",
+      "choices": [
+        {
+          "label": "Подтвердить замену",
+          "text": "D’accordo. Avviso Giulia del cambio.",
+          "next": "vegetables-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "salad-end": {
+      "text": "Ecco i pomodori. Li portiamo subito a casa, senza schiacciarli sotto il pane.",
+      "ru": "Вот помидоры. Сразу отнесём их домой и не придавим хлебом.",
+      "choices": [],
+      "outcome": "salad",
+      "speaker": "Marco"
+    },
+    "oven-end": {
+      "text": "Sei euro in tutto. Stasera prepariamo una teglia grande per tutti.",
+      "ru": "Всего шесть евро. Вечером приготовим большой противень на всех.",
+      "choices": [],
+      "outcome": "oven",
+      "speaker": "Marco"
+    },
+    "vegetables-end": {
+      "text": "Spendiamo meno e cambiamo il contorno. Giulia sarà contenta di trovare qualcosa che può mangiare.",
+      "ru": "Потратим меньше и поменяем гарнир. Джулия обрадуется тому, что сможет съесть.",
+      "choices": [],
+      "outcome": "vegetables",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "salad": {
+      "title": "Салат на сегодня",
+      "body": "Вы выбрали полтора килограмма маленьких помидоров. Они спелые, поэтому салат приготовите сегодня."
+    },
+    "oven": {
+      "title": "Овощи из духовки",
+      "body": "Килограмм больших помидоров и килограмм кабачков стоят €6. На оставшиеся €2 можно купить хлеб."
+    },
+    "vegetables": {
+      "title": "Удачная замена",
+      "body": "Морковь и кабачки стоят €3,50. Вы учли предпочтения Джулии и изменили гарнир."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Le pesche costano cinque euro al chilo. Questo sacchetto pesa mezzo chilo, quindi sono due euro e cinquanta.",
+      "ru": "Персики стоят пять евро за килограмм. Этот пакет весит полкилограмма, значит, с вас 2,50 евро.",
+      "question": "Сколько стоит пакет?",
+      "options": [
+        "€5",
+        "€2,50",
+        "€10"
+      ],
+      "answer": 1,
+      "explanation": "Mezzo chilo — половина килограмма. Говорящий подтверждает итог: due euro e cinquanta.",
+      "id": "it-market-basket-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Di pane integrale ne sono rimasti solo due pezzi. Quello bianco arriva fra dieci minuti.",
+      "ru": "Цельнозернового хлеба осталось только два изделия. Белый привезут через десять минут.",
+      "question": "Что можно купить сейчас?",
+      "options": [
+        "Два изделия из цельнозерновой муки",
+        "Белый хлеб",
+        "Никакого хлеба"
+      ],
+      "answer": 0,
+      "explanation": "Ne sono rimasti solo due pezzi относится к pane integrale. Белый хлеб ещё ожидают.",
+      "id": "it-market-basket-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Queste pere sono mature. Se ti servono per domenica, prendi quelle più dure sul fondo.",
+      "ru": "Эти груши спелые. Если нужны на воскресенье, возьми более твёрдые в глубине прилавка.",
+      "question": "Какие груши советуют для более позднего дня?",
+      "options": [
+        "Самые спелые",
+        "Самые маленькие",
+        "Более твёрдые"
+      ],
+      "answer": 2,
+      "explanation": "Per domenica вводит другую дату; совет — quelle più dure, более твёрдые.",
+      "id": "it-market-basket-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

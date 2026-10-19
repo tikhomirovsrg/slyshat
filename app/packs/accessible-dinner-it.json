@@ -1,0 +1,147 @@
+{
+  "episode": "accessible-dinner-it",
+  "level": "C1",
+  "grammar": {
+    "title": "Уступительные и сокращённые конструкции",
+    "explanation": "Sebbene, benché и nonostante + личная форма обычно требуют congiuntivo: sebbene sia comodo. Pur + gerundio создаёт сокращённую уступительную конструкцию: pur essendo comodo. Её подразумеваемый субъект должен совпадать с субъектом главной части, иначе возникает двусмысленность. Anche se обычно сочетается с indicativo, когда уступка относится к факту.",
+    "examples": [
+      {
+        "text": "Sebbene il locale sia vicino, non è adatto al gruppo.",
+        "ru": "Хотя заведение близко, оно не подходит группе."
+      },
+      {
+        "text": "Pur essendo interessata, Lucia preferisce decidere domani.",
+        "ru": "Хотя Лючия заинтересована, она предпочитает решить завтра."
+      },
+      {
+        "text": "Anche se il prezzo è basso, restano altri ostacoli.",
+        "ru": "Хотя цена низкая, остаются другие препятствия."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Участие начинается до приглашения",
+    "kind": "эссе",
+    "text": "Organizzare una cena inclusiva richiede più di una lista di locali descritti come accoglienti. La distanza, il costo, il rumore e la disposizione degli spazi possono incidere sulla partecipazione in modi diversi. Un luogo apparentemente comodo per la maggioranza non è necessariamente una scelta praticabile per tutti. Nel preparare una cena di quartiere, un gruppo di volontari aveva individuato un ristorante vicino alla fermata. Le fotografie mostravano una sala ampia, ma non permettevano di capire come si raggiungesse l’ingresso. Inoltre, il menu pubblicato non chiariva se fosse possibile concordare alternative. Anziché chiedere a ogni invitato di giustificare pubblicamente le proprie esigenze, gli organizzatori hanno offerto un canale riservato per segnalare condizioni utili alla scelta. Le risposte hanno modificato il criterio iniziale. Per qualcuno contava evitare un percorso difficile; per altri era decisivo conoscere in anticipo la spesa oppure poter conversare senza musica alta. Il gruppo ha quindi chiesto informazioni concrete al ristorante, senza accontentarsi di una generica rassicurazione sulla disponibilità del personale. Pur avendo raccolto diversi elementi favorevoli, gli organizzatori non hanno presentato il locale come una soluzione universale. Hanno condiviso ciò che era stato verificato e indicato le questioni ancora aperte. Una partecipante ha proposto un’alternativa meno centrale, ma più compatibile con le esigenze emerse. La scelta finale ha richiesto qualche spostamento in più. In compenso, nessuno ha dovuto negoziare da solo la propria presenza dopo aver ricevuto l’invito. L’attenzione non consisteva nel promettere l’assenza di ogni ostacolo, bensì nel rendere le condizioni discutibili prima che la decisione diventasse definitiva."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте congiuntivo presente глагола essere для il locale.",
+      "answer": "sia",
+      "explanation": "Sebbene вводит уступку и здесь требует congiuntivo presente: sia.",
+      "text": "Sebbene il locale ___ vicino, presenta alcuni ostacoli.",
+      "id": "accessible-dinner-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Дополните gerundio semplice глагола essere.",
+      "answer": "essendo",
+      "explanation": "Pur essendo — сокращённая уступительная конструкция; субъект обеих частей — Lucia.",
+      "text": "Pur ___ interessata, Lucia preferisce aspettare.",
+      "id": "accessible-dinner-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "В какой фразе субъект сокращённой конструкции ясен и совпадает с главным?",
+      "answer": "Pur avendo raccolto informazioni, gli organizzatori restano prudenti.",
+      "explanation": "Информацию собирали организаторы; в других вариантах грамматически подразумевается ресторан или цена.",
+      "options": [
+        "Pur avendo raccolto informazioni, gli organizzatori restano prudenti.",
+        "Pur avendo raccolto informazioni, il ristorante sembra lontano.",
+        "Pur avendo raccolto informazioni, il prezzo è alto."
+      ],
+      "id": "accessible-dinner-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает una soluzione praticabile в этом эссе?",
+      "answer": "Una soluzione concretamente utilizzabile nelle condizioni date.",
+      "explanation": "Praticabile — осуществимый на практике, с учётом конкретных условий.",
+      "options": [
+        "Una soluzione concretamente utilizzabile nelle condizioni date.",
+        "Una soluzione apprezzata soltanto per il suo nome.",
+        "Una soluzione che elimina necessariamente ogni limite."
+      ],
+      "id": "accessible-dinner-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите уступительное предложение.",
+      "answer": "Pur essendo interessati, restiamo prudenti.",
+      "explanation": "Подразумеваемое noi одинаково в обеих частях; pur essendo выражает уступку.",
+      "words": [
+        "essendo",
+        "restiamo",
+        "interessati,",
+        "Pur",
+        "prudenti."
+      ],
+      "id": "accessible-dinner-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Сократите придаточное с помощью pur + gerundio, сохранив субъект и смысл.",
+      "answer": "Pur essendo interessata, Lucia preferisce aspettare.",
+      "explanation": "Sebbene sia заменяется на pur essendo, поскольку обе части относятся к Лючии.",
+      "text": "Sebbene sia interessata, Lucia preferisce aspettare.",
+      "id": "accessible-dinner-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Каков основной тезис эссе?",
+      "answer": "Le condizioni di partecipazione vanno discusse prima di fissare la scelta.",
+      "explanation": "Организаторы собирают требования и проверяют условия до окончательного приглашения.",
+      "options": [
+        "Le condizioni di partecipazione vanno discusse prima di fissare la scelta.",
+        "La soluzione più vicina è sempre la più inclusiva.",
+        "L’inclusione dipende soltanto dalla buona volontà del personale."
+      ],
+      "id": "accessible-dinner-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Зачем участникам предложили конфиденциальный канал?",
+      "answer": "Per segnalare esigenze senza doverle giustificare pubblicamente.",
+      "explanation": "Канал позволяет сообщить важные условия без публичного объяснения личных обстоятельств.",
+      "options": [
+        "Per segnalare esigenze senza doverle giustificare pubblicamente.",
+        "Per impedire qualsiasi discussione sul ristorante.",
+        "Per nascondere a tutti il costo della cena."
+      ],
+      "id": "accessible-dinner-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему более далёкое заведение могло оказаться лучшим выбором?",
+      "answer": "La vicinanza era solo uno dei criteri rilevanti.",
+      "explanation": "Совместимость с выявленными потребностями может перевесить меньшую центральность.",
+      "options": [
+        "La vicinanza era solo uno dei criteri rilevanti.",
+        "Le esigenze emerse sono state considerate irrilevanti.",
+        "Le fotografie garantivano l’assenza di ogni ostacolo."
+      ],
+      "id": "accessible-dinner-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите организаторам общего ужина аргументированное предложение по выбору места: сопоставьте минимум три условия участия, обозначьте непроверенные сведения и предложите способ получить обратную связь без публичного объяснения личных обстоятельств.",
+    "min": 190,
+    "max": 230,
+    "checklist": [
+      "Аргумент учитывает разные условия участия и пределы имеющихся сведений.",
+      "Есть полная уступительная конструкция и pur + gerundio с ясным субъектом.",
+      "Сопоставление приводит к критерию выбора и конкретным следующим шагам.",
+      "Текст уважительно разграничивает общие организационные данные и личные обстоятельства."
+    ]
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "lunch-en",
+  "number": "18",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "«Как-нибудь пообедаем»",
+  "category": "Знакомства и общение",
+  "summary": "Коллега зовёт на обед, но время не названо. Преврати дружелюбную фразу в понятный план.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Твоя коллега и подруга. Спокойно обсуждает трудные решения."
+  },
+  "secondSpeaker": {
+    "id": "Leo",
+    "name": "Лео",
+    "bio": "Коллега Эммы: помогает с проектами и собирает друзей на выходных."
+  },
+  "contextTitle": "После удачной встречи",
+  "contextText": "После обсуждения проекта Эмма сказала, что вам стоит вместе пообедать. Ты не понял, это предложение на сегодня или просто дружелюбная фраза.",
+  "taskTitle": "Уточнить приглашение без неловкости",
+  "taskText": "Сегодня у тебя только полчаса и еда с собой. Выбери короткий обед, другой день или кофе.",
+  "taskShort": "Сегодня 30 минут",
+  "skill": "Понимать приглашение без точной даты и задавать короткие вопросы о времени и формате.",
+  "phraseLabels": [
+    "Как-нибудь",
+    "Сегодня или позже",
+    "Принести с собой"
+  ],
+  "transferIntro": "Лео предлагает другие встречи. Определи, есть ли точный план или его ещё нужно согласовать.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "We should have lunch together sometime. I know a small café near the office, but we can also eat in the kitchen here. I'm free today from half past twelve. Do you have time, or would another day be better? There's no rush; I just thought it would be nice to talk.",
+  "openingRu": "Нам стоит как-нибудь вместе пообедать. Я знаю небольшое кафе рядом с офисом, но можно поесть и здесь, на кухне. Сегодня я свободна с 12:30. У тебя есть время или лучше в другой день? Спешки нет, просто было бы приятно поговорить.",
+  "openingQuestion": {
+    "question": "Когда Эмма свободна сегодня?",
+    "options": [
+      "С 12:00",
+      "С 12:30",
+      "Только вечером"
+    ],
+    "answer": 1,
+    "explanation": "From half past twelve — начиная с 12:30. Другая дата тоже возможна, но ещё не выбрана."
+  },
+  "phrases": [
+    {
+      "id": "sometime",
+      "text": "We should have lunch together sometime.",
+      "ru": "Нам стоит как-нибудь вместе пообедать.",
+      "part": "sometime",
+      "why": "Sometime означает неопределённое время: точная дата ещё не назначена.",
+      "sound": "Sometime звучит одним словом; это не sometimes — «иногда».",
+      "example": "Let's go for a walk sometime.",
+      "exampleRu": "Давай как-нибудь прогуляемся."
+    },
+    {
+      "id": "today-later",
+      "text": "Do you mean today or another day?",
+      "ru": "Ты имеешь в виду сегодня или в другой день?",
+      "part": "today or another day",
+      "why": "Простой вопрос помогает превратить общее приглашение в конкретное.",
+      "sound": "Or разделяет два варианта; ударение на today и another day.",
+      "example": "Is that for this week or next week?",
+      "exampleRu": "Это на эту неделю или на следующую?"
+    },
+    {
+      "id": "bring-own",
+      "text": "I've brought my own lunch.",
+      "ru": "Я принёс обед с собой.",
+      "part": "my own lunch",
+      "why": "Own подчёркивает, что еда уже своя, покупать её не нужно.",
+      "sound": "Brought my может слиться; own lunch несёт главный смысл.",
+      "example": "Can I bring my own food?",
+      "exampleRu": "Можно принести свою еду?"
+    },
+    {
+      "id": "work-for",
+      "text": "Does Thursday work for you?",
+      "ru": "Тебе подходит четверг?",
+      "part": "work for you",
+      "why": "Work for в разговоре о плане означает «быть удобным».",
+      "sound": "Work здесь не работа, а оценка предложенного времени.",
+      "example": "Would one o'clock work for you?",
+      "exampleRu": "Час дня тебе подходит?"
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Emma",
+      "text": "What would suit you today? We can keep it short if you're busy.",
+      "ru": "Как тебе удобно сегодня? Если ты занят, можем встретиться ненадолго.",
+      "choices": [
+        {
+          "label": "Предложить обед на кухне",
+          "text": "I've brought lunch, and I have half an hour. Could we eat here?",
+          "next": "kitchen"
+        },
+        {
+          "label": "Предложить другой день",
+          "text": "Today is busy. Would Thursday work for you?",
+          "next": "thursday"
+        },
+        {
+          "label": "Предложить короткий кофе",
+          "text": "I can't do lunch today. Could we have a quick coffee instead?",
+          "next": "coffee"
+        }
+      ]
+    },
+    "kitchen": {
+      "speaker": "Emma",
+      "text": "Of course. The kitchen is quiet at half past twelve. I have a meeting at one, so half an hour is good for me too.",
+      "ru": "Конечно. В половине первого на кухне тихо. В час у меня встреча, так что полчаса мне тоже подходит.",
+      "choices": [
+        {
+          "label": "Уточнить точное место",
+          "text": "Do you mean the kitchen on our floor?",
+          "next": "kitchen-confirm"
+        },
+        {
+          "label": "Перенести на более свободный день",
+          "text": "Actually, Thursday would be easier for me.",
+          "next": "thursday"
+        }
+      ]
+    },
+    "kitchen-confirm": {
+      "speaker": "Emma",
+      "text": "Yes, the one beside the stairs. I'll bring my food as well. We don't need to book a table.",
+      "ru": "Да, ту, что рядом с лестницей. Я тоже принесу свою еду. Столик бронировать не нужно.",
+      "choices": [
+        {
+          "label": "Подтвердить план",
+          "text": "Great. Our kitchen, twelve thirty until one.",
+          "next": "kitchen-end"
+        }
+      ]
+    },
+    "kitchen-end": {
+      "speaker": "Emma",
+      "text": "See you there. We can leave work talk for another time and tell each other about the weekend.",
+      "ru": "До встречи. Рабочие вопросы оставим на потом и расскажем друг другу о выходных.",
+      "choices": [],
+      "outcome": "kitchen"
+    },
+    "thursday": {
+      "speaker": "Emma",
+      "text": "Thursday works. I can take a longer lunch then. The café has sandwiches and soup; would one o'clock be too late?",
+      "ru": "Четверг подходит. Тогда могу сделать перерыв подольше. В кафе есть сэндвичи и суп; час дня — не слишком поздно?",
+      "choices": [
+        {
+          "label": "Согласовать время и вход",
+          "text": "One is fine. Shall we meet at the office entrance?",
+          "next": "thursday-confirm"
+        },
+        {
+          "label": "Выбрать кофе сегодня",
+          "text": "Let's start with a quick coffee today instead.",
+          "next": "coffee"
+        }
+      ]
+    },
+    "thursday-confirm": {
+      "speaker": "Emma",
+      "text": "Yes. We can walk there together. It takes five minutes, and we should be back before two.",
+      "ru": "Да. Пойдём вместе. Идти пять минут, вернёмся до двух.",
+      "choices": [
+        {
+          "label": "Подтвердить четверг",
+          "text": "Thursday at one, at the office entrance. I'll put it in my calendar.",
+          "next": "thursday-end"
+        }
+      ]
+    },
+    "thursday-end": {
+      "speaker": "Emma",
+      "text": "Lovely. Now it's a real plan. If anything changes, I'll let you know before Thursday morning.",
+      "ru": "Здорово. Теперь есть конкретный план. Если что-то изменится, сообщу до утра четверга.",
+      "choices": [],
+      "outcome": "thursday"
+    },
+    "coffee": {
+      "speaker": "Emma",
+      "text": "Yes. I have ten minutes now, or twenty minutes at three. Which is better for you?",
+      "ru": "Да. Сейчас у меня десять минут, а в три — двадцать. Как тебе удобнее?",
+      "choices": [
+        {
+          "label": "Выбрать короткую встречу сейчас",
+          "text": "Ten minutes now would be perfect.",
+          "next": "coffee-confirm"
+        }
+      ]
+    },
+    "coffee-confirm": {
+      "speaker": "Emma",
+      "text": "Let's use the coffee machine downstairs. We can sit by the window, and I'll watch the time.",
+      "ru": "Воспользуемся кофемашиной внизу. Можно сесть у окна, я прослежу за временем.",
+      "choices": [
+        {
+          "label": "Подтвердить предел встречи",
+          "text": "Great. A coffee now, then back in ten minutes.",
+          "next": "coffee-end"
+        }
+      ]
+    },
+    "coffee-end": {
+      "speaker": "Emma",
+      "text": "Sounds good. A short chat is still a nice break, and we can arrange lunch another week.",
+      "ru": "Отлично. Короткий разговор тоже приятная пауза, а обед можно запланировать на другую неделю.",
+      "choices": [],
+      "outcome": "coffee"
+    }
+  },
+  "outcomes": {
+    "kitchen": {
+      "title": "Полчаса на кухне",
+      "body": "Вы едите свою еду на кухне у лестницы с 12:30 до 13:00."
+    },
+    "thursday": {
+      "title": "Конкретный четверг",
+      "body": "Встреча у входа в офис в четверг в 13:00. До кафе пять минут, возвращение до 14:00."
+    },
+    "coffee": {
+      "title": "Десять минут сейчас",
+      "body": "Вы пьёте кофе внизу и возвращаетесь через десять минут. Обед на другую неделю ещё не назначен."
+    }
+  },
+  "transfer": [
+    {
+      "id": "lunch-invite",
+      "speaker": "Leo",
+      "text": "We should visit that new bookshop sometime. I'm not free this weekend, but we can choose a day next week.",
+      "ru": "Нам стоит как-нибудь зайти в новый книжный. В эти выходные я занят, но на следующей неделе можно выбрать день.",
+      "question": "Есть ли уже точная дата?",
+      "options": [
+        "Да, эта суббота",
+        "Да, следующий понедельник",
+        "Нет, день ещё нужно выбрать"
+      ],
+      "answer": 2,
+      "explanation": "Sometime и can choose a day показывают, что конкретной договорённости пока нет."
+    },
+    {
+      "id": "lunch-food",
+      "speaker": "Leo",
+      "text": "Bring your own lunch tomorrow. I'll bring tea, and we can sit outside if it's warm.",
+      "ru": "Завтра возьми еду с собой. Я принесу чай, и можно сесть снаружи, если будет тепло.",
+      "question": "Что Лео просит принести?",
+      "options": [
+        "Свой обед",
+        "Чай для всех",
+        "Стол и стулья"
+      ],
+      "answer": 0,
+      "explanation": "Bring your own lunch — просьба взять собственную еду; чай берёт Лео."
+    },
+    {
+      "id": "lunch-change",
+      "speaker": "Leo",
+      "text": "Two o'clock doesn't work for me now. Could we meet half an hour later, at the same café?",
+      "ru": "В два часа теперь не получится. Можем встретиться на полчаса позже, в том же кафе?",
+      "question": "Какое новое время он предлагает?",
+      "options": [
+        "13:30",
+        "14:30",
+        "15:00"
+      ],
+      "answer": 1,
+      "explanation": "Half an hour later относительно 14:00 — 14:30; место остаётся тем же."
+    }
+  ]
+}

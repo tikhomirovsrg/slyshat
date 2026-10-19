@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "neighbour-en",
+  "number": "05",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Первый ужин у соседей",
+  "category": "Знакомства и общение",
+  "summary": "Майя зовёт соседей на ужин. Выясни, что уже приготовлено, и найди свой способ помочь.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Твоя соседка и подруга. Любит знакомить людей и искать истории вокруг."
+  },
+  "secondSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "contextTitle": "Дверь напротив",
+  "contextText": "Ты недавно переехал. Майя пригласила тебя познакомиться с соседями, но ты можешь прийти только после половины восьмого.",
+  "taskTitle": "Прийти позже и не оставить хозяев без помощи",
+  "taskText": "Уточни время, предложи посильную помощь и договорись, как попасть внутрь.",
+  "taskShort": "После 19:30 · помочь с ужином",
+  "skill": "Слышать нестрогое приглашение, уже принятые решения и вежливые предложения.",
+  "phraseLabels": [
+    "Зайти ненадолго",
+    "Уже позаботились",
+    "Чуть позже"
+  ],
+  "transferIntro": "Оливер собирает друзей в другом месте. Слушай, что действительно требуется от гостя.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "A few neighbours are coming over for dinner on Friday. We're aiming for seven, but don't worry if you're running a bit late. Oliver has already sorted out the main course. Could you bring something to drink, or would you rather help us clear up afterwards?",
+  "openingRu": "В пятницу несколько соседей придут на ужин. Планируем на семь, но ничего страшного, если ты немного опоздаешь. Оливер уже позаботился об основном блюде. Можешь принести что-нибудь попить или тебе удобнее потом помочь убрать?",
+  "openingQuestion": {
+    "question": "Что ещё можно взять на себя?",
+    "options": [
+      "Приготовить основное блюдо",
+      "Принести напитки или помочь убрать",
+      "Пригласить всех соседей"
+    ],
+    "answer": 1,
+    "explanation": "Основное блюдо уже готовит Оливер: already sorted out. Майя предлагает напитки или уборку после ужина."
+  },
+  "phrases": [
+    {
+      "id": "come-over",
+      "text": "A few neighbours are coming over.",
+      "ru": "Несколько соседей придут в гости.",
+      "part": "coming over",
+      "why": "Come over — зайти к кому-то, обычно домой.",
+      "sound": "Конец coming соединяется с началом over; ищи весь блок приглашения.",
+      "example": "Do you want to come over on Sunday?",
+      "exampleRu": "Хочешь зайти в воскресенье?"
+    },
+    {
+      "id": "sorted",
+      "text": "Oliver has already sorted out the main course.",
+      "ru": "Оливер уже позаботился об основном блюде.",
+      "part": "sorted out",
+      "why": "Sort out здесь означает организовать или решить вопрос.",
+      "sound": "Слушай already: оно сообщает, что помощь с этой частью уже не нужна.",
+      "example": "We've sorted out the chairs.",
+      "exampleRu": "Мы уже решили вопрос со стульями."
+    },
+    {
+      "id": "late",
+      "text": "I'm running a bit late.",
+      "ru": "Я немного опаздываю.",
+      "part": "running a bit late",
+      "why": "Running late описывает отставание от плана, а не бег.",
+      "sound": "A bit произносится быстро; главное ударение падает на late.",
+      "example": "I'm running ten minutes late.",
+      "exampleRu": "Я опаздываю на десять минут."
+    },
+    {
+      "id": "clear-up",
+      "text": "I'll help you clear up afterwards.",
+      "ru": "Я помогу потом убрать.",
+      "part": "clear up afterwards",
+      "why": "Clear up — убрать после события; afterwards — после него.",
+      "sound": "В clear up согласный r может связать слова в британской речи.",
+      "example": "Let's clear up before we leave.",
+      "exampleRu": "Давай уберём перед уходом."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Maya",
+      "text": "Will you be able to make it for seven? We can keep a plate for you if you need to arrive later.",
+      "ru": "Ты сможешь прийти к семи? Можем оставить тебе порцию, если придётся прийти позже.",
+      "choices": [
+        {
+          "label": "Предложить напитки и предупредить об опоздании",
+          "text": "I can bring drinks, but I won't get there before half past seven.",
+          "next": "drinks"
+        },
+        {
+          "label": "Выбрать помощь после ужина",
+          "text": "I can help clear up if arriving at half past seven is all right.",
+          "next": "cleanup"
+        },
+        {
+          "label": "Предложить десерт заранее",
+          "text": "Could I leave a dessert with you before I go to work?",
+          "next": "dessert"
+        }
+      ]
+    },
+    "drinks": {
+      "speaker": "Maya",
+      "text": "Half past seven is fine. We have wine already, so something without alcohol would be lovely.",
+      "ru": "Половина восьмого подходит. Вино уже есть, так что что-нибудь безалкогольное было бы отлично.",
+      "choices": [
+        {
+          "label": "Уточнить количество",
+          "text": "Would two bottles of sparkling water be enough?",
+          "next": "drinks-confirm"
+        },
+        {
+          "label": "Перейти к уборке",
+          "text": "The shop may be shut. Could I help afterwards instead?",
+          "next": "cleanup"
+        }
+      ]
+    },
+    "drinks-confirm": {
+      "speaker": "Maya",
+      "text": "Yes, and there's no need to ring everyone's bell. Text me when you're downstairs; the front door sticks.",
+      "ru": "Да. И не нужно звонить во все квартиры. Напиши мне, когда будешь внизу: входная дверь заедает.",
+      "choices": [
+        {
+          "label": "Подтвердить напитки и вход",
+          "text": "Two bottles, half past seven, and I'll text you downstairs.",
+          "next": "drinks-end"
+        }
+      ]
+    },
+    "drinks-end": {
+      "speaker": "Maya",
+      "text": "Perfect. I'll save you a seat beside Oliver. He wants to hear about your first week here.",
+      "ru": "Отлично. Оставлю тебе место рядом с Оливером. Он хочет узнать, как прошла твоя первая неделя здесь.",
+      "choices": [],
+      "outcome": "drinks"
+    },
+    "cleanup": {
+      "speaker": "Maya",
+      "text": "That would help a lot. Dinner should finish around nine, and we need to borrow chairs from the flat upstairs.",
+      "ru": "Это очень поможет. Ужин закончится примерно в девять, и нам нужно взять стулья у соседей сверху.",
+      "choices": [
+        {
+          "label": "Взять на себя стулья после ужина",
+          "text": "I can take the chairs back after dinner.",
+          "next": "cleanup-confirm"
+        },
+        {
+          "label": "Выбрать помощь заранее",
+          "text": "I need to leave at nine. Could I drop off a dessert earlier?",
+          "next": "dessert"
+        }
+      ]
+    },
+    "cleanup-confirm": {
+      "speaker": "Maya",
+      "text": "Thank you. The neighbours upstairs go to bed early, so let's return the chairs before half past nine.",
+      "ru": "Спасибо. Соседи сверху рано ложатся, так что давай вернём стулья до половины десятого.",
+      "choices": [
+        {
+          "label": "Подтвердить ограничение",
+          "text": "I'll stay until we've taken them back, before half past nine.",
+          "next": "cleanup-end"
+        }
+      ]
+    },
+    "cleanup-end": {
+      "speaker": "Maya",
+      "text": "Lovely. Just bring yourself at half past seven. We'll introduce everyone again when you arrive.",
+      "ru": "Замечательно. Приходи в половине восьмого, ничего приносить не нужно. Когда придёшь, мы снова всех представим.",
+      "choices": [],
+      "outcome": "cleanup"
+    },
+    "dessert": {
+      "speaker": "Maya",
+      "text": "That's thoughtful. One neighbour can't eat nuts. Would you be able to make something without them?",
+      "ru": "Очень мило. Один сосед не может есть орехи. Сможешь приготовить что-нибудь без них?",
+      "choices": [
+        {
+          "label": "Выбрать фруктовый салат",
+          "text": "I could bring fruit salad. What time can I drop it off?",
+          "next": "dessert-confirm"
+        }
+      ]
+    },
+    "dessert-confirm": {
+      "speaker": "Maya",
+      "text": "I'll be home until ten in the morning. Please put a note on the bowl so we know what's in it.",
+      "ru": "Я буду дома до десяти утра. Пожалуйста, оставь на миске записку, чтобы мы знали, что внутри.",
+      "choices": [
+        {
+          "label": "Подтвердить два визита",
+          "text": "I'll drop it off at nine and come back at half past seven.",
+          "next": "dessert-end"
+        }
+      ]
+    },
+    "dessert-end": {
+      "speaker": "Maya",
+      "text": "That works. I'll keep it in the fridge, and you won't have to carry anything after work.",
+      "ru": "Отлично. Я поставлю его в холодильник, а тебе не придётся ничего нести после работы.",
+      "choices": [],
+      "outcome": "dessert"
+    }
+  },
+  "outcomes": {
+    "drinks": {
+      "title": "Гость с напитками",
+      "body": "Ты придёшь в 19:30 с двумя бутылками газированной воды и напишешь Майе у входа."
+    },
+    "cleanup": {
+      "title": "Помощь после ужина",
+      "body": "Ты придёшь в 19:30 и поможешь вернуть стулья соседям до 21:30."
+    },
+    "dessert": {
+      "title": "Десерт заранее",
+      "body": "Ты принесёшь фруктовый салат без орехов в 09:00, подпишешь состав и вернёшься на ужин в 19:30."
+    }
+  },
+  "transfer": [
+    {
+      "id": "neighbour-picnic",
+      "speaker": "Oliver",
+      "text": "We've sorted out the blankets for the picnic. Bring a cup if you have one, but don't buy anything specially.",
+      "ru": "Мы уже позаботились о пледах для пикника. Возьми кружку, если она есть, но специально ничего не покупай.",
+      "question": "Что следует принести, если есть дома?",
+      "options": [
+        "Кружку",
+        "Плед",
+        "Новый набор посуды"
+      ],
+      "answer": 0,
+      "explanation": "Bring a cup if you have one — кружку при наличии. Пледы уже организованы."
+    },
+    {
+      "id": "neighbour-late",
+      "speaker": "Oliver",
+      "text": "I'm running a little late, so start the game without me. I'll join the next round.",
+      "ru": "Я немного опаздываю, поэтому начинайте игру без меня. Присоединюсь к следующему раунду.",
+      "question": "Что он предлагает друзьям?",
+      "options": [
+        "Ждать его у двери",
+        "Начать без него",
+        "Отменить игру"
+      ],
+      "answer": 1,
+      "explanation": "Start ... without me означает начать без говорящего. Он присоединится позже."
+    },
+    {
+      "id": "neighbour-help",
+      "speaker": "Oliver",
+      "text": "You don't need to cook anything for Saturday. Could you give me a hand putting the tables away afterwards?",
+      "ru": "На субботу ничего готовить не нужно. Поможешь потом убрать столы?",
+      "question": "Когда нужна помощь?",
+      "options": [
+        "До начала с готовкой",
+        "Во время подачи еды",
+        "После встречи со столами"
+      ],
+      "answer": 2,
+      "explanation": "Afterwards относит помощь к концу встречи; putting the tables away уточняет задачу."
+    }
+  ]
+}

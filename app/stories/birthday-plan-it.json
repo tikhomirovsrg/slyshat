@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "birthday-plan-it",
+  "number": "18",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Сюрприз, который ей понравится",
+  "category": "Знакомства и общение",
+  "summary": "Джулия просила ничего большого. Обсуди с Марко, где заканчивается приятный сюрприз и начинается чужой сценарий.",
+  "duration": "15–20 минут",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко хочет организовать день рождения Джулии."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Подготовка дня рождения",
+  "contextText": "Марко предлагает собрать друзей для Джулии. Ты помнишь её слова о спокойном вечере, но не знаешь, исключала ли она вообще встречу.",
+  "taskTitle": "Проверить желания именинницы",
+  "taskText": "Не выдавай догадку за согласие. Можно устроить маленький домашний вечер, прогулку или спросить Джулию прямо.",
+  "taskShort": "Спокойный вечер · без давления",
+  "skill": "Различать буквальное содержание, косвенный намёк и необоснованный вывод.",
+  "phraseLabels": [
+    "Вовсе не обязательно",
+    "Как будто",
+    "Лучше спросить"
+  ],
+  "transferIntro": "Джулия говорит о других приглашениях. Отделяй то, что сказано, от того, что хочется предположить.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Giulia ha detto che quest’anno non vuole fare niente di grande. Questo non significa necessariamente che preferisca stare da sola. Avevo pensato a una festa a sorpresa, ma sarebbe come ignorare quello che ci ha detto. Potremmo organizzare qualcosa di piccolo, oppure chiederle direttamente che cosa le farebbe piacere, senza considerare la domanda una rovina della sorpresa.",
+  "openingRu": "Джулия сказала, что в этом году не хочет ничего большого. Это не обязательно означает, что предпочитает одиночество. Я думал о вечеринке-сюрпризе, но это словно игнорировать её слова. Можем организовать что-то маленькое или прямо спросить, что ей было бы приятно, не считая вопрос испорченным сюрпризом.",
+  "openingQuestion": {
+    "question": "Какой вывод нельзя уверенно сделать из слов Джулии?",
+    "options": [
+      "Она не хочет большого события",
+      "Она обязательно хочет быть одна",
+      "Большую вечеринку стоит пересмотреть"
+    ],
+    "answer": 1,
+    "explanation": "Non significa necessariamente ... stare da sola — отсутствие желания большой вечеринки не доказывает желание одиночества."
+  },
+  "phrases": [
+    {
+      "id": "birthday-plan-necessariamente",
+      "text": "Non significa necessariamente che voglia stare da sola.",
+      "ru": "Это не обязательно означает, что она хочет быть одна.",
+      "part": "non ... necessariamente",
+      "why": "Выражение блокирует слишком сильный вывод из ограниченных данных.",
+      "sound": "Не теряй длинное necessariamente: отрицание касается обязательности вывода.",
+      "example": "Un ritardo non significa necessariamente un rifiuto.",
+      "exampleRu": "Задержка не обязательно означает отказ."
+    },
+    {
+      "id": "birthday-plan-come",
+      "text": "Sarebbe come ignorare quello che ha detto.",
+      "ru": "Это было бы как проигнорировать её слова.",
+      "part": "sarebbe come",
+      "why": "Sarebbe come вводит оценочное сравнение действия.",
+      "sound": "У sarebbe слышно условное ebbe: обсуждают возможный поступок, не случившийся факт.",
+      "example": "Sarebbe come decidere al posto suo.",
+      "exampleRu": "Это было бы как решить за неё."
+    },
+    {
+      "id": "birthday-plan-chiedere",
+      "text": "Sarebbe meglio chiederle che cosa preferisce.",
+      "ru": "Лучше было бы спросить, что она предпочитает.",
+      "part": "sarebbe meglio",
+      "why": "Условное наклонение смягчает совет; le в chiederle означает ей.",
+      "sound": "Chiederle заканчивается слитным le, указывающим адресата.",
+      "example": "Sarebbe meglio chiarire prima di prenotare.",
+      "exampleRu": "Лучше уточнить до бронирования."
+    },
+    {
+      "id": "birthday-plan-piacere",
+      "text": "Che cosa le farebbe piacere?",
+      "ru": "Что было бы ей приятно?",
+      "part": "le farebbe piacere",
+      "why": "Fare piacere описывает приятное действие для другого человека.",
+      "sound": "Le в начале связано с получателем удовольствия, не с предметами.",
+      "example": "Mi farebbe piacere rivedervi con calma.",
+      "exampleRu": "Мне было бы приятно спокойно снова с вами увидеться."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Potremmo invitare quattro amici a casa, fare una passeggiata con una merenda oppure parlarne prima con lei. Quale strada ti convince?",
+      "ru": "Можем позвать четверых друзей домой, прогуляться с перекусом или сначала поговорить с ней. Какой путь тебе ближе?",
+      "choices": [
+        {
+          "label": "Проверить домашний формат",
+          "text": "Una serata piccola potrebbe andare, ma senza inviti a sorpresa.",
+          "next": "home"
+        },
+        {
+          "label": "Предложить лёгкую прогулку",
+          "text": "Proporrei una passeggiata breve e facoltativa.",
+          "next": "walk"
+        },
+        {
+          "label": "Спросить прямо",
+          "text": "Chiediamole prima come vorrebbe passare la giornata.",
+          "next": "ask"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "home": {
+      "text": "Se invitiamo quattro amici oltre a noi due e a Giulia, diventiamo sette. Forse stiamo già allargando quello che chiamiamo piccolo.",
+      "ru": "Если пригласим четверых помимо нас двоих и Джулии, получится семеро. Возможно, мы уже расширяем то, что зовём маленьким.",
+      "choices": [
+        {
+          "label": "Сократить до согласованного круга",
+          "text": "Allora chiediamole se vuole soltanto noi due e sua sorella.",
+          "next": "home-check"
+        },
+        {
+          "label": "Отдать выбор ей",
+          "text": "Hai ragione: chiediamole senza proporre un numero.",
+          "next": "ask"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "home-check": {
+      "text": "Ha risposto che in quattro le andrebbe bene, purché nessuno le chieda di cucinare. Possiamo portare noi la cena.",
+      "ru": "Она ответила, что вчетвером ей подходит, если никто не попросит её готовить. Можем сами принести ужин.",
+      "choices": [
+        {
+          "label": "Взять подготовку на себя",
+          "text": "Portiamo tutto e lasciamo a lei soltanto la scelta della musica.",
+          "next": "home-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "walk": {
+      "text": "Giulia dice che l’idea le piace, ma non vuole un percorso lungo né un gruppo difficile da gestire.",
+      "ru": "Джулия говорит, что идея нравится, но не хочет длинного маршрута и группы, с которой трудно управиться.",
+      "choices": [
+        {
+          "label": "Ограничить формат",
+          "text": "Un’ora nel parco, al massimo sei persone, senza prenotazioni.",
+          "next": "walk-check"
+        },
+        {
+          "label": "Уточнить предпочтение без плана",
+          "text": "Meglio chiederle che cosa intende per una giornata tranquilla.",
+          "next": "ask"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "walk-check": {
+      "text": "Accetta, a condizione che possa tornare a casa quando vuole. Il dolce può restare una sorpresa, il programma no.",
+      "ru": "Она согласна, если сможет уйти домой, когда захочет. Десерт может остаться сюрпризом, программа — нет.",
+      "choices": [
+        {
+          "label": "Подтвердить свободу уйти",
+          "text": "D’accordo. Nessun discorso e nessun obbligo di restare.",
+          "next": "walk-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "ask": {
+      "text": "Le ho chiesto. Preferirebbe pranzare soltanto con noi due e passare il pomeriggio a leggere. Non è il piano che immaginavo, ma è il suo.",
+      "ru": "Я спросил. Она предпочла бы пообедать только с нами двоими, а после читать. Это не тот план, что я представлял, но это её план.",
+      "choices": [
+        {
+          "label": "Принять её ответ",
+          "text": "Allora organizziamo solo il pranzo, senza aggiungere ospiti.",
+          "next": "lunch"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "lunch": {
+      "text": "Il bar Sole tiene un tavolo per tre all’una. Giulia non vuole regali costosi; le farebbe piacere una foto stampata della nostra prima cena.",
+      "ru": "В кафе Sole есть столик на троих в час. Джулия не хочет дорогих подарков; её порадует распечатанное фото с первого общего ужина.",
+      "choices": [
+        {
+          "label": "Выбрать личный подарок",
+          "text": "Stampiamo quella foto e lasciamo libero il pomeriggio.",
+          "next": "lunch-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "home-end": {
+      "text": "La cena è piccola per scelta condivisa. Il lavoro dell’ospitalità non ricade sulla festeggiata.",
+      "ru": "Ужин маленький по общему согласию. Работа по приёму гостей не ложится на именинницу.",
+      "choices": [],
+      "outcome": "home",
+      "speaker": "Marco"
+    },
+    "walk-end": {
+      "text": "La sorpresa è una torta, non una giornata imposta. Giulia sa chi viene e può decidere quanto fermarsi.",
+      "ru": "Сюрприз — торт, а не навязанный день. Джулия знает, кто придёт, и решает, сколько остаться.",
+      "choices": [],
+      "outcome": "walk",
+      "speaker": "Marco"
+    },
+    "lunch-end": {
+      "text": "Un pranzo in tre e una fotografia raccontano l’amicizia senza occupare tutto il suo compleanno.",
+      "ru": "Обед втроём и фотография говорят о дружбе, не занимая весь её день рождения.",
+      "choices": [],
+      "outcome": "lunch",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "home": {
+      "title": "Четверо за столом",
+      "body": "Джулия согласилась на вас двоих и сестру. Вы принесёте ужин, а ей не придётся готовить."
+    },
+    "walk": {
+      "title": "Прогулка со свободным концом",
+      "body": "Не больше шести человек и час в парке. Джулия может уйти в любое время; сюрпризом будет лишь десерт."
+    },
+    "lunch": {
+      "title": "Её собственный план",
+      "body": "Обед втроём в 13:00 и фотография на память. После обеда Джулия хочет читать одна."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Non ho voglia di una grande cena, ma mi farebbe piacere vedervi per un tè nel pomeriggio.",
+      "ru": "Мне не хочется большого ужина, но было бы приятно увидеться за чаем днём.",
+      "question": "Что говорящая предлагает вместо ужина?",
+      "options": [
+        "Чай во второй половине дня",
+        "Полностью отменить встречу",
+        "Вечеринку вечером"
+      ],
+      "answer": 0,
+      "explanation": "Ma mi farebbe piacere вводит положительную альтернативу отказу от большого ужина.",
+      "id": "it-birthday-plan-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Ha risposto solo grazie. Non significa necessariamente che abbia accettato l’invito: aspettiamo una conferma esplicita.",
+      "ru": "Она ответила только «спасибо». Это не обязательно значит, что приглашение принято: подождём явного подтверждения.",
+      "question": "Как трактовать ответ сейчас?",
+      "options": [
+        "Участие подтверждено",
+        "Пока это только благодарность",
+        "Приглашение отклонено"
+      ],
+      "answer": 1,
+      "explanation": "Ни согласие, ни отказ не названы. Non significa necessariamente предупреждает о чрезмерной интерпретации.",
+      "id": "it-birthday-plan-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Preferirei scegliere il ristorante insieme. Il regalo può essere una sorpresa, ma sul cibo ho esigenze precise.",
+      "ru": "Я предпочла бы выбрать ресторан вместе. Подарок может быть сюрпризом, но к еде у меня конкретные требования.",
+      "question": "Что говорящая хочет согласовать?",
+      "options": [
+        "Содержание подарка",
+        "Цвет открытки",
+        "Выбор ресторана"
+      ],
+      "answer": 2,
+      "explanation": "Scegliere il ristorante insieme — выбрать ресторан вместе. Сюрприз допустим для подарка.",
+      "id": "it-birthday-plan-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

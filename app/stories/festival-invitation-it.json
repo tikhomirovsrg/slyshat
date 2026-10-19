@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "festival-invitation-it",
+  "number": "16",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Приглашение или рабочая смена?",
+  "category": "Знакомства и общение",
+  "summary": "«Заходи, если хочешь» оказалось приглашением помочь. Уточни ожидания и договорись об удобной роли.",
+  "duration": "15–20 минут",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко собирает знакомых на районный фестиваль."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Сообщение от организатора",
+  "contextText": "Марко зовёт тебя на фестиваль, где выступает Джулия. В переписке было непонятно, приходишь ли ты гостем или помощником.",
+  "taskTitle": "Договориться без невысказанных ожиданий",
+  "taskText": "Раздели время отдыха и обязательства. Предложи ограниченную смену, другую помощь или визит в качестве гостя.",
+  "taskShort": "Свободный вечер · ясная договорённость",
+  "skill": "Слышать косвенную просьбу и уточнять реальный объём обязательства.",
+  "phraseLabels": [
+    "Если готов",
+    "Рассчитывать на тебя",
+    "Гость или помощник"
+  ],
+  "transferIntro": "Джулия обсуждает помощь на других событиях. Отличай вежливую возможность, ожидание и подтверждённое согласие.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Ci farebbe piacere vederti al festival sabato. Se te la senti, potresti darci una mano al banco d’ingresso; pensavamo di poter contare su di te per un paio d’ore. Non volevo trasformare l’invito in un obbligo, però dobbiamo chiudere i turni entro stasera. Fammi sapere se vieni come ospite o se possiamo segnarti tra i volontari.",
+  "openingRu": "Будем рады увидеть тебя на фестивале в субботу. Если готов, ты мог бы помочь на входе; мы думали рассчитывать на тебя на пару часов. Я не хотел превращать приглашение в обязательство, но нам нужно составить смены до вечера. Дай знать, придёшь ли гостем или тебя можно записать в волонтёры.",
+  "openingQuestion": {
+    "question": "Что Марко просит уточнить?",
+    "options": [
+      "Только цвет одежды",
+      "Нужно ли отменить фестиваль",
+      "Приходишь ли ты гостем или помощником"
+    ],
+    "answer": 2,
+    "explanation": "Come ospite oppure tra i volontari — два разных статуса. Вежливое приглашение ещё не означает согласие на смену."
+  },
+  "phrases": [
+    {
+      "id": "festival-invitation-senti",
+      "text": "Se te la senti, potresti darci una mano.",
+      "ru": "Если готов, мог бы нам помочь.",
+      "part": "se te la senti",
+      "why": "Sentirsela — чувствовать готовность взяться за действие.",
+      "sound": "Te la — часть устойчивого выражения, не два отдельных предмета.",
+      "example": "Non me la sento di parlare davanti a tutti.",
+      "exampleRu": "Я пока не готов выступать перед всеми."
+    },
+    {
+      "id": "festival-invitation-contare",
+      "text": "Pensavamo di poter contare su di te.",
+      "ru": "Мы думали, что сможем на тебя рассчитывать.",
+      "part": "contare su di te",
+      "why": "Contare su обозначает ожидание помощи, которое стоит согласовать.",
+      "sound": "На слух su di te несёт адресата просьбы: рассчитывают именно на тебя.",
+      "example": "Potete contare su di me fino alle sei.",
+      "exampleRu": "Можете рассчитывать на меня до шести."
+    },
+    {
+      "id": "festival-invitation-ospite",
+      "text": "Fammi sapere se vieni come ospite.",
+      "ru": "Дай знать, придёшь ли гостем.",
+      "part": "come ospite",
+      "why": "Come ospite явно называет статус участия; присутствовать не значит согласиться на рабочую смену.",
+      "sound": "После se слушай не только vieni, но и come ospite: вопрос касается роли, а не одного присутствия.",
+      "example": "Vengo come ospite, non come organizzatore.",
+      "exampleRu": "Я приду гостем, а не организатором."
+    },
+    {
+      "id": "festival-invitation-limite",
+      "text": "Posso aiutare, a patto di finire alle sette.",
+      "ru": "Могу помочь при условии окончания в семь.",
+      "part": "a patto di",
+      "why": "A patto di делает ограничение явной частью согласия.",
+      "sound": "Не отделяй a patto di от времени: согласие действует только с этим условием.",
+      "example": "Vengo, a patto di poter uscire prima.",
+      "exampleRu": "Приду при условии, что смогу уйти раньше."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "All’ingresso servirebbe qualcuno dalle sei alle otto. Io avevo capito che fossi disponibile, ma forse ci siamo spiegati male.",
+      "ru": "На входе нужен человек с шести до восьми. Я понял, что ты свободен, но, возможно, мы неясно договорились.",
+      "choices": [
+        {
+          "label": "Предложить короткую смену",
+          "text": "Posso aiutare dalle sei alle sette, poi voglio ascoltare Giulia.",
+          "next": "shift"
+        },
+        {
+          "label": "Остаться гостем",
+          "text": "Avevo capito che fosse un invito come ospite. Preferisco non fare un turno.",
+          "next": "guest"
+        },
+        {
+          "label": "Предложить другую помощь",
+          "text": "Non posso stare all’ingresso, ma posso preparare i cartelli.",
+          "next": "signs"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "shift": {
+      "text": "Un’ora sarebbe già utile, purché qualcuno ti dia il cambio. Ti andrebbe di aspettare se il collega arrivasse tardi?",
+      "ru": "Час уже полезен, если кто-то сменит. Ты мог бы подождать, если коллега опоздает?",
+      "choices": [
+        {
+          "label": "Установить твёрдую границу",
+          "text": "Posso aspettare cinque minuti, non perdere tutto il concerto.",
+          "next": "handover"
+        },
+        {
+          "label": "Предпочесть задачу без смены",
+          "text": "Meglio una cosa che possa finire prima: i cartelli.",
+          "next": "signs"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "handover": {
+      "text": "D’accordo. Alle sette arriva Sara; se ritardasse, subentrerei io. Ti mando per iscritto l’orario e il contatto.",
+      "ru": "Договорились. В семь придёт Сара; если опоздает, заменю я. Пришлю время и контакт письменно.",
+      "choices": [
+        {
+          "label": "Подтвердить ограниченное обязательство",
+          "text": "Allora confermo dalle sei alle sette. Grazie per aver chiarito.",
+          "next": "shift-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "guest": {
+      "text": "Grazie per avermelo detto adesso. Ti tengo un posto vicino al palco; l’ingresso del pubblico apre alle sette e mezza.",
+      "ru": "Спасибо, что сказал сейчас. Сохраню место рядом со сценой; вход для зрителей открывается в 19:30.",
+      "choices": [
+        {
+          "label": "Подтвердить формат участия",
+          "text": "Vengo come ospite. A che ora canta Giulia?",
+          "next": "guest-time"
+        },
+        {
+          "label": "Всё же предложить подготовку",
+          "text": "Posso comunque preparare qualcosa prima di sabato.",
+          "next": "signs"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "guest-time": {
+      "text": "Alle otto. Se vuoi arrivare con lei, vi vedete al bar Sole alle sette. Non c’è bisogno di passare dal banco volontari.",
+      "ru": "В восемь. Если хочешь прийти с ней, встречайтесь у кафе Sole в семь. Заходить на стойку волонтёров не нужно.",
+      "choices": [
+        {
+          "label": "Принять приглашение гостем",
+          "text": "Perfetto. Ci vediamo al concerto.",
+          "next": "guest-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "signs": {
+      "text": "Ci mancano tre indicazioni: ingresso, bagni e uscita. Dovrebbero essere leggibili anche da lontano, non soltanto decorative.",
+      "ru": "Не хватает трёх указателей: вход, туалеты и выход. Они должны читаться издалека, а не просто украшать.",
+      "choices": [
+        {
+          "label": "Уточнить результат и срок",
+          "text": "Preparo tre cartelli grandi. Ti bastano entro venerdì?",
+          "next": "signs-check"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "signs-check": {
+      "text": "Sì, entro venerdì alle cinque. Li stampo io, quindi mandami soltanto il file. Sabato sarai libero di seguire il concerto.",
+      "ru": "Да, к пятнице, пяти часам. Напечатаю сам, так что пришли только файл. В субботу будешь свободен слушать концерт.",
+      "choices": [
+        {
+          "label": "Принять конкретную задачу",
+          "text": "D’accordo: tre cartelli, un file, venerdì alle cinque.",
+          "next": "signs-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "shift-end": {
+      "text": "Il turno è coperto e il tuo concerto è salvo. L’invito e l’impegno adesso hanno confini chiari.",
+      "ru": "Смена закрыта, концерт ты услышишь. Теперь у приглашения и обязательства ясные границы.",
+      "choices": [],
+      "outcome": "shift",
+      "speaker": "Marco"
+    },
+    "guest-end": {
+      "text": "Ci vediamo da spettatori durante il concerto. Cercherò un altro volontario senza contare su un assenso mai dato.",
+      "ru": "Увидимся как зрители на концерте. Поищу другого волонтёра, не рассчитывая на согласие, которого не было.",
+      "choices": [],
+      "outcome": "guest",
+      "speaker": "Marco"
+    },
+    "signs-end": {
+      "text": "I cartelli sono una parte concreta dell’organizzazione. Il tuo contributo finisce prima del festival.",
+      "ru": "Указатели — конкретная часть подготовки. Твой вклад завершится ещё до фестиваля.",
+      "choices": [],
+      "outcome": "signs",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "shift": {
+      "title": "Час помощи и концерт",
+      "body": "Ты поможешь с 18:00 до 19:00. Марко гарантировал замену, если следующий волонтёр опоздает."
+    },
+    "guest": {
+      "title": "Приглашение принято",
+      "body": "Ты придёшь гостем на выступление Джулии в 20:00. Марко больше не считает тебя участником смены."
+    },
+    "signs": {
+      "title": "Помощь до события",
+      "body": "Ты отправишь три указателя одним файлом к пятнице, 17:00. Печать и субботняя смена — у других."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Se te la senti, potresti presentare gli ospiti. Se preferisci evitare il palco, ci serve aiuto anche dietro le quinte.",
+      "ru": "Если готова, могла бы представить гостей. Если предпочитаешь не выходить на сцену, нужна помощь и за кулисами.",
+      "question": "Что действительно требуется от адресата?",
+      "options": [
+        "Обязательно выступить",
+        "Выбрать подходящий формат помощи",
+        "Отказаться от события"
+      ],
+      "answer": 1,
+      "explanation": "Обе условные конструкции оставляют выбор между сценой и работой за ней.",
+      "id": "it-festival-invitation-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Contavamo su di voi per il trasporto, ma non avevamo ancora chiesto conferma. Organizziamo un’alternativa finché non rispondete.",
+      "ru": "Мы рассчитывали на вас с перевозкой, но ещё не просили подтверждения. Пока не ответите, организуем альтернативу.",
+      "question": "Подтверждено ли участие адресатов?",
+      "options": [
+        "Да, давно",
+        "Да, автоматически",
+        "Пока нет"
+      ],
+      "answer": 2,
+      "explanation": "Non avevamo ancora chiesto conferma прямо отделяет ожидание от договорённости.",
+      "id": "it-festival-invitation-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Posso restare fino alle nove, a patto che qualcuno mi accompagni alla fermata: dopo quell’ora non passano più autobus.",
+      "ru": "Могу остаться до девяти, если кто-то проводит до остановки: после этого автобусы больше не ходят.",
+      "question": "Какое условие сопровождает согласие?",
+      "options": [
+        "Кто-то проводит до остановки",
+        "Оплатят такси",
+        "Автобусы начнут ходить позже"
+      ],
+      "answer": 0,
+      "explanation": "A patto che qualcuno mi accompagni — обязательное условие. Остальное объясняет его причину.",
+      "id": "it-festival-invitation-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "museum-clue-it",
+  "number": "09",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Часы на старой фотографии",
+  "category": "Истории и обсуждения",
+  "summary": "На двух фотографиях площади разное время. Вместе с Джулией выясни, что скрывается за несовпадением.",
+  "duration": "15–20 минут",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия помогает готовить небольшую музейную выставку."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Неожиданная деталь на выставке",
+  "contextText": "Джулия отбирает снимки старого города. Марко заметил странные часы на одном из них и попросил вас проверить подпись.",
+  "taskTitle": "Проверить версию по источнику",
+  "taskText": "Сравни фотографию, музейный журнал и запись рассказа. Реши, какой вывод можно обоснованно добавить к подписи.",
+  "taskShort": "Факт или догадка?",
+  "skill": "Понимать противопоставление sembra/in realtà и речь о доказательствах.",
+  "phraseLabels": [
+    "Кажется",
+    "На самом деле",
+    "Сравнить"
+  ],
+  "transferIntro": "Марко проверяет другие музейные подписи. Найди, где впечатление сменяется подтверждённой деталью.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Guarda queste due fotografie della piazza. Sembrano scattate nello stesso momento, ma l’orologio del municipio segna ore diverse. In realtà non sappiamo ancora se la data scritta dietro sia corretta. Possiamo confrontarle con il registro del museo oppure ascoltare il ricordo di una vecchia abitante. Marco vorrebbe una didascalia precisa, non una bella leggenda.",
+  "openingRu": "Посмотри на две фотографии площади. Кажется, их сняли в один момент, но часы ратуши показывают разное время. На самом деле мы пока не знаем, верна ли дата на обороте. Можно сравнить их с музейным журналом или послушать воспоминание старой жительницы. Марко хочет точную подпись, а не красивую легенду.",
+  "openingQuestion": {
+    "question": "Что ещё не установлено?",
+    "options": [
+      "Где находится музей",
+      "Правильная ли дата на обороте",
+      "Сколько снимков на столе"
+    ],
+    "answer": 1,
+    "explanation": "Non sappiamo ancora se la data ... sia corretta — пока не знаем, верна ли дата."
+  },
+  "phrases": [
+    {
+      "id": "museum-clue-sembra",
+      "text": "Sembrano scattate nello stesso momento.",
+      "ru": "Кажется, они сняты в один момент.",
+      "part": "sembrano",
+      "why": "Sembrare передаёт впечатление, а не подтверждённый факт.",
+      "sound": "Услышь sembrano в начале: дальше идёт предварительная версия.",
+      "example": "Sembra una porta, ma è uno specchio.",
+      "exampleRu": "Похоже на дверь, но это зеркало."
+    },
+    {
+      "id": "museum-clue-realta",
+      "text": "In realtà non sappiamo ancora la data.",
+      "ru": "На самом деле мы ещё не знаем дату.",
+      "part": "in realtà",
+      "why": "In realtà вводит уточнение, которое может изменить первое впечатление.",
+      "sound": "В realtà ударный последний слог; короткое in легко сливается с ним.",
+      "example": "In realtà il museo apre domani.",
+      "exampleRu": "На самом деле музей откроется завтра."
+    },
+    {
+      "id": "museum-clue-confrontare",
+      "text": "Possiamo confrontarle con il registro.",
+      "ru": "Можем сравнить их с журналом.",
+      "part": "confrontarle con",
+      "why": "Confrontare con — сравнить с. Le в конце заменяет фотографии.",
+      "sound": "Не принимай окончание le за отдельный новый предмет.",
+      "example": "Confrontiamo le due mappe.",
+      "exampleRu": "Давайте сравним две карты."
+    },
+    {
+      "id": "museum-clue-prova",
+      "text": "Abbiamo una prova scritta?",
+      "ru": "Есть письменное подтверждение?",
+      "part": "una prova scritta",
+      "why": "Prova здесь — свидетельство или доказательство, а не экзамен.",
+      "sound": "Связывай prova с прилагательным scritta, чтобы определить значение.",
+      "example": "Questo documento conferma la data.",
+      "exampleRu": "Этот документ подтверждает дату."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Da quale indizio partiamo: il registro, la fotografia ingrandita o la registrazione della signora Ada?",
+      "ru": "С какой зацепки начнём: журнала, увеличенной фотографии или записи синьоры Ады?",
+      "choices": [
+        {
+          "label": "Проверить журнал",
+          "text": "Vediamo prima il registro scritto.",
+          "next": "register"
+        },
+        {
+          "label": "Увеличить снимок",
+          "text": "Vorrei guardare meglio l’orologio.",
+          "next": "zoom"
+        },
+        {
+          "label": "Послушать свидетеля",
+          "text": "Ascoltiamo il ricordo della signora Ada.",
+          "next": "audio"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "register": {
+      "text": "Il registro dice: inaugurazione della fontana, maggio 1954. Ma sul retro della seconda foto c’è scritto 1956.",
+      "ru": "В журнале: открытие фонтана, май 1954 года. Но на обороте второго снимка написано 1956.",
+      "choices": [
+        {
+          "label": "Найти фонтан на снимках",
+          "text": "La fontana è visibile in entrambe?",
+          "next": "fountain"
+        },
+        {
+          "label": "Сначала проверить часы",
+          "text": "Guardiamo anche l’orologio da vicino.",
+          "next": "zoom"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "fountain": {
+      "text": "Solo nella seconda. Nella prima c’è ancora il cantiere. Quindi le foto non possono essere dello stesso giorno.",
+      "ru": "Только на втором. На первом ещё стройка. Значит, снимки не могли быть сделаны в один день.",
+      "choices": [
+        {
+          "label": "Исправить утверждение о дне",
+          "text": "Scriviamo che mostrano due momenti diversi.",
+          "next": "dates-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "zoom": {
+      "text": "Nell’ingrandimento la lancetta lunga sembra mancare. Forse l’orologio era fermo, ma non basta una foto per esserne sicuri.",
+      "ru": "На увеличении будто отсутствует длинная стрелка. Возможно, часы стояли, но одного снимка недостаточно для уверенности.",
+      "choices": [
+        {
+          "label": "Поискать запись о ремонте",
+          "text": "Cerchiamo una nota sui lavori del municipio.",
+          "next": "repair-note"
+        },
+        {
+          "label": "Сверить с рассказом жительницы",
+          "text": "La signora Ada ricorda l’orologio?",
+          "next": "audio"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "repair-note": {
+      "text": "Eccola: nel 1954 il meccanismo è stato riparato per tre settimane. La nota spiega perché l’ora non è affidabile.",
+      "ru": "Вот: в 1954 году механизм ремонтировали три недели. Запись объясняет, почему времени на часах нельзя доверять.",
+      "choices": [
+        {
+          "label": "Добавить подтверждённую деталь",
+          "text": "Citiamo la riparazione nella didascalia.",
+          "next": "clock-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "audio": {
+      "text": "Ada dice: ricordo la festa, ma non l’anno. La piazza era piena e suonavano due bande.",
+      "ru": "Ада говорит: помню праздник, но не год. Площадь была полна, играли два духовых оркестра.",
+      "choices": [
+        {
+          "label": "Отделить воспоминание от датировки",
+          "text": "Il ricordo racconta l’atmosfera, non prova la data.",
+          "next": "witness"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "witness": {
+      "text": "Esatto. Possiamo usare la sua voce accanto alle foto, indicando che è un ricordo personale. La data resta da verificare.",
+      "ru": "Именно. Можно добавить её голос рядом с фотографиями, указав, что это личное воспоминание. Дату ещё предстоит проверить.",
+      "choices": [
+        {
+          "label": "Предложить аудиоподпись",
+          "text": "Usiamo l’audio senza attribuire un anno preciso.",
+          "next": "audio-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "dates-end": {
+      "text": "Marco aggiorna la didascalia: la piazza prima e dopo la nuova fontana. Nessuna data inventata.",
+      "ru": "Марко обновляет подпись: площадь до и после нового фонтана. Никаких выдуманных дат.",
+      "choices": [],
+      "outcome": "dates",
+      "speaker": "Giulia"
+    },
+    "clock-end": {
+      "text": "Il mistero dell’ora ha una spiegazione documentata. Il numero del registro accompagna la nuova didascalia.",
+      "ru": "У загадочного времени есть документальное объяснение. В новой подписи указан номер записи.",
+      "choices": [],
+      "outcome": "clock",
+      "speaker": "Giulia"
+    },
+    "audio-end": {
+      "text": "La voce di Ada entra nella mostra. Racconta la festa, mentre la ricerca sulle date continua.",
+      "ru": "Голос Ады становится частью выставки. Он рассказывает о празднике, пока поиск дат продолжается.",
+      "choices": [],
+      "outcome": "audio",
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "dates": {
+      "title": "До и после фонтана",
+      "body": "Ты сопоставил журнал и видимые детали: снимки относятся к разным моментам, точный день не заявлен."
+    },
+    "clock": {
+      "title": "Часы на ремонте",
+      "body": "В журнале найдено подтверждение ремонта. Показания часов на фотографии нельзя использовать как точное время."
+    },
+    "audio": {
+      "title": "Голос очевидца",
+      "body": "Личное воспоминание сохранено как рассказ об атмосфере. Датировку вы оставили открытой."
+    }
+  },
+  "transfer": [
+    {
+      "text": "La porta sembra antica, ma in realtà è una copia del 1980. L’originale è nel deposito.",
+      "ru": "Дверь выглядит старинной, но на самом деле это копия 1980 года. Оригинал в хранилище.",
+      "question": "Что видит посетитель?",
+      "options": [
+        "Оригинал",
+        "Незаконченную дверь",
+        "Копию"
+      ],
+      "answer": 2,
+      "explanation": "In realtà è una copia исправляет первое впечатление sembra antica.",
+      "id": "it-museum-clue-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Abbiamo confrontato le mappe: il ponte compare soltanto su quella più recente.",
+      "ru": "Мы сравнили карты: мост есть только на более новой.",
+      "question": "На какой карте есть мост?",
+      "options": [
+        "Только на более новой",
+        "На обеих",
+        "Только на старой"
+      ],
+      "answer": 0,
+      "explanation": "Soltanto su quella più recente — только на более новой.",
+      "id": "it-museum-clue-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Mia nonna ricorda il colore del tram, ma non il numero della linea. Questo resta da verificare.",
+      "ru": "Бабушка помнит цвет трамвая, но не номер маршрута. Его ещё нужно проверить.",
+      "question": "Какую деталь ещё проверяют?",
+      "options": [
+        "Цвет трамвая",
+        "Номер маршрута",
+        "Имя бабушки"
+      ],
+      "answer": 1,
+      "explanation": "Non il numero della linea — не номер маршрута; questo resta da verificare относится к нему.",
+      "id": "it-museum-clue-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

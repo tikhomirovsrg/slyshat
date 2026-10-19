@@ -1,0 +1,113 @@
+{
+  "episode": "coffee-01",
+  "level": "A1",
+  "grammar": {
+    "title": "Время и место: at, in, opposite",
+    "explanation": "At используем с точным временем: at six. In — когда человек или предмет внутри места: in the café. Opposite означает «напротив»: два места находятся по разные стороны пространства, например улицы. В коротком сообщении можно назвать время и место отдельными простыми предложениями.",
+    "examples": [
+      {
+        "text": "We meet at six.",
+        "ru": "Мы встречаемся в шесть."
+      },
+      {
+        "text": "The café is opposite the station.",
+        "ru": "Кафе напротив станции."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Кофе после работы",
+    "kind": "рассказ",
+    "text": "Anna works in a small shop. On Tuesday she meets Ben after work. Their café is opposite the station. Anna arrives at six. Ben is at the station, but he cannot see the café. Anna sends him a photo of its red door. Ben comes across the road. They sit by the window and drink coffee. Anna has a train at seven, so they have one hour together."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: о чём этот рассказ?",
+      "answer": "О встрече друзей после работы",
+      "explanation": "Анна и Бен находят друг друга и пьют кофе после работы.",
+      "options": [
+        "О встрече друзей после работы",
+        "О покупке нового телефона",
+        "О работе на вокзале"
+      ],
+      "id": "coffee-01-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что Анна отправляет Бену?",
+      "answer": "Фотографию красной двери",
+      "explanation": "В тексте: Anna sends him a photo of its red door.",
+      "options": [
+        "Номер поезда",
+        "Фотографию красной двери",
+        "Меню кафе"
+      ],
+      "id": "coffee-01-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: зачем Анна отправляет фотографию?",
+      "answer": "Чтобы Бен нашёл кафе",
+      "explanation": "Бен не видит кафе. Фотография входа помогает ему его найти.",
+      "options": [
+        "Чтобы Бен купил дверь",
+        "Чтобы отменить встречу",
+        "Чтобы Бен нашёл кафе"
+      ],
+      "id": "coffee-01-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите предлог: We meet ___ six.",
+      "answer": "at",
+      "explanation": "С точным временем употребляется at.",
+      "options": [
+        "in",
+        "at",
+        "opposite"
+      ],
+      "id": "coffee-01-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "vocabulary",
+      "prompt": "Впишите одно слово: «напротив».",
+      "answer": "opposite",
+      "explanation": "Opposite обозначает положение напротив другого места.",
+      "text": "The café is ___ the station.",
+      "id": "coffee-01-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предложение: «Я в кафе».",
+      "answer": "I am in the café",
+      "explanation": "После I ставим am; in the café сообщает место.",
+      "words": [
+        "café",
+        "am",
+        "the",
+        "I",
+        "in"
+      ],
+      "id": "coffee-01-study-6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите другу сообщение на английском: пригласите его на кофе после работы, назовите день, точное время и место, объясните, где вход. Добавьте, сколько времени вы можете провести вместе. Используйте at с временем и одно выражение места.",
+    "min": 40,
+    "max": 60,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

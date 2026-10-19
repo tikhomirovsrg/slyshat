@@ -1,0 +1,118 @@
+{
+  "episode": "market-en",
+  "level": "A2",
+  "grammar": {
+    "title": "Количество: some, any, enough",
+    "explanation": "Some употребляется в обычных утвердительных предложениях: We have some rice. Any часто используется в отрицаниях и вопросах: We do not have any milk. Enough означает «достаточно» и стоит перед существительным: enough food. С неисчисляемыми продуктами, например milk или rice, не добавляем -s для обозначения количества.",
+    "examples": [
+      {
+        "text": "We have some tomatoes.",
+        "ru": "У нас есть несколько помидоров."
+      },
+      {
+        "text": "We do not have any cheese.",
+        "ru": "У нас нет сыра."
+      },
+      {
+        "text": "Is there enough rice for four people?",
+        "ru": "Хватит ли риса на четверых?"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Ужин из того, что есть",
+    "kind": "рассказ",
+    "text": "Nina plans to cook dinner for four friends. At the market, she cannot find the peppers in her recipe. A seller shows her some mushrooms instead. Nina phones her brother, who likes cooking. He suggests a simple dish with rice, mushrooms and tomatoes. Nina already has rice and tomatoes at home, so she only buys the mushrooms and a lemon. One guest does not eat cheese, so Nina puts a small bowl of cheese on the table, separate from the food. Everyone can choose what to add. After dinner, her friends ask for the recipe. Nina writes it on a card for them."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: что делает Нина?",
+      "answer": "Меняет рецепт и учитывает гостей",
+      "explanation": "Она заменяет отсутствующие перцы и подаёт сыр отдельно.",
+      "options": [
+        "Заказывает ужин в кафе",
+        "Меняет рецепт и учитывает гостей",
+        "Покупает всем разные блюда"
+      ],
+      "id": "market-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что Нина покупает на рынке?",
+      "answer": "Грибы и лимон",
+      "explanation": "В тексте: she only buys the mushrooms and a lemon.",
+      "options": [
+        "Рис и помидоры",
+        "Перцы и сыр",
+        "Грибы и лимон"
+      ],
+      "id": "market-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему сыр стоит отдельно?",
+      "answer": "Так гость может поесть блюдо без сыра",
+      "explanation": "Один гость не ест сыр; отдельная миска позволяет каждому решить, добавлять ли его.",
+      "options": [
+        "Так гость может поесть блюдо без сыра",
+        "Чтобы сыр был главным блюдом",
+        "Потому что дома нет тарелок"
+      ],
+      "id": "market-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите слово: We do not have ___ milk.",
+      "answer": "any",
+      "explanation": "В этом отрицательном предложении употребляется any.",
+      "options": [
+        "some",
+        "any",
+        "a"
+      ],
+      "id": "market-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "vocabulary",
+      "prompt": "Впишите одно английское слово со значением «достаточно».",
+      "answer": "enough",
+      "explanation": "Enough стоит перед существительным food.",
+      "text": "We have ___ food for four people.",
+      "id": "market-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите сообщение о продуктах.",
+      "answer": "We have some rice at home",
+      "explanation": "Some употребляется с неисчисляемым rice в утвердительном предложении.",
+      "words": [
+        "home",
+        "some",
+        "have",
+        "at",
+        "We",
+        "rice"
+      ],
+      "id": "market-en-study-6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите другу, что вы будете готовить на четверых. Назовите продукты, которые уже есть, и те, которые нужно купить. Один гость не ест молочные продукты: объясните, как вы учтёте это. Используйте some, any и enough.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

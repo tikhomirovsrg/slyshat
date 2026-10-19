@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "interview-en",
+  "number": "15",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Вопрос, к которому не готовились",
+  "category": "Работа и созвоны",
+  "summary": "На тренировочном собеседовании важен не красивый ответ, а точное описание собственного вклада.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Твоя коллега и подруга. Спокойно обсуждает трудные решения."
+  },
+  "secondSpeaker": {
+    "id": "Leo",
+    "name": "Лео",
+    "bio": "Коллега Эммы: помогает с проектами и собирает друзей на выходных."
+  },
+  "contextTitle": "Репетиция собеседования",
+  "contextText": "Эмма помогает подготовиться к роли координатора. В учебной ситуации у тебя есть опыт районной ярмарки: ты организовал запись волонтёров, но не управлял бюджетом.",
+  "taskTitle": "Показать опыт без преувеличения",
+  "taskText": "Ответь на вопрос о сложном решении, отдели своё действие от работы команды и уточни требования роли.",
+  "taskShort": "Свой вклад · реальные границы",
+  "skill": "Следить за уточняющими вопросами, противопоставлением роли и результата, косвенным запросом на пример.",
+  "phraseLabels": [
+    "Расскажи по шагам",
+    "За что отвечал",
+    "Если бы пришлось снова"
+  ],
+  "transferIntro": "Лео проводит другую репетицию. Пойми, какой именно пример или уровень ответственности он просит показать.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "Your application says you helped organise a community event. Could you walk me through a decision you personally made when things didn't go to plan? I'm less interested in how successful the event was than in what you noticed, what you changed, and what you'd do differently if you faced the same situation again.",
+  "openingRu": "В заявке сказано, что ты помогал организовать районное мероприятие. Можешь по шагам рассказать о решении, которое лично принял, когда что-то пошло не по плану? Меня меньше интересует общий успех, чем то, что ты заметил, что изменил и что сделал бы иначе в такой же ситуации.",
+  "openingQuestion": {
+    "question": "На чём Эмма просит сосредоточиться?",
+    "options": [
+      "На общей популярности мероприятия",
+      "На личном решении и выводах из опыта",
+      "На полном бюджете ярмарки"
+    ],
+    "answer": 1,
+    "explanation": "Less interested ... than противопоставляет общий успех личному действию, изменению и последующим выводам."
+  },
+  "phrases": [
+    {
+      "id": "walk-through",
+      "text": "Could you walk me through that decision?",
+      "ru": "Можешь по шагам объяснить это решение?",
+      "part": "walk me through",
+      "why": "Walk someone through просит последовательное, понятное объяснение.",
+      "sound": "Me может быть слабым; акценты walk и through держат конструкцию.",
+      "example": "Walk me through what happened first.",
+      "exampleRu": "Расскажи по порядку, что произошло сначала."
+    },
+    {
+      "id": "responsible",
+      "text": "I was responsible for the volunteer rota.",
+      "ru": "Я отвечал за график волонтёров.",
+      "part": "was responsible for",
+      "why": "Так чётко обозначают собственную область ответственности.",
+      "sound": "For связывается со следующим предметом; дослушай конкретную задачу.",
+      "example": "Who was responsible for checking the figures?",
+      "exampleRu": "Кто отвечал за проверку цифр?"
+    },
+    {
+      "id": "differently",
+      "text": "I'd ask earlier if I did it again.",
+      "ru": "Если бы делал это снова, попросил бы раньше.",
+      "part": "if I did it again",
+      "why": "Условная конструкция показывает вывод из прошлого, а не новое обещание.",
+      "sound": "I'd здесь I would; дальше слушай изменение, которое человек предложил бы.",
+      "example": "If I did it again, I'd allow more time.",
+      "exampleRu": "Если бы делал снова, выделил бы больше времени."
+    },
+    {
+      "id": "rather-than",
+      "text": "I changed the rota rather than cancelling the session.",
+      "ru": "Я изменил график вместо отмены занятия.",
+      "part": "rather than",
+      "why": "Rather than сопоставляет выбранное действие и отвергнутую альтернативу.",
+      "sound": "Связка вводит второй вариант; не приписывай человеку оба действия.",
+      "example": "We called directly rather than waiting for an email.",
+      "exampleRu": "Мы позвонили напрямую вместо ожидания письма."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Emma",
+      "text": "Take a moment. Would you like to use the missing volunteer as your example, clarify the kind of decision I mean, or explain where your responsibility stopped?",
+      "ru": "Подумай немного. Возьмёшь пример с отсутствующим волонтёром, уточнишь тип решения или объяснишь границы своей ответственности?",
+      "choices": [
+        {
+          "label": "Дать конкретный пример",
+          "text": "When someone cancelled, I changed the rota so the welcome desk stayed covered.",
+          "next": "example"
+        },
+        {
+          "label": "Уточнить вопрос",
+          "text": "Would a small operational decision be relevant, or do you mean a strategic one?",
+          "next": "clarify"
+        },
+        {
+          "label": "Обозначить свой вклад",
+          "text": "I organised the volunteer rota, but the event lead managed the budget.",
+          "next": "scope"
+        }
+      ]
+    },
+    "example": {
+      "speaker": "Emma",
+      "text": "That's a useful start. What made you change the rota rather than ask the same volunteer to work longer?",
+      "ru": "Хорошее начало. Почему ты изменил график, а не попросил того же волонтёра работать дольше?",
+      "choices": [
+        {
+          "label": "Объяснить ограничение",
+          "text": "They had a fixed leaving time, so I found someone whose later shift could start earlier.",
+          "next": "example-confirm"
+        },
+        {
+          "label": "Честно ограничить вывод",
+          "text": "I should add that the event lead approved the final change.",
+          "next": "scope"
+        }
+      ]
+    },
+    "example-confirm": {
+      "speaker": "Emma",
+      "text": "Good: a constraint, a decision and a reason. What did you learn that would change your planning next time?",
+      "ru": "Хорошо: ограничение, решение и причина. Какой вывод изменил бы твоё планирование в следующий раз?",
+      "choices": [
+        {
+          "label": "Назвать конкретный вывод",
+          "text": "I'd arrange a backup person in advance instead of relying on last-minute cover.",
+          "next": "example-end"
+        }
+      ]
+    },
+    "example-end": {
+      "speaker": "Emma",
+      "text": "That's a credible answer. You haven't claimed to save the whole event; you've shown how you handled one real problem.",
+      "ru": "Это убедительный ответ. Ты не приписал себе спасение всего мероприятия, а показал решение одной реальной проблемы.",
+      "choices": [],
+      "outcome": "example"
+    },
+    "clarify": {
+      "speaker": "Emma",
+      "text": "A small decision is absolutely relevant if you can explain its effect. The size of the budget isn't what I'm assessing here.",
+      "ru": "Небольшое решение вполне подходит, если ты объяснишь его эффект. Здесь я оцениваю не размер бюджета.",
+      "choices": [
+        {
+          "label": "Связать действие с результатом",
+          "text": "I moved the handover earlier, which meant the next volunteer could leave on time.",
+          "next": "clarify-confirm"
+        },
+        {
+          "label": "Уточнить требования самой вакансии",
+          "text": "Would this role also involve managing a budget independently?",
+          "next": "scope"
+        }
+      ]
+    },
+    "clarify-confirm": {
+      "speaker": "Emma",
+      "text": "And how did you know the earlier handover had worked? Try to describe something you checked, not just how you felt.",
+      "ru": "А как ты понял, что ранняя передача смены сработала? Попробуй описать то, что проверил, а не только своё ощущение.",
+      "choices": [
+        {
+          "label": "Показать наблюдаемый результат",
+          "text": "I checked both volunteers had the updated time and confirmed the desk stayed staffed.",
+          "next": "clarify-end"
+        }
+      ]
+    },
+    "clarify-end": {
+      "speaker": "Emma",
+      "text": "Much stronger. Asking what I meant helped you choose an example that actually answered the question.",
+      "ru": "Гораздо сильнее. Уточнив смысл вопроса, ты выбрал пример, который действительно на него отвечает.",
+      "choices": [],
+      "outcome": "clarify"
+    },
+    "scope": {
+      "speaker": "Emma",
+      "text": "Thanks for making that distinction. This role includes tracking spending, but final approval stays with the project manager. What experience could you transfer?",
+      "ru": "Спасибо за уточнение. В этой роли нужно отслеживать расходы, но окончательное согласование остаётся у руководителя проекта. Какой опыт можно перенести?",
+      "choices": [
+        {
+          "label": "Назвать навык без выдуманного опыта",
+          "text": "I haven't owned a budget, but I'm used to checking shared records and flagging gaps.",
+          "next": "scope-confirm"
+        }
+      ]
+    },
+    "scope-confirm": {
+      "speaker": "Emma",
+      "text": "That's honest and relevant. You could explain how you'd learn the budget process, rather than presenting it as something you already know.",
+      "ru": "Честно и по делу. Можно объяснить, как ты освоишь процесс работы с бюджетом, а не представлять его уже знакомым.",
+      "choices": [
+        {
+          "label": "Предложить путь освоения",
+          "text": "I'd ask to review a previous budget with the manager and check the approval rules first.",
+          "next": "scope-end"
+        }
+      ]
+    },
+    "scope-end": {
+      "speaker": "Emma",
+      "text": "That gives the interviewer a clear picture: the experience you have, the gap you recognise, and a practical way to close it.",
+      "ru": "Это даёт интервьюеру ясную картину: твой опыт, осознаваемый пробел и практический способ его восполнить.",
+      "choices": [],
+      "outcome": "scope"
+    }
+  },
+  "outcomes": {
+    "example": {
+      "title": "Решение с причиной и выводом",
+      "body": "Ты объяснил изменение графика, уважение к чужому времени и план заранее назначать подмену."
+    },
+    "clarify": {
+      "title": "Уточнение усилило ответ",
+      "body": "Ты выяснил масштаб вопроса и описал наблюдаемый результат: подтверждённую передачу смены без пустой стойки."
+    },
+    "scope": {
+      "title": "Честные границы опыта",
+      "body": "Ты отделил график волонтёров от бюджета и предложил конкретный способ освоить новую обязанность."
+    }
+  },
+  "transfer": [
+    {
+      "id": "interview-conflict",
+      "speaker": "Leo",
+      "text": "When I ask about disagreement, I don't need an example where you won. I'd like to understand how you reached a workable decision together.",
+      "ru": "Когда я спрашиваю о разногласии, мне не нужен пример твоей победы. Хочу понять, как вы вместе пришли к рабочему решению.",
+      "question": "Какой аспект нужен интервьюеру?",
+      "options": [
+        "Как доказали ошибку коллеги",
+        "Сколько длился спор",
+        "Как совместно пришли к решению"
+      ],
+      "answer": 2,
+      "explanation": "Don't need ... won исключает победу; reached ... together выделяет совместный процесс."
+    },
+    {
+      "id": "interview-ownership",
+      "speaker": "Leo",
+      "text": "You said the team improved response times. Which part of that change were you responsible for personally?",
+      "ru": "Ты сказал, что команда сократила время ответа. За какую часть изменения ты отвечал лично?",
+      "question": "Что нужно уточнить в ответе?",
+      "options": [
+        "Собственный вклад",
+        "Число всех клиентов",
+        "Историю компании"
+      ],
+      "answer": 0,
+      "explanation": "Responsible for personally — запрос на личную ответственность внутри командного результата."
+    },
+    {
+      "id": "interview-hindsight",
+      "speaker": "Leo",
+      "text": "Looking back, would you still choose the same supplier, or did the delays reveal something you hadn't checked at the time?",
+      "ru": "Оглядываясь назад, ты всё ещё выбрал бы того же поставщика или задержки показали то, что тогда не проверили?",
+      "question": "О чём спрашивает Лео?",
+      "options": [
+        "Когда назначена встреча",
+        "Что прошлый опыт изменил бы в решении",
+        "Как оплатить уже выставленный счёт"
+      ],
+      "answer": 1,
+      "explanation": "Looking back и would you still choose предлагают переоценить прошлое решение с новым знанием."
+    }
+  ]
+}

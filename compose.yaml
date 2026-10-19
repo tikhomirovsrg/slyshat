@@ -1,0 +1,51 @@
+name: slyshat
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    init: true
+    environment:
+      APP_URL: ${APP_URL:-http://localhost:3000}
+      YANDEX_CLIENT_ID: ${YANDEX_CLIENT_ID:-}
+      YANDEX_CLIENT_SECRET: ${YANDEX_CLIENT_SECRET:-}
+      YANDEX_ALLOWED_LOGINS: ${YANDEX_ALLOWED_LOGINS:-}
+      DATABASE_PATH: /data/slyshat.sqlite
+    ports:
+      - "127.0.0.1:${LOCAL_PORT:-3000}:3000"
+    volumes:
+      - progress_data:/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+  caddy:
+    image: caddy:2-alpine
+    profiles: [https]
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      APP_URL: ${APP_URL:-http://localhost:3000}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+volumes:
+  progress_data:
+  caddy_data:
+  caddy_config:

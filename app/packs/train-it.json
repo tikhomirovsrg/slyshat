@@ -1,0 +1,115 @@
+{
+  "episode": "train-it",
+  "level": "A2",
+  "grammar": {
+    "title": "Ближайшие планы: настоящее время и dovere",
+    "explanation": "Настоящее время может описывать запланированное будущее, если время понятно: Domani parto. Dovere + инфинитив выражает необходимость: devo cambiare, dobbiamo aspettare. После модального глагола основной глагол остаётся в инфинитиве. Prima и poi помогают изложить порядок действий.",
+    "examples": [
+      {
+        "text": "Domani prendiamo il regionale.",
+        "ru": "Завтра мы едем на региональном поезде."
+      },
+      {
+        "text": "Dobbiamo cambiare a Pisa.",
+        "ru": "Нам нужно пересесть в Пизе."
+      },
+      {
+        "text": "Prima compro il biglietto, poi parto.",
+        "ru": "Сначала я покупаю билет, затем отправляюсь."
+      }
+    ]
+  },
+  "reading": {
+    "title": "План поездки на выходной",
+    "kind": "рассказ",
+    "text": "Domenica Elena vuole visitare sua sorella a Lucca. Di solito viaggia in macchina, ma questa volta sceglie il treno. Sabato controlla gli orari e scopre che deve cambiare a Pisa. Il viaggio costa meno in treno e lei può leggere. Compra il biglietto online e lo salva anche sul telefono. La partenza è alle nove, però Elena vuole arrivare in stazione mezz’ora prima. Sua sorella la aspetta davanti alla stazione di Lucca. Hanno un programma semplice: prima fanno una passeggiata sulle mura, poi pranzano insieme. Elena porta una giacca perché la sera può fare fresco. Per il ritorno sceglie un treno dopo cena: così hanno tutto il pomeriggio per parlare."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте dovere в форме noi.",
+      "answer": "dobbiamo",
+      "explanation": "Форма dovere для noi — dobbiamo; после неё стоит инфинитив cambiare.",
+      "text": "Noi ___ cambiare a Pisa.",
+      "id": "train-it-q1"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предложение о завтрашнем плане.",
+      "answer": "Domani prendiamo il treno.",
+      "explanation": "Domani показывает будущее; настоящее prendiamo обозначает план.",
+      "words": [
+        "il",
+        "Domani",
+        "treno.",
+        "prendiamo"
+      ],
+      "id": "train-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что значит cambiare treno?",
+      "answer": "Prendere un altro treno durante il viaggio.",
+      "explanation": "Cambiare treno — пересесть на другой поезд.",
+      "options": [
+        "Prendere un altro treno durante il viaggio.",
+        "Comprare una macchina nuova.",
+        "Restare nella stessa città."
+      ],
+      "id": "train-it-q3"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Для чего Елена готовит этот план?",
+      "answer": "Per andare a trovare sua sorella.",
+      "explanation": "В начале сказано, что Елена хочет навестить сестру в Лукке.",
+      "options": [
+        "Per andare a trovare sua sorella.",
+        "Per cercare un nuovo lavoro.",
+        "Per accompagnare un gruppo di turisti."
+      ],
+      "id": "train-it-q4"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Во сколько Елена хочет быть на вокзале?",
+      "answer": "Alle otto e mezza.",
+      "explanation": "Отправление в девять; она хочет прийти за полчаса.",
+      "options": [
+        "Alle otto e mezza.",
+        "Alle nove e mezza.",
+        "Alle dieci."
+      ],
+      "id": "train-it-q5"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему Елена выбирает обратный поезд после ужина?",
+      "answer": "Vuole passare più tempo con sua sorella.",
+      "explanation": "Поздний поезд оставляет им весь день для общения; других ограничений в тексте нет.",
+      "options": [
+        "Vuole passare più tempo con sua sorella.",
+        "Non esistono treni prima di cena.",
+        "Deve lavorare a Lucca la sera."
+      ],
+      "id": "train-it-q6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите сестре план поездки на выходной: транспорт, время прибытия, необходимую пересадку и два совместных занятия. Уточните время возвращения.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Названы маршрут, время и два занятия.",
+      "Использованы настоящее время для плана и dovere + инфинитив.",
+      "Порядок действий обозначен словами prima и poi.",
+      "Есть приветствие, связный план и завершающий вопрос."
+    ]
+  }
+}

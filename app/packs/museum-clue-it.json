@@ -1,0 +1,148 @@
+{
+  "episode": "museum-clue-it",
+  "level": "B1",
+  "grammar": {
+    "title": "Imperfetto и passato prossimo: фон и событие",
+    "explanation": "Imperfetto описывает фон, привычку или процесс в прошлом: pioveva, il museo era chiuso. Passato prossimo выделяет завершённое событие: abbiamo trovato una data. В сочетании mentre + imperfetto процесс служит фоном для события: mentre leggevo, ho notato un dettaglio. Выбор времени зависит от того, как рассказчик представляет действие.",
+    "examples": [
+      {
+        "text": "Mentre osservavo la foto, ho notato una firma.",
+        "ru": "Пока я рассматривал фотографию, я заметил подпись."
+      },
+      {
+        "text": "La piazza era vuota quando è arrivato il fotografo.",
+        "ru": "Площадь была пустой, когда пришёл фотограф."
+      },
+      {
+        "text": "Da bambina visitavo spesso quel museo.",
+        "ru": "В детстве я часто посещала этот музей."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Дата на открытке",
+    "kind": "рассказ",
+    "text": "Quando il piccolo museo di Marina ha ricevuto una scatola di cartoline, nessuno conosceva la loro provenienza. La volontaria Elisa stava preparando una mostra sulla vita quotidiana del paese e ha deciso di esaminarle. Una cartolina mostrava la piazza durante una festa. Sul retro c’era una data, ma il nome della persona che l’aveva scritta non era leggibile. All’inizio Elisa pensava che la fotografia fosse dello stesso anno del messaggio. Poi ha notato un negozio che, secondo un vecchio registro, aveva chiuso diversi anni prima. Ha confrontato l’immagine con altre fotografie e ha chiesto informazioni a due abitanti. Entrambi ricordavano il negozio, però indicavano anni diversi per la chiusura. Elisa non ha scelto il ricordo che sembrava più convincente. Ha cercato un documento ulteriore nell’archivio comunale e ha trovato un annuncio di trasferimento. Il negozio non aveva chiuso: si era spostato in un’altra strada. Questo spiegava una parte del problema, ma non permetteva di stabilire il giorno esatto della foto. Per la mostra Elisa ha scritto una didascalia prudente. Ha indicato un intervallo di anni e ha distinto la data della fotografia da quella del messaggio. Accanto alla cartolina ha messo una breve nota sul lavoro di ricerca. I visitatori potevano così capire anche come nasceva l’interpretazione."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте imperfetto глагола osservare для io.",
+      "answer": "osservavo",
+      "explanation": "Осматривание — длительный фон для завершённого события ho notato.",
+      "text": "Mentre ___ la cartolina, ho notato il negozio.",
+      "id": "museum-clue-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте причастие trovare.",
+      "answer": "trovato",
+      "explanation": "Ha trovato — завершённое обнаружение документа.",
+      "text": "Elisa ha ___ un annuncio nell’archivio.",
+      "id": "museum-clue-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Какое время лучше передаёт привычку в детстве?",
+      "answer": "Da bambina visitavo spesso il museo.",
+      "explanation": "Для повторяющейся привычки в прошлом здесь нужен imperfetto.",
+      "options": [
+        "Da bambina visitavo spesso il museo.",
+        "Da bambina visiterò spesso il museo.",
+        "Da bambina visito domani il museo."
+      ],
+      "id": "museum-clue-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что такое una didascalia в музее?",
+      "answer": "Un breve testo che accompagna un oggetto.",
+      "explanation": "Didascalia — подпись, поясняющая экспонат.",
+      "options": [
+        "Un breve testo che accompagna un oggetto.",
+        "Il biglietto per entrare nel museo.",
+        "Una persona che restaura i quadri."
+      ],
+      "id": "museum-clue-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите фразу с фоном и событием.",
+      "answer": "Mentre leggevo, ho notato una data.",
+      "explanation": "Imperfetto leggevo — процесс; passato prossimo ho notato — событие.",
+      "words": [
+        "leggevo,",
+        "una",
+        "Mentre",
+        "ho",
+        "data.",
+        "notato"
+      ],
+      "id": "museum-clue-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Замените oggi на ieri и поставьте piovere в imperfetto; напишите всё предложение.",
+      "answer": "Ieri pioveva.",
+      "explanation": "Imperfetto pioveva описывает погоду как фон в прошлом.",
+      "text": "Oggi piove.",
+      "id": "museum-clue-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какую мысль прежде всего передаёт текст?",
+      "answer": "Una ricerca accurata può portare a una datazione prudente.",
+      "explanation": "Элиза проверяет несколько источников и честно указывает диапазон вместо точной даты.",
+      "options": [
+        "Una ricerca accurata può portare a una datazione prudente.",
+        "Il ricordo più sicuro è sempre quello più preciso.",
+        "Le cartoline non possono essere esposte nei musei."
+      ],
+      "id": "museum-clue-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что выяснилось из найденного объявления?",
+      "answer": "Il negozio si era trasferito.",
+      "explanation": "Объявление сообщало о переезде магазина, а не о закрытии.",
+      "options": [
+        "Il negozio si era trasferito.",
+        "La cartolina era stata distrutta.",
+        "La festa non era mai avvenuta."
+      ],
+      "id": "museum-clue-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Зачем рядом с открыткой появилась заметка об исследовании?",
+      "answer": "Per rendere comprensibile il percorso dell’interpretazione.",
+      "explanation": "Заметка помогает посетителям понять, на чём основана подпись и почему она осторожна.",
+      "options": [
+        "Per rendere comprensibile il percorso dell’interpretazione.",
+        "Per dimostrare che gli abitanti mentivano.",
+        "Per sostituire del tutto la fotografia."
+      ],
+      "id": "museum-clue-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите заметку для небольшого музея: вы нашли старую фотографию с сомнительной датой. Опишите, что было видно, какую деталь вы заметили и как проверили предположение.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Различены наблюдение, предположение и подтверждение.",
+      "Imperfetto использован для фона, passato prossimo — для событий.",
+      "Есть не менее двух деталей и логическая связь между ними.",
+      "Вывод не утверждает больше, чем позволяют описанные данные."
+    ]
+  }
+}

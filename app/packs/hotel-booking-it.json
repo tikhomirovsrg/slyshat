@@ -1,0 +1,112 @@
+{
+  "episode": "hotel-booking-it",
+  "level": "A2",
+  "grammar": {
+    "title": "Сравнение вариантов: più… di, meno… di",
+    "explanation": "Для сравнения двух предметов употребляйте più или meno + прилагательное + di: questa camera è più silenziosa dell’altra. Di соединяется с артиклем: di + la = della, di + l’ = dell’. Прилагательное согласуется с тем, что описывает: una camera più tranquilla, due camere più tranquille.",
+    "examples": [
+      {
+        "text": "La camera sul cortile è più tranquilla di quella sulla strada.",
+        "ru": "Комната во двор тише комнаты на улицу."
+      },
+      {
+        "text": "Questo albergo è meno caro dell’altro.",
+        "ru": "Этот отель дешевле другого."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Тихая комната для раннего утра",
+    "kind": "рассказ",
+    "text": "Marta deve partecipare a un corso di fotografia che comincia sabato alle otto. Cerca un albergo per venerdì notte e trova due possibilità. Il primo è vicino alla scuola, ma si trova sopra un locale con musica dal vivo. Il secondo è più lontano e costa dieci euro in più. Marta telefona al secondo albergo per chiedere informazioni. La receptionist spiega che la colazione comincia alle sette e che l’autobus per la scuola passa davanti all’ingresso. Marta prenota una camera in questo albergo. Prepara lo zaino prima di dormire e mette la sveglia alle sei e mezza. Vuole arrivare al corso riposata, senza cercare un bar aperto all’ultimo momento."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Дополните прилагательным tranquillo в нужной форме.",
+      "answer": "tranquilla",
+      "explanation": "Camera — женский род единственного числа: tranquilla.",
+      "text": "Questa camera è più ___ dell’altra.",
+      "id": "hotel-booking-it-q1"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите сравнение.",
+      "answer": "Questo albergo è più caro.",
+      "explanation": "Più перед прилагательным образует сравнительную степень.",
+      "words": [
+        "più",
+        "Questo",
+        "caro.",
+        "è",
+        "albergo"
+      ],
+      "id": "hotel-booking-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает prenotare una camera?",
+      "answer": "Riservare una camera prima di arrivare.",
+      "explanation": "Prenotare — заранее забронировать.",
+      "options": [
+        "Riservare una camera prima di arrivare.",
+        "Pulire una camera dopo il viaggio.",
+        "Cambiare le finestre di una camera."
+      ],
+      "id": "hotel-booking-it-q3"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что главным образом делает Марта?",
+      "answer": "Sceglie un albergo adatto al suo corso.",
+      "explanation": "Она выбирает жильё с учётом раннего начала курса.",
+      "options": [
+        "Sceglie un albergo adatto al suo corso.",
+        "Organizza un concerto in albergo.",
+        "Cerca una scuola più economica."
+      ],
+      "id": "hotel-booking-it-q4"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Во сколько начинается завтрак во втором отеле?",
+      "answer": "Alle sette.",
+      "explanation": "В шесть тридцать Марта встаёт, в семь начинается завтрак, в восемь — курс.",
+      "options": [
+        "Alle sette.",
+        "Alle sei e mezza.",
+        "Alle otto."
+      ],
+      "id": "hotel-booking-it-q5"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему первый отель может не подойти Марте?",
+      "answer": "La musica può disturbare il suo riposo.",
+      "explanation": "Он расположен над заведением с живой музыкой, а Марта хочет отдохнуть.",
+      "options": [
+        "La musica può disturbare il suo riposo.",
+        "È troppo lontano dalla scuola.",
+        "Non accetta prenotazioni per venerdì."
+      ],
+      "id": "hotel-booking-it-q6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите сообщение другу: сравните два отеля для раннего курса или встречи. Укажите цену, расстояние, завтрак и причину своего выбора.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Сравнены два конкретных варианта и объяснён выбор.",
+      "Есть минимум два сравнения с più/meno.",
+      "Прилагательные согласованы со словами camera/albergo.",
+      "Сначала описаны варианты, затем сформулировано решение."
+    ]
+  }
+}

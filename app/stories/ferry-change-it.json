@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "ferry-change-it",
+  "number": "14",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Паром, который не выйдет в море",
+  "category": "Поездки",
+  "summary": "Ветер отменил рейс. В предложениях перевозчика есть условия: выбери, что важнее — остров, срок или возврат.",
+  "duration": "15–20 минут",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Марко путешествует с тобой на островную выставку."
+  },
+  "secondSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "У причала в ветреное утро",
+  "contextText": "Вы с Марко собирались на остров к открытию выставки в 16:00. Есть автобус к дальнему порту, поздний рейс и возможность отказаться.",
+  "taskTitle": "Выбрать план с понятными рисками",
+  "taskText": "Проверь условие пересадки и возврата. Раздели подтверждённый факт, прогноз и обещание перевозчика.",
+  "taskShort": "Открытие в 16:00 · план зависит от ветра",
+  "skill": "Понимать условные предложения, оговорки и степень гарантии.",
+  "phraseLabels": [
+    "При условии",
+    "Не гарантировано",
+    "Вместо возврата"
+  ],
+  "transferIntro": "Джулия описывает другие сбои в поездке. Отличай действующее решение от гипотетического условия.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Il traghetto delle undici è stato cancellato per il vento. Ci offrirebbero un autobus fino al porto sud, purché partissimo entro mezzogiorno. Da lì la traversata dovrebbe essere possibile, ma nessuno garantisce l’arrivo prima delle quattro. In alternativa possiamo aspettare il servizio serale oppure chiedere il rimborso, invece di accettare un buono da usare entro un mese.",
+  "openingRu": "Паром в одиннадцать отменён из-за ветра. Нам предложили бы автобус до южного порта, при условии выезда до полудня. Оттуда переправа, предположительно, возможна, но никто не гарантирует прибытия до четырёх. Можно подождать вечернего рейса или запросить возврат денег вместо ваучера, который надо использовать за месяц.",
+  "openingQuestion": {
+    "question": "Что перевозчик не гарантирует при поездке через южный порт?",
+    "options": [
+      "Наличие автобуса вообще",
+      "Возврат за отменённый рейс",
+      "Прибытие к 16:00"
+    ],
+    "answer": 2,
+    "explanation": "Nessuno garantisce l’arrivo prima delle quattro — никто не гарантирует прибытие до четырёх. Dovrebbe обозначает ожидание, а не обещание."
+  },
+  "phrases": [
+    {
+      "id": "ferry-change-purche",
+      "text": "Purché partissimo entro mezzogiorno.",
+      "ru": "При условии, что мы выехали бы до полудня.",
+      "part": "purché partissimo",
+      "why": "Purché вводит обязательное условие; после него используется congiuntivo.",
+      "sound": "У purché ударный последний слог; за ним ищи ограничение, не дополнительный бонус.",
+      "example": "Possiamo entrare, purché abbiamo la prenotazione.",
+      "exampleRu": "Можем войти при условии, что есть бронь."
+    },
+    {
+      "id": "ferry-change-garantisce",
+      "text": "Nessuno garantisce l’arrivo prima delle quattro.",
+      "ru": "Никто не гарантирует прибытие до четырёх.",
+      "part": "nessuno garantisce",
+      "why": "Отсутствие гарантии не означает, что опоздание неизбежно.",
+      "sound": "Сначала выдели nessuno: оно меняет статус последующего обещания.",
+      "example": "Il posto è confermato, l’orario no.",
+      "exampleRu": "Место подтверждено, время — нет."
+    },
+    {
+      "id": "ferry-change-invece",
+      "text": "Il rimborso invece di un buono.",
+      "ru": "Возврат денег вместо ваучера.",
+      "part": "invece di",
+      "why": "Invece di противопоставляет два разных вида компенсации.",
+      "sound": "Держи в памяти обе стороны: rimborso и buono, а не только последнее слово.",
+      "example": "Preferisco cambiare data invece di annullare.",
+      "exampleRu": "Предпочту изменить дату вместо отмены."
+    },
+    {
+      "id": "ferry-change-dovrebbe",
+      "text": "La traversata dovrebbe essere possibile.",
+      "ru": "Переправа, предположительно, будет возможна.",
+      "part": "dovrebbe",
+      "why": "Condizionale здесь передаёт прогноз с неопределённостью.",
+      "sound": "Окончание ebbe отличает прогноз от категоричного deve.",
+      "example": "Il vento dovrebbe calare nel pomeriggio.",
+      "exampleRu": "Во второй половине дня ветер, как ожидается, ослабеет."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Se arrivare all’apertura fosse indispensabile, nessuna proposta sarebbe sicura. Tu preferisci salvare la visita o evitare altra attesa?",
+      "ru": "Если бы было обязательно попасть к открытию, ни один вариант не был бы надёжен. Ты предпочитаешь сохранить визит или избежать нового ожидания?",
+      "choices": [
+        {
+          "label": "Проверить южный маршрут",
+          "text": "La visita mi interessa anche se arrivassimo tardi. Vediamo il porto sud.",
+          "next": "south"
+        },
+        {
+          "label": "Рассмотреть вечерний рейс",
+          "text": "Potrei aspettare, purché il posto fosse confermato.",
+          "next": "evening"
+        },
+        {
+          "label": "Выбрать отказ от поездки",
+          "text": "Senza un orario affidabile preferisco il rimborso.",
+          "next": "refund"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "south": {
+      "text": "L’autobus è incluso e parte alle undici e quaranta. Il traghetto dal sud ha posti, ma la decisione finale spetta al capitano.",
+      "ru": "Автобус включён и отправляется в 11:40. На пароме с юга есть места, но окончательное решение принимает капитан.",
+      "choices": [
+        {
+          "label": "Уточнить последствие повторной отмены",
+          "text": "Se anche quel traghetto fosse cancellato, come torneremmo?",
+          "next": "south-check"
+        },
+        {
+          "label": "Не принимать неопределённость",
+          "text": "Non voglio restare al porto sud. Chiedo il rimborso.",
+          "next": "refund"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "south-check": {
+      "text": "La compagnia garantisce l’autobus di ritorno qui, non una camera sull’isola. La mostra resterà aperta fino alle nove.",
+      "ru": "Компания гарантирует обратный автобус сюда, но не номер на острове. Выставка будет открыта до девяти.",
+      "choices": [
+        {
+          "label": "Принять маршрут с запасным возвращением",
+          "text": "Va bene: tentiamo la visita, sapendo come rientrare.",
+          "next": "south-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "evening": {
+      "text": "Il posto delle sei è prenotabile, ma la partenza dipenderà dal meteo. Il biglietto resterebbe valido anche domattina.",
+      "ru": "Место на шесть можно забронировать, но отправление будет зависеть от погоды. Билет останется действительным и завтра утром.",
+      "choices": [
+        {
+          "label": "Уточнить возможность ночёвки",
+          "text": "Potremmo spostare anche l’albergo a domani?",
+          "next": "evening-check"
+        },
+        {
+          "label": "Отказаться от ожидания",
+          "text": "Preferisco non impegnare un’altra giornata.",
+          "next": "refund"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "evening-check": {
+      "text": "L’albergo accetta il cambio senza supplemento. Se partissimo domani, perderemmo l’apertura, ma vedremmo comunque tutta la mostra.",
+      "ru": "Гостиница согласна на перенос без доплаты. Если отправимся завтра, пропустим открытие, но всё равно увидим всю выставку.",
+      "choices": [
+        {
+          "label": "Согласовать гибкий план",
+          "text": "Teniamo il posto serale e l’alternativa di domani.",
+          "next": "evening-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "refund": {
+      "text": "Allo sportello propongono prima un buono. Devi specificare che vuoi riavere il denaro sul metodo di pagamento originale.",
+      "ru": "В кассе сначала предлагают ваучер. Нужно уточнить, что хочешь деньги на исходный способ оплаты.",
+      "choices": [
+        {
+          "label": "Сформулировать запрос",
+          "text": "Vorrei il rimborso, non un buono: non so se tornerò entro un mese.",
+          "next": "refund-check"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "refund-check": {
+      "text": "Hanno accettato la richiesta. L’accredito richiede alcuni giorni; ci danno subito la ricevuta con il numero della pratica.",
+      "ru": "Запрос приняли. Зачисление займёт несколько дней; сейчас дадут квитанцию с номером обращения.",
+      "choices": [
+        {
+          "label": "Забрать подтверждение",
+          "text": "Conserviamo la ricevuta e organizziamo una giornata in città.",
+          "next": "refund-end"
+        }
+      ],
+      "speaker": "Marco"
+    },
+    "south-end": {
+      "text": "Saliamo sull’autobus conoscendo sia l’opportunità sia il limite: proviamo a raggiungere l’isola, senza contare sull’apertura.",
+      "ru": "Садимся в автобус, понимая возможности и ограничения: пытаемся попасть на остров, не рассчитывая на открытие.",
+      "choices": [],
+      "outcome": "south",
+      "speaker": "Marco"
+    },
+    "evening-end": {
+      "text": "La prenotazione resta flessibile. Abbiamo rinunciato all’inaugurazione, non alla mostra.",
+      "ru": "Бронь остаётся гибкой. Мы отказались от открытия, но не от выставки.",
+      "choices": [],
+      "outcome": "evening",
+      "speaker": "Marco"
+    },
+    "refund-end": {
+      "text": "La pratica di rimborso è avviata. La giornata cambia destinazione e non dipende più da una partenza incerta.",
+      "ru": "Возврат оформлен. У дня новое направление, и он больше не зависит от неопределённого рейса.",
+      "choices": [],
+      "outcome": "refund",
+      "speaker": "Marco"
+    }
+  },
+  "outcomes": {
+    "south": {
+      "title": "Попытка с запасным возвращением",
+      "body": "Ты выбрал включённый автобус в 11:40 и проверил, как вернуться при повторной отмене. Прибытие к открытию не гарантировано."
+    },
+    "evening": {
+      "title": "Выставка важнее открытия",
+      "body": "У вас место на вечер с альтернативой завтра и перенос гостиницы без доплаты."
+    },
+    "refund": {
+      "title": "День на материке",
+      "body": "Ты запросил денежный возврат вместо ваучера и получил номер обращения. Зачисление ожидается позже."
+    }
+  },
+  "transfer": [
+    {
+      "text": "La strada dovrebbe riaprire alle cinque, salvo ulteriori controlli. Il percorso alternativo è già transitabile.",
+      "ru": "Дорога, предположительно, откроется в пять, если не понадобятся новые проверки. Объезд уже доступен.",
+      "question": "Какой вариант подтверждён сейчас?",
+      "options": [
+        "Доступный объезд",
+        "Открытие основной дороги ровно в пять",
+        "Полное отсутствие проверок"
+      ],
+      "answer": 0,
+      "explanation": "Già transitabile — уже проезжаем. Dovrebbe и salvo делают время открытия условным.",
+      "id": "it-ferry-change-transfer-1",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Il cambio è gratuito purché venga richiesto oggi. Domani sarebbe ancora possibile, ma con una differenza di tariffa.",
+      "ru": "Изменение бесплатно при условии запроса сегодня. Завтра оно тоже возможно, но с разницей в тарифе.",
+      "question": "Что произойдёт при обращении завтра?",
+      "options": [
+        "Изменение невозможно",
+        "Возможно изменение с доплатой",
+        "Гарантирован бесплатный обмен"
+      ],
+      "answer": 1,
+      "explanation": "Ancora possibile сохраняет возможность; ma con una differenza di tariffa добавляет платёж.",
+      "id": "it-ferry-change-transfer-2",
+      "speaker": "Giulia"
+    },
+    {
+      "text": "Accetterei un buono se sapessi già quando tornare. Dato che non lo so, preferisco recuperare la somma.",
+      "ru": "Я приняла бы ваучер, если бы уже знала, когда вернусь. Поскольку не знаю, предпочитаю получить сумму обратно.",
+      "question": "Чего хочет говорящая в реальности?",
+      "options": [
+        "Ваучер на определённую дату",
+        "Новый билет без даты",
+        "Денежный возврат"
+      ],
+      "answer": 2,
+      "explanation": "Условие se sapessi не выполнено; действительное решение — recuperare la somma.",
+      "id": "it-ferry-change-transfer-3",
+      "speaker": "Giulia"
+    }
+  ]
+}

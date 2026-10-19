@@ -1,0 +1,117 @@
+{
+  "episode": "book-club-it",
+  "level": "A2",
+  "grammar": {
+    "title": "Выражение мнения: secondo me и piacere",
+    "explanation": "Secondo me вводит личное мнение: secondo me il libro è interessante. У piacere форма зависит от того, что нравится: mi piace il racconto, mi piacciono i racconti. С инфинитивом ставится piace: mi piace leggere. Для простой причины используйте perché.",
+    "examples": [
+      {
+        "text": "Mi piace leggere la sera.",
+        "ru": "Мне нравится читать вечером."
+      },
+      {
+        "text": "Mi piacciono i personaggi.",
+        "ru": "Мне нравятся персонажи."
+      },
+      {
+        "text": "Secondo me il finale è sorprendente.",
+        "ru": "По-моему, финал неожиданный."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Письмо участнице книжного клуба",
+    "kind": "письмо",
+    "text": "Cara Sofia, ieri sono stata per la prima volta al gruppo di lettura della biblioteca. Eravamo in sette e non tutti avevano finito il libro. La responsabile ha proposto di parlare soltanto dei primi capitoli. Abbiamo descritto il personaggio principale e scelto una frase interessante. A me è piaciuta molto un’immagine del giardino, perché mi ha ricordato la casa dei nonni. Non ho parlato subito: prima ho ascoltato gli altri. Poi una signora mi ha chiesto la mia opinione e mi sono sentita più tranquilla. Il prossimo incontro è fra due settimane. Vuoi venire con me? Puoi partecipare anche se leggi lentamente. Nessuno ti chiede di raccontare tutto il libro. Un abbraccio, Eva."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Выберите форму piacere для множественного числа.",
+      "answer": "piacciono",
+      "explanation": "Грамматическое подлежащее i personaggi стоит во множественном числе, поэтому piacciono.",
+      "text": "Mi ___ i personaggi del libro.",
+      "id": "book-club-it-q1"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите выражение мнения.",
+      "answer": "Secondo me il libro è interessante.",
+      "explanation": "Secondo me означает «по-моему» и вводит личное мнение.",
+      "words": [
+        "il",
+        "me",
+        "libro",
+        "Secondo",
+        "interessante.",
+        "è"
+      ],
+      "id": "book-club-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает il prossimo incontro?",
+      "answer": "L’incontro che viene dopo questo.",
+      "explanation": "Prossimo здесь — следующий.",
+      "options": [
+        "L’incontro che viene dopo questo.",
+        "L’incontro già finito ieri.",
+        "Il primo capitolo del libro."
+      ],
+      "id": "book-club-it-q3"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Зачем Ева пишет Софии?",
+      "answer": "Per raccontare l’incontro e invitarla al gruppo.",
+      "explanation": "Ева делится опытом и прямо приглашает Софию.",
+      "options": [
+        "Per raccontare l’incontro e invitarla al gruppo.",
+        "Per chiedere di restituire un libro.",
+        "Per annunciare la chiusura della biblioteca."
+      ],
+      "id": "book-club-it-q4"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что напомнило Еве дом бабушки и дедушки?",
+      "answer": "Un’immagine del giardino.",
+      "explanation": "Образ сада вызвал воспоминание о доме бабушки и дедушки.",
+      "options": [
+        "Un’immagine del giardino.",
+        "Il nome della responsabile.",
+        "Una frase sulla scuola."
+      ],
+      "id": "book-club-it-q5"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему Софии не нужно дочитывать книгу перед первым посещением?",
+      "answer": "Il gruppo permette di partecipare anche a chi non ha finito.",
+      "explanation": "Обсуждение ограничили первыми главами, и Ева подчёркивает, что читать можно медленно.",
+      "options": [
+        "Il gruppo permette di partecipare anche a chi non ha finito.",
+        "Il gruppo non parla mai di libri.",
+        "Eva racconterà sempre il finale a tutti."
+      ],
+      "id": "book-club-it-q6"
+    }
+  ],
+  "writing": {
+    "prompt": "Ответьте Еве: согласитесь прийти в клуб или предложите другой день, назовите любимый жанр и объясните, что вам нравится в чтении.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Есть ответ на приглашение и краткое объяснение.",
+      "Правильно использованы mi piace и/или mi piacciono.",
+      "Мнение введено secondo me, причина — perché.",
+      "Соблюдены форма личного письма и понятный порядок мыслей."
+    ]
+  }
+}

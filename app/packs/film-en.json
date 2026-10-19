@@ -1,0 +1,153 @@
+{
+  "episode": "film-en",
+  "level": "B1",
+  "grammar": {
+    "title": "Would rather и слова на -ed / -ing",
+    "explanation": "Would rather + начальная форма глагола выражает предпочтение: I would rather watch a comedy. To после rather не нужно. В конструкции rather ... than сравниваем два действия. Прилагательное confusing описывает то, что вызывает непонимание; confused — человека, который не понял. Аналогично boring / bored.",
+    "examples": [
+      {
+        "text": "I would rather watch a comedy than a drama.",
+        "ru": "Я бы предпочёл комедию драме."
+      },
+      {
+        "text": "The ending was confusing, so I felt confused.",
+        "ru": "Концовка была непонятной, поэтому я растерялся."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Один фильм — два впечатления",
+    "kind": "рассказ",
+    "text": "After watching a film together, Ella and her cousin Max could not agree about the ending. Ella thought the main character had finally become brave. Max thought she had simply escaped from a difficult conversation. They both remembered the same final scene: a woman leaving a railway station without her suitcase. However, they gave the scene different meanings.\n\nAt first, Max tried to explain why his opinion was right. Ella became quiet, and the conversation almost ended. Then Max asked which earlier scene had influenced her. Ella described a moment when the woman refused to leave home because she was afraid of change. To Ella, the empty hands at the end suggested a fresh start. Max had forgotten that moment. He still preferred his own explanation, but now he understood hers.\n\nFor their next film night, they decided to choose a comedy with a clearer story. They were both tired after a busy week and wanted to laugh. Yet Ella also suggested keeping a small notebook of interesting questions about films. A disagreement, she said, could be a reason to look more closely. Max agreed, provided that neither of them had to win every discussion. They ordered dinner and started choosing their next film together."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: чему помогает разговор Эллы и Макса?",
+      "answer": "Понять разные толкования одной сцены",
+      "explanation": "Они обсуждают основания мнений, хотя не приходят к единственной трактовке.",
+      "options": [
+        "Доказать, что у фильма только один смысл",
+        "Узнать мнение режиссёра",
+        "Понять разные толкования одной сцены"
+      ],
+      "id": "film-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: что женщина оставляет в финальной сцене?",
+      "answer": "Чемодан",
+      "explanation": "Она уходит со станции без своего чемодана: without her suitcase.",
+      "options": [
+        "Чемодан",
+        "Телефон",
+        "Записную книжку"
+      ],
+      "id": "film-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: что меняется после вопроса Макса о более ранней сцене?",
+      "answer": "Макс понимает основания мнения Эллы",
+      "explanation": "Ранее забытая сцена объясняет Максу, почему Элла видит в финале новое начало.",
+      "options": [
+        "Элла перестаёт любить фильм",
+        "Макс понимает основания мнения Эллы",
+        "Оба узнают продолжение истории"
+      ],
+      "id": "film-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: I would rather ___ a comedy.",
+      "answer": "watch",
+      "explanation": "После would rather нужен глагол без to.",
+      "options": [
+        "to watch",
+        "watching",
+        "watch"
+      ],
+      "id": "film-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите confused или confusing: чувство зрителя.",
+      "answer": "confused",
+      "explanation": "Confused описывает состояние человека.",
+      "text": "I did not understand the ending. I felt ___.",
+      "id": "film-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предпочтение.",
+      "answer": "I would rather stay at home tonight",
+      "explanation": "После would rather используется начальная форма stay.",
+      "words": [
+        "tonight",
+        "rather",
+        "home",
+        "I",
+        "stay",
+        "at",
+        "would"
+      ],
+      "id": "film-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Перепишите с would rather вместо would prefer to; остальные слова сохраните.",
+      "answer": "I would rather watch a comedy",
+      "explanation": "Would prefer to watch заменяется на would rather watch.",
+      "text": "I would prefer to watch a comedy.",
+      "accepted": [
+        "I'd rather watch a comedy"
+      ],
+      "id": "film-en-study-7"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает a predictable story?",
+      "answer": "История, дальнейшие события которой легко угадать",
+      "explanation": "Predictable — предсказуемый; это не обязательно значит плохой.",
+      "options": [
+        "История, дальнейшие события которой легко угадать",
+        "История без персонажей",
+        "История о реальных событиях"
+      ],
+      "id": "film-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите характеристику сюжета: The story made us laugh. It was ___.",
+      "answer": "amusing",
+      "explanation": "Amusing описывает то, что вызывает веселье; amused — чувство человека.",
+      "options": [
+        "amused",
+        "amusing",
+        "amuse"
+      ],
+      "id": "film-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите другу короткий отзыв о вымышленном или знакомом фильме. Опишите сюжет без спойлеров, выразите мнение об актёрской игре и концовке, приведите одну причину. Затем предложите фильм на следующий вечер с would rather. Используйте прилагательное на -ed и на -ing по смыслу.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

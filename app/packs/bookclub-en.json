@@ -1,0 +1,154 @@
+{
+  "episode": "bookclub-en",
+  "level": "B2",
+  "grammar": {
+    "title": "Догадки о прошлом: may / might / must have",
+    "explanation": "Modal + have + третья форма глагола помогает оценивать прошлое. May have и might have выражают возможность, а не доказанный факт. Must have — уверенный вывод на основании данных. Отрицательный уверенный вывод обычно выражается через cannot have / can’t have. Степень уверенности должна соответствовать тому, что действительно известно.",
+    "examples": [
+      {
+        "text": "She might have hidden the letter to protect him.",
+        "ru": "Возможно, она спрятала письмо, чтобы защитить его."
+      },
+      {
+        "text": "He must have read it: he knows every detail.",
+        "ru": "Он наверняка прочитал это: он знает все подробности."
+      },
+      {
+        "text": "She cannot have sent it on Monday; she was away.",
+        "ru": "Она не могла отправить это в понедельник: её не было."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Правило книжного клуба",
+    "kind": "статья",
+    "text": "When our book club began, discussions often turned into a competition between the people who had finished the novel and those who were still reading. The fastest readers did not always reveal the ending directly. Sometimes a smile or a remark such as 'You will understand later' was enough to suggest that someone else's theory was wrong.\n\nWe introduced a simple rule: each meeting would cover a fixed number of chapters. Knowledge from later chapters could not be used as evidence. We also divided our notes into three columns: events stated in the text, interpretations, and questions. A character receiving a letter belonged in the first column. The idea that the letter contained a threat belonged in the second, unless the text actually said so.\n\nThe change did not remove disagreement. Instead, it made disagreement more interesting. People began asking what supported an interpretation rather than who knew the correct answer. Readers who noticed small details gained confidence, even if they had not read quickly.\n\nThere was one unexpected result. Members who had already finished the novel started noticing how their knowledge of the ending affected their memory of earlier scenes. They found it difficult to recover their first impressions. The rule therefore helped everyone, not just slower readers. It gave the group a shared starting point and permission to remain uncertain."
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: для чего клуб изменил правила?",
+      "answer": "Чтобы обсуждение опиралось на общие сведения",
+      "explanation": "Граница глав и три колонки создают общую основу без преимущества знания финала.",
+      "options": [
+        "Чтобы все читали с одинаковой скоростью",
+        "Чтобы обсуждение опиралось на общие сведения",
+        "Чтобы исключить прочитавших роман"
+      ],
+      "id": "bookclub-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: куда относят неподтверждённую мысль, что письмо содержит угрозу?",
+      "answer": "К толкованиям",
+      "explanation": "Пока текст этого не утверждает, идея относится ко второй колонке — interpretations.",
+      "options": [
+        "К толкованиям",
+        "К установленным событиям",
+        "К расписанию встреч"
+      ],
+      "id": "bookclub-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему правило полезно тем, кто уже знает финал?",
+      "answer": "Они замечают влияние позднего знания на свои воспоминания",
+      "explanation": "В последнем абзаце сказано, что знание концовки меняет память о ранних сценах.",
+      "options": [
+        "Они могут перестать перечитывать главы",
+        "Им разрешают исправлять чужие догадки",
+        "Они замечают влияние позднего знания на свои воспоминания"
+      ],
+      "id": "bookclub-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Какая фраза передаёт только возможность прошлого события?",
+      "answer": "She might have read the letter.",
+      "explanation": "Might have не утверждает событие как факт.",
+      "options": [
+        "She definitely read the letter.",
+        "She might have read the letter.",
+        "She must have read the letter."
+      ],
+      "id": "bookclub-en-study-4"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Впишите третью форму hide.",
+      "answer": "hidden",
+      "explanation": "После might have нужна третья форма: hide — hid — hidden.",
+      "text": "Nora might have ___ the letter.",
+      "id": "bookclub-en-study-5",
+      "accepted": []
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите осторожную догадку о прошлом.",
+      "answer": "He may have misunderstood her reason",
+      "explanation": "May have + misunderstood выражает возможность неверного понимания в прошлом.",
+      "words": [
+        "her",
+        "may",
+        "reason",
+        "He",
+        "misunderstood",
+        "have"
+      ],
+      "id": "bookclub-en-study-6"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Выразите возможность через might have. Начните She; остальные смысловые слова сохраните.",
+      "answer": "She might have missed the clue",
+      "explanation": "Perhaps she missed превращается в she might have missed.",
+      "text": "Perhaps she missed the clue.",
+      "id": "bookclub-en-study-7",
+      "accepted": []
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что значит give the ending away?",
+      "answer": "Раскрыть концовку",
+      "explanation": "Give away в этом контексте означает раскрыть информацию, которую читатель ещё не знает.",
+      "options": [
+        "Изменить последнюю главу",
+        "Отдать книгу",
+        "Раскрыть концовку"
+      ],
+      "id": "bookclub-en-study-8"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что в обсуждении означает evidence?",
+      "answer": "Данные, подтверждающие мнение",
+      "explanation": "Evidence — основания вывода, например конкретные детали текста.",
+      "options": [
+        "Данные, подтверждающие мнение",
+        "Любое сильное чувство читателя",
+        "Название следующей главы"
+      ],
+      "id": "bookclub-en-study-9"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите участникам книжного клуба сообщение о неоднозначном поступке вымышленного героя. Назовите два факта, предложите два возможных объяснения с may/might have и объясните, каких доказательств не хватает. Предложите правило, позволяющее обсуждать книгу без спойлеров, и закончите открытым вопросом.",
+    "min": 140,
+    "max": 180,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

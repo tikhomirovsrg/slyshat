@@ -1,0 +1,147 @@
+{
+  "episode": "interview-practice-it",
+  "level": "B1",
+  "grammar": {
+    "title": "Рассказ об опыте: времена и логические связки",
+    "explanation": "В рассказе об опыте imperfetto вводит ситуацию и постоянные обязанности: lavoravo, mi occupavo. Passato prossimo сообщает о конкретных действиях и результате: ho proposto, abbiamo risolto. Perciò выражает следствие, però — противопоставление, mentre — одновременный фон. Уточняйте личный вклад с io, если важно отделить его от работы команды.",
+    "examples": [
+      {
+        "text": "Mi occupavo delle iscrizioni quando è arrivato il gruppo.",
+        "ru": "Я занимался регистрацией, когда приехала группа."
+      },
+      {
+        "text": "Mancavano due sedie, perciò ne ho cercate altre.",
+        "ru": "Не хватало двух стульев, поэтому я поискал другие."
+      },
+      {
+        "text": "Abbiamo lavorato insieme, però io ho contattato i partecipanti.",
+        "ru": "Мы работали вместе, но с участниками связался именно я."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Пример вместо общего обещания",
+    "kind": "статья",
+    "text": "Durante un incontro di preparazione ai colloqui, il responsabile ha chiesto ai partecipanti di raccontare un problema risolto insieme ad altre persone. Molti hanno risposto con parole generiche: si definivano disponibili, precisi o capaci di lavorare in gruppo. Sara, invece, ha scelto un episodio del suo volontariato in biblioteca. Ogni sabato organizzava un laboratorio per bambini. Una mattina sono arrivati molti più partecipanti del previsto e mancavano tavoli e materiali. Sara non era la responsabile del progetto, ma si occupava delle iscrizioni e conosceva il numero delle famiglie. Ha proposto di dividere i bambini in due gruppi: uno ascoltava una storia mentre l’altro svolgeva un’attività manuale. La proposta è stata discussa rapidamente con gli altri volontari. Un collega ha preparato lo spazio per la lettura; Sara ha spiegato il cambiamento ai genitori e ha aggiornato l’elenco. Il laboratorio è cominciato con dieci minuti di ritardo, ma tutti hanno partecipato. Nel raccontare l’episodio, Sara ha riconosciuto anche un limite: non avevano previsto un sistema per chi arrivava senza iscrizione. Dopo quella giornata hanno introdotto una conferma obbligatoria. Il responsabile del corso ha apprezzato il suo esempio perché mostrava azioni, collaborazione e apprendimento. Non serviva una storia perfetta: il racconto doveva mostrare le azioni di Sara e il suo apprendimento."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Поставьте occuparsi в imperfetto: пропущена только личная форма.",
+      "answer": "occupava",
+      "explanation": "Imperfetto occupava описывает обычную обязанность до конкретного события.",
+      "text": "Prima del problema, Sara si ___ delle iscrizioni.",
+      "id": "interview-practice-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте причастие proporre.",
+      "answer": "proposto",
+      "explanation": "Неправильное причастие proporre — proposto.",
+      "text": "Sara ha ___ di dividere i bambini in due gruppi.",
+      "id": "interview-practice-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите связку следствия: Mancavano i tavoli, ___ abbiamo cambiato programma.",
+      "answer": "perciò",
+      "explanation": "Perciò связывает причину и результат: не хватало столов, поэтому изменили программу.",
+      "options": [
+        "perciò",
+        "anche se",
+        "mentre"
+      ],
+      "id": "interview-practice-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает un’iscrizione в этом контексте?",
+      "answer": "La registrazione per partecipare a un’attività.",
+      "explanation": "Iscrizione — запись или регистрация на мероприятие.",
+      "options": [
+        "La registrazione per partecipare a un’attività.",
+        "La riparazione di un tavolo rotto.",
+        "La conclusione di un colloquio."
+      ],
+      "id": "interview-practice-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите предложение о результате.",
+      "answer": "Sara ha informato i genitori.",
+      "explanation": "Passato prossimo ha informato описывает конкретное завершённое действие.",
+      "words": [
+        "ha",
+        "genitori.",
+        "Sara",
+        "informato",
+        "i"
+      ],
+      "id": "interview-practice-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Расскажите об одном завершённом действии вчера: замените oggi и настоящее время.",
+      "answer": "Ieri ho spiegato il cambiamento.",
+      "explanation": "Для одного завершённого действия: ieri + ho spiegato.",
+      "text": "Oggi spiego il cambiamento.",
+      "id": "interview-practice-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какой совет иллюстрирует статья?",
+      "answer": "Raccontare un episodio concreto con azioni e risultati.",
+      "explanation": "Пример Сары показывает обязанности, действия, результат и полученный урок.",
+      "options": [
+        "Raccontare un episodio concreto con azioni e risultati.",
+        "Nascondere sempre i problemi avuti in passato.",
+        "Elencare molte qualità senza fare esempi."
+      ],
+      "id": "interview-practice-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "За что лично отвечала Сара во время изменения программы?",
+      "answer": "Spiegare il cambiamento ai genitori e aggiornare l’elenco.",
+      "explanation": "Пространство для чтения готовил коллега; Сара общалась с родителями и обновляла список.",
+      "options": [
+        "Spiegare il cambiamento ai genitori e aggiornare l’elenco.",
+        "Leggere la storia al primo gruppo.",
+        "Costruire nuovi tavoli per tutti."
+      ],
+      "id": "interview-practice-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему упоминание недостатка усилило ответ Сары?",
+      "answer": "Ha mostrato che aveva imparato dall’esperienza.",
+      "explanation": "После случая команда ввела подтверждение записи: проблема привела к улучшению процесса.",
+      "options": [
+        "Ha mostrato che aveva imparato dall’esperienza.",
+        "Ha dimostrato che il laboratorio era stato cancellato.",
+        "Ha attribuito tutta la colpa ai bambini."
+      ],
+      "id": "interview-practice-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Подготовьте письменный ответ для собеседования о совместно решённой проблеме: ситуация, ваша роль, два действия, результат и один полученный урок.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Ваш вклад отделён от действий остальных участников.",
+      "Imperfetto описывает фон, passato prossimo — конкретные действия.",
+      "Есть связки причины, следствия или противопоставления.",
+      "Рассказ завершается результатом и выводом без общих самохарактеристик."
+    ]
+  }
+}

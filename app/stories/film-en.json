@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "id": "film-en",
+  "number": "04",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Что посмотрим вечером?",
+  "category": "Истории и обсуждения",
+  "summary": "Вкусы не совпали. Обсуди впечатления и выбери фильм, который устроит обоих.",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Любит обсуждать фильмы, даже когда мнения расходятся."
+  },
+  "secondSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг с собственными впечатлениями о кино."
+  },
+  "contextTitle": "Вечер с друзьями",
+  "contextText": "Вы обсуждаете фильм, который смотрели на прошлой неделе, и выбираете следующий. Тебе сегодня хочется чего-то лёгкого.",
+  "taskTitle": "Выбрать фильм и успеть домой к 22:00",
+  "taskText": "Выслушай мнение Майи, мягко объясни своё и уточни время окончания.",
+  "taskShort": "Лёгкий фильм · до 22:00",
+  "skill": "Отличать оценку от факта, слышать причины и мягкое несогласие.",
+  "phraseLabels": [
+    "Мнение",
+    "Несогласие",
+    "Предпочтение"
+  ],
+  "transferIntro": "Оливер рассказывает о других фильмах. Поймай его мнение и причину выбора.",
+  "duration": "15–20 минут",
+  "repair": "Could you say that again?",
+  "checkText": "Hi! Are you ready to start?",
+  "opening": "I liked the acting in that film, but I found the ending a bit confusing. I'd rather watch something lighter tonight. Are you in the mood for a comedy?",
+  "openingRu": "Мне понравилась игра актёров в том фильме, но концовка показалась немного запутанной. Сегодня я бы предпочла что-нибудь полегче. Хочется комедию?",
+  "openingQuestion": {
+    "question": "Что Майе показалось запутанным?",
+    "options": [
+      "Игра актёров",
+      "Концовка",
+      "Время сеанса"
+    ],
+    "answer": 1,
+    "explanation": "The ending a bit confusing — концовка немного запутанная. Игру актёров она, наоборот, похвалила."
+  },
+  "phrases": [
+    {
+      "id": "found-it",
+      "text": "I found the ending a bit confusing.",
+      "ru": "Концовка показалась мне немного запутанной.",
+      "part": "a bit confusing",
+      "why": "I found ... + прилагательное описывает впечатление. A bit смягчает оценку.",
+      "sound": "После but часто идёт контраст с предыдущей похвалой.",
+      "example": "I found the story really moving.",
+      "exampleRu": "История показалась мне очень трогательной."
+    },
+    {
+      "id": "see-mean",
+      "text": "I see what you mean, but I liked it.",
+      "ru": "Понимаю, о чём ты, но мне понравилось.",
+      "part": "I see what you mean",
+      "why": "Так можно признать чужую точку зрения, сохраняя своё мнение.",
+      "sound": "Услышь выражение целиком, не пытайся переводить see буквально.",
+      "example": "I see what you mean about the ending.",
+      "exampleRu": "Понимаю, что ты имеешь в виду насчёт концовки."
+    },
+    {
+      "id": "rather",
+      "text": "I'd rather watch a comedy.",
+      "ru": "Я бы предпочёл посмотреть комедию.",
+      "part": "I'd rather",
+      "why": "Would rather + глагол без to выражает предпочтение.",
+      "sound": "I’d — сокращение I would; главный смысл несёт rather.",
+      "example": "I'd rather stay in tonight.",
+      "exampleRu": "Сегодня я бы предпочёл остаться дома."
+    },
+    {
+      "id": "mood",
+      "text": "Are you in the mood for a comedy?",
+      "ru": "Ты настроен посмотреть комедию?",
+      "part": "in the mood for",
+      "why": "In the mood for — хочется чего-то, есть настроение.",
+      "sound": "Слушай mood for как начало того, чего человеку хочется.",
+      "example": "I'm in the mood for something funny.",
+      "exampleRu": "Мне хочется чего-нибудь смешного."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Maya",
+      "text": "What did you think of the ending? I was not sure why the main character left.",
+      "ru": "Что думаешь о концовке? Я не совсем поняла, почему главный герой ушёл.",
+      "choices": [
+        {
+          "label": "Мягко согласиться",
+          "text": "I agree. The ending was a little unclear.",
+          "next": "agree"
+        },
+        {
+          "label": "Высказать другое мнение",
+          "text": "I see what you mean, but I liked the open ending.",
+          "next": "disagree"
+        },
+        {
+          "label": "Попросить уточнить мысль",
+          "text": "What part did you find confusing?",
+          "next": "clarify"
+        }
+      ]
+    },
+    "clarify": {
+      "speaker": "Maya",
+      "text": "The last scene. He leaves without saying goodbye, and we never learn why.",
+      "ru": "Последняя сцена. Он уходит, не попрощавшись, и мы так и не узнаём почему.",
+      "choices": [
+        {
+          "label": "Согласиться с её оценкой",
+          "text": "Yes, I wanted a clearer ending too.",
+          "next": "agree"
+        },
+        {
+          "label": "Предложить свою интерпретацию",
+          "text": "Maybe he wanted to start again. I liked that idea.",
+          "next": "disagree"
+        }
+      ]
+    },
+    "agree": {
+      "speaker": "Maya",
+      "text": "Exactly. Tonight I would like a story that is easier to follow. Shall we choose a comedy?",
+      "ru": "Именно. Сегодня хочется историю, за которой легче следить. Выберем комедию?",
+      "choices": [
+        {
+          "label": "Узнать, что идёт в кино",
+          "text": "What is on at the cinema?",
+          "next": "cinema"
+        },
+        {
+          "label": "Предложить домашний просмотр",
+          "text": "How about watching something at home?",
+          "next": "home"
+        }
+      ]
+    },
+    "disagree": {
+      "speaker": "Maya",
+      "text": "That is an interesting way to look at it. I still prefer a clearer ending, but I can see your point. What shall we watch tonight?",
+      "ru": "Интересный взгляд. Я всё ещё предпочитаю более ясную концовку, но понимаю твою мысль. Что посмотрим сегодня?",
+      "choices": [
+        {
+          "label": "Предложить комедию в кино",
+          "text": "Let us see what comedies are on.",
+          "next": "cinema"
+        },
+        {
+          "label": "Предложить посмотреть дома",
+          "text": "Could we watch something at home?",
+          "next": "home"
+        }
+      ]
+    },
+    "cinema": {
+      "speaker": "Maya",
+      "text": "There is a comedy at seven. It finishes at eight forty. There is also an animated film at seven thirty, ending at nine.",
+      "ru": "В семь идёт комедия, заканчивается в 20:40. Ещё есть мультфильм в 19:30, он заканчивается в 21:00.",
+      "choices": [
+        {
+          "label": "Выбрать комедию в 19:00",
+          "text": "The seven o’clock comedy sounds good.",
+          "next": "comedy"
+        },
+        {
+          "label": "Выбрать мультфильм в 19:30",
+          "text": "I would rather see the animated film.",
+          "next": "animation"
+        }
+      ]
+    },
+    "comedy": {
+      "speaker": "Maya",
+      "text": "Great. Shall we meet outside the cinema at quarter to seven? That gives us time to get tickets.",
+      "ru": "Отлично. Встретимся снаружи у кинотеатра в 18:45? Будет время купить билеты.",
+      "choices": [
+        {
+          "label": "Подтвердить встречу в 18:45",
+          "text": "Outside at six forty-five. See you there!",
+          "next": "comedy-end"
+        }
+      ]
+    },
+    "comedy-end": {
+      "speaker": "Maya",
+      "text": "See you there. We will have plenty of time to get home before ten.",
+      "ru": "До встречи. У нас будет достаточно времени добраться домой до десяти.",
+      "choices": [],
+      "outcome": "comedy"
+    },
+    "animation": {
+      "speaker": "Maya",
+      "text": "Good choice. We can meet at seven fifteen. The bus home takes twenty minutes, so we will be back before ten.",
+      "ru": "Хороший выбор. Встретимся в 19:15. Дорога домой на автобусе занимает двадцать минут, так что вернёмся до десяти.",
+      "choices": [
+        {
+          "label": "Подтвердить встречу в 19:15",
+          "text": "Seven fifteen works for me.",
+          "next": "animation-end"
+        }
+      ]
+    },
+    "animation-end": {
+      "speaker": "Maya",
+      "text": "Lovely. I will book the tickets for the seven thirty screening.",
+      "ru": "Отлично. Забронирую билеты на сеанс в 19:30.",
+      "choices": [],
+      "outcome": "animation"
+    },
+    "home": {
+      "speaker": "Maya",
+      "text": "That sounds cosy. I know a ninety-minute comedy. We could start at seven and order some food.",
+      "ru": "Звучит уютно. Я знаю комедию на полтора часа. Можем начать в семь и заказать еду.",
+      "choices": [
+        {
+          "label": "Согласиться и уточнить конец",
+          "text": "So we would finish at eight thirty?",
+          "next": "home-confirm"
+        }
+      ]
+    },
+    "home-confirm": {
+      "speaker": "Maya",
+      "text": "Yes, half past eight. Then we can talk about it without rushing.",
+      "ru": "Да, в 20:30. Потом сможем обсудить фильм без спешки.",
+      "choices": [
+        {
+          "label": "Договориться о домашнем просмотре",
+          "text": "Perfect. I will come over at seven.",
+          "next": "home-end"
+        }
+      ]
+    },
+    "home-end": {
+      "speaker": "Maya",
+      "text": "See you at seven. I will find the film and you can choose the food!",
+      "ru": "До встречи в семь. Я найду фильм, а ты можешь выбрать еду!",
+      "choices": [],
+      "outcome": "home"
+    }
+  },
+  "outcomes": {
+    "comedy": {
+      "title": "Комедия на большом экране",
+      "body": "Встреча у кинотеатра в 18:45, сеанс в 19:00. Фильм заканчивается в 20:40."
+    },
+    "animation": {
+      "title": "Другой жанр, общий план",
+      "body": "Ты выбрал мультфильм. Встреча в 19:15, сеанс в 19:30, окончание в 21:00."
+    },
+    "home": {
+      "title": "Уютный вечер дома",
+      "body": "Фильм начинается в 19:00 и заканчивается в 20:30. Остаётся время обсудить впечатления."
+    }
+  },
+  "transfer": [
+    {
+      "id": "film-opinion",
+      "speaker": "Oliver",
+      "text": "The story was predictable, but the acting was excellent. I enjoyed it more than I expected.",
+      "ru": "Сюжет был предсказуемым, но игра актёров отличной. Мне понравилось больше, чем ожидалось.",
+      "question": "Что Оливер похвалил?",
+      "options": [
+        "Игру актёров",
+        "Неожиданный сюжет",
+        "Длительность фильма"
+      ],
+      "answer": 0,
+      "explanation": "The acting was excellent — похвала игре актёров. Predictable описывает предсказуемый сюжет."
+    },
+    {
+      "id": "film-choice",
+      "speaker": "Oliver",
+      "text": "I would rather watch a short documentary tonight. I am too tired for a long drama.",
+      "ru": "Сегодня я бы предпочёл короткий документальный фильм. Я слишком устал для длинной драмы.",
+      "question": "Почему он выбирает короткий фильм?",
+      "options": [
+        "Ему не нравятся актёры",
+        "Он уже смотрел драму",
+        "Он устал"
+      ],
+      "answer": 2,
+      "explanation": "Too tired for a long drama — слишком устал для длинной драмы."
+    },
+    {
+      "id": "film-time",
+      "speaker": "Oliver",
+      "text": "The film starts at eight, but let us meet twenty minutes earlier to pick up the tickets.",
+      "ru": "Фильм начинается в восемь, но давай встретимся на двадцать минут раньше, чтобы забрать билеты.",
+      "question": "Когда встречаться?",
+      "options": [
+        "В 20:00",
+        "В 19:40",
+        "В 20:20"
+      ],
+      "answer": 1,
+      "explanation": "Twenty minutes earlier, чем 20:00, — это 19:40."
+    }
+  ]
+}

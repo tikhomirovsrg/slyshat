@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "id": "work-en",
+  "number": "03",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Дедлайн изменился",
+  "category": "Работа и созвоны",
+  "summary": "Клиент перенёс встречу. Разберись в сроках и согласуй выполнимый план.",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Коллега, которая готовит презентацию для клиента."
+  },
+  "secondSpeaker": {
+    "id": "Leo",
+    "name": "Лео",
+    "bio": "Коллега из другой команды."
+  },
+  "contextTitle": "Короткий рабочий созвон",
+  "contextText": "Ты готовишь материалы для клиента. Эмма сообщает об изменениях, пока у тебя открыт календарь.",
+  "taskTitle": "В четверг ты свободен только с 11:00",
+  "taskText": "Уточни, что обязательно к полудню, и предложи реалистичный способ закончить работу.",
+  "taskShort": "Начать после 11:00",
+  "skill": "Понимать сроки, приоритеты и распределение ответственности.",
+  "phraseLabels": [
+    "Раньше срока",
+    "К полудню",
+    "Взять на себя"
+  ],
+  "transferIntro": "Лео обсуждает другую задачу. Проверь, кто что делает и к какому сроку.",
+  "duration": "15–20 минут",
+  "repair": "Could you say that again?",
+  "checkText": "Hi! Are you ready to start?",
+  "opening": "The client has brought the meeting forward to Thursday afternoon. Could you send me a draft by noon on Thursday? I only need the overview and the latest figures, not the full report.",
+  "openingRu": "Клиент перенёс встречу на более ранний срок — четверг после обеда. Можешь прислать черновик к полудню четверга? Нужны только обзор и последние цифры, не весь отчёт.",
+  "openingQuestion": {
+    "question": "Что нужно прислать к полудню четверга?",
+    "options": [
+      "Полный отчёт",
+      "Обзор и последние цифры",
+      "Только список участников"
+    ],
+    "answer": 1,
+    "explanation": "Only the overview and the latest figures — только обзор и последние цифры. Not the full report исключает полный отчёт."
+  },
+  "phrases": [
+    {
+      "id": "forward",
+      "text": "The meeting has been brought forward.",
+      "ru": "Встречу перенесли на более ранний срок.",
+      "part": "brought forward",
+      "why": "В контексте расписания bring forward означает перенести раньше. Push back — перенести позже.",
+      "sound": "Слушай brought forward как единое выражение о переносе.",
+      "example": "Can we push the deadline back a day?",
+      "exampleRu": "Можем перенести срок на день позже?"
+    },
+    {
+      "id": "by-noon",
+      "text": "Could you send me a draft by noon?",
+      "ru": "Можешь прислать черновик к полудню?",
+      "part": "by noon",
+      "why": "By noon — не позже 12:00. Until noon — до 12:00, если речь о продолжительности действия.",
+      "sound": "Поймай короткое by перед временем: оно задаёт предельный срок.",
+      "example": "Please send it by three.",
+      "exampleRu": "Пожалуйста, пришли это не позже трёх."
+    },
+    {
+      "id": "take-care",
+      "text": "I'll take care of the figures.",
+      "ru": "Я займусь цифрами.",
+      "part": "take care of",
+      "why": "Take care of в рабочем разговоре означает взять задачу на себя.",
+      "sound": "Произнеси и услышь take care of одним смысловым блоком.",
+      "example": "Can you take care of the slides?",
+      "exampleRu": "Можешь заняться слайдами?"
+    },
+    {
+      "id": "rough-draft",
+      "text": "A rough draft is fine.",
+      "ru": "Чернового варианта достаточно.",
+      "part": "rough draft",
+      "why": "Rough draft — предварительный вариант, который ещё можно дорабатывать.",
+      "sound": "Draft — ключевое слово: не ожидается полностью готовый материал.",
+      "example": "We can polish it later.",
+      "exampleRu": "Мы можем доработать это позже."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Emma",
+      "text": "Does noon on Thursday work for you, or should we split the work?",
+      "ru": "Тебе подходит полдень четверга или нам лучше разделить работу?",
+      "choices": [
+        {
+          "label": "Уточнить объём черновика",
+          "text": "How detailed does the draft need to be?",
+          "next": "scope"
+        },
+        {
+          "label": "Предложить два этапа",
+          "text": "Could I send the overview first and the figures later?",
+          "next": "stages"
+        },
+        {
+          "label": "Разделить задачи",
+          "text": "Could you take care of the figures?",
+          "next": "split"
+        }
+      ]
+    },
+    "scope": {
+      "speaker": "Emma",
+      "text": "Three slides will be enough. A rough draft is fine. We can polish it together after lunch.",
+      "ru": "Трёх слайдов достаточно. Черновик подходит. После обеда можем вместе доработать его.",
+      "choices": [
+        {
+          "label": "Уточнить доступность цифр",
+          "text": "When will the latest figures be ready?",
+          "next": "figures"
+        },
+        {
+          "label": "Попросить разделить работу",
+          "text": "Could we split the tasks?",
+          "next": "split"
+        }
+      ]
+    },
+    "figures": {
+      "speaker": "Emma",
+      "text": "They will be in the shared folder by eleven. Use the file called October update, not the older version.",
+      "ru": "Они будут в общей папке к 11:00. Используй файл October update, а не старую версию.",
+      "choices": [
+        {
+          "label": "Согласиться на три слайда к 12:00",
+          "text": "I can start at eleven and send three slides by noon.",
+          "next": "draft-end"
+        }
+      ]
+    },
+    "draft-end": {
+      "speaker": "Emma",
+      "text": "Great. Send the draft to me, and I will check it before the client meeting.",
+      "ru": "Отлично. Пришли черновик мне, я проверю его до встречи с клиентом.",
+      "choices": [],
+      "outcome": "draft"
+    },
+    "stages": {
+      "speaker": "Emma",
+      "text": "That could work. Send the overview by noon and the figures by two. The client meeting starts at three.",
+      "ru": "Так можно. Пришли обзор к 12:00, а цифры к 14:00. Встреча с клиентом начинается в 15:00.",
+      "choices": [
+        {
+          "label": "Уточнить новый срок цифр",
+          "text": "So the figures are due at two, not noon?",
+          "next": "stage-confirm"
+        },
+        {
+          "label": "Предпочесть разделение работы",
+          "text": "Actually, could you handle the figures?",
+          "next": "split"
+        }
+      ]
+    },
+    "stage-confirm": {
+      "speaker": "Emma",
+      "text": "Exactly. Overview at twelve, figures at two. Please flag anything that still needs checking.",
+      "ru": "Именно. Обзор в 12:00, цифры в 14:00. Отметь всё, что ещё нужно проверить.",
+      "choices": [
+        {
+          "label": "Подтвердить два этапа",
+          "text": "Understood. I will send them in two parts.",
+          "next": "stages-end"
+        }
+      ]
+    },
+    "stages-end": {
+      "speaker": "Emma",
+      "text": "Thanks. That gives us time to review both parts before three.",
+      "ru": "Спасибо. Это даст нам время проверить обе части до трёх.",
+      "choices": [],
+      "outcome": "stages"
+    },
+    "split": {
+      "speaker": "Emma",
+      "text": "Sure. I will handle the figures, and you can write the overview. Could you also add a slide with the next steps?",
+      "ru": "Конечно. Я займусь цифрами, а ты напишешь обзор. Можешь добавить ещё слайд со следующими шагами?",
+      "choices": [
+        {
+          "label": "Согласовать две свои части",
+          "text": "Yes. Overview and next steps by noon. Is that right?",
+          "next": "split-confirm"
+        },
+        {
+          "label": "Уточнить, кто объединит материалы",
+          "text": "Who will put the slides together?",
+          "next": "merge"
+        }
+      ]
+    },
+    "merge": {
+      "speaker": "Emma",
+      "text": "I will put them together. Just send me your overview and next steps by noon.",
+      "ru": "Я объединю их. Просто пришли обзор и следующие шаги к полудню.",
+      "choices": [
+        {
+          "label": "Подтвердить свои задачи",
+          "text": "Got it. I will send those two slides by noon.",
+          "next": "split-confirm"
+        }
+      ]
+    },
+    "split-confirm": {
+      "speaker": "Emma",
+      "text": "Exactly. I will add the figures and check the final version.",
+      "ru": "Именно. Я добавлю цифры и проверю окончательную версию.",
+      "choices": [
+        {
+          "label": "Завершить созвон",
+          "text": "Perfect. We have a plan.",
+          "next": "split-end"
+        }
+      ]
+    },
+    "split-end": {
+      "speaker": "Emma",
+      "text": "Thanks for working that out with me. Speak to you on Thursday!",
+      "ru": "Спасибо, что помог всё согласовать. До четверга!",
+      "choices": [],
+      "outcome": "split"
+    }
+  },
+  "outcomes": {
+    "draft": {
+      "title": "Черновик к полудню",
+      "body": "С 11:00 ты готовишь три слайда. Черновик отправляешь Эмме к 12:00, доработку делаете позже."
+    },
+    "stages": {
+      "title": "Работа в два этапа",
+      "body": "Вы согласовали обзор к 12:00 и цифры к 14:00. Встреча с клиентом — в 15:00."
+    },
+    "split": {
+      "title": "У каждого своя часть",
+      "body": "Ты готовишь обзор и следующие шаги к 12:00. Эмма добавляет цифры и объединяет презентацию."
+    }
+  },
+  "transfer": [
+    {
+      "id": "work-deadline",
+      "speaker": "Leo",
+      "text": "The deadline has been pushed back to Monday. Friday is no longer necessary.",
+      "ru": "Срок перенесли на понедельник. Пятница больше не нужна.",
+      "question": "Какой теперь срок?",
+      "options": [
+        "Четверг",
+        "Пятница",
+        "Понедельник"
+      ],
+      "answer": 2,
+      "explanation": "Pushed back — перенесли позже. To Monday — на понедельник."
+    },
+    {
+      "id": "work-owner",
+      "speaker": "Leo",
+      "text": "I will contact the supplier. Could you check the budget? Anna will book the room.",
+      "ru": "Я свяжусь с поставщиком. Можешь проверить бюджет? Анна забронирует комнату.",
+      "question": "Какая задача у тебя?",
+      "options": [
+        "Связаться с поставщиком",
+        "Проверить бюджет",
+        "Забронировать комнату"
+      ],
+      "answer": 1,
+      "explanation": "Could you check the budget? — обращение к тебе. Остальные задачи взяли коллеги."
+    },
+    {
+      "id": "work-time",
+      "speaker": "Leo",
+      "text": "Please send the slides by half past ten, so I can review them before the eleven o’clock call.",
+      "ru": "Пришли слайды к 10:30, чтобы я проверил их до звонка в 11:00.",
+      "question": "Когда нужны слайды?",
+      "options": [
+        "Не позже 10:30",
+        "Ровно в 11:00",
+        "После 11:00"
+      ],
+      "answer": 0,
+      "explanation": "By half past ten означает не позже 10:30. Eleven — время созвона."
+    }
+  ]
+}

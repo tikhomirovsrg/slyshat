@@ -1,0 +1,148 @@
+{
+  "episode": "meeting-update-it",
+  "level": "B1",
+  "grammar": {
+    "title": "Condizionale presente: вежливая просьба и возможный вклад",
+    "explanation": "Condizionale presente смягчает просьбу или предложение: potresti controllare?; io preparerei una bozza. Условие может быть понятно из контекста. Частые неправильные основы: potere → potrei, dovere → dovrei, volere → vorrei. Это не обещание: potrei farlo обозначает возможность, farò это представляет как будущее действие.",
+    "examples": [
+      {
+        "text": "Potresti controllare le date entro domani?",
+        "ru": "Не мог бы ты проверить даты к завтрашнему дню?"
+      },
+      {
+        "text": "Io preparerei una versione più breve.",
+        "ru": "Я бы подготовил более короткую версию."
+      },
+      {
+        "text": "Dovremmo confermare prima la scadenza.",
+        "ru": "Нам следовало бы сначала подтвердить срок."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Письмо после короткого совещания",
+    "kind": "письмо",
+    "text": "Ciao a tutti, vi scrivo per riassumere le decisioni di questa mattina. La consegna della mostra è stata anticipata, ma il materiale richiesto per venerdì non deve essere definitivo. Alla tipografia serve una bozza per valutare il numero di pagine e la posizione delle immagini. I testi potranno essere corretti la settimana prossima. Ho diviso il lavoro in tre parti. Anna controlla le date delle fotografie, Davide prepara le immagini e io raccolgo i testi. Prima di cominciare, però, vorrei sapere se questa divisione è realistica. Non vogliamo scoprire giovedì sera che manca una parte importante. Se qualcuno ha poco tempo, può indicare subito quali compiti riesce a completare. Potremmo anche ridurre il numero di fotografie, scegliendo quelle per cui abbiamo informazioni sicure. Durante la riunione è stata proposta questa possibilità, ma non abbiamo ancora preso una decisione. Vi chiederei quindi di non cancellare materiale dalla cartella comune fino alla conferma. Entro oggi alle cinque, ciascuno potrebbe rispondere con una breve lista delle attività previste e delle difficoltà. Domani mattina invierò il programma aggiornato. Non è necessario risolvere ogni problema da soli: una richiesta precisa di aiuto ci permette di organizzare meglio il lavoro. Grazie a tutti per la collaborazione, Irene."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте condizionale presente глагола potere для tu.",
+      "answer": "Potresti",
+      "explanation": "Potresti — вежливая форма просьбы, обращённой к одному человеку.",
+      "text": "___ controllare le date?",
+      "id": "meeting-update-it-q1"
+    },
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Вставьте condizionale presente глагола volere для io.",
+      "answer": "Vorrei",
+      "explanation": "Volere имеет неправильную основу vorr-: vorrei.",
+      "text": "___ sapere se la divisione è realistica.",
+      "id": "meeting-update-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Какая фраза выражает возможность, а не прямое обещание?",
+      "answer": "Potrei preparare la bozza.",
+      "explanation": "Potrei — мог бы; preparerò — сделаю; ho preparato — уже сделал.",
+      "options": [
+        "Potrei preparare la bozza.",
+        "Preparerò la bozza.",
+        "Ho preparato la bozza."
+      ],
+      "id": "meeting-update-it-q3"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает la scadenza di un lavoro?",
+      "answer": "Il termine entro cui completarlo.",
+      "explanation": "Scadenza — крайний срок выполнения.",
+      "options": [
+        "Il termine entro cui completarlo.",
+        "Il luogo dove conservarlo.",
+        "La persona che lo controlla."
+      ],
+      "id": "meeting-update-it-q4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите вежливое предложение.",
+      "answer": "Potremmo ridurre il numero di foto.",
+      "explanation": "Potremmo + инфинитив обозначает вариант совместного действия.",
+      "words": [
+        "ridurre",
+        "Potremmo",
+        "numero",
+        "foto.",
+        "di",
+        "il"
+      ],
+      "id": "meeting-update-it-q5"
+    },
+    {
+      "kind": "transform",
+      "skill": "grammar",
+      "prompt": "Переформулируйте просьбу, заменив puoi на condizionale; остальное сохраните.",
+      "answer": "Potresti controllare le date?",
+      "explanation": "Potresti смягчает вопрос о возможности выполнить действие.",
+      "text": "Puoi controllare le date?",
+      "id": "meeting-update-it-q6"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Какова основная цель письма?",
+      "answer": "Confermare compiti e possibilità prima della nuova scadenza.",
+      "explanation": "Ирене уточняет распределение работы и просит заранее сообщить об ограничениях.",
+      "options": [
+        "Confermare compiti e possibilità prima della nuova scadenza.",
+        "Annunciare che tutti i testi sono definitivi.",
+        "Chiedere alla tipografia di chiudere la mostra."
+      ],
+      "id": "meeting-update-it-q7"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Что запрещено делать до подтверждения решения?",
+      "answer": "Cancellare materiale dalla cartella comune.",
+      "explanation": "Сокращение числа фотографий лишь предложено, поэтому материалы пока нельзя удалять.",
+      "options": [
+        "Cancellare materiale dalla cartella comune.",
+        "Controllare le date delle fotografie.",
+        "Segnalare una difficoltà a Irene."
+      ],
+      "id": "meeting-update-it-q8"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Почему просьба о помощи полезна для всей команды?",
+      "answer": "Permette di riorganizzare il lavoro prima che sia troppo tardi.",
+      "explanation": "Раннее сообщение о трудностях позволяет перераспределить задачи до срока.",
+      "options": [
+        "Permette di riorganizzare il lavoro prima che sia troppo tardi.",
+        "Rende inutile il programma aggiornato.",
+        "Trasforma automaticamente la bozza in una versione definitiva."
+      ],
+      "id": "meeting-update-it-q9"
+    }
+  ],
+  "writing": {
+    "prompt": "Ответьте Ирене от имени участника команды. Укажите выполнимую часть работы, одно ограничение, конкретную просьбу о помощи и срок своего следующего сообщения.",
+    "min": 90,
+    "max": 130,
+    "checklist": [
+      "Объём работы и ограничение описаны конкретно.",
+      "Есть минимум две формы condizionale presente.",
+      "Просьба о помощи указывает действие и срок.",
+      "Различаются возможность, предложение и твёрдое обязательство."
+    ]
+  }
+}

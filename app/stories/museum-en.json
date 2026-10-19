@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "museum-en",
+  "number": "13",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "На карте есть лишняя улица",
+  "category": "Истории и обсуждения",
+  "summary": "В музее Оливер замечает несоответствие на старой карте. Проверь подсказки и реши, какой вывод можно сделать.",
+  "duration": "15–20 минут",
+  "art": "film",
+  "mainSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Друг Майи: наблюдательный путешественник и участник книжного клуба."
+  },
+  "secondSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Твоя соседка и подруга. Любит знакомить людей и искать истории вокруг."
+  },
+  "contextTitle": "Городской музей",
+  "contextText": "После поездки вы зашли на выставку старых карт. Оливер заметил на карте улицу, которая, по подписи рядом, появилась значительно позже.",
+  "taskTitle": "Проверить странную деталь",
+  "taskText": "Не спеши объявлять ошибку. Сравни подпись, сам предмет и объяснение сотрудника; выбери следующий шаг.",
+  "taskShort": "Подпись или сама карта?",
+  "skill": "Различать дату оригинала и копии, предположение и подтверждение; следить за исправлением первой версии.",
+  "phraseLabels": [
+    "Похоже, что",
+    "Оказалось",
+    "Стоит проверить"
+  ],
+  "transferIntro": "Майя рассказывает о других экспонатах. Раздели первоначальное впечатление и уточнённую информацию.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "This map seems to show Mill Street, but the label says the original was drawn in eighteen sixty. I thought that street wasn't built until much later. It could be a mistake, or perhaps we're looking at a copy with extra details. It's worth checking before we tell anyone the label is wrong.",
+  "openingRu": "Похоже, на этой карте есть Милл-стрит, но в подписи сказано, что оригинал нарисован в 1860 году. Я думал, улицу построили намного позже. Возможно, это ошибка, а может, мы смотрим на копию с дополнительными деталями. Стоит проверить, прежде чем говорить кому-то, что подпись неверна.",
+  "openingQuestion": {
+    "question": "Почему Оливер пока не считает подпись ошибочной?",
+    "options": [
+      "Он не видит название улицы",
+      "Это может быть более поздняя копия",
+      "Дата вообще не указана"
+    ],
+    "answer": 1,
+    "explanation": "Perhaps ... a copy with extra details — альтернативное объяснение. Ошибка пока лишь одна из версий."
+  },
+  "phrases": [
+    {
+      "id": "seems",
+      "text": "The map seems to show Mill Street.",
+      "ru": "Похоже, на карте показана Милл-стрит.",
+      "part": "seems to show",
+      "why": "Seem указывает на впечатление, а не доказанный факт.",
+      "sound": "To слабое; опирайся на seems и show, чтобы услышать осторожный вывод.",
+      "example": "The door seems to be locked.",
+      "exampleRu": "Похоже, дверь заперта."
+    },
+    {
+      "id": "turns-out",
+      "text": "It turns out this is a later copy.",
+      "ru": "Оказалось, это более поздняя копия.",
+      "part": "it turns out",
+      "why": "Так вводят новую информацию, меняющую понимание.",
+      "sound": "Turns out произносится связно; после блока обычно идёт важное уточнение.",
+      "example": "It turns out the museum is free on Sundays.",
+      "exampleRu": "Оказалось, по воскресеньям музей бесплатный."
+    },
+    {
+      "id": "worth",
+      "text": "It's worth checking the catalogue.",
+      "ru": "Стоит проверить каталог.",
+      "part": "worth checking",
+      "why": "Worth + форма на -ing означает, что действие имеет смысл.",
+      "sound": "Worth заканчивается на звук th; не путай с work по одному началу.",
+      "example": "It's worth asking at the desk.",
+      "exampleRu": "Стоит спросить у стойки."
+    },
+    {
+      "id": "original",
+      "text": "The original was drawn in eighteen sixty.",
+      "ru": "Оригинал нарисован в 1860 году.",
+      "part": "the original",
+      "why": "Original — первоначальный предмет, а не обязательно тот, что находится перед тобой.",
+      "sound": "В дате eighteen sixty две смысловые части: 18 и 60.",
+      "example": "The original is kept in the archive.",
+      "exampleRu": "Оригинал хранится в архиве."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Oliver",
+      "text": "We can read the small print, ask the guide, or compare this map with the one in the catalogue. Where would you start?",
+      "ru": "Можно прочитать мелкий шрифт, спросить экскурсовода или сравнить с картой в каталоге. С чего начнём?",
+      "choices": [
+        {
+          "label": "Прочитать мелкий шрифт",
+          "text": "Let's check the rest of the label first.",
+          "next": "label"
+        },
+        {
+          "label": "Спросить без обвинения",
+          "text": "Let's ask the guide how the dates fit together.",
+          "next": "guide"
+        },
+        {
+          "label": "Сравнить изображения",
+          "text": "Could we find the original in the digital catalogue?",
+          "next": "catalogue"
+        }
+      ]
+    },
+    "label": {
+      "speaker": "Oliver",
+      "text": "Ah, underneath it says: reproduction made in nineteen twenty, with later street names added. The large date refers to the original survey.",
+      "ru": "А ниже написано: копия сделана в 1920 году, добавлены более поздние названия улиц. Крупная дата относится к исходной съёмке.",
+      "choices": [
+        {
+          "label": "Сформулировать открытие",
+          "text": "So the street name was added later, and both dates can be right?",
+          "next": "label-confirm"
+        },
+        {
+          "label": "Проверить сам оригинал",
+          "text": "Let's compare it with the original anyway.",
+          "next": "catalogue"
+        }
+      ]
+    },
+    "label-confirm": {
+      "speaker": "Oliver",
+      "text": "Exactly. I nearly called it a mistake because I stopped reading after the large heading. Shall we add that to our exhibition notes?",
+      "ru": "Именно. Я чуть не назвал это ошибкой, потому что остановился на крупном заголовке. Запишем это в заметки о выставке?",
+      "choices": [
+        {
+          "label": "Записать разницу оригинала и копии",
+          "text": "Yes. Let's note which date belongs to which version.",
+          "next": "label-end"
+        }
+      ]
+    },
+    "label-end": {
+      "speaker": "Oliver",
+      "text": "Done. The surprising street wasn't a historical mystery after all, but it taught us how to read the label properly.",
+      "ru": "Готово. Неожиданная улица оказалась не исторической загадкой, зато мы научились правильно читать подпись.",
+      "choices": [],
+      "outcome": "label"
+    },
+    "guide": {
+      "speaker": "Oliver",
+      "text": "The guide says the display combines an old survey with newer names to help visitors recognise the area. She agrees that the heading could be clearer.",
+      "ru": "Экскурсовод говорит, что старую съёмку совместили с новыми названиями, чтобы посетители узнавали район. Она согласна, что заголовок можно сделать понятнее.",
+      "choices": [
+        {
+          "label": "Предложить конкретное уточнение",
+          "text": "Could the heading say 'later copy based on an 1860 survey'?",
+          "next": "guide-confirm"
+        },
+        {
+          "label": "Попросить показать исходник",
+          "text": "Could she help us find the original version?",
+          "next": "catalogue"
+        }
+      ]
+    },
+    "guide-confirm": {
+      "speaker": "Oliver",
+      "text": "She likes that suggestion and will pass it to the display team. She doesn't want to promise a change before they review it.",
+      "ru": "Ей нравится предложение, она передаст его команде выставки. Но обещать изменение до обсуждения она не хочет.",
+      "choices": [
+        {
+          "label": "Принять неопределённый результат",
+          "text": "That's fair. Let's leave the suggestion without calling it an error.",
+          "next": "guide-end"
+        }
+      ]
+    },
+    "guide-end": {
+      "speaker": "Oliver",
+      "text": "We've given useful feedback: the information is accurate, but the relationship between the two dates needs explaining.",
+      "ru": "Мы оставили полезное замечание: информация точная, но связь двух дат нужно объяснить.",
+      "choices": [],
+      "outcome": "guide"
+    },
+    "catalogue": {
+      "speaker": "Oliver",
+      "text": "Here's a scan of the original. The road is drawn, but it has no name. So the street may have existed before it became Mill Street.",
+      "ru": "Вот скан оригинала. Дорога нарисована, но без названия. Значит, она могла существовать ещё до того, как стала Милл-стрит.",
+      "choices": [
+        {
+          "label": "Проверить границу вывода",
+          "text": "Does that tell us when it was built, or only that it was already there?",
+          "next": "catalogue-confirm"
+        }
+      ]
+    },
+    "catalogue-confirm": {
+      "speaker": "Oliver",
+      "text": "Only that it was already there. We'd need another source to know when it was built. The catalogue links to a collection of council records.",
+      "ru": "Только то, что она уже была. Чтобы узнать, когда её построили, нужен другой источник. В каталоге есть ссылка на документы городского совета.",
+      "choices": [
+        {
+          "label": "Сохранить вопрос для исследования",
+          "text": "Let's save that reference and keep the construction date as an open question.",
+          "next": "catalogue-end"
+        }
+      ]
+    },
+    "catalogue-end": {
+      "speaker": "Oliver",
+      "text": "Good. We've answered the naming question and found a way to investigate the date, without pretending we know more than we do.",
+      "ru": "Хорошо. Мы разобрались с названием и нашли путь к изучению даты, не выдавая неизвестное за известное.",
+      "choices": [],
+      "outcome": "research"
+    }
+  },
+  "outcomes": {
+    "label": {
+      "title": "Две даты, две версии",
+      "body": "Крупная дата относится к исходной съёмке 1860 года; выставлена копия 1920 года с новыми названиями."
+    },
+    "guide": {
+      "title": "Полезное замечание музею",
+      "body": "Вы предложили уточнить заголовок. Экскурсовод передаст идею команде, не обещая немедленную замену."
+    },
+    "research": {
+      "title": "Вопрос стал точнее",
+      "body": "На оригинале дорога уже есть, но без имени. Вы сохранили ссылку на архив, чтобы отдельно выяснить дату строительства."
+    }
+  },
+  "transfer": [
+    {
+      "id": "museum-painting",
+      "speaker": "Maya",
+      "text": "I thought the painting was unfinished. It turns out the artist deliberately left that corner blank to draw attention to the figure.",
+      "ru": "Я думала, картина не закончена. Оказалось, художник намеренно оставил угол пустым, чтобы выделить фигуру.",
+      "question": "Что выяснилось?",
+      "options": [
+        "Картина потеряла часть холста",
+        "Художник не успел закончить",
+        "Пустой угол был намеренным решением"
+      ],
+      "answer": 2,
+      "explanation": "Deliberately — намеренно; turns out заменяет первоначальное предположение новым объяснением."
+    },
+    {
+      "id": "museum-clock",
+      "speaker": "Maya",
+      "text": "The clock seems to work, but the hands are moved by a modern motor. The original mechanism is displayed separately.",
+      "ru": "Кажется, часы работают, но стрелки двигает современный мотор. Оригинальный механизм выставлен отдельно.",
+      "question": "Что приводит стрелки в движение сейчас?",
+      "options": [
+        "Современный мотор",
+        "Оригинальный механизм",
+        "Сотрудник вручную"
+      ],
+      "answer": 0,
+      "explanation": "But уточняет впечатление seems to work: работает современный мотор."
+    },
+    {
+      "id": "museum-date",
+      "speaker": "Maya",
+      "text": "It's worth checking the date on the back. The frame was made in 1910, but that doesn't necessarily tell us when the photograph was taken.",
+      "ru": "Стоит проверить дату сзади. Рамку сделали в 1910 году, но это не обязательно дата фотографии.",
+      "question": "Какой вывод пока делать нельзя?",
+      "options": [
+        "Рамка существует",
+        "Фотографию точно сняли в 1910 году",
+        "На обороте может быть дата"
+      ],
+      "answer": 1,
+      "explanation": "Doesn't necessarily tell us отделяет дату рамки от неподтверждённой даты снимка."
+    }
+  ]
+}

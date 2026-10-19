@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "feedback-en",
+  "number": "17",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "«Слишком сложно» — что именно?",
+  "category": "Работа и созвоны",
+  "summary": "Отзыв о проекте звучит резко, но не содержит ясной задачи. Преврати оценку в проверяемое изменение.",
+  "duration": "15–20 минут",
+  "art": "work",
+  "mainSpeaker": {
+    "id": "Emma",
+    "name": "Эмма",
+    "bio": "Твоя коллега и подруга. Спокойно обсуждает трудные решения."
+  },
+  "secondSpeaker": {
+    "id": "Leo",
+    "name": "Лео",
+    "bio": "Коллега Эммы: помогает с проектами и собирает друзей на выходных."
+  },
+  "contextTitle": "После демонстрации",
+  "contextText": "Эмма собрала отзывы о новой форме регистрации. Один участник назвал её слишком сложной, другой похвалил подробные подсказки. До следующего показа два дня.",
+  "taskTitle": "Выбрать изменение, связанное с наблюдением",
+  "taskText": "Уточни, где человек затруднился, сравни варианты и отдели необходимую правку от новой идеи.",
+  "taskShort": "Два дня · один ясный приоритет",
+  "skill": "Понимать уступку и скрытое уточнение, отделять оценку, наблюдение и предлагаемое решение.",
+  "phraseLabels": [
+    "Что именно имеется в виду",
+    "Не обязательно",
+    "Сузить до"
+  ],
+  "transferIntro": "Лео разбирает другие отзывы. Слушай не только оценку, но и условие, ограничивающее вывод.",
+  "repair": "Could you say that again, a little more slowly?",
+  "checkText": "Hi! Can you hear me clearly?",
+  "opening": "The feedback sounds contradictory, but it may be about two different things. One person called the form too complicated, while another appreciated the guidance. Before we remove anything, I'd like to pin down where the first person got stuck. More detail isn't necessarily the problem; it could be the order in which we present it.",
+  "openingRu": "Отзывы звучат противоречиво, но могут касаться разных вещей. Один человек назвал форму слишком сложной, другой оценил подсказки. Прежде чем что-то убирать, я хочу точно понять, где первый человек затруднился. Проблема не обязательно в количестве деталей: возможно, дело в порядке их подачи.",
+  "openingQuestion": {
+    "question": "Какой первый шаг предлагает Эмма?",
+    "options": [
+      "Удалить все подсказки",
+      "Добавить ещё больше полей",
+      "Уточнить место затруднения"
+    ],
+    "answer": 2,
+    "explanation": "Pin down where ... got stuck — установить конкретное место проблемы до изменения формы."
+  },
+  "phrases": [
+    {
+      "id": "mean",
+      "text": "What exactly do they mean by complicated?",
+      "ru": "Что именно они имеют в виду под сложностью?",
+      "part": "mean by complicated",
+      "why": "Mean by просит объяснить значение оценки в данном контексте.",
+      "sound": "Главное ударение на exactly или complicated показывает, что нужен конкретный смысл.",
+      "example": "What do you mean by too formal?",
+      "exampleRu": "Что ты имеешь в виду под «слишком официально»?"
+    },
+    {
+      "id": "necessarily",
+      "text": "More detail isn't necessarily the problem.",
+      "ru": "Проблема не обязательно в количестве деталей.",
+      "part": "isn't necessarily",
+      "why": "Это ограниченное отрицание: причина возможна, но пока не установлена.",
+      "sound": "Не теряй n't: necessarily без отрицания меняет степень уверенности.",
+      "example": "A longer explanation isn't necessarily clearer.",
+      "exampleRu": "Более длинное объяснение не обязательно понятнее."
+    },
+    {
+      "id": "pin-down",
+      "text": "Let's pin down where they got stuck.",
+      "ru": "Давай точно определим, где они затруднились.",
+      "part": "pin down",
+      "why": "Pin down — уточнить неопределённую проблему до конкретного факта.",
+      "sound": "Pin down звучит как единый блок; дальше обычно идёт what, where или причина.",
+      "example": "We need to pin down the main requirement.",
+      "exampleRu": "Нужно точно определить главное требование."
+    },
+    {
+      "id": "narrow",
+      "text": "Could we narrow this down to one change?",
+      "ru": "Можем сузить это до одного изменения?",
+      "part": "narrow this down",
+      "why": "Narrow down уменьшает число вариантов и задаёт фокус.",
+      "sound": "This может отделять narrow от down, но смысловой блок остаётся общим.",
+      "example": "We've narrowed it down to two options.",
+      "exampleRu": "Мы сузили выбор до двух вариантов."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Emma",
+      "text": "We can speak to the participant, inspect the recording, or agree a very small test for the next session. Which would give us the clearest evidence?",
+      "ru": "Можно поговорить с участником, посмотреть запись или согласовать маленькую проверку на следующей сессии. Что даст наиболее ясные данные?",
+      "choices": [
+        {
+          "label": "Уточнить у участника",
+          "text": "Let's ask which step felt complicated and what they expected to happen.",
+          "next": "participant"
+        },
+        {
+          "label": "Посмотреть поведение",
+          "text": "Could we check the recording before proposing a solution?",
+          "next": "recording"
+        },
+        {
+          "label": "Проверить одну гипотезу",
+          "text": "Let's test a different order without removing the guidance.",
+          "next": "test"
+        }
+      ]
+    },
+    "participant": {
+      "speaker": "Emma",
+      "text": "They say the fields were understandable, but they weren't sure whether pressing Continue would submit everything immediately.",
+      "ru": "Он говорит, что поля были понятны, но не было ясно, отправляет ли кнопка «Продолжить» всё сразу.",
+      "choices": [
+        {
+          "label": "Связать изменение с причиной",
+          "text": "Then the uncertainty is about the next step, not the amount of guidance.",
+          "next": "participant-confirm"
+        },
+        {
+          "label": "Проверить слова по записи",
+          "text": "Let's see whether the recording shows the same hesitation.",
+          "next": "recording"
+        }
+      ]
+    },
+    "participant-confirm": {
+      "speaker": "Emma",
+      "text": "Agreed. We could rename the button 'Review your answers' and explain that submission happens on the following screen.",
+      "ru": "Согласна. Можно назвать кнопку «Проверить ответы» и объяснить, что отправка происходит на следующем экране.",
+      "choices": [
+        {
+          "label": "Выбрать точную правку",
+          "text": "Let's make that change and ask the next participant what they expect the button to do.",
+          "next": "participant-end"
+        }
+      ]
+    },
+    "participant-end": {
+      "speaker": "Emma",
+      "text": "Good. We're responding to a specific misunderstanding, and we've defined how to check whether the wording resolves it.",
+      "ru": "Хорошо. Мы отвечаем на конкретное непонимание и определили, как проверить, устраняет ли его новая формулировка.",
+      "choices": [],
+      "outcome": "wording"
+    },
+    "recording": {
+      "speaker": "Emma",
+      "text": "The recording shows them scrolling back three times to find the date instructions. They completed the other fields without hesitation.",
+      "ru": "На записи видно, что он трижды возвращался вверх за инструкцией к дате. Остальные поля заполнил без колебаний.",
+      "choices": [
+        {
+          "label": "Сохранить подсказку рядом с полем",
+          "text": "Let's move the date guidance beside the field instead of deleting it.",
+          "next": "recording-confirm"
+        },
+        {
+          "label": "Оставить решение до сравнения",
+          "text": "Could we compare two layouts in the next session?",
+          "next": "test"
+        }
+      ]
+    },
+    "recording-confirm": {
+      "speaker": "Emma",
+      "text": "That fits what we saw. We'd keep the same information but reduce the need to remember it while scrolling.",
+      "ru": "Это соответствует наблюдению. Информация останется, но не придётся удерживать её в памяти при прокрутке.",
+      "choices": [
+        {
+          "label": "Определить признак улучшения",
+          "text": "We'll check whether the next person can enter the date without scrolling back.",
+          "next": "recording-end"
+        }
+      ]
+    },
+    "recording-end": {
+      "speaker": "Emma",
+      "text": "Exactly. The change is small enough for tomorrow, and the success criterion comes directly from the observed difficulty.",
+      "ru": "Именно. Правка достаточно маленькая, чтобы сделать завтра, а критерий успеха прямо связан с наблюдаемой трудностью.",
+      "choices": [],
+      "outcome": "layout"
+    },
+    "test": {
+      "speaker": "Emma",
+      "text": "We have time for two short sessions, not a full redesign. What would you keep constant so the comparison means something?",
+      "ru": "Время есть на две короткие сессии, не на полную переработку. Что оставим одинаковым, чтобы сравнение что-то значило?",
+      "choices": [
+        {
+          "label": "Изменить только порядок",
+          "text": "Keep the wording and fields the same; change only where the guidance appears.",
+          "next": "test-confirm"
+        }
+      ]
+    },
+    "test-confirm": {
+      "speaker": "Emma",
+      "text": "Fine. With only two people, we shouldn't call the result proof. It can still show us whether the proposed arrangement creates a new problem.",
+      "ru": "Хорошо. При двух участниках не стоит называть результат доказательством. Но мы увидим, не создаёт ли новый порядок другую проблему.",
+      "choices": [
+        {
+          "label": "Зафиксировать ограничение вывода",
+          "text": "Let's treat it as an initial check and record both hesitation and questions.",
+          "next": "test-end"
+        }
+      ]
+    },
+    "test-end": {
+      "speaker": "Emma",
+      "text": "That's a proportionate plan: a focused comparison now, with broader conclusions left open until we have more evidence.",
+      "ru": "Соразмерный план: точное сравнение сейчас, а широкие выводы оставим открытыми до новых данных.",
+      "choices": [],
+      "outcome": "test"
+    }
+  },
+  "outcomes": {
+    "wording": {
+      "title": "Ясное действие кнопки",
+      "body": "Ты выяснил, что человека смущала отправка, и выбрал формулировку «Проверить ответы» с последующей проверкой ожиданий."
+    },
+    "layout": {
+      "title": "Подсказка там, где нужна",
+      "body": "Вы переносите инструкцию к полю даты. Следующий признак улучшения — отсутствие возвратов наверх за той же инструкцией."
+    },
+    "test": {
+      "title": "Небольшое сравнение с оговоркой",
+      "body": "Две сессии сравнят расположение подсказки при одинаковом тексте. Это первичная проверка, не окончательное доказательство."
+    }
+  },
+  "transfer": [
+    {
+      "id": "feedback-tone",
+      "speaker": "Leo",
+      "text": "When she said the email was too direct, she wasn't asking us to make it longer. She wanted the request to acknowledge the work already done.",
+      "ru": "Когда она сказала, что письмо слишком прямое, она не просила сделать его длиннее. Хотела, чтобы в просьбе признавали уже выполненную работу.",
+      "question": "Какое изменение нужно?",
+      "options": [
+        "Признать уже сделанную работу",
+        "Добавить больше абзацев любой ценой",
+        "Убрать саму просьбу"
+      ],
+      "answer": 0,
+      "explanation": "Wasn't asking ... longer исключает объём; acknowledge the work уточняет тон."
+    },
+    {
+      "id": "feedback-scope",
+      "speaker": "Leo",
+      "text": "The chart isn't necessarily wrong. What we haven't established is whether the figures refer to the same period.",
+      "ru": "График не обязательно неверен. Пока не установлено, относятся ли цифры к одному периоду.",
+      "question": "Что нужно проверить прежде всего?",
+      "options": [
+        "Цвет линий",
+        "Сопоставимость периодов",
+        "Имя автора"
+      ],
+      "answer": 1,
+      "explanation": "What we haven't established выделяет конкретный пробел: same period."
+    },
+    {
+      "id": "feedback-priority",
+      "speaker": "Leo",
+      "text": "The animation is an interesting idea, but it doesn't address the issue people reported. Let's fix the missing confirmation message first.",
+      "ru": "Анимация — интересная идея, но она не решает заявленную людьми проблему. Сначала исправим отсутствие подтверждающего сообщения.",
+      "question": "Каков первый приоритет?",
+      "options": [
+        "Добавить анимацию",
+        "Переделать весь сайт",
+        "Добавить отсутствующее подтверждение"
+      ],
+      "answer": 2,
+      "explanation": "But ограничивает похвалу идее; first задаёт приоритет конкретной проблемы."
+    }
+  ]
+}

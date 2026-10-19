@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "id": "rainy-trip-it",
+  "number": "17",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Что спасти в дождливой поездке",
+  "category": "Поездки",
+  "summary": "Прогноз разрушает красивый маршрут. Выясни, ради чего каждый едет, и предложи план, который сохраняет главное.",
+  "duration": "15–20 минут",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Джулия планирует прогулку после городской выставки."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг из этой истории: новые голосовые сообщения для тренировки слуха."
+  },
+  "contextTitle": "Накануне выходного",
+  "contextText": "Вы с Джулией и Марко собирались пройтись по холмам и встретить местного мастера. На завтра обещают сильный дождь.",
+  "taskTitle": "Изменить маршрут, сохранив цель",
+  "taskText": "Различи предпочтение и обязательство. Можно перенести прогулку, сократить её или превратить поездку в мастерскую встречу.",
+  "taskShort": "Сильный дождь · встреча в 14:00",
+  "skill": "Улавливать скрытый приоритет и строить компромисс с уступкой benché.",
+  "phraseLabels": [
+    "Хотя",
+    "Было бы жаль",
+    "Раз уж"
+  ],
+  "transferIntro": "Марко объясняет, что важно в других планах. Слушай приоритет за вежливыми уступками.",
+  "repair": "Puoi ripetere più lentamente, per favore?",
+  "checkText": "Ciao, mi senti bene? Possiamo cominciare.",
+  "opening": "Benché avessimo organizzato tutto per camminare, domani è prevista pioggia forte. A Marco dispiacerebbe rinunciare soprattutto alla visita al laboratorio, non tanto al sentiero. Il maestro ci aspetta alle due e può riceverci al coperto. Già che abbiamo i biglietti del treno, potremmo cambiare il programma, purché nessuno si senta obbligato a partire soltanto per non perdere i soldi.",
+  "openingRu": "Хотя мы всё организовали ради прогулки, завтра ожидается сильный дождь. Марко было бы жаль прежде всего пропустить мастерскую, а не столько тропу. Мастер ждёт в два и может принять под крышей. Раз уж билеты куплены, можем изменить программу, если никто не почувствует обязанности ехать только из-за потраченных денег.",
+  "openingQuestion": {
+    "question": "Что Марко особенно хочет сохранить?",
+    "options": [
+      "Встречу в мастерской",
+      "Длинную прогулку под дождём",
+      "Изначальное время обратного поезда"
+    ],
+    "answer": 0,
+    "explanation": "Soprattutto la visita al laboratorio, non tanto al sentiero — приоритет мастерская, а не маршрут."
+  },
+  "phrases": [
+    {
+      "id": "rainy-trip-benche",
+      "text": "Benché avessimo organizzato tutto per camminare, cambia il tempo.",
+      "ru": "Хотя всё было организовано ради прогулки, погода меняется.",
+      "part": "benché avessimo",
+      "why": "Benché вводит уступку; дальше congiuntivo. План существовал, но не определяет всё решение.",
+      "sound": "У benché ударение в конце: воспринимай его как сигнал препятствия исходной логике.",
+      "example": "Benché sia lontano, vale la pena andarci.",
+      "exampleRu": "Хотя это далеко, туда стоит съездить."
+    },
+    {
+      "id": "rainy-trip-dispiacerebbe",
+      "text": "Gli dispiacerebbe rinunciare alla visita.",
+      "ru": "Ему было бы жаль отказаться от визита.",
+      "part": "dispiacerebbe rinunciare",
+      "why": "Condizionale показывает предполагаемое сожаление, а rinunciare a — отказ от чего-либо.",
+      "sound": "Длинное dispiacerebbe распознай по началу dispiace; затем слушай, что именно жаль.",
+      "example": "Mi dispiacerebbe perdere l’incontro.",
+      "exampleRu": "Мне было бы жаль пропустить встречу."
+    },
+    {
+      "id": "rainy-trip-gia",
+      "text": "Già che abbiamo i biglietti, potremmo partire.",
+      "ru": "Раз уж билеты есть, могли бы поехать.",
+      "part": "già che",
+      "why": "Già che вводит существующее обстоятельство в пользу предложения, но не обязанность.",
+      "sound": "Не путай già che с già — уже: союз связывает причину с новым предложением.",
+      "example": "Già che sei qui, guardiamo il programma.",
+      "exampleRu": "Раз уж ты здесь, посмотрим программу."
+    },
+    {
+      "id": "rainy-trip-tanto",
+      "text": "Non tanto il sentiero quanto l’incontro.",
+      "ru": "Не столько тропа, сколько встреча.",
+      "part": "non tanto ... quanto",
+      "why": "Конструкция расставляет приоритеты между двумя вещами.",
+      "sound": "Держи обе части до quanto: главный акцент часто стоит после него.",
+      "example": "Mi interessa non tanto vincere quanto imparare.",
+      "exampleRu": "Мне важно не столько победить, сколько научиться."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "text": "Io preferirei una giornata senza fretta. Tu vuoi comunque uscire dalla città, oppure ti peserebbe passare molto tempo al chiuso?",
+      "ru": "Я бы предпочла день без спешки. Ты всё равно хочешь выбраться из города, или тебе будет тяжело провести много времени в помещении?",
+      "choices": [
+        {
+          "label": "Сохранить встречу под крышей",
+          "text": "Per me conta il laboratorio. Possiamo rinunciare al sentiero.",
+          "next": "workshop"
+        },
+        {
+          "label": "Сократить прогулку",
+          "text": "Mi piacerebbe camminare un po’, se ci fosse una pausa nella pioggia.",
+          "next": "short-walk"
+        },
+        {
+          "label": "Перенести поездку целиком",
+          "text": "Preferirei tornare con bel tempo, anche perdendo parte del biglietto.",
+          "next": "postpone"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "workshop": {
+      "text": "Il maestro può anticiparci alle undici, se confermiamo oggi. Avremmo due ore in laboratorio e il pomeriggio libero.",
+      "ru": "Мастер может принять в одиннадцать, если подтвердим сегодня. Будет два часа в мастерской и свободный день после.",
+      "choices": [
+        {
+          "label": "Перестроить день вокруг встречи",
+          "text": "Confermiamo le undici e prendiamo il treno prima.",
+          "next": "workshop-check"
+        },
+        {
+          "label": "Выбрать другой день",
+          "text": "Se cambiamo anche il treno, preferisco rimandare.",
+          "next": "postpone"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "workshop-check": {
+      "text": "Il cambio del treno costa cinque euro. Il laboratorio è a cinque minuti dalla stazione; non dobbiamo attraversare il sentiero fangoso.",
+      "ru": "Смена поезда стоит пять евро. Мастерская в пяти минутах от станции; не нужно идти по грязной тропе.",
+      "choices": [
+        {
+          "label": "Принять подтверждённый маршрут",
+          "text": "Va bene. Avvisiamo Marco che salviamo la visita.",
+          "next": "workshop-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "short-walk": {
+      "text": "C’è una passeggiata di venti minuti vicino al paese. La faremmo solo se smettesse di piovere; il sentiero lungo resta escluso.",
+      "ru": "Есть двадцатиминутная прогулка у городка. Пойдём только если дождь прекратится; длинная тропа исключена.",
+      "choices": [
+        {
+          "label": "Уточнить запасной план",
+          "text": "Se continuasse a piovere, dove aspetteremmo le due?",
+          "next": "weather-check"
+        },
+        {
+          "label": "Убрать неопределённость прогулки",
+          "text": "Preferisco entrare subito al laboratorio.",
+          "next": "workshop"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "weather-check": {
+      "text": "La biblioteca è aperta e dista due minuti dal laboratorio. Potremmo leggere lì, senza ordinare continuamente al bar.",
+      "ru": "Библиотека открыта в двух минутах от мастерской. Можем почитать там, не делая бесконечные заказы в кафе.",
+      "choices": [
+        {
+          "label": "Согласиться с условным планом",
+          "text": "D’accordo: passeggiata solo se smette, altrimenti biblioteca.",
+          "next": "walk-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "postpone": {
+      "text": "Il maestro è libero anche il sabato successivo. Del biglietto recupereremmo metà del prezzo, se annullassimo entro stasera.",
+      "ru": "Мастер свободен и в следующую субботу. Половину стоимости билета вернут, если отменим до вечера.",
+      "choices": [
+        {
+          "label": "Признать потерю ради удобства",
+          "text": "Accetto di perdere metà: preferisco la giornata che avevamo immaginato.",
+          "next": "postpone-check"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "postpone-check": {
+      "text": "Marco è d’accordo, purché fissiamo subito la nuova visita. Senza una data temeva che il laboratorio venisse dimenticato.",
+      "ru": "Марко согласен, если сразу назначим новый визит. Без даты он боялся, что о мастерской забудут.",
+      "choices": [
+        {
+          "label": "Назначить конкретную встречу",
+          "text": "Prenotiamo sabato prossimo alle due e annulliamo i biglietti oggi.",
+          "next": "postpone-end"
+        }
+      ],
+      "speaker": "Giulia"
+    },
+    "workshop-end": {
+      "text": "La pioggia cambia il paesaggio, non il centro della giornata. Il maestro vi aspetta alle undici.",
+      "ru": "Дождь меняет пейзаж, но не главное в этом дне. Мастер ждёт вас в одиннадцать.",
+      "choices": [],
+      "outcome": "workshop",
+      "speaker": "Giulia"
+    },
+    "walk-end": {
+      "text": "Il piano ha due versioni pratiche. La decisione sulla passeggiata dipenderà dal tempo reale, non dalla speranza.",
+      "ru": "У плана две выполнимые версии. Решение о прогулке будет зависеть от реальной погоды, а не надежды.",
+      "choices": [],
+      "outcome": "walk",
+      "speaker": "Giulia"
+    },
+    "postpone-end": {
+      "text": "La nuova data è confermata. Avete accettato una perdita limitata senza trasformarla in una giornata sgradita.",
+      "ru": "Новая дата подтверждена. Вы приняли ограниченную потерю, не превращая её в неприятный день.",
+      "choices": [],
+      "outcome": "postpone",
+      "speaker": "Giulia"
+    }
+  },
+  "outcomes": {
+    "workshop": {
+      "title": "День в мастерской",
+      "body": "Вы перенесли встречу на 11:00 и поезд за €5. Длинная тропа больше не нужна."
+    },
+    "walk": {
+      "title": "План с погодным условием",
+      "body": "При сухой погоде — короткая прогулка; при дожде — библиотека. Мастерская остаётся в 14:00."
+    },
+    "postpone": {
+      "title": "Сохранить замысел",
+      "body": "Визит перенесён на следующую субботу, 14:00. Вы отменили билеты вовремя для возврата половины цены."
+    }
+  },
+  "transfer": [
+    {
+      "text": "Mi interessa non tanto vedere tutte le sale quanto parlare con la curatrice. Se arriva più tardi, posso aspettare.",
+      "ru": "Мне интересно не столько увидеть все залы, сколько поговорить с куратором. Если она придёт позже, могу подождать.",
+      "question": "Что для говорящего главное?",
+      "options": [
+        "Осмотреть каждый зал",
+        "Поговорить с куратором",
+        "Уйти раньше"
+      ],
+      "answer": 1,
+      "explanation": "После quanto назван приоритет: parlare con la curatrice. Готовность ждать подтверждает его.",
+      "id": "it-rainy-trip-transfer-1",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Benché il concerto sia già pagato, non me la sento di affrontare tre ore di viaggio. Proverò a cedere il biglietto.",
+      "ru": "Хотя концерт уже оплачен, я не готов к трёхчасовой дороге. Попробую передать билет.",
+      "question": "Какое решение выражено?",
+      "options": [
+        "Ехать несмотря на всё",
+        "Потребовать перенести концерт",
+        "Не ехать и попытаться передать билет"
+      ],
+      "answer": 2,
+      "explanation": "Benché признаёт потраченные деньги, но основное решение — non me la sento и cedere il biglietto.",
+      "id": "it-rainy-trip-transfer-2",
+      "speaker": "Marco"
+    },
+    {
+      "text": "Già che passiamo vicino all’archivio, potremmo fermarci. Ma soltanto se resta tempo dopo l’appuntamento principale.",
+      "ru": "Раз уж проезжаем рядом с архивом, могли бы зайти. Но только если останется время после основной встречи.",
+      "question": "Какой статус у посещения архива?",
+      "options": [
+        "Необязательное дополнение",
+        "Главная цель дня",
+        "Уже подтверждённая встреча"
+      ],
+      "answer": 0,
+      "explanation": "Potremmo — предложение, soltanto se — условие; appuntamento principale сохраняет приоритет.",
+      "id": "it-rainy-trip-transfer-3",
+      "speaker": "Marco"
+    }
+  ]
+}

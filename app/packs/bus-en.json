@@ -1,0 +1,119 @@
+{
+  "episode": "bus-en",
+  "level": "A2",
+  "grammar": {
+    "title": "Планы: be going to",
+    "explanation": "Be going to + начальная форма глагола показывает намерение: We are going to walk. Форму be выбираем по подлежащему: I am, she is, we are. В отрицании not ставится после be. В вопросе be переносится перед подлежащим.",
+    "examples": [
+      {
+        "text": "We are going to take the ferry.",
+        "ru": "Мы собираемся поехать на пароме."
+      },
+      {
+        "text": "Are you going to walk?",
+        "ru": "Ты собираешься пойти пешком?"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Свободный день у гавани",
+    "kind": "письмо",
+    "text": "Hi Jo, We missed the bus to the lighthouse this morning, but our day was still good. There was another bus at three, and we did not want to wait for two hours. We decided to stay near the harbour. First, we visited a small museum about fishing boats. Then we bought bread and cheese at the market and ate by the water. Tomorrow we are going to take the early bus to the lighthouse. I have written the departure time on my phone. We are going to leave the hotel thirty minutes before the bus. See you on Monday! Alex"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Основная мысль: о чём Алекс пишет Джо?",
+      "answer": "О новом плане после пропущенного автобуса",
+      "explanation": "Алекс описывает день в гавани и поездку к маяку на завтра.",
+      "options": [
+        "О новом плане после пропущенного автобуса",
+        "О поломке телефона",
+        "О переезде в отель у маяка"
+      ],
+      "id": "bus-en-study-1"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Деталь: где друзья побывали перед рынком?",
+      "answer": "В музее рыбацких лодок",
+      "explanation": "First, we visited a small museum about fishing boats; затем был рынок.",
+      "options": [
+        "В гостинице",
+        "В музее рыбацких лодок",
+        "На маяке"
+      ],
+      "id": "bus-en-study-2"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Вывод: почему завтра они выйдут из отеля заранее?",
+      "answer": "Чтобы снова не опоздать на автобус",
+      "explanation": "Сегодня автобус ушёл; теперь Алекс записал время и планирует выйти за полчаса.",
+      "options": [
+        "Чтобы купить телефон",
+        "Чтобы ждать в музее",
+        "Чтобы снова не опоздать на автобус"
+      ],
+      "id": "bus-en-study-3"
+    },
+    {
+      "kind": "choice",
+      "skill": "grammar",
+      "prompt": "Выберите форму: We ___ going to take the early bus.",
+      "answer": "are",
+      "explanation": "С we используется are.",
+      "options": [
+        "am",
+        "is",
+        "are"
+      ],
+      "id": "bus-en-study-4"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите вопрос о завтрашнем плане.",
+      "answer": "Are you going to visit the museum tomorrow",
+      "explanation": "В вопросе Are идёт перед you; затем going to и глагол.",
+      "words": [
+        "tomorrow",
+        "visit",
+        "Are",
+        "museum",
+        "going",
+        "you",
+        "the",
+        "to"
+      ],
+      "id": "bus-en-study-5"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Что означает departure time?",
+      "answer": "Время отправления",
+      "explanation": "Departure относится к отправлению; arrival — к прибытию.",
+      "options": [
+        "Время отправления",
+        "Стоимость билета",
+        "Время прибытия"
+      ],
+      "id": "bus-en-study-6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите другу письмо о пропущенном автобусе: кратко расскажите, что произошло и чем вы занялись вместо поездки. Затем опишите два плана на завтра с be going to и укажите, как вы подготовитесь, чтобы не опоздать снова.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Я ответил на все вопросы задания и передал нужные факты.",
+      "Я проверил формы глаголов и конструкции этого урока.",
+      "У текста понятный порядок: начало, основные сведения и завершение.",
+      "Я проверил написание слов и уложился в указанный объём."
+    ]
+  }
+}

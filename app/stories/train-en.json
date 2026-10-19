@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "id": "train-en",
+  "number": "02",
+  "language": "en",
+  "locale": "en-GB",
+  "title": "Поезд ушёл из планов",
+  "category": "Поездки",
+  "summary": "Поезд отменён. Нужно добраться до моря к полудню и выбрать удобный маршрут.",
+  "art": "train",
+  "mainSpeaker": {
+    "id": "Oliver",
+    "name": "Оливер",
+    "bio": "Сотрудник информационной стойки на станции."
+  },
+  "secondSpeaker": {
+    "id": "Maya",
+    "name": "Майя",
+    "bio": "Путешественница с новыми сообщениями о маршруте."
+  },
+  "contextTitle": "Выходной у моря",
+  "contextText": "Ты на станции и собираешься в вымышленный город Уэстхейвен. На табло изменилось расписание. Сотрудник объясняет варианты.",
+  "taskTitle": "Приехать до 12:00, потратить не больше £18",
+  "taskText": "Уточни стоимость, время прибытия и место отправления. Выбери маршрут, который тебе подходит.",
+  "taskShort": "До 12:00 · до £18",
+  "skill": "Различать отправление и прибытие, прямой маршрут и пересадку.",
+  "phraseLabels": [
+    "Отмена",
+    "Прямой поезд",
+    "Пересадка"
+  ],
+  "transferIntro": "Новые объявления о других поездках. Время и платформы изменились — слушай внимательно.",
+  "duration": "15–20 минут",
+  "repair": "Could you say that again?",
+  "checkText": "Hi! Are you ready to start?",
+  "opening": "Your nine forty train has been cancelled. The next direct train leaves at ten oh five from platform six. There are also cheaper routes if you don't mind changing.",
+  "openingRu": "Твой поезд в 9:40 отменён. Следующий прямой поезд отправляется в 10:05 с шестой платформы. Есть и более дешёвые маршруты, если ты не против пересадки.",
+  "openingQuestion": {
+    "question": "С какой платформы уходит следующий прямой поезд?",
+    "options": [
+      "С четвёртой",
+      "С шестой",
+      "Со второй"
+    ],
+    "answer": 1,
+    "explanation": "From platform six — с шестой платформы. Ten oh five — время отправления, 10:05."
+  },
+  "phrases": [
+    {
+      "id": "cancelled",
+      "text": "The train has been cancelled.",
+      "ru": "Поезд отменён.",
+      "part": "has been cancelled",
+      "why": "Cancelled означает отмену. Delayed означало бы задержку: это разные ситуации.",
+      "sound": "Сначала поймай слово cancelled, которое несёт главный смысл.",
+      "example": "The flight has been delayed.",
+      "exampleRu": "Рейс задержан."
+    },
+    {
+      "id": "direct",
+      "text": "The next direct train leaves at ten oh five.",
+      "ru": "Следующий прямой поезд отправляется в 10:05.",
+      "part": "direct train",
+      "why": "Direct — без пересадки. Leaves относится к отправлению, arrives — к прибытию.",
+      "sound": "Отдели описание поезда от времени: direct train / leaves / ten oh five.",
+      "example": "What time does the train arrive?",
+      "exampleRu": "Во сколько прибывает поезд?"
+    },
+    {
+      "id": "changing",
+      "text": "If you don't mind changing.",
+      "ru": "Если ты не против пересадки.",
+      "part": "don't mind changing",
+      "why": "Don’t mind + действие означает «не против». В разговоре о поездах changing — пересадка.",
+      "sound": "Не потеряй отрицание don’t. Вся связка означает отсутствие возражения.",
+      "example": "I don't mind waiting ten minutes.",
+      "exampleRu": "Я не против подождать десять минут."
+    },
+    {
+      "id": "single",
+      "text": "A single ticket, please.",
+      "ru": "Билет в одну сторону, пожалуйста.",
+      "part": "single ticket",
+      "why": "Single — в одну сторону; return — туда и обратно.",
+      "sound": "Сравни два отдельных смысловых блока: single ticket / return ticket.",
+      "example": "Is that a single or a return?",
+      "exampleRu": "Это билет в одну сторону или туда и обратно?"
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Oliver",
+      "text": "The direct train is eighteen pounds. The local train is twelve, and the bus is nine. Which would you like to hear about?",
+      "ru": "Прямой поезд стоит 18 фунтов, местный — 12, автобус — 9. О каком варианте рассказать?",
+      "choices": [
+        {
+          "label": "Узнать о прямом поезде",
+          "text": "What time does the direct train arrive?",
+          "next": "direct"
+        },
+        {
+          "label": "Узнать о более дешёвом поезде",
+          "text": "Could you tell me about the local train?",
+          "next": "local"
+        },
+        {
+          "label": "Рассмотреть автобус",
+          "text": "What about the bus?",
+          "next": "bus"
+        }
+      ]
+    },
+    "direct": {
+      "speaker": "Oliver",
+      "text": "It arrives at eleven ten. The price includes a reserved seat. You can use a ticket on your phone.",
+      "ru": "Он прибывает в 11:10. Место включено в цену. Можно показать билет на телефоне.",
+      "choices": [
+        {
+          "label": "Уточнить платформу",
+          "text": "Which platform does it leave from?",
+          "next": "platform"
+        },
+        {
+          "label": "Сравнить с местным поездом",
+          "text": "How much later does the local train arrive?",
+          "next": "local"
+        }
+      ]
+    },
+    "platform": {
+      "speaker": "Oliver",
+      "text": "The direct train costs eighteen pounds and arrives at eleven ten. It leaves from platform six at ten oh five. Take the stairs on your left.",
+      "ru": "Прямой поезд стоит 18 фунтов и прибывает в 11:10. Отправление с шестой платформы в 10:05. Лестница слева.",
+      "choices": [
+        {
+          "label": "Взять билет в одну сторону",
+          "text": "One single ticket for the direct train, please.",
+          "next": "direct-end"
+        }
+      ]
+    },
+    "direct-end": {
+      "speaker": "Oliver",
+      "text": "Here you are. Platform six, ten oh five. Have a lovely day by the sea!",
+      "ru": "Пожалуйста. Шестая платформа, 10:05. Хорошего дня у моря!",
+      "choices": [],
+      "outcome": "direct"
+    },
+    "local": {
+      "speaker": "Oliver",
+      "text": "The local train leaves at nine fifty from platform two. Change at Millbridge. You arrive in Westhaven at eleven twenty-five.",
+      "ru": "Местный поезд отправляется в 9:50 со второй платформы. Пересадка в Миллбридже. В Уэстхейвене будешь в 11:25.",
+      "choices": [
+        {
+          "label": "Уточнить время на пересадку",
+          "text": "How long do I have to change trains?",
+          "next": "connection"
+        },
+        {
+          "label": "Выбрать прямой маршрут",
+          "text": "I would rather take the direct train.",
+          "next": "platform"
+        }
+      ]
+    },
+    "connection": {
+      "speaker": "Oliver",
+      "text": "You have eight minutes. The next train is on the opposite side of the same platform.",
+      "ru": "У тебя восемь минут. Следующий поезд — с противоположной стороны той же платформы.",
+      "choices": [
+        {
+          "label": "Купить билет с пересадкой за £12",
+          "text": "That sounds fine. One single ticket, please.",
+          "next": "local-end"
+        }
+      ]
+    },
+    "local-end": {
+      "speaker": "Oliver",
+      "text": "Here is your ticket. Remember to change at Millbridge. You will arrive at eleven twenty-five.",
+      "ru": "Вот билет. Не забудь пересесть в Миллбридже. Прибудешь в 11:25.",
+      "choices": [],
+      "outcome": "local"
+    },
+    "bus": {
+      "speaker": "Oliver",
+      "text": "The bus leaves at ten and arrives at eleven forty. Stop B is outside the main entrance. You can pay the driver by card.",
+      "ru": "Автобус отправляется в 10:00 и прибывает в 11:40. Остановка B снаружи у главного входа. Можно заплатить водителю картой.",
+      "choices": [
+        {
+          "label": "Уточнить остановку",
+          "text": "Did you say stop B, outside the station?",
+          "next": "bus-stop"
+        },
+        {
+          "label": "Предпочесть поезд",
+          "text": "I would prefer the direct train.",
+          "next": "direct"
+        }
+      ]
+    },
+    "bus-stop": {
+      "speaker": "Oliver",
+      "text": "Yes, stop B. Turn right outside the main entrance. Look for the blue sign.",
+      "ru": "Да, остановка B. Выйди из главного входа и поверни направо. Ищи синий знак.",
+      "choices": [
+        {
+          "label": "Выбрать автобус за £9",
+          "text": "Thanks. I will take the bus.",
+          "next": "bus-end"
+        }
+      ]
+    },
+    "bus-end": {
+      "speaker": "Oliver",
+      "text": "You are welcome. The bus is nine pounds and arrives before noon. Enjoy your trip!",
+      "ru": "Пожалуйста. Автобус стоит девять фунтов и прибывает до полудня. Приятной поездки!",
+      "choices": [],
+      "outcome": "bus"
+    }
+  },
+  "outcomes": {
+    "direct": {
+      "title": "Прямо к морю",
+      "body": "Ты выбрал прямой поезд за £18 с прибытием в 11:10. Платформа 6, отправление в 10:05."
+    },
+    "local": {
+      "title": "Пересадка под контролем",
+      "body": "Ты сэкономил: билет £12, пересадка в Миллбридже, прибытие в 11:25."
+    },
+    "bus": {
+      "title": "Маршрут без лишних расходов",
+      "body": "Автобус за £9 отправляется от остановки B в 10:00 и прибывает в 11:40."
+    }
+  },
+  "transfer": [
+    {
+      "id": "train-time",
+      "speaker": "Maya",
+      "text": "The train leaves at quarter to eleven and arrives at twenty past twelve.",
+      "ru": "Поезд отправляется в 10:45 и прибывает в 12:20.",
+      "question": "Когда отправляется поезд?",
+      "options": [
+        "10:15",
+        "10:45",
+        "12:20"
+      ],
+      "answer": 1,
+      "explanation": "Quarter to eleven — без четверти одиннадцать, 10:45. Arrives обозначает прибытие."
+    },
+    {
+      "id": "train-platform",
+      "speaker": "Maya",
+      "text": "The train to Northport now leaves from platform three, not platform five.",
+      "ru": "Поезд в Нортпорт теперь отправляется с третьей платформы, а не с пятой.",
+      "question": "На какую платформу идти?",
+      "options": [
+        "На третью",
+        "На пятую",
+        "На вторую"
+      ],
+      "answer": 0,
+      "explanation": "Now ... platform three — теперь третья платформа. Not platform five отменяет прежний вариант."
+    },
+    {
+      "id": "train-change",
+      "speaker": "Maya",
+      "text": "This is not a direct service. Change at Greenford and take the train on the opposite platform.",
+      "ru": "Это не прямой рейс. Пересядь в Гринфорде на поезд на противоположной платформе.",
+      "question": "Что нужно сделать в Гринфорде?",
+      "options": [
+        "Остаться в поезде",
+        "Сесть в автобус",
+        "Пересесть на другой поезд"
+      ],
+      "answer": 2,
+      "explanation": "Change at Greenford означает пересадку. Opposite platform уточняет место."
+    }
+  ]
+}

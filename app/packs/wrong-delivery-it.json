@@ -1,0 +1,116 @@
+{
+  "episode": "wrong-delivery-it",
+  "level": "A2",
+  "grammar": {
+    "title": "Passato prossimo с avere",
+    "explanation": "Passato prossimo описывает завершённое событие: avere в настоящем + причастие. Формы: ho, hai, ha, abbiamo, avete, hanno. Частые причастия: ordinare → ordinato, ricevere → ricevuto, aprire → aperto. С обычным прямым дополнением причастие с avere не меняется: ho ricevuto una scatola.",
+    "examples": [
+      {
+        "text": "Ho ricevuto un pacco ieri.",
+        "ru": "Я получил посылку вчера."
+      },
+      {
+        "text": "Non abbiamo aperto la scatola.",
+        "ru": "Мы не открывали коробку."
+      },
+      {
+        "text": "Il corriere ha lasciato un avviso.",
+        "ru": "Курьер оставил извещение."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Записка для курьера",
+    "kind": "рассказ",
+    "text": "Ieri Nina ha ricevuto due pacchi, ma ha ordinato soltanto un paio di scarpe. Sulla seconda scatola c’è il nome del vicino, Alberto. Nina non apre il pacco e gli scrive un messaggio. Alberto risponde dopo un’ora: oggi torna tardi e domani lavora da casa. Chiede a Nina di tenere la scatola fino alla mattina dopo. Nina accetta e mette il pacco vicino alla porta. Poi prepara una piccola etichetta con il proprio nome e il numero dell’appartamento. La attacca sotto il campanello, perché i due cognomi sono molto simili. Quando Alberto arriva il giorno dopo, ringrazia Nina e decide di fare la stessa cosa. Per entrambi è una soluzione semplice."
+  },
+  "exercises": [
+    {
+      "kind": "gap",
+      "skill": "grammar",
+      "prompt": "Поставьте ricevere в passato prossimo; вспомогательный глагол уже есть.",
+      "answer": "ricevuto",
+      "explanation": "Причастие ricevere — ricevuto; вспомогательный глагол ha дан в предложении.",
+      "text": "Nina ha ___ due pacchi.",
+      "id": "wrong-delivery-it-q1"
+    },
+    {
+      "kind": "order",
+      "skill": "grammar",
+      "prompt": "Соберите отрицательное предложение в passato prossimo.",
+      "answer": "Non abbiamo aperto la scatola.",
+      "explanation": "Non ставится перед вспомогательным глаголом: non abbiamo aperto.",
+      "words": [
+        "la",
+        "Non",
+        "scatola.",
+        "aperto",
+        "abbiamo"
+      ],
+      "id": "wrong-delivery-it-q2"
+    },
+    {
+      "kind": "choice",
+      "skill": "vocabulary",
+      "prompt": "Где обычно находится il campanello?",
+      "answer": "Vicino alla porta d’ingresso.",
+      "explanation": "Campanello — дверной звонок, обычно рядом со входом.",
+      "options": [
+        "Vicino alla porta d’ingresso.",
+        "Dentro una scarpa.",
+        "Sotto il tavolo da pranzo."
+      ],
+      "id": "wrong-delivery-it-q3"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "О чём прежде всего этот рассказ?",
+      "answer": "Un errore di consegna e una soluzione pratica.",
+      "explanation": "Чужую посылку сохраняют, а подписи у звонков помогают избежать путаницы.",
+      "options": [
+        "Un errore di consegna e una soluzione pratica.",
+        "Un ordine di scarpe annullato.",
+        "Un vicino che cambia casa."
+      ],
+      "id": "wrong-delivery-it-q4"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Когда Альберто забирает коробку?",
+      "answer": "La mattina dopo.",
+      "explanation": "Он просит оставить коробку до следующего утра и приходит на следующий день.",
+      "options": [
+        "La mattina dopo.",
+        "La stessa sera.",
+        "Una settimana dopo."
+      ],
+      "id": "wrong-delivery-it-q5"
+    },
+    {
+      "kind": "reading",
+      "skill": "reading",
+      "prompt": "Зачем Нина добавляет номер квартиры на табличку?",
+      "answer": "Per aiutare il corriere a distinguere i destinatari.",
+      "explanation": "Фамилии похожи, поэтому дополнительная информация помогает различить адресатов.",
+      "options": [
+        "Per aiutare il corriere a distinguere i destinatari.",
+        "Per chiedere ad Alberto di pagare le scarpe.",
+        "Per informare tutti che cambia cognome."
+      ],
+      "id": "wrong-delivery-it-q6"
+    }
+  ],
+  "writing": {
+    "prompt": "Напишите соседу сообщение о посылке, которую вчера доставили вам по ошибке: что произошло, что вы сделали с коробкой и когда он может её забрать.",
+    "min": 70,
+    "max": 110,
+    "checklist": [
+      "Описаны ошибка, состояние посылки и время передачи.",
+      "Есть минимум два passato prossimo с avere.",
+      "Причастия и формы ho/ha/abbiamo выбраны правильно.",
+      "События изложены по порядку, в конце есть конкретная договорённость."
+    ]
+  }
+}

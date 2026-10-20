@@ -20,7 +20,8 @@ COPY --from=builder --chown=node:node /app/.next/static ./.next/static
 COPY --from=builder --chown=node:node /app/public ./public
 COPY --from=builder --chown=node:node /app/content/catalog-v1.json ./content/catalog-v1.json
 COPY --from=builder --chown=node:node /app/content/practice-v2.json ./content/practice-v2.json
-COPY --chown=node:node lib/db-migrations.mjs ./lib/db-migrations.mjs
+COPY --from=builder --chown=node:node /app/content/audio-library ./content/audio-library
+COPY --chown=node:node lib/db-migrations.mjs lib/audio-library-migration.mjs ./lib/
 COPY --chown=node:node scripts/backup.mjs scripts/restore.mjs scripts/migrate.mjs scripts/docker-entrypoint.sh ./scripts/
 USER node
 EXPOSE 3000

@@ -1,6 +1,6 @@
 import {defaultVoice,speechMode,type SpeechConfig} from './speech-config';
 
-export type PlaybackOptions={text:string;locale:string;voice?:string;secondary?:boolean;speed?:number;config:SpeechConfig;onStart?:()=>void;onEnd?:()=>void;onCancel?:()=>void;onError?:(message:string)=>void};
+export type PlaybackOptions={source?:string;startAt?:number;endAt?:number;text:string;locale:string;voice?:string;secondary?:boolean;speed?:number;config:SpeechConfig;onStart?:()=>void;onEnd?:()=>void;onCancel?:()=>void;onError?:(message:string)=>void};
 export type Playback={stop:()=>void;done:Promise<boolean>};
 const clips=new Map<string,string>();
 let active:Playback|undefined;
@@ -12,13 +12,13 @@ export function playSpeech(options:PlaybackOptions):Playback{
   stopSpeech();
   const {text,locale,secondary=false,voice='',config}=options;
   const speed=options.speed??1;
-  let ended=false,audio:HTMLAudioElement|undefined,utterance:SpeechSynthesisUtterance|undefined,timer:ReturnType<typeof setTimeout>|undefined;
+  let ended=false,audio:HTMLAudioElement|undefined,utterance:SpeechSynthesisUtterance|undefined,timer:ReturnType<typeof setTimeout>|undefined,boundary:ReturnType<typeof setTimeout>|undefined;
   const controller=new AbortController();
   let resolveDone:(completed:boolean)=>void=()=>{};
   const done=new Promise<boolean>(resolve=>{resolveDone=resolve;});
   const finish=(reason:'end'|'cancel'|'error',message='')=>{
-    if(ended)return;ended=true;clearTimeout(timer);controller.abort();
-    if(audio){audio.onplaying=null;audio.onended=null;audio.onerror=null;audio.pause();audio.removeAttribute('src');audio.load();}
+    if(ended)return;ended=true;clearTimeout(timer);clearTimeout(boundary);controller.abort();
+    if(audio){audio.onplaying=null;audio.onended=null;audio.onerror=null;audio.onloadedmetadata=null;audio.ontimeupdate=null;audio.pause();audio.removeAttribute('src');audio.load();}
     if(utterance){utterance.onstart=null;utterance.onend=null;utterance.onerror=null;window.speechSynthesis.cancel();}
     if(active===handle)active=undefined;
     resolveDone(reason==='end');
@@ -28,7 +28,7 @@ export function playSpeech(options:PlaybackOptions):Playback{
   const failed=(message:string)=>finish('error',message);
   const started=()=>{if(!ended){clearTimeout(timer);options.onStart?.();}};
   const completed=()=>finish('end');
-  if(speechMode(voice,config)==='device'){
+  if(!options.source&&speechMode(voice,config)==='device'){
     if(!window.speechSynthesis||!window.SpeechSynthesisUtterance){failed('Системная озвучка недоступна. Выбери нейроголос в настройках или открой текст.');return handle;}
     const uri=voice.startsWith('device:')?voice.slice(7):voice;
     const voices=window.speechSynthesis.getVoices().filter(v=>v.lang.slice(0,2).toLowerCase()===locale.slice(0,2).toLowerCase());
@@ -44,13 +44,33 @@ export function playSpeech(options:PlaybackOptions):Playback{
   const selected=voice.startsWith('cloud:')?voice.slice(6):defaultVoice(secondary);
   const key=JSON.stringify([text,locale,selected]);
   audio=new Audio();audio.preload='auto';audio.playbackRate=speed;audio.preservesPitch=true;
-  audio.onplaying=started;audio.onended=completed;audio.onerror=()=>failed('Не удалось воспроизвести запись. Повтори или проверь звук.');
+  const endAt=options.endAt;
+  const startAt=options.startAt??0;
+  if(!Number.isFinite(startAt)||startAt<0||(endAt!==undefined&&(!Number.isFinite(endAt)||endAt<=startAt))){failed('Некорректные границы аудиофрагмента.');return handle;}
+  const watchBoundary=()=>{
+    clearTimeout(boundary);
+    if(ended||endAt===undefined)return;
+    const remaining=endAt-audio!.currentTime;
+    if(remaining<=0){completed();return;}
+    boundary=setTimeout(watchBoundary,Math.max(20,Math.min(100,remaining/speed*1000)));
+  };
+  audio.onplaying=()=>{started();watchBoundary();};
+  audio.onended=()=>{if(endAt!==undefined&&audio!.currentTime<endAt-0.15)failed('Запись оборвалась до конца фрагмента.');else completed();};
+  audio.onerror=()=>failed('Не удалось воспроизвести запись. Повтори или проверь звук.');
+  audio.ontimeupdate=()=>{if(endAt!==undefined&&audio!.currentTime>=endAt)completed();};
+  audio.onloadedmetadata=()=>{
+    if(ended)return;
+    if(endAt!==undefined&&audio!.duration<endAt-0.15){failed('Аудиофрагмент выходит за пределы записи.');return;}
+    if(startAt)audio!.currentTime=startAt;
+  };
   const start=(url:string)=>{
     if(ended)return;
     audio!.src=url;audio!.playbackRate=speed;
     timer=setTimeout(()=>failed('Запись не запустилась. Нажми «Слушать» ещё раз.'),15000);
     try{void audio!.play().catch(()=>{if(!ended)failed('Запись готова. Нажми «Слушать» ещё раз, чтобы разрешить воспроизведение.');});}catch{failed('Не удалось воспроизвести запись.');}
   };
+  // Bundled recordings play directly and never call a synthesis API.
+  if(options.source){start(options.source);return handle;}
   const cached=clips.get(key);
   // A cache hit starts inside the click handler, including Safari's second tap
   // if its autoplay policy rejected the initial asynchronous generation.

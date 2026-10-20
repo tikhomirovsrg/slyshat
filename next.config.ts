@@ -5,6 +5,8 @@ const config: NextConfig = {
     {key:'X-Content-Type-Options',value:'nosniff'},
     {key:'X-Frame-Options',value:'DENY'},
     {key:'Referrer-Policy',value:'no-referrer'},
+  ]},{source:'/audio/library/:file.mp3',headers:[
+    {key:'Cache-Control',value:'public, max-age=31536000, immutable'},
   ]}]; },
 };
 export default config;

@@ -77,7 +77,7 @@ test('v3 upgrade adds 80 sets exactly once and preserves users, sessions, progre
   const before=tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all());
   assert.equal(initializeDatabase(db).practiceSeeded,true);
   assert.deepEqual(tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all()),before);
-  assert.equal(db.prepare('PRAGMA user_version').get().user_version,4);
+  assert.equal(db.prepare('PRAGMA user_version').get().user_version,5);
   assert.equal(db.prepare('SELECT count(*) n FROM content_practice_sets').get().n,80);
   for(const s of practiceSets)assert.deepEqual(JSON.parse(db.prepare('SELECT data_json FROM content_practice_sets WHERE id=?').get(s.id).data_json),s);
   const row=db.prepare('SELECT data_json FROM content_practice_sets LIMIT 1').get();

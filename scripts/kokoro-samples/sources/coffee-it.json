@@ -1,0 +1,326 @@
+{
+  "version": 1,
+  "id": "coffee-it",
+  "number": "01",
+  "language": "it",
+  "locale": "it-IT",
+  "title": "Un caffè insieme?",
+  "category": "Знакомства и общение",
+  "summary": "Джулия предлагает встретиться. Уточни время, место и выбери удобный план.",
+  "art": "coffee",
+  "mainSpeaker": {
+    "id": "Giulia",
+    "name": "Джулия",
+    "bio": "Новая знакомая, которая приглашает на кофе."
+  },
+  "secondSpeaker": {
+    "id": "Marco",
+    "name": "Марко",
+    "bio": "Друг с новыми предложениями на вечер."
+  },
+  "contextTitle": "Кофе после прогулки",
+  "contextText": "Ты гуляешь по городу и получаешь сообщение от Джулии. Она хочет встретиться, но немного опаздывает.",
+  "taskTitle": "Сегодня тебе нужно уйти в 18:00",
+  "taskText": "Уточни время встречи и договорись, где увидитесь. Можно предложить завтра.",
+  "taskShort": "Уйти в 18:00",
+  "skill": "Услышать приглашение, время и место встречи по-итальянски.",
+  "phraseLabels": [
+    "Приглашение",
+    "Опоздание",
+    "Время"
+  ],
+  "transferIntro": "Марко прислал новые сообщения. Послушай, о каком времени и месте он говорит.",
+  "duration": "15–20 минут",
+  "repair": "Puoi ripetere, per favore?",
+  "checkText": "Ciao! Sei pronto per iniziare?",
+  "opening": "Ciao! Ti va di prendere un caffè? Sono un po' in ritardo. Possiamo vederci alle cinque e mezza invece che alle cinque? C'è un bar vicino alla piazza.",
+  "openingRu": "Привет! Хочешь выпить кофе? Я немного опаздываю. Можем встретиться в половине шестого вместо пяти? Есть кафе рядом с площадью.",
+  "openingQuestion": {
+    "question": "Во сколько Джулия теперь предлагает встретиться?",
+    "options": [
+      "В 17:00",
+      "В 17:30",
+      "В 18:00"
+    ],
+    "answer": 1,
+    "explanation": "Alle cinque e mezza — в половине шестого, 17:30. Invece che alle cinque — вместо пяти."
+  },
+  "phrases": [
+    {
+      "id": "ti-va",
+      "text": "Ti va di prendere un caffè?",
+      "ru": "Хочешь выпить кофе?",
+      "part": "Ti va di",
+      "why": "Ti va di + глагол — разговорное приглашение. Здесь не требуется буквальный перевод каждого слова.",
+      "sound": "Услышь ti va di как короткое начало приглашения. Ударные слова — va и caffè.",
+      "example": "Ti va di fare una passeggiata?",
+      "exampleRu": "Хочешь прогуляться?"
+    },
+    {
+      "id": "ritardo",
+      "text": "Sono un po' in ritardo.",
+      "ru": "Я немного опаздываю.",
+      "part": "in ritardo",
+      "why": "Essere in ritardo — опаздывать. Un po’ смягчает сообщение: немного.",
+      "sound": "Главный ориентир — ritardo. В sono un соседние гласные могут звучать тесно связанными.",
+      "example": "Scusa, arrivo con dieci minuti di ritardo.",
+      "exampleRu": "Извини, я приду на десять минут позже."
+    },
+    {
+      "id": "mezza",
+      "text": "Alle cinque e mezza.",
+      "ru": "В половине шестого, в 17:30.",
+      "part": "cinque e mezza",
+      "why": "Cinque — пять. E mezza добавляет половину часа: 5:30. Время суток определяет контекст.",
+      "sound": "Раздели смысл на две части: cinque / e mezza. Затем послушай их вместе.",
+      "example": "Ci vediamo alle sei e un quarto.",
+      "exampleRu": "Увидимся в четверть седьмого, в 18:15."
+    },
+    {
+      "id": "asporto",
+      "text": "Un caffè da asporto, per favore.",
+      "ru": "Кофе с собой, пожалуйста.",
+      "part": "da asporto",
+      "why": "Da asporto — еда или напиток с собой. Bar в Италии часто означает кафе с кофе и закусками.",
+      "sound": "Слушай сочетание da asporto целиком: гласные оказываются рядом.",
+      "example": "Possiamo prendere qualcosa da asporto.",
+      "exampleRu": "Можем взять что-нибудь с собой."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "speaker": "Giulia",
+      "text": "Alle cinque e mezza va bene per te?",
+      "ru": "Тебе подходит 17:30?",
+      "choices": [
+        {
+          "label": "Согласиться, но уйти в 18:00",
+          "text": "Sì, ma devo andare via alle sei.",
+          "next": "short"
+        },
+        {
+          "label": "Уточнить время",
+          "text": "Scusa, hai detto cinque e mezza?",
+          "next": "clarify"
+        },
+        {
+          "label": "Предложить кофе с собой",
+          "text": "Prendiamo un caffè da asporto?",
+          "next": "take"
+        },
+        {
+          "label": "Предложить завтра",
+          "text": "Possiamo vederci domani?",
+          "next": "tomorrow"
+        }
+      ]
+    },
+    "clarify": {
+      "speaker": "Giulia",
+      "text": "Sì, alle cinque e trenta. Tra mezz’ora sono in piazza.",
+      "ru": "Да, в 17:30. Через полчаса буду на площади.",
+      "choices": [
+        {
+          "label": "Выбрать короткую встречу",
+          "text": "Va bene. Ho mezz’ora, poi devo andare.",
+          "next": "short"
+        },
+        {
+          "label": "Перенести на завтра",
+          "text": "Oggi ho poco tempo. Meglio domani.",
+          "next": "tomorrow"
+        }
+      ]
+    },
+    "short": {
+      "speaker": "Giulia",
+      "text": "Va bene, abbiamo mezz’ora. Il bar è di fronte alla libreria. Ci vediamo fuori?",
+      "ru": "Хорошо, у нас полчаса. Кафе напротив книжного магазина. Встретимся снаружи?",
+      "choices": [
+        {
+          "label": "Уточнить ориентир",
+          "text": "Di fronte alla libreria, giusto?",
+          "next": "place"
+        },
+        {
+          "label": "Вместо кафе предложить прогулку",
+          "text": "Preferisco fare due passi. Prendiamo il caffè da asporto?",
+          "next": "take"
+        }
+      ]
+    },
+    "place": {
+      "speaker": "Giulia",
+      "text": "Esatto. Non accanto alla libreria, ma di fronte. Il bar si chiama Sole.",
+      "ru": "Именно. Не рядом с книжным, а напротив. Кафе называется Sole.",
+      "choices": [
+        {
+          "label": "Подтвердить время и место",
+          "text": "Perfetto. Fuori dal bar Sole alle cinque e mezza.",
+          "next": "short-end"
+        }
+      ]
+    },
+    "short-end": {
+      "speaker": "Giulia",
+      "text": "A dopo! Alle sei puoi andare via.",
+      "ru": "До встречи! В шесть можешь идти.",
+      "choices": [],
+      "outcome": "short"
+    },
+    "take": {
+      "speaker": "Giulia",
+      "text": "Volentieri! Prendo io i caffè. Preferisci un espresso o un cappuccino?",
+      "ru": "С удовольствием! Я возьму кофе. Предпочитаешь эспрессо или капучино?",
+      "choices": [
+        {
+          "label": "Выбрать эспрессо",
+          "text": "Un espresso, grazie.",
+          "next": "take-place"
+        },
+        {
+          "label": "Выбрать капучино",
+          "text": "Un cappuccino, per favore.",
+          "next": "take-place"
+        }
+      ]
+    },
+    "take-place": {
+      "speaker": "Giulia",
+      "text": "Va bene. Ti aspetto vicino alla fontana in piazza, alle cinque e mezza.",
+      "ru": "Хорошо. Жду тебя у фонтана на площади в 17:30.",
+      "choices": [
+        {
+          "label": "Уточнить, что встреча теперь у фонтана",
+          "text": "Quindi vicino alla fontana, non al bar?",
+          "next": "fountain"
+        }
+      ]
+    },
+    "fountain": {
+      "speaker": "Giulia",
+      "text": "Sì, vicino alla fontana. Così possiamo fare una passeggiata.",
+      "ru": "Да, у фонтана. Так мы сможем прогуляться.",
+      "choices": [
+        {
+          "label": "Подтвердить прогулку до 18:00",
+          "text": "Perfetto. Passeggiamo fino alle sei.",
+          "next": "take-end"
+        }
+      ]
+    },
+    "take-end": {
+      "speaker": "Giulia",
+      "text": "D’accordo. Ci vediamo in piazza!",
+      "ru": "Договорились. Увидимся на площади!",
+      "choices": [],
+      "outcome": "take"
+    },
+    "tomorrow": {
+      "speaker": "Giulia",
+      "text": "Certo. Domani sono libera dopo le cinque. Alle sei ti va bene?",
+      "ru": "Конечно. Завтра я свободна после пяти. В шесть тебе подходит?",
+      "choices": [
+        {
+          "label": "Согласиться на завтра в 18:00",
+          "text": "Sì, domani alle sei va bene.",
+          "next": "tomorrow-place"
+        },
+        {
+          "label": "Предложить завтра в 17:30",
+          "text": "Preferisco alle cinque e mezza.",
+          "next": "tomorrow-half"
+        }
+      ]
+    },
+    "tomorrow-half": {
+      "speaker": "Giulia",
+      "text": "Va bene anche alle cinque e mezza. Ci vediamo dentro il bar Sole.",
+      "ru": "17:30 тоже подходит. Встретимся внутри кафе Sole.",
+      "choices": [
+        {
+          "label": "Подтвердить встречу внутри кафе",
+          "text": "Dentro il bar, domani alle cinque e mezza. Perfetto.",
+          "next": "tomorrow-end"
+        }
+      ]
+    },
+    "tomorrow-place": {
+      "speaker": "Giulia",
+      "text": "Bene. Domani alle sei, dentro il bar Sole.",
+      "ru": "Хорошо. Завтра в шесть, внутри кафе Sole.",
+      "choices": [
+        {
+          "label": "Подтвердить договорённость",
+          "text": "Perfetto, a domani!",
+          "next": "tomorrow-end"
+        }
+      ]
+    },
+    "tomorrow-end": {
+      "speaker": "Giulia",
+      "text": "A domani! Buona serata.",
+      "ru": "До завтра! Хорошего вечера.",
+      "choices": [],
+      "outcome": "tomorrow"
+    }
+  },
+  "outcomes": {
+    "short": {
+      "title": "Кофе на полчаса",
+      "body": "Вы встречаетесь снаружи у кафе Sole в 17:30. Оно напротив книжного магазина. Уйти нужно в 18:00."
+    },
+    "take": {
+      "title": "Прогулка с кофе",
+      "body": "Джулия принесёт кофе к фонтану на площади в 17:30. У вас полчаса на прогулку."
+    },
+    "tomorrow": {
+      "title": "A domani!",
+      "body": "Вы перенесли встречу на завтра и согласовали время. Встречаетесь внутри кафе Sole."
+    }
+  },
+  "transfer": [
+    {
+      "id": "it-coffee-time",
+      "speaker": "Marco",
+      "text": "Ci vediamo alle sei e un quarto, davanti al cinema.",
+      "ru": "Увидимся в 18:15 перед кинотеатром.",
+      "question": "Во сколько встреча?",
+      "options": [
+        "18:15",
+        "18:30",
+        "18:45"
+      ],
+      "answer": 0,
+      "explanation": "Sei e un quarto — шесть и четверть, то есть 18:15 в вечернем контексте."
+    },
+    {
+      "id": "it-coffee-place",
+      "speaker": "Marco",
+      "text": "Ti aspetto dentro il bar, non fuori. Il tavolo è vicino alla finestra.",
+      "ru": "Жду тебя внутри кафе, не снаружи. Столик рядом с окном.",
+      "question": "Где ждёт Марко?",
+      "options": [
+        "Снаружи у входа",
+        "Внутри кафе",
+        "У фонтана"
+      ],
+      "answer": 1,
+      "explanation": "Dentro il bar — внутри кафе. Non fuori — не снаружи."
+    },
+    {
+      "id": "it-coffee-day",
+      "speaker": "Marco",
+      "text": "Oggi non posso. Possiamo vederci domani dopo le cinque?",
+      "ru": "Сегодня не могу. Можем увидеться завтра после пяти?",
+      "question": "Какое предложение подходит?",
+      "options": [
+        "Сегодня в 17:30",
+        "Завтра в 16:30",
+        "Завтра в 17:30"
+      ],
+      "answer": 2,
+      "explanation": "Domani — завтра. Dopo le cinque — после пяти, поэтому подходит 17:30."
+    }
+  ]
+}

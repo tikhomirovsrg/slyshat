@@ -1,0 +1,169 @@
+{
+  "model": "Kokoro-82M v1.0 / kokoro-onnx 0.6.1",
+  "model_license": "Apache-2.0",
+  "speed": 1,
+  "files": [
+    {
+      "file": "it-if_sara.mp3",
+      "duration_seconds": 9.159,
+      "sha256": "96f17d5a366e9c959b7579f5fe27015190feba3b5880af7567ddc70c7f221e21",
+      "segments": [
+        {
+          "text": "Ciao! Ti va di prendere un caffè? Sono un po' in ritardo. Possiamo vederci alle cinque e mezza invece che alle cinque? C'è un bar vicino alla piazza.",
+          "voice": "if_sara",
+          "translation": "Привет! Хочешь выпить кофе? Я немного опаздываю. Можем встретиться в половине шестого вместо пяти? Есть кафе рядом с площадью."
+        }
+      ]
+    },
+    {
+      "file": "it-im_nicola.mp3",
+      "duration_seconds": 10.895,
+      "sha256": "df54789504a4f5c8c236dd6f6650c47585333209050e5d63824da71ab8680dbc",
+      "segments": [
+        {
+          "text": "Ciao! Ti va di prendere un caffè? Sono un po' in ritardo. Possiamo vederci alle cinque e mezza invece che alle cinque? C'è un bar vicino alla piazza.",
+          "voice": "im_nicola",
+          "translation": "Привет! Хочешь выпить кофе? Я немного опаздываю. Можем встретиться в половине шестого вместо пяти? Есть кафе рядом с площадью."
+        }
+      ]
+    },
+    {
+      "file": "it-coffee-dialogue.mp3",
+      "duration_seconds": 34.401,
+      "sha256": "3f9b6cee20b45d0c3f362fdd43672e6853c8dfc17f17858125e6cdda2ac244d1",
+      "segments": [
+        {
+          "text": "Ciao! Ti va di prendere un caffè? Sono un po' in ritardo. Possiamo vederci alle cinque e mezza invece che alle cinque? C'è un bar vicino alla piazza.",
+          "translation": "Привет! Хочешь выпить кофе? Я немного опаздываю. Можем встретиться в половине шестого вместо пяти? Есть кафе рядом с площадью.",
+          "voice": "if_sara"
+        },
+        {
+          "text": "Alle cinque e mezza va bene per te?",
+          "translation": "Тебе подходит 17:30?",
+          "voice": "if_sara"
+        },
+        {
+          "text": "Sì, ma devo andare via alle sei.",
+          "translation": "Согласиться, но уйти в 18:00",
+          "voice": "im_nicola"
+        },
+        {
+          "text": "Va bene, abbiamo mezz’ora. Il bar è di fronte alla libreria. Ci vediamo fuori?",
+          "translation": "Хорошо, у нас полчаса. Кафе напротив книжного магазина. Встретимся снаружи?",
+          "voice": "if_sara"
+        },
+        {
+          "text": "Di fronte alla libreria, giusto?",
+          "translation": "Уточнить ориентир",
+          "voice": "im_nicola"
+        },
+        {
+          "text": "Esatto. Non accanto alla libreria, ma di fronte. Il bar si chiama Sole.",
+          "translation": "Именно. Не рядом с книжным, а напротив. Кафе называется Sole.",
+          "voice": "if_sara"
+        },
+        {
+          "text": "Perfetto. Fuori dal bar Sole alle cinque e mezza.",
+          "translation": "Подтвердить время и место",
+          "voice": "im_nicola"
+        },
+        {
+          "text": "A dopo! Alle sei puoi andare via.",
+          "translation": "До встречи! В шесть можешь идти.",
+          "voice": "if_sara"
+        }
+      ]
+    },
+    {
+      "file": "en-bf_emma.mp3",
+      "duration_seconds": 8.687,
+      "sha256": "88e235263cd81e17ee87bfa2d98c56d61a9ed60aa2a2b181bf05398f29914ce9",
+      "segments": [
+        {
+          "text": "Hey, are we still on for coffee? I'm running a bit late. Could we make it half past six instead? There's a little place just round the corner from the station.",
+          "voice": "bf_emma",
+          "translation": "Привет! Мы всё ещё встречаемся за кофе? Я немного опаздываю. Давай вместо этого в половине седьмого? Есть небольшое кафе за углом от станции."
+        }
+      ]
+    },
+    {
+      "file": "en-bm_george.mp3",
+      "duration_seconds": 9.668,
+      "sha256": "93ed39a421900ef798d024dc0c6f7e9b986b035214e5e8aa13d7868448b9c32d",
+      "segments": [
+        {
+          "text": "Hey, are we still on for coffee? I'm running a bit late. Could we make it half past six instead? There's a little place just round the corner from the station.",
+          "voice": "bm_george",
+          "translation": "Привет! Мы всё ещё встречаемся за кофе? Я немного опаздываю. Давай вместо этого в половине седьмого? Есть небольшое кафе за углом от станции."
+        }
+      ]
+    },
+    {
+      "file": "en-coffee-dialogue.mp3",
+      "duration_seconds": 51.506,
+      "sha256": "8faff075b46b2e7a4168463567e6e93cb28d3e31a3f583e248e93a42e756ede5",
+      "segments": [
+        {
+          "text": "Hey, are we still on for coffee? I'm running a bit late. Could we make it half past six instead? There's a little place just round the corner from the station.",
+          "translation": "Привет! Мы всё ещё встречаемся за кофе? Я немного опаздываю. Давай вместо этого в половине седьмого? Есть небольшое кафе за углом от станции.",
+          "voice": "bf_emma"
+        },
+        {
+          "text": "I can get there at half past six. Does that still work for you?",
+          "translation": "Я могу быть там в 18:30. Тебе всё ещё подходит?",
+          "voice": "bf_emma"
+        },
+        {
+          "text": "Sorry, did you say six thirty?",
+          "translation": "Уточнить время",
+          "voice": "bm_george"
+        },
+        {
+          "text": "Yes, six thirty. Half past six. Sorry about the change of plan!",
+          "translation": "Да, шесть тридцать. Половина седьмого. Извини за изменение планов!",
+          "voice": "bf_emma"
+        },
+        {
+          "text": "No problem. I can stay until six fifty.",
+          "translation": "Подтвердить короткую встречу до 18:50",
+          "voice": "bm_george"
+        },
+        {
+          "text": "Twenty minutes is fine! The cafe is by the north exit of the station. Do you know the bookshop there?",
+          "translation": "Двадцать минут — отлично! Кафе у северного выхода со станции. Знаешь книжный магазин там?",
+          "voice": "bf_emma"
+        },
+        {
+          "text": "Is the cafe next to the bookshop?",
+          "translation": "Уточнить, где кафе относительно книжного",
+          "voice": "bm_george"
+        },
+        {
+          "text": "It's opposite the bookshop, not next to it. It's called Little Corner. I'll wait outside.",
+          "translation": "Оно напротив книжного, а не рядом. Называется Little Corner. Я подожду снаружи.",
+          "voice": "bf_emma"
+        },
+        {
+          "text": "Great. Outside Little Corner at six thirty, then.",
+          "translation": "Подтвердить место и время",
+          "voice": "bm_george"
+        },
+        {
+          "text": "Perfect. We can catch up for twenty minutes. I'll make sure you're on your way by six fifty.",
+          "translation": "Отлично. Поболтаем двадцать минут. Я прослежу, чтобы ты ушёл к 18:50.",
+          "voice": "bf_emma"
+        },
+        {
+          "text": "Sounds good. See you there!",
+          "translation": "Договорились, до встречи!",
+          "voice": "bm_george"
+        },
+        {
+          "text": "See you soon!",
+          "translation": "До скорого!",
+          "voice": "bf_emma"
+        }
+      ]
+    }
+  ]
+}

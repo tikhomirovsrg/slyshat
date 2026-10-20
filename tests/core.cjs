@@ -56,7 +56,7 @@ test('Profile API enforces authentication, origin, account ownership, payload li
  assert.equal((await profileRoutes.POST(req(input,{'Content-Type':'text/plain'}))).status,415);
  assert.equal((await profileRoutes.POST(req({...input,accountId:b.account.id}))).status,409);
  assert.equal((await profileRoutes.POST(req({...input,data:{}}))).status,400);
- assert.equal((await profileRoutes.POST(req({...input,padding:'x'.repeat(650001)}))).status,413);
+ assert.equal((await profileRoutes.POST(req({...input,padding:'x'.repeat(require('../lib/profile-limits.ts').MAX_PROFILE_REQUEST_BYTES+1)}))).status,413);
  assert.equal((await profileRoutes.POST(req(input))).status,200);
  const retry=await (await profileRoutes.POST(req(input))).json();assert.equal(retry.record.revision,1);
  assert.equal((await profileRoutes.POST(req({...input,mutationId:'profile-api-stale'}))).status,409);

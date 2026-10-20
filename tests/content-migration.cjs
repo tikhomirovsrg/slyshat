@@ -7,7 +7,7 @@ const seed=JSON.parse(fs.readFileSync(seedFile,'utf8'));
 test('Fresh database stores 100 stories per language, full available content, drafts and roadmap',()=>{
  const db=new DatabaseSync(':memory:');try{
   assert.equal(initializeDatabase(db).seeded,true);
-  assert.equal(db.prepare('PRAGMA user_version').get().user_version,4);
+  assert.equal(db.prepare('PRAGMA user_version').get().user_version,5);
   for(const language of ['en','it']){
    assert.equal(db.prepare('SELECT count(*) n FROM content_stories WHERE language=?').get(language).n,100);
    assert.equal(db.prepare("SELECT count(*) n FROM content_stories WHERE language=? AND status='available'").get(language).n,20);
@@ -43,7 +43,7 @@ test('v2 upgrade preserves profile drafts, progress revisions and account record
   db.prepare('INSERT INTO study_profiles VALUES(?,?,?,?,?)').run('u','{"goal":"work","level":"A2"}',4,'p1','2026-01-02');
   const tables=['users','sessions','oauth_flows','progress','runs','study_profiles'];const before=tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all());
   initializeDatabase(db);assert.deepEqual(tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all()),before);
-  assert.equal(db.prepare('PRAGMA user_version').get().user_version,4);
+  assert.equal(db.prepare('PRAGMA user_version').get().user_version,5);
  }finally{db.close();}
 });
 

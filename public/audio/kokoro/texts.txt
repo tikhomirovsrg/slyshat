@@ -1,0 +1,77 @@
+it-if_sara.mp3
+if_sara: Ciao! Ti va di prendere un caffè? Sono un po' in ritardo. Possiamo vederci alle cinque e mezza invece che alle cinque? C'è un bar vicino alla piazza.
+Привет! Хочешь выпить кофе? Я немного опаздываю. Можем встретиться в половине шестого вместо пяти? Есть кафе рядом с площадью.
+
+it-im_nicola.mp3
+im_nicola: Ciao! Ti va di prendere un caffè? Sono un po' in ritardo. Possiamo vederci alle cinque e mezza invece che alle cinque? C'è un bar vicino alla piazza.
+Привет! Хочешь выпить кофе? Я немного опаздываю. Можем встретиться в половине шестого вместо пяти? Есть кафе рядом с площадью.
+
+it-coffee-dialogue.mp3
+if_sara: Ciao! Ti va di prendere un caffè? Sono un po' in ritardo. Possiamo vederci alle cinque e mezza invece che alle cinque? C'è un bar vicino alla piazza.
+Привет! Хочешь выпить кофе? Я немного опаздываю. Можем встретиться в половине шестого вместо пяти? Есть кафе рядом с площадью.
+
+if_sara: Alle cinque e mezza va bene per te?
+Тебе подходит 17:30?
+
+im_nicola: Sì, ma devo andare via alle sei.
+Согласиться, но уйти в 18:00
+
+if_sara: Va bene, abbiamo mezz’ora. Il bar è di fronte alla libreria. Ci vediamo fuori?
+Хорошо, у нас полчаса. Кафе напротив книжного магазина. Встретимся снаружи?
+
+im_nicola: Di fronte alla libreria, giusto?
+Уточнить ориентир
+
+if_sara: Esatto. Non accanto alla libreria, ma di fronte. Il bar si chiama Sole.
+Именно. Не рядом с книжным, а напротив. Кафе называется Sole.
+
+im_nicola: Perfetto. Fuori dal bar Sole alle cinque e mezza.
+Подтвердить время и место
+
+if_sara: A dopo! Alle sei puoi andare via.
+До встречи! В шесть можешь идти.
+
+en-bf_emma.mp3
+bf_emma: Hey, are we still on for coffee? I'm running a bit late. Could we make it half past six instead? There's a little place just round the corner from the station.
+Привет! Мы всё ещё встречаемся за кофе? Я немного опаздываю. Давай вместо этого в половине седьмого? Есть небольшое кафе за углом от станции.
+
+en-bm_george.mp3
+bm_george: Hey, are we still on for coffee? I'm running a bit late. Could we make it half past six instead? There's a little place just round the corner from the station.
+Привет! Мы всё ещё встречаемся за кофе? Я немного опаздываю. Давай вместо этого в половине седьмого? Есть небольшое кафе за углом от станции.
+
+en-coffee-dialogue.mp3
+bf_emma: Hey, are we still on for coffee? I'm running a bit late. Could we make it half past six instead? There's a little place just round the corner from the station.
+Привет! Мы всё ещё встречаемся за кофе? Я немного опаздываю. Давай вместо этого в половине седьмого? Есть небольшое кафе за углом от станции.
+
+bf_emma: I can get there at half past six. Does that still work for you?
+Я могу быть там в 18:30. Тебе всё ещё подходит?
+
+bm_george: Sorry, did you say six thirty?
+Уточнить время
+
+bf_emma: Yes, six thirty. Half past six. Sorry about the change of plan!
+Да, шесть тридцать. Половина седьмого. Извини за изменение планов!
+
+bm_george: No problem. I can stay until six fifty.
+Подтвердить короткую встречу до 18:50
+
+bf_emma: Twenty minutes is fine! The cafe is by the north exit of the station. Do you know the bookshop there?
+Двадцать минут — отлично! Кафе у северного выхода со станции. Знаешь книжный магазин там?
+
+bm_george: Is the cafe next to the bookshop?
+Уточнить, где кафе относительно книжного
+
+bf_emma: It's opposite the bookshop, not next to it. It's called Little Corner. I'll wait outside.
+Оно напротив книжного, а не рядом. Называется Little Corner. Я подожду снаружи.
+
+bm_george: Great. Outside Little Corner at six thirty, then.
+Подтвердить место и время
+
+bf_emma: Perfect. We can catch up for twenty minutes. I'll make sure you're on your way by six fifty.
+Отлично. Поболтаем двадцать минут. Я прослежу, чтобы ты ушёл к 18:50.
+
+bm_george: Sounds good. See you there!
+Договорились, до встречи!
+
+bf_emma: See you soon!
+До скорого!

@@ -2,7 +2,7 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),asse
 const {test}=require('node:test'),{DatabaseSync}=require('node:sqlite'),ts=require('typescript');
 require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true,resolveJsonModule:true}}).outputText,file);
 
-test('Schema v1 upgrades to v3 preserving accounts, sessions, story data and completion history',()=>{
+test('Schema v1 upgrades to v4 preserving accounts, sessions, story data and completion history',()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'slyshat-migration-'));process.env.DATABASE_PATH=path.join(dir,'v1.sqlite');
  let db=new DatabaseSync(process.env.DATABASE_PATH);
  try{
@@ -15,7 +15,7 @@ test('Schema v1 upgrades to v3 preserving accounts, sessions, story data and com
   db.prepare('INSERT INTO runs VALUES(?,?,?,?,?,?)').run('old-user',old.episode,'2026-01-01T01:00:00.000Z',2,1,3);
   const tables=['users','sessions','oauth_flows','progress','runs'];const before=tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all());
   db.close();db=require('../lib/db.ts').getDb();
-  assert.equal(db.prepare('PRAGMA user_version').get().user_version,3);
+  assert.equal(db.prepare('PRAGMA user_version').get().user_version,4);
   assert.deepEqual(tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all()),before);
   assert.equal(db.prepare('SELECT count(*) AS n FROM study_profiles').get().n,0);
   const record=require('../lib/progress-store.ts').snapshot('old-user').records[0];

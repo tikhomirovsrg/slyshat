@@ -1,6 +1,7 @@
 import {episodes} from './episodes';
 import {freshPractice,type Practice} from './study-types';
 import {getPack} from './packs';
+import {extraQuestions} from './extra-practice';
 import {validateProfile,type StudyProfile} from './profile-types';
 export type Phase='context'|'listen'|'decode'|'dialogue'|'transfer'|'done';
 export type Attempt={plays:number;text:boolean;translation:boolean};
@@ -20,9 +21,9 @@ export function validateProgress(value:unknown):Progress{
  if(!p.results||typeof p.results!=='object'||Array.isArray(p.results)||Object.keys(p.results).length>e.transfer.length)throw new Error('В файле повреждены результаты.');
  for(const [key,r] of Object.entries(p.results)){const t=e.transfer.find(t=>t.id===key);if(!t||!r||!Number.isInteger(r.choice)||r.choice<0||r.choice>=t.options.length||['correct','withoutText','firstListen','listened'].some(k=>typeof r[k as keyof Result]!=='boolean'))throw new Error('В файле повреждены результаты.');}
  if(typeof p.started!=='boolean'||![0.75,0.9,1,1.1].includes(p.speed)||typeof p.voiceMaya!=='string'||typeof p.voiceOliver!=='string'||!(p.openingAnswer===null||(Number.isInteger(p.openingAnswer)&&p.openingAnswer>=0&&p.openingAnswer<e.openingQuestion.options.length))||!(p.outcome===null||Object.hasOwn(e.outcomes,p.outcome))||!(p.finishedAt===null||typeof p.finishedAt==='string'))throw new Error('Не удалось проверить настройки файла.');
- const practice={...freshPractice(),...p.practice};const pack=getPack(e.id);
- if(typeof practice.draft!=='string'||practice.draft.length>12000||!Array.isArray(practice.checks)||practice.checks.length>10||practice.checks.some(x=>typeof x!=='boolean')||!Array.isArray(practice.mistakes)||practice.mistakes.length>30||practice.mistakes.some(x=>typeof x!=='string')||!(practice.lastActivity===null||typeof practice.lastActivity==='string'))throw new Error('Повреждена письменная практика.');
- for(const group of [practice.answers,practice.errorReviews]){if(!group||typeof group!=='object'||Array.isArray(group)||Object.keys(group).length>30)throw new Error('Повреждены задания.');for(const [id,a] of Object.entries(group))if(!a||typeof a.value!=='string'||a.value.length>2000||typeof a.correct!=='boolean'||!Number.isFinite(Date.parse(a.checkedAt))||(pack&&!pack.exercises.some(q=>q.id===id)&&!e.transfer.some(t=>t.id===id)))throw new Error('Неизвестное задание.');}
+ const practice={...freshPractice(),...p.practice};const pack=getPack(e.id);const questionIds=new Set([...(pack?.exercises||[]),...extraQuestions(e.id),...e.transfer].map(q=>q.id));
+ if(typeof practice.draft!=='string'||practice.draft.length>12000||!Array.isArray(practice.checks)||practice.checks.length>10||practice.checks.some(x=>typeof x!=='boolean')||!Array.isArray(practice.mistakes)||practice.mistakes.length>questionIds.size||practice.mistakes.some(x=>typeof x!=='string'||!questionIds.has(x))||!(practice.lastActivity===null||typeof practice.lastActivity==='string'))throw new Error('Повреждена письменная практика.');
+ for(const group of [practice.answers,practice.errorReviews]){if(!group||typeof group!=='object'||Array.isArray(group)||Object.keys(group).length>questionIds.size)throw new Error('Повреждены задания.');for(const [id,a] of Object.entries(group))if(!a||typeof a.value!=='string'||a.value.length>2000||typeof a.correct!=='boolean'||!Number.isFinite(Date.parse(a.checkedAt))||!questionIds.has(id)||(a.listened!==undefined&&typeof a.listened!=='boolean')||(a.assisted!==undefined&&typeof a.assisted!=='boolean'))throw new Error('Неизвестное задание.');}
  if(!practice.reviews||typeof practice.reviews!=='object'||Array.isArray(practice.reviews)||Object.keys(practice.reviews).length>e.phrases.length)throw new Error('Повреждён словарь.');
  for(const [id,r] of Object.entries(practice.reviews))if(!e.phrases.some(f=>f.id===id)||!r||!Number.isInteger(r.step)||r.step< -1||r.step>4||!Number.isFinite(Date.parse(r.due))||!Number.isInteger(r.reviews)||r.reviews<0||!Number.isFinite(Date.parse(r.last)))throw new Error('Повреждено повторение.');
  return {...fresh(e.id),...p,practice};

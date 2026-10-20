@@ -36,5 +36,7 @@ const stories = plan.rows.map(r => {
 const seed = {formatVersion: 1, seedId: plan.seedId, updatedAt: plan.updatedAt, stories,
   documents: [{id: 'development-roadmap-200', title: plan.title, markdown: plan.roadmapMarkdown,
     metadata: {sourcePage: plan.pageUrl, targets: plan.targets, availableStories: 40, plannedStories: 160}, version: 1}]};
-fs.writeFileSync(path.join(root, 'content/catalog-v1.json'), JSON.stringify(seed, null, 2) + '\n');
-console.log('Content seed: 200 stories (40 available, 160 planned), 1 roadmap.');
+// Historical seed bytes must not change: deployed databases validate its checksum.
+assert.equal(fs.readFileSync(path.join(root, 'content/catalog-v1.json'), 'utf8'), JSON.stringify(seed, null, 2) + '\n', 'Historical catalog-v1 is immutable. Add a versioned release for new content.');
+require('./validate-practice.cjs');
+console.log('Historical seed verified: 200 stories (40 available, 160 planned), 1 roadmap.');

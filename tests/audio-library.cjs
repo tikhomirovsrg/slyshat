@@ -12,7 +12,7 @@ test('v4 migration adds audio materials once and preserves existing accounts and
   db.prepare('INSERT INTO users VALUES(?,?,?,?)').run('audio-user','100','Learner','2026-10-20');
   db.prepare('INSERT INTO study_profiles VALUES(?,?,?,?,?)').run('audio-user','{"preserve":"my work"}',9,'prior-mutation','2026-10-20');
   const tables=['users','progress','study_profiles','content_stories','content_practice_sets'];const before=tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all());
-  assert.equal(initializeDatabase(db).audioSeeded,true);assert.equal(db.prepare('PRAGMA user_version').get().user_version,5);
+  assert.equal(initializeDatabase(db).audioSeeded,true);assert.equal(db.prepare('PRAGMA user_version').get().user_version,6);
   assert.deepEqual(tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all()),before);
   for(const lang of ['en','it'])for(const level of ['A1','A2','B1','B2','C1'])assert.equal(db.prepare('SELECT count(*) n FROM audio_content_stories WHERE language=? AND level=?').get(lang,level).n,200);
   assert.equal(initializeDatabase(db).audioSeeded,false);assert.equal(db.prepare('SELECT count(*) n FROM audio_content_segments').get().n,420);
@@ -55,6 +55,8 @@ test('A full audio history still saves alongside 50 test runs and the 2000-event
   db.prepare('INSERT INTO users VALUES(?,?,?,?)').run('full-profile','555','Learner','2026-10-20');
   const p=freshProfile(),at='2026-10-20T12:00:00.000Z';p.audioPractice={};
   for(const s of source.stories)p.audioPractice[s.id]={completedAt:at,correct:3,total:3,assisted:false};
+  const course=JSON.parse(fs.readFileSync(path.join(__dirname,'../content/story-course/course-v1.json')));p.journey={active:{},stories:{}};
+  for(const s of course.stories){let id=s.start;const route=[id],choices=[];while(s.nodes[id].choices.length){choices.push(0);id=s.nodes[id].choices[0].next;route.push(id);}p.journey.stories[s.id]={path:choices,heard:route,assisted:route,finishedAt:at,completedAt:at,endings:[id],updatedAt:at};}
   p.events=source.stories.map(s=>({id:'audio-library:'+s.id+':00000000-0000-0000-0000-000000000000',at,points:3}));
   p.tests=Array.from({length:50},(_,i)=>{const questionIds=Array.from({length:20},(_,j)=>'question-'+i+'-'+j);return {id:'test-'+i,kind:'control',language:'it',level:'B1',questionIds,finishedAt:at,answers:Object.fromEntries(questionIds.map(id=>[id,{value:'Una risposta di esempio per la verifica. '.repeat(4),correct:true,assisted:false,skill:'reading',checkedAt:at}]))};});
   assert(Buffer.byteLength(JSON.stringify(p))>650000);

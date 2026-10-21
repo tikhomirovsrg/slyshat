@@ -1,18 +1,19 @@
 {
   "name": "slyshat",
-  "version": "2.4.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "content:build": "node scripts/build-content.cjs",
     "db:migrate": "node scripts/migrate.mjs",
-    "prebuild": "node scripts/build-content.cjs && npm run audio:validate",
+    "prebuild": "node scripts/build-content.cjs && npm run audio:validate && npm run course:validate",
     "dev": "next dev",
     "build": "next build --webpack",
     "start": "next start",
     "check": "tsc --noEmit",
     "test": "node scripts/check-learning.cjs && node --test tests/*.cjs",
     "test:production": "node scripts/check-production.cjs",
-    "audio:validate": "node scripts/audio-library/validate.cjs"
+    "audio:validate": "node scripts/audio-library/validate.cjs",
+    "course:validate": "node scripts/story-course/validate.cjs"
   },
   "engines": {
     "node": ">=24 <25"

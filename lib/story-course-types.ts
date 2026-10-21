@@ -1,0 +1,10 @@
+import type {Language} from '../app/episodes';
+import type {Level} from '../app/study-types';
+export type StoryChoice={text:string;label:string;next:string};
+export type StoryClip={id:string;text:string;ru:string;voice:string;source:string;startAt:number;endAt:number};
+export type StoryNode={clips:StoryClip[];choices:StoryChoice[];outcome?:{title:string;body:string}|null};
+export type StoryCard={id:string;language:Language;level:Level;position:number;title:string;topic:string;summary:string;art:'coffee'|'train'|'work'|'film';legacy:boolean};
+export type CourseStory=StoryCard&{context:string;start:string;nodes:Record<string,StoryNode>;origin:string};
+export type StoryCatalog={items:StoryCard[];total:number;counts:Record<Level,number>;provenance:string};
+export type JourneyProgress={path:number[];heard:string[];assisted:string[];finishedAt:string|null;updatedAt:string;completedAt?:string;endings?:string[]};
+export type Journey={active:Partial<Record<Language,string>>;stories:Record<string,JourneyProgress>};

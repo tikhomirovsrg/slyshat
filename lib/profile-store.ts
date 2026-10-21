@@ -1,4 +1,5 @@
 import {MAX_PROFILE_BYTES} from './profile-limits';
+import {validateCourseJourney} from './story-course';
 import {getDb} from './db';
 import {validateProfile,type StudyProfile,freshProfile} from '../app/profile-types';
 import {InvalidProgress} from './progress-store';
@@ -9,6 +10,7 @@ export function profileStore(){return {
  get(userId:string){const row=getDb().prepare('SELECT * FROM study_profiles WHERE user_id=?').get(userId);return row?decode(row):emptyProfile();},
  save(userId:string,input:unknown){const v=input as {data:StudyProfile;baseRevision:number;mutationId:string};let data:string;
   try{if(!v||!Number.isSafeInteger(v.baseRevision)||v.baseRevision<0||typeof v.mutationId!=='string'||!/^[A-Za-z0-9_-]{10,100}$/.test(v.mutationId))throw Error();data=JSON.stringify(validateProfile(v.data));if(Buffer.byteLength(data,'utf8')>MAX_PROFILE_BYTES)throw Error();}catch{throw new InvalidProgress('Invalid profile');}
+  try{if(v.data.journey)validateCourseJourney(v.data.journey);}catch{throw new InvalidProgress('Invalid course journey');}
   const db=getDb();db.exec('BEGIN IMMEDIATE');try{
    const row=db.prepare('SELECT * FROM study_profiles WHERE user_id=?').get(userId),current=row?decode(row):emptyProfile();
    if(current.mutationId===v.mutationId){db.exec('COMMIT');return {record:current,conflict:false};}

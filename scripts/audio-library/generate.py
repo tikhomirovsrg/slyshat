@@ -14,6 +14,8 @@ def digest(path):return hashlib.file_digest(open(path,'rb'),'sha256').hexdigest(
 def initialise(model_path,voices_path,threads):
  global model
  import onnxruntime as rt
+ # Keep local speech generation local: disable ORT telemetry before any session.
+ rt.disable_telemetry_events()
  from kokoro_onnx import Kokoro
  o=rt.SessionOptions();o.intra_op_num_threads=threads;o.inter_op_num_threads=1;o.log_severity_level=3
  session=rt.InferenceSession(model_path,sess_options=o,providers=['CPUExecutionProvider'])
@@ -33,12 +35,12 @@ def render(job):
 def validate(samples,sr):
  if sr!=24000 or samples.ndim!=1 or len(samples)<2400 or not np.isfinite(samples).all() or np.abs(samples).max()<0.005:raise ValueError('Invalid or silent audio')
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--model',type=Path,required=True);parser.add_argument('--voices',type=Path,required=True);parser.add_argument('--cache',type=Path,required=True);parser.add_argument('--workers',type=int,default=2);parser.add_argument('--threads',type=int,default=2);args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--model',type=Path,required=True);parser.add_argument('--voices',type=Path,required=True);parser.add_argument('--cache',type=Path,required=True);parser.add_argument('--workers',type=int,default=2);parser.add_argument('--threads',type=int,default=2);parser.add_argument('--source',type=Path,default=ROOT/'content/audio-library/series-v1.json');parser.add_argument('--output',type=Path,default=ROOT/'public/audio/library');args=parser.parse_args()
  if not 1<=args.workers<=4 or not 1<=args.threads<=4:raise ValueError('Use 1–4 workers and threads')
  if digest(args.model)!=MODEL_SHA or digest(args.voices)!=VOICES_SHA:raise ValueError('Model/voice checksum mismatch')
  args.cache=args.cache.resolve();args.cache.mkdir(parents=True,exist_ok=True);os.environ['TMPDIR']=str(args.cache);tempfile.tempdir=str(args.cache)
- source_path=ROOT/'content/audio-library/series-v1.json';source=json.loads(source_path.read_text())
- out=ROOT/'public/audio/library';out.mkdir(parents=True,exist_ok=True)
+ source_path=args.source;source=json.loads(source_path.read_text())
+ out=args.output;out.mkdir(parents=True,exist_ok=True)
  manifest=dict(formatVersion=1,releaseId=source['releaseId'],sourceSha256=digest(source_path),model='Kokoro-82M v1.0',modelSha256=MODEL_SHA,voicesSha256=VOICES_SHA,codec='mp3',sampleRate=24000,bitrate=64000,files={},segments={})
  started=time.monotonic();results={}
  with concurrent.futures.ProcessPoolExecutor(max_workers=args.workers,initializer=initialise,initargs=(str(args.model),str(args.voices),args.threads)) as pool:
@@ -72,7 +74,7 @@ def main():
    manifest['files'][filename]=dict(sha256=digest(target),bytes=target.stat().st_size,duration=duration)
    del pcm,encoded,decoded,samples
    print('Pack',filename,target.stat().st_size,'bytes',flush=True)
- manifest['readyStories']=sum(all(s in manifest['segments'] for s in story['segments']) for story in source['stories'])
+ manifest['readyStories']=sum(all(s in manifest['segments'] for s in story['segments']) for story in source['stories']) if source['releaseId']=='audio-variants-v1' else sum(all(c['set']=='library' or c['id'] in manifest['segments'] for node in story['nodes'].values() for c in node['clips']) for story in source['stories'])
  assert manifest['readyStories']==2000
  tmp=out/'manifest.json.tmp';tmp.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');tmp.replace(out/'manifest.json')
  print('DONE',manifest['readyStories'],'playable variants,',sum(f['bytes'] for f in manifest['files'].values()),'audio bytes,',round(time.monotonic()-started),'seconds',flush=True)

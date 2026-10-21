@@ -1,3 +1,4 @@
+import {requestJson} from '../lib/client-request';
 import {episodes} from './episodes';
 import {fresh,validateProgress,type Progress} from './learning';
 import type {RemoteRecord,Run} from '../lib/progress-store';
@@ -45,9 +46,9 @@ export class SyncEngine {
  async refresh(){
   if(this.stopped||this.refreshing||this.busy)return;this.refreshing=true;
   try{
-   const response=await this.request('/api/progress',{cache:'no-store',signal:AbortSignal.timeout(12000)});
-   if(response.status===401){const data=await response.json() as {oauthReady?:boolean};this.oauthReady=!!data.oauthReady;this.verified=false;this.account=null;this.rows={};this.history=[];this.status='signin';return;}
-   if(!response.ok)throw new Error('Unavailable');const data=await response.json() as SnapshotResponse;
+   const {response,data}=await requestJson<SnapshotResponse&{oauthReady?:boolean}>(this.request,'/api/progress',{cache:'no-store'});
+   if(response.status===401){this.oauthReady=!!data.oauthReady;this.verified=false;this.account=null;this.rows={};this.history=[];this.status='signin';return;}
+   if(!response.ok)throw new Error('Unavailable');
    if(!data.account?.id||!Array.isArray(data.records)||!Array.isArray(data.history))throw new Error('Invalid snapshot');
    if(this.stopped)return;
    const changed=this.account?.id!==data.account.id;
@@ -94,8 +95,8 @@ export class SyncEngine {
    for(let n=0;n<episodes.length*2;n++){
     const item=Object.entries(this.rows).find(([,r])=>r.dirty&&r.conflict===undefined);if(!item)break;
     const [episode,sent]=item;this.status='saving';this.emit();
-    const response=await this.request('/api/progress',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({accountId,progress:sent.progress,baseRevision:sent.baseRevision,mutationId:sent.mutationId}),signal:AbortSignal.timeout(12000)});
-    const body=await response.json() as SaveResponse;if(this.stopped||this.account?.id!==accountId)return;
+    const {response,data:body}=await requestJson<SaveResponse>(this.request,'/api/progress',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({accountId,progress:sent.progress,baseRevision:sent.baseRevision,mutationId:sent.mutationId})});
+    if(this.stopped||this.account?.id!==accountId)return;
     if(response.status===401||body.error==='account_changed'){this.verified=false;this.status='signin';return;}
     if(response.status===409&&body.conflict){this.rows[episode]={...this.rows[episode],conflict:body.record??null};this.persist();continue;}
     if(!response.ok||body.accountId!==accountId||!body.record)throw new Error('Save failed');

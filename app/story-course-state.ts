@@ -1,6 +1,11 @@
 import type {CourseStory,Journey,JourneyProgress,StoryCard} from '../lib/story-course-types';
 import type {Progress} from './learning';
 export const newJourneyProgress=():JourneyProgress=>({path:[],heard:[],assisted:[],finishedAt:null,updatedAt:new Date().toISOString()});
+// Reset this attempt, retaining all previously opened endings and first completion.
+export const restartJourney=(p:JourneyProgress,nodeId:string):JourneyProgress=>({
+ ...newJourneyProgress(),completedAt:p.completedAt||p.finishedAt||undefined,
+ endings:[...new Set([...(p.endings||[]),...(p.finishedAt?[nodeId]:[])])],
+});
 export function storyRoute(story:Pick<CourseStory,'start'|'nodes'>,path:number[]){
  const route=[story.start];let id=story.start;
  for(const choice of path){const next=story.nodes[id]?.choices[choice]?.next;if(!next)throw Error('Invalid story path');id=next;route.push(id);}

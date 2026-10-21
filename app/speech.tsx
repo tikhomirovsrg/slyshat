@@ -23,6 +23,7 @@ export function useSpeechPlayer(){
   const [error,setError]=useState('');
   const handle=useRef<Playback|null>(null);
   const stop=useCallback(()=>{handle.current?.stop();handle.current=null;setState(null);},[]);
+  const setPlaybackSpeed=useCallback((speed:number)=>handle.current?.setSpeed(speed)??false,[]);
   useEffect(()=>()=>{handle.current?.stop();},[]);
   const play=useCallback((id:string,options:Omit<PlaybackOptions,'config'>)=>{
     setError('');
@@ -36,5 +37,5 @@ export function useSpeechPlayer(){
     });
     return handle.current.done;
   },[config]);
-  return {play,stop,state,error};
+  return {play,stop,setPlaybackSpeed,state,error};
 }

@@ -1,20 +1,22 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {ArrowLeft,ArrowRight,Headphones,Play,Square,BookOpen,Check} from 'lucide-react';
+import {ArrowLeft,ArrowRight,Headphones,Play,Square,BookOpen,Check,RotateCcw} from 'lucide-react';
 import type {Language} from './episodes';
 import {languageNames} from './episodes';
 import type {Progress} from './learning';
 import type {Profile} from './use-profile';
 import type {CourseStory,JourneyProgress,StoryCard,StoryCatalog} from '../lib/story-course-types';
-import {legacyJourney,nextStory,resumeStory,storyFinished,storyRoute} from './story-course-state';
+import {legacyJourney,nextStory,resumeStory,restartJourney,storyFinished,storyRoute} from './story-course-state';
 import {levels} from './study-types';
 import {useSpeechPlayer} from './speech';
 import StoryArt from './story-art';
+import ComicSceneArt from './comic-scene-art';
+import {playbackSpeeds,speedLabel} from '../lib/playback-speed';
 
-type Props={language:Language;profile:Profile;book:Record<string,Progress>;speed:number;onLanguage:(lang:Language)=>void;initialStory?:string|null;onLeave?:()=>void};
+type Props={language:Language;profile:Profile;book:Record<string,Progress>;speed:number;onSpeed:(speed:number)=>void;onLanguage:(lang:Language)=>void;initialStory?:string|null;onLeave?:()=>void};
 const scrollTop=()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
 const speaker=(voice:string)=>({bf_emma:'Эмма',bm_george:'Джордж',if_sara:'Сара',im_nicola:'Никола'}[voice]||'Персонаж');
-export function StoryCourse({language,profile,book,speed,onLanguage,initialStory,onLeave}:Props){
+export function StoryCourse({language,profile,book,speed,onSpeed,onLanguage,initialStory,onLeave}:Props){
  const [catalog,setCatalog]=useState<StoryCatalog|null>(null),[story,setStory]=useState<CourseStory|null>(null),[selected,setSelected]=useState(initialStory||''),[error,setError]=useState(''),[retry,setRetry]=useState(0);
  const [level,setLevel]=useState('all'),[query,setQuery]=useState(''),[status,setStatus]=useState('all'),[page,setPage]=useState(1);
  const {stop}=useSpeechPlayer();
@@ -28,7 +30,7 @@ export function StoryCourse({language,profile,book,speed,onLanguage,initialStory
  const completed=catalog?.items.filter(s=>storyFinished(s,profile.data.journey,book)).length||0;
  return <main className="comic-page">
   {error&&<div className="warning" role="alert">{error} <button className="text-button" onClick={()=>setRetry(n=>n+1)}>Повторить</button></div>}
-  {selected?story?<ComicStory key={story.id} story={story} profile={profile} old={book[story.id]} speed={speed} next={catalog?nextStory(catalog.items,story.id):null} onNext={open} onClose={close}/>:<section className="comic-loading"><button className="text-button" onClick={close}>← К историям</button><p role="status">{error?'История пока недоступна. Можно повторить загрузку.':'Открываем следующий кадр…'}</p></section>:<>
+  {selected?story?<ComicStory key={story.id} story={story} profile={profile} old={book[story.id]} speed={speed} onSpeed={onSpeed} next={catalog?nextStory(catalog.items,story.id):null} onNext={open} onClose={close}/>:<section className="comic-loading"><button className="text-button" onClick={close}>← К историям</button><p role="status">{error?'История пока недоступна. Можно повторить загрузку.':'Открываем следующий кадр…'}</p></section>:<>
    <header className="comic-hero"><div><span className="comic-kicker">СЛУШАЙ. ВЫБИРАЙ. МЕНЯЙ ИСТОРИЮ.</span><h1>Твой ответ.<br/><em>Новый поворот!</em></h1><p>Живые диалоги в комиксах. Слушай персонажей и решай, что произойдёт дальше.</p><div className="language-tabs" role="group" aria-label="Язык историй">{(['en','it'] as Language[]).map(lang=><button key={lang} className={language===lang?'active':''} aria-pressed={language===lang} onClick={()=>onLanguage(lang)}>{languageNames[lang]}</button>)}</div></div><div className="comic-hero-art" aria-hidden="true"><StoryArt kind="coffee"/><span className="comic-sticker">А ЧТО,<br/>ЕСЛИ…?</span></div></header>
    <section className="comic-continue" aria-label="Прохождение по порядку"><div><span className="comic-kicker">ТВОЯ ЛИНИЯ СЮЖЕТА</span><h2>{resume?`Дальше: история ${resume.position}`:catalog?'Все истории пройдены!':'Собираем маршрут…'}</h2><p>{resume?`${resume.level} · ${resume.title}`:'Можно вернуться и выбрать другой финал.'}</p><small>{completed} из {catalog?.total??'…'} пройдено · A1 → A2 → B1 → B2 → C1</small></div>{resume&&<button className="button primary" disabled={!profile.ready||profile.conflict} onClick={()=>open(resume.id)}>{profile.data.journey?.stories[resume.id]||book[resume.id]?.started?'Продолжить':'Начать по порядку'}<ArrowRight size={19}/></button>}</section>
    <div className="comic-catalog-heading"><h2>Все истории</h2><p>Иди по порядку или выбирай любую.</p></div>
@@ -42,32 +44,35 @@ export function StoryCourse({language,profile,book,speed,onLanguage,initialStory
  </main>;
 }
 
-export function ComicStory({story,profile,old,speed,next,onNext,onClose}:{story:CourseStory;profile:Profile;old?:Progress;speed:number;next:StoryCard|null;onNext:(id:string)=>void;onClose:()=>void}){
+export function ComicStory({story,profile,old,speed,onSpeed,next,onNext,onClose}:{story:CourseStory;profile:Profile;old?:Progress;speed:number;onSpeed:(speed:number)=>void;next:StoryCard|null;onNext:(id:string)=>void;onClose:()=>void}){
  const progress=profile.data.journey?.stories[story.id]||legacyJourney(story,old),route=storyRoute(story,progress.path),nodeId=route.at(-1)!,node=story.nodes[nodeId];
  const [revealed,setRevealed]=useState(false),[translation,setTranslation]=useState(false),[playing,setPlaying]=useState(false),[clipIndex,setClipIndex]=useState(0);
- const {play,stop,error,state}=useSpeechPlayer();const run=useRef(0),opened=useRef(false);
+ const {play,stop,setPlaybackSpeed,error,state}=useSpeechPlayer();const run=useRef(0),opened=useRef(false),speedRef=useRef(speed);
+ const [restarted,setRestarted]=useState(false);
  const ready=profile.ready&&!profile.conflict,canAdvance=progress.heard.includes(nodeId)||progress.assisted.includes(nodeId),finished=!!progress.finishedAt;
  const save=(fn:(p:JourneyProgress)=>JourneyProgress,complete=false)=>{
   if(!ready)return;profile.update(p=>{const journey=p.journey||{active:{},stories:{}},current=journey.stories[story.id]||legacyJourney(story,old),updated=fn(current);return {...p,journey:{active:{...journey.active,[story.language]:story.id},stories:{...journey.stories,[story.id]:updated}},...(complete&&!current.finishedAt&&updated.finishedAt?{events:[...p.events,{id:'story-finish:'+story.id+':'+updated.finishedAt,at:updated.finishedAt,points:2}].slice(-2000)}:{})};});
  };
  const cancel=()=>{run.current++;stop();setPlaying(false);};
  useEffect(()=>{if(ready&&!opened.current){opened.current=true;save(p=>({...p,updatedAt:new Date().toISOString()}));}},[ready]);
- useEffect(()=>{run.current++;stop();setPlaying(false);setRevealed(false);setTranslation(false);setClipIndex(0);return()=>{run.current++;stop();};},[story.id,nodeId,speed,stop]);
- const listen=async()=>{cancel();const token=run.current;setPlaying(true);
-  for(let i=0;i<node.clips.length;i++){if(run.current!==token)return;const c=node.clips[i];setClipIndex(i);const done=await play('comic-'+story.id+'-'+nodeId+'-'+i,{text:c.text,source:c.source,startAt:c.startAt,endAt:c.endAt,locale:story.language==='it'?'it-IT':'en-GB',speed,onCancel:()=>{if(run.current===token){run.current++;setPlaying(false);}}});if(run.current!==token)return;if(!done){setPlaying(false);return;}}
+ useEffect(()=>{run.current++;stop();setPlaying(false);setRevealed(false);setTranslation(false);setClipIndex(0);return()=>{run.current++;stop();};},[story.id,nodeId,stop]);
+ useEffect(()=>{speedRef.current=speed;setPlaybackSpeed(speed);},[speed,setPlaybackSpeed]);
+ const listen=async()=>{setRestarted(false);cancel();const token=run.current;setPlaying(true);
+  for(let i=0;i<node.clips.length;i++){if(run.current!==token)return;const c=node.clips[i];setClipIndex(i);const done=await play('comic-'+story.id+'-'+nodeId+'-'+i,{text:c.text,source:c.source,startAt:c.startAt,endAt:c.endAt,locale:story.language==='it'?'it-IT':'en-GB',speed:speedRef.current,onCancel:()=>{if(run.current===token){run.current++;setPlaying(false);}}});if(run.current!==token)return;if(!done){setPlaying(false);return;}}
   setPlaying(false);save(p=>storyRoute(story,p.path).at(-1)===nodeId?{...p,heard:[...new Set([...p.heard,nodeId])],updatedAt:new Date().toISOString()}:p);
  };
  const reveal=(ru=false)=>{if(!finished)save(p=>({...p,assisted:[...new Set([...p.assisted,nodeId])],updatedAt:new Date().toISOString()}));if(ru)setTranslation(v=>!v);else setRevealed(v=>!v);};
- const choose=(index:number)=>{if(!canAdvance||!ready||finished)return;cancel();save(p=>storyRoute(story,p.path).at(-1)===nodeId?{...p,path:[...p.path,index],updatedAt:new Date().toISOString()}:p);scrollTop();};
+ const choose=(index:number)=>{if(!canAdvance||!ready||finished)return;setRestarted(false);cancel();save(p=>storyRoute(story,p.path).at(-1)===nodeId?{...p,path:[...p.path,index],updatedAt:new Date().toISOString()}:p);scrollTop();};
  const finish=()=>{if(node.choices.length||!canAdvance||finished)return;cancel();save(p=>({...p,finishedAt:new Date().toISOString(),completedAt:p.completedAt||new Date().toISOString(),endings:[...new Set([...(p.endings||[]),nodeId])],updatedAt:new Date().toISOString()}),true);};
- const replay=()=>{cancel();save(p=>({path:[],heard:[],assisted:[],finishedAt:null,completedAt:p.completedAt||p.finishedAt||undefined,endings:p.endings||(p.finishedAt?[nodeId]:[]),updatedAt:new Date().toISOString()}));};
+ const replay=()=>{if(!ready)return;cancel();setRevealed(false);setTranslation(false);setClipIndex(0);save(p=>restartJourney(p,storyRoute(story,p.path).at(-1)!));setRestarted(true);scrollTop();};
  return <article className="comic-story">
-  <div className="comic-story-toolbar"><button className="text-button" onClick={onClose}><ArrowLeft size={16}/> Все истории</button><span>#{story.position} · {story.level} · {languageNames[story.language]}</span><label>Скорость <span>{speed}×</span></label></div>
+  <div className="comic-story-toolbar"><button className="text-button" onClick={onClose}><ArrowLeft size={16}/> Все истории</button><span>#{story.position} · {story.level} · {languageNames[story.language]}</span><button className="button secondary comic-restart" disabled={!ready} onClick={replay}><RotateCcw size={16}/> С начала</button></div>
+  {restarted&&<p className="comic-restart-note" role="status">История начата заново. Ранее открытые финалы сохранены.</p>}
   <header className="comic-story-title"><span className="comic-kicker">ТЫ ВЛИЯЕШЬ НА СЮЖЕТ</span><h1>{story.title}</h1><p>{story.context}</p></header>
   {route.length>1&&<details className="comic-route"><summary>Твой маршрут · выбрано реплик: {progress.path.length}</summary><ol>{progress.path.map((index,i)=><li key={i}><span>Кадр {i+1}</span><p lang={story.language}>{story.nodes[route[i]].choices[index].text}</p><small>{story.nodes[route[i]].choices[index].label}</small></li>)}</ol></details>}
   <section className="comic-scene" aria-label={'Кадр '+route.length}>
-   <div className="comic-scene-art" aria-hidden="true"><StoryArt kind={story.art}/><span className="comic-number">КАДР {route.length}</span><span className="comic-scene-tag">{node.choices.length?'ЧТО ТЫ ВЫБЕРЕШЬ?':'РАЗВЯЗКА!'}</span></div>
-   <div className="comic-dialogue"><div className="comic-audio-controls"><button className="button primary" disabled={!ready} onClick={()=>playing?cancel():void listen()}>{playing?<Square size={18}/>:<Play size={18}/>} {playing?(state?.phase==='loading'?'Загружаем звук…':'Остановить'):'Слушать сцену'}</button><span role="status">{playing?`Реплика ${clipIndex+1} из ${node.clips.length}`:progress.heard.includes(nodeId)?'✓ Сцена прослушана':'Готовая запись · слушай в своём темпе'}</span></div>
+   <div className="comic-scene-art" aria-hidden="true"><ComicSceneArt story={story} nodeId={nodeId} path={progress.path} voice={node.clips[clipIndex]?.voice} playing={playing&&state?.phase==='playing'}/><span className="comic-number">КАДР {route.length}</span><span className="comic-scene-tag">{node.choices.length?'ЧТО ТЫ ВЫБЕРЕШЬ?':'РАЗВЯЗКА!'}</span></div>
+   <div className="comic-dialogue"><div className="comic-audio-controls"><button className="button primary" disabled={!ready} onClick={()=>playing?cancel():void listen()}>{playing?<Square size={18}/>:<Play size={18}/>} {playing?(state?.phase==='loading'?'Загружаем звук…':'Остановить'):'Слушать сцену'}</button><label className="comic-speed">Скорость<select aria-label="Скорость озвучки" value={speed} disabled={!ready} onChange={e=>{const value=Number(e.target.value);speedRef.current=value;setPlaybackSpeed(value);onSpeed(value);}}>{playbackSpeeds.map(value=><option key={value} value={value}>{speedLabel(value)}{value===1?' · обычная':''}</option>)}</select></label><span role="status">{playing?`Реплика ${clipIndex+1} из ${node.clips.length}`:progress.heard.includes(nodeId)?'✓ Сцена прослушана':'Готовая запись · слушай в своём темпе'}</span></div>
    {error&&<p className="warning" role="alert">{error} Можно повторить или открыть текст.</p>}
    <div className="comic-bubbles">{node.clips.map((c,i)=><div key={i} className={'comic-bubble '+(i%2?'reply':'')+(playing&&clipIndex===i?' speaking':'')}><b>Голос: {speaker(c.voice)}</b>{revealed?<p lang={story.language}>{c.text}</p>:<p className="comic-hidden"><Headphones size={20}/><span>{playing&&clipIndex===i?'Персонаж говорит…':'Реплика звучит в аудио'}</span></p>}{translation&&<p className="comic-translation">{c.ru}</p>}</div>)}</div>
    <div className="comic-text-controls"><button className="text-button" disabled={!ready} onClick={()=>reveal()}><BookOpen size={16}/>{revealed?'Скрыть текст':'Открыть текст'}</button><button className="text-button" disabled={!ready} onClick={()=>reveal(true)}>{translation?'Скрыть перевод':'Перевод'}</button></div>

@@ -83,3 +83,24 @@ test('One shared player cancels an old owner; stopping while loading or playing 
   const c=playSpeech(options);assert.equal(await b.done,false);assert.equal(canceled,2);audios.at(-1).onended();assert.equal(await c.done,true);assert.equal(completed,1);assert.equal(calls,2); // Second click reused the clip.
  }finally{stopSpeech();global.window=original.window;global.Audio=original.Audio;global.fetch=original.fetch;}
 });
+
+test('Changing recording speed keeps its position and completion boundary, including while loading',async()=>{
+ const original={window:global.window,Audio:global.Audio};const audios=[];
+ class FakeAudio{constructor(){this.currentTime=0;this.duration=100;this.pauses=0;audios.push(this);}play(){return Promise.resolve();}pause(){this.pauses++;}load(){}removeAttribute(){}}
+ global.window={};global.Audio=FakeAudio;
+ const {playSpeech,stopSpeech}=require('../lib/speech-player.ts');let completed=0,canceled=0;
+ const options={source:'/audio/course/it-a1-v1.mp3',startAt:10,endAt:20,text:'Ciao',locale:'it-IT',config:{provider:'device'},onEnd:()=>completed++,onCancel:()=>canceled++};
+ try{
+  const a=playSpeech(options),audio=audios[0];assert(a.setSpeed(.5));audio.onloadedmetadata();audio.onplaying();assert.equal(audio.currentTime,10);assert.equal(audio.playbackRate,.5);
+  audio.currentTime=14;assert(a.setSpeed(1.5));assert.equal(audio.currentTime,14);assert.equal(audio.playbackRate,1.5);assert.equal(audio.pauses,0);assert.equal(audio.preservesPitch,true);assert.equal(completed,0);assert.equal(canceled,0);
+  for(const value of [NaN,Infinity,0,3])assert.equal(a.setSpeed(value),false);assert.equal(audio.playbackRate,1.5);
+  audio.currentTime=20;audio.ontimeupdate();assert.equal(await a.done,true);assert.equal(completed,1);assert.equal(a.setSpeed(1),false);
+  const b=playSpeech(options);b.setSpeed(.75);b.stop();assert.equal(await b.done,false);assert.equal(completed,1);assert.equal(canceled,1);
+ }finally{stopSpeech();Object.assign(global,original);}
+});
+
+test('Every selectable playback speed survives saved-progress validation',()=>{
+ const {playbackSpeeds}=require('../lib/playback-speed.ts');
+ for(const speed of playbackSpeeds){const p={...fresh('coffee-it'),speed};assert.deepEqual(validateProgress(JSON.parse(JSON.stringify(p))),p);}
+ assert.throws(()=>validateProgress({...fresh('coffee-it'),speed:0}));
+});

@@ -1,7 +1,7 @@
 import {defaultVoice,speechMode,type SpeechConfig} from './speech-config';
 
 export type PlaybackOptions={source?:string;startAt?:number;endAt?:number;text:string;locale:string;voice?:string;secondary?:boolean;speed?:number;config:SpeechConfig;onStart?:()=>void;onEnd?:()=>void;onCancel?:()=>void;onError?:(message:string)=>void};
-export type Playback={stop:()=>void;done:Promise<boolean>};
+export type Playback={stop:()=>void;setSpeed:(speed:number)=>boolean;done:Promise<boolean>};
 const clips=new Map<string,string>();
 let active:Playback|undefined;
 export const stopSpeech=()=>active?.stop();
@@ -11,7 +11,7 @@ export const stopSpeech=()=>active?.stop();
 export function playSpeech(options:PlaybackOptions):Playback{
   stopSpeech();
   const {text,locale,secondary=false,voice='',config}=options;
-  const speed=options.speed??1;
+  let speed=options.speed??1;
   let ended=false,audio:HTMLAudioElement|undefined,utterance:SpeechSynthesisUtterance|undefined,timer:ReturnType<typeof setTimeout>|undefined,boundary:ReturnType<typeof setTimeout>|undefined;
   const controller=new AbortController();
   let resolveDone:(completed:boolean)=>void=()=>{};
@@ -24,7 +24,10 @@ export function playSpeech(options:PlaybackOptions):Playback{
     resolveDone(reason==='end');
     if(reason==='end')options.onEnd?.();else if(reason==='cancel')options.onCancel?.();else options.onError?.(message);
   };
-  const handle:Playback={stop:()=>finish('cancel'),done};active=handle;
+  const handle:Playback={stop:()=>finish('cancel'),setSpeed:next=>{
+    if(ended||!audio||!Number.isFinite(next)||next<0.5||next>2)return false;
+    speed=next;audio.playbackRate=next;watchBoundary();return true;
+  },done};active=handle;
   const failed=(message:string)=>finish('error',message);
   const started=()=>{if(!ended){clearTimeout(timer);options.onStart?.();}};
   const completed=()=>finish('end');

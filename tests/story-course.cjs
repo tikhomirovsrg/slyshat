@@ -30,5 +30,29 @@ test('Comic scene keeps target text hidden and decisions disabled until listenin
  const React=require('react'),{renderToStaticMarkup}=require('react-dom/server'),{ComicStory}=require('../app/story-course.tsx');const raw=source.stories.find(s=>!s.legacy),base=JSON.parse(fs.readFileSync(path.join(__dirname,'../content/audio-library/series-v1.json')));
  const story={...raw,nodes:Object.fromEntries(Object.entries(raw.nodes).map(([id,n])=>[id,{...n,clips:n.clips.map(ref=>({id:ref.id,...(ref.set==='course'?source:base).segments[ref.id],source:'/audio/course/en-a1-v1.mp3',startAt:0,endAt:10}))}]))};
  const profile={data:{journey:undefined,events:[]},ready:true,status:'synced',conflict:false,update(){}};
- const html=renderToStaticMarkup(React.createElement(ComicStory,{story,profile,speed:1,next:null,onNext(){},onClose(){}}));assert(!html.includes(story.nodes.start.clips[0].text));assert(html.includes('Слушать сцену'));assert.equal((html.match(/class="comic-choice" disabled/g)||[]).length,2);assert(!html.includes('Правильный ответ'));
+ const html=renderToStaticMarkup(React.createElement(ComicStory,{story,profile,speed:1,onSpeed(){},next:null,onNext(){},onClose(){}}));assert(!html.includes(story.nodes.start.clips[0].text));assert(html.includes('Слушать сцену'));assert.equal((html.match(/class="comic-choice" disabled/g)||[]).length,2);assert(!html.includes('Правильный ответ'));
+ assert(html.includes('С начала'));assert(html.includes('aria-label="Скорость озвучки"'));assert(html.includes('value="0.5"'));assert(html.includes('value="1.5"'));
+});
+
+test('Restart clears only the current attempt, retaining completion and every opened ending',()=>{
+ const s=source.stories.find(s=>!s.legacy),at='2026-10-21T12:00:00.000Z';
+ for(const finished of [false,true]){
+  const p={path:[1,0],heard:['start','b'],assisted:['b-message'],finishedAt:finished?at:null,completedAt:at,endings:['a-together'],updatedAt:at};
+  const snapshot=structuredClone(p),reset=state.restartJourney(p,'b-message');assert.deepEqual(p,snapshot);
+  assert.deepEqual(reset.path,[]);assert.deepEqual(reset.heard,[]);assert.deepEqual(reset.assisted,[]);assert.equal(reset.finishedAt,null);assert.equal(reset.completedAt,at);
+  assert.deepEqual(reset.endings,finished?['a-together','b-message']:['a-together']);assert.deepEqual(state.storyRoute(s,reset.path),[s.start]);
+  assert(state.storyFinished(s,{active:{},stories:{[s.id]:reset}}));assert.deepEqual(state.restartJourney(reset,s.start).endings,reset.endings);
+ }
+ const first=state.restartJourney({...state.newJourneyProgress(),path:[0]},'a');assert(!first.completedAt);assert(!state.storyFinished(s,{active:{},stories:{[s.id]:first}}));
+});
+
+test('Scene art follows the chosen branch and speaker without revealing dialogue text',()=>{
+ const React=require('react'),{renderToStaticMarkup}=require('react-dom/server'),{default:Art,sceneVisual}=require('../app/comic-scene-art.tsx');
+ const raw=source.stories.find(s=>!s.legacy),base=JSON.parse(fs.readFileSync(path.join(__dirname,'../content/audio-library/series-v1.json')));
+ const story={...raw,nodes:Object.fromEntries(Object.entries(raw.nodes).map(([id,n])=>[id,{...n,clips:n.clips.map(ref=>({id:ref.id,...(ref.set==='course'?source:base).segments[ref.id]}))}]))};
+ const draw=(nodeId,path,playing=false,voice)=>renderToStaticMarkup(React.createElement(Art,{story,nodeId,path,playing,voice}));
+ const opening=draw('start',[]),a=draw('a',[0]),b=draw('b',[1]),message=draw('a-message',[0,0]),together=draw('a-together',[0,1]);
+ assert.equal(new Set([opening,a,b,message,together]).size,5);assert.equal(sceneVisual(story,'a-message',[0,0]).prop,'phone');assert.equal(sceneVisual(story,'a-together',[0,1]).prop,'conversation');
+ const speaking=draw('start',[],true,story.nodes.start.clips[0].voice);assert(speaking.includes('is-speaking'));assert(!opening.includes('is-speaking'));
+ for(const node of Object.values(story.nodes))for(const c of node.clips)assert(!opening.includes(c.text));
 });

@@ -1,7 +1,7 @@
 const fs=require('node:fs'),assert=require('node:assert/strict'),{test}=require('node:test'),ts=require('typescript');
 require.extensions['.ts']=require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true,resolveJsonModule:true}}).outputText,file);
 const React=require('react'),{renderToStaticMarkup}=require('react-dom/server');
-const {routePlaylist,scenePlaylist,playStoryPlaylist}=require('../app/story-playlist.ts');
+const {routePlaylist,scenePlaylist,exercisePlaylist,playStoryPlaylist}=require('../app/story-playlist.ts');
 const {StoryChoices,characterName}=require('../app/character-cast.tsx');
 const clip=id=>({id,text:'Spoken '+id,ru:'Перевод '+id,voice:'arbitrary-voice',actorId:'traveler',actorName:'Майя',source:'/audio/'+id+'.mp3',startAt:0,endAt:2});
 const choice=(id,next,recorded=true)=>({text:'Secret answer '+id,label:'Скрытый перевод '+id,next,...(recorded?{clip:clip(id)}:{})});
@@ -19,6 +19,48 @@ test('Full dialogue follows only the selected route, interleaving scene clips an
  assert.deepEqual(routePlaylist(story,[]).map(entry=>entry.clip.id),['intro-1','intro-2']);
  assert.equal(routePlaylist(story,[0])[2].kind,'choice');assert.equal(routePlaylist(story,[0])[2].choiceIndex,0);
  assert.deepEqual(story,snapshot);assert.throws(()=>routePlaylist(story,[9]),/Invalid story path/);
+});
+
+test('Real English and Italian variants play each selected answer once while retaining scene and exercise recordings',()=>{
+ const course=require('../content/story-course/course-v1.json'),library=require('../content/audio-library/series-v1.json'),cast=require('../content/characters/cast-v1.json');
+ const {characterForVoice}=require('../lib/character-cast.mjs');
+ for(const language of ['en','it']){
+  const raw=course.stories.find(story=>story.id===`story-${language}-a1-dinner-time`),assignment=cast.stories[raw.id],player=assignment.cast.find(actor=>actor.actorId===assignment.playerActorId),cues=new Map();
+  const recorded=(id,text,ru,actor)=>{
+   const key=actor.actorId+'\0'+text;if(!cues.has(key))cues.set(key,cues.size*3);
+   return {id,text,ru,actorId:actor.actorId,voice:cast.voiceProfiles[actor.voiceProfileId].voice,source:`/audio/${actor.voiceProfileId}.mp3`,startAt:cues.get(key),endAt:cues.get(key)+2};
+  };
+  const story={...raw,nodes:Object.fromEntries(Object.entries(raw.nodes).map(([nodeId,node])=>[nodeId,{...node,
+   clips:node.clips.map(ref=>{const source=(ref.set==='course'?course.segments:library.segments)[ref.id];return recorded(ref.id,source.text,source.ru,characterForVoice(assignment,source.voice));}),
+   choices:node.choices.map((choice,index)=>({...choice,clip:recorded(`${raw.id}:${nodeId}:choice:${index}`,choice.text,choice.label,player)})),
+  }]))},snapshot=structuredClone(story);
+  const path=[0,0],answer=story.nodes.start.choices[0].clip,echo=story.nodes.a.clips[0];
+  assert.notEqual(answer.id,echo.id);assert.equal(answer.actorId,echo.actorId);assert.equal(answer.text,echo.text);assert.equal(answer.startAt,echo.startAt);
+  const full=routePlaylist(story,path);assert.equal(full.length,6);assert.equal(full.filter(entry=>entry.kind==='choice').length,2);
+  assert.equal(full.filter(entry=>entry.clip.text===answer.text).length,1);
+  assert(full.filter(entry=>entry.nodeId==='a'&&entry.kind==='scene').every(entry=>entry.clipIndex===1));
+  assert.deepEqual(scenePlaylist(story,'a').map(entry=>entry.clip.id),story.nodes.a.clips.map(clip=>clip.id));
+  const evidence=['a','a-message'].map(nodeId=>({nodeId,clipId:story.nodes[nodeId].clips[0].id}));
+  assert.deepEqual(exercisePlaylist(story,path,evidence).map(entry=>({nodeId:entry.nodeId,clipId:entry.clip.id})),evidence);
+  assert.deepEqual(story,snapshot);
+ }
+});
+
+test('Boundary deduplication requires the same explicit actor and words and leaves other repetitions intact',()=>{
+ const make=(change={})=>{const story=fixture(),answer=story.nodes.start.choices[0].clip;story.nodes.left.clips=[{...answer,id:'answer-echo',...change}];return story;};
+ const ids=story=>routePlaylist(story,[0]).map(entry=>entry.clip.id);
+ assert(!ids(make()).includes('answer-echo'));
+ assert(!ids(make({source:'/audio/another-recording.mp3',startAt:4,endAt:6})).includes('answer-echo'));
+ assert(ids(make({actorId:'another-speaker'})).includes('answer-echo'));
+ assert(ids(make({text:'A different answer'})).includes('answer-echo'));
+ const unknown=make();delete unknown.nodes.start.choices[0].clip.actorId;delete unknown.nodes.left.clips[0].actorId;
+ assert(ids(unknown).includes('answer-echo'));
+ const unavailable=make();delete unavailable.nodes.start.choices[0].clip;
+ assert(ids(unavailable).includes('answer-echo'));
+ const later=make();later.nodes.left.clips.unshift(clip('scene-introduction'));
+ assert(ids(later).includes('answer-echo'));
+ const repeated=make();repeated.nodes.left.clips.push({...repeated.nodes.left.clips[0],id:'intentional-repeat'});
+ assert(!ids(repeated).includes('answer-echo'));assert(ids(repeated).includes('intentional-repeat'));
 });
 
 test('A sequence takes the current speed for every new clip and reports completion only after all entries',async()=>{

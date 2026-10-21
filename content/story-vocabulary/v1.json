@@ -1,0 +1,1761 @@
+{
+  "formatVersion": 1,
+  "releaseId": "story-vocabulary-v1",
+  "courseSha256": "5c5bdee17fb3c71bd4bfaa7f3d78adf33931621bdc313d4ed383a306834581d2",
+  "librarySha256": "b7ce19557d82de7089ed5d5bef45e14774751dece7be3a50622da2e5196e7126",
+  "selection": "Three short listening cues per story: curated legacy sets, or one topic cue and two level-specific cues for the shared situation. Terms match spoken text or recorded answer text; no names, clock times or ending summaries.",
+  "legacy": {
+    "coffee-01": {
+      "language": "en",
+      "level": "A1",
+      "entries": [
+        {
+          "term": "to go",
+          "ru": "с собой (о напитке или еде)"
+        },
+        {
+          "term": "short on time",
+          "ru": "ограничен во времени"
+        },
+        {
+          "term": "next to",
+          "ru": "рядом с"
+        }
+      ]
+    },
+    "neighbour-en": {
+      "language": "en",
+      "level": "A1",
+      "entries": [
+        {
+          "term": "make it",
+          "ru": "смочь прийти"
+        },
+        {
+          "term": "clear up",
+          "ru": "убрать после еды или встречи"
+        },
+        {
+          "term": "sparkling water",
+          "ru": "газированная вода"
+        }
+      ]
+    },
+    "volunteer-en": {
+      "language": "en",
+      "level": "A1",
+      "entries": [
+        {
+          "term": "welcome desk",
+          "ru": "стойка регистрации"
+        },
+        {
+          "term": "wristband",
+          "ru": "браслет пропуска"
+        },
+        {
+          "term": "take over",
+          "ru": "сменить другого человека, принять его работу"
+        }
+      ]
+    },
+    "train-en": {
+      "language": "en",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "direct train",
+          "ru": "прямой поезд"
+        },
+        {
+          "term": "reserved seat",
+          "ru": "забронированное место"
+        },
+        {
+          "term": "single ticket",
+          "ru": "билет в одну сторону"
+        }
+      ]
+    },
+    "lostbag-en": {
+      "language": "en",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "lost property",
+          "ru": "бюро находок"
+        },
+        {
+          "term": "departure board",
+          "ru": "табло отправлений"
+        },
+        {
+          "term": "handle",
+          "ru": "ручка сумки"
+        }
+      ]
+    },
+    "bus-en": {
+      "language": "en",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "ferry crossing",
+          "ru": "переправа на пароме"
+        },
+        {
+          "term": "departure",
+          "ru": "отправление"
+        },
+        {
+          "term": "booking",
+          "ru": "бронирование"
+        }
+      ]
+    },
+    "market-en": {
+      "language": "en",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "courgettes",
+          "ru": "кабачки"
+        },
+        {
+          "term": "aubergines",
+          "ru": "баклажаны"
+        },
+        {
+          "term": "chop",
+          "ru": "нарезать"
+        }
+      ]
+    },
+    "lunch-en": {
+      "language": "en",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "suit you",
+          "ru": "тебе подходить"
+        },
+        {
+          "term": "keep it short",
+          "ru": "сделать встречу короткой"
+        },
+        {
+          "term": "book a table",
+          "ru": "забронировать столик"
+        }
+      ]
+    },
+    "work-en": {
+      "language": "en",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "rough draft",
+          "ru": "черновой вариант"
+        },
+        {
+          "term": "overview",
+          "ru": "краткий обзор"
+        },
+        {
+          "term": "shared folder",
+          "ru": "общая папка"
+        }
+      ]
+    },
+    "film-en": {
+      "language": "en",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "open ending",
+          "ru": "открытый финал"
+        },
+        {
+          "term": "confusing",
+          "ru": "непонятный, вызывающий путаницу"
+        },
+        {
+          "term": "easier to follow",
+          "ru": "легче понять по ходу рассказа"
+        }
+      ]
+    },
+    "repair-en": {
+      "language": "en",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "valve",
+          "ru": "вентиль"
+        },
+        {
+          "term": "running late",
+          "ru": "опаздывают"
+        },
+        {
+          "term": "at the latest",
+          "ru": "самое позднее"
+        }
+      ]
+    },
+    "birthday-en": {
+      "language": "en",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "centre of attention",
+          "ru": "центр внимания"
+        },
+        {
+          "term": "reveal",
+          "ru": "раскрыть, рассказать"
+        },
+        {
+          "term": "as long as",
+          "ru": "при условии, что"
+        }
+      ]
+    },
+    "museum-en": {
+      "language": "en",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "small print",
+          "ru": "мелкий шрифт"
+        },
+        {
+          "term": "survey",
+          "ru": "съёмка местности для карты"
+        },
+        {
+          "term": "reproduction",
+          "ru": "репродукция, воспроизведённая копия"
+        }
+      ]
+    },
+    "bookclub-en": {
+      "language": "en",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "narrator",
+          "ru": "рассказчик"
+        },
+        {
+          "term": "interpretation",
+          "ru": "толкование, интерпретация"
+        },
+        {
+          "term": "motive",
+          "ru": "мотив, причина поступка"
+        }
+      ]
+    },
+    "hotel-en": {
+      "language": "en",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "twin room",
+          "ru": "номер с двумя отдельными кроватями"
+        },
+        {
+          "term": "put it in writing",
+          "ru": "подтвердить это письменно"
+        },
+        {
+          "term": "same total price",
+          "ru": "та же общая стоимость"
+        }
+      ]
+    },
+    "interview-en": {
+      "language": "en",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "rota",
+          "ru": "график дежурств"
+        },
+        {
+          "term": "constraint",
+          "ru": "ограничение, которое нужно учитывать"
+        },
+        {
+          "term": "backup person",
+          "ru": "человек на замену"
+        }
+      ]
+    },
+    "videocall-en": {
+      "language": "en",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "approval status",
+          "ru": "статус согласования"
+        },
+        {
+          "term": "review date",
+          "ru": "дата рассмотрения"
+        },
+        {
+          "term": "unconfirmed",
+          "ru": "неподтверждённый"
+        }
+      ]
+    },
+    "feedback-en": {
+      "language": "en",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "guidance",
+          "ru": "пояснения, помогающие выполнить действие"
+        },
+        {
+          "term": "submission",
+          "ru": "отправка заполненной формы"
+        },
+        {
+          "term": "hesitation",
+          "ru": "колебание, заминка"
+        }
+      ]
+    },
+    "hike-en": {
+      "language": "en",
+      "level": "C1",
+      "entries": [
+        {
+          "term": "on its own merits",
+          "ru": "по собственным достоинствам"
+        },
+        {
+          "term": "trade-off",
+          "ru": "компромисс между преимуществами и недостатками"
+        },
+        {
+          "term": "reassess",
+          "ru": "оценить заново"
+        }
+      ]
+    },
+    "photo-en": {
+      "language": "en",
+      "level": "C1",
+      "entries": [
+        {
+          "term": "caption",
+          "ru": "подпись к фотографии"
+        },
+        {
+          "term": "family accounts",
+          "ru": "рассказы членов семьи"
+        },
+        {
+          "term": "identification",
+          "ru": "установление личности"
+        }
+      ]
+    },
+    "coffee-it": {
+      "language": "it",
+      "level": "A1",
+      "entries": [
+        {
+          "term": "andare via",
+          "ru": "уйти"
+        },
+        {
+          "term": "da asporto",
+          "ru": "с собой (о еде или напитке)"
+        },
+        {
+          "term": "di fronte",
+          "ru": "напротив"
+        }
+      ]
+    },
+    "neighbour-dinner-it": {
+      "language": "it",
+      "level": "A1",
+      "entries": [
+        {
+          "term": "da bere",
+          "ru": "попить, для питья"
+        },
+        {
+          "term": "a parte",
+          "ru": "отдельно"
+        },
+        {
+          "term": "latticini",
+          "ru": "молочные продукты"
+        }
+      ]
+    },
+    "market-basket-it": {
+      "language": "it",
+      "level": "A1",
+      "entries": [
+        {
+          "term": "da cuocere",
+          "ru": "для приготовления, не для еды сырыми"
+        },
+        {
+          "term": "sodi",
+          "ru": "плотные, упругие"
+        },
+        {
+          "term": "rimasti",
+          "ru": "оставшиеся"
+        }
+      ]
+    },
+    "train-it": {
+      "language": "it",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "binario",
+          "ru": "путь, платформа отправления"
+        },
+        {
+          "term": "sottopassaggio",
+          "ru": "подземный переход"
+        },
+        {
+          "term": "sola andata",
+          "ru": "только в одну сторону"
+        }
+      ]
+    },
+    "hotel-booking-it": {
+      "language": "it",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "cortile",
+          "ru": "внутренний двор"
+        },
+        {
+          "term": "cancellazione",
+          "ru": "отмена бронирования"
+        },
+        {
+          "term": "a parte",
+          "ru": "отдельно, за отдельную плату"
+        }
+      ]
+    },
+    "wrong-delivery-it": {
+      "language": "it",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "portineria",
+          "ru": "консьержная"
+        },
+        {
+          "term": "citofono",
+          "ru": "домофон"
+        },
+        {
+          "term": "scambiarci",
+          "ru": "обменяться друг с другом"
+        }
+      ]
+    },
+    "lost-keys-it": {
+      "language": "it",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "scarico",
+          "ru": "разряженный"
+        },
+        {
+          "term": "portachiavi",
+          "ru": "брелок для ключей"
+        },
+        {
+          "term": "una verifica alla volta",
+          "ru": "по одной проверке за раз"
+        }
+      ]
+    },
+    "book-club-it": {
+      "language": "it",
+      "level": "A2",
+      "entries": [
+        {
+          "term": "protagonista",
+          "ru": "главная героиня"
+        },
+        {
+          "term": "riassumi",
+          "ru": "кратко перескажи"
+        },
+        {
+          "term": "un’ipotesi",
+          "ru": "предположение, гипотеза"
+        }
+      ]
+    },
+    "museum-clue-it": {
+      "language": "it",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "indizio",
+          "ru": "зацепка, улика"
+        },
+        {
+          "term": "registro",
+          "ru": "реестр, журнал записей"
+        },
+        {
+          "term": "ingrandita",
+          "ru": "увеличенная"
+        }
+      ]
+    },
+    "old-letter-it": {
+      "language": "it",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "staccata",
+          "ru": "отдельная, отклеившаяся"
+        },
+        {
+          "term": "legame",
+          "ru": "связь"
+        },
+        {
+          "term": "fare ipotesi",
+          "ru": "строить предположения"
+        }
+      ]
+    },
+    "meeting-update-it": {
+      "language": "it",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "si è interrotta",
+          "ru": "прервалась"
+        },
+        {
+          "term": "bozza",
+          "ru": "черновик"
+        },
+        {
+          "term": "disponibilità",
+          "ru": "возможность участвовать или взяться за работу"
+        }
+      ]
+    },
+    "interview-practice-it": {
+      "language": "it",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "iscrizioni",
+          "ru": "регистрация участников"
+        },
+        {
+          "term": "turni",
+          "ru": "смены, дежурства"
+        },
+        {
+          "term": "senza esagerare",
+          "ru": "не преувеличивая"
+        }
+      ]
+    },
+    "coworking-call-it": {
+      "language": "it",
+      "level": "B1",
+      "entries": [
+        {
+          "term": "per iscritto",
+          "ru": "письменно"
+        },
+        {
+          "term": "riepilogo",
+          "ru": "краткое изложение, итог"
+        },
+        {
+          "term": "senza eco",
+          "ru": "без эха"
+        }
+      ]
+    },
+    "ferry-change-it": {
+      "language": "it",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "rimborso",
+          "ru": "возврат денег"
+        },
+        {
+          "term": "purché",
+          "ru": "при условии, что"
+        },
+        {
+          "term": "affidabile",
+          "ru": "надёжный"
+        }
+      ]
+    },
+    "flat-viewing-it": {
+      "language": "it",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "spese fisse",
+          "ru": "фиксированные расходы"
+        },
+        {
+          "term": "utenze",
+          "ru": "коммунальные и другие подключённые услуги"
+        },
+        {
+          "term": "bollette",
+          "ru": "счета за услуги"
+        }
+      ]
+    },
+    "festival-invitation-it": {
+      "language": "it",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "fare un turno",
+          "ru": "отработать смену"
+        },
+        {
+          "term": "ti dia il cambio",
+          "ru": "сменит тебя"
+        },
+        {
+          "term": "per iscritto",
+          "ru": "письменно"
+        }
+      ]
+    },
+    "rainy-trip-it": {
+      "language": "it",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "senza fretta",
+          "ru": "без спешки"
+        },
+        {
+          "term": "al chiuso",
+          "ru": "в помещении"
+        },
+        {
+          "term": "rinunciare",
+          "ru": "отказаться от чего-либо"
+        }
+      ]
+    },
+    "birthday-plan-it": {
+      "language": "it",
+      "level": "B2",
+      "entries": [
+        {
+          "term": "facoltativa",
+          "ru": "необязательная"
+        },
+        {
+          "term": "ti convince",
+          "ru": "кажется тебе подходящим"
+        },
+        {
+          "term": "inviti a sorpresa",
+          "ru": "неожиданные приглашения"
+        }
+      ]
+    },
+    "accessible-dinner-it": {
+      "language": "it",
+      "level": "C1",
+      "entries": [
+        {
+          "term": "mettere in discussione",
+          "ru": "поставить под сомнение"
+        },
+        {
+          "term": "gradini",
+          "ru": "ступеньки"
+        },
+        {
+          "term": "raggiungibile",
+          "ru": "доступная, до которой можно добраться"
+        }
+      ]
+    },
+    "volunteer-archive-it": {
+      "language": "it",
+      "level": "C1",
+      "entries": [
+        {
+          "term": "estratti",
+          "ru": "отрывки"
+        },
+        {
+          "term": "non esauriscono",
+          "ru": "не охватывают полностью"
+        },
+        {
+          "term": "contesto",
+          "ru": "контекст"
+        }
+      ]
+    }
+  },
+  "topics": {
+    "en": {
+      "dinner": {
+        "term": "neighbourhood dinner",
+        "ru": "ужин для соседей по району"
+      },
+      "cinema": {
+        "term": "short film",
+        "ru": "короткометражный фильм"
+      },
+      "walk": {
+        "term": "old town",
+        "ru": "старый город"
+      },
+      "bookclub": {
+        "term": "book club",
+        "ru": "книжный клуб"
+      },
+      "repair": {
+        "term": "repair workshop",
+        "ru": "мастерская по ремонту"
+      },
+      "market": {
+        "term": "local producers",
+        "ru": "местные производители"
+      },
+      "picnic": {
+        "term": "by the river",
+        "ru": "у реки"
+      },
+      "museum": {
+        "term": "temporary exhibition",
+        "ru": "временная выставка"
+      },
+      "welcome": {
+        "term": "new members",
+        "ru": "новые участники"
+      },
+      "exchange": {
+        "term": "language exchange",
+        "ru": "языковой обмен"
+      },
+      "meeting": {
+        "term": "team meeting",
+        "ru": "встреча команды"
+      },
+      "workshop": {
+        "term": "skills workshop",
+        "ru": "практическое занятие по навыкам"
+      },
+      "archive": {
+        "term": "family photographs",
+        "ru": "семейные фотографии"
+      },
+      "garden": {
+        "term": "community garden",
+        "ru": "общественный огород"
+      },
+      "music": {
+        "term": "live music",
+        "ru": "живая музыка"
+      },
+      "station": {
+        "term": "travellers",
+        "ru": "путешественники"
+      },
+      "volunteers": {
+        "term": "volunteers",
+        "ru": "волонтёры"
+      },
+      "swap": {
+        "term": "swap",
+        "ru": "обмен вещами"
+      },
+      "boardgames": {
+        "term": "board game",
+        "ru": "настольная игра"
+      },
+      "farewell": {
+        "term": "farewell",
+        "ru": "прощальная встреча"
+      },
+      "photowalk": {
+        "term": "photography walk",
+        "ru": "фотопрогулка"
+      },
+      "localnews": {
+        "term": "newsletter",
+        "ru": "информационный бюллетень"
+      },
+      "reading": {
+        "term": "public reading",
+        "ru": "публичное чтение"
+      },
+      "craft": {
+        "term": "postcard",
+        "ru": "открытка"
+      },
+      "project": {
+        "term": "feedback",
+        "ru": "обратная связь"
+      }
+    },
+    "it": {
+      "dinner": {
+        "term": "cena di quartiere",
+        "ru": "ужин для соседей по району"
+      },
+      "cinema": {
+        "term": "cortometraggio",
+        "ru": "короткометражный фильм"
+      },
+      "walk": {
+        "term": "centro storico",
+        "ru": "исторический центр"
+      },
+      "bookclub": {
+        "term": "gruppo di lettura",
+        "ru": "книжный клуб"
+      },
+      "repair": {
+        "term": "laboratorio di riparazione",
+        "ru": "мастерская по ремонту"
+      },
+      "market": {
+        "term": "produttori locali",
+        "ru": "местные производители"
+      },
+      "picnic": {
+        "term": "vicino al fiume",
+        "ru": "возле реки"
+      },
+      "museum": {
+        "term": "mostra temporanea",
+        "ru": "временная выставка"
+      },
+      "welcome": {
+        "term": "nuovi membri",
+        "ru": "новые участники"
+      },
+      "exchange": {
+        "term": "scambio linguistico",
+        "ru": "языковой обмен"
+      },
+      "meeting": {
+        "term": "riunione di lavoro",
+        "ru": "рабочая встреча"
+      },
+      "workshop": {
+        "term": "competenze professionali",
+        "ru": "профессиональные навыки"
+      },
+      "archive": {
+        "term": "fotografie di famiglia",
+        "ru": "семейные фотографии"
+      },
+      "garden": {
+        "term": "orto condiviso",
+        "ru": "общий огород"
+      },
+      "music": {
+        "term": "musica dal vivo",
+        "ru": "живая музыка"
+      },
+      "station": {
+        "term": "viaggiatori",
+        "ru": "путешественники"
+      },
+      "volunteers": {
+        "term": "volontari",
+        "ru": "волонтёры"
+      },
+      "swap": {
+        "term": "inutilizzati",
+        "ru": "неиспользуемые"
+      },
+      "boardgames": {
+        "term": "giochi da tavolo",
+        "ru": "настольные игры"
+      },
+      "farewell": {
+        "term": "si trasferisce",
+        "ru": "переезжает"
+      },
+      "photowalk": {
+        "term": "passano inosservati",
+        "ru": "остаются незамеченными"
+      },
+      "localnews": {
+        "term": "notiziario",
+        "ru": "информационный бюллетень"
+      },
+      "reading": {
+        "term": "lettura pubblica",
+        "ru": "публичное чтение"
+      },
+      "craft": {
+        "term": "cartoline",
+        "ru": "открытки"
+      },
+      "project": {
+        "term": "pareri",
+        "ru": "мнения, отзывы"
+      }
+    }
+  },
+  "problems": {
+    "en": {
+      "A1": {
+        "time": [
+          {
+            "term": "need to leave",
+            "ru": "нужно уйти"
+          },
+          {
+            "term": "tell everyone",
+            "ru": "сообщить всем"
+          }
+        ],
+        "budget": [
+          {
+            "term": "too much",
+            "ru": "слишком много, слишком дорого"
+          },
+          {
+            "term": "pay",
+            "ru": "платить"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "main entrance",
+            "ru": "главный вход"
+          },
+          {
+            "term": "next to",
+            "ru": "рядом с"
+          }
+        ],
+        "noise": [
+          {
+            "term": "noisy",
+            "ru": "шумный"
+          },
+          {
+            "term": "quiet",
+            "ru": "тихий"
+          }
+        ],
+        "participation": [
+          {
+            "term": "send a message",
+            "ru": "отправить сообщение"
+          },
+          {
+            "term": "later",
+            "ru": "позже"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "help",
+            "ru": "помочь"
+          },
+          {
+            "term": "book the room",
+            "ru": "забронировать помещение"
+          }
+        ],
+        "date": [
+          {
+            "term": "poster",
+            "ru": "афиша"
+          },
+          {
+            "term": "organiser",
+            "ru": "организатор"
+          }
+        ],
+        "scope": [
+          {
+            "term": "ideas",
+            "ru": "идеи"
+          },
+          {
+            "term": "choose",
+            "ru": "выбрать"
+          }
+        ]
+      },
+      "A2": {
+        "time": [
+          {
+            "term": "instead of",
+            "ru": "вместо"
+          },
+          {
+            "term": "appointment",
+            "ru": "назначенная встреча"
+          }
+        ],
+        "budget": [
+          {
+            "term": "cancel",
+            "ru": "отменить"
+          },
+          {
+            "term": "nearby",
+            "ru": "поблизости"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "entrances",
+            "ru": "входы"
+          },
+          {
+            "term": "look for",
+            "ru": "искать"
+          }
+        ],
+        "noise": [
+          {
+            "term": "at the back",
+            "ru": "в дальней части помещения"
+          },
+          {
+            "term": "available",
+            "ru": "свободный, доступный"
+          }
+        ],
+        "participation": [
+          {
+            "term": "join the discussion",
+            "ru": "присоединиться к обсуждению"
+          },
+          {
+            "term": "in front of everyone",
+            "ru": "перед всеми"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "take one task",
+            "ru": "взять на себя одну задачу"
+          },
+          {
+            "term": "write down",
+            "ru": "записать"
+          }
+        ],
+        "date": [
+          {
+            "term": "correct date",
+            "ru": "верная дата"
+          },
+          {
+            "term": "wrong",
+            "ru": "неверная, ошибочная"
+          }
+        ],
+        "scope": [
+          {
+            "term": "at once",
+            "ru": "сразу, за один раз"
+          },
+          {
+            "term": "leave time",
+            "ru": "оставить время"
+          }
+        ]
+      },
+      "B1": {
+        "time": [
+          {
+            "term": "postpone",
+            "ru": "отложить"
+          },
+          {
+            "term": "give up",
+            "ru": "отказаться от намерения"
+          }
+        ],
+        "budget": [
+          {
+            "term": "venue",
+            "ru": "место проведения"
+          },
+          {
+            "term": "afford",
+            "ru": "позволить себе по деньгам"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "directions",
+            "ru": "указания, как добраться"
+          },
+          {
+            "term": "gets lost",
+            "ru": "заблудится"
+          }
+        ],
+        "noise": [
+          {
+            "term": "background music",
+            "ru": "фоновая музыка"
+          },
+          {
+            "term": "raising our voices",
+            "ru": "повышать голос"
+          }
+        ],
+        "participation": [
+          {
+            "term": "putting her on the spot",
+            "ru": "ставить её в неловкое положение"
+          },
+          {
+            "term": "contribute",
+            "ru": "внести свой вклад"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "responsibility",
+            "ru": "ответственность"
+          },
+          {
+            "term": "deadline",
+            "ru": "крайний срок"
+          }
+        ],
+        "date": [
+          {
+            "term": "passed on",
+            "ru": "передал дальше"
+          },
+          {
+            "term": "confirmation",
+            "ru": "подтверждение"
+          }
+        ],
+        "scope": [
+          {
+            "term": "rushed",
+            "ru": "скомканное из-за спешки"
+          },
+          {
+            "term": "touching on",
+            "ru": "касаться темы лишь поверхностно"
+          }
+        ]
+      },
+      "B2": {
+        "time": [
+          {
+            "term": "commitments",
+            "ru": "другие обязательства"
+          },
+          {
+            "term": "provided that",
+            "ru": "при условии, что"
+          }
+        ],
+        "budget": [
+          {
+            "term": "trade-off",
+            "ru": "компромисс между преимуществами и недостатками"
+          },
+          {
+            "term": "affordable",
+            "ru": "доступный по цене"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "assumption",
+            "ru": "предположение, принятое без проверки"
+          },
+          {
+            "term": "specify",
+            "ru": "точно указать"
+          }
+        ],
+        "noise": [
+          {
+            "term": "shift the burden",
+            "ru": "переложить бремя"
+          },
+          {
+            "term": "audibility",
+            "ru": "слышимость"
+          }
+        ],
+        "participation": [
+          {
+            "term": "think aloud",
+            "ru": "размышлять вслух"
+          },
+          {
+            "term": "singling her out",
+            "ru": "выделяя её среди остальных"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "imbalance",
+            "ru": "дисбаланс"
+          },
+          {
+            "term": "workload",
+            "ru": "объём работы, нагрузка"
+          }
+        ],
+        "date": [
+          {
+            "term": "guesswork",
+            "ru": "догадки без надёжных оснований"
+          },
+          {
+            "term": "flawless",
+            "ru": "безупречный"
+          }
+        ],
+        "scope": [
+          {
+            "term": "squeezed into",
+            "ru": "втиснуты в"
+          },
+          {
+            "term": "criteria",
+            "ru": "критерии"
+          }
+        ]
+      },
+      "C1": {
+        "time": [
+          {
+            "term": "informed consent",
+            "ru": "осознанное согласие"
+          },
+          {
+            "term": "constrained",
+            "ru": "ограничена внешними условиями"
+          }
+        ],
+        "budget": [
+          {
+            "term": "affordability",
+            "ru": "финансовая доступность"
+          },
+          {
+            "term": "on behalf of",
+            "ru": "от имени"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "self-evident",
+            "ru": "само собой разумеющийся"
+          },
+          {
+            "term": "shared reference point",
+            "ru": "общий ориентир"
+          }
+        ],
+        "noise": [
+          {
+            "term": "assent",
+            "ru": "согласие, одобрение"
+          },
+          {
+            "term": "prerequisite",
+            "ru": "необходимое предварительное условие"
+          }
+        ],
+        "participation": [
+          {
+            "term": "irrevocable",
+            "ru": "необратимое"
+          },
+          {
+            "term": "depth of engagement",
+            "ru": "глубина вовлечённости"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "sustainable",
+            "ru": "устойчивый в долгосрочном плане"
+          },
+          {
+            "term": "assigning blame",
+            "ru": "поиск виноватых"
+          }
+        ],
+        "date": [
+          {
+            "term": "insofar as",
+            "ru": "в той мере, в какой"
+          },
+          {
+            "term": "undermine",
+            "ru": "подрывать"
+          }
+        ],
+        "scope": [
+          {
+            "term": "nominal inclusion",
+            "ru": "номинальное включение"
+          },
+          {
+            "term": "deferral",
+            "ru": "отсрочка"
+          }
+        ]
+      }
+    },
+    "it": {
+      "A1": {
+        "time": [
+          {
+            "term": "orario",
+            "ru": "время по расписанию"
+          },
+          {
+            "term": "andare via",
+            "ru": "уйти"
+          }
+        ],
+        "budget": [
+          {
+            "term": "troppi",
+            "ru": "слишком много"
+          },
+          {
+            "term": "gratuito",
+            "ru": "бесплатный"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "ingresso principale",
+            "ru": "главный вход"
+          },
+          {
+            "term": "cartello",
+            "ru": "табличка, указатель"
+          }
+        ],
+        "noise": [
+          {
+            "term": "rumoroso",
+            "ru": "шумный"
+          },
+          {
+            "term": "tranquilla",
+            "ru": "тихая, спокойная"
+          }
+        ],
+        "participation": [
+          {
+            "term": "mandare un messaggio",
+            "ru": "отправить сообщение"
+          },
+          {
+            "term": "dopo",
+            "ru": "потом"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "da fare",
+            "ru": "которые нужно сделать"
+          },
+          {
+            "term": "prenotare",
+            "ru": "бронировать"
+          }
+        ],
+        "date": [
+          {
+            "term": "manifesto",
+            "ru": "афиша"
+          },
+          {
+            "term": "avvisare",
+            "ru": "сообщить, предупредить"
+          }
+        ],
+        "scope": [
+          {
+            "term": "scegliamo",
+            "ru": "выберем"
+          },
+          {
+            "term": "le altre",
+            "ru": "остальные"
+          }
+        ]
+      },
+      "A2": {
+        "time": [
+          {
+            "term": "invece che",
+            "ru": "вместо"
+          },
+          {
+            "term": "impegno",
+            "ru": "другая встреча или обязательство"
+          }
+        ],
+        "budget": [
+          {
+            "term": "annullare",
+            "ru": "отменить"
+          },
+          {
+            "term": "spendere",
+            "ru": "тратить"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "ingressi",
+            "ru": "входы"
+          },
+          {
+            "term": "accanto",
+            "ru": "рядом"
+          }
+        ],
+        "noise": [
+          {
+            "term": "in fondo",
+            "ru": "в дальней части помещения"
+          },
+          {
+            "term": "sentito",
+            "ru": "услышал"
+          }
+        ],
+        "participation": [
+          {
+            "term": "partecipare",
+            "ru": "участвовать"
+          },
+          {
+            "term": "condividere",
+            "ru": "поделиться"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "elenco",
+            "ru": "список"
+          },
+          {
+            "term": "prenotazione",
+            "ru": "бронирование"
+          }
+        ],
+        "date": [
+          {
+            "term": "chiaro",
+            "ru": "ясный, понятный"
+          },
+          {
+            "term": "sbagliata",
+            "ru": "неверная, ошибочная"
+          }
+        ],
+        "scope": [
+          {
+            "term": "disponibile",
+            "ru": "свободна, доступна"
+          },
+          {
+            "term": "di fretta",
+            "ru": "в спешке"
+          }
+        ]
+      },
+      "B1": {
+        "time": [
+          {
+            "term": "rimandare",
+            "ru": "отложить"
+          },
+          {
+            "term": "rinunciare",
+            "ru": "отказаться от намерения"
+          }
+        ],
+        "budget": [
+          {
+            "term": "permetterselo",
+            "ru": "позволить себе это по деньгам"
+          },
+          {
+            "term": "al massimo",
+            "ru": "самое большее"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "indicazioni",
+            "ru": "указания, как добраться"
+          },
+          {
+            "term": "girare a vuoto",
+            "ru": "бродить безрезультатно"
+          }
+        ],
+        "noise": [
+          {
+            "term": "musica di sottofondo",
+            "ru": "фоновая музыка"
+          },
+          {
+            "term": "alzare la voce",
+            "ru": "повышать голос"
+          }
+        ],
+        "participation": [
+          {
+            "term": "mettere in ordine le idee",
+            "ru": "собраться с мыслями"
+          },
+          {
+            "term": "metterla in difficoltà",
+            "ru": "поставить её в неловкое положение"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "responsabilità",
+            "ru": "ответственность"
+          },
+          {
+            "term": "scadenza",
+            "ru": "крайний срок"
+          }
+        ],
+        "date": [
+          {
+            "term": "in base a",
+            "ru": "на основании"
+          },
+          {
+            "term": "conferma",
+            "ru": "подтверждение"
+          }
+        ],
+        "scope": [
+          {
+            "term": "frettolosa",
+            "ru": "торопливая, скомканная"
+          },
+          {
+            "term": "evitare",
+            "ru": "избежать"
+          }
+        ]
+      },
+      "B2": {
+        "time": [
+          {
+            "term": "purché",
+            "ru": "при условии, что"
+          },
+          {
+            "term": "sulla carta",
+            "ru": "на бумаге, в теории"
+          }
+        ],
+        "budget": [
+          {
+            "term": "esigenze",
+            "ru": "потребности"
+          },
+          {
+            "term": "raggiungibile",
+            "ru": "доступное, до которого можно добраться"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "dato per scontato",
+            "ru": "приняли как само собой разумеющееся"
+          },
+          {
+            "term": "recapito",
+            "ru": "контактные данные"
+          }
+        ],
+        "noise": [
+          {
+            "term": "annuivano",
+            "ru": "кивали"
+          },
+          {
+            "term": "malinteso",
+            "ru": "недоразумение"
+          }
+        ],
+        "participation": [
+          {
+            "term": "ragiona ad alta voce",
+            "ru": "размышляет вслух"
+          },
+          {
+            "term": "metteva in discussione",
+            "ru": "ставил под сомнение"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "sulle mie spalle",
+            "ru": "на моих плечах"
+          },
+          {
+            "term": "squilibrio",
+            "ru": "дисбаланс"
+          }
+        ],
+        "date": [
+          {
+            "term": "tirare a indovinare",
+            "ru": "гадать наугад"
+          },
+          {
+            "term": "rettifica",
+            "ru": "исправление опубликованной информации"
+          }
+        ],
+        "scope": [
+          {
+            "term": "criteri",
+            "ru": "критерии"
+          },
+          {
+            "term": "perdere la parola",
+            "ru": "лишиться возможности высказаться"
+          }
+        ]
+      },
+      "C1": {
+        "time": [
+          {
+            "term": "consenso informato",
+            "ru": "осознанное согласие"
+          },
+          {
+            "term": "vincoli",
+            "ru": "ограничивающие условия"
+          }
+        ],
+        "budget": [
+          {
+            "term": "ripartiti equamente",
+            "ru": "распределены справедливо"
+          },
+          {
+            "term": "accessibilità economica",
+            "ru": "финансовая доступность"
+          }
+        ],
+        "entrance": [
+          {
+            "term": "conoscenze implicite",
+            "ru": "неявные знания"
+          },
+          {
+            "term": "presuppone",
+            "ru": "предполагает наличие"
+          }
+        ],
+        "noise": [
+          {
+            "term": "assenso",
+            "ru": "согласие, одобрение"
+          },
+          {
+            "term": "presupposto",
+            "ru": "необходимое условие"
+          }
+        ],
+        "participation": [
+          {
+            "term": "coinvolgimento",
+            "ru": "вовлечённость"
+          },
+          {
+            "term": "irreversibile",
+            "ru": "необратимое"
+          }
+        ],
+        "tasks": [
+          {
+            "term": "colpevolizzazione",
+            "ru": "обвинение, возложение вины"
+          },
+          {
+            "term": "rinegoziato",
+            "ru": "пересогласовано"
+          }
+        ],
+        "date": [
+          {
+            "term": "salvaguardare",
+            "ru": "сохранить, защитить"
+          },
+          {
+            "term": "nella misura in cui",
+            "ru": "в той мере, в какой"
+          }
+        ],
+        "scope": [
+          {
+            "term": "inserimento nominale",
+            "ru": "номинальное включение"
+          },
+          {
+            "term": "praticabile",
+            "ru": "осуществимый"
+          }
+        ]
+      }
+    }
+  }
+}

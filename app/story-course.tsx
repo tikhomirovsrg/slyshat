@@ -18,6 +18,8 @@ import {exercisePlaylist,hasRecordedClip,playStoryPlaylist,routePlaylist,scenePl
 import {buildStoryExercises} from '../lib/story-exercises.mjs';
 import {answerExercise,assistExercises,exerciseSummary,restartExercises} from '../lib/story-exercise-state';
 import {StoryExercises} from './story-exercises';
+import {StorySpeakingPractice} from './story-speaking-practice';
+import {StoryVocabulary} from './story-vocabulary';
 import {currentStoryReading,emptyStoryReading,storyReadingKey,toggleChoiceReading,toggleStoryReading} from './story-reading-state';
 
 type Props={language:Language;profile:Profile;book:Record<string,Progress>;speed:number;onSpeed:(speed:number)=>void;onLanguage:(lang:Language)=>void;initialStory?:string|null;onLeave?:()=>void;onStoryOpen?:(id:string)=>void};
@@ -57,9 +59,11 @@ export function ComicStory({story,profile,old,speed,onSpeed,next,onNext,onClose}
  const readingKey=storyReadingKey(story.id,nodeId),[reading,setReading]=useState(()=>emptyStoryReading(readingKey));
  const {revealed,translation,choiceTexts}=currentStoryReading(reading,readingKey);
  const [routeOpen,setRouteOpen]=useState(false);
+ const storyRef=useRef<HTMLElement|null>(null);
+ useEffect(()=>{const target=progress.finishedAt?storyRef.current?.querySelector<HTMLElement>('.comic-ending'):storyRef.current;target?.scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});},[]);
  const sceneRef=useRef<HTMLElement|null>(null),previousScene=useRef(readingKey);
  useEffect(()=>{if(previousScene.current===readingKey)return;previousScene.current=readingKey;sceneRef.current?.scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});},[readingKey]);
- const [playbackMode,setPlaybackMode]=useState<'scene'|'choice'|'dialogue'|'exercise'|null>(null),[activeEntry,setActiveEntry]=useState<StoryPlaylistEntry|null>(null),[playlistIndex,setPlaylistIndex]=useState(0),[playingQuestionId,setPlayingQuestionId]=useState<string|null>(null);
+ const [playbackMode,setPlaybackMode]=useState<'scene'|'choice'|'dialogue'|'exercise'|'speaking'|null>(null),[activeEntry,setActiveEntry]=useState<StoryPlaylistEntry|null>(null),[playlistIndex,setPlaylistIndex]=useState(0),[playingQuestionId,setPlayingQuestionId]=useState<string|null>(null);
  const {play,stop,setPlaybackSpeed,error,state}=useSpeechPlayer();const run=useRef(0),opened=useRef(false),speedRef=useRef(speed);
  const [restarted,setRestarted]=useState(false),[inspected,setInspected]=useState(false),[motion,setMotion]=useState(false),[clock,setClock]=useState({position:0,duration:0});
  const ready=profile.ready&&!profile.conflict,canAdvance=progress.heard.includes(nodeId)||progress.assisted.includes(nodeId),finished=!!progress.finishedAt;
@@ -67,7 +71,7 @@ export function ComicStory({story,profile,old,speed,onSpeed,next,onNext,onClose}
  const exercises=useMemo(()=>finished?buildStoryExercises(story,progress.path):null,[finished,story,progress.path]);
  const exerciseAudio=useMemo<Record<string,StoryPlaylistEntry[]>>(()=>Object.fromEntries((exercises?.questions||[]).map(question=>[question.id,exercisePlaylist(story,progress.path,question.evidence)])),[exercises,story,progress.path]);
  const exerciseEvidenceAvailable=useMemo<Record<string,boolean>>(()=>Object.fromEntries(Object.entries(exerciseAudio).map(([id,entries])=>[id,entries.length>0])),[exerciseAudio]);
- const reviewing=playbackMode==='dialogue'||playbackMode==='exercise';
+ const reviewing=playbackMode==='dialogue'||playbackMode==='exercise'||playbackMode==='speaking';
  const missingAnswers=finished?progress.path.length-fullPlaylist.filter(entry=>entry.kind==='choice').length:0;
  const displayNodeId=reviewing&&activeEntry?activeEntry.nodeId:nodeId,displayNode=story.nodes[displayNodeId],frame=route.indexOf(displayNodeId)+1;
  const currentClip=activeEntry?.clip||displayNode.clips[0],speakingName=characterName(story,currentClip);
@@ -82,7 +86,7 @@ export function ComicStory({story,profile,old,speed,onSpeed,next,onNext,onClose}
  useEffect(()=>{run.current++;stop();setPlaybackMode(null);setActiveEntry(null);setPlayingQuestionId(null);setReading(emptyStoryReading(readingKey));setRouteOpen(false);setInspected(false);setClock({position:0,duration:0});return()=>{run.current++;stop();};},[readingKey,stop]);
  useEffect(()=>{if(!ready)cancel();},[ready]);
  useEffect(()=>{speedRef.current=speed;setPlaybackSpeed(speed);},[speed,setPlaybackSpeed]);
- const listen=async(entries:StoryPlaylistEntry[],mode:'scene'|'choice'|'dialogue'|'exercise',questionId?:string)=>{
+ const listen=async(entries:StoryPlaylistEntry[],mode:'scene'|'choice'|'dialogue'|'exercise'|'speaking',questionId?:string)=>{
   if(!ready||!entries.length)return;setRestarted(false);cancel();const token=run.current;setPlaybackMode(mode);setPlayingQuestionId(questionId||null);
   if(exercises&&!exerciseSummary(exercises,progress).completed&&(mode==='dialogue'||mode==='exercise'||(mode==='scene'&&progress.heard.includes(nodeId))))save(p=>assistExercises(exercises,p,{replayed:true}));
   const complete=await playStoryPlaylist(entries,{
@@ -119,11 +123,12 @@ export function ComicStory({story,profile,old,speed,onSpeed,next,onNext,onClose}
  const finish=()=>{if(!ready||node.choices.length||!canAdvance||finished)return;cancel();save(p=>({...p,finishedAt:new Date().toISOString(),completedAt:p.completedAt||new Date().toISOString(),endings:[...new Set([...(p.endings||[]),nodeId])],updatedAt:new Date().toISOString()}),true);};
  const replay=()=>{if(!ready)return;cancel();setReading(emptyStoryReading(storyReadingKey(story.id,story.start)));setRouteOpen(false);setInspected(false);setClock({position:0,duration:0});save(p=>restartJourney(p,storyRoute(story,p.path).at(-1)!));setRestarted(true);scrollTop();};
  const leave=()=>{cancel();onClose();};
- const playbackStatus=playing?(playbackMode==='dialogue'?`Диалог · реплика ${playlistIndex+1} из ${fullPlaylist.length}`:playbackMode==='exercise'?'Фрагмент к заданию':playbackMode==='choice'?`Ответ ${String.fromCharCode(65+(activeEntry?.choiceIndex||0))}`:`Реплика ${(activeEntry?.clipIndex||0)+1} из ${displayNode.clips.length}`):progress.heard.includes(nodeId)?'✓ Сцена прослушана':'Готовая запись · слушай в своём темпе';
- return <article className="comic-story">
+ const playbackStatus=playing?(playbackMode==='dialogue'?`Диалог · реплика ${playlistIndex+1} из ${fullPlaylist.length}`:playbackMode==='exercise'?'Фрагмент к заданию':playbackMode==='speaking'?'Образец ответа':playbackMode==='choice'?`Ответ ${String.fromCharCode(65+(activeEntry?.choiceIndex||0))}`:`Реплика ${(activeEntry?.clipIndex||0)+1} из ${displayNode.clips.length}`):progress.heard.includes(nodeId)?'✓ Сцена прослушана':'Готовая запись · слушай в своём темпе';
+ return <article ref={storyRef} className="comic-story">
   <div className="comic-story-toolbar"><button className="text-button" onClick={leave}><ArrowLeft size={16}/> Все истории</button><span>#{story.position} · {story.level} · {languageNames[story.language]}</span><button className="button secondary comic-restart" disabled={!ready} onClick={replay}><RotateCcw size={16}/> С начала</button></div>
   {restarted&&<p className="comic-restart-note" role="status">История начата заново. Ранее открытые финалы сохранены.</p>}
   <header className="comic-story-title"><span className="comic-kicker">ТЫ ВЛИЯЕШЬ НА СЮЖЕТ</span><h1 lang={story.language}>{story.title}</h1><p lang={story.language}>{story.context}</p></header>
+  {!!story.vocabulary?.length&&<StoryVocabulary key={story.id+':'+(nodeId===story.start?'start':'later')} entries={story.vocabulary} language={story.language} initiallyOpen={nodeId===story.start}/>}
   <CharacterCast story={story} activeActorId={audible?currentClip?.actorId:undefined}/>
   {route.length>1&&<details className="comic-route" open={routeOpen} onToggle={event=>revealRoute(event.currentTarget.open)}><summary>Твой маршрут · выбрано реплик: {progress.path.length}</summary>{routeOpen&&<ol>{progress.path.map((index,i)=><li key={i}><span>Кадр {i+1}</span><p lang={story.language}>{story.nodes[route[i]].choices[index].text}</p><small>{story.nodes[route[i]].choices[index].label}</small></li>)}</ol>}</details>}
   <section ref={sceneRef} className="comic-scene" aria-label={'Кадр '+frame}>
@@ -138,6 +143,7 @@ export function ComicStory({story,profile,old,speed,onSpeed,next,onNext,onClose}
   {!finished&&node.choices.length>0&&<section className="comic-decisions"><h2>Твой ход!</h2><p>{canAdvance?(node.choices.every(choice=>hasRecordedClip(choice.clip))?'Послушай варианты, затем выбери ответ. Каждое решение меняет продолжение.':'Для ответа без записи открой текст по кнопке, затем выбери продолжение.'):'Послушай сцену или открой текст, чтобы выбрать ответ.'}</p><StoryChoices choices={node.choices} language={story.language} ready={ready} canAdvance={canAdvance} textOpen={choiceTexts} translationOpen={translation} playingChoice={playbackMode==='choice'?activeEntry?.choiceIndex??null:null} onListen={listenChoice} onChoose={choose} onReveal={revealChoice}/></section>}
   {!node.choices.length&&(canAdvance||finished)&&<section className="comic-ending"><span className="comic-kicker">ТВОЙ ФИНАЛ</span><h2>{node.outcome?.title}</h2><p>{node.outcome?.body}</p>{finished?<><p><Check size={16}/> История пройдена. Прослушано сцен: {progress.heard.length} из {route.length}. {progress.assisted.length?'Использовалась помощь текста.':'Текст реплик не открывался.'}</p><div className="character-dialogue-replay"><button className="button secondary" disabled={!ready||!fullPlaylist.length} onClick={()=>playbackMode==='dialogue'?cancel():void listen(fullPlaylist,'dialogue')}>{playbackMode==='dialogue'?<Square size={18}/>:<Play size={18}/>} {playbackMode==='dialogue'?'Остановить диалог':'Слушать весь диалог'}</button><p>Диалог прозвучит по твоему маршруту.</p>{missingAnswers>0&&<p>Ответов без аудиозаписи: {missingAnswers}. При воспроизведении они пропускаются; текст есть в твоём маршруте.</p>}</div><div className="section-actions">{next?<button className="button primary" disabled={!ready} onClick={()=>{cancel();onNext(next.id);}}>Следующая история · #{next.position}<ArrowRight size={18}/></button>:<button className="button primary" onClick={leave}>Ко всем историям</button>}<button className="button secondary" disabled={!ready} onClick={replay}>Другой путь</button></div></>:<button className="button primary" disabled={!ready} onClick={finish}>Завершить историю<Check size={18}/></button>}</section>}
   {finished&&exercises&&(progress.heard.includes(nodeId)?<StoryExercises key={exercises.releaseId+'-'+exercises.routeKey} exercises={exercises} progress={progress} ready={ready} playingQuestionId={playbackMode==='exercise'?playingQuestionId:null} evidenceAvailable={exerciseEvidenceAvailable} onAnswer={(questionId,answerIds)=>save(p=>answerExercise(exercises,p,questionId,answerIds))} onReplay={replayExercise} onStopReplay={cancel} onRestart={()=>save(p=>restartExercises(exercises,p))}/>:<section className="story-exercises-locked"><h2>Задания после истории</h2><p>Дослушай финальную сцену, чтобы открыть вопросы о событиях твоего маршрута.</p><button className="button secondary" disabled={!ready} onClick={()=>playbackMode==='scene'?cancel():void listen(scenePlaylist(story,nodeId),'scene')}>{playbackMode==='scene'?<Square size={17}/>:<Headphones size={17}/>} {playbackMode==='scene'?'Остановить финальную сцену':'Слушать финальную сцену'}</button></section>)}
+  {finished&&exercises&&exerciseSummary(exercises,progress).completed&&<StorySpeakingPractice story={story} path={progress.path} ready={ready} listening={playbackMode==='speaking'} onListen={entry=>void listen([entry],'speaking')} onStop={cancel}/>}
   <EndingCollection story={story} progress={progress} current={nodeId}/><p className="comic-save-note" role="status">{profile.previewSaveNote||(profile.conflict?'Есть изменения на другом устройстве. Выбери версию прогресса выше.':profile.status==='synced'?'Прогресс сохранён в аккаунте':profile.status==='offline'?'Прогресс на устройстве. Синхронизация продолжится при подключении.':'Сохраняем твой маршрут…')}</p>
  </article>;
 }

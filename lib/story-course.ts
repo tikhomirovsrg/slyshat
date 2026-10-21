@@ -10,6 +10,7 @@ import {characterForVoice} from './character-cast.mjs';
 import {buildStoryExercises} from './story-exercises.mjs';
 import {validateExerciseAttempt} from './story-exercise-state';
 import {storyPresentation} from './story-presentation';
+import {storyVocabulary} from './story-vocabulary';
 type Ref={set:'course'|'library';id:string};
 type Raw=Omit<CourseStory,'nodes'>&{nodes:Record<string,Omit<CourseStory['nodes'][string],'clips'>&{clips:Ref[]}>};
 let cache:{stories:Map<string,Raw>;metadata:any;hash:string}|undefined;
@@ -41,7 +42,7 @@ export function courseStory(id:string):CourseStory|null{
   return {id:ref.id,text:data.text,ru:data.ru,voice:info.voice,source:`/audio/${ref.set}/${info.file}`,startAt:info.start,endAt:info.end,actorId:actor.actorId,actorName:actor.name};
  }
  const board=characterBoard(comic(s.id),id,!!audio),{hook,series,...presentation}=storyPresentation(s,board,source().hash);
- return {...s,...presentation,comic:{...board,hook,series},nodes:Object.fromEntries(Object.entries(s.nodes).map(([nodeId,n])=>[nodeId,{...n,clips:n.clips.map((ref,i)=>clip(ref,nodeId,i)),choices:n.choices.map((choice,i)=>({...choice,...(audio?{clip:recorded(audio.stories[id].nodes[nodeId].choices[i],choice.text,choice.label,`${id}:${nodeId}:choice:${i}`,player)}:{})}))}]))};
+ return {...s,...presentation,vocabulary:storyVocabulary(s,source().hash),comic:{...board,hook,series},nodes:Object.fromEntries(Object.entries(s.nodes).map(([nodeId,n])=>[nodeId,{...n,clips:n.clips.map((ref,i)=>clip(ref,nodeId,i)),choices:n.choices.map((choice,i)=>({...choice,...(audio?{clip:recorded(audio.stories[id].nodes[nodeId].choices[i],choice.text,choice.label,`${id}:${nodeId}:choice:${i}`,player)}:{})}))}]))};
 }
 export function validateCourseJourney(j:Journey){
  const data=source();

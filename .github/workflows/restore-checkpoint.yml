@@ -1,0 +1,92 @@
+name: Restore reviewed Slyshat checkpoint
+
+on:
+  push:
+    branches: [codex/checkpoint-transfer-20261021]
+    paths: [checkpoint-transfer/manifest.json]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: slyshat-checkpoint-transfer-20261021
+  cancel-in-progress: false
+
+jobs:
+  restore:
+    if: github.repository == 'tikhomirovsrg/slyshat'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - name: Verify transfer and assemble the original Git bundle
+        id: transfer
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, re
+          from pathlib import Path
+
+          manifest = json.loads(Path('checkpoint-transfer/manifest.json').read_text())
+          expected = '134fed73f8f2a61593e2d46b9b70be5e217c2cbe'
+          assert manifest['formatVersion'] == 1
+          assert manifest['repository'] == 'tikhomirovsrg/slyshat'
+          assert manifest['expectedCommit'] == expected
+          assert manifest['baseCommit'] == '0d2ae4ee8da0402cb623b43f466e877933f4ee75'
+          assert manifest['sourceBranch'] == 'codex/story-characters-and-voices'
+          assert manifest['targetBranch'] == 'codex/story-characters-and-voices'
+          assert manifest['partSize'] == 720896
+          assert isinstance(manifest['ready'], bool)
+          if not manifest['ready']:
+              print('Transfer checkpoint saved. Parts are still arriving; no branch push is performed.')
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+                  output.write('ready=false\n')
+              raise SystemExit(0)
+
+          bundle = Path(os.environ['RUNNER_TEMP']) / 'slyshat-checkpoint.bundle'
+          digest = hashlib.sha256()
+          total = 0
+          with bundle.open('wb') as destination:
+              for index, part in enumerate(manifest['parts'], 1):
+                  assert part['file'] == f'parts/{index:04d}.part'
+                  assert 0 < part['bytes'] <= 720896
+                  assert re.fullmatch(r'[0-9a-f]{64}', part['sha256'])
+                  data = (Path('checkpoint-transfer') / part['file']).read_bytes()
+                  assert len(data) == part['bytes'], part['file']
+                  assert hashlib.sha256(data).hexdigest() == part['sha256'], part['file']
+                  destination.write(data)
+                  digest.update(data)
+                  total += len(data)
+          assert total == manifest['bundleBytes']
+          assert digest.hexdigest() == manifest['bundleSha256']
+          print(f'Verified {len(manifest["parts"])} parts, {total} bytes; expected commit {expected}.')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('ready=true\n')
+          PY
+      - name: Restore exactly the reviewed commit and push its feature branch
+        if: steps.transfer.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git bundle verify "$RUNNER_TEMP/slyshat-checkpoint.bundle"
+          test "$(git bundle list-heads "$RUNNER_TEMP/slyshat-checkpoint.bundle")" = '134fed73f8f2a61593e2d46b9b70be5e217c2cbe refs/heads/codex/story-characters-and-voices'
+          git fetch --no-tags "$RUNNER_TEMP/slyshat-checkpoint.bundle" refs/heads/codex/story-characters-and-voices:refs/remotes/checkpoint/source
+          test "$(git rev-parse refs/remotes/checkpoint/source)" = '134fed73f8f2a61593e2d46b9b70be5e217c2cbe'
+          test "$(git rev-list --parents -n 1 refs/remotes/checkpoint/source)" = '134fed73f8f2a61593e2d46b9b70be5e217c2cbe 0d2ae4ee8da0402cb623b43f466e877933f4ee75'
+          target='refs/heads/codex/story-characters-and-voices'
+          remote="$(git ls-remote --heads origin "$target")"
+          current="${remote%%$'\t'*}"
+          if [ -n "$remote" ]; then
+            test "$remote" = "$current"$'\t'"$target"
+            case "$current" in
+              134fed73f8f2a61593e2d46b9b70be5e217c2cbe) echo 'The exact checkpoint is already present.' ;;
+              0d2ae4ee8da0402cb623b43f466e877933f4ee75) git push origin "refs/remotes/checkpoint/source:$target" ;;
+              *) echo 'Target branch has another commit; refusing to overwrite it.' >&2; exit 1 ;;
+            esac
+          else
+            git push origin "refs/remotes/checkpoint/source:$target"
+          fi
+          test "$(git ls-remote --heads origin "$target")" = '134fed73f8f2a61593e2d46b9b70be5e217c2cbe'$'\t'"$target"

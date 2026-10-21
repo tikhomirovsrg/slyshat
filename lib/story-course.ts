@@ -9,6 +9,7 @@ import {characterBoard,characterCourse,characterRecordings} from './character-co
 import {characterForVoice} from './character-cast.mjs';
 import {buildStoryExercises} from './story-exercises.mjs';
 import {validateExerciseAttempt} from './story-exercise-state';
+import {storyPresentation} from './story-presentation';
 type Ref={set:'course'|'library';id:string};
 type Raw=Omit<CourseStory,'nodes'>&{nodes:Record<string,Omit<CourseStory['nodes'][string],'clips'>&{clips:Ref[]}>};
 let cache:{stories:Map<string,Raw>;metadata:any;hash:string}|undefined;
@@ -19,7 +20,7 @@ let media:Record<string,any>|undefined;
 function recordings(){if(!media){media={};for(const set of ['course','library'])media[set]=JSON.parse(readFileSync(resolve(process.cwd(),`public/audio/${set}/manifest.json`),'utf8'));}if(media.course.sourceSha256!==source().hash)throw Error('Course recording version mismatch');return media;}
 let boards:Map<string,ComicBoard>|undefined;
 function comic(id:string){if(!boards)boards=new Map(getDb().prepare('SELECT story_id,data_json FROM comic_boards').all().map(r=>[String(r.story_id),JSON.parse(String(r.data_json))]));const board=boards.get(id);if(!board)throw Error('Comic is not installed');return board;}
-function summary(s:Raw):StoryCard{const {id,language,level,position,title,topic,summary,art,legacy}=s;const {hook,series,cover,featured,actors,playerActorId}=characterBoard(comic(id),id,false);const lead=actors?.find(a=>a.id!==playerActorId)||actors?.[0];return {id,language,level,position,title,topic,summary,art,legacy,comic:{hook,series,cover,featured,...(lead?{coverActor:{artBase:lead.artBase,artLayout:lead.artLayout,label:lead.label}}:{})}};}
+function summary(s:Raw):StoryCard{const {id,language,level,position,art,legacy}=s;const board=characterBoard(comic(id),id,false),{cover,featured,actors,playerActorId}=board;const {title,topic,summary,hook,series}=storyPresentation(s,board,source().hash);const lead=actors?.find(a=>a.id!==playerActorId)||actors?.[0];return {id,language,level,position,title,topic,summary,art,legacy,comic:{hook,series,cover,featured,...(lead?{coverActor:{artBase:lead.artBase,artLayout:lead.artLayout,label:lead.label}}:{})}};}
 export function storyCatalog(language:string):StoryCatalog{
  const data=source(),items=[...data.stories.values()].filter(s=>s.language===language).map(summary);
  return {items,total:items.length,counts:Object.fromEntries(levels.map(l=>[l,items.filter(s=>s.level===l).length])) as StoryCatalog['counts'],provenance:data.metadata.provenance};
@@ -39,7 +40,8 @@ export function courseStory(id:string):CourseStory|null{
   if(!info||!data||info.textSha256!==data.textSha256||info.voice!==data.voice)throw Error('Recording does not match text');
   return {id:ref.id,text:data.text,ru:data.ru,voice:info.voice,source:`/audio/${ref.set}/${info.file}`,startAt:info.start,endAt:info.end,actorId:actor.actorId,actorName:actor.name};
  }
- return {...s,comic:characterBoard(comic(s.id),id,!!audio),nodes:Object.fromEntries(Object.entries(s.nodes).map(([nodeId,n])=>[nodeId,{...n,clips:n.clips.map((ref,i)=>clip(ref,nodeId,i)),choices:n.choices.map((choice,i)=>({...choice,...(audio?{clip:recorded(audio.stories[id].nodes[nodeId].choices[i],choice.text,choice.label,`${id}:${nodeId}:choice:${i}`,player)}:{})}))}]))};
+ const board=characterBoard(comic(s.id),id,!!audio),{hook,series,...presentation}=storyPresentation(s,board,source().hash);
+ return {...s,...presentation,comic:{...board,hook,series},nodes:Object.fromEntries(Object.entries(s.nodes).map(([nodeId,n])=>[nodeId,{...n,clips:n.clips.map((ref,i)=>clip(ref,nodeId,i)),choices:n.choices.map((choice,i)=>({...choice,...(audio?{clip:recorded(audio.stories[id].nodes[nodeId].choices[i],choice.text,choice.label,`${id}:${nodeId}:choice:${i}`,player)}:{})}))}]))};
 }
 export function validateCourseJourney(j:Journey){
  const data=source();

@@ -30,7 +30,7 @@ test('Comic scene keeps target text hidden and decisions disabled until listenin
  const React=require('react'),{renderToStaticMarkup}=require('react-dom/server'),{ComicStory}=require('../app/story-course.tsx');const raw=source.stories.find(s=>!s.legacy),base=JSON.parse(fs.readFileSync(path.join(__dirname,'../content/audio-library/series-v1.json')));
  const story={...raw,nodes:Object.fromEntries(Object.entries(raw.nodes).map(([id,n])=>[id,{...n,clips:n.clips.map(ref=>({id:ref.id,...(ref.set==='course'?source:base).segments[ref.id],source:'/audio/course/en-a1-v1.mp3',startAt:0,endAt:10}))}]))};
  const profile={data:{journey:undefined,events:[]},ready:true,status:'synced',conflict:false,update(){}};
- const html=renderToStaticMarkup(React.createElement(ComicStory,{story,profile,speed:1,onSpeed(){},next:null,onNext(){},onClose(){}}));assert(!html.includes(story.nodes.start.clips[0].text));assert(html.includes('Слушать сцену'));assert.equal((html.match(/class="comic-choice" disabled/g)||[]).length,2);assert(!html.includes('Правильный ответ'));
+ const html=renderToStaticMarkup(React.createElement(ComicStory,{story,profile,speed:1,onSpeed(){},next:null,onNext(){},onClose(){}}));assert(!html.includes(story.nodes.start.clips[0].text));assert(html.includes('Слушать сцену'));assert.equal((html.match(/<button class="button primary" disabled="">Выбрать [AB]/g)||[]).length,2);assert(!html.includes('Правильный ответ'));
  assert(html.includes('С начала'));assert(html.includes('aria-label="Скорость озвучки"'));assert(html.includes('value="0.5"'));assert(html.includes('value="1.5"'));
 });
 

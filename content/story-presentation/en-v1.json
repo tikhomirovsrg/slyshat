@@ -1,0 +1,341 @@
+{
+  "formatVersion": 1,
+  "releaseId": "story-presentation-v1",
+  "language": "en",
+  "courseSha256": "5c5bdee17fb3c71bd4bfaa7f3d78adf33931621bdc313d4ed383a306834581d2",
+  "comicSha256": "a7d5c7299f6c874e3324c9eab05ee6dc8da214a922aff0648cdd81dc5e8c1043",
+  "legacy": {
+    "coffee-01": {
+      "title": "Time for a coffee?",
+      "topic": "People and conversations",
+      "summary": "Maya is running late, and you have your own plans for the evening. Can you agree on a plan?",
+      "context": "You and Maya arranged to have coffee near the station. She has sent a voice message, and it sounds as though the plans are changing.",
+      "hook": "Maya is running late, and you have your own plans for the evening. Can you agree on a plan?"
+    },
+    "neighbour-en": {
+      "title": "A first dinner with the neighbours",
+      "topic": "People and conversations",
+      "summary": "Maya is inviting the neighbours to dinner. Find out what is already prepared and decide how you can help.",
+      "context": "You have recently moved in. Maya has invited you to meet the neighbours, but you can only arrive after 7:30 p.m.",
+      "hook": "Maya is inviting the neighbours to dinner. Find out what is already prepared and decide how you can help."
+    },
+    "volunteer-en": {
+      "title": "More hands needed at the fair",
+      "topic": "People and conversations",
+      "summary": "A volunteer has fallen ill just before the neighbourhood fair. Choose a role you can manage and agree on a shift handover.",
+      "context": "Leo is organising a book fair and children's activities. You can help from 10:00 to 12:00, but you have never used a till.",
+      "hook": "A volunteer has fallen ill just before the neighbourhood fair. Choose a role you can manage and agree on a shift handover."
+    },
+    "train-en": {
+      "title": "A change of plans at the station",
+      "topic": "Travel",
+      "summary": "Your train has been cancelled. You need to reach the seaside by noon and choose a route that works for you.",
+      "context": "You are at the station, planning to travel to the fictional town of Westhaven. The timetable on the board has changed. A member of staff explains your options.",
+      "hook": "Your train has been cancelled. You need to reach the seaside by noon and choose a route that works for you."
+    },
+    "lostbag-en": {
+      "title": "The missing blue bag",
+      "topic": "Travel",
+      "summary": "Oliver's bag has gone missing at the station. Work out what happened and decide what you can do before the train leaves.",
+      "context": "You and Oliver are going away for the weekend. The train leaves in twenty-five minutes, but the blue bag is missing. His tickets and documents are in his pocket.",
+      "hook": "Oliver's bag has gone missing at the station. Work out what happened and decide what you can do before the train leaves."
+    },
+    "bus-en": {
+      "title": "The bus has already left",
+      "topic": "Travel",
+      "summary": "The lighthouse tour starts in an hour, but the next bus will be too late. Compare three new plans.",
+      "context": "On the second day of your trip, you and Oliver planned to take a lighthouse tour at 15:00. It is now 14:00, and you reached the bus stop too late.",
+      "hook": "The lighthouse tour starts in an hour, but the next bus will be too late. Compare three new plans."
+    },
+    "market-en": {
+      "title": "Dinner starts at the market",
+      "topic": "Everyday life",
+      "summary": "An ingredient you need is unavailable. Adapt the recipe so there is enough for your guests and dinner is ready on time.",
+      "context": "Maya wants to cook dinner for four after your trip. You are at the vegetable stall; you already have pasta, oil and tomatoes at home.",
+      "hook": "An ingredient you need is unavailable. Adapt the recipe so there is enough for your guests and dinner is ready on time."
+    },
+    "lunch-en": {
+      "title": "Let's have lunch sometime",
+      "topic": "People and conversations",
+      "summary": "A colleague suggests lunch without naming a time. Turn a friendly remark into a clear plan.",
+      "context": "After discussing the project, Emma said you should have lunch together. You are not sure whether she meant today or was simply being friendly.",
+      "hook": "A colleague suggests lunch without naming a time. Turn a friendly remark into a clear plan."
+    },
+    "work-en": {
+      "title": "The deadline has changed",
+      "topic": "Work and calls",
+      "summary": "The client has moved the meeting. Clarify the deadlines and agree on a realistic plan.",
+      "context": "You are preparing materials for a client. Emma tells you about some changes while you have your calendar open.",
+      "hook": "The client has moved the meeting. Clarify the deadlines and agree on a realistic plan."
+    },
+    "film-en": {
+      "title": "What shall we watch tonight?",
+      "topic": "Stories and discussions",
+      "summary": "Your tastes are different. Discuss what you thought and choose a film you will both enjoy.",
+      "context": "You are discussing the film you watched last week and choosing the next one. Today, you feel like watching something light.",
+      "hook": "Your tastes are different. Discuss what you thought and choose a film you will both enjoy."
+    },
+    "repair-en": {
+      "title": "A leak under the sink",
+      "topic": "Everyday life",
+      "summary": "There is a leak in your flat. Arrange access for the plumber with Emma and work out what to do before the plumber arrives.",
+      "context": "Emma came over to water your plants and noticed water under the kitchen sink. You are at work until 17:00, and she can only stay until noon.",
+      "hook": "There is a leak in your flat. Arrange access for the plumber with Emma and work out what to do before the plumber arrives."
+    },
+    "birthday-en": {
+      "title": "The surprise is almost out",
+      "topic": "People and conversations",
+      "summary": "Maya has seen the invitation too soon. Save the birthday celebration without confusing your friends with more explanations.",
+      "context": "You and Oliver are planning an evening for Maya. She saw a notification in the group chat and thinks her friends are meeting without her.",
+      "hook": "Maya has seen the invitation too soon. Save the birthday celebration without confusing your friends with more explanations."
+    },
+    "museum-en": {
+      "title": "An extra street on the map",
+      "topic": "Stories and discussions",
+      "summary": "At the museum, Oliver notices an inconsistency in an old map. Check the clues and decide what you can conclude.",
+      "context": "After your trip, you visit an exhibition of old maps. Oliver spots a street that, according to the label beside the map, was built much later.",
+      "hook": "At the museum, Oliver notices an inconsistency in an old map. Check the clues and decide what you can conclude."
+    },
+    "bookclub-en": {
+      "title": "Who can you trust in this book?",
+      "topic": "Stories and discussions",
+      "summary": "The book club is debating the main character's actions. Separate what the text says from guesswork and choose a topic for the meeting.",
+      "context": "After dinner with the neighbours, Oliver invited you to discuss a novel. You have only read the first six chapters and do not want to find out how it ends.",
+      "hook": "The book club is debating the main character's actions. Separate what the text says from guesswork and choose a topic for the meeting."
+    },
+    "hotel-en": {
+      "title": "A room with an unexpected view",
+      "topic": "Travel",
+      "summary": "After your journey, you discover that your room overlooks a noisy courtyard. Discuss a room change and the terms without adding to the cost.",
+      "context": "You and Maya have arrived at the hotel after a long journey. You have a room with two separate beds, and you need a quiet hour for a call in the morning.",
+      "hook": "After your journey, you discover that your room overlooks a noisy courtyard. Discuss a room change and the terms without adding to the cost."
+    },
+    "interview-en": {
+      "title": "The question you did not prepare for",
+      "topic": "Work and calls",
+      "summary": "In a practice interview, an accurate account of your own contribution matters more than an impressive answer.",
+      "context": "Emma is helping you prepare for a coordinator role. In this practice scenario, you have experience from a neighbourhood fair: you organised volunteer sign-ups but did not manage the budget.",
+      "hook": "In a practice interview, an accurate account of your own contribution matters more than an impressive answer."
+    },
+    "videocall-en": {
+      "title": "The crucial sentence went missing",
+      "topic": "Work and calls",
+      "summary": "The connection dropped just as a decision was being made on a call. Clarify what was agreed without treating a guess as agreement.",
+      "context": "Leo joined the call from a coworking space where building work has started. You heard \"Friday\" and \"not approved\", but did not understand exactly what had been moved.",
+      "hook": "The connection dropped just as a decision was being made on a call. Clarify what was agreed without treating a guess as agreement."
+    },
+    "feedback-en": {
+      "title": "Too complicated — but what exactly?",
+      "topic": "Work and calls",
+      "summary": "Feedback on the project sounds harsh but gives no clear task. Turn the criticism into a change you can check.",
+      "context": "Emma has collected feedback on a new registration form. One participant called it too complicated; another praised its detailed guidance. The next demonstration is in two days.",
+      "hook": "Feedback on the project sounds harsh but gives no clear task. Turn the criticism into a change you can check."
+    },
+    "hike-en": {
+      "title": "Does turning back mean letting people down?",
+      "topic": "Stories and discussions",
+      "summary": "Your friends have paid for a hike to the summit, but conditions have changed. Discuss the cost of a decision already made and a fair choice for the group.",
+      "context": "Leo has brought friends together for a paid guided hike. The forecast has worsened, and the guide suggests a lower trail instead of the summit. Some of the group think the alternative is pointless.",
+      "hook": "Your friends have paid for a hike to the summit, but conditions have changed. Discuss the cost of a decision already made and a fair choice for the group."
+    },
+    "photo-en": {
+      "title": "A photograph in need of a caption",
+      "topic": "Stories and discussions",
+      "summary": "An old book holds a photograph for the neighbourhood exhibition. Family memories do not match the note on the back.",
+      "context": "Maya found a photograph taken outside an old shop in a family book she received as a gift. The exhibition organiser wants to caption it \"Maya's grandfather leads the relief effort after the 1968 flood\". Her aunt remembers a different year and a different event.",
+      "hook": "An old book holds a photograph for the neighbourhood exhibition. Family memories do not match the note on the back."
+    }
+  },
+  "topics": {
+    "dinner": {
+      "title": "Dinner with the neighbours",
+      "summary": "Some neighbours have never met.",
+      "context": "Your goal is to organise a neighbourhood dinner. Some neighbours have never met. Choose what to do and see what changes.",
+      "hook": "Everyone needs a voice at the dinner table. How will you agree?"
+    },
+    "cinema": {
+      "title": "Short film night",
+      "summary": "The film was made by a friend.",
+      "context": "Your goal is to show a short film to your friends. The film was made by a friend. Choose what to do and see what changes.",
+      "hook": "One evening, different expectations. Which plan will bring everyone together?"
+    },
+    "walk": {
+      "title": "A walk through town",
+      "summary": "One visitor is only in town for a day.",
+      "context": "Your goal is to plan a walk through the old town. One visitor is only in town for a day. Choose what to do and see what changes.",
+      "hook": "You can see a familiar town in a new way. Where will your conversation lead?"
+    },
+    "bookclub": {
+      "title": "A book club meeting",
+      "summary": "Not everyone has finished the book.",
+      "context": "Your goal is to start a small book club. Not everyone has finished the book. Choose what to do and see what changes.",
+      "hook": "One book, so many interpretations. Can you find common ground?"
+    },
+    "repair": {
+      "title": "A repair workshop",
+      "summary": "People will bring broken objects from home.",
+      "context": "Your goal is to run a repair workshop. People will bring broken objects from home. Choose what to do and see what changes.",
+      "hook": "There is more to solve in the workshop than a technical problem."
+    },
+    "market": {
+      "title": "A trip to the market together",
+      "summary": "They want to meet local producers.",
+      "context": "Your goal is to visit the local market together. You want to meet local producers. Choose what to do and see what changes.",
+      "hook": "The shopping is still ahead, but you already need to agree on a plan."
+    },
+    "picnic": {
+      "title": "A picnic by the river",
+      "summary": "Several families want to join them.",
+      "context": "Your goal is to arrange a picnic by the river. Several families want to join you. Choose what to do and see what changes.",
+      "hook": "A good picnic has one small complication: everyone has a different plan."
+    },
+    "museum": {
+      "title": "At the museum with friends",
+      "summary": "A temporary exhibition closes soon.",
+      "context": "Your goal is to visit a small local museum. A temporary exhibition closes soon. Choose what to do and see what changes.",
+      "hook": "The exhibition begins with a choice. What will matter to your group?"
+    },
+    "welcome": {
+      "title": "Welcoming new members",
+      "summary": "Some people do not know anyone yet.",
+      "context": "Your goal is to welcome new members to your group. Some people do not know anyone yet. Choose what to do and see what changes.",
+      "hook": "A first conversation can begin a friendship. How will you keep it going?"
+    },
+    "exchange": {
+      "title": "A language exchange",
+      "summary": "The participants speak different languages.",
+      "context": "Your goal is to hold a language exchange. The participants speak different languages. Choose what to do and see what changes.",
+      "hook": "You came to talk. Now it is time to listen to each other."
+    },
+    "meeting": {
+      "title": "A team meeting",
+      "summary": "A new colleague wants to present an idea.",
+      "context": "Your goal is to prepare a team meeting. A new colleague wants to present an idea. Choose what to do and see what changes.",
+      "hook": "The meeting has not started, but the usual plan already needs a decision."
+    },
+    "workshop": {
+      "title": "Sharing professional skills",
+      "summary": "Participants have very different experience.",
+      "context": "Your goal is to organise a skills workshop. Participants have very different experience. Choose what to do and see what changes.",
+      "hook": "Everyone brings experience. How can you turn it into something you do together?"
+    },
+    "archive": {
+      "title": "Family photographs",
+      "summary": "The photographs tell the story of the neighbourhood.",
+      "context": "Your goal is to collect old family photographs. The photographs tell the story of the neighbourhood. Choose what to do and see what changes.",
+      "hook": "Old photographs bring people together. First, though, you will need to agree."
+    },
+    "garden": {
+      "title": "A community garden",
+      "summary": "Several neighbours want to grow vegetables.",
+      "context": "Your goal is to plan a community garden. Several neighbours want to grow vegetables. Choose what to do and see what changes.",
+      "hook": "A shared garden begins with a small decision. Who will take the first step?"
+    },
+    "music": {
+      "title": "An evening of music",
+      "summary": "Local musicians have offered to play.",
+      "context": "Your goal is to arrange an evening of live music. Local musicians have offered to play. Choose what to do and see what changes.",
+      "hook": "An evening of music needs a shared rhythm — and a shared plan."
+    },
+    "station": {
+      "title": "Welcoming travellers",
+      "summary": "The visitors have never been to the town.",
+      "context": "Your goal is to welcome a group of travellers. The visitors have never been to the town. Choose what to do and see what changes.",
+      "hook": "It is easy to miss each other at the station. How will you arrange to meet?"
+    },
+    "volunteers": {
+      "title": "The volunteers' first meeting",
+      "summary": "Everyone wants to help but has different skills.",
+      "context": "Your goal is to bring new volunteers together. Everyone wants to help but has different skills. Choose what to do and see what changes.",
+      "hook": "Everyone wants to help. Now you need to work out how to act together."
+    },
+    "swap": {
+      "title": "A book and clothes swap",
+      "summary": "Useful things often stay unused at home.",
+      "context": "Your goal is to organise a book and clothes swap. Useful things often stay unused at home. Choose what to do and see what changes.",
+      "hook": "Things find new owners, and people get to know each other. What will you offer?"
+    },
+    "boardgames": {
+      "title": "Board game night",
+      "summary": "Some guests have never played these games.",
+      "context": "Your goal is to arrange a board game evening. Some guests have never played these games. Choose what to do and see what changes.",
+      "hook": "Your first choice comes before the game even begins."
+    },
+    "farewell": {
+      "title": "A colleague's farewell",
+      "summary": "The colleague is moving to another city.",
+      "context": "Your goal is to organise a farewell for a colleague. The colleague is moving to another city. Choose what to do and see what changes.",
+      "hook": "You want to give a warm goodbye. Which plan will work?"
+    },
+    "photowalk": {
+      "title": "The town through a lens",
+      "summary": "They want to notice places people usually ignore.",
+      "context": "Your goal is to plan a photography walk. You want to notice places people usually ignore. Choose what to do and see what changes.",
+      "hook": "Everyone sees the town differently. Can you find a route to share?"
+    },
+    "localnews": {
+      "title": "Neighbourhood news",
+      "summary": "Residents want reliable local information.",
+      "context": "Your goal is to discuss the neighbourhood newsletter. Residents want reliable local information. Choose what to do and see what changes.",
+      "hook": "The local news raises questions. Where will you start the conversation?"
+    },
+    "reading": {
+      "title": "Reading aloud",
+      "summary": "Two local writers will share their work.",
+      "context": "Your goal is to hold a public reading. Two local writers will share their work. Choose what to do and see what changes.",
+      "hook": "A story can sound different in every voice. How will you prepare the event?"
+    },
+    "craft": {
+      "title": "A postcard workshop",
+      "summary": "The cards will be sent to friends abroad.",
+      "context": "Your goal is to run a postcard workshop. The cards will be sent to friends abroad. Choose what to do and see what changes.",
+      "hook": "You have a good idea. Now you need to make sure everyone can take part."
+    },
+    "project": {
+      "title": "A new project together",
+      "summary": "The group needs feedback before taking the next step.",
+      "context": "Your goal is to present a community project. The group needs feedback before taking the next step. Choose what to do and see what changes.",
+      "hook": "A new project begins with an agreement, before the work starts."
+    }
+  },
+  "problems": {
+    "time": {
+      "title": "A change of time",
+      "hook": "A change of time changes the plan."
+    },
+    "budget": {
+      "title": "The cost of taking part",
+      "hook": "The budget sets limits."
+    },
+    "entrance": {
+      "title": "Two doors",
+      "hook": "You need to find the right entrance."
+    },
+    "noise": {
+      "title": "Too noisy to hear",
+      "hook": "Noise gets in the way of the conversation."
+    },
+    "participation": {
+      "title": "The quiet participant",
+      "hook": "Everyone needs a chance to take part."
+    },
+    "tasks": {
+      "title": "Who will do it all?",
+      "hook": "You need to share out the tasks."
+    },
+    "date": {
+      "title": "Friday or Saturday?",
+      "hook": "The date does not suit everyone."
+    },
+    "scope": {
+      "title": "Five ideas in an hour",
+      "hook": "The plan needs to be clearer."
+    }
+  },
+  "series": {
+    "Близкие люди": "People close to us",
+    "Культура и открытия": "Culture and discoveries",
+    "Городские приключения": "City adventures",
+    "Вместе за дело": "Working together"
+  }
+}

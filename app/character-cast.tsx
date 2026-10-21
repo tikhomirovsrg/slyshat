@@ -19,23 +19,19 @@ export function CharacterCast({story,activeActorId}:{story:CourseStory;activeAct
 
 export function StoryChoices({choices,language,ready,canAdvance,textOpen,translationOpen,playingChoice,onListen,onChoose,onReveal}:{
  choices:StoryChoice[];language:string;ready:boolean;canAdvance:boolean;
- textOpen:number[];translationOpen:number[];playingChoice:number|null;
- onListen:(index:number)=>void;onChoose:(index:number)=>void;onReveal:(index:number,translation:boolean)=>void;
+ textOpen:number[];translationOpen:boolean;playingChoice:number|null;
+ onListen:(index:number)=>void;onChoose:(index:number)=>void;onReveal:(index:number)=>void;
 }){
  return <div>{choices.map((choice,index)=>{
   const letter=String.fromCharCode(65+index),recorded=hasRecordedClip(choice.clip),disabled=!ready||!canAdvance;
-  if(!recorded)return <div className="character-choice-fallback" key={index}>
-   <p>Ответ {letter} · запись пока недоступна</p>
-   <button className="comic-choice" disabled={disabled} onClick={()=>onChoose(index)}><span className="comic-choice-letter">{letter}</span><span><strong lang={canAdvance?language:undefined}>{canAdvance?choice.text:`Текстовый ответ ${letter}`}</strong>{canAdvance&&translationOpen.includes(index)&&<small>{choice.label}</small>}</span><ArrowRight size={20}/></button>
-   {canAdvance&&<button className="text-button" disabled={!ready} onClick={()=>onReveal(index,true)}>{translationOpen.includes(index)?`Скрыть перевод ${letter}`:`Перевод ${letter}`}</button>}
-  </div>;
-  const listening=playingChoice===index;
+  const listening=recorded&&playingChoice===index,textVisible=canAdvance&&textOpen.includes(index),translationVisible=canAdvance&&translationOpen;
+  const selectionDisabled=disabled||(!recorded&&!textVisible&&!translationVisible);
   return <article className="character-choice" aria-label={`Ответ ${letter}`} key={index}>
-   <div className="character-choice-heading"><span className="comic-choice-letter">{letter}</span><span><Headphones size={16}/> Ответ в аудио</span></div>
-   <div className="character-choice-actions"><button className="button secondary" disabled={disabled} aria-pressed={listening} onClick={()=>onListen(index)}>{listening?<Square size={17}/>:<Play size={17}/>} {listening?`Остановить ${letter}`:`Слушать ${letter}`}</button><button className="button primary" disabled={disabled} onClick={()=>onChoose(index)}>Выбрать {letter}<ArrowRight size={17}/></button></div>
-   {textOpen.includes(index)&&<p className="character-choice-text" lang={language}>{choice.text}</p>}
-   {translationOpen.includes(index)&&<p className="character-choice-translation">{choice.label}</p>}
-   <div className="character-choice-help"><button className="text-button" disabled={disabled} aria-expanded={textOpen.includes(index)} onClick={()=>onReveal(index,false)}><BookOpen size={15}/>{textOpen.includes(index)?`Скрыть текст ${letter}`:`Текст ${letter}`}</button><button className="text-button" disabled={disabled} aria-expanded={translationOpen.includes(index)} onClick={()=>onReveal(index,true)}>{translationOpen.includes(index)?`Скрыть перевод ${letter}`:`Перевод ${letter}`}</button></div>
+   <div className="character-choice-heading"><span className="comic-choice-letter">{letter}</span><span>{recorded?<><Headphones size={16}/> Ответ в аудио</>:<><BookOpen size={16}/> Запись ответа пока недоступна</>}</span></div>
+   <div className="character-choice-actions">{recorded&&<button className="button secondary" disabled={disabled} aria-pressed={listening} onClick={()=>onListen(index)}>{listening?<Square size={17}/>:<Play size={17}/>} {listening?`Остановить ${letter}`:`Слушать ${letter}`}</button>}<button className="button primary" disabled={selectionDisabled} onClick={()=>onChoose(index)}>Выбрать {letter}<ArrowRight size={17}/></button></div>
+   {textVisible&&<p className="character-choice-text" lang={language}>{choice.text}</p>}
+   {translationVisible&&<p className="character-choice-translation" lang="ru">{choice.label}</p>}
+   <div className="character-choice-help"><button className="text-button" disabled={disabled} aria-expanded={textVisible} onClick={()=>onReveal(index)}><BookOpen size={15}/>{textVisible?`Скрыть текст ${letter}`:`Показать текст ${letter}`}</button></div>
   </article>;
  })}</div>;
 }

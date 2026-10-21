@@ -1,0 +1,341 @@
+{
+  "formatVersion": 1,
+  "releaseId": "story-presentation-v1",
+  "language": "it",
+  "courseSha256": "5c5bdee17fb3c71bd4bfaa7f3d78adf33931621bdc313d4ed383a306834581d2",
+  "comicSha256": "a7d5c7299f6c874e3324c9eab05ee6dc8da214a922aff0648cdd81dc5e8c1043",
+  "legacy": {
+    "coffee-it": {
+      "title": "Un caffè insieme?",
+      "topic": "Incontri e conversazioni",
+      "summary": "Giulia propone di incontrarvi. Chiarisci l’orario e il luogo, poi scegli il piano più comodo.",
+      "context": "Stai passeggiando in città quando ricevi un messaggio da Giulia. Vorrebbe incontrarti, ma è un po’ in ritardo.",
+      "hook": "Mezz’ora per incontrarsi. Un caffè, una passeggiata o un altro giorno: quale piano sceglierete?"
+    },
+    "neighbour-dinner-it": {
+      "title": "Cena sulla terrazza comune",
+      "topic": "Incontri e conversazioni",
+      "summary": "Una cena è l’occasione per conoscere i vicini. Scopri che cosa portare e come spiegare le tue esigenze.",
+      "context": "Hai appena cambiato casa. Giulia ti invita a una cena con i vicini: non mangi carne e puoi fermarti solo fino alle nove.",
+      "hook": "Una cena è l’occasione per conoscere i vicini. Scopri che cosa portare e come spiegare le tue esigenze."
+    },
+    "market-basket-it": {
+      "title": "Al mercato prima della chiusura",
+      "topic": "Vita quotidiana",
+      "summary": "Al mercato stanno finendo i pomodori. Chiarisci quantità e maturazione, poi valuta un’alternativa che rientri nel budget.",
+      "context": "Tu e Marco comprate gli ingredienti per una cena per sei persone. Restano otto euro per le verdure; i prodotti più cari possono essere sostituiti.",
+      "hook": "Al mercato stanno finendo i pomodori. Chiarisci quantità e maturazione, poi valuta un’alternativa che rientri nel budget."
+    },
+    "train-it": {
+      "title": "Da quale binario?",
+      "topic": "Viaggi",
+      "summary": "Il treno è stato cancellato. Chiedi informazioni su biglietti, binari e coincidenze.",
+      "context": "In questa storia di esercitazione sei in viaggio verso Belmare. Il treno è stato cancellato e ti rivolgi all’ufficio informazioni.",
+      "hook": "Il treno è stato cancellato. Chiedi informazioni su biglietti, binari e coincidenze."
+    },
+    "hotel-booking-it": {
+      "title": "Una camera, due notti",
+      "topic": "Viaggi",
+      "summary": "In albergo restano due camere diverse. Informati sulla colazione, sul rumore e sulla cancellazione della prenotazione.",
+      "context": "Tu e Giulia andate a Belmare per una mostra. Devi scegliere una camera doppia per due notti e cerchi tranquillità.",
+      "hook": "In albergo restano due camere diverse. Informati sulla colazione, sul rumore e sulla cancellazione della prenotazione."
+    },
+    "wrong-delivery-it": {
+      "title": "Un pacco all’indirizzo sbagliato",
+      "topic": "Vita quotidiana",
+      "summary": "Il corriere ha sbagliato piano. Ascolta il messaggio vocale, scopri di chi è la scatola ricevuta da Marco e concorda lo scambio.",
+      "context": "Aspetti una lampada da tavolo. Marco ha ricevuto una scatola con il tuo nome, mentre davanti alla tua porta c’è un pacco per lui.",
+      "hook": "Il corriere ha sbagliato piano. Ascolta il messaggio vocale, scopri di chi è la scatola ricevuta da Marco e concorda lo scambio."
+    },
+    "lost-keys-it": {
+      "title": "Le chiavi tra due tasche",
+      "topic": "Vita quotidiana",
+      "summary": "Le chiavi non si trovano e il telefono è quasi scarico. Ricostruisci la sequenza degli eventi e scegli dove cercare.",
+      "context": "Dopo il mercato e il bar non riesci a trovare le chiavi. Giulia era con te e ricorda alcuni dettagli del percorso.",
+      "hook": "Le chiavi non si trovano e il telefono è quasi scarico. Ricostruisci la sequenza degli eventi e scegli dove cercare."
+    },
+    "book-club-it": {
+      "title": "Un gruppo di lettura senza spoiler",
+      "topic": "Storie e discussioni",
+      "summary": "Non hai finito il racconto, ma la discussione è già iniziata. Scegli come partecipare senza scoprire troppo.",
+      "context": "Giulia ti ha portato al gruppo di lettura di Marco. Hai letto solo metà della storia di una lettera scomparsa.",
+      "hook": "Non hai finito il racconto, ma la discussione è già iniziata. Scegli come partecipare senza scoprire troppo."
+    },
+    "museum-clue-it": {
+      "title": "L’orologio nella vecchia fotografia",
+      "topic": "Storie e discussioni",
+      "summary": "Due fotografie della piazza mostrano orari diversi. Cerca con Giulia di capire che cosa c’è dietro questa incongruenza.",
+      "context": "Giulia sta selezionando fotografie della città di un tempo. Marco ha notato qualcosa di strano nell’orologio di una foto e vi ha chiesto di controllare la didascalia.",
+      "hook": "Due fotografie della piazza mostrano orari diversi. Cerca con Giulia di capire che cosa c’è dietro questa incongruenza."
+    },
+    "old-letter-it": {
+      "title": "Una lettera senza l’ultima pagina",
+      "topic": "Storie e discussioni",
+      "summary": "In un libro è stata trovata una vecchia lettera. Aiuta Marco a capire la richiesta e a scegliere come proseguire la ricerca con delicatezza.",
+      "context": "Dopo una conversazione al gruppo di lettura, Marco ha esaminato i libri della nonna. In uno ha trovato una vera lettera con una storia rimasta incompiuta.",
+      "hook": "In un libro è stata trovata una vecchia lettera. Aiuta Marco a capire la richiesta e a scegliere come proseguire la ricerca con delicatezza."
+    },
+    "meeting-update-it": {
+      "title": "Una riunione e una nuova scadenza",
+      "topic": "Lavoro e riunioni a distanza",
+      "summary": "Durante la riunione è cambiata la scadenza della bozza, ma l’audio si interrompeva. Chiarisci i punti essenziali e scegli una parte di lavoro che puoi davvero svolgere.",
+      "context": "Stai preparando il manifesto di una mostra con Marco e Giulia. Ti occupi del testo, ma durante la conversazione hai perso parte dell’aggiornamento.",
+      "hook": "Durante la riunione è cambiata la scadenza della bozza, ma l’audio si interrompeva. Chiarisci i punti essenziali e scegli una parte di lavoro che puoi davvero svolgere."
+    },
+    "interview-practice-it": {
+      "title": "Un esempio invece di un elenco di qualità",
+      "topic": "Lavoro e riunioni a distanza",
+      "summary": "Prima del colloquio, Marco ti chiede di raccontare la tua esperienza. Scegli un esempio e mostra che cosa hai fatto concretamente.",
+      "context": "Hai presentato la tua candidatura per un ruolo di assistente in un centro culturale. Marco ti propone di esercitarti a rispondere a una domanda sul lavoro a contatto con le persone.",
+      "hook": "Prima del colloquio, Marco ti chiede di raccontare la tua esperienza. Scegli un esempio e mostra che cosa hai fatto concretamente."
+    },
+    "coworking-call-it": {
+      "title": "Un posto tranquillo per una chiamata",
+      "topic": "Lavoro e riunioni a distanza",
+      "summary": "La sala riunioni è occupata e la chiamata inizia tra dieci minuti. Scopri dove potrai sentire bene e farti sentire.",
+      "context": "Devi fare una chiamata di venti minuti con un collega. Nello spazio comune c’è rumore; Giulia si è informata sulle condizioni d’uso della sala riunioni e della cabina telefonica.",
+      "hook": "La sala riunioni è occupata e la chiamata inizia tra dieci minuti. Scopri dove potrai sentire bene e farti sentire."
+    },
+    "ferry-change-it": {
+      "title": "Il traghetto che non partirà",
+      "topic": "Viaggi",
+      "summary": "Il vento ha fatto cancellare la corsa. Le alternative offerte dalla compagnia hanno condizioni diverse: scegli che cosa conta di più, l’isola, l’orario o il rimborso.",
+      "context": "Tu e Marco volevate raggiungere l’isola per l’apertura della mostra alle 16:00. Ci sono un autobus per un porto lontano, una corsa più tardi e la possibilità di rinunciare.",
+      "hook": "Il vento ha fatto cancellare la corsa. Le alternative offerte dalla compagnia hanno condizioni diverse: scegli che cosa conta di più, l’isola, l’orario o il rimborso."
+    },
+    "flat-viewing-it": {
+      "title": "Un appartamento con una «piccola particolarità»",
+      "topic": "Vita quotidiana",
+      "summary": "Il proprietario risponde in modo evasivo. Trasforma le sue parole su tranquillità, spese e riparazioni in domande concrete.",
+      "context": "Cerchi una stanza dove lavorare in tranquillità. L’appartamento ti piace, ma Giulia ha notato che il proprietario dà risposte vaghe.",
+      "hook": "Il proprietario risponde in modo evasivo. Trasforma le sue parole su tranquillità, spese e riparazioni in domande concrete."
+    },
+    "festival-invitation-it": {
+      "title": "Un invito o un turno di lavoro?",
+      "topic": "Incontri e conversazioni",
+      "summary": "«Passa, se ti va» si è rivelato un invito a dare una mano. Chiarisci le aspettative e concorda un ruolo adatto a te.",
+      "context": "Marco ti invita al festival in cui si esibisce Giulia. Dai messaggi non era chiaro se saresti venuto come ospite o per aiutare.",
+      "hook": "«Passa, se ti va» si è rivelato un invito a dare una mano. Chiarisci le aspettative e concorda un ruolo adatto a te."
+    },
+    "rainy-trip-it": {
+      "title": "Che cosa salvare di una gita sotto la pioggia",
+      "topic": "Viaggi",
+      "summary": "Le previsioni mandano all’aria un bell’itinerario. Scopri che cosa cerca ciascuno nella gita e proponi un piano che ne conservi l’essenziale.",
+      "context": "Tu, Giulia e Marco volevate passeggiare tra le colline e incontrare un artigiano del posto. Per domani è prevista pioggia intensa.",
+      "hook": "Le previsioni mandano all’aria un bell’itinerario. Scopri che cosa cerca ciascuno nella gita e proponi un piano che ne conservi l’essenziale."
+    },
+    "birthday-plan-it": {
+      "title": "Una sorpresa che le piacerà",
+      "topic": "Incontri e conversazioni",
+      "summary": "Giulia aveva chiesto di non organizzare nulla in grande. Discuti con Marco il confine tra una bella sorpresa e un piano che risponde ai desideri di altri.",
+      "context": "Marco propone di riunire gli amici per Giulia. Ricordi che lei desiderava una serata tranquilla, ma non sai se volesse escludere del tutto un incontro.",
+      "hook": "Giulia aveva chiesto di non organizzare nulla in grande. Discuti con Marco il confine tra una bella sorpresa e un piano che risponde ai desideri di altri."
+    },
+    "accessible-dinner-it": {
+      "title": "Un tavolo con un posto per tutti",
+      "topic": "Incontri e conversazioni",
+      "summary": "Il ristorante dice che l’ingresso è accessibile, ma i dettagli non coincidono. Concorda le condizioni perché nessuno resti escluso dal piano comune.",
+      "context": "State scegliendo un ristorante per otto persone. Una usa una sedia a rotelle, un’altra fatica a seguire le conversazioni nel rumore. Giulia ha ricevuto una risposta poco chiara.",
+      "hook": "Il ristorante dice che l’ingresso è accessibile, ma i dettagli non coincidono. Concorda le condizioni perché nessuno resti escluso dal piano comune."
+    },
+    "volunteer-archive-it": {
+      "title": "Quali voci resteranno nella mostra",
+      "topic": "Storie e discussioni",
+      "summary": "I ricordi della fabbrica chiusa si contraddicono. Decidi come presentarli con precisione senza far passare una sola versione per la memoria di tutti.",
+      "context": "Per una mostra avete raccolto i racconti di chi lavorava nella fabbrica. Una persona ricorda l’aiuto reciproco, un’altra le dure condizioni di lavoro; una terza partecipante chiede di rivedere il brano già concordato.",
+      "hook": "I ricordi della fabbrica chiusa si contraddicono. Decidi come presentarli con precisione senza far passare una sola versione per la memoria di tutti."
+    }
+  },
+  "topics": {
+    "dinner": {
+      "title": "Cena con i vicini",
+      "summary": "Alcuni vicini non si sono mai incontrati.",
+      "context": "Il vostro obiettivo è organizzare una cena di quartiere. Alcuni vicini non si sono mai incontrati. Scegli come agire e scopri che cosa cambia.",
+      "hook": "A tavola ognuno deve poter dire la sua. Come trovare un accordo?"
+    },
+    "cinema": {
+      "title": "Un cortometraggio tra amici",
+      "summary": "Il film è stato girato da un amico.",
+      "context": "Il vostro obiettivo è mostrare un cortometraggio agli amici. Il film è stato girato da un amico. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Una serata, aspettative diverse. Quale piano metterà tutti d’accordo?"
+    },
+    "walk": {
+      "title": "Una passeggiata in città",
+      "summary": "Una persona resta in città solo per un giorno.",
+      "context": "Il vostro obiettivo è organizzare una passeggiata nel centro storico. Una persona resta in città solo per un giorno. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Anche una città familiare può essere vista con occhi nuovi. Dove vi porterà la conversazione?"
+    },
+    "bookclub": {
+      "title": "Un incontro di lettura",
+      "summary": "Non tutti hanno finito il libro.",
+      "context": "Il vostro obiettivo è avviare un piccolo gruppo di lettura. Non tutti hanno finito il libro. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Uno stesso libro può essere letto in tanti modi. Troverete un punto d’incontro?"
+    },
+    "repair": {
+      "title": "Un laboratorio di riparazione",
+      "summary": "Le persone porteranno da casa oggetti rotti.",
+      "context": "Il vostro obiettivo è organizzare un laboratorio di riparazione. Le persone porteranno da casa oggetti rotti. Scegli come agire e scopri che cosa cambia.",
+      "hook": "In laboratorio c’è da risolvere molto più di un problema tecnico."
+    },
+    "market": {
+      "title": "Al mercato insieme",
+      "summary": "Vogliono conoscere i produttori locali.",
+      "context": "Il vostro obiettivo è visitare insieme il mercato locale. Vogliono conoscere i produttori locali. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Gli acquisti devono ancora iniziare, ma è già il momento di mettersi d’accordo."
+    },
+    "picnic": {
+      "title": "Un picnic sul fiume",
+      "summary": "Diverse famiglie vogliono partecipare.",
+      "context": "Il vostro obiettivo è organizzare un picnic vicino al fiume. Diverse famiglie vogliono partecipare. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Un bel picnic ha una piccola difficoltà: ognuno ha un piano diverso."
+    },
+    "museum": {
+      "title": "Al museo con gli amici",
+      "summary": "Una mostra temporanea chiude tra poco.",
+      "context": "Il vostro obiettivo è visitare un piccolo museo locale. Una mostra temporanea chiude tra poco. Scegli come agire e scopri che cosa cambia.",
+      "hook": "La visita alla mostra comincia con una scelta. Che cosa conterà per il vostro gruppo?"
+    },
+    "welcome": {
+      "title": "Benvenuti nel gruppo",
+      "summary": "Alcune persone non conoscono ancora nessuno.",
+      "context": "Il vostro obiettivo è accogliere i nuovi membri del gruppo. Alcune persone non conoscono ancora nessuno. Scegli come agire e scopri che cosa cambia.",
+      "hook": "La prima conversazione può diventare l’inizio di un’amicizia. Come farla proseguire?"
+    },
+    "exchange": {
+      "title": "Uno scambio linguistico",
+      "summary": "I partecipanti parlano lingue diverse.",
+      "context": "Il vostro obiettivo è organizzare uno scambio linguistico. I partecipanti parlano lingue diverse. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Siete venuti per parlare. Ora bisogna ascoltarsi."
+    },
+    "meeting": {
+      "title": "Una riunione di lavoro",
+      "summary": "Un nuovo collega vuole presentare un'idea.",
+      "context": "Il vostro obiettivo è preparare una riunione di lavoro. Un nuovo collega vuole presentare un'idea. Scegli come agire e scopri che cosa cambia.",
+      "hook": "La riunione non è ancora iniziata e il solito piano richiede già una decisione."
+    },
+    "workshop": {
+      "title": "Uno scambio di esperienze professionali",
+      "summary": "I partecipanti hanno esperienze molto diverse.",
+      "context": "Il vostro obiettivo è organizzare un incontro sulle competenze professionali. I partecipanti hanno esperienze molto diverse. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Ognuno ha la propria esperienza. Come trasformarla in un’attività comune?"
+    },
+    "archive": {
+      "title": "Fotografie di famiglia",
+      "summary": "Le fotografie raccontano la storia del quartiere.",
+      "context": "Il vostro obiettivo è raccogliere vecchie fotografie di famiglia. Le fotografie raccontano la storia del quartiere. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Le vecchie fotografie uniscono le persone. Ma prima bisogna mettersi d’accordo."
+    },
+    "garden": {
+      "title": "Un orto condiviso",
+      "summary": "Diversi vicini vogliono coltivare verdure.",
+      "context": "Il vostro obiettivo è progettare un orto condiviso. Diversi vicini vogliono coltivare verdure. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Un orto condiviso comincia con una piccola decisione. Chi farà il primo passo?"
+    },
+    "music": {
+      "title": "Una serata musicale",
+      "summary": "Alcuni musicisti locali si sono offerti di suonare.",
+      "context": "Il vostro obiettivo è organizzare una serata di musica dal vivo. Alcuni musicisti locali si sono offerti di suonare. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Una serata musicale ha bisogno di un ritmo comune e di un piano condiviso."
+    },
+    "station": {
+      "title": "L’arrivo dei viaggiatori",
+      "summary": "I visitatori non sono mai stati in questa città.",
+      "context": "Il vostro obiettivo è accogliere un gruppo di viaggiatori. I visitatori non sono mai stati in questa città. Scegli come agire e scopri che cosa cambia.",
+      "hook": "In stazione è facile non trovarsi. Come organizzerete l’incontro?"
+    },
+    "volunteers": {
+      "title": "Il primo incontro dei volontari",
+      "summary": "Tutti vogliono aiutare, ma hanno competenze diverse.",
+      "context": "Il vostro obiettivo è riunire i nuovi volontari. Tutti vogliono aiutare, ma hanno competenze diverse. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Tutti vogliono dare una mano. Resta da capire come agire insieme."
+    },
+    "swap": {
+      "title": "Uno scambio di libri e oggetti",
+      "summary": "Molti oggetti utili rimangono inutilizzati in casa.",
+      "context": "Il vostro obiettivo è organizzare uno scambio di libri e vestiti. Molti oggetti utili rimangono inutilizzati in casa. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Gli oggetti cambiano proprietario e le persone fanno conoscenza. Tu che cosa proporrai?"
+    },
+    "boardgames": {
+      "title": "Giochi da tavolo",
+      "summary": "Alcuni ospiti non hanno mai provato questi giochi.",
+      "context": "Il vostro obiettivo è organizzare una serata di giochi da tavolo. Alcuni ospiti non hanno mai provato questi giochi. Scegli come agire e scopri che cosa cambia.",
+      "hook": "La prima scelta si presenta ancora prima che il gioco cominci."
+    },
+    "farewell": {
+      "title": "Un saluto a un collega",
+      "summary": "Il collega si trasferisce in un'altra città.",
+      "context": "Il vostro obiettivo è organizzare un saluto per un collega. Il collega si trasferisce in un'altra città. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Vorresti salutare il collega con vero affetto. Quale piano funzionerà?"
+    },
+    "photowalk": {
+      "title": "La città attraverso l’obiettivo",
+      "summary": "Vogliono osservare luoghi che di solito passano inosservati.",
+      "context": "Il vostro obiettivo è organizzare una passeggiata fotografica. Vogliono osservare luoghi che di solito passano inosservati. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Ognuno vede la città a modo suo. Troverete un percorso comune?"
+    },
+    "localnews": {
+      "title": "Notizie del quartiere",
+      "summary": "Gli abitanti vogliono informazioni locali affidabili.",
+      "context": "Il vostro obiettivo è discutere il notiziario del quartiere. Gli abitanti vogliono informazioni locali affidabili. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Le notizie del quartiere suscitano domande. Da dove cominciare la conversazione?"
+    },
+    "reading": {
+      "title": "Letture ad alta voce",
+      "summary": "Due autori locali presenteranno i loro testi.",
+      "context": "Il vostro obiettivo è organizzare una lettura pubblica. Due autori locali presenteranno i loro testi. Scegli come agire e scopri che cosa cambia.",
+      "hook": "La storia avrà voci diverse. Come preparare l’incontro?"
+    },
+    "craft": {
+      "title": "Un laboratorio di cartoline",
+      "summary": "Le cartoline saranno spedite ad amici all'estero.",
+      "context": "Il vostro obiettivo è organizzare un laboratorio di cartoline. Le cartoline saranno spedite ad amici all'estero. Scegli come agire e scopri che cosa cambia.",
+      "hook": "La buona idea c’è. Ora bisogna fare in modo che tutti possano partecipare."
+    },
+    "project": {
+      "title": "Un nuovo progetto insieme",
+      "summary": "Il gruppo ha bisogno di pareri prima di procedere.",
+      "context": "Il vostro obiettivo è presentare un progetto per il quartiere. Il gruppo ha bisogno di pareri prima di procedere. Scegli come agire e scopri che cosa cambia.",
+      "hook": "Un nuovo progetto comincia con un accordo, prima ancora che con un compito."
+    }
+  },
+  "problems": {
+    "time": {
+      "title": "Un nuovo orario",
+      "hook": "Il nuovo orario cambia le cose."
+    },
+    "budget": {
+      "title": "Il costo della partecipazione",
+      "hook": "Il budget pone dei limiti."
+    },
+    "entrance": {
+      "title": "Due porte",
+      "hook": "Bisogna trovare l’ingresso adatto."
+    },
+    "noise": {
+      "title": "Troppo rumore per sentirsi",
+      "hook": "Il rumore ostacola la conversazione."
+    },
+    "participation": {
+      "title": "Un partecipante silenzioso",
+      "hook": "La partecipazione di tutti è importante."
+    },
+    "tasks": {
+      "title": "Chi farà tutto?",
+      "hook": "Bisogna dividersi i compiti."
+    },
+    "date": {
+      "title": "Venerdì o sabato",
+      "hook": "La data non va bene per tutti."
+    },
+    "scope": {
+      "title": "Cinque idee in un’ora",
+      "hook": "Il piano va chiarito."
+    }
+  },
+  "series": {
+    "Близкие люди": "Persone care",
+    "Городские приключения": "Avventure in città",
+    "Вместе за дело": "Al lavoro insieme",
+    "Культура и открытия": "Cultura e scoperte"
+  }
+}

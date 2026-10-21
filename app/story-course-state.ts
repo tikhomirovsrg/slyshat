@@ -1,5 +1,6 @@
 import type {CourseStory,Journey,JourneyProgress,StoryCard} from '../lib/story-course-types';
 import type {Progress} from './learning';
+import {validateExerciseAttemptShape} from '../lib/story-exercise-state';
 export const newJourneyProgress=():JourneyProgress=>({path:[],heard:[],assisted:[],finishedAt:null,updatedAt:new Date().toISOString()});
 // Inspecting a translated scene is reading assistance, never a completed listen.
 export const assistJourney=(p:JourneyProgress,nodeId:string):JourneyProgress=>p.finishedAt?p:{...p,assisted:[...new Set([...p.assisted,nodeId])],updatedAt:new Date().toISOString()};
@@ -20,6 +21,7 @@ export function validateJourney(value:unknown):Journey{
  for(const [id,p] of Object.entries(j.stories)){
   if(!validId(id)||!p||!Array.isArray(p.path)||p.path.length>40||p.path.some(n=>!Number.isInteger(n)||n<0||n>9)||!Array.isArray(p.heard)||!Array.isArray(p.assisted)||[p.heard,p.assisted].some(a=>a.length>50||new Set(a).size!==a.length||a.some(n=>!validId(n)))||!Number.isFinite(Date.parse(p.updatedAt))||!(p.finishedAt===null||Number.isFinite(Date.parse(p.finishedAt))))throw Error('Invalid story journey progress');
   if((p.completedAt!==undefined&&!Number.isFinite(Date.parse(p.completedAt)))||(p.endings!==undefined&&(!Array.isArray(p.endings)||p.endings.length>40||new Set(p.endings).size!==p.endings.length||p.endings.some(n=>!validId(n)))))throw Error('Invalid story endings');
+  if(p.exercises!==undefined){if(!p.finishedAt)throw Error('Exercises require a finished story');validateExerciseAttemptShape(p.exercises);}
  }
  return j;
 }

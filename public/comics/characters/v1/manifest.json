@@ -1,0 +1,87 @@
+{
+  "formatVersion": 1,
+  "releaseId": "character-art-v1",
+  "createdAt": "2026-10-21",
+  "generator": "ImageGen",
+  "layout": "sheet-2x2",
+  "poses": [
+    "neutral",
+    "speaking",
+    "thinking",
+    "pleased"
+  ],
+  "sourceStyleReferences": [
+    {
+      "file": "/comics/v1/female-neutral.webp",
+      "sha256": "09b982d8f4880ff037f49b0e2b00cce51b2447e55ecf71d31c2f2790384b95d6",
+      "purpose": "medium and palette only; all new characters are human"
+    },
+    {
+      "file": "/comics/v1/male-neutral.webp",
+      "sha256": "dc1b34d3c6eaecf9f0a4177547fdfc874c351454992bb35a67c7ed1d91e50751",
+      "purpose": "medium and palette only; all new characters are human"
+    }
+  ],
+  "actors": [
+    {
+      "id": "traveler",
+      "file": "traveler-sheet.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 2139671,
+      "sha256": "08f3fab8afc06fa904664aa34cafbe632fd7709f6a36f0657b203fcb307b4008",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Production transparent character sprite sheet for an adult English/Italian-learning graphic novel. The reference images demonstrate ONLY the desired hand-drawn visual medium: textured ink outlines, subtle watercolor shading, warm earthy pigments, dark teal contours and detailed clothing. THE NEW SUBJECT MUST BE A NORMAL HUMAN PERSON, with human face, human ears and human hands. No animal features, no fur, no muzzle, no animal ears, no tail. Create ONE consistent adult human in FOUR poses in a precise 2 by 2 grid of equal cells. Full canvas aspect ratio 4:5, each cell also 4:5. Crop each figure at upper thighs; face slightly toward viewer's right; same camera distance and proportions throughout; all heads and hands fully visible with generous transparent margins around each pose. Top left: attentive neutral listening, relaxed hands. Top right: speaking with one open-hand gesture. Bottom left: thoughtful hand near chin. Bottom right: warmly pleased restrained smile. Keep identical face, hair, skin, outfit, accessories in all four. Genuinely transparent alpha background in and between all cells. No text, labels, grid lines, watermark, scenery or ground shadow. Human faces drawn with mature graphic-novel realism, expressive and dignified, not anime, not chibi, not photorealistic photographs.\nHuman woman age29, medium height and sturdy active build, warm brown skin, short dark curly hair, broad expressive eyebrows, tiny geometric brass hair clip at left temple. Terracotta travel jacket over an ivory open-collar shirt, graphite trousers, small brown crossbody satchel strap. Observant and curious traveler; natural facial proportions and expressive human brown eyes. No map, compass or extra handheld prop."
+    },
+    {
+      "id": "cartographer",
+      "file": "cartographer-sheet.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 2339540,
+      "sha256": "7684020858e5c4c5a144371e34edb9aaa6a156471592c86ff4788512f87dadbe",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Production transparent character sprite sheet for an adult English/Italian-learning graphic novel. The reference images demonstrate ONLY the desired hand-drawn visual medium: textured ink outlines, subtle watercolor shading, warm earthy pigments, dark teal contours and detailed clothing. THE NEW SUBJECT MUST BE A NORMAL HUMAN PERSON, with human face, human ears and human hands. No animal features, no fur, no muzzle, no animal ears, no tail. Create ONE consistent adult human in FOUR poses in a precise 2 by 2 grid of equal cells. Full canvas aspect ratio 4:5, each cell also 4:5. Crop each figure at upper thighs; face slightly toward viewer's right; same camera distance and proportions throughout; all heads and hands fully visible with generous transparent margins around each pose. Top left: attentive neutral listening, relaxed hands. Top right: speaking with one open-hand gesture. Bottom left: thoughtful hand near chin. Bottom right: warmly pleased restrained smile. Keep identical face, hair, skin, outfit, accessories in all four. Genuinely transparent alpha background in and between all cells. No text, labels, grid lines, watermark, scenery or ground shadow. Human faces drawn with mature graphic-novel realism, expressive and dignified, not anime, not chibi, not photorealistic photographs.\nHuman man age35, tall slim build, light skin, dark wavy hair swept back, round fine brass spectacles, clean-shaven angular friendly face. Deep teal long wool coat over a cream open-collar shirt, muted ochre scarf, brown leather satchel strap, little folded map visibly tucked in coat breast pocket. Calm observant cartographer with a subtle wry smile; natural adult human proportions."
+    },
+    {
+      "id": "host",
+      "file": "host-sheet.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 2126842,
+      "sha256": "c37d00feaa8d10335da5f9d9fbc04f89dccb6f6937357d1489e9ecdffdde1d28",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Production transparent character sprite sheet for an adult English/Italian-learning graphic novel. The reference images demonstrate ONLY the desired hand-drawn visual medium: textured ink outlines, subtle watercolor shading, warm earthy pigments, dark teal contours and detailed clothing. THE NEW SUBJECT MUST BE A NORMAL HUMAN PERSON, with human face, human ears and human hands. No animal features, no fur, no muzzle, no animal ears, no tail. Create ONE consistent adult human in FOUR poses in a precise 2 by 2 grid of equal cells. Full canvas aspect ratio 4:5, each cell also 4:5. Crop each figure at upper thighs; face slightly toward viewer's right; same camera distance and proportions throughout; all heads and hands fully visible with generous transparent margins around each pose. Top left: attentive neutral listening, relaxed hands. Top right: speaking with one open-hand gesture. Bottom left: thoughtful hand near chin. Bottom right: warmly pleased restrained smile. Keep identical face, hair, skin, outfit, accessories in all four. Genuinely transparent alpha background in and between all cells. No text, labels, grid lines, watermark, scenery or ground shadow. Human faces drawn with mature graphic-novel realism, expressive and dignified, not anime, not chibi, not photorealistic photographs.\nCharacter: A stocky 36-year-old HUMAN man, olive skin, shaved head, short neatly trimmed dark beard. Hospitable confident expression. Sage green rolled-sleeve shirt, plum café apron, tan trousers and a cream tea towel tucked in apron pocket."
+    },
+    {
+      "id": "maker",
+      "file": "maker-sheet.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 2316642,
+      "sha256": "e996aef9dabb2f3932debb5241aa1092de4835f167f10736dfd8be804137b084",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Production transparent character sprite sheet for an adult English/Italian-learning graphic novel. The reference images demonstrate ONLY the desired hand-drawn visual medium: textured ink outlines, subtle watercolor shading, warm earthy pigments, dark teal contours and detailed clothing. THE NEW SUBJECT MUST BE A NORMAL HUMAN PERSON, with human face, human ears and human hands. No animal features, no fur, no muzzle, no animal ears, no tail. Create ONE consistent adult human in FOUR poses in a precise 2 by 2 grid of equal cells. Full canvas aspect ratio 4:5, each cell also 4:5. Crop each figure at upper thighs; face slightly toward viewer's right; same camera distance and proportions throughout; all heads and hands fully visible with generous transparent margins around each pose. Top left: attentive neutral listening, relaxed hands. Top right: speaking with one open-hand gesture. Bottom left: thoughtful hand near chin. Bottom right: warmly pleased restrained smile. Keep identical face, hair, skin, outfit, accessories in all four. Genuinely transparent alpha background in and between all cells. No text, labels, grid lines, watermark, scenery or ground shadow. Human faces drawn with mature graphic-novel realism, expressive and dignified, not anime, not chibi, not photorealistic photographs.\nCharacter: A sturdy 42-year-old HUMAN man, fair freckled skin, short auburn hair and neat auburn beard. Patient practical expression. Indigo work overalls with brass buckles over an ochre shirt, pencil in bib pocket, brown work belt."
+    },
+    {
+      "id": "curator",
+      "file": "curator-sheet.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 2098737,
+      "sha256": "27ef957646dbd961c8c4c9e24fbbf9f32734f3b4e7d7cca36c767ce6a7a4b202",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Production transparent character sprite sheet for an adult English/Italian-learning graphic novel. The reference images demonstrate ONLY the desired hand-drawn visual medium: textured ink outlines, subtle watercolor shading, warm earthy pigments, dark teal contours and detailed clothing. THE NEW SUBJECT MUST BE A NORMAL HUMAN PERSON, with human face, human ears and human hands. No animal features, no fur, no muzzle, no animal ears, no tail. Create ONE consistent adult human in FOUR poses in a precise 2 by 2 grid of equal cells. Full canvas aspect ratio 4:5, each cell also 4:5. Crop each figure at upper thighs; face slightly toward viewer's right; same camera distance and proportions throughout; all heads and hands fully visible with generous transparent margins around each pose. Top left: attentive neutral listening, relaxed hands. Top right: speaking with one open-hand gesture. Bottom left: thoughtful hand near chin. Bottom right: warmly pleased restrained smile. Keep identical face, hair, skin, outfit, accessories in all four. Genuinely transparent alpha background in and between all cells. No text, labels, grid lines, watermark, scenery or ground shadow. Human faces drawn with mature graphic-novel realism, expressive and dignified, not anime, not chibi, not photorealistic photographs.\nCharacter: A dignified 48-year-old HUMAN woman, dark skin, short silver curls, rectangular burgundy glasses. Intelligent calm friendly expression. Long plum blazer, cream scarf and muted charcoal trousers. No props."
+    },
+    {
+      "id": "conductor",
+      "file": "conductor-sheet.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 2143368,
+      "sha256": "4195dfbd72d94dd8183e40bc850e2c939c88b0d018a6b5e8cc36f298e3238684",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Production transparent character sprite sheet for an adult English/Italian-learning graphic novel. The reference images demonstrate ONLY the desired hand-drawn visual medium: textured ink outlines, subtle watercolor shading, warm earthy pigments, dark teal contours and detailed clothing. THE NEW SUBJECT MUST BE A NORMAL HUMAN PERSON, with human face, human ears and human hands. No animal features, no fur, no muzzle, no animal ears, no tail. Create ONE consistent adult human in FOUR poses in a precise 2 by 2 grid of equal cells. Full canvas aspect ratio 4:5, each cell also 4:5. Crop each figure at upper thighs; face slightly toward viewer's right; same camera distance and proportions throughout; all heads and hands fully visible with generous transparent margins around each pose. Top left: attentive neutral listening, relaxed hands. Top right: speaking with one open-hand gesture. Bottom left: thoughtful hand near chin. Bottom right: warmly pleased restrained smile. Keep identical face, hair, skin, outfit, accessories in all four. Genuinely transparent alpha background in and between all cells. No text, labels, grid lines, watermark, scenery or ground shadow. Human faces drawn with mature graphic-novel realism, expressive and dignified, not anime, not chibi, not photorealistic photographs.\nCharacter: A helpful 52-year-old HUMAN man, medium brown skin, short silver hair, clean-shaven face. Crisp calm friendly expression. Deep teal station staff jacket, terracotta railway cap, plain brass badge without letters, ivory shirt and dark trousers."
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+@import './character-cast.css';
+@import './story-exercises.css';
 /* One comic language for the site; SVG scenes remain lightweight on mobile. */
 :root{--ink:#202524;--paper:#fffdf3;--comic-yellow:#ffdb55;--comic-blue:#dcebf8;--comic-red:#e9715b;--green:#294e44}
 body{background-color:#f7f2e5;background-image:radial-gradient(#d9d1c3 .8px,transparent .8px);background-size:9px 9px;color:var(--ink)}

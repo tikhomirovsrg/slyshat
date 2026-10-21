@@ -18,6 +18,12 @@
 .shot-left .novel-actor.male,.shot-right .novel-actor.female{height:80%;width:45%}
 .shot-detail .novel-actor{height:107%;bottom:-16%}
 .novel-actor.active{filter:drop-shadow(0 0 5px #ffe3a0) drop-shadow(3px 5px 1px #20252455)}
+.character-art{display:block;position:relative;aspect-ratio:4/5;overflow:hidden;flex:none}
+.character-art>img,.novel-actor .character-art>img{display:block;position:absolute;width:200%;height:200%;max-width:none;left:0;top:0;object-fit:fill;opacity:1;pointer-events:none}
+.character-art.pose-speaking>img{left:-100%}.character-art.pose-thinking>img{top:-100%}.character-art.pose-pleased>img{left:-100%;top:-100%}
+.novel-actor>.character-art{position:absolute;height:100%;width:auto;max-width:100%;bottom:0;left:50%;transform:translateX(-50%)}
+.novel-cover>.character-art{position:absolute;width:auto;aspect-ratio:4/5}
+.motion .novel-actor .character-art>img{transition:none}
 .novel-caption{position:absolute;left:100px;top:14px;max-width:calc(100% - 116px);font-family:Georgia,serif;font-weight:700;font-size:clamp(15px,2.1vw,21px);line-height:1.3;background:var(--paper);border:2px solid var(--ink);padding:10px 14px;box-shadow:3px 3px var(--ink);z-index:2}
 .novel-hotspot{position:absolute;right:16px;bottom:17px;z-index:3;background:var(--comic-yellow);border:2px solid var(--ink);border-radius:6px;box-shadow:3px 3px var(--ink);display:flex;gap:10px;align-items:center;padding:10px 14px;min-height:58px;color:var(--ink);text-align:left}
 .novel-hotspot>span{font-weight:800;font-size:14px}.novel-hotspot small{display:block;font-weight:500;font-size:10px;margin-top:4px}.novel-hotspot[aria-expanded=true]{background:var(--paper)}

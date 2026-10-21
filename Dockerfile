@@ -23,7 +23,8 @@ COPY --from=builder --chown=node:node /app/content/practice-v2.json ./content/pr
 COPY --from=builder --chown=node:node /app/content/audio-library ./content/audio-library
 COPY --from=builder --chown=node:node /app/content/story-course ./content/story-course
 COPY --from=builder --chown=node:node /app/content/comics ./content/comics
-COPY --chown=node:node lib/comic-migration.mjs lib/db-migrations.mjs lib/audio-library-migration.mjs lib/story-course-migration.mjs ./lib/
+COPY --from=builder --chown=node:node /app/content/characters ./content/characters
+COPY --chown=node:node lib/character-cast.mjs lib/character-migration.mjs lib/comic-migration.mjs lib/db-migrations.mjs lib/audio-library-migration.mjs lib/story-course-migration.mjs ./lib/
 COPY --chown=node:node scripts/backup.mjs scripts/restore.mjs scripts/migrate.mjs scripts/docker-entrypoint.sh ./scripts/
 USER node
 EXPOSE 3000

@@ -11,3 +11,6 @@ backups/
 *.sqlite-shm
 *.zip
 *.tar.gz
+!audio-checkpoints/**/*.tar.gz
+__pycache__/
+*.pyc

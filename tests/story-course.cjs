@@ -8,7 +8,7 @@ test('Course migration from schema 5 is idempotent and preserves original progre
   initializeDatabase(db);db.exec('DROP TABLE story_course_entries; DROP TABLE story_course_releases; PRAGMA user_version=5;');
   db.prepare('INSERT INTO users VALUES(?,?,?,?)').run('kept-user','23','Learner','2026-10-21');db.prepare('INSERT INTO study_profiles VALUES(?,?,?,?,?)').run('kept-user','{"audioPractice":{"original":"result"}}',7,'kept-mutation','2026-10-21');
   const tables=['users','study_profiles','progress','runs','content_stories','audio_content_stories'],before=tables.map(t=>db.prepare('SELECT * FROM '+t).all());
-  assert.equal(initializeDatabase(db).courseSeeded,true);assert.equal(db.prepare('PRAGMA user_version').get().user_version,7);assert.deepEqual(tables.map(t=>db.prepare('SELECT * FROM '+t).all()),before);assert.equal(initializeDatabase(db).courseSeeded,false);assert.equal(db.prepare('SELECT count(*) n FROM story_course_entries').get().n,2000);
+  assert.equal(initializeDatabase(db).courseSeeded,true);assert.equal(db.prepare('PRAGMA user_version').get().user_version,8);assert.deepEqual(tables.map(t=>db.prepare('SELECT * FROM '+t).all()),before);assert.equal(initializeDatabase(db).courseSeeded,false);assert.equal(db.prepare('SELECT count(*) n FROM story_course_entries').get().n,2000);
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'story-course-'));try{const changed=structuredClone(source);changed.stories[0].title='Wrong version';const file=path.join(dir,'changed.json');fs.writeFileSync(file,JSON.stringify(changed));assert.throws(()=>migrateStoryCourse(db,file),/new releaseId/);}finally{fs.rmSync(dir,{recursive:true,force:true});}
  }finally{db.close();}
 });

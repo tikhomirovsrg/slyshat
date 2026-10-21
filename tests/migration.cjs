@@ -15,7 +15,7 @@ test('Schema v1 upgrades to v5 preserving accounts, sessions, story data and com
   db.prepare('INSERT INTO runs VALUES(?,?,?,?,?,?)').run('old-user',old.episode,'2026-01-01T01:00:00.000Z',2,1,3);
   const tables=['users','sessions','oauth_flows','progress','runs'];const before=tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all());
   db.close();db=require('../lib/db.ts').getDb();
-  assert.equal(db.prepare('PRAGMA user_version').get().user_version,7);
+  assert.equal(db.prepare('PRAGMA user_version').get().user_version,8);
   assert.deepEqual(tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all()),before);
   assert.equal(db.prepare('SELECT count(*) AS n FROM study_profiles').get().n,0);
   const record=require('../lib/progress-store.ts').snapshot('old-user').records[0];

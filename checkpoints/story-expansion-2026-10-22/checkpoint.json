@@ -1,0 +1,416 @@
+{
+  "formatVersion": 1,
+  "kind": "unfinished-working-tree-checkpoint",
+  "createdAt": "2026-10-21T22:44:47.769159+00:00",
+  "baseMainCommit": "f9360ede40aa0c5887b714fd06c0eaf9612eb524",
+  "baseTree": "c460980cbb3713ee64b1551e8f997dd8a193150e",
+  "snapshotBytes": 991141,
+  "snapshotSha256": "8fd528a94b97c2cfdb41445d8a0c1b90aab81bb0d6f358ca0a163df22bca40ee",
+  "files": [
+    {
+      "path": "Dockerfile",
+      "bytes": 1918,
+      "sha256": "9fd277d03c93ee13b1cd2ce1134f65c4756bcaf7721c1c420c05473b18d29de9",
+      "mode": 420
+    },
+    {
+      "path": "app/api/stories/route.ts",
+      "bytes": 734,
+      "sha256": "997faabedacf01be770211e8fe3f57aa1467190fdaeebaab07299738f77f8535",
+      "mode": 420
+    },
+    {
+      "path": "app/story-course-state.ts",
+      "bytes": 4817,
+      "sha256": "1fb6f8bb4e1d4af94d7cd11900259ed5050891632ba7b160d42d53ffa69780fa",
+      "mode": 420
+    },
+    {
+      "path": "app/story-course.tsx",
+      "bytes": 35661,
+      "sha256": "d8d077f8d0d8c695a3a20fe5c538733ec171a2fe04c9de37390fd153a7dcfbc8",
+      "mode": 420
+    },
+    {
+      "path": "app/story-learning.css",
+      "bytes": 4297,
+      "sha256": "153c51eb647655a221c002972424ca2bbfe5266f63851043848081f4932b248a",
+      "mode": 420
+    },
+    {
+      "path": "app/study-dashboard.tsx",
+      "bytes": 13408,
+      "sha256": "8cb28d02107800cf1fbe0318d50e8b2f99efc2fa94ce28869d5d285c48856e83",
+      "mode": 420
+    },
+    {
+      "path": "content/AGENTS.md",
+      "bytes": 6017,
+      "sha256": "f4b6e6d2dcdbc7caf3430e03f5370537886e0c3d15ac7f206fc33fd01fbc4257",
+      "mode": 420
+    },
+    {
+      "path": "content/story-curation/v1.json",
+      "bytes": 19661,
+      "sha256": "e6db9361c37fb1dd817bbf5ab81fff539762325b776b192db9a75e87451c1306",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion-plans/.advanced-build.py",
+      "bytes": 101458,
+      "sha256": "397b92fd34cb261b6eda05db41faae93e40ee775923adf82250c207d3e570cf3",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion-plans/AUTHORING.md",
+      "bytes": 8957,
+      "sha256": "928d226d41ae783cb54b01a4c69721c4af53b86db34be0c890ffcd1c3b252c2a",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion-plans/advanced.json",
+      "bytes": 144453,
+      "sha256": "8f5fd8c917e0d73926f6b73790ecc6138f83eb7b5c31957dcde3226413f7b323",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion-plans/en-lower.json",
+      "bytes": 148952,
+      "sha256": "ad4e9cf3a03c3b4a79021c6a2a023a05704eb39c17228c3033f426cd6a3eaf4f",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion-plans/en-middle.json",
+      "bytes": 131363,
+      "sha256": "66570d2fc2dc98516cd5db7f54cca2241e69d3fb4480585e42e9826133960441",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion-plans/it-lower.json",
+      "bytes": 118818,
+      "sha256": "8c0202814226789e0d287ff64a1a3a4a7c360e31762e2b9fd80e251ee1ef2046",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion-plans/it-middle.json",
+      "bytes": 136464,
+      "sha256": "d07482d2bd55b8c9b868f7b0fd345ad7288cb5abbb70d89b6794821c92c31594",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion/v1/advanced-it-a.json",
+      "bytes": 192302,
+      "sha256": "40337f924a2dd04cbb4335acdfe593f6761c9cdc17cabb54de54a1b232a26b18",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion/v1/advanced-it-b.json",
+      "bytes": 135084,
+      "sha256": "97e838eda8e39b8f18eb448313e371a331e8b0d7da435be4db65a80ba07f18fb",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion/v1/advanced.json",
+      "bytes": 535093,
+      "sha256": "87eae0dc502e591b35cededd27e5ade3a710237c7200ba08c81d8c09844819c3",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion/v1/en-lower.json",
+      "bytes": 532947,
+      "sha256": "933024611611322a5a5d3c9a2932f874002b71b24ac80170ee95285a0aabe37c",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion/v1/en-middle.json",
+      "bytes": 702533,
+      "sha256": "8c661f9dd24d1409584aff130bc7948841224e3c5e2ac6e0a21e640603e9207f",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion/v1/it-lower.json",
+      "bytes": 547866,
+      "sha256": "71f5dadc07048bab45bb0d19956a30208559ff23374d25ee21bdbf20847c4c4d",
+      "mode": 420
+    },
+    {
+      "path": "content/story-expansion/v1/it-middle.json",
+      "bytes": 464938,
+      "sha256": "38411556bdd156780168811acbd72a5d62d62fa5e64e0ace9d58bc28babc2525",
+      "mode": 420
+    },
+    {
+      "path": "docs/audits/catalog-metrics-2026-10-22.json",
+      "bytes": 6100,
+      "sha256": "1b1cc01510174f2abf19e886ea00e20c5f6eed94e641f31dd7f88a075e794e9e",
+      "mode": 420
+    },
+    {
+      "path": "docs/audits/cefr-en-2026-10-22.md",
+      "bytes": 47473,
+      "sha256": "bcc15fa1fc987d5a9b5224ffafc67eab70912b13fb67a657118d784db6bd1e3c",
+      "mode": 420
+    },
+    {
+      "path": "docs/audits/cefr-it-2026-10-22.md",
+      "bytes": 39419,
+      "sha256": "2fefa924bd4a26008ff8a350cff1d32f43b3ebd36f35825dbfffd1042285c339",
+      "mode": 420
+    },
+    {
+      "path": "docs/audits/story-editorial-review-2026-10-22.json",
+      "bytes": 20469,
+      "sha256": "1f78726f484a1447fba563c261e7aeaf3118e8dbb0a47801c80b950b7f81404f",
+      "mode": 420
+    },
+    {
+      "path": "docs/audits/story-originality-review-2026-10-22.md",
+      "bytes": 5928,
+      "sha256": "2f937d71b7ce945e211a3a44da4f66bd90e8a7fd665b73650b3502f8eee92026",
+      "mode": 420
+    },
+    {
+      "path": "docs/audits/story-selection-2026-10-22.md",
+      "bytes": 5153,
+      "sha256": "da15ddf0aef3ba38a6e26bda68cbf754ed857b7f8c0fa2ba73d47a80d74abefb",
+      "mode": 420
+    },
+    {
+      "path": "lib/profile-limits.ts",
+      "bytes": 267,
+      "sha256": "82df39d919c7a99392b2dbfb51c10b026f730e07b3ef5675616ddd478fbf44b2",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-course-types.ts",
+      "bytes": 1733,
+      "sha256": "cf450f72fec9dcf134e461ed8e348d3739c81757b3fc59f6bae79871d20a59dc",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-course.ts",
+      "bytes": 8103,
+      "sha256": "afcb597a20e588426f6a7d1dd13385dd41cc9fd60caa79c4e889b49e25b61607",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-curation.ts",
+      "bytes": 3061,
+      "sha256": "b457e0e8dd1eaaf100a3badc045bb6ac72a0a798664f208c93cce664495322a6",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-exercises.d.mts",
+      "bytes": 1367,
+      "sha256": "3c52122f4654228a0a3e1cd7d2d4be3bdff39f7c81641a468876265a6765e822",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-exercises.mjs",
+      "bytes": 8594,
+      "sha256": "db84ca9c42910ab58bbf16c2fcf6743ba5a031a89c9694bde9d9ee8ec05ab417",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-expansion-audio.d.mts",
+      "bytes": 342,
+      "sha256": "60d844d74f42d205460a7c959f2cdc9d2f6400ef18e2169df72b2d0f1f7fa909",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-expansion-audio.mjs",
+      "bytes": 3249,
+      "sha256": "26bb6933aeda9d4e1f6cb71a419e113b4302ead610fecfed808583c5e3ce9b54",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-expansion-course.ts",
+      "bytes": 4070,
+      "sha256": "bf101964ed49ea6aee61de530126b09b4fe7e5b8496aed5acf07f77bec67f588",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-expansion.d.mts",
+      "bytes": 2111,
+      "sha256": "acd3999c8f37854f51f340e12579fc2ad4566316d1f3674cd5d513be62330522",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-expansion.mjs",
+      "bytes": 10741,
+      "sha256": "47bc43aa83a7069a7029e021eb78644090d05a0513486c36cf2c0a1e2223b8b9",
+      "mode": 420
+    },
+    {
+      "path": "lib/story-review.ts",
+      "bytes": 3276,
+      "sha256": "1e5fdc7c22077a53458fc4d410a0612296c355f9f5e9e38069c796a30999805a",
+      "mode": 420
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 731,
+      "sha256": "274c1a32681ad1b8df57353baee8d61f611adab85d07e55c86502160534b9c10",
+      "mode": 420
+    },
+    {
+      "path": "package.json",
+      "bytes": 1679,
+      "sha256": "9381248c526e66005b0b926f4ba745d26b1f7c837ff112c604b480f7fecda693",
+      "mode": 420
+    },
+    {
+      "path": "scripts/character-audio/generate.py",
+      "bytes": 18089,
+      "sha256": "8d84c6c6712c51042aacbc5548b3152a77e9920177a619e9d4c1c62a6e4a4392",
+      "mode": 420
+    },
+    {
+      "path": "scripts/check-production.cjs",
+      "bytes": 22104,
+      "sha256": "b245d80e0063aa5507be54f435fb6dedc6f130faf74bf1575439700d4c3192c7",
+      "mode": 420
+    },
+    {
+      "path": "scripts/story-expansion/audio.py",
+      "bytes": 8565,
+      "sha256": "e07f5f20a24b20a3e85804c68c72ac85cbe18ae75cd99cbdb65e9897b007f1d3",
+      "mode": 420
+    },
+    {
+      "path": "scripts/story-expansion/audit-dialogue.mjs",
+      "bytes": 2854,
+      "sha256": "46aeae1abe7f818488ba22db098fd8325e90d9e5e641c47731d7b6139a3bdeab",
+      "mode": 420
+    },
+    {
+      "path": "scripts/story-expansion/audit-plans.mjs",
+      "bytes": 4430,
+      "sha256": "81a37b0e6e1603cb757246d4d9c3015640edf6160ddfb565f91ef3724a483f05",
+      "mode": 420
+    },
+    {
+      "path": "scripts/story-expansion/validate-audio.mjs",
+      "bytes": 1162,
+      "sha256": "eb587cbee0eb4338633c771da6f118a10a00d38c1eeda024e48172158d34fa88",
+      "mode": 420
+    },
+    {
+      "path": "scripts/story-expansion/validate.mjs",
+      "bytes": 2245,
+      "sha256": "81f6ee7e591a08b42d0731bf0cba22561f1c165c3a505d74805736f3ebea52c8",
+      "mode": 420
+    },
+    {
+      "path": "tests/characters.cjs",
+      "bytes": 10777,
+      "sha256": "4bad6aeac71b0586b40fe2692bbfa39e403afc635648229ec9085fec94e7e5ba",
+      "mode": 420
+    },
+    {
+      "path": "tests/story-archive-ui.cjs",
+      "bytes": 5866,
+      "sha256": "ff77184ad06f496d6e985a2e91f2483d567794670a0c320177d175bec1a912ac",
+      "mode": 420
+    },
+    {
+      "path": "tests/story-authored-exercises.cjs",
+      "bytes": 3525,
+      "sha256": "5f73a54a783a660e0926b61a55179645049f4255cbf70911da56d215ef52e1fa",
+      "mode": 420
+    },
+    {
+      "path": "tests/story-curation.cjs",
+      "bytes": 5785,
+      "sha256": "0074d01874bec353ba1b454eddd1a6c364ca69edc829f633d86275c1d8e5d0ce",
+      "mode": 420
+    },
+    {
+      "path": "tests/story-exercise-state.cjs",
+      "bytes": 9665,
+      "sha256": "23a8286c2558c4dc034e6e18b640fc67ed27f40bf9d19cb7943602f35145f55c",
+      "mode": 420
+    },
+    {
+      "path": "tests/story-expansion.cjs",
+      "bytes": 5069,
+      "sha256": "8e67d30c6068719a74623d59fe64eb68b3cbd3d08d0305d9f277fca2e21d3dd9",
+      "mode": 420
+    }
+  ],
+  "parts": [
+    {
+      "path": "snapshot.tar.gz.part001",
+      "bytes": 360448,
+      "sha256": "eaa9a73b16739a96e875c7de3955dc9801c47307255fee246addd37ddf2618b7",
+      "gitBlobSha": "5054c123dc4843aea3b0977aff5ca54c1b04e4c7"
+    },
+    {
+      "path": "snapshot.tar.gz.part002",
+      "bytes": 360448,
+      "sha256": "ac67b58af76716c4a956aad5919d109f2d9a72fe06ede738bcd2177de908052b",
+      "gitBlobSha": "3861d4332ee434b267e1bba2030809eb0806764f"
+    },
+    {
+      "path": "snapshot.tar.gz.part003",
+      "bytes": 270245,
+      "sha256": "76ae85e13f6d264dfbea9cd26757300d8e98745c56bbc9f53617cacf8e1a6079",
+      "gitBlobSha": "288065df459a5289dc90b99bcf6a4855703953c2"
+    }
+  ],
+  "newStoriesWritten": 218,
+  "newStoryCounts": {
+    "it-C1": 17,
+    "en-C1": 28,
+    "en-A1": 30,
+    "en-A2": 19,
+    "en-B1": 21,
+    "en-B2": 25,
+    "it-A1": 29,
+    "it-A2": 19,
+    "it-B1": 22,
+    "it-B2": 8
+  },
+  "newStoryTarget": 246,
+  "activeCatalogueTarget": {
+    "en": 150,
+    "it": 150
+  },
+  "completedChecks": [
+    "npm run check (TypeScript)",
+    "partial structural validation in authoring batches"
+  ],
+  "notYetCompleted": [
+    "All 246 new stories",
+    "Final independent editorial review",
+    "Final new audio MP3 manifest",
+    "Full tests/build/production validation",
+    "Activation of the new catalogue"
+  ],
+  "audioNotIncluded": "Model weights, PCM cache, virtualenv, unpublished new MP3. These are not part of this code/content snapshot. Rebuild from saved scripts and texts.",
+  "oldAudioTransfer": {
+    "transferBranch": "codex/character-audio-transfer-20261021",
+    "remoteHead": "6a2aff0a50b5a4cb8400907069876ab9b8158f5f",
+    "remoteCommittedParts": 400,
+    "uploadedCount": 406,
+    "totalParts": 530,
+    "bundleSha256": "5791487ae7d0e86a4906cfd43fe2b8ba543fbb79ba32561efad3f367bd148d6b",
+    "expectedCommit": "778687aaac4a40883ce05a6c602d1f3fe5e1f520",
+    "baseCommit": "8a658d5b8fac0e236e8c579c6800b7489af5f7dd"
+  },
+  "newAudioCacheStatus": {
+    "state": "rendering-cache",
+    "childPid": 96,
+    "stories": 140,
+    "sourceSha256": "e148e618f9046e0efaa87d47a6e24fccffa4ca287905efa5e13bae2e28f855cd",
+    "pid": 4,
+    "updatedAt": "2026-10-21T22:25:14.901807+00:00"
+  },
+  "lastUserRequirements": [
+    "150 distinct stories per language, appropriate A1-C1",
+    "Independent analogous stories: no copying or close retelling of protected expression",
+    "Human characters, their voices, spoken choices, 3 vocabulary items and post-story exercises",
+    "Preserve old saved progress",
+    "Push current work to main as a backup immediately"
+  ]
+}

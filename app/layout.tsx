@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./comic.css";
+import "./comic-novel.css";
 
 export const metadata: Metadata = {
   title: "Слышать — английский и итальянский в историях",

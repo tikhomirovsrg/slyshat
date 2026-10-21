@@ -12,7 +12,7 @@ test('v4 migration adds audio materials once and preserves existing accounts and
   db.prepare('INSERT INTO users VALUES(?,?,?,?)').run('audio-user','100','Learner','2026-10-20');
   db.prepare('INSERT INTO study_profiles VALUES(?,?,?,?,?)').run('audio-user','{"preserve":"my work"}',9,'prior-mutation','2026-10-20');
   const tables=['users','progress','study_profiles','content_stories','content_practice_sets'];const before=tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all());
-  assert.equal(initializeDatabase(db).audioSeeded,true);assert.equal(db.prepare('PRAGMA user_version').get().user_version,6);
+  assert.equal(initializeDatabase(db).audioSeeded,true);assert.equal(db.prepare('PRAGMA user_version').get().user_version,7);
   assert.deepEqual(tables.map(t=>db.prepare(`SELECT * FROM ${t}`).all()),before);
   for(const lang of ['en','it'])for(const level of ['A1','A2','B1','B2','C1'])assert.equal(db.prepare('SELECT count(*) n FROM audio_content_stories WHERE language=? AND level=?').get(lang,level).n,200);
   assert.equal(initializeDatabase(db).audioSeeded,false);assert.equal(db.prepare('SELECT count(*) n FROM audio_content_segments').get().n,420);

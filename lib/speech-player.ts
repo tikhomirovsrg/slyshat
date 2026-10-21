@@ -1,6 +1,6 @@
 import {defaultVoice,speechMode,type SpeechConfig} from './speech-config';
 
-export type PlaybackOptions={source?:string;startAt?:number;endAt?:number;text:string;locale:string;voice?:string;secondary?:boolean;speed?:number;config:SpeechConfig;onStart?:()=>void;onEnd?:()=>void;onCancel?:()=>void;onError?:(message:string)=>void};
+export type PlaybackOptions={source?:string;startAt?:number;endAt?:number;text:string;locale:string;voice?:string;secondary?:boolean;speed?:number;config:SpeechConfig;onStart?:()=>void;onEnd?:()=>void;onCancel?:()=>void;onError?:(message:string)=>void;onProgress?:(position:number,duration:number)=>void};
 export type Playback={stop:()=>void;setSpeed:(speed:number)=>boolean;done:Promise<boolean>};
 const clips=new Map<string,string>();
 let active:Playback|undefined;
@@ -53,6 +53,7 @@ export function playSpeech(options:PlaybackOptions):Playback{
   const watchBoundary=()=>{
     clearTimeout(boundary);
     if(ended||endAt===undefined)return;
+    if(Number.isFinite(audio!.currentTime))options.onProgress?.(Math.max(0,Math.min(endAt-startAt,audio!.currentTime-startAt)),endAt-startAt);
     const remaining=endAt-audio!.currentTime;
     if(remaining<=0){completed();return;}
     boundary=setTimeout(watchBoundary,Math.max(20,Math.min(100,remaining/speed*1000)));
@@ -60,7 +61,7 @@ export function playSpeech(options:PlaybackOptions):Playback{
   audio.onplaying=()=>{started();watchBoundary();};
   audio.onended=()=>{if(endAt!==undefined&&audio!.currentTime<endAt-0.15)failed('Запись оборвалась до конца фрагмента.');else completed();};
   audio.onerror=()=>failed('Не удалось воспроизвести запись. Повтори или проверь звук.');
-  audio.ontimeupdate=()=>{if(endAt!==undefined&&audio!.currentTime>=endAt)completed();};
+  audio.ontimeupdate=()=>{if(ended||!Number.isFinite(audio!.currentTime))return;if(endAt!==undefined){options.onProgress?.(Math.max(0,Math.min(endAt-startAt,audio!.currentTime-startAt)),endAt-startAt);if(audio!.currentTime>=endAt)completed();}};
   audio.onloadedmetadata=()=>{
     if(ended)return;
     if(endAt!==undefined&&audio!.duration<endAt-0.15){failed('Аудиофрагмент выходит за пределы записи.');return;}

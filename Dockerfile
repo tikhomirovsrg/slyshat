@@ -22,7 +22,8 @@ COPY --from=builder --chown=node:node /app/content/catalog-v1.json ./content/cat
 COPY --from=builder --chown=node:node /app/content/practice-v2.json ./content/practice-v2.json
 COPY --from=builder --chown=node:node /app/content/audio-library ./content/audio-library
 COPY --from=builder --chown=node:node /app/content/story-course ./content/story-course
-COPY --chown=node:node lib/db-migrations.mjs lib/audio-library-migration.mjs lib/story-course-migration.mjs ./lib/
+COPY --from=builder --chown=node:node /app/content/comics ./content/comics
+COPY --chown=node:node lib/comic-migration.mjs lib/db-migrations.mjs lib/audio-library-migration.mjs lib/story-course-migration.mjs ./lib/
 COPY --chown=node:node scripts/backup.mjs scripts/restore.mjs scripts/migrate.mjs scripts/docker-entrypoint.sh ./scripts/
 USER node
 EXPOSE 3000

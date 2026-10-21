@@ -1,6 +1,8 @@
 import type {CourseStory,Journey,JourneyProgress,StoryCard} from '../lib/story-course-types';
 import type {Progress} from './learning';
 export const newJourneyProgress=():JourneyProgress=>({path:[],heard:[],assisted:[],finishedAt:null,updatedAt:new Date().toISOString()});
+// Inspecting a translated scene is reading assistance, never a completed listen.
+export const assistJourney=(p:JourneyProgress,nodeId:string):JourneyProgress=>p.finishedAt?p:{...p,assisted:[...new Set([...p.assisted,nodeId])],updatedAt:new Date().toISOString()};
 // Reset this attempt, retaining all previously opened endings and first completion.
 export const restartJourney=(p:JourneyProgress,nodeId:string):JourneyProgress=>({
  ...newJourneyProgress(),completedAt:p.completedAt||p.finishedAt||undefined,

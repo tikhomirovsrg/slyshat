@@ -1,0 +1,169 @@
+{
+  "releaseId": "comic-art-v1",
+  "createdAt": "2026-10-21",
+  "provenance": "Generated illustrations. Eight shared locations and two shared characters with four poses each; not unique artwork for each story.",
+  "assets": [
+    {
+      "id": "cafe",
+      "prompt": "Use case: illustration-story. Asset type: production background illustration for a Russian-language interactive comic teaching Italian and English. Create one wide 3:2 landscape frame, beautiful hand-inked European graphic novel style, sophisticated cozy adventure mood for adults, strong dark teal ink contours, subtle paper and halftone texture, warm ivory, muted terracotta, ochre and sage palette. Scene: a small Italian neighbourhood cafe interior, large windows to a sunlit piazza, espresso counter left, two empty chairs and small round table right, books and a potted plant. Composition: eye-level, generous empty floor / foreground in bottom third where separate character sprites will be placed. Detailed evocative environment, coherent perspective, clear simple silhouettes, no people, no letters, no words, no speech balloons, no comic frame border, no watermark. Not a photograph, not a flat icon, not a user interface. This is the reusable cafe set for a branching story; keep both foreground corners readable.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": false,
+      "files": [
+        {
+          "file": "cafe.webp",
+          "sha256": "553b1c28d97c402a2df5effd1c5669aae9edcb3c650ff7419dab698af88283c5",
+          "bytes": 294762
+        }
+      ]
+    },
+    {
+      "id": "station",
+      "prompt": "Use case: illustration-story. Production scenery asset for an adult language-learning interactive graphic novel. One wide 3:2 landscape frame, hand-inked European graphic novel, fine dark-teal contours, subtle paper and halftone texture, warm ivory, muted terracotta, ochre, sage, atmospheric natural lighting, sophisticated inviting sense of everyday adventure. Real coherent perspective, expressive detailed scenery. No people, no text, no letters, no logos, no watermark, no speech balloons, no border. Leave clear foreground space at bottom for separate character sprites. This is illustration, not a photograph or an icon. Scene: a European railway platform at early evening, teal and ivory train standing to the left, old iron canopy, ticket machines, benches, overhead clock with no readable numbers, amber station light, an open empty boarding area in the middle.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": false,
+      "files": [
+        {
+          "file": "station.webp",
+          "sha256": "5e65fbcaaa076aee085275c0f86951c4a85a61d9a7a68281663b1f05053d3174",
+          "bytes": 263188
+        }
+      ]
+    },
+    {
+      "id": "square",
+      "prompt": "Use case: illustration-story. Production scenery asset for an adult language-learning interactive graphic novel. One wide 3:2 landscape frame, hand-inked European graphic novel, fine dark-teal contours, subtle paper and halftone texture, warm ivory, muted terracotta, ochre, sage, atmospheric natural lighting, sophisticated inviting sense of everyday adventure. Real coherent perspective, expressive detailed scenery. No people, no text, no letters, no logos, no watermark, no speech balloons, no border. Leave clear foreground space at bottom for separate character sprites. This is illustration, not a photograph or an icon. Scene: welcoming Italian neighbourhood piazza at golden hour, small fountain in the middle distance, cafe and bookshop facades with blank awnings, a side street leading away, stone paving, terracotta buildings, a few trees. Front view so characters can stand beside the fountain in another shot.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": false,
+      "files": [
+        {
+          "file": "square.webp",
+          "sha256": "8d292ae87352c3b91067724b075575759ade30760df83bef85b9bf198c1d593d",
+          "bytes": 337012
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "prompt": "Use case: illustration-story. Production scenery asset for an adult language-learning interactive graphic novel. One wide 3:2 landscape frame, hand-inked European graphic novel, fine dark-teal contours, subtle paper and halftone texture, warm ivory, muted terracotta, ochre, sage, atmospheric natural lighting, sophisticated inviting sense of everyday adventure. Real coherent perspective, expressive detailed scenery. No people, no text, no letters, no logos, no watermark, no speech balloons, no border. Leave clear foreground space at bottom for separate character sprites. This is illustration, not a photograph or an icon. Scene: a cozy shared apartment dining room and terrace, table ready for a small dinner, closed parcel on a sideboard, shelves of books, warm lamps, doorway to leafy terrace and distant city rooftops, a few welcoming chairs, uncluttered foreground.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": false,
+      "files": [
+        {
+          "file": "home.webp",
+          "sha256": "2e7ed7320bce7db7f2b627a7e25d69a2197f0aefcd71b315136cbac54a0c8b1c",
+          "bytes": 255936
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "prompt": "Use case: illustration-story. Production scenery asset for an adult language-learning interactive graphic novel. One wide 3:2 landscape frame, hand-inked European graphic novel, fine dark-teal contours, subtle paper and halftone texture, warm ivory, muted terracotta, ochre, sage, atmospheric natural lighting, sophisticated inviting sense of everyday adventure. Real coherent perspective, expressive detailed scenery. No people, no text, no letters, no logos, no watermark, no speech balloons, no border. Leave clear foreground space at bottom for separate character sprites. This is illustration, not a photograph or an icon. Scene: a contemporary shared workroom in a European old building, meeting table, laptop with blank screen, pinboard with blank cards, desk lamp, plants and large windows, warm late afternoon light, practical shelves with craft and repair tools. Calm inviting studio.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": false,
+      "files": [
+        {
+          "file": "office.webp",
+          "sha256": "370c88cb3b7ff3c31f92a0dad373fc25bf155ab39856b39403f58705044e8710",
+          "bytes": 294688
+        }
+      ]
+    },
+    {
+      "id": "park",
+      "prompt": "Use case: illustration-story. Production scenery asset for an adult language-learning interactive graphic novel. One wide 3:2 landscape frame, hand-inked European graphic novel, fine dark-teal contours, subtle paper and halftone texture, warm ivory, muted terracotta, ochre, sage, atmospheric natural lighting, sophisticated inviting sense of everyday adventure. Real coherent perspective, expressive detailed scenery. No people, no text, no letters, no logos, no watermark, no speech balloons, no border. Leave clear foreground space at bottom for separate character sprites. This is illustration, not a photograph or an icon. Scene: a green riverside community garden and picnic spot, river and little footbridge in the distance, empty wooden bench, picnic blanket and basket, vegetable beds, soft late afternoon sunshine, gentle everyday adventure mood.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": false,
+      "files": [
+        {
+          "file": "park.webp",
+          "sha256": "559f80ffe7e5b5ba33c9f72061d211a518d83d16174b279f1732eb110a542e0d",
+          "bytes": 408328
+        }
+      ]
+    },
+    {
+      "id": "gallery",
+      "prompt": "Use case: illustration-story. Production scenery asset for an adult language-learning interactive graphic novel. One wide 3:2 landscape frame, hand-inked European graphic novel, fine dark-teal contours, subtle paper and halftone texture, warm ivory, muted terracotta, ochre, sage, atmospheric natural lighting, sophisticated inviting sense of everyday adventure. Real coherent perspective, expressive detailed scenery. No people, no text, no letters, no logos, no watermark, no speech balloons, no border. Leave clear foreground space at bottom for separate character sprites. This is illustration, not a photograph or an icon. Scene: a small local museum and community cultural room, framed old photographs with no writing, display cabinet, a reading table with an open book, empty chairs, a modest stage curtain at the far end, warm amber pools of light. Quiet intriguing mood.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": false,
+      "files": [
+        {
+          "file": "gallery.webp",
+          "sha256": "c496afd79396f5de0c81b6fb1853385d962d7e208d33f6ccb437066d2e96fbf8",
+          "bytes": 249112
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "prompt": "Use case: illustration-story. Production scenery asset for an adult language-learning interactive graphic novel. One wide 3:2 landscape frame, hand-inked European graphic novel, fine dark-teal contours, subtle paper and halftone texture, warm ivory, muted terracotta, ochre, sage, atmospheric natural lighting, sophisticated inviting sense of everyday adventure. Real coherent perspective, expressive detailed scenery. No people, no text, no letters, no logos, no watermark, no speech balloons, no border. Leave clear foreground space at bottom for separate character sprites. This is illustration, not a photograph or an icon. Scene: a welcoming European open-air neighbourhood market, colourful vegetables and fruit on wooden stalls under striped ochre and ivory awnings, paper bags, baskets, bicycles, warm cobbled street, a wide empty central walkway. Everything unlabelled.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": false,
+      "files": [
+        {
+          "file": "market.webp",
+          "sha256": "07c7fb015565bc08957cf7e7d21e1e7d2d7c31b3f877aebd33f86e8e121c17ee",
+          "bytes": 346108
+        }
+      ]
+    },
+    {
+      "id": "female",
+      "character": "Лиса-путешественница",
+      "prompt": "Production transparent sprite sheet for a sophisticated European graphic novel for ADULT language learners. Hand inked dark teal contours, warm watercolor textured shading, terracotta, sage and cream palette, elegant whimsical adventure tone, mature expressive proportions, NOT baby cartoon, not mascot icon. TRANSPARENT background. Exactly FOUR complete head-to-hips portraits in a precisely equal 2 by 2 grid, generous padding inside each cell, consistent SAME character design, clothing and size. Each pose completely contained in its cell, never overlapping. TOP LEFT listening neutral; TOP RIGHT speaking with open hand gesture; BOTTOM LEFT thoughtful hand near chin; BOTTOM RIGHT relieved smiling. Three-quarter front view. No text, no words, no frame, no grid lines, no backdrop or scenery. Both hands visible where appropriate. Character: an adult anthropomorphic FEMALE RED FOX traveller, expressive amber eyes, long elegant pointed ears and russet fox muzzle, ivory muzzle fur, upright human-like clothed body, open burnt-terracotta field jacket over cream shirt, dark trousers, cross-body small leather satchel with unlabelled train tickets peeking out, worn round compass pendant, clever kind curious expression. Clear fox silhouette, beautiful distinctive face. Keep ear tips fully inside each cell.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": true,
+      "files": [
+        {
+          "file": "female-neutral.webp",
+          "sha256": "09b982d8f4880ff037f49b0e2b00cce51b2447e55ecf71d31c2f2790384b95d6",
+          "bytes": 50134
+        },
+        {
+          "file": "female-speaking.webp",
+          "sha256": "83dd9b3ee1328f1cbfa191064238156b2c5460e945ace0e60b72a0b87853b4a6",
+          "bytes": 48902
+        },
+        {
+          "file": "female-thinking.webp",
+          "sha256": "bb288887ce9f96f2a4a8fa444406040c81d76f29fee72676368b283fbd891d11",
+          "bytes": 49618
+        },
+        {
+          "file": "female-pleased.webp",
+          "sha256": "21d9d24ad242652c2d4bd2759661ba1f3b28dd3fbfe00545a17a5e6f1207d047",
+          "bytes": 49666
+        }
+      ]
+    },
+    {
+      "id": "male",
+      "character": "Ворон-картограф",
+      "prompt": "Production transparent sprite sheet for a sophisticated European graphic novel for ADULT language learners. Hand inked dark teal contours, warm watercolor textured shading, terracotta, sage and cream palette, elegant whimsical adventure tone, mature expressive proportions, NOT baby cartoon, not mascot icon. TRANSPARENT background. Exactly FOUR complete head-to-hips portraits in a precisely equal 2 by 2 grid, generous padding inside each cell, consistent SAME character design, clothing and size. Each pose completely contained in its cell, never overlapping. TOP LEFT listening neutral; TOP RIGHT speaking with open hand gesture; BOTTOM LEFT thoughtful hand near chin; BOTTOM RIGHT relieved smiling. Three-quarter front view. No text, no words, no frame, no grid lines, no backdrop or scenery. Both hands visible where appropriate. Character: an adult anthropomorphic MALE RAVEN cartographer, blue-black feathered raven head, sleek expressive long black beak and bright amber eyes, upright human-like fully clothed body, teal overcoat over cream shirt, ochre scarf, little round brass spectacles, dark feathered hands with expressive finger-like feathers, folded unlabelled map peeking from breast pocket, a small closed notebook tucked under one arm where possible. Wry, observant, elegant and slightly eccentric. Keep beak fully inside each cell.",
+      "generatedWith": "OpenAI ImageGen",
+      "transparent": true,
+      "files": [
+        {
+          "file": "male-neutral.webp",
+          "sha256": "dc1b34d3c6eaecf9f0a4177547fdfc874c351454992bb35a67c7ed1d91e50751",
+          "bytes": 62394
+        },
+        {
+          "file": "male-speaking.webp",
+          "sha256": "3535cdfc32b4fe8a77aa269513c3be4fb2a4cdb8e3ce064499d59f0183c26c80",
+          "bytes": 45042
+        },
+        {
+          "file": "male-thinking.webp",
+          "sha256": "81d842d134cf8ffa33e2f2eadbaa44b4edcc292528376a9439eae933e1a09744",
+          "bytes": 65200
+        },
+        {
+          "file": "male-pleased.webp",
+          "sha256": "6c3d8883b5ea487d3fd78fbcd2fd38c9b3a69f8b2e8a1c71bdd2879715622e0c",
+          "bytes": 66930
+        }
+      ]
+    }
+  ]
+}

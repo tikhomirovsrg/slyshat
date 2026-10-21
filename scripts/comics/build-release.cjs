@@ -1,0 +1,50 @@
+// Authoring tool: never rerun over a published release; create v2 instead.
+const fs=require('node:fs'),crypto=require('node:crypto');
+const target='content/comics/comic-v1.json';
+if(fs.existsSync(target))throw Error('Release already exists; create a new version.');
+const topics={
+ dinner:['home','Близкие люди','cup','За общим столом каждому нужен свой голос. Как договориться?'],
+ cinema:['gallery','Культура и открытия','camera','Один вечер, разные ожидания. Какой план соберёт всех?'],
+ walk:['square','Городские приключения','map','Знакомый город можно увидеть иначе. Куда свернёт ваш разговор?'],
+ bookclub:['gallery','Культура и открытия','book','У одной книги столько прочтений. Найдёте ли вы общий язык?'],
+ repair:['office','Вместе за дело','tools','В мастерской нужно решить больше, чем одну техническую задачу.'],
+ market:['market','Городские приключения','cup','Покупки ещё впереди, а договориться нужно уже сейчас.'],
+ picnic:['park','Близкие люди','map','У хорошего пикника есть маленькая сложность: у всех свой план.'],
+ museum:['gallery','Культура и открытия','camera','Выставка начинается с выбора. Что окажется важным для вашей компании?'],
+ welcome:['cafe','Близкие люди','conversation','Первый разговор может стать началом дружбы. Как его продолжить?'],
+ exchange:['cafe','Близкие люди','book','Вы пришли поговорить. Теперь нужно услышать друг друга.'],
+ meeting:['office','Вместе за дело','laptop','Встреча ещё не началась, а привычный план уже требует решения.'],
+ workshop:['office','Вместе за дело','tools','У каждого есть опыт. Как превратить его в общее дело?'],
+ archive:['gallery','Культура и открытия','camera','Старые снимки объединяют людей. Но сначала придётся договориться.'],
+ garden:['park','Вместе за дело','tools','Общий сад начинается с маленького решения. Кто сделает первый шаг?'],
+ music:['gallery','Культура и открытия','conversation','Музыкальному вечеру нужен общий ритм — и общий план.'],
+ station:['station','Городские приключения','ticket','На вокзале легко разминуться. Как вы устроите встречу?'],
+ volunteers:['square','Вместе за дело','map','Помочь хотят все. Осталось понять, как действовать вместе.'],
+ swap:['home','Близкие люди','book','Вещи меняют владельцев, а люди знакомятся. Что предложишь ты?'],
+ boardgames:['home','Близкие люди','conversation','Первая развилка возникает ещё до начала игры.'],
+ farewell:['cafe','Близкие люди','cup','Хочется попрощаться по-настоящему тепло. Какой план сработает?'],
+ photowalk:['square','Культура и открытия','camera','У каждого свой взгляд на город. Найдёте ли вы общий маршрут?'],
+ localnews:['gallery','Культура и открытия','book','Новости района вызывают вопросы. С чего начать разговор?'],
+ reading:['gallery','Культура и открытия','book','История зазвучит по-разному. Как подготовить встречу?'],
+ craft:['office','Вместе за дело','tools','Хорошая идея есть. Осталось сделать так, чтобы каждый поучаствовал.'],
+ project:['office','Вместе за дело','laptop','Новый проект начинается не с задачи, а с договорённости.' ]
+};
+const legacyLocations={
+ 'coffee-01':'cafe','neighbour-en':'home','volunteer-en':'square','train-en':'station','lostbag-en':'station','bus-en':'station','market-en':'market','lunch-en':'cafe','work-en':'office','film-en':'home','repair-en':'home','birthday-en':'home','museum-en':'gallery','bookclub-en':'gallery','hotel-en':'home','interview-en':'office','videocall-en':'office','feedback-en':'office','hike-en':'park','photo-en':'gallery',
+ 'coffee-it':'square','neighbour-dinner-it':'home','market-basket-it':'market','train-it':'station','hotel-booking-it':'home','wrong-delivery-it':'home','lost-keys-it':'home','book-club-it':'gallery','museum-clue-it':'gallery','old-letter-it':'home','meeting-update-it':'office','interview-practice-it':'office','coworking-call-it':'office','ferry-change-it':'station','flat-viewing-it':'home','festival-invitation-it':'gallery','rainy-trip-it':'square','birthday-plan-it':'home','accessible-dinner-it':'cafe','volunteer-archive-it':'gallery'
+};
+const coffee={
+ start:['square','wide','neutral','phone','Сообщение от Джулии'],clarify:['square','detail','thinking','clock','Минутка на уточнение'],
+ short:['square','left','thinking','clock','У тебя всего полчаса'],place:['square','right','neutral','map','С какой стороны улицы?'],
+ 'short-end':['cafe','wide','pleased','cup','Одна чашка, одна встреча'],take:['square','left','neutral','cup','Кофе на ходу'],
+ 'take-place':['square','detail','speaking','map','Найти друг друга'],fountain:['square','right','pleased','map','Последняя деталь'],
+ 'take-end':['square','wide','pleased','cup','Теперь можно гулять'],tomorrow:['square','right','thinking','clock','А если завтра?'],
+ 'tomorrow-half':['square','left','neutral','clock','Сверяем время'],'tomorrow-place':['square','detail','neutral','map','Ещё одна договорённость'],
+ 'tomorrow-end':['cafe','wide','pleased','cup','Следующая встреча — завтра']
+};
+const source=fs.readFileSync('content/story-course/course-v1.json');
+const release={releaseId:'comic-v1',formatVersion:1,publishedAt:'2026-10-21',courseSha256:crypto.createHash('sha256').update(source).digest('hex'),topics,legacyLocations,coffee,
+ problems:{time:'Время меняет условия.',budget:'Бюджет ставит границы.',entrance:'Нужно найти подходящий вход.',noise:'Шум мешает разговору.',participation:'Важно участие каждого.',tasks:'Нужно распределить дела.',date:'Дата подходит не всем.',scope:'План нужно уточнить.'},
+ provenance:'Постановка для 2000 историй и вариантов. 8 общих рисованных локаций, 2 персонажа с 4 позами, 25 тематических постановок и отдельная режиссура coffee-it. Общие ресурсы переиспользуются; это не 2000 уникальных нарисованных сюжетов.'};
+fs.writeFileSync(target,JSON.stringify(release,null,2)+'\n');
+console.log('Created',target);

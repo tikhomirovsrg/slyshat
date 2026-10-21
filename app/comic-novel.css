@@ -1,0 +1,35 @@
+/* Illustrated layers share the same actor designs across every story. */
+.novel-cover{position:relative;width:100%;height:100%;overflow:hidden;background:#e9d7b9}
+.novel-cover-bg{width:100%;height:100%;object-fit:cover;display:block}
+.novel-cover-actor{position:absolute;right:3%;bottom:-18%;height:118%;width:auto;max-width:65%;object-fit:contain;filter:drop-shadow(4px 4px 1px #20252445)}
+.comic-hero-art .novel-cover-actor{height:95%;bottom:-8%;right:10%;max-width:85%}
+.novel-series-name{display:block;font-size:11px;font-weight:700;line-height:1.7;color:#42635a;margin:-8px 0 20px}
+.comic-page .catalog-filters{display:flex;gap:15px;flex-wrap:wrap}.comic-page .catalog-filters label{flex:1;min-width:150px}.comic-page .catalog-filters .search-label{flex:2;min-width:240px}
+.novel-stage{position:relative;isolation:isolate;overflow:hidden;margin:0;aspect-ratio:16/10;max-height:530px;background:#d8cdb5;border-bottom:3px solid var(--ink)}
+.novel-backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.06)}
+.shot-left .novel-backdrop{object-position:20% center;transform:scale(1.2) translateX(3%)}
+.shot-right .novel-backdrop{object-position:80% center;transform:scale(1.2) translateX(-3%)}
+.shot-detail .novel-backdrop{transform:scale(1.35)}
+.novel-actors{position:absolute;inset:0;overflow:hidden}
+.novel-actor{position:absolute;bottom:-4%;width:52%;height:82%;filter:drop-shadow(3px 5px 1px #20252455)}
+.novel-actor.female{left:-1%}.novel-actor.male{right:-1%;transform:scaleX(-1)}
+.novel-actor img{position:absolute;width:100%;height:100%;object-fit:contain;object-position:bottom;opacity:0;pointer-events:none}.novel-actor img.visible{opacity:1}
+.shot-left .novel-actor.female,.shot-right .novel-actor.male{height:88%;width:60%;z-index:1}
+.shot-left .novel-actor.male,.shot-right .novel-actor.female{height:80%;width:45%}
+.shot-detail .novel-actor{height:107%;bottom:-16%}
+.novel-actor.active{filter:drop-shadow(0 0 5px #ffe3a0) drop-shadow(3px 5px 1px #20252455)}
+.novel-caption{position:absolute;left:100px;top:14px;max-width:calc(100% - 116px);font-family:Georgia,serif;font-weight:700;font-size:clamp(15px,2.1vw,21px);line-height:1.3;background:var(--paper);border:2px solid var(--ink);padding:10px 14px;box-shadow:3px 3px var(--ink);z-index:2}
+.novel-hotspot{position:absolute;right:16px;bottom:17px;z-index:3;background:var(--comic-yellow);border:2px solid var(--ink);border-radius:6px;box-shadow:3px 3px var(--ink);display:flex;gap:10px;align-items:center;padding:10px 14px;min-height:58px;color:var(--ink);text-align:left}
+.novel-hotspot>span{font-weight:800;font-size:14px}.novel-hotspot small{display:block;font-weight:500;font-size:10px;margin-top:4px}.novel-hotspot[aria-expanded=true]{background:var(--paper)}
+.novel-scene-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding:12px 20px;background:#294e44;color:#fffdf3;font-size:12px;font-weight:700}
+.novel-audio-progress{display:block;width:100%;height:5px;border:0;border-radius:0;accent-color:#d39137;background:#e9d8ab}
+.novel-memory{margin:0;padding:13px 20px;background:#f2e4c7;font-size:13px;line-height:1.65;border-bottom:1px solid #c7b693}.novel-memory span{font-size:10px;text-transform:uppercase;font-weight:800;letter-spacing:1px;display:block}
+.novel-detail{margin:16px 20px 0;border:2px dashed #886b37;background:#fff7dd;padding:18px;border-radius:5px}.novel-detail b{font-size:13px}.novel-detail p{font-size:15px;line-height:1.8;white-space:pre-line}.novel-detail small{font-size:11px;color:#634e29;line-height:1.6;display:block}
+.novel-collection{margin:42px 0 20px;padding-top:24px;border-top:2px solid var(--ink)}.novel-collection-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}.novel-collection-heading h2{font-family:Georgia,serif;margin:0;font-size:27px}.novel-collection-heading>span{font-size:12px;font-weight:800;background:#e0eadf;padding:7px 10px;border:1px solid var(--ink)}.novel-collection>p{font-size:13px;line-height:1.8}
+.novel-endings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:15px;margin-top:20px}.novel-ending-card,.novel-ending-locked{min-width:0;border:2px solid var(--ink);border-radius:5px;background:var(--paper);overflow:hidden}.novel-ending-card>summary{display:flex;gap:9px;align-items:center;padding:16px;min-height:60px;cursor:pointer;font-weight:700;line-height:1.5}.novel-ending-card>summary svg{flex-shrink:0}.novel-ending-card>summary:after{content:'＋';margin-left:auto}.novel-ending-card[open]>summary:after{content:'−'}.novel-ending-card .novel-cover{height:160px}.novel-ending-card>p{padding:0 16px 14px;font-size:13px;line-height:1.8}.novel-ending-locked{background:#ece8dd;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;min-height:124px;padding:18px;color:#59645b}.novel-ending-locked b{font-size:14px}.novel-ending-locked span{font-size:11px;text-align:center;line-height:1.5}
+.motion .novel-stage{animation:novel-arrival .35s ease-out}.motion .novel-actor img{transition:opacity .15s ease-out}
+@keyframes novel-arrival{from{opacity:.5}to{opacity:1}}
+@media(max-width:560px){
+ .novel-stage{aspect-ratio:auto;height:320px}.novel-caption{top:12px;left:94px;padding:8px 10px;max-width:calc(100% - 106px);font-size:15px}.novel-actor{height:76%;width:64%;bottom:-3%}.novel-actor.female{left:-10%}.novel-actor.male{right:-10%}.shot-left .novel-actor.female,.shot-right .novel-actor.male{height:78%;width:71%}.shot-left .novel-actor.male,.shot-right .novel-actor.female{height:68%;width:54%}.shot-detail .novel-actor{height:86%;bottom:-10%}.novel-hotspot{right:10px;bottom:10px;padding:8px 10px;min-height:52px;gap:7px}.novel-hotspot>svg:first-child{width:20px}.novel-hotspot>svg:last-child{display:none}.novel-hotspot>span{font-size:12px}.novel-hotspot small{font-size:9px}.novel-scene-footer{padding:12px;font-size:11px}.novel-memory{padding:12px;font-size:12px}.novel-detail{padding:13px;margin:13px 12px 0}.novel-detail p{font-size:14px}.novel-endings{gap:10px}.novel-ending-card>summary{padding:12px;font-size:12px}.novel-ending-card .novel-cover{height:125px}.novel-collection-heading h2{font-size:24px}.novel-ending-locked{padding:12px}.comic-page .catalog-filters .search-label{min-width:0}.comic-page .catalog-filters label{min-width:0}
+}
+@media(prefers-reduced-motion:reduce){.motion .novel-stage{animation:none}.motion .novel-actor img{transition:none}}

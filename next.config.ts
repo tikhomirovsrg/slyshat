@@ -7,6 +7,6 @@ const config: NextConfig = {
     {key:'Referrer-Policy',value:'no-referrer'},
   ]},{source:'/audio/:folder(library|course)/:file.mp3',headers:[
     {key:'Cache-Control',value:'public, max-age=31536000, immutable'},
-  ]}]; },
+  ]},{source:'/comics/v1/:file*',headers:[{key:'Cache-Control',value:'public, max-age=31536000, immutable'}]}]; },
 };
 export default config;

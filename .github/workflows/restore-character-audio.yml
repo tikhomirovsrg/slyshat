@@ -1,0 +1,107 @@
+name: Restore verified character audio release
+
+on:
+  push:
+    branches: [codex/character-audio-transfer-20261021]
+    paths: [character-audio-transfer/manifest.json]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: slyshat-character-audio-transfer-20261021
+  cancel-in-progress: false
+
+jobs:
+  restore:
+    if: github.repository == 'tikhomirovsrg/slyshat'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - name: Verify every transfer part and the original Git bundle
+        id: transfer
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, re
+          from pathlib import Path
+
+          manifest = json.loads(Path('character-audio-transfer/manifest.json').read_text())
+          expected = '778687aaac4a40883ce05a6c602d1f3fe5e1f520'
+          base = '8a658d5b8fac0e236e8c579c6800b7489af5f7dd'
+          source = 'refs/heads/codex/characters-and-exercises'
+          assert manifest['formatVersion'] == 1
+          assert manifest['repository'] == 'tikhomirovsrg/slyshat'
+          assert manifest['transferBranch'] == 'codex/character-audio-transfer-20261021'
+          assert manifest['expectedCommit'] == expected
+          assert manifest['baseCommit'] == base
+          assert manifest['sourceRef'] == source
+          assert manifest['targetBranch'] == 'codex/characters-and-exercises'
+          assert manifest['partSize'] == 720896
+          assert manifest['bundleBytes'] == 213445601
+          assert manifest['bundleSha256'] == '5791487ae7d0e86a4906cfd43fe2b8ba543fbb79ba32561efad3f367bd148d6b'
+          assert len(manifest['parts']) == 297
+          assert isinstance(manifest['ready'], bool)
+          if not manifest['ready']:
+              print('Transfer checkpoint saved; release upload is still in progress.')
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+                  output.write('ready=false\n')
+              raise SystemExit(0)
+
+          bundle = Path(os.environ['RUNNER_TEMP']) / 'character-audio.bundle'
+          digest = hashlib.sha256()
+          total = 0
+          with bundle.open('wb') as destination:
+              for index, part in enumerate(manifest['parts'], 1):
+                  assert part['file'] == f'parts/{index:04d}.part'
+                  assert part['bytes'] == (720896 if index < 297 else 60385)
+                  assert re.fullmatch(r'[0-9a-f]{64}', part['sha256'])
+                  data = (Path('character-audio-transfer') / part['file']).read_bytes()
+                  assert len(data) == part['bytes'], part['file']
+                  assert hashlib.sha256(data).hexdigest() == part['sha256'], part['file']
+                  destination.write(data)
+                  digest.update(data)
+                  total += len(data)
+          assert total == 213445601
+          assert digest.hexdigest() == '5791487ae7d0e86a4906cfd43fe2b8ba543fbb79ba32561efad3f367bd148d6b'
+          with bundle.open('rb') as source_file:
+              assert source_file.readline() == b'# v2 git bundle\n'
+              headers = []
+              while True:
+                  line = source_file.readline()
+                  assert line, 'Missing bundle header terminator'
+                  if line == b'\n':
+                      break
+                  headers.append(line.rstrip(b'\n').decode('utf-8'))
+          prerequisites = [line.split(' ', 1)[0][1:] for line in headers if line.startswith('-')]
+          heads = [line for line in headers if not line.startswith('-')]
+          assert prerequisites == [base]
+          assert heads == [f'{expected} {source}']
+          print(f'Verified {len(manifest["parts"])} parts, {total} bytes, release {expected}.')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('ready=true\n')
+          PY
+      - name: Restore the reviewed release and fast-forward its feature branch
+        if: steps.transfer.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git bundle verify "$RUNNER_TEMP/character-audio.bundle"
+          test "$(git bundle list-heads "$RUNNER_TEMP/character-audio.bundle")" = '778687aaac4a40883ce05a6c602d1f3fe5e1f520 refs/heads/codex/characters-and-exercises'
+          git fetch --no-tags "$RUNNER_TEMP/character-audio.bundle" refs/heads/codex/characters-and-exercises:refs/remotes/character-audio/source
+          test "$(git rev-parse refs/remotes/character-audio/source)" = '778687aaac4a40883ce05a6c602d1f3fe5e1f520'
+          test "$(git rev-list --parents -n 1 refs/remotes/character-audio/source)" = '778687aaac4a40883ce05a6c602d1f3fe5e1f520 8a658d5b8fac0e236e8c579c6800b7489af5f7dd'
+          target='refs/heads/codex/characters-and-exercises'
+          remote="$(git ls-remote --heads origin "$target")"
+          current="${remote%%$'\t'*}"
+          test "$remote" = "$current"$'\t'"$target"
+          case "$current" in
+            778687aaac4a40883ce05a6c602d1f3fe5e1f520) echo 'The exact release is already present.' ;;
+            8a658d5b8fac0e236e8c579c6800b7489af5f7dd) git push origin "refs/remotes/character-audio/source:$target" ;;
+            *) echo 'Target branch is not at the reviewed base; refusing to change it.' >&2; exit 1 ;;
+          esac
+          test "$(git ls-remote --heads origin "$target")" = '778687aaac4a40883ce05a6c602d1f3fe5e1f520'$'\t'"$target"

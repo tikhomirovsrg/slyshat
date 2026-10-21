@@ -1,0 +1,109 @@
+{
+  "formatVersion": 1,
+  "repository": "tikhomirovsrg/slyshat",
+  "expectedCommit": "8a658d5b8fac0e236e8c579c6800b7489af5f7dd",
+  "baseCommit": "0d2ae4ee8da0402cb623b43f466e877933f4ee75",
+  "sourceBranch": "codex/characters-and-exercises",
+  "targetBranch": "codex/characters-and-exercises",
+  "partSize": 720896,
+  "ready": true,
+  "bundleBytes": 13167835,
+  "bundleSha256": "2042977e25f432861bca8ecec6fa41a802ba50696715390e39bff5b3c48eedff",
+  "parts": [
+    {
+      "file": "parts/0001.part",
+      "bytes": 720896,
+      "sha256": "57677c14a823d05bc0a3484f74f93153a36ce8bd07256341db69ce370f0c5969"
+    },
+    {
+      "file": "parts/0002.part",
+      "bytes": 720896,
+      "sha256": "0aff706ecd18951eac27b4bec5d4fa7b28ee634959d3b5782ba5982edc25a0d6"
+    },
+    {
+      "file": "parts/0003.part",
+      "bytes": 720896,
+      "sha256": "3ea5ca29a83f1dd9bdd35a251270dbececd5a1a6142fb1dd5fc1c1bf186d2a61"
+    },
+    {
+      "file": "parts/0004.part",
+      "bytes": 720896,
+      "sha256": "92f9a7f2f2cab16bbd9ec03c59047139b662ef3a037115e0c8ee54d85fab92b5"
+    },
+    {
+      "file": "parts/0005.part",
+      "bytes": 720896,
+      "sha256": "018f50791c4d9c10d046b90fbfa749ee0d17ba683fd61f1c2a138b776097b6d4"
+    },
+    {
+      "file": "parts/0006.part",
+      "bytes": 720896,
+      "sha256": "9dbab2846e285cfaf7640383d94262bc79191423445a89be9f72e45c243e79b6"
+    },
+    {
+      "file": "parts/0007.part",
+      "bytes": 720896,
+      "sha256": "11243b03492eb86b4fbac6397332cacc2ac707f03083634e9d48c83c0d614c38"
+    },
+    {
+      "file": "parts/0008.part",
+      "bytes": 720896,
+      "sha256": "7b1463b9ae495b6dd90e729f454c21153a1d4865d7398daff7cb776fd88ed4ab"
+    },
+    {
+      "file": "parts/0009.part",
+      "bytes": 720896,
+      "sha256": "a93732c7bb898473c77c16bb2967bc9c89d6711c88fc26f8c949208893ffd08b"
+    },
+    {
+      "file": "parts/0010.part",
+      "bytes": 720896,
+      "sha256": "0dc0efc1569585568c3e04ff7d5b00c45da9d6f7276660ca83e62b1ec6a6199c"
+    },
+    {
+      "file": "parts/0011.part",
+      "bytes": 720896,
+      "sha256": "bcc21be5a664f888fb0a15184dec30537663bf660bcf250fe99e29be3cccaec6"
+    },
+    {
+      "file": "parts/0012.part",
+      "bytes": 720896,
+      "sha256": "e2221cdf317d5583ec29852d0effb1878f1c496a1f8967aed08241b928b08890"
+    },
+    {
+      "file": "parts/0013.part",
+      "bytes": 720896,
+      "sha256": "49d884cd058fcee1cb966526f2eb85b669256fe60387e8db947bd0d7cfc1424d"
+    },
+    {
+      "file": "parts/0014.part",
+      "bytes": 720896,
+      "sha256": "c40067251f58edf7280875cb99636e0daafe63faae598efeaffbf6471df16b62"
+    },
+    {
+      "file": "parts/0015.part",
+      "bytes": 720896,
+      "sha256": "e841395d4bfe462ebb2e0461e17bb411b00c0d4baf7482faadd20dc8240fbbe3"
+    },
+    {
+      "file": "parts/0016.part",
+      "bytes": 720896,
+      "sha256": "ea964fa956910eb8b4085f87ea817f8d117f43548b31913b880918c636f64e0d"
+    },
+    {
+      "file": "parts/0017.part",
+      "bytes": 720896,
+      "sha256": "fb90ec623306ad089f8dbf1f081bbbfc88fabc55fd82f6ec4f3e656b62b865ad"
+    },
+    {
+      "file": "parts/0018.part",
+      "bytes": 720896,
+      "sha256": "ba72bdb51cd55817cbbfee260707ff4b7325009c2fddfd167528daa4af3217d8"
+    },
+    {
+      "file": "parts/0019.part",
+      "bytes": 191707,
+      "sha256": "dede1ffd8b24aa37bef4a2b7ae238e3f09f5a555ff58aeabd840bb0eecfe2d43"
+    }
+  ]
+}

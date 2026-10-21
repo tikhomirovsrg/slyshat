@@ -79,6 +79,13 @@ const request=(route,options={})=>fetch('http://127.0.0.1:3217'+route,{redirect:
   }
   for(const sample of JSON.parse(fs.readFileSync(path.join(root,'public/audio/kokoro/manifest.json'))).files){const response=await request('/audio/kokoro/'+sample.file);assert.equal(response.status,200);assert.equal(crypto.createHash('sha256').update(Buffer.from(await response.arrayBuffer())).digest('hex'),sample.sha256);}
   assert.equal((await request('/api/progress')).status,401);assert.equal((await request('/api/profile')).status,401);
+  // Preview exposes public course content, never private account data or paid synthesis.
+  assert.equal((await request('/?preview=1&lang=it&story=coffee-it')).status,200);
+  for(const route of ['/api/progress','/api/profile']){
+   assert.equal((await request(route+'?preview=1')).status,401);
+   assert.equal((await request(route+'?preview=1',{method:'POST',headers:{Origin:process.env.APP_URL,'Content-Type':'application/json'},body:'{}'})).status,401);
+  }
+  assert.equal((await request('/api/audio?preview=1',{method:'POST',headers:{Origin:process.env.APP_URL,'Content-Type':'application/json'},body:JSON.stringify(audioInput)})).status,401);
   r=await request('/api/auth/yandex/callback?state=invalid&code=unused');assert.equal(r.status,307);assert(r.headers.get('location').endsWith('?auth_error=failed'));
   const token=createSession({yandexId:'99123',label:'HTTP test'}),cookie=SESSION_COOKIE+'='+token;
   let snapshot=await (await request('/api/progress',{headers:{Cookie:cookie}})).json();assert(snapshot.account.id);assert.equal(snapshot.records.length,0);

@@ -19,10 +19,17 @@ import {getPack} from './packs';
 import {lessonScore} from './study';
 import {levels} from './study-types';
 import {AccountPanel,LoginScreen,RunHistory,syncLabels} from './account-panel';
+import {StoryPreview} from './story-preview';
+import {previewOptions,type PreviewOptions} from '../lib/preview-options';
 
 const phaseNames=['Ситуация','Слушаем','Разбираем','Разговор','Новая ситуация','Результат'];
 
-export default function Home(){return <SpeechProvider><LearningHome/></SpeechProvider>;}
+export default function Home(){
+ const [mode,setMode]=useState<PreviewOptions|false|null>(null);
+ useEffect(()=>{setMode(previewOptions(window.location.search)||false);},[]);
+ if(mode===null)return <main className="loading">Открываем истории…</main>;
+ return <SpeechProvider>{mode?<StoryPreview options={mode}/>:<LearningHome/>}</SpeechProvider>;
+}
 function LearningHome(){
  const sync=useStudyProgress();
  const profile=useProfile(sync.account?.id);

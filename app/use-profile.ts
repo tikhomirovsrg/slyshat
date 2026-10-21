@@ -29,4 +29,4 @@ export function useProfile(accountId?:string){
  const current=()=>engine.current?.accountId===accountId?engine.current:null;
  return {...visible,update:(fn:(p:StudyProfile)=>StudyProfile)=>current()?.update(fn),refresh:()=>current()?.refresh(),resolve:(local:boolean)=>current()?.resolve(local),event:(id:string,points=1)=>current()?.update(p=>({...p,events:[...p.events,{id:id+':'+crypto.randomUUID(),at:new Date().toISOString(),points}].slice(-2000)}))};
 }
-export type Profile=ReturnType<typeof useProfile>;
+export type Profile=ReturnType<typeof useProfile>&{previewSaveNote?:string};

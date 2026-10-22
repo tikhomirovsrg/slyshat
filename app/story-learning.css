@@ -24,7 +24,21 @@
 .comic-story-title{margin:20px auto 18px}
 .comic-story-title h1{font-size:clamp(28px,4vw,42px);margin:10px 0 12px}
 .comic-story-title p{line-height:1.65;margin-bottom:0}
+.story-archive{margin:20px 0;padding:15px 18px;border:1px solid #a6b8a5;border-radius:5px;background:#f1f3ec}
+.story-archive summary{min-height:32px;cursor:pointer;font-weight:700}
+.story-archive>p,.story-archive-progress{font-size:13px;line-height:1.6;color:#445c4c}
+.story-archive ul{list-style:none;padding:0;margin:12px 0 0}
+.story-archive li{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 0;border-top:1px solid #c9d2c4}
+.story-archive li>div{min-width:0}.story-archive li strong,.story-archive li small{display:block;overflow-wrap:anywhere}
+.story-archive li small{margin-top:4px;font-size:12px;color:#445c4c}
+.story-archive li>.button{flex-shrink:0}
+.story-archive-resume{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px;margin:22px 0;border:2px solid var(--ink);border-radius:5px;background:#fff3cf}
+.story-archive-resume p{margin-top:5px}.story-archive-resume>.button{flex-shrink:0}
+.story-archive-note{padding:12px 16px;margin:18px 0;border-left:3px solid #778675;background:#eef1e8;font-size:14px}
+.story-archive-progress{margin-top:18px;padding-top:12px;border-top:1px solid #a6b8a5}
 @media(max-width:560px){
+ .story-archive{padding:12px}.story-archive-resume{align-items:stretch;flex-direction:column;gap:12px;padding:14px}
+ .story-archive li{align-items:flex-start;flex-direction:column;gap:10px}
  .story-vocabulary summary{padding:12px;gap:8px;flex-wrap:wrap}
  .story-vocabulary-body{padding:0 12px 12px}
  .story-vocabulary dl{grid-template-columns:1fr;gap:8px}
@@ -36,3 +50,6 @@
  .speaking-practice>.button{width:100%;white-space:normal}
  .speaking-practice-sample{padding:14px}
 }
+.story-source{margin:0 0 1rem;color:var(--muted);font-size:.88rem;max-width:65rem}
+.story-source summary{cursor:pointer;width:fit-content;padding:.3rem 0}
+.story-source p{line-height:1.5;margin:.4rem 0}

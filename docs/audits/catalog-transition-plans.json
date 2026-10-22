@@ -1,0 +1,77 @@
+{
+  "candidateCount": 246,
+  "counts": {
+    "en": {
+      "A1": 30,
+      "A2": 19,
+      "B1": 21,
+      "B2": 25,
+      "C1": 28
+    },
+    "it": {
+      "A1": 29,
+      "A2": 19,
+      "B1": 22,
+      "B2": 25,
+      "C1": 28
+    }
+  },
+  "exactDuplicateIds": 0,
+  "exactDuplicateFingerprints": 0,
+  "exactSourceReuses": 0,
+  "notice": "Similarity only queues manual review; it cannot certify distinct plots.",
+  "reviewPairs": [
+    {
+      "a": "new-en-a1-ball-in-vase",
+      "b": "new-it-a1-empty-clean-glass",
+      "score": 0.134,
+      "shared": [
+        "принос",
+        "кувшин",
+        "воды",
+        "ставит",
+        "воду",
+        "стол"
+      ]
+    },
+    {
+      "a": "new-it-a1-three-season-coat",
+      "b": "new-it-a1-two-shirts-one",
+      "score": 0.128,
+      "shared": [
+        "мотива",
+        "костюм",
+        "запасн",
+        "выходи",
+        "жилет"
+      ]
+    },
+    {
+      "a": "new-it-a2-coat-at-table",
+      "b": "new-it-b1-giacca-attaccata",
+      "score": 0.127,
+      "shared": [
+        "место",
+        "стул",
+        "пиджак",
+        "одежды",
+        "имени",
+        "рядом"
+      ]
+    },
+    {
+      "a": "new-en-b1-welcome-again",
+      "b": "new-it-c1-la-firma-troppo-presto",
+      "score": 0.121,
+      "shared": [
+        "владел",
+        "столе",
+        "подпис",
+        "решени",
+        "партнё",
+        "церемо",
+        "торжес"
+      ]
+    }
+  ]
+}

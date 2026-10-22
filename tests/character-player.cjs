@@ -107,9 +107,9 @@ test('Unavailable answer audio shows text immediately and allows selection witho
  for(const missingClip of [undefined,{...clip('fallback'),source:''}]){
   const calls=[],props={...choiceProps(),choices:[{...choice('fallback','end',false),clip:missingClip}],onChoose:index=>calls.push(['choose',index]),onReveal:index=>calls.push(['reveal',index])};
   const draw=extra=>renderToStaticMarkup(React.createElement(StoryChoices,{...props,...extra}));
-  const ready=draw({});assert(ready.includes(props.choices[0].text));assert(!ready.includes(props.choices[0].label));assert(!ready.includes('Слушать A'));assert(!ready.includes('Показать текст A'));assert(!ready.includes('Скрыть текст A'));
-  const select=extra=>choiceButtons({...props,...extra}).find(button=>button.label.includes('Выбрать A'));
-  assert.equal(select({}).disabled,false);select({}).onClick();assert.deepEqual(calls,[['choose',0]]);
+  const ready=draw({});assert.equal(ready.split(props.choices[0].text).length-1,1);assert(!ready.includes(props.choices[0].label));assert(!ready.includes('Слушать A'));assert(!ready.includes('Показать текст A'));assert(!ready.includes('Скрыть текст A'));assert(!ready.includes('Запись ответа пока недоступна'));assert(!ready.includes('Выбрать A'));
+  const select=extra=>choiceButtons({...props,...extra}).find(button=>button.label===props.choices[0].text);
+  assert.equal(select({}).lang,props.language);assert.equal(select({}).disabled,false);select({}).onClick();assert.deepEqual(calls,[['choose',0]]);
   for(const extra of [{canAdvance:false},{ready:false}]){assert(draw(extra).includes(props.choices[0].text));assert.equal(select(extra).disabled,true);}
   const translated=draw({translationOpen:true});assert(translated.includes(props.choices[0].text));assert(translated.includes(props.choices[0].label));
  }

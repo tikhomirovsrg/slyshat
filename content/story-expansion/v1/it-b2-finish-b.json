@@ -1,0 +1,2170 @@
+[
+  {
+    "id": "new-it-b2-fischio-dal-cortile",
+    "language": "it",
+    "level": "B2",
+    "title": "Un fischio oltre il cortile",
+    "topic": "Lavoro e immaginazione",
+    "summary": "Nella copisteria un rumore insolito cambia il modo in cui Nino consegna le ricevute.",
+    "context": "Sei Elena, collega di Nino. La bottega sta per chiudere per la pausa e il suo solito silenzio ha preso una direzione inattesa.",
+    "hook": "Una battuta ripetuta può essere una richiesta di partire?",
+    "genre": "тёплая психологическая комедия",
+    "source": {
+      "title": "Il treno ha fischiato",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/Il_treno_ha_fischiato",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему мотиву исследованного произведения. Современная ситуация, персонажи, итальянские диалоги, русские переводы и обе развилки написаны заново; это не подлинный текст автора."
+    },
+    "plotFingerprint": "mundane-whistle-opens-imagined-freedom|visit-nearby-toy-train-or-map-a-table-journey|tiny-real-discovery-or-colleague-joins-imagination",
+    "pedagogy": {
+      "rationaleRU": "B2: внешнее поведение и внутренняя причина, смена перспективы рассказчика, образная речь и эмпатический вывод.",
+      "grammar": [
+        "costruzioni causali con a forza di",
+        "concessive con anche se",
+        "condizionale per proposte e desideri"
+      ],
+      "listeningFocusRU": "Различить шутку про поезд и косвенное признание усталости; понять, почему короткое отклонение от привычного дня важно собеседнику."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Elena",
+        "roleRU": "Игрок: сотрудница копировальной мастерской"
+      },
+      {
+        "actorId": "host",
+        "name": "Nino",
+        "roleRU": "Тихий коллега, которому не хватает новых впечатлений"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "a forza di",
+        "ru": "оттого что постоянно"
+      },
+      {
+        "term": "cambiare aria",
+        "ru": "сменить обстановку"
+      },
+      {
+        "term": "fare una deviazione",
+        "ru": "свернуть с привычного пути"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ecco la ricevuta, binario quattro. Scusa, mi è scappato un annuncio. Dal negozio oltre il cortile arriva quel fischio di locomotiva: a forza di sentirlo, perfino la stampante mi sembra un treno in ritardo. Ho già spedito tre clienti a Venezia, almeno sulla carta.",
+            "ru": "Вот чек, четвёртый путь. Прости, у меня вырвалось объявление. Из магазина через двор доносится этот паровозный свисток: оттого что я всё время его слышу, даже принтер кажется мне опаздывающим поездом. Троих клиентов я уже отправил в Венецию — по крайней мере на бумаге."
+          },
+          {
+            "speaker": 0,
+            "text": "Stamattina eri serio come sempre. Se volevi cambiare aria, potevi chiedermi una pausa. Però continui a guardare la porta, non la montagna di fogli: c’è qualcosa che non mi stai dicendo?",
+            "ru": "Утром ты был серьёзен, как всегда. Если тебе хотелось сменить обстановку, мог попросить перерыв. Но ты всё время смотришь на дверь, а не на гору листов: ты что-то недоговариваешь?"
+          },
+          {
+            "speaker": 1,
+            "text": "Non voglio scappare dal lavoro. Vorrei soltanto fare una deviazione, ogni tanto. Passo davanti a quelle vetrine da nove anni e saprei descrivere meglio l’interno della fotocopiatrice.",
+            "ru": "Я не хочу сбежать с работы. Просто хотелось бы иногда свернуть с привычного пути. Девять лет хожу мимо этих витрин, а внутренности копировальной машины смог бы описать гораздо лучше."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Andiamo a vedere quel treno. La pausa può cominciare due porte più in là.",
+            "ru": "Пойдём посмотрим на тот поезд. Перерыв может начаться через две двери.",
+            "next": "a"
+          },
+          {
+            "text": "Restiamo qui, ma disegniamo un viaggio sulla carta da imballaggio. Tu scegli la prima fermata.",
+            "ru": "Останемся здесь, но нарисуем путешествие на упаковочной бумаге. Первую остановку выбираешь ты.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "office",
+          "prop": "ticket",
+          "mood": "thinking",
+          "caption": "Необычный чек",
+          "clue": {
+            "title": "В кадре",
+            "body": "На прилавке рядом с чеками лежит свёрнутая упаковочная бумага."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Pensavo di chiedere soltanto quanto costasse il trenino. Invece la negoziante mi ha mostrato il cortile dipinto sul fondale: è proprio il nostro, con la finestra della copisteria. L’ha disegnato lei durante una sera di pioggia. Io passavo sempre di fretta e non avevo mai visto niente.",
+            "ru": "Я думал только спросить, сколько стоит паровозик. А продавщица показала мне двор, нарисованный на заднике: наш собственный, с окном копировальной мастерской. Она нарисовала его однажды дождливым вечером. Я всегда проходил мимо второпях и никогда ничего не замечал."
+          },
+          {
+            "speaker": 0,
+            "text": "E tu le hai raccontato che dal nostro banco si sente il suo fischio. Vi siete fatti da colonna sonora per anni senza presentarvi. Non abbiamo comprato un viaggio lontano: abbiamo scoperto una vicina. Anche se siamo usciti per cinque minuti, al ritorno avremo qualcosa di nuovo da raccontare.",
+            "ru": "А ты рассказал ей, что за нашим прилавком слышен её свисток. Вы годами были друг для друга звуковым фоном и даже не познакомились. Мы не купили далёкое путешествие: мы открыли для себя соседку. Хотя вышли всего на пять минут, по возвращении нам будет что нового рассказать."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Portiamo questo biglietto di carta al banco, senza trasformarlo in un’altra cosa da sbrigare.",
+            "ru": "Поставим этот бумажный билет на прилавок, только не будем превращать его в очередное дело.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "market",
+          "prop": "ticket",
+          "mood": "pleased",
+          "caption": "Две двери от мастерской",
+          "clue": {
+            "title": "В кадре",
+            "body": "За стеклом стоит маленький поезд на круговых рельсах."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Questa striscia sarebbe la costa, purché nessuno la scambi per un preventivo. Qui metto una città che non conosco: non devo per forza inventarle un monumento famoso. Potrebbe bastare una piazza con una panchina vuota. È strano: mi viene voglia di fermarmi proprio dove non c’è niente da fare.",
+            "ru": "Эта полоска будет берегом, лишь бы никто не принял её за смету. Здесь поставлю незнакомый мне город: необязательно придумывать ему знаменитый памятник. Достаточно площади с пустой скамейкой. Странно: мне хочется остановиться именно там, где нечего делать."
+          },
+          {
+            "speaker": 0,
+            "text": "Allora la mia tazza è un lago, non una macchia da cancellare. E io prenoto il posto vicino al finestrino. Prima ti avrei chiesto quando pensavi di finire questa sciocchezza; adesso sto cercando un percorso che non passi per la stampante. Non capita spesso neppure a me.",
+            "ru": "Тогда моя чашка — это озеро, а не пятно, которое надо стереть. И я заказываю место у окна. Раньше я спросила бы, когда ты закончишь эту глупость; а теперь ищу маршрут, который не проходит через принтер. Со мной такое тоже случается нечасто."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Lasciamo la mappa aperta per la pausa, ma non copriamo gli ordini dei clienti.",
+            "ru": "Оставим карту развёрнутой на время перерыва, только не закроем заказы клиентов.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "office",
+          "prop": "map",
+          "mood": "speaking",
+          "caption": "Путешествие на столе",
+          "clue": {
+            "title": "В кадре",
+            "body": "Чашка стоит на краю большого листа, вдали от заказов."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Mi ha regalato un biglietto senza destinazione. Dice che posso scrivercela dopo. Non lo userò per promettere una vacanza che poi rimando: domani potrei semplicemente entrare dal fornaio accanto, invece di mangiare in piedi. Per oggi questo cortile è già diventato più grande.",
+            "ru": "Она подарила мне билет без пункта назначения. Говорит, что я могу вписать его потом. Не буду обещать себе отпуск, который всё время откладываю: завтра можно просто зайти к соседнему пекарю вместо того, чтобы есть стоя. Сегодня этот двор уже стал больше."
+          },
+          {
+            "speaker": 0,
+            "text": "Mettilo vicino alla cassa. Se qualcuno chiede un treno per Venezia, gli spiegheremo che siamo una copisteria. Però, per una volta, quando racconterai dove sei stato in pausa non dovrai indicare soltanto il distributore del caffè.",
+            "ru": "Поставь его рядом с кассой. Если кто-нибудь попросит поезд до Венеции, объясним, что мы копировальная мастерская. Зато на этот раз, рассказывая, где ты был в перерыв, не придётся показывать только на кофейный автомат."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "office",
+          "prop": "ticket",
+          "mood": "pleased",
+          "caption": "Билет без дальнего маршрута",
+          "clue": {
+            "title": "В кадре",
+            "body": "Небольшой бумажный билет стоит рядом с кассой."
+          }
+        },
+        "outcome": {
+          "title": "Соседняя остановка",
+          "body": "Короткий выход превратился в настоящее знакомство с соседкой. Нино нашёл перемену совсем рядом с привычным рабочим местом."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "La linea arriva fino al bordo del tavolo. Per continuare dovremmo aprire il cassetto, ma lì tengo le graffette: un confine piuttosto severo. Mi hai sentito ridere? Non quella risatina da cliente che racconta la stessa battuta. Questa volta mi sono sorpreso anch’io.",
+            "ru": "Линия дошла до края стола. Чтобы продолжить, придётся открыть ящик, но там скрепки: довольно суровая граница. Ты слышала, как я смеялся? Не тем смешком для клиента, который рассказывает старую шутку. На этот раз я и сам удивился."
+          },
+          {
+            "speaker": 0,
+            "text": "Ti ho sentito. E vorrei presentare un reclamo: sul disegno hai messo il mio finestrino proprio davanti alla tua tazza. Comunque non spostare il lago. Per cinque minuti posso guardare anche qualcosa che non richieda una risposta urgente.",
+            "ru": "Слышала. И хочу подать жалобу: на рисунке ты расположил моё окно прямо перед своей чашкой. Впрочем, озеро не передвигай. Пять минут я могу посмотреть и на то, что не требует срочного ответа."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "office",
+          "prop": "map",
+          "mood": "pleased",
+          "caption": "Место у окна",
+          "clue": {
+            "title": "В кадре",
+            "body": "Нарисованная железная дорога огибает чашку."
+          }
+        },
+        "outcome": {
+          "title": "Пять минут другого мира",
+          "body": "Коллеги придумали путешествие на обычной упаковочной бумаге. Игра дала обоим передышку, не подменяя рабочие обязанности обещанием побега."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 2,
+        "prompt": "Какое желание Нино стоит за его шуткой о поездах?",
+        "options": [
+          "Уйти из мастерской, не предупредив коллегу.",
+          "Иногда замечать что-то за пределами повторяющихся дел.",
+          "Превратить копировальную мастерскую в билетную кассу."
+        ],
+        "answer": 1,
+        "explanation": "Он прямо отрицает желание сбежать с работы и говорит о небольшом отклонении от привычного маршрута."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что выражает «a forza di sentirlo» в этой ситуации?",
+        "options": [
+          "Он слышит свисток так часто, что начинает воспринимать всё как поезд.",
+          "Он заставляет клиентов слушать свисток, чтобы они заметили игрушку.",
+          "Он сильнее напрягает слух, потому что свисток слишком тихий."
+        ],
+        "answer": 0,
+        "explanation": "Повторяющийся звук постепенно влияет на его восприятие и речь.",
+        "anchor": "a forza di sentirlo"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Почему Елена считает этот короткий выход настоящей переменой?",
+          "options": [
+            "Они договорились начать продавать игрушечные железные дороги.",
+            "Соседка обещала заменить им звук копировальной машины.",
+            "Знакомое место стало новым благодаря реальному знакомству."
+          ],
+          "answer": 2,
+          "explanation": "Они годами слышали друг друга, но только теперь познакомились и открыли что-то новое в своём дворе."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Как меняется отношение Елены к игре?",
+          "options": [
+            "Она сама включается в неё и замечает собственную потребность в передышке.",
+            "Она терпит игру лишь для того, чтобы потом скорее вернуться к заказам.",
+            "Она превращает рисунок в настоящий план закупки нового принтера."
+          ],
+          "answer": 0,
+          "explanation": "Елена противопоставляет прежнее желание прекратить глупость своему нынешнему поиску маршрута и месту у окна."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-farfalla-fuori-copione",
+    "language": "it",
+    "level": "B2",
+    "title": "La farfalla fuori copione",
+    "topic": "Teatro e imprevisti",
+    "summary": "Una prova generale regala una risata che nessuno aveva scritto. Ripeterla, però, sembra impossibile.",
+    "context": "Sei Sara, attrice in una piccola compagnia. Il regista Davide vuole recuperare un incidente fortunato senza capire che cosa lo rendesse divertente.",
+    "hook": "Si può ordinare una sorpresa già conosciuta?",
+    "genre": "театральная комедия",
+    "source": {
+      "title": "Il Pipistrello",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/Il_Pipistrello",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему мотиву исследованного произведения. Современная ситуация, персонажи, итальянские диалоги, русские переводы и обе развилки написаны заново; это не подлинный текст автора."
+    },
+    "plotFingerprint": "accidental-paper-butterfly-outshines-script|rewrite-act-deliberately-or-refuse-repeatable-fright|new-planned-comedy-or-director-demonstrates-his-own-mishap",
+    "pedagogy": {
+      "rationaleRU": "B2: спонтанность и воспроизводимость искусства, уступки, ирония между авторским замыслом и зрительским прочтением.",
+      "grammar": [
+        "concessive con benché",
+        "periodo ipotetico della possibilità",
+        "contrasto fra imperfetto e passato prossimo"
+      ],
+      "listeningFocusRU": "Отличить живую неожиданность от повторяемого сценического приёма и понять, почему точное воспроизведение события не даёт того же эффекта."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Sara",
+        "roleRU": "Игрок: актриса в роли торжественного монарха"
+      },
+      {
+        "actorId": "cartographer",
+        "name": "Davide",
+        "roleRU": "Режиссёр любительской театральной компании"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "a comando",
+        "ru": "по команде"
+      },
+      {
+        "term": "prendere alla sprovvista",
+        "ru": "застать врасплох"
+      },
+      {
+        "term": "un colpo di fortuna",
+        "ru": "счастливая случайность"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "La risata di ieri durava quasi mezzo minuto. Al punto della sentenza, la farfalla di carta è saltata fuori dalla scatola e tu l’hai fermata con la corona. Avevi una faccia perfetta. Stasera voglio lo stesso gesto, con la stessa pausa: una volta trovato un successo, sarebbe sciocco buttarlo via.",
+            "ru": "Вчера смех длился почти полминуты. В момент приговора бумажная бабочка выскочила из коробки, и ты остановила её короной. У тебя было идеальное выражение лица. Сегодня хочу тот же жест с той же паузой: глупо выбрасывать найденный успех."
+          },
+          {
+            "speaker": 0,
+            "text": "La faccia non era un gesto studiato. Credevo che dalla scatola uscisse soltanto un mantello. Ora so dove si trova l’elastico; non può più prendere alla sprovvista me, anche se potrebbe sorprendere il pubblico. Non mi spavento a comando.",
+            "ru": "Выражение лица не было отрепетированным жестом. Я думала, что из коробки достанут только плащ. Теперь я знаю, где резинка; меня она уже не может застать врасплох, хотя зрителей ещё может удивить. Я не пугаюсь по команде."
+          },
+          {
+            "speaker": 1,
+            "text": "D’accordo, è stato un colpo di fortuna. Ma il testo è serio e il pubblico ha riso proprio lì. Dobbiamo decidere se cambiare la scena o smettere di inseguire quell’incidente.",
+            "ru": "Ладно, это была счастливая случайность. Но текст серьёзный, а публика засмеялась именно здесь. Надо решить: изменить сцену или перестать гоняться за этим происшествием."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Scriviamo una gag nuova, con un’azione che possiamo davvero ripetere.",
+            "ru": "Давай напишем новую шутку с действием, которое действительно можно повторять.",
+            "next": "a"
+          },
+          {
+            "text": "Torniamo alla scena seria. Prima proviamo insieme perché il mio spavento non torna.",
+            "ru": "Вернёмся к серьёзной сцене. Сначала вместе проверим, почему мой испуг не возвращается.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "thinking",
+          "caption": "Случайная пауза",
+          "clue": {
+            "title": "В кадре",
+            "body": "Открытая коробка с бумажной бабочкой стоит возле стула."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Ho provato tre volte: prendo la farfalla al volo senza neppure interrompere la battuta. Se la regina controlla tutto così bene, non c’è niente da ridere. Potremmo invece affidare la corona al suo assistente, che controlla il cerimoniale ma perde sempre gli oggetti. Il problema diventerebbe la sua pretesa di precisione.",
+            "ru": "Я попробовала трижды: ловлю бабочку на лету, даже не прерывая реплики. Если королева настолько хорошо всё контролирует, смеяться не над чем. Можно отдать корону её помощнику, который следит за церемониалом, но вечно теряет вещи. Тогда смешной станет его претензия на точность."
+          },
+          {
+            "speaker": 1,
+            "text": "Giusto: non chiediamo più alla stessa persona di sembrare impreparata. Prepariamo un contrasto diverso, con due tentativi sempre più solenni e sempre meno utili. L’elastico resterà fermo dentro la scatola; il pubblico vedrà il rischio arrivare prima dell’assistente. La risata avrà una ragione nuova, non la copia della tua faccia.",
+            "ru": "Верно: мы больше не просим того же человека выглядеть неподготовленным. Создадим другой контраст: две всё более торжественные и всё менее полезные попытки. Резинка будет закреплена внутри коробки; публика увидит опасность раньше помощника. У смеха появится новая причина, а не копия твоего лица."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Segniamo tempi e movimenti nel copione, poi proviamo la nuova gag senza fingere l’incidente.",
+            "ru": "Запишем ритм и движения в сценарий, потом отрепетируем новую шутку без притворной случайности.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "book",
+          "mood": "speaking",
+          "caption": "Новая шутка на полях",
+          "clue": {
+            "title": "В кадре",
+            "body": "Сценарий раскрыт на столе рядом с короной."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Guarda: apro la scatola, vedo l’elastico e seguo la farfalla con gli occhi. Non sto cercando di rovinare la tua idea. È che ieri non sapevo neppure che ci fosse. Posso recitare la sorpresa, certo, ma sarebbe una scelta artistica nuova; non puoi misurarla con un incidente che è già passato.",
+            "ru": "Смотри: открываю коробку, вижу резинку и слежу глазами за бабочкой. Я не пытаюсь испортить твою идею. Просто вчера я даже не знала, что она там есть. Я могу сыграть удивление, конечно, но это будет новое художественное решение; его нельзя измерять уже прошедшей случайностью."
+          },
+          {
+            "speaker": 1,
+            "text": "Forse ho confuso un risultato con una ricetta. Fammi vedere la corona. Io saprei ancora reagire d’istinto, perché non ho mai fatto questa scena. Tu tira piano l’elastico quando alzo il braccio. Se resto del tutto tranquillo, accetterò almeno che non basti rimettere gli stessi oggetti nello stesso posto.",
+            "ru": "Наверное, я перепутал результат с рецептом. Дай корону. Я ещё смог бы отреагировать инстинктивно, потому что никогда не играл эту сцену. Потяни резинку осторожно, когда я подниму руку. Если я останусь совершенно спокоен, то хотя бы признаю: недостаточно вернуть те же предметы на те же места."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Proviamo con calma e con lo spazio libero. Questa è una prova, non un esame.",
+            "ru": "Попробуем спокойно, освободив место. Это репетиция, а не экзамен.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "thinking",
+          "caption": "Проверка режиссёрского рецепта",
+          "clue": {
+            "title": "В кадре",
+            "body": "Вокруг коробки оставлено свободное место."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Adesso funziona: mentre la regina continua il discorso, l’assistente inchina la corona alla farfalla, convinto di proteggere il protocollo. L’errore racconta qualcosa del personaggio. Segno la posizione della scatola, non l’altezza delle tue sopracciglia. E la scena può cambiare tono senza perdere la sua storia.",
+            "ru": "Теперь работает: пока королева продолжает речь, помощник кланяется короной бабочке, уверенный, что охраняет протокол. Ошибка что-то рассказывает о персонаже. Отмечу положение коробки, а не высоту твоих бровей. И сцена сможет изменить тон, не потеряв своей истории."
+          },
+          {
+            "speaker": 0,
+            "text": "Allora la farfalla ha ottenuto una parte, ma non decide più lei tutta la serata. Domani proveremo con l’attore dell’assistente. Se gli chiedi una faccia perfetta, gli presto il mio specchio: almeno quello sa ripetere sempre la stessa espressione.",
+            "ru": "Значит, бабочка получила роль, но уже не решает всё за целый вечер. Завтра порепетируем с исполнителем помощника. Если попросишь у него идеальное лицо, одолжу ему своё зеркало: уж оно-то умеет всегда повторять одно и то же выражение."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "book",
+          "mood": "pleased",
+          "caption": "У бабочки появилась роль",
+          "clue": {
+            "title": "В кадре",
+            "body": "Рядом с новой сценической пометкой нарисована маленькая бабочка."
+          }
+        },
+        "outcome": {
+          "title": "Новая причина для смеха",
+          "body": "Случай не стали копировать. Сара и Давиде создали повторяемый комический эпизод, который раскрывает другого персонажа."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Non ridere ancora. Non mi sono spaventato: mi è soltanto entrata una farfalla nel risvolto. Ecco, la corona non serve, devo togliermi la giacca. Va bene, adesso puoi ridere. Avevo preparato il discorso sul controllo del corpo, ma non avevo previsto una manica così interessante per un insetto di carta.",
+            "ru": "Пока не смейся. Я не испугался: просто мне за лацкан залетела бабочка. Корона тут не поможет, надо снять пиджак. Ладно, теперь можешь смеяться. Я подготовил речь о владении телом, но не предусмотрел рукав, столь интересный для бумажного насекомого."
+          },
+          {
+            "speaker": 0,
+            "text": "La prova ha risposto senza bisogno di convincerti. Teniamo il ricordo di ieri e riprendiamo la scena seria. Per la giacca ti aiuto io. Però questa nuova risata non entrerà nel programma: prima dovremmo trovare un regista disposto a non sapere dove si trova l’elastico.",
+            "ru": "Репетиция ответила сама — убеждать тебя не понадобилось. Сохраним воспоминание о вчерашнем и вернёмся к серьёзной сцене. С пиджаком я помогу. Но этот новый смешной случай в программу не войдёт: сначала пришлось бы найти режиссёра, готового не знать, где резинка."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "Неожиданная режиссёрская роль",
+          "clue": {
+            "title": "В кадре",
+            "body": "Пиджак висит на спинке стула рядом с бумажной бабочкой."
+          }
+        },
+        "outcome": {
+          "title": "Случай остался случаем",
+          "body": "Давиде испытал разницу между управляемым жестом и неожиданностью. Компанию вернули к серьёзной сцене, сохранив смешной эпизод как общее воспоминание."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Почему Сара возражает против точного повторения вчерашнего испуга?",
+        "options": [
+          "Теперь она знает устройство эффекта и не может пережить ту же неожиданность.",
+          "Она считает, что зрители уже видели бабочку на предыдущем спектакле.",
+          "Она отказывается добавлять в серьёзный текст любой новый жест."
+        ],
+        "answer": 0,
+        "explanation": "Сара различает удивление зрителя и своё собственное: ей теперь известно, где резинка и что произойдёт."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Что значит «Non mi spavento a comando»?",
+        "options": [
+          "Я не хочу пугать зрителей указаниями со сцены.",
+          "Я не могу искренне испугаться по чужому приказу.",
+          "Я всегда пугаюсь, когда режиссёр повышает голос."
+        ],
+        "answer": 1,
+        "explanation": "Она говорит об искренней реакции, которую нельзя вызвать одним приказом.",
+        "anchor": "a comando"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Что Давиде предлагает сохранить в новой шутке?",
+          "options": [
+            "Обязательное выражение лица Сары в момент старого испуга.",
+            "Впечатление, будто резинка каждый раз рвётся случайно.",
+            "Понятный конфликт между точностью помощника и его неудачами."
+          ],
+          "answer": 2,
+          "explanation": "Теперь смех должен строиться на характере помощника и заранее поставленном контрасте, а не на копии лица Сары."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 0,
+          "prompt": "Какую уступку делает Сара, продолжая возражать Давиде?",
+          "options": [
+            "Она согласна, что любую прошлую реакцию можно повторить без изменений.",
+            "Она допускает сыгранную неожиданность, но считает её новым художественным решением.",
+            "Она обещает испугаться сильнее, если режиссёр изменит положение коробки."
+          ],
+          "answer": 1,
+          "explanation": "Сара прямо допускает, что может сыграть удивление, но отделяет это от подлинной вчерашней случайности."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-voce-del-duca",
+    "language": "it",
+    "level": "B2",
+    "title": "Il duca cambia voce",
+    "topic": "Lettura e interpretazione",
+    "summary": "Un breve racconto scritto per un laboratorio suona diverso quando passa dalla pagina al microfono.",
+    "context": "Sei Viola e aiuti Matteo a registrare una scena che ha scritto. Lui sente il suo duca come se esistesse già un’unica interpretazione.",
+    "hook": "Le stesse parole possono contenere due personaggi diversi?",
+    "genre": "комедия интерпретации",
+    "source": {
+      "title": "Mondo di carta",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/Mondo_di_carta",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему мотиву исследованного произведения. Современная ситуация, персонажи, итальянские диалоги, русские переводы и обе развилки написаны заново; это не подлинный текст автора."
+    },
+    "plotFingerprint": "readers-inner-character-voice-collides-with-narrator|compare-two-intonations-or-reader-performs-role|same-text-two-worlds-or-own-boss-in-hero",
+    "pedagogy": {
+      "rationaleRU": "B2: интерпретация подтекста и интонации, аргумент без единственного правильного чтения, осознание собственной проекции.",
+      "grammar": [
+        "subordinate completive con congiuntivo",
+        "discorso indiretto e citazioni brevi",
+        "concessive e marcatori di opinione"
+      ],
+      "listeningFocusRU": "Заметить, где герой выдаёт свою интерпретацию за факт текста; сравнить намерение, выражаемое разными интонациями."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Viola",
+        "roleRU": "Игрок: участница читательской мастерской"
+      },
+      {
+        "actorId": "host",
+        "name": "Matteo",
+        "roleRU": "Автор небольшой сцены для любительской записи"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "tra le righe",
+        "ru": "между строк"
+      },
+      {
+        "term": "dare per scontato",
+        "ru": "считать само собой разумеющимся"
+      },
+      {
+        "term": "a mio avviso",
+        "ru": "по моему мнению"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Fermiamo la registrazione. Il duca non può salutare l’ospite come il negoziante che mi vende le batterie. Nel racconto che ho scritto è un uomo severo. Quando dice «Prenda pure una sedia», tra le righe gli sta ricordando chi comanda. Io lo sento così da quando ho inventato la scena.",
+            "ru": "Остановим запись. Герцог не может приветствовать гостя, как продавец, у которого я покупаю батарейки. В моём рассказе он строгий человек. Говоря «Возьмите стул», он между строк напоминает гостю, кто здесь главный. Я слышу его таким с тех пор, как придумал сцену."
+          },
+          {
+            "speaker": 0,
+            "text": "Può essere, ma non dobbiamo dare per scontato ciò che tu immagini. Hai scritto che sorride e offre del tè. A mio avviso potrebbe anche cercare di mettere l’ospite a proprio agio. La gentilezza non dimostra che sia meno autorevole.",
+            "ru": "Возможно, но мы не должны считать само собой разумеющимся то, что ты себе представляешь. Ты написал, что он улыбается и предлагает чай. По-моему, он может просто пытаться помочь гостю освоиться. Доброжелательность не доказывает, что у него меньше власти."
+          },
+          {
+            "speaker": 1,
+            "text": "Allora non correggiamo ancora le parole. Vorrei capire se il problema è nella tua lettura, nella mia aspettativa o in quella sedia che sembra improvvisamente così minacciosa.",
+            "ru": "Тогда пока не будем исправлять слова. Я хотел бы понять, проблема в твоём чтении, в моём ожидании или в стуле, который вдруг стал таким угрожающим."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Registriamo due letture opposte e ascoltiamole senza cambiare una parola.",
+            "ru": "Запишем два противоположных прочтения и послушаем, не изменив ни слова.",
+            "next": "a"
+          },
+          {
+            "text": "Leggi tu il duca. Io farò l’ospite e poi confrontiamo le impressioni.",
+            "ru": "Прочитай герцога сам. Я буду гостем, а потом сравним впечатления.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "book",
+          "mood": "thinking",
+          "caption": "Один текст — два голоса",
+          "clue": {
+            "title": "В кадре",
+            "body": "Рядом с микрофоном лежит собственный черновик Маттео."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Ho lasciato una pausa lunga prima di «Prenda pure» nella prima versione e ho sorriso mentre leggevo la seconda. Le parole sono identiche, però nella prima sembra che l’ospite debba giustificare la propria presenza; nella seconda gli viene offerto un posto. Non ho aggiunto informazioni: ho suggerito due relazioni diverse.",
+            "ru": "В первой версии я выдержала длинную паузу перед «возьмите», а во второй читала с улыбкой. Слова одинаковые, но в первой кажется, что гость должен оправдать своё присутствие, а во второй ему предлагают место. Я не добавила сведений: я предложила два разных отношения."
+          },
+          {
+            "speaker": 1,
+            "text": "E quando offri il tè con la voce severa sembra che la tazza sia una prova da superare. Mi fa ridere, ma capisco il rischio: sto chiedendo all’ascoltatore di riconoscere un duca che finora esiste soltanto nella mia testa. Se voglio una certa intenzione, devo darle un appoggio nella scena, non accusare il microfono.",
+            "ru": "А когда ты предлагаешь чай строгим голосом, кажется, будто чашка — это испытание. Мне смешно, но я понимаю риск: я прошу слушателя узнать герцога, который пока существует только у меня в голове. Если мне нужно определённое намерение, надо дать ему опору в сцене, а не обвинять микрофон."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Conserviamo entrambe le prove. Nel laboratorio spiegheremo quali scelte le fanno cambiare.",
+            "ru": "Сохраним обе пробы. На занятии объясним, какие решения меняют их смысл.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "laptop",
+          "mood": "speaking",
+          "caption": "Прослушивание двух версий",
+          "clue": {
+            "title": "В кадре",
+            "body": "На экране открыты две звуковые дорожки."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "«Prima di sedersi, mi dica perché dovrei ascoltarla». Aspetta: questa frase non c’è sul foglio. Mi è venuta con la voce. È esattamente il modo in cui il mio responsabile apre le riunioni. Credevo di dare al duca un tono antico, invece gli ho messo la targhetta del nostro ufficio.",
+            "ru": "«Прежде чем сесть, скажите, почему я должен вас слушать». Подожди: этой фразы нет на листе. Она появилась вместе с голосом. Именно так мой руководитель начинает совещания. Я думал придать герцогу старинное звучание, а вместо этого надел на него табличку из нашего офиса."
+          },
+          {
+            "speaker": 0,
+            "text": "Adesso almeno sappiamo da dove arriva la tua certezza. Non significa che tu debba rinunciare a un duca severo; significa che non l’avevi ricavato soltanto dalle parole. Riparti dalla frase vera, quella della sedia. Io reagirò come un ospite, non come una collega che chiede l’autorizzazione a stampare una pagina.",
+            "ru": "Теперь хотя бы понятно, откуда твоя уверенность. Это не значит, что ты должен отказаться от строгого герцога; это значит, что он возник не только из слов. Начни с настоящей фразы, со стула. А я отвечу как гостья, не как коллега, которая просит разрешить распечатать страницу."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Facciamo una pausa e ricominciamo dal testo, tenendo distinta la voce dal ricordo.",
+            "ru": "Сделаем паузу и начнём с текста, отделяя голос от воспоминания.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "book",
+          "mood": "thinking",
+          "caption": "Герцог из соседнего кабинета",
+          "clue": {
+            "title": "В кадре",
+            "body": "Маттео держит страницу перед собой, чтобы не добавлять реплики по памяти."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Le ho chiamate «duca ospitale» e «duca sorvegliante». Nella seconda anche lo zucchero sembra richiedere un permesso scritto. Non scelgo ancora la versione definitiva: prima voglio sentire che cosa immaginano gli altri. Sarebbe interessante scoprire che qualcuno teme proprio il sorriso che a te pare accogliente.",
+            "ru": "Я назвал их «гостеприимный герцог» и «герцог-надзиратель». Во второй даже сахар будто требует письменного разрешения. Окончательную версию пока не выбираю: сначала хочу услышать, что представят себе другие. Интересно было бы узнать, что кто-то боится именно улыбки, которая тебе кажется радушной."
+          },
+          {
+            "speaker": 0,
+            "text": "Va bene, purché tu non chieda al gruppo di indovinare la tua risposta. Possiamo discutere gli indizi e restare in disaccordo. Intanto ti offro un tè normale: se ti senti interrogato, stavolta dipende dal fatto che hai ancora le cuffie.",
+            "ru": "Хорошо, только не проси группу угадать твой ответ. Можно обсудить признаки и остаться при разных мнениях. А пока предложу тебе обычный чай: если почувствуешь себя на допросе, на этот раз дело в том, что ты всё ещё в наушниках."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "home",
+          "prop": "cup",
+          "mood": "pleased",
+          "caption": "Две версии остаются",
+          "clue": {
+            "title": "В кадре",
+            "body": "Две записи сохранены под разными названиями."
+          }
+        },
+        "outcome": {
+          "title": "Два герцога на одной странице",
+          "body": "Две записи показали, как пауза и интонация меняют отношения персонажей. Маттео сохранил обе интерпретации для открытого обсуждения."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Non riesco a dire «Prenda pure una sedia» senza aggiungere mentalmente «e mi mandi il verbale». Meglio fermare la registrazione finché non smetto di ridere. Ti concedo una cosa: il mio duca non era più fedele al foglio del tuo. Era soltanto più familiare a me.",
+            "ru": "Не могу произнести «Возьмите стул», не добавив мысленно «и пришлите мне протокол». Лучше остановить запись, пока я не перестану смеяться. В одном уступлю: мой герцог не был вернее листу, чем твой. Он был просто привычнее мне."
+          },
+          {
+            "speaker": 0,
+            "text": "Allora oggi abbiamo registrato soprattutto un’aspettativa. La prossima volta potrai scegliere se usarla oppure cercare un’altra voce. Io terrò la parte dell’ospite: ho finalmente ottenuto una sedia senza dover preparare una presentazione di venti minuti.",
+            "ru": "Значит, сегодня мы записали прежде всего ожидание. В следующий раз сможешь решить, использовать ли его или искать другой голос. Я оставлю за собой роль гостьи: наконец получила стул без необходимости готовить двадцатиминутную презентацию."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "home",
+          "prop": "book",
+          "mood": "pleased",
+          "caption": "Пауза без протокола",
+          "clue": {
+            "title": "В кадре",
+            "body": "Стул рядом с микрофоном свободен."
+          }
+        },
+        "outcome": {
+          "title": "В голосе узнали знакомого",
+          "body": "Маттео обнаружил, что переносил на героя интонации своего руководителя. Он перестал выдавать привычный внутренний голос за единственное чтение текста."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Какой довод Виола приводит против уверенности Маттео?",
+        "options": [
+          "Автор не имеет права выбирать характер собственного персонажа.",
+          "Доброжелательные действия текста допускают иную интонацию власти.",
+          "Если герой предлагает чай, он обязательно боится своего гостя."
+        ],
+        "answer": 1,
+        "explanation": "Она ссылается на улыбку и чай и поясняет, что доброжелательность не исключает авторитета."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что означает «tra le righe» в рассуждении Маттео?",
+        "options": [
+          "Слова стоят между двумя строками рукописи.",
+          "Реплика произносится тише других в записи.",
+          "Намерение подразумевается, а не названо прямо."
+        ],
+        "answer": 2,
+        "explanation": "Маттео считает напоминание о власти скрытым намерением нейтральной реплики о стуле.",
+        "anchor": "tra le righe"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 0,
+          "prompt": "Что Виола считает результатом двух своих чтений?",
+          "options": [
+            "Одни и те же сведения звучат как разные отношения между героями.",
+            "Содержание сцены меняется из-за добавленных сведений о прошлом гостя.",
+            "Два одинаковых персонажа оказываются разными людьми в тексте."
+          ],
+          "answer": 0,
+          "explanation": "Виола подчёркивает, что слова одинаковые и сведения не добавлены; меняется предложенное отношение."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 0,
+          "prompt": "Что заставляет Маттео пересмотреть происхождение голоса герцога?",
+          "options": [
+            "Он замечает, что Виола тайно заменила строку в рукописи.",
+            "Он узнаёт манеру начальника и добавленную по памяти фразу.",
+            "Он слышит, что микрофон делает все голоса слишком строгими."
+          ],
+          "answer": 1,
+          "explanation": "Он сам произносит отсутствующую фразу и узнаёт в ней привычное начало совещаний руководителя."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-parete-che-sospira",
+    "language": "it",
+    "level": "B2",
+    "title": "Il sospiro della parete",
+    "topic": "Paura e orgoglio",
+    "summary": "Un rumore nella sala prove mette alla prova la sicurezza di chi lo aveva liquidato come una sciocchezza.",
+    "context": "Sei Irene e torni nella sala appena ridipinta. Paolo ha promesso di controllarla da solo, ma il suo resoconto è meno tranquillo della sua voce.",
+    "hook": "Quanto coraggio serve per dire che si è avuto paura?",
+    "genre": "комедия призрака без мистики",
+    "source": {
+      "title": "La casa del Granella",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/La_casa_del_Granella",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему мотиву исследованного произведения. Современная ситуация, персонажи, итальянские диалоги, русские переводы и обе развилки написаны заново; это не подлинный текст автора."
+    },
+    "plotFingerprint": "confident-skeptic-startled-by-loose-wallpaper|investigate-with-witness-or-film-brave-report|light-on-repair-or-self-authorised-jumpy-outtake",
+    "pedagogy": {
+      "rationaleRU": "B2: ненадёжная уверенность, разница между убеждением и реакцией, ироническая самооценка после наблюдения.",
+      "grammar": [
+        "concessive e distinzione tra fatto e interpretazione",
+        "congiuntivo dopo negazioni di certezza",
+        "periodo ipotetico con condizionale"
+      ],
+      "listeningFocusRU": "Уловить расхождение между уверенным объяснением и поведением; отличить признание переживания от веры в сверхъестественную причину."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Irene",
+        "roleRU": "Игрок: участница театральной студии"
+      },
+      {
+        "actorId": "maker",
+        "name": "Paolo",
+        "roleRU": "Коллега, который слишком уверенно отрицал чужой страх"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "farsi suggestionare",
+        "ru": "поддаться впечатлению и воображению"
+      },
+      {
+        "term": "alle mie spalle",
+        "ru": "за моей спиной"
+      },
+      {
+        "term": "a mente fredda",
+        "ru": "на трезвую голову"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Non c’è nessun motivo di farsi suggestionare. È una sala prove appena sistemata, non un castello. Ho promesso che avrei controllato da solo e infatti sono ancora qui. Se senti un rumore alle mie spalle, sarà una finestra. O una tubatura. Non occorre girarsi ogni volta che una stanza respira.",
+            "ru": "Нет причины поддаваться воображению. Это только что отремонтированная репетиционная комната, а не замок. Я обещал проверить её один и, как видишь, всё ещё здесь. Если услышишь шум за моей спиной, это будет окно. Или труба. Незачем оборачиваться каждый раз, когда комната дышит."
+          },
+          {
+            "speaker": 0,
+            "text": "Hai appena detto che una stanza respira. Ieri ridevi di chi aveva sentito quel fruscio; oggi mi stai parlando dalla soglia. A mente fredda potremmo cercare la causa, senza decidere prima che chi si spaventa sia ridicolo.",
+            "ru": "Ты только что сказал, что комната дышит. Вчера ты смеялся над теми, кто слышал этот шорох, а сегодня разговариваешь со мной с порога. На трезвую голову мы могли бы поискать причину, не решая заранее, что испугавшийся человек смешон."
+          },
+          {
+            "speaker": 1,
+            "text": "Sono sulla soglia perché qui prende meglio il telefono. Certo, se tu restassi un minuto non cambierebbe niente alla validità della mia spiegazione. La spiegazione è ancora in preparazione, ma questo è un dettaglio.",
+            "ru": "Я стою на пороге, потому что здесь телефон лучше ловит. Конечно, если ты останешься на минуту, обоснованность моего объяснения от этого не изменится. Объяснение пока готовится, но это мелочь."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Resto qui con te e accendo la luce di servizio. Guardiamo quella parete insieme.",
+            "ru": "Я останусь и включу рабочий свет. Давай вместе посмотрим на ту стену.",
+            "next": "a"
+          },
+          {
+            "text": "Registriamo il tuo resoconto per riascoltarlo noi due. Il telefono resta sul tavolo.",
+            "ru": "Запишем твой отчёт, чтобы потом послушать вдвоём. Телефон останется на столе.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "phone",
+          "mood": "thinking",
+          "caption": "Рациональный отчёт с порога",
+          "clue": {
+            "title": "В кадре",
+            "body": "За спиной Паоло виден край полосы обоев."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Con questa luce si vede: è un lembo di carta da parati che si stacca vicino al termosifone. L’aria lo solleva e poi lo lascia cadere. Avevo già considerato un fenomeno del genere, naturalmente. Non proprio quel lembo, forse, ma una categoria molto vicina di fenomeni perfettamente spiegabili.",
+            "ru": "При таком свете видно: возле батареи отходит край обоев. Воздух поднимает его, а потом отпускает. Разумеется, я уже рассматривал нечто подобное. Возможно, не именно этот край, но очень близкую категорию вполне объяснимых явлений."
+          },
+          {
+            "speaker": 0,
+            "text": "Non devi dimostrare di averlo saputo prima. Anch’io avrei fatto un salto sentendolo al buio. L’importante è che adesso possiamo sistemarlo. Ti passo la colla e tengo ferma la scala bassa; se preferisci restare a terra, comincio io. Sapere da dove viene un rumore non cancella la reazione che hai avuto.",
+            "ru": "Тебе не нужно доказывать, что ты заранее знал причину. Услышав это в темноте, я тоже вздрогнула бы. Главное, что теперь можно всё исправить. Дам клей и придержу низкую стремянку; если хочешь остаться на полу, начну сама. Знание причины шума не отменяет прежней реакции."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Prima spostiamo i mobili, poi incolliamo il bordo senza spegnere la luce.",
+            "ru": "Сначала отодвинем мебель, потом приклеим край, не выключая света.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "tools",
+          "mood": "speaking",
+          "caption": "Прозаическая причина",
+          "clue": {
+            "title": "В кадре",
+            "body": "На столе стоят клей и небольшая кисть."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Il sottoscritto conferma di non avvertire alcuna paura e di avere la situazione pienamente sotto... Aspetta! No, non spegnere niente. Ho solo spostato il piede oltre il pouf, forse un po’ in fretta. Il telefono ha ripreso anche quello? Sarebbe preferibile allegare al video una nota sul pavimento poco comodo.",
+            "ru": "Нижеподписавшийся подтверждает, что не испытывает никакого страха и полностью контролирует ситуа... Подожди! Нет, ничего не выключай. Я просто переступил через пуфик, возможно, немного поспешно. Телефон снял и это? Предпочтительно приложить к видео примечание о неудобном полу."
+          },
+          {
+            "speaker": 0,
+            "text": "Ha ripreso il tuo passo e il lembo di carta che l’aria muoveva dietro di te. Quindi abbiamo sia la reazione sia la causa, senza bisogno di un colpevole. Ti mostro tutto prima di conservare il video. Se ti mette a disagio, lo cancelliamo: non serviva a dimostrare che sei meno coraggioso degli altri.",
+            "ru": "Он снял твой шаг и край обоев, который воздух шевелил за твоей спиной. Так что у нас есть и реакция, и причина, без необходимости искать виновного. Прежде чем сохранить видео, я всё тебе покажу. Если тебе неприятно, удалим: мы не пытались доказать, что ты менее храбрый, чем остальные."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Riguardiamolo insieme e decidiamo insieme se tenerlo. Poi fissiamo quella carta.",
+            "ru": "Пересмотрим вместе и вместе решим, оставлять ли запись. Потом закрепим обои.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "phone",
+          "mood": "speaking",
+          "caption": "Отчёт с незапланированным шагом",
+          "clue": {
+            "title": "В кадре",
+            "body": "Телефон стоит на столе и направлен на освещённую стену."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Puoi lasciarmi la luce accesa finché finisco? Non per il rumore: ormai l’abbiamo spiegato. È per distinguere bene il bordo. E magari potresti sederti ancora un momento su quel secondo sgabello. Ho l’impressione che lavoreremo con maggiore precisione se nessuno deve fingere di essere qui per caso.",
+            "ru": "Можешь оставить свет, пока я закончу? Не из-за шума: его мы уже объяснили. Чтобы хорошо видеть край. И, может быть, ты ещё ненадолго сядешь на второй табурет. Мне кажется, мы поработаем точнее, если никому не надо будет притворяться, что он здесь случайно."
+          },
+          {
+            "speaker": 0,
+            "text": "Mi siedo volentieri. Non preparo nessun verbale e non racconterò che abbiamo sconfitto un fantasma. Abbiamo incollato della carta e imparato a chiedere compagnia. Per una sala prove è già un buon risultato, soprattutto prima dell’inizio della prova vera.",
+            "ru": "С удовольствием сяду. Никакого протокола не готовлю и не стану рассказывать, будто мы победили привидение. Мы приклеили бумагу и научились просить побыть рядом. Для репетиционной комнаты это уже хороший результат, особенно до начала настоящей репетиции."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "tools",
+          "mood": "pleased",
+          "caption": "Второй табурет",
+          "clue": {
+            "title": "В кадре",
+            "body": "Два табурета стоят у стены при включённом свете."
+          }
+        },
+        "outcome": {
+          "title": "Свет оставили включённым",
+          "body": "Обычную причину шума нашли вместе. Паоло сумел попросить о компании, не доказывая, что он никогда ничего не боялся."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Puoi conservarlo, ma per noi due. La nota sul pavimento non serve: guardandomi da fuori, vedo che è stato proprio un salto di orgoglio. Questa carta però ha un movimento interessante. Se la fissiamo a un telaio, potrebbe fare da fantasma nello spettacolo, senza far inciampare nessuno.",
+            "ru": "Можешь сохранить, но только для нас двоих. Примечание о полу не нужно: со стороны вижу, что это был прыжок моего самолюбия. А у бумаги интересное движение. Если закрепить её на раме, она могла бы стать привидением в спектакле, не заставляя никого спотыкаться."
+          },
+          {
+            "speaker": 0,
+            "text": "D’accordo, niente pubblico per il tuo rapporto. Il pubblico vedrà soltanto la carta, montata bene e lontana dal passaggio. Quanto alla sala misteriosa, proporrei un nuovo nome: stanza delle spiegazioni che arrivano un minuto dopo il grido. Anche gli scettici hanno diritto a quel minuto.",
+            "ru": "Договорились, у твоего отчёта зрителей не будет. Зрители увидят только бумагу, надёжно закреплённую вдали от прохода. А загадочной комнате предлагаю новое название: комната объяснений, которые приходят через минуту после крика. Даже скептики имеют право на эту минуту."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "book",
+          "mood": "pleased",
+          "caption": "Реквизит вместо слуха",
+          "clue": {
+            "title": "В кадре",
+            "body": "Полоса бумаги лежит на столе рядом с эскизом рамки."
+          }
+        },
+        "outcome": {
+          "title": "Запись для двоих",
+          "body": "Посмотрев запись, Паоло признал свой испуг и разрешил оставить видео только для них двоих. Бумага получила новую сценическую задачу."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 2,
+        "prompt": "Что выдаёт неуверенность Паоло за его уверенной речью?",
+        "options": [
+          "Он отказывается признавать существование любого шума в помещении.",
+          "Он оправдывает положение у двери и косвенно просит Ирене остаться.",
+          "Он заранее подробно описывает повреждение у батареи и способ ремонта."
+        ],
+        "answer": 1,
+        "explanation": "Он объясняет, почему стоит у двери, предлагает собеседнице остаться и признаёт, что объяснение ещё не готово."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что Паоло отрицает словами «farsi suggestionare»?",
+        "options": [
+          "Необходимость проверить, правильно ли работает телефон.",
+          "Возможность услышать шум после ремонта комнаты.",
+          "Готовность поддаться тревожному впечатлению и воображению."
+        ],
+        "answer": 2,
+        "explanation": "Он противопоставляет обычную комнату замку и утверждает, что не стоит давать воображению усиливать страх.",
+        "anchor": "farsi suggestionare"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Как Ирене отвечает на попытку Паоло представить открытие как своё предвидение?",
+          "options": [
+            "Даёт понять, что признать прежний испуг можно и после объяснения причины.",
+            "Требует, чтобы он доказал заранее записанную версию объяснения.",
+            "Предлагает не ремонтировать стену, пока он не признает свою ошибку."
+          ],
+          "answer": 0,
+          "explanation": "Она говорит, что не нужно доказывать прежнее знание: обычная причина не отменяет человеческой реакции."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Зачем Ирене предлагает показать запись перед её сохранением?",
+          "options": [
+            "Чтобы Паоло согласовал публичную рекламу нового спектакля.",
+            "Чтобы отделить полезное наблюдение от возможного унижения участника.",
+            "Чтобы скрыть от Паоло движение бумаги и поддержать его страх."
+          ],
+          "answer": 1,
+          "explanation": "Она предлагает удалить видео, если оно неприятно, и объясняет, что не собиралась доказывать недостаток его храбрости."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-manica-ribelle",
+    "language": "it",
+    "level": "B2",
+    "title": "Una manica per due discorsi",
+    "topic": "Riconoscimento e rispetto",
+    "summary": "Prima di una premiazione, Emma teme che il suo progetto diventi soltanto lo sfondo della pubblicità altrui.",
+    "context": "Sei Emma, giovane artigiana invitata a presentare una scultura. Il tuo ex insegnante Aldo ti accompagna con un abito preso in prestito e una decisione da prendere.",
+    "hook": "Come si restituisce la parola a chi dovrebbe averla già?",
+    "genre": "социальная комедия",
+    "source": {
+      "title": "Marsina stretta",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/Marsina_stretta",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему мотиву исследованного произведения. Современная ситуация, персонажи, итальянские диалоги, русские переводы и обе развилки написаны заново; это не подлинный текст автора."
+    },
+    "plotFingerprint": "tight-jacket-provokes-quiet-mentor-to-defend-artist|stand-up-with-student-or-occupy-patrons-hands|torn-sleeve-public-courage-or-work-displaces-leaflet",
+    "pedagogy": {
+      "rationaleRU": "B2: скрытое социальное давление, право на собственный рассказ, стратегический ответ без прямого оскорбления.",
+      "grammar": [
+        "condizionale di cortesia e attenuazione",
+        "congiuntivo nelle finali",
+        "discorso riportato e contrasto fra intenzioni"
+      ],
+      "listeningFocusRU": "Распознать вежливое присвоение чужого выступления и сравнить два способа вернуть автору слово без прямого оскорбления."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Emma",
+        "roleRU": "Игрок: автор керамической скульптуры, получившей награду"
+      },
+      {
+        "actorId": "conductor",
+        "name": "Aldo",
+        "roleRU": "Бывший преподаватель, сопровождающий ученицу"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "mettere in secondo piano",
+        "ru": "отодвигать на второй план"
+      },
+      {
+        "term": "prendere la parola",
+        "ru": "брать слово"
+      },
+      {
+        "term": "senza far rumore",
+        "ru": "не привлекая внимания"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Questo abito prestato mi tira alle spalle, ma non è per questo che sono nervoso. Ho visto il programma: il finanziatore vuole presentare la tua scultura attraverso il nuovo catalogo della sua azienda. Dice che il pubblico capirà meglio. Ho paura che finisca per mettere in secondo piano proprio il lavoro che ha ricevuto il premio.",
+            "ru": "Этот одолженный костюм тянет мне в плечах, но нервничаю я не поэтому. Я видел программу: спонсор хочет представить твою скульптуру через новый каталог своей компании. Говорит, публика так лучше поймёт. Боюсь, что он в итоге отодвинет на второй план именно работу, получившую награду."
+          },
+          {
+            "speaker": 0,
+            "text": "Mi ha detto di essere breve, come se i mesi in laboratorio fossero un dettaglio. Vorrei prendere la parola senza sembrare ingrata. Potrei anche sorridere e lasciar finire tutto senza far rumore, ma poi sul palco ci sarebbe il mio oggetto e nessuna delle mie scelte.",
+            "ru": "Он попросил меня говорить кратко, словно месяцы в мастерской — мелочь. Я хотела бы взять слово, не показавшись неблагодарной. Можно улыбаться и дать всему тихо закончиться, но тогда на сцене будет моя вещь, а от моих решений не останется ничего."
+          },
+          {
+            "speaker": 1,
+            "text": "Non devi ringraziare rinunciando alla tua voce. Io di solito aspetto il momento opportuno; sospetto che, aspettandolo ancora, questa sera parleremmo soltanto del catalogo. Dimmi come posso esserti utile.",
+            "ru": "Ты не обязана благодарить, отказываясь от своего голоса. Обычно я жду подходящего момента; подозреваю, что, если ждать и дальше, сегодня мы поговорим только о каталоге. Скажи, чем я могу помочь."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Stai accanto a me e chiedimi davanti a tutti come ho costruito la parte mobile.",
+            "ru": "Встань рядом и при всех спроси, как я сделала подвижную часть.",
+            "next": "a"
+          },
+          {
+            "text": "Proponiamo al finanziatore di sostenere la base mentre io mostro la parte mobile.",
+            "ru": "Предложим спонсору поддержать основание, пока я показываю подвижную часть.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "tools",
+          "mood": "thinking",
+          "caption": "Перед вручением",
+          "clue": {
+            "title": "В кадре",
+            "body": "На столе стоит скульптура с широкой керамической основой."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Quando lui ha alzato il catalogo, ho fatto un gesto troppo largo per invitarti al microfono. Hai sentito quel rumore? La cucitura della manica ha ceduto. Però il microfono è ancora dalla tua parte e io posso fare la domanda anche con la giacca scucita: come fai a muovere l’elemento senza spostare la base?",
+            "ru": "Когда он поднял каталог, я сделал слишком широкий жест, приглашая тебя к микрофону. Слышала этот звук? Шов рукава разошёлся. Но микрофон всё ещё на твоей стороне, а задать вопрос я могу и с разошедшимся пиджаком: как ты двигаешь элемент, не сдвигая основание?"
+          },
+          {
+            "speaker": 0,
+            "text": "Posso mostrarlo lentamente: la base serve proprio a distribuire il peso. Grazie per la domanda, non per il rumore. Adesso le persone stanno guardando dove indico io, invece di cercare il mio nome nel catalogo. Non occorre che tu spieghi il vestito: una dimostrazione chiara può cominciare anche con un piccolo incidente.",
+            "ru": "Я могу показать медленно: основание как раз распределяет вес. Спасибо за вопрос, не за звук. Теперь люди смотрят туда, куда показываю я, а не ищут моё имя в каталоге. Не нужно объяснять историю костюма: понятная демонстрация может начаться и с маленького происшествия."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Completo la dimostrazione e poi ringrazio chi l’ha resa possibile, senza saltare il mio lavoro.",
+            "ru": "Я закончу демонстрацию, а потом поблагодарю тех, кто помог, не пропуская свою работу.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "tools",
+          "mood": "speaking",
+          "caption": "Вопрос у микрофона",
+          "clue": {
+            "title": "В кадре",
+            "body": "Рукав свободно висит у локтя Альдо, а Эмма стоит перед скульптурой."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ha accettato di reggere la base e può appoggiarla sul tavolo quando vuole. Ora tiene entrambe le mani occupate, quindi il catalogo è rimasto sulla sedia. Mentre gli avvicinavo quella sedia, la manica si è scucita: l’ho tolta del tutto e lasciata lì. Non importa. Comincia dalla parte che il pubblico non vedrebbe da sola.",
+            "ru": "Он согласился поддержать основание и может поставить его на стол, когда захочет. Сейчас у него заняты обе руки, поэтому каталог остался на стуле. Пока я придвигал ему стул, рукав распустился по шву: я снял его совсем и оставил там. Неважно. Начни с той части, которую публика сама не заметит."
+          },
+          {
+            "speaker": 0,
+            "text": "Non voglio ridurlo a un piedistallo umano. Gli spiego che cosa sta sostenendo, così la sua presenza diventa utile alla dimostrazione anziché sostituirla. Posso riconoscere il contributo della sua azienda senza lasciare che racconti lui le mie decisioni. Se interviene, gli chiederò come cambia il peso quando muovo questo pezzo.",
+            "ru": "Я не хочу превращать его в живую подставку. Объясню, что именно он держит: тогда его присутствие поможет демонстрации, а не заменит её. Можно признать вклад его компании, не отдавая ему рассказ о моих решениях. Если он вмешается, спрошу, как меняется вес, когда я двигаю эту деталь."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Rendo la dimostrazione un dialogo sul progetto e mantengo io il filo della spiegazione.",
+            "ru": "Я превращу демонстрацию в разговор о проекте и сама сохраню нить объяснения.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "tools",
+          "mood": "speaking",
+          "caption": "Основание для разговора",
+          "clue": {
+            "title": "В кадре",
+            "body": "Каталог лежит на стуле; для скульптуры приготовлен устойчивый стол."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Hai spiegato il progetto e ringraziato con precisione, senza sparire dietro i ringraziamenti. Io invece ho perso metà giacca prima ancora di sedermi. Domani la porterò a riparare. Per stasera mi basta non aver usato la prudenza come scusa per lasciarti sola davanti a quel catalogo.",
+            "ru": "Ты объяснила проект и поблагодарила всех по делу, не исчезнув за благодарностями. А я потерял половину пиджака, даже не успев сесть. Завтра отнесу в ремонт. Сегодня мне достаточно того, что я не прикрылся осторожностью, оставив тебя одну перед этим каталогом."
+          },
+          {
+            "speaker": 0,
+            "text": "La giacca si sistema; il mio primo discorso, se l’avessi lasciato ad altri, non avrei potuto riprenderlo domani. Nelle foto forse si noterà la tua manica. Però chi era qui ricorderà anche perché ti sei alzato. Io certamente sì.",
+            "ru": "Пиджак можно починить, а свою первую речь, отдай я её другим, завтра вернуть уже не получилось бы. На фотографиях, наверное, будет виден твой рукав. Но те, кто был здесь, вспомнят и то, почему ты встал. Я — совершенно точно."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "После своего выступления",
+          "clue": {
+            "title": "В кадре",
+            "body": "Альдо держит разошедшийся край пиджака, а Эмма убирает работу."
+          }
+        },
+        "outcome": {
+          "title": "Вопрос вернул слово",
+          "body": "Альдо поддержал Эмму открытым вопросом. Неловкость с костюмом не помешала ей самой объяснить проект и принять признание."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Il catalogo non è nemmeno stato aperto, ma non abbiamo escluso il finanziatore. Quando gli ho chiesto del peso ha risposto proprio sull’oggetto. Questo mi ha aiutata a spiegare meglio. Ora che la base è sul tavolo, possiamo finalmente sederci anche noi. La tua giacca, invece, sembra ancora cercare qualcosa.",
+            "ru": "Каталог даже не открыли, но и спонсора мы не исключили. Когда я спросила о весе, он ответил именно о вещи. Это помогло мне лучше объяснить. Теперь основание на столе, и мы наконец тоже можем сесть. А твой пиджак, кажется, ещё что-то ищет."
+          },
+          {
+            "speaker": 1,
+            "text": "La manica! L’ho lasciata sulla sua sedia. Devo tornare a chiedergliela prima che la consideri parte della scultura. Dopo tutte le parole scelte con cura, mi tocca una domanda molto semplice: scusi, ha visto per caso il resto del mio vestito?",
+            "ru": "Рукав! Я оставил его на его стуле. Надо вернуться и забрать, пока он не решил, что это часть скульптуры. После всех тщательно подобранных слов мне достался очень простой вопрос: извините, вы случайно не видели остальную часть моего костюма?"
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "tools",
+          "mood": "pleased",
+          "caption": "Забытый рукав",
+          "clue": {
+            "title": "В кадре",
+            "body": "Отдельный рукав лежит на стуле рядом с закрытым каталогом."
+          }
+        },
+        "outcome": {
+          "title": "Общая демонстрация",
+          "body": "Спонсор стал участником рассказа Эммы, а не его заменой. После выступления Альдо пришлось вернуться за оставленным на стуле рукавом."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Почему Эмму не устраивает возможность спокойно промолчать?",
+        "options": [
+          "Она боится, что ей придётся самой читать рекламный каталог.",
+          "Она хочет скрыть, что компания помогала оплачивать её работу.",
+          "Тогда её работа будет показана без её собственного объяснения решений."
+        ],
+        "answer": 2,
+        "explanation": "Эмма противопоставляет присутствие своего предмета на сцене отсутствию своего авторского рассказа."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что означает «mettere in secondo piano» в опасении Альдо?",
+        "options": [
+          "Сделать скульптуру менее важной частью выступления, чем рекламу.",
+          "Поставить скульптуру на второй этаж выставочного помещения.",
+          "Попросить публику отойти от сцены во время демонстрации."
+        ],
+        "answer": 0,
+        "explanation": "Опасение касается внимания и смысла выступления, а не физического расположения работы.",
+        "anchor": "mettere in secondo piano"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Почему Эмма благодарит за вопрос, а не за шум?",
+          "options": [
+            "Она считает происшествие с одеждой частью заранее написанного сценария.",
+            "Вопрос направил внимание к её работе; случайность сама по себе не была помощью.",
+            "Шум оказался удачным способом сделать рекламу компании менее заметной."
+          ],
+          "answer": 1,
+          "explanation": "Эмма замечает, что люди смотрят туда, куда она показывает; полезным был содержательный вопрос."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Как Эмма понимает участие спонсора в демонстрации?",
+          "options": [
+            "Как возможность заставить его молча стоять до конца вечера.",
+            "Как отказ от любых благодарностей его компании за помощь.",
+            "Как полезную роль в разговоре, который остаётся рассказом автора."
+          ],
+          "answer": 2,
+          "explanation": "Она прямо отвергает роль живого пьедестала и хочет включить его наблюдения, сохранив собственное объяснение решений."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-pubblico-impermeabile",
+    "language": "it",
+    "level": "B2",
+    "title": "La prima fila non si muove",
+    "topic": "Comunicare senza perdere la faccia",
+    "summary": "Una lezione cominciata troppo presto trova un pubblico molto più paziente del previsto.",
+    "context": "Sei Marta, collaboratrice di un centro culturale. Entri nella sala durante le prove di una conferenza e ti accorgi che Riccardo sta parlando senza collegamento.",
+    "hook": "Come si interrompe qualcuno che scambia il silenzio per consenso?",
+    "genre": "комедия самолюбия",
+    "source": {
+      "title": "L’eresia catara",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/L'eresia_catara",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему мотиву исследованного произведения. Современная ситуация, персонажи, итальянские диалоги, русские переводы и обе развилки написаны заново; это не подлинный текст автора."
+    },
+    "plotFingerprint": "polemic-lecture-delivered-to-chair-covers|become-one-real-listener-or-reveal-empty-room|personal-story-replaces-rant-or-cover-as-silent-critic",
+    "pedagogy": {
+      "rationaleRU": "B2: эмоциональная предвзятость восприятия, тактичное сообщение неприятного факта, превращение публичной претензии в личное объяснение.",
+      "grammar": [
+        "subordinate soggettive e completive",
+        "concessive con sebbene",
+        "discorso indiretto e formule attenuative"
+      ],
+      "listeningFocusRU": "Понять, как задетое самолюбие влияет на трактовку молчания; различить тактичную смену адресата и прямое сообщение неприятного факта."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Marta",
+        "roleRU": "Игрок: сотрудница культурного центра, готовящая запись"
+      },
+      {
+        "actorId": "conductor",
+        "name": "Riccardo",
+        "roleRU": "Лектор, увлечённый ответом своему рецензенту"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "prendere sul serio",
+        "ru": "принимать всерьёз"
+      },
+      {
+        "term": "alla luce dei fatti",
+        "ru": "в свете фактов"
+      },
+      {
+        "term": "senza mezzi termini",
+        "ru": "без обиняков"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Vedo che la prima fila segue senza interrompere. Bene: forse qui qualcuno è disposto a prendere sul serio la mia ricerca. Il recensore sosteneva che confondessi esempi e conclusioni. Alla luce dei fatti, questa critica non regge. Lo dirò senza mezzi termini, anche se avrei preferito usare il tempo per presentare le immagini.",
+            "ru": "Вижу, первый ряд слушает не перебивая. Хорошо: возможно, здесь кто-то готов принять моё исследование всерьёз. Рецензент утверждал, будто я путаю примеры с выводами. В свете фактов эта критика несостоятельна. Скажу это без обиняков, хотя предпочёл бы посвятить время изображениям."
+          },
+          {
+            "speaker": 0,
+            "text": "Riccardo, sono arrivata per controllare il collegamento. La spia della diretta è spenta. Da qui vedo soltanto le sagome dei coprisedie, nella parte buia della sala. Prima di continuare forse dovremmo capire a chi stai parlando e che cosa vorresti lasciargli.",
+            "ru": "Риккардо, я пришла проверить связь. Индикатор трансляции не горит. Отсюда мне видны только очертания чехлов на стульях в тёмной части зала. Прежде чем продолжать, пожалуй, стоит понять, с кем ты говоришь и что хотел бы ему передать."
+          },
+          {
+            "speaker": 1,
+            "text": "Credevo che avessi già aperto il collegamento. Non ho controllato: quando comincio a rispondere a quella recensione, perdo di vista tutto il resto. Però un silenzio così attento mi sembrava un buon segno.",
+            "ru": "Я думал, ты уже включила трансляцию. Не проверил: когда начинаю отвечать на эту рецензию, всё остальное выпадает из поля зрения. Но такое внимательное молчание показалось мне хорошим знаком."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Mi siedo davanti a te. Spiegami il tuo punto più importante, senza pensare al recensore.",
+            "ru": "Я сяду перед тобой. Объясни мне свою главную мысль, не думая о рецензенте.",
+            "next": "a"
+          },
+          {
+            "text": "Accendiamo la luce e guardiamo la sala. Poi registriamo una conclusione nuova, solo per prova.",
+            "ru": "Включим свет и посмотрим на зал. Потом запишем новое заключение, только для пробы.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "laptop",
+          "mood": "thinking",
+          "caption": "Слишком тихий первый ряд",
+          "clue": {
+            "title": "В кадре",
+            "body": "На стульях в полутёмной части зала надеты защитные чехлы."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Se ti guardo, mi accorgo che non ho ancora mostrato una sola immagine. Sto rispondendo a una persona assente, mentre quella presente aspetta di capire perché mi interessi tanto questo argomento. Da studente avevo trovato una fotografia senza data; tre dettagli sullo sfondo mi avevano fatto cambiare ipotesi. È da lì che è iniziata la ricerca.",
+            "ru": "Когда я смотрю на тебя, замечаю: я ещё не показал ни одного изображения. Отвечаю отсутствующему человеку, пока присутствующий ждёт объяснения, чем меня так увлекла эта тема. Студентом я нашёл фотографию без даты; три детали на заднем плане заставили меня изменить гипотезу. С этого и началось исследование."
+          },
+          {
+            "speaker": 0,
+            "text": "Questo posso seguirlo: un oggetto, un dubbio e qualcosa che ti ha fatto correggere l’idea. Non devi fingere che la recensione non ti abbia ferito. Però, se parti dalla fotografia, inviti chi ascolta a ragionare con te. Se parti dall’avversario, gli chiedi prima di scegliere una parte in una discussione che non conosce.",
+            "ru": "Вот за этим я могу следить: предмет, сомнение и то, что заставило тебя исправить предположение. Не надо делать вид, будто рецензия тебя не задела. Но если начать с фотографии, ты приглашаешь слушателя рассуждать вместе с тобой. Если с оппонента — сначала просишь выбрать сторону в незнакомом споре."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Riparti da quella fotografia. Io ti dirò dove smetto di capire, non dove devi vincere.",
+            "ru": "Начни с той фотографии. Я скажу, где перестаю понимать, а не где тебе надо победить.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "camera",
+          "mood": "speaking",
+          "caption": "Первый настоящий слушатель",
+          "clue": {
+            "title": "В кадре",
+            "body": "Марта сидит в первом ряду, а на экране открыта старая фотография."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Sono davvero coprisedie. Quello in fondo mi sembrava un signore particolarmente severo; evidentemente era una piega. Mi dispiace averti parlato come se stessi interrompendo un incontro. Non c’era nessuno da convincere, a parte me, eppure riuscivo già a immaginare chi fosse d’accordo e chi no.",
+            "ru": "Это действительно чехлы. Тот в глубине казался мне особенно строгим господином; видимо, это была складка. Прости, что говорил с тобой так, будто ты прерываешь встречу. Убеждать было некого, кроме себя самого, а я уже умудрялся представлять, кто согласен, а кто нет."
+          },
+          {
+            "speaker": 0,
+            "text": "La prova non è andata in diretta, quindi abbiamo ancora la possibilità di scegliere il tono. Puoi lasciare un riferimento alla critica, purché serva a spiegare meglio la tua tesi. Non devi chiedere scusa ai tessuti. Se riesci a sorridere dell’equivoco, forse riuscirai anche a parlare senza aspettarti un processo a ogni domanda.",
+            "ru": "Проба не попала в трансляцию, так что мы ещё можем выбрать тон. Можно оставить упоминание критики, если оно помогает объяснить твою мысль. Извиняться перед тканью необязательно. Если сможешь улыбнуться недоразумению, возможно, сможешь и говорить, не ожидая суда за каждым вопросом."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Registriamo un finale breve, con una domanda aperta invece di una replica personale.",
+            "ru": "Запишем короткое заключение с открытым вопросом вместо личного возражения.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "laptop",
+          "mood": "thinking",
+          "caption": "Свет меняет аудиторию",
+          "clue": {
+            "title": "В кадре",
+            "body": "Рабочий свет освещает пустые стулья и их чехлы."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Davanti a una persona vera ho parlato meno forte e spiegato di più. Alla terza foto ti sei messa a ridere perché avevo scambiato un secchio per un cappello. Era un errore utile, non una catastrofe. Davanti ai coprisedie mi sentivo tenuto a non sbagliare mai.",
+            "ru": "Перед живым человеком я говорил тише и объяснял больше. На третьем фото ты засмеялась, потому что я принял ведро за шляпу. Это была полезная ошибка, а не катастрофа. Перед чехлами я чувствовал себя обязанным никогда не ошибаться."
+          },
+          {
+            "speaker": 0,
+            "text": "Perché non potevano fare una domanda e riportarti alla fotografia. Domani i partecipanti potranno farlo. Lascia spazio anche a loro e mostra il secchio: dopo tanto parlare di prove, sarebbe un peccato nascondere proprio quella che ti ha fatto cambiare idea.",
+            "ru": "Потому что они не могли задать вопрос и вернуть тебя к фотографии. Завтра участники смогут. Оставь место и им, и покажи ведро: после стольких разговоров о доказательствах было бы жаль скрыть именно то, которое заставило тебя изменить мнение."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "camera",
+          "mood": "pleased",
+          "caption": "От спора к объяснению",
+          "clue": {
+            "title": "В кадре",
+            "body": "На экране увеличен спорный предмет на фотографии."
+          }
+        },
+        "outcome": {
+          "title": "Один человек изменил лекцию",
+          "body": "Марта стала настоящим адресатом. Риккардо заменил громкое опровержение рассказом о том, как исследование началось с исправления собственной ошибки."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ho ringraziato il pubblico per la pazienza e lasciato un coprisedia in prima fila. Non entrerà nell’inquadratura; mi ricorderà soltanto che il silenzio non prova niente. Il finale adesso chiede quali dettagli gli altri vedano nelle immagini. Mi sembra più interessante di una sentenza sul carattere del recensore.",
+            "ru": "Я поблагодарил публику за терпение и оставил один чехол в первом ряду. В кадр он не попадёт; просто напомнит мне, что молчание ничего не доказывает. Теперь в заключении я спрашиваю, какие детали видят на изображениях другие. По-моему, это интереснее приговора о характере рецензента."
+          },
+          {
+            "speaker": 0,
+            "text": "La registrazione è salvata come prova, non come incontro già avvenuto. E il tuo critico di stoffa resterà qui fino alle pulizie. Se domani una persona farà una domanda difficile, potrai almeno esser certo di una cosa: non sarà una piega del tessuto.",
+            "ru": "Запись сохранена как проба, а не как уже состоявшаяся встреча. А тканевый критик останется здесь до уборки. Если завтра человек задаст трудный вопрос, хотя бы в одном ты будешь уверен: это не складка на ткани."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "laptop",
+          "mood": "pleased",
+          "caption": "Критик из ткани",
+          "clue": {
+            "title": "В кадре",
+            "body": "Один стул ещё закрыт чехлом; остальные приготовлены для участников."
+          }
+        },
+        "outcome": {
+          "title": "Новая запись без мнимого согласия",
+          "body": "При включённом свете Риккардо признал ошибку. Вместо личной полемики он записал приглашение к обсуждению, а чехол оставил напоминанием."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 2,
+        "prompt": "Что признаёт Риккардо о своём восприятии ситуации?",
+        "options": [
+          "Он намеренно проводил репетицию перед пустыми чехлами для проверки света.",
+          "Увлечение спором заставило его принять непроверенное молчание за внимание.",
+          "Он знал, что трансляция выключена, но ожидал ответа от удалённых слушателей."
+        ],
+        "answer": 1,
+        "explanation": "Он не проверил подключение, потерял из виду остальное и воспринял тишину как хороший знак."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что выражает «senza mezzi termini» в намерении лектора?",
+        "options": [
+          "Он собирается высказать опровержение прямо, не смягчая формулировку.",
+          "Он намерен закончить лекцию, не используя научных понятий.",
+          "Он планирует отвечать только на вопросы первой половины встречи."
+        ],
+        "answer": 0,
+        "explanation": "Выражение относится к прямоте и резкости возражения, а не к длине или терминологии лекции.",
+        "anchor": "senza mezzi termini"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Какую перемену в общении предлагает Марта?",
+          "options": [
+            "Заменить изображения подробным рассказом о чувствах рецензента.",
+            "Попросить слушателя выбрать сторону до начала объяснения темы.",
+            "Вовлечь слушателя в ход мысли, а не в чужую личную полемику."
+          ],
+          "answer": 2,
+          "explanation": "Она противопоставляет приглашение рассуждать о фотографии требованию выбрать сторону в незнакомом споре."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 0,
+          "prompt": "Почему ошибка с чехлами важна не только как смешной случай?",
+          "options": [
+            "Она показывает, что лектор воображал реакции публики без реальной обратной связи.",
+            "Она доказывает, что слушатели специально спрятались, чтобы не задавать вопросов.",
+            "Она объясняет, почему рецензент неверно оценил изображения в исследовании."
+          ],
+          "answer": 0,
+          "explanation": "Риккардо признаёт: хотя убеждать было некого, он уже представлял согласных и несогласных."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-minestra-cosmica",
+    "language": "it",
+    "level": "B2",
+    "title": "Il posto della minestra",
+    "topic": "Grandi idee e piccoli bisogni",
+    "summary": "Un modello del sistema solare occupa il tagliere proprio mentre dovrebbe arrivare la cena.",
+    "context": "Sei Giada e stai preparando una minestra con Sergio, appassionato di astronomia. Le patate cotte sono finite in un progetto molto più grande della pentola.",
+    "hook": "La fame diventa meno reale se la si guarda dalle stelle?",
+    "genre": "философская бытовая комедия",
+    "source": {
+      "title": "Pallottoline!",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/Pallottoline!",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему мотиву исследованного произведения. Современная ситуация, персонажи, итальянские диалоги, русские переводы и обе развилки написаны заново; это не подлинный текст автора."
+    },
+    "plotFingerprint": "cosmic-perspective-dismisses-dinner-while-using-its-potatoes|ask-about-local-scale-or-serve-edible-model|planets-return-to-pot-or-jupiter-in-soup",
+    "pedagogy": {
+      "rationaleRU": "B2: смена масштаба как риторический приём, возражение абстрактному обесцениванию, метафора и буквальное действие.",
+      "grammar": [
+        "costruzioni concessive con per quanto",
+        "ipotetiche e condizionale",
+        "argomentazione per analogia e cambio di prospettiva"
+      ],
+      "listeningFocusRU": "Понять, как собеседница принимает большое сравнение, но оспаривает вывод о незначительности близких потребностей."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Giada",
+        "roleRU": "Игрок: хозяйка дома, готовящая общий ужин"
+      },
+      {
+        "actorId": "maker",
+        "name": "Sergio",
+        "roleRU": "Друг, увлечённый астрономией и космическими сравнениями"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "in fin dei conti",
+        "ru": "в конечном счёте"
+      },
+      {
+        "term": "perdere di vista",
+        "ru": "упускать из виду"
+      },
+      {
+        "term": "su scala",
+        "ru": "в масштабе"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Guarda queste patate lessate: quella grande potrebbe essere Giove. Le ho prese dal tagliere pulito, prima che finissero nella minestra. In fin dei conti, che cosa sono dieci minuti di ritardo rispetto all’età dell’universo? A volte basta cambiare prospettiva per accorgersi che le nostre piccole urgenze non meritano tanto rumore.",
+            "ru": "Посмотри на эти варёные картофелины: большая могла бы быть Юпитером. Я взял их с чистой доски, прежде чем они оказались в супе. В конечном счёте что такое десять минут опоздания по сравнению с возрастом Вселенной? Иногда достаточно сменить перспективу, чтобы понять: наши маленькие срочные дела не стоят такого шума."
+          },
+          {
+            "speaker": 0,
+            "text": "Però rischiamo di perdere di vista una cosa molto vicina: la minestra senza patate non è ancora la cena che stavamo preparando. Su scala cosmica forse non cambia nulla; su quella del nostro tavolo comincio ad avere fame. Non sto chiedendo di spegnere le stelle.",
+            "ru": "Но мы рискуем упустить из виду кое-что очень близкое: суп без картошки пока не тот ужин, который мы готовили. В космическом масштабе, возможно, ничего не меняется; в масштабе нашего стола я уже начинаю хотеть есть. Я не прошу выключать звёзды."
+          },
+          {
+            "speaker": 1,
+            "text": "Hai ragione a voler mangiare. Mi entusiasma l’idea di mostrare le distanze, anche se con queste patate posso soltanto suggerirle. Forse ho lasciato che il paragone diventasse un modo elegante per rimandare il mestolo.",
+            "ru": "Ты права, что хочешь есть. Меня увлекла идея показать расстояния, хотя этими картофелинами можно лишь намекнуть на них. Пожалуй, я позволил сравнению стать изящным способом отложить половник."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Continuiamo il paragone: nella tua mappa, dove si trova il nostro tavolo affamato?",
+            "ru": "Продолжим сравнение: где на твоей карте находится наш голодный стол?",
+            "next": "a"
+          },
+          {
+            "text": "Facciamo un modello commestibile nelle scodelle: possiamo immaginare le orbite mentre serviamo.",
+            "ru": "Сделаем съедобную модель в тарелках: можно представлять орбиты, пока разливаем суп.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "conversation",
+          "mood": "thinking",
+          "caption": "Планеты на разделочной доске",
+          "clue": {
+            "title": "В кадре",
+            "body": "Рядом с кастрюлей лежат остывшие варёные картофелины на чистой доске."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Il tavolo sarebbe qui, nel punto in cui qualcuno aspetta che io finisca una dimostrazione. La sua dimensione è minima, ma questo non misura l’importanza di chi ci si siede. Ho usato una distanza enorme per non rispondere a una domanda semplice. Nemmeno un telescopio mi direbbe se tu abbia già cenato.",
+            "ru": "Стол был бы здесь, в точке, где кто-то ждёт, пока я закончу объяснение. Его размер минимален, но это не измеряет важность того, кто за ним сидит. Я использовал огромное расстояние, чтобы не отвечать на простой вопрос. Даже телескоп не сказал бы мне, ужинала ли ты."
+          },
+          {
+            "speaker": 0,
+            "text": "È proprio il limite del paragone. Possiamo essere piccoli senza che i nostri bisogni scompaiano. Ti ascolterei volentieri anche dopo aver mangiato; non era necessario trasformare l’attesa in una prova di saggezza. Adesso rimettiamo questi pianeti nella pentola e teniamo aperta la discussione, magari con un piatto davanti.",
+            "ru": "Именно здесь предел сравнения. Мы можем быть маленькими, но наши потребности от этого не исчезают. Я охотно послушаю тебя и после еды; не было необходимости превращать ожидание в проверку мудрости. А теперь вернём планеты в кастрюлю и продолжим разговор, лучше уже с тарелкой перед собой."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Riscaldiamo insieme la minestra. Le domande sul cielo possono restare sul tavolo.",
+            "ru": "Давай вместе разогреем суп. Вопросы о небе могут остаться на столе.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "conversation",
+          "mood": "speaking",
+          "caption": "Масштаб голодного стола",
+          "clue": {
+            "title": "В кадре",
+            "body": "Две пустые тарелки стоят рядом с кастрюлей."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Potremmo far galleggiare i pezzi nella minestra, purché nessuno pensi che il sistema solare funzioni così. Non sarebbe un modello scientifico in scala: sarebbe una cena che ci ricorda una domanda. Io taglio il pianeta più grande e tu distribuisci gli altri. Se una patata affonda, non dovremo rivedere tutta l’astronomia.",
+            "ru": "Можно дать кусочкам плавать в супе, только пусть никто не решит, что Солнечная система устроена именно так. Это не научная модель в масштабе: это ужин, напоминающий о вопросе. Я порежу самую большую планету, а ты распределишь остальные. Если картофелина утонет, всю астрономию пересматривать не придётся."
+          },
+          {
+            "speaker": 0,
+            "text": "E non dovremo scegliere fra la curiosità e la fame. Ti chiedo soltanto una spiegazione abbastanza breve da lasciare il tempo per un cucchiaio. Quando dici «è tutto minuscolo», posso perfino essere d’accordo; è il passaggio a «quindi puoi aspettare» che non mi convince. La minestra rende quel salto logico piuttosto visibile.",
+            "ru": "И нам не придётся выбирать между любопытством и голодом. Только прошу объяснять достаточно кратко, чтобы оставалось время на ложку. Когда ты говоришь «всё это крошечное», я даже могу согласиться; меня не убеждает переход к «значит, ты можешь подождать». Суп делает этот логический скачок довольно заметным."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Serviamo prima di inventare altre orbite. Poi tu racconti e io posso finalmente assaggiare.",
+            "ru": "Давай разольём суп, прежде чем придумывать новые орбиты. Потом ты расскажешь, а я наконец попробую.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "conversation",
+          "mood": "speaking",
+          "caption": "Съедобное сравнение",
+          "clue": {
+            "title": "В кадре",
+            "body": "Половник лежит рядом с двумя приготовленными тарелками."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ho rimandato Giove nella pentola e il brodo ha recuperato il suo centro d’interesse. Ti chiedo scusa per aver fatto sembrare la tua fame una mancanza di immaginazione. Stasera guarderemo il cielo dal balcone, se ti va. Non prometto grandi scoperte, ma potrei almeno lasciare stare gli ingredienti.",
+            "ru": "Я отправил Юпитер обратно в кастрюлю, и бульон снова обрёл центр интереса. Прости, что выставил твой голод недостатком воображения. Вечером посмотрим на небо с балкона, если хочешь. Больших открытий не обещаю, но хотя бы ингредиенты могу оставить в покое."
+          },
+          {
+            "speaker": 0,
+            "text": "Volentieri, dopo cena. E se avremo di nuovo bisogno di parlare delle distanze, useremo i sassolini del vaso, non il pane. A me piace il tuo entusiasmo. Mi piace ancora di più quando riesce a vedere anche la persona seduta dall’altra parte del tavolo.",
+            "ru": "С удовольствием, после ужина. А если снова понадобится поговорить о расстояниях, возьмём камешки из горшка, а не хлеб. Мне нравится твой энтузиазм. Ещё больше нравится, когда он способен заметить и человека по другую сторону стола."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "home",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "Юпитер вернулся к ужину",
+          "clue": {
+            "title": "В кадре",
+            "body": "В тарелках дымится готовая картофельная похлёбка."
+          }
+        },
+        "outcome": {
+          "title": "У стола тоже есть значение",
+          "body": "Серджо признал предел своего сравнения. Они вернули картофель в суп и договорились продолжить разговор о небе после еды."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Annuncio l’atterraggio di Giove nella mia scodella. Questa parte della dimostrazione posso verificarla con il cucchiaio. Le patate degli altri pianeti le dividiamo senza attribuire a nessuno privilegi cosmici. È curioso: la mia teoria della piccolezza generale ha prodotto una porzione decisamente generosa. Ne lascio metà per te.",
+            "ru": "Объявляю посадку Юпитера в моей тарелке. Эту часть демонстрации я могу проверить ложкой. Картофель остальных планет поделим без космических привилегий. Забавно: моя теория всеобщей малости произвела весьма щедрую порцию. Половину оставлю тебе."
+          },
+          {
+            "speaker": 0,
+            "text": "Accetto il trasferimento interplanetario. Adesso che mangiamo tutti e due, raccontami quella domanda sulle distanze, senza usare la minestra come prova scientifica. Se poi scompare un’orbita, sappiamo già la causa: non una nuova legge della natura, soltanto qualcuno che ha preso un altro cucchiaio.",
+            "ru": "Принимаю межпланетный перевод. Теперь, когда мы оба едим, расскажи о своём вопросе про расстояния, только не используй суп как научное доказательство. Если потом исчезнет орбита, причина нам уже известна: не новый закон природы, а просто кто-то зачерпнул ещё одну ложку."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "home",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "Посадка в тарелку",
+          "clue": {
+            "title": "В кадре",
+            "body": "Большая картофелина разделена между двумя тарелками."
+          }
+        },
+        "outcome": {
+          "title": "Любопытство подали к ужину",
+          "body": "Игра с планетами стала частью совместного ужина. Джада отделила красивое сравнение от вывода, будто близкие потребности можно игнорировать."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "С каким выводом Серджо не соглашается Джада?",
+        "options": [
+          "С тем, что далёкие звёзды существуют независимо от ужина.",
+          "С тем, что космический масштаб делает её нынешний голод несущественным.",
+          "С тем, что картофель можно использовать в наглядном объяснении."
+        ],
+        "answer": 1,
+        "explanation": "Она принимает различие масштабов, но подчёркивает значение потребности в масштабе их стола."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Что здесь означает «perdere di vista»?",
+        "options": [
+          "Не учитывать важную близкую потребность, увлёкшись большой идеей.",
+          "Перестать видеть кастрюлю из-за пара на кухонном стекле.",
+          "Не суметь различить планеты через установленный телескоп."
+        ],
+        "answer": 0,
+        "explanation": "Речь об упущенном внимании к ужину, а не о буквальной потере зрения.",
+        "anchor": "perdere di vista"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 0,
+          "prompt": "Что Серджо признаёт, возвращая разговор к столу?",
+          "options": [
+            "Малый размер стола не определяет важность сидящего за ним человека.",
+            "Телескоп покажет, кто в доме уже ужинал, если правильно его настроить.",
+            "Для точной модели обязательно отложить все бытовые дела до утра."
+          ],
+          "answer": 0,
+          "explanation": "Он прямо разделяет физический размер и человеческую значимость и признаёт уход от простого вопроса."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "В чём Джада видит логический скачок собеседника?",
+          "options": [
+            "В переходе от маленькой картофелины к приблизительной модели планеты.",
+            "В переходе от желания поесть к отказу интересоваться астрономией.",
+            "В переходе от нашей малости к праву заставить другого ждать ужина."
+          ],
+          "answer": 2,
+          "explanation": "Она может согласиться с малостью, но не принимает следующий вывод «значит, ты можешь подождать»."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-amico-che-non-ricordo",
+    "language": "it",
+    "level": "B2",
+    "title": "La larghezza di una pozzanghera",
+    "topic": "Memoria e riconoscimento",
+    "summary": "A una rimpatriata, una fotografa incontra qualcuno che sembra conoscere la sua vita meglio di lei.",
+    "context": "Sei Arianna. Per scherzo ti presenti al conduttore come Laura, ma il racconto che lui fa di una vecchia compagna comincia a sembrarti fin troppo familiare.",
+    "hook": "Due ricordi diversi possono appartenere alla stessa amicizia?",
+    "genre": "комедия памяти и узнавания",
+    "source": {
+      "title": "I nostri ricordi",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/I_nostri_ricordi",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему мотиву исследованного произведения. Современная ситуация, персонажи, итальянские диалоги, русские переводы и обе развилки написаны заново; это не подлинный текст автора."
+    },
+    "plotFingerprint": "unrecognised-schoolmate-narrates-hero-to-himself|reveal-at-recognition-or-compare-one-memory|second-honest-greeting-or-two-widths-of-puddle",
+    "pedagogy": {
+      "rationaleRU": "B2: ненадёжная память, косвенная речь, смена гипотезы и уважительное расхождение версий прошлого.",
+      "grammar": [
+        "discorso indiretto e tempi del racconto",
+        "condizionale per ipotesi non verificate",
+        "concessive e correzioni di prospettiva"
+      ],
+      "listeningFocusRU": "Проследить, как новые детали меняют подозрение героя; отделить добросовестное расхождение памяти от намеренного выдумывания прошлого."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Arianna",
+        "roleRU": "Игрок: фотограф, вернувшаяся на встречу выпускников"
+      },
+      {
+        "actorId": "cartographer",
+        "name": "Gabriele",
+        "roleRU": "Ведущий встречи, школьный товарищ, которого не сразу узнали"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "a sentir lui",
+        "ru": "если верить его словам"
+      },
+      {
+        "term": "a dire il vero",
+        "ru": "по правде говоря"
+      },
+      {
+        "term": "ricucire i pezzi",
+        "ru": "соединить разрозненные части"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Laura, vero? Mi hanno detto che conosci Arianna, la fotografa. Il nostro professore diceva che eravamo inseparabili: a sentir lui, un’amicizia così movimentata non si era mai vista. Ho messo una sua foto sul programma. Spero che arrivi: non la vedo da anni, ma riconoscerei ovunque il suo modo di guardare le cose.",
+            "ru": "Лаура, верно? Мне сказали, ты знаешь Арианну, фотографа. Наш учитель говорил, что мы неразлучны: если верить его словам, такой бурной дружбы ещё никто не видел. Я поместил её фотографию в программу. Надеюсь, она придёт: я не видел её много лет, но везде узнал бы её взгляд на вещи."
+          },
+          {
+            "speaker": 0,
+            "text": "La conosco piuttosto bene, a dire il vero. Mi incuriosisce sentirti raccontare quegli anni. Sulla tua targhetta c’è Gabriele: lei ricordava soprattutto i soprannomi. Se mi dai qualche dettaglio, forse riesco a ricucire i pezzi. Intanto non fidarti troppo dei cartellini: qualcuno qui si diverte a cambiarli.",
+            "ru": "Я довольно хорошо её знаю, по правде говоря. Любопытно послушать твой рассказ о тех годах. На твоём значке написано Габриэле, а она помнила главным образом прозвища. Если дашь несколько деталей, я, возможно, соединю разрозненные части. И пока не слишком доверяй карточкам: кто-то здесь развлекается, меняя их."
+          },
+          {
+            "speaker": 1,
+            "text": "Io ero il Conte, per quella giacca enorme della recita. Arianna mi fotografò mentre tentavo di saltare un fosso. Lei diceva che stavo soltanto attraversando il cortile; io sentivo già partire l’applauso.",
+            "ru": "Я был Графом — из-за огромного пиджака в школьном спектакле. Арианна сфотографировала меня, когда я пытался перепрыгнуть канаву. Она говорила, что я просто пересекаю двор, а мне уже слышались аплодисменты."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Ora ti riconosco, Conte. Sono Arianna: direi che è il momento di rifare le presentazioni.",
+            "ru": "Теперь я узнала тебя, Граф. Я Арианна: думаю, пора познакомиться заново.",
+            "next": "a"
+          },
+          {
+            "text": "Raccontami quel salto. Poi ti darò la versione che Arianna conserva della stessa scena.",
+            "ru": "Расскажи об этом прыжке. Потом я дам версию той же сцены, которую хранит Арианна.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "camera",
+          "mood": "thinking",
+          "caption": "Два имени на одной встрече",
+          "clue": {
+            "title": "В кадре",
+            "body": "На столе лежат сменные карточки с именами выпускников."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Arianna? Allora ho passato dieci minuti a spiegarti quanto fossero belle le tue fotografie. Non è la mia battuta migliore. La giacca del Conte non ce l’ho più, ho cambiato occhiali e negli inviti uso il secondo cognome. Credevo che il nome bastasse; evidentemente anch’io riconoscevo soprattutto un’immagine ferma.",
+            "ru": "Арианна? Значит, я десять минут объяснял тебе, какие красивые у тебя фотографии. Это не лучшая моя шутка. Пиджака Графа больше нет, очки я сменил, а в приглашениях использую вторую фамилию. Думал, имени хватит; очевидно, я тоже узнавал прежде всего неподвижный образ."
+          },
+          {
+            "speaker": 0,
+            "text": "E io ero pronta a pensare che ti attribuissi un’amicizia mai avuta. Poi hai detto «il Conte» e mi è tornata la voce con cui protestavi per quelle maniche. Mi dispiace di aver prolungato il gioco. Cercavo il mio ricordo, non la persona che aveva continuato a vivere.",
+            "ru": "А я уже готова была решить, что ты присваиваешь несуществовавшую дружбу. Потом ты сказал «Граф», и я вспомнила голос, которым ты возмущался теми рукавами. Жаль, что я затянула игру. Я искала своё воспоминание, а не человека, который продолжал жить."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Lasciamo da parte Laura e salutiamoci di nuovo, con i nomi di oggi.",
+            "ru": "Оставим Лауру в стороне и поздороваемся заново — сегодняшними именами.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "speaking",
+          "caption": "Узнавание по голосу",
+          "clue": {
+            "title": "В кадре",
+            "body": "Арианна меняет чужую карточку на карточку со своим именем."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Era un fosso largo almeno un metro, pieno d’acqua dopo il temporale. Io avevo preso la rincorsa e Arianna aveva colto il momento esatto. Però, mentre lo racconto, mi viene un dubbio: il cortile non aveva un fosso. Aveva quella striscia bassa vicino alla fontana. Forse il metro l’ho aggiunto negli anni, una presentazione alla volta.",
+            "ru": "Это была канава шириной не меньше метра, полная воды после грозы. Я разбежался, и Арианна поймала точный момент. Но пока рассказываю, возникает сомнение: во дворе не было канавы. Была низкая полоска возле фонтана. Возможно, этот метр я добавлял годами — от одного рассказа к другому."
+          },
+          {
+            "speaker": 0,
+            "text": "E io, che sono Arianna e non Laura, ricordavo una semplice pozzanghera. Ma non posso garantire che fosse piccola quanto dico adesso: nella foto l’inquadratura taglia proprio i bordi. Ho capito chi eri dal soprannome e avrei dovuto dirtelo subito. La nostra prova migliore, a quanto pare, non misura neppure la cosa su cui discutiamo.",
+            "ru": "А я, которая на самом деле Арианна, а не Лаура, помнила простую лужу. Но не могу гарантировать, что она была настолько маленькой, как я сейчас говорю: на фотографии края как раз обрезаны. Я узнала тебя по прозвищу и должна была сразу сказать. Похоже, лучшее наше доказательство даже не измеряет то, о чём мы спорим."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Imposto l’autoscatto: nella foto ognuno mostri la larghezza che ricorda.",
+            "ru": "Я поставлю автоспуск: на фото каждый покажет ширину, которую помнит.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "camera",
+          "mood": "thinking",
+          "caption": "Канава становится уже",
+          "clue": {
+            "title": "В кадре",
+            "body": "На старой фотографии края лужи остались за кадром."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Piacere, Arianna. Sono Gabriele, già Conte per mancanza di una giacca della misura giusta. Ti ringrazio per la foto sul programma: stavolta almeno sai che il complimento non era preparato per farti piacere. L’ho fatto a una persona che credevo estranea, con tutta la convinzione di uno che non si accorge di nulla.",
+            "ru": "Приятно познакомиться, Арианна. Я Габриэле, бывший Граф по отсутствию пиджака нужного размера. Спасибо за фотографию в программе: теперь хотя бы знаешь, что комплимент не был заготовлен, чтобы тебе угодить. Я сказал его якобы незнакомому человеку со всей убеждённостью того, кто ничего не замечает."
+          },
+          {
+            "speaker": 0,
+            "text": "Piacere, Gabriele. E grazie per aver custodito un ricordo di noi, anche se non coincideva con la faccia che cercavo. Adesso raccontami qualcosa degli ultimi anni. Della recita sappiamo abbastanza; sarebbe un peccato passare un’altra serata a riconoscere soltanto persone che non siamo più.",
+            "ru": "Приятно познакомиться, Габриэле. Спасибо, что сохранил воспоминание о нас, даже если оно не совпало с лицом, которое я искала. Теперь расскажи что-нибудь о последних годах. О спектакле мы знаем достаточно; жаль было бы провести ещё вечер, узнавая только людей, которыми мы уже не являемся."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "camera",
+          "mood": "pleased",
+          "caption": "Второе, честное приветствие",
+          "clue": {
+            "title": "В кадре",
+            "body": "На обеих карточках теперь стоят настоящие имена."
+          }
+        },
+        "outcome": {
+          "title": "Познакомились заново",
+          "body": "Арианна призналась сразу после узнавания. Оба заметили, что искали друг в друге неподвижные школьные образы, и начали разговор о настоящем."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Nella nuova foto io tengo le braccia larghe e tu quasi unite. La differenza si vede meglio della vecchia pozzanghera. Non la chiamerò «la prova che avevo ragione». Scriverò che due compagni ricordano lo stesso salto senza riuscire a portare sul tavolo un metro rimasto intatto per trent’anni.",
+            "ru": "На новом фото я широко развёл руки, а ты почти соединила. Разница заметнее старой лужи. Не назову это «доказательством моей правоты». Напишу: два товарища помнят один прыжок и не могут предъявить метр, который за тридцать лет остался бы неизменным."
+          },
+          {
+            "speaker": 0,
+            "text": "E io conserverò entrambe le misure nella didascalia. Non perché ogni dettaglio sia vero allo stesso modo, ma perché qui non abbiamo abbastanza elementi per deciderlo. Una cosa è verificata: abbiamo appena fatto una foto insieme. Stavolta ricorderemo almeno chi ha impostato l’autoscatto.",
+            "ru": "А я сохраню обе меры в подписи. Не потому, что любая деталь одинаково верна, а потому, что здесь нам не хватает данных для решения. Одно проверено: мы только что вместе сфотографировались. На этот раз хотя бы запомним, кто поставил автоспуск."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "camera",
+          "mood": "pleased",
+          "caption": "Две ширины одной лужи",
+          "clue": {
+            "title": "В кадре",
+            "body": "В новом кадре руки товарищей показывают разные расстояния."
+          }
+        },
+        "outcome": {
+          "title": "Разные воспоминания в одном кадре",
+          "body": "Они не объявили одну память доказательством другой. Новая фотография сохранила разницу версий и дала дружбе новое общее событие."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Почему Арианна просит деталей и упоминает недостоверность карточек?",
+        "options": [
+          "Она уверена, что ведущий намеренно выдаёт себя за её учителя.",
+          "Она проверяет узнавание и одновременно намекает на игру со своим именем.",
+          "Она хочет узнать, кто напечатал приглашения с неверной датой."
+        ],
+        "answer": 1,
+        "explanation": "Вопрос о прозвищах помогает восстановить память, а замечание о карточках связано с её собственной ролью Лауры."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Какую роль играет «a sentir lui» в рассказе Габриэле?",
+        "options": [
+          "Приписывает оценку учителю, не представляя её проверенным общим фактом.",
+          "Сообщает, что учитель расслышал их разговор через закрытую дверь.",
+          "Доказывает, что ученики полностью согласились с мнением учителя."
+        ],
+        "answer": 0,
+        "explanation": "Он передаёт чужую оценку их дружбы: «если верить его словам».",
+        "anchor": "a sentir lui"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Как Арианна пересматривает своё первоначальное подозрение?",
+          "options": [
+            "Она решает, что все школьные воспоминания ведущего были выдуманы.",
+            "Она понимает, что ведущий специально спрятал от неё настоящую фамилию.",
+            "Она замечает, что ожидала неизменного человека вместо изменившегося знакомого."
+          ],
+          "answer": 2,
+          "explanation": "Прозвище и голос восстановили узнавание, после чего она признаёт ошибку своего ожидания."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Почему старая фотография не разрешает спор о размере препятствия?",
+          "options": [
+            "На ней виден только прыжок другого ученика, а не Габриэле.",
+            "Кадр не показывает края воды, поэтому её ширину по нему не проверить.",
+            "Арианна признаёт, что сама нарисовала воду на фотографии."
+          ],
+          "answer": 1,
+          "explanation": "Она прямо указывает на обрезанные края и отделяет воспоминание от того, что фотография действительно подтверждает."
+        }
+      }
+    }
+  }
+]

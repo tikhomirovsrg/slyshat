@@ -1,0 +1,550 @@
+{
+  "status": "in-progress",
+  "meaning": "Root has read the target-language dialogue, branches and correct-answer evidence for these stories. Read hashes are review checkpoints, not release approval or expert CEFR certification.",
+  "rootRead": {
+    "en-lower": [
+      {
+        "id": "new-en-a1-ball-in-vase",
+        "readSha256": "49c14f8fe32a2cb2dc6a2c2582adfa62499efec7d053b260c804181d5efa0bda"
+      },
+      {
+        "id": "new-en-a1-dinner-tools",
+        "readSha256": "ead45c9f17f8b64c937bc7bce5fd09f1a73b9b5c68076c1ee46cb53862c6ce97"
+      },
+      {
+        "id": "new-en-a1-sweet-jar",
+        "readSha256": "56b388f247642793fb77914e9a3779bc9838208548726e815a86cb083690febe"
+      },
+      {
+        "id": "new-en-a1-small-fingers",
+        "readSha256": "22321b50eca9ccae5d6cb63a5548beba3c81279c634dcf19b933e9eea7c18f56"
+      },
+      {
+        "id": "new-en-a1-puzzle-race",
+        "readSha256": "2353c6e5987cd47c63ef27ee6016095a9f6ec36e4c8ca69d715e0cba83dc0a5e"
+      },
+      {
+        "id": "new-en-a1-mirror-step",
+        "readSha256": "a681c7bc5606ac99db60361468778108e54954fdf8f5e22f5454232788da8873"
+      },
+      {
+        "id": "new-en-a1-cake-and-camera",
+        "readSha256": "91766a1ddcc29170e6afa4700eeaa98a44872244d7fc7783c7d10fd535f8c500"
+      },
+      {
+        "id": "new-en-a1-stars-and-puddle",
+        "readSha256": "61439deb5644c9f694517ca51e76943df8ea0b26b291b2ae2ee539d43c1b2d0e"
+      },
+      {
+        "id": "new-en-a1-hot-and-cold",
+        "readSha256": "c527e9d0af111ad4d90e3ee5dd753b2b069dddd97fc9c555017c81d5fbcc9ce0"
+      },
+      {
+        "id": "new-en-a1-costume-door",
+        "readSha256": "7df28b5f8cf11b4adaba1798a7b085258e1bbadd8ba31e737e99978a3b9d808b"
+      },
+      {
+        "id": "new-en-a1-hat-and-hair",
+        "readSha256": "7657cffd789a8a31b4e09efcf4fe4f6b496041b17f913878eb0642873857dfd7"
+      },
+      {
+        "id": "new-en-a1-paint-and-shirts",
+        "readSha256": "d947bcc6feef20e0de058ea8bb6745b97061f9f6275b559fed974737362fad5f"
+      },
+      {
+        "id": "new-en-a1-cups-in-basket",
+        "readSha256": "f44d2de5f08a966e77c2d96005d01bb577e69e880179bae987f33ab331f16ed3"
+      },
+      {
+        "id": "new-en-a1-thirsty-plant",
+        "readSha256": "b0ab43e11ab0d5b5b7be90a0834a47b1dab7abe4132987987b3a487e5b10fa26"
+      },
+      {
+        "id": "new-en-a1-heavy-sponge-bag",
+        "readSha256": "62806ec47f7aeb101c41f50cdb1f525f71192e3b71ae95dfdeeb2e12645e4f28"
+      },
+      {
+        "id": "new-en-a1-real-cake-alert",
+        "readSha256": "f65a241096cdf604c64b37dfd4c3413b2fda2d147eeda3d135d9b1886a527245"
+      },
+      {
+        "id": "new-en-a1-bike-pump-practice",
+        "readSha256": "399a831dc27abc9ae160ac1650c9e25b00676cbbab90a577b5733e3f0a5ac0aa"
+      },
+      {
+        "id": "new-en-a1-who-gets-applause",
+        "readSha256": "31ed40c05697e3577072b2f833ab792006a43caea44b9a5d679d04ea02ea8ff3"
+      },
+      {
+        "id": "new-en-a1-flying-wig",
+        "readSha256": "7b2e0f871a2d30bc1862f9f74265a5a9a4956e6f9198b834a5db2be03b21f7b4"
+      },
+      {
+        "id": "new-en-a1-erased-portrait",
+        "readSha256": "ee136ae4f12388978178db0da8c5815ead4bd395d72663f220491c62a24fb16a"
+      },
+      {
+        "id": "new-en-a1-serious-neighbour",
+        "readSha256": "1afdf7bc2bd0c03d8bb792f04c778b5a5454fb127dbaf20fa9c14453a0053b7f"
+      },
+      {
+        "id": "new-en-a1-candle-in-wind",
+        "readSha256": "ced5f7d29df1bc4125750d35bcaca133012a1b532d8bddf097c07976c0cf158d"
+      },
+      {
+        "id": "new-en-a1-popcorn-button",
+        "readSha256": "838d1cd7d8bc83dbc76cc24569e0a38ff84ac2fbd8299eb4b45a047a80b06b53"
+      },
+      {
+        "id": "new-en-a1-chocolate-pocket",
+        "readSha256": "f860819cd40e043e2c1d583871603c59d409e4a3ffb833b7c55a9e0d03a7eff0"
+      },
+      {
+        "id": "new-en-a1-sticky-star",
+        "readSha256": "c8beea9cd07fe9ee8d59af688df895d43cbee55e2494ce842462557014ba059b"
+      },
+      {
+        "id": "new-en-a1-night-shoemaker",
+        "readSha256": "39b16091e00302a582225a988accc808b030172cf36a63235e83717d38528af6"
+      },
+      {
+        "id": "new-en-a1-button-under-cushion",
+        "readSha256": "ffef76e1541d63c0cd144f7144f801f684b4be5d34e57b311395deda5aacd9fb"
+      },
+      {
+        "id": "new-en-a1-painted-fly",
+        "readSha256": "51ff04c78aa8c2aa43e21fec4f5c9b7a2386719276f6719c006f517b4d30763d"
+      },
+      {
+        "id": "new-en-a1-scrap-fabric",
+        "readSha256": "30e58c512a87be43149c0eb7d1bb8a0e69deaa62f1ba661b3efa8edacadb9a29"
+      },
+      {
+        "id": "new-en-a1-paper-bridge-button",
+        "readSha256": "b4aa927b04447b091c337d9bd771ebe3355a887eca369da96ce075dcb0ee2430"
+      },
+      {
+        "id": "new-en-a2-honest-hammer",
+        "readSha256": "878f9367658b7f70cd33031bf206bfe393e3fa69d3cba617f714a7583e9b9f6c"
+      },
+      {
+        "id": "new-en-a2-empty-room-service",
+        "readSha256": "72849123bc22c5c40ee690406a04a5b338148119c235a1a1288f241ab5282523"
+      },
+      {
+        "id": "new-en-a2-pancake-champion",
+        "readSha256": "3eda744d0d02889ce4ba700adc21a42480749326dd3de59139c94fc38941122b"
+      },
+      {
+        "id": "new-en-a2-garden-treasure",
+        "readSha256": "419b5850cbbb598c5441825e70f7de8f8089cf4afede5f3cd8bc6253d6a69b8c"
+      },
+      {
+        "id": "new-en-a2-real-rain-sound",
+        "readSha256": "d5c37176a578a09acd68e507efeb8f799e2a50bee81de230b5bf0e3bd8abcdf7"
+      },
+      {
+        "id": "new-en-a2-sign-for-everyone",
+        "readSha256": "b1f8fa1d4302343eaea06616e042a803be68dac72558877d967df4db73ea7d85"
+      },
+      {
+        "id": "new-en-a2-rain-for-two",
+        "readSha256": "15edb3839fac577a05d0a764c2e6c98783786539d877357c333d61663e4266f6"
+      },
+      {
+        "id": "new-en-a2-silent-guitar",
+        "readSha256": "1664e5913db1b0a5bb47041490b82d996e084ba1f5e3a14f73613c5ea9ec8983"
+      },
+      {
+        "id": "new-en-a2-warm-photo-room",
+        "readSha256": "f0100d041d1bec870327bf252af0f122efe3ab47ffc5c8362300adad2d07beba"
+      },
+      {
+        "id": "new-en-a2-last-starter",
+        "readSha256": "174f3fda63ee80f34fd55d036a3aba2296324b6495a56be9f07721ee6c3ef5d5"
+      },
+      {
+        "id": "new-en-a2-portrait-with-frame",
+        "readSha256": "74374bbcce544e8eda1c0a1d9a3ef837b1189d11db50b04d9f52e701492583c2"
+      },
+      {
+        "id": "new-en-a2-everyones-material",
+        "readSha256": "a56091d33255e6ae17f4c3fb365f3bce4944f0b3fed1361ff69ec401bd102eef"
+      },
+      {
+        "id": "new-en-a2-lighter-trades",
+        "readSha256": "46f585cf643b9b4f51ff40eb23041146b5b60da899822ccffe09da80d93a74c1"
+      },
+      {
+        "id": "new-en-a2-missing-cupcakes",
+        "readSha256": "ebb20d767d21dbb6c45c40b1954fff2d0691874c1968affaa4354c6d300215ff"
+      },
+      {
+        "id": "new-en-a2-small-table-model",
+        "readSha256": "382600729e3220b84cb4d5f0cc7513a244d938fe7a1db50172a029a5606d4578"
+      },
+      {
+        "id": "new-en-a2-dancing-soles",
+        "readSha256": "873fbc1d4b506b148d8650e16b827837afdc21dee8e20f02a36a2aa2e9bc0248"
+      },
+      {
+        "id": "new-en-a2-blank-masterpiece",
+        "readSha256": "8aa78152a49b941fbdadb391d038949562ea084913d0946396a45b44d6f6f346"
+      },
+      {
+        "id": "new-en-a2-old-toy-house",
+        "readSha256": "b0a3b725c4fa15b0f005567122aadd05d432b343d6724b6c88e2f6b7a872cfd8"
+      },
+      {
+        "id": "new-en-a2-after-big-stage",
+        "readSha256": "080422f529c4111ddda8707cf27f37bfac60d8407ad2a9d2fa61a44b1222bfb6"
+      }
+    ],
+    "en-middle": [
+      {
+        "id": "new-en-b1-accidental-adventure",
+        "readSha256": "69fea17d18463a4c092ab2dc88b46b19d825fef30a03ea866041a01162f699f0"
+      },
+      {
+        "id": "new-en-b1-better-after-every-fix",
+        "readSha256": "bce9e8e69cce9441e3e7699b2ce8e486eec7071174c8fe41f4513059b72cf336"
+      },
+      {
+        "id": "new-en-b1-confident-maze-guide",
+        "readSha256": "bfa09a1022f015909e8bd8529f7f60f4d04519f034d1ade28aefc6db41a977d8"
+      },
+      {
+        "id": "new-en-b1-jar-that-won",
+        "readSha256": "d178252f9b74fbe7fefea48aaf55332cd26c42214372821a1a403e62e6badfaa"
+      },
+      {
+        "id": "new-en-b1-jingle-relay",
+        "readSha256": "f3e6d5c3017ad726d3b2092c7f3aa79818fa785856d8cd05b50242b84bf8c706"
+      },
+      {
+        "id": "new-en-b1-leaf-on-the-wall",
+        "readSha256": "91ca8b73177fb5b7d3597b522dc9d0b616672669cc3933b55bea51789adf1973"
+      },
+      {
+        "id": "new-en-b1-learning-with-an-audience",
+        "readSha256": "14e894b17494e6919a1b8fe2739e14ab156ab6a687be8306005bebcd1fd52dad"
+      },
+      {
+        "id": "new-en-b1-mysterious-cheese-smell",
+        "readSha256": "a087ec63f05037b835f6cee250c64a068018c5c5f432798a79397836b989b5b6"
+      },
+      {
+        "id": "new-en-b1-neutral-taste-test",
+        "readSha256": "212b8c2d5669387b0359ece80af8e89a7fea8d67ff82016db6d517435379fc34"
+      },
+      {
+        "id": "new-en-b1-private-line-public-label",
+        "readSha256": "3234c23d0bc623bed71d8a0d89dc8563c9016e2ba400677d8548b8eaabff66fa"
+      },
+      {
+        "id": "new-en-b1-quiet-kitchen-return",
+        "readSha256": "8da3538ae153f1800b7534971e9f31d3d332d61bc54eb90476a1fea721d31547"
+      },
+      {
+        "id": "new-en-b1-sealed-too-soon",
+        "readSha256": "2cd22c9ddf8c47cb7ea905eaf4ffda743200733c62f2ded551c62dd16389c003"
+      },
+      {
+        "id": "new-en-b1-second-bowl",
+        "readSha256": "d7be2dcf4f9f7312538da44cf9b683a0ba53df25e5abfabf2223b0c192f108ad"
+      },
+      {
+        "id": "new-en-b1-showcase-after-rain",
+        "readSha256": "3000779703225cf5c9e1a1ed578d2ca5a34bab4e7f9c98a6de139637de5626ef"
+      },
+      {
+        "id": "new-en-b1-street-becomes-neighbours",
+        "readSha256": "e4057fd9fca89bff61cd259ea3ce17e4173ce67d5c992ff51fa308f35969a3a8"
+      },
+      {
+        "id": "new-en-b1-trophy-everyone-won",
+        "readSha256": "8fece768550277fed94b06d62b6352599812d4dbaf4d5c933a3a62131cbcfbf3"
+      },
+      {
+        "id": "new-en-b1-two-empty-boxes",
+        "readSha256": "6c95cedb42b88967dfb71719ddbb8cca101d47a7513ec5b19ec18a77542f203c"
+      },
+      {
+        "id": "new-en-b1-two-songs-one-stage",
+        "readSha256": "49cde8e568aeba886aa8168b5c52259e67ca8e1ae8372f59f997213aba0a04fa"
+      },
+      {
+        "id": "new-en-b1-weighted-paper-plane",
+        "readSha256": "374bb14c5d6715dc7d09151b0dba84b5df77f02ff474d7b186e20a36b62f12cb"
+      },
+      {
+        "id": "new-en-b1-welcome-again",
+        "readSha256": "e11162fac2783456ec2293840bc2cb9567dcdb64aeae071d4b6d5cc3bdf648ed"
+      },
+      {
+        "id": "new-en-b1-whose-splashed-jacket",
+        "readSha256": "538aa07564f87179ad984fffbc2a632af39642ae912ea44d827bcb3456f6144d"
+      },
+      {
+        "id": "new-en-b2-all-the-red-bicycles",
+        "readSha256": "b63f77a9bf0ce91dc8e46f02ec4920771935c6b306e79c933dc29de11f2c6af0"
+      },
+      {
+        "id": "new-en-b2-escape-the-encore",
+        "readSha256": "96e57e05ce0c53735d055091aac0c294f3033e147bb6ff13764e1a5b7e98bfb2"
+      },
+      {
+        "id": "new-en-b2-borrowed-portrait",
+        "readSha256": "c0279c0b6cd3461387bdcb1a9d08edee01cfd3db7bf6f9cacd8a9724a7a61320"
+      },
+      {
+        "id": "new-en-b2-circle-of-fame",
+        "readSha256": "3bc3b6b507c67a07681db9952c1d7b9c7976d106a7239e78763698f20baccbde"
+      },
+      {
+        "id": "new-en-b2-famous-for-the-wrong-column",
+        "readSha256": "3ebbae38da551e92ed1214c6071c9dfcda9d383aadebb45b54d52c4071b0b303"
+      },
+      {
+        "id": "new-en-b2-farewell-that-failed",
+        "readSha256": "c9960ac4e5b34d642ea11231a379225b93e3e327586e65a3a47150a0d09e33d5"
+      },
+      {
+        "id": "new-en-b2-final-batch-forever",
+        "readSha256": "3d5685a02d4a303247f1a42fc42bb7ad702fc23132a26713fe6503868cd9f80b"
+      },
+      {
+        "id": "new-en-b2-friend-on-review-panel",
+        "readSha256": "ee3296b31bf142eb758c53747a080172d3669a2ffb7c3ff2603309a5284e9e5d"
+      },
+      {
+        "id": "new-en-b2-guest-who-tested-everything",
+        "readSha256": "6a6a19b44e18daa51c9f9c3e3aa8ed68b8e3871e14ff5abb1a53fab16b4ef711"
+      },
+      {
+        "id": "new-en-b2-help-that-erases",
+        "readSha256": "1f7e0bc0fd3e904648d8827434cec587fd219194f4d289df15e0271817b1f017"
+      },
+      {
+        "id": "new-en-b2-laughing-by-example",
+        "readSha256": "d32cd47c7fcd2e0bcb717f594824f193bb6180904ba634c55204aeb3d26661f8"
+      },
+      {
+        "id": "new-en-b2-manufactured-chance",
+        "readSha256": "4138cd560fa5eb44e517a87bb136bd6746995938cb8469876cb7681c154c5c0e"
+      },
+      {
+        "id": "new-en-b2-old-stage-trick",
+        "readSha256": "bdb05744becfa5f59115ae680bf65d68bf24d10850ae2d58254f22210fd83afc"
+      },
+      {
+        "id": "new-en-b2-overhelpful-reminders",
+        "readSha256": "980a2056a993d6ad3a9dbf312a09519c30092f998d343ea77e721118d3655750"
+      },
+      {
+        "id": "new-en-b2-protest-at-copy",
+        "readSha256": "2c3265b76c46214ad579c3707b47a1cd8c45cf8450b7fde36d4f8062d3a441f0"
+      }
+    ],
+    "it-lower": [
+      {
+        "id": "new-it-a1-recognizable-flask",
+        "readSha256": "7dbef5c0d66867ff1980b5d9c72c43e5da4869e75a5e68b39f871aa4159af5b2"
+      },
+      {
+        "id": "new-it-a1-empty-clean-glass",
+        "readSha256": "8bf5c2b5c00188026ffa164868c0f486465b4e2dae28e3bd93d2ba467f1b8e3f"
+      },
+      {
+        "id": "new-it-a1-two-shirts-one",
+        "readSha256": "bab89c433bff800e6d07c24991e043d5426a2ad893c9bd6a0bc2bae8fc318233"
+      },
+      {
+        "id": "new-it-a1-little-sun",
+        "readSha256": "6d6917df97693a86b2804e91d98922e1746aa3b41fd23b811ee5d8651b92595a"
+      },
+      {
+        "id": "new-it-a1-old-coat-pockets",
+        "readSha256": "c9f625d85035125ea5fc2d79ce4ede834c05ba4fd307f8fc9a6d1763660a9b0c"
+      },
+      {
+        "id": "new-it-a1-chair-rings-bell",
+        "readSha256": "e8d16af4bc1608294708cee610aa8c28eb96f4d1eadc44897d53b8e496317c3c"
+      },
+      {
+        "id": "new-it-a1-generous-zero",
+        "readSha256": "f0965277e01bbbbc50b45de75927f39e8d8172c24d061df9364f4d5d28ff354c"
+      },
+      {
+        "id": "new-it-a1-my-broken-cup",
+        "readSha256": "7613a66d5332dcd5c55eaa668de9314a6ccad33df536076313d2f2e1e866e2a1"
+      },
+      {
+        "id": "new-it-a1-umbrella-surprises",
+        "readSha256": "a5efc58a44bb68e4e0ef916bf896ebe52eaf267ea4d12fac9efa0f6399b73db0"
+      },
+      {
+        "id": "new-it-a1-last-years-haircut",
+        "readSha256": "6668357467869bbdc20afd737bc0f56129ec0c91786e97372f4c5dbbc6fdd923"
+      },
+      {
+        "id": "new-it-a1-final-cherry",
+        "readSha256": "3180f69c557408485d396f8c9f7da2900d393ba68ec00b2c837723d4d781073c"
+      },
+      {
+        "id": "new-it-a1-unasked-bicycle",
+        "readSha256": "1839f7b0a46572344b62a800fca63fbf679c2c0a390ca0010933ba642657070f"
+      }
+    ],
+    "it-middle": [
+      {
+        "id": "new-it-b1-racconto-che-salta",
+        "readSha256": "870bd4cd108b7f616837a6f0e1ac40e2b847de42cfedb37c0b6ed69795a2f186"
+      },
+      {
+        "id": "new-it-b2-bottiglia-enorme",
+        "readSha256": "022ea04457d7655fe6c0e7d55da4c1f36db3bf33f65f5b9e41aae4ef654afa74"
+      },
+      {
+        "id": "new-it-b1-biscotto-con-un-ala",
+        "readSha256": "36a5ba7ef8ea3ab7b5e8441f58021cff3e6132bf1ec83c6b7776bfe8200f0ffc"
+      },
+      {
+        "id": "new-it-b1-esperti-in-impermeabile",
+        "readSha256": "365b2df7e4041ee8968f4e79bf42ba5461ebe151bb4b9778b5432c4f641f981a"
+      },
+      {
+        "id": "new-it-b2-quattro-domande",
+        "readSha256": "075abe21461aa071a29c3c500512e50b5b85988981248f4df7f47b348267b8c7"
+      }
+    ],
+    "advanced": [
+      {
+        "id": "new-en-c1-portrait-after-dark",
+        "readSha256": "fe222c553bea46eaac4ff2942849be4b63fc093a1176187cc927ff5f4956fdb4"
+      },
+      {
+        "id": "new-en-c1-unexpected-critic",
+        "readSha256": "b085c417f610acefc1db451107c452f9f16e68c475957af572ec245d8e056286"
+      },
+      {
+        "id": "new-en-c1-charger-as-proof",
+        "readSha256": "4980144763e0435a8fc875c8e009ed829e16f92435618a2bab13e585f90631da"
+      },
+      {
+        "id": "new-en-c1-improv-without-curtain",
+        "readSha256": "29eb16ccc7ebda9c10327fb12078176fb517f20bdab01fc4face7f3547c3d3e2"
+      },
+      {
+        "id": "new-en-c1-accidental-anthem",
+        "readSha256": "8648e58bacaffa773aa95f931136c0be7a5d1e6b376e3080c615babbd814ac82"
+      },
+      {
+        "id": "new-en-c1-two-kitchen-promises",
+        "readSha256": "ead85f453f22bf874195ef9578ed4ee83aeaa407b093e5b7dca4871ee746fd72"
+      },
+      {
+        "id": "new-en-c1-champion-of-everything",
+        "readSha256": "3e8b30f373834d8a3d821e80ff683687bb005cebf45cac3c9d37cbc6fca699fe"
+      },
+      {
+        "id": "new-en-c1-thank-you-autocomplete",
+        "readSha256": "fdb981b203fb1170fa4d790ce34daa34c2eb3df574ad199df7d1edcf1dbcb448"
+      },
+      {
+        "id": "new-en-c1-rulebook-in-the-attic",
+        "readSha256": "2515b762ddaa1543853034cd116919861a707c53827adf8f96b3df38bac903d9"
+      },
+      {
+        "id": "new-en-c1-the-perfect-gift-interpreter",
+        "readSha256": "1b9999911e50f221bc09d18a6e7f551251c2f3732e681e923f1483076988d422"
+      },
+      {
+        "id": "new-en-c1-the-toast-before-the-sale",
+        "readSha256": "5521fe5c0f8437efad9f69a9fa5bb9d39173365d30a0f1053bb54fbbbd7cf385"
+      },
+      {
+        "id": "new-en-c1-rivals-refuse-the-show",
+        "readSha256": "58943d871334f70994beb94425847297731f4c7837147f9d8da50d850bb090d0"
+      },
+      {
+        "id": "new-en-c1-the-quince-tree-secret",
+        "readSha256": "3c30354c5a2fd1d9ded04f4f5ed588d204e335bd837d92ad796478b9f0414498"
+      },
+      {
+        "id": "new-en-c1-the-overattentive-host",
+        "readSha256": "2c02a8da3d6522cace54f6bf351dc9b663b8edc702a81073aea8457d49517972"
+      },
+      {
+        "id": "new-en-c1-the-magic-demo",
+        "readSha256": "6759ee5ade79c912d5627888635e7d40f17d21ff4bde579607f8d6779f9d2262"
+      },
+      {
+        "id": "new-en-c1-the-chair-comes-home",
+        "readSha256": "10d0a4c58bab02f9f124e840b984375a53a7fe7b826ad2719e0fdffa5b7ddfa6"
+      },
+      {
+        "id": "new-en-c1-the-local-who-knows",
+        "readSha256": "68d336e6a6431977d1da3ad9f6f6c2913b535674a4fcbb9c79ee666756d3c087"
+      },
+      {
+        "id": "new-en-c1-the-installation-moves-in",
+        "readSha256": "a65fc06788813f4c9163ca545ad1591397894822d762e654535f0385aba95dd6"
+      },
+      {
+        "id": "new-en-c1-the-accurate-minutes",
+        "readSha256": "c1813bdbb26e0c5b90a690cc9578c408f112d70bfd3c634efb06d936a5ca09d0"
+      },
+      {
+        "id": "new-en-c1-the-worthy-breakfast",
+        "readSha256": "39bca4946c491df9126370c9f425e41d73793396fd54483c1c8169138d5e34b9"
+      },
+      {
+        "id": "new-en-c1-postcard-peace",
+        "readSha256": "e7dfe04a0f85696388db31b90cdf031d2a348bc767432e87be2a1118c697cbeb"
+      },
+      {
+        "id": "new-en-c1-three-saturdays",
+        "readSha256": "b58166f5a06afc259b1f3ffe786d7770da7c5224f4feb9fc140f0ab2065ad7c1"
+      },
+      {
+        "id": "new-en-c1-hidden-in-the-heading",
+        "readSha256": "087d77a2d2087e62e3263b7977e585af79bbd01c1bf15e4c9d5cfc537f129fd0"
+      },
+      {
+        "id": "new-en-c1-the-paid-copyist",
+        "readSha256": "99da63ceafcf645bc9422880d8ef7d63cd1f3aa04f76d5dfea64e2b3fecbf692"
+      },
+      {
+        "id": "new-en-c1-two-mentors-one-voice",
+        "readSha256": "9e726975562ca5e82da9a556a785b55f96f24dab267bfca99466700516e44b78"
+      },
+      {
+        "id": "new-en-c1-the-blue-button",
+        "readSha256": "7fa359a856a01669d83efb4dbc5eeb2d9590317b7f3be16b7fd237fc57d077aa"
+      },
+      {
+        "id": "new-en-c1-light-in-the-workshop",
+        "readSha256": "3d436cdf2afc2e4c2e4a9c8fc7c98a3955a8bfeb0e6d1c2c11ed1af0468c241b"
+      },
+      {
+        "id": "new-en-c1-the-perfect-volunteer",
+        "readSha256": "7b49957c557eefd9edf9ddc11bdde9205dc48934960c6dc7bd8adb3fade71591"
+      }
+    ]
+  },
+  "openFindings": [
+    {
+      "id": "new-en-a1-button-under-cushion",
+      "finding": "Keep button/thread facts identical across branches; author fixing."
+    },
+    {
+      "id": "new-it-a1-unasked-bicycle",
+      "finding": "Make opening dialogue natural instead of stating the plot mechanism; author fixing."
+    },
+    {
+      "id": "new-it-a1-painted-trousers",
+      "finding": "Replace plan close to English paint-and-shirts; not authored."
+    }
+  ]
+}

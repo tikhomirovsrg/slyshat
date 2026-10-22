@@ -1,12 +1,13 @@
 import type {Language} from '../app/episodes';
 import type {Level} from '../app/study-types';
 import type {ComicBoard,ComicCard} from './comic-types';
+import type {AuthoredStoryExercises} from './story-exercises.mjs';
 export type StoryChoice={text:string;label:string;next:string;clip?:StoryClip};
 export type StoryClip={id:string;text:string;ru:string;voice:string;source:string;startAt:number;endAt:number;actorId?:string;actorName?:string};
 export type StoryNode={clips:StoryClip[];choices:StoryChoice[];outcome?:{title:string;body:string}|null};
-export type StoryCard={id:string;language:Language;level:Level;position:number;title:string;topic:string;summary:string;art:'coffee'|'train'|'work'|'film';legacy:boolean;comic?:ComicCard};
-export type CourseStory=StoryCard&{context:string;start:string;nodes:Record<string,StoryNode>;origin:string;comic?:ComicBoard;vocabulary?:{term:string;ru:string}[]};
-export type StoryCatalog={items:StoryCard[];total:number;counts:Record<Level,number>;provenance:string};
+export type StoryCard={id:string;language:Language;level:Level;position:number;title:string;topic:string;summary:string;art:'coffee'|'train'|'work'|'film';legacy:boolean;comic?:ComicCard;archived?:boolean;audioMode?:'recorded'|'text'};
+export type CourseStory=StoryCard&{context:string;start:string;nodes:Record<string,StoryNode>;origin:string;comic?:ComicBoard;vocabulary?:{term:string;ru:string}[];authoredExercises?:AuthoredStoryExercises;sourceAttribution?:{title:string;author:string;adaptation:string}};
+export type StoryCatalog={items:StoryCard[];total:number;counts:Record<Level,number>;provenance:string;archived?:StoryCard[]};
 export type StoryExerciseAnswer={answerIds:string[];correct:boolean;checkedAt:string;assisted:boolean};
 export type StoryExerciseAttempt={version:string;routeKey:string;answers:Record<string,StoryExerciseAnswer>;assisted:boolean;replayed:boolean;updatedAt:string;completedAt?:string};
 export type JourneyProgress={path:number[];heard:string[];assisted:string[];finishedAt:string|null;updatedAt:string;completedAt?:string;endings?:string[];exercises?:StoryExerciseAttempt};

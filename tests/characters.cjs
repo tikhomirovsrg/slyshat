@@ -74,7 +74,7 @@ test('Course API enriches old IDs/boards and uses the actual recorded voice for 
   try{
     const {courseStory,storyCatalog}=require('../lib/story-course.ts'),ready=fs.existsSync('public/audio/characters/manifest.json');
     for(const language of ['en','it']){
-      const catalog=storyCatalog(language);assert.equal(catalog.total,1000);assert(catalog.items.every(s=>s.comic.coverActor?.artBase));
+      const catalog=storyCatalog(language);assert.equal(catalog.total,150);assert.equal(catalog.archived,undefined);assert(catalog.items.every(s=>s.comic.coverActor?.artBase));
       for(const legacy of [true,false]){
         const raw=course.stories.find(s=>s.language===language&&s.legacy===legacy),story=courseStory(raw.id),assignment=cast.stories[raw.id];
         assert.equal(story.id,raw.id);assert.deepEqual(Object.keys(story.nodes),Object.keys(raw.nodes));assert.equal(story.comic.releaseId,'comic-v1');assert.equal(story.comic.castReleaseId,'character-cast-v1');assert.equal(story.comic.playerActorId,assignment.playerActorId);

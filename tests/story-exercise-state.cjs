@@ -44,19 +44,23 @@ test('Reading, replay and repeated checking remain assistance without inventing 
   const bad=structuredClone(p);bad.exercises.assisted=false;assert.throws(()=>validateExerciseAttempt(set,bad),/assistance/);
 });
 
-test('A profile with exercises for all 2000 stories saves, reloads and rejects a forged route score',()=>{
+test('A profile with exercises for all 2246 old and new stories saves, reloads and rejects a forged route score',()=>{
   const {initializeDatabase}=require('../lib/db-migrations.mjs'),dbModule=require('../lib/db.ts'),originalGetDb=dbModule.getDb,db=new DatabaseSync(':memory:');initializeDatabase(db);dbModule.getDb=()=>db;
   try{
     const {freshProfile}=require('../app/profile-types.ts'),{profileStore}=require('../lib/profile-store.ts'),{MAX_PROFILE_BYTES}=require('../lib/profile-limits.ts');
     const course=JSON.parse(fs.readFileSync('content/story-course/course-v1.json')),library=JSON.parse(fs.readFileSync('content/audio-library/series-v1.json'));
     db.prepare('INSERT INTO users VALUES(?,?,?,?)').run('all-exercises','789','Learner',at);
     const p=freshProfile();p.journey={active:{},stories:{}};p.audioPractice={};
-    for(const raw of course.stories){
-      const story={...raw,nodes:Object.fromEntries(Object.entries(raw.nodes).map(([id,node])=>[id,{...node,clips:node.clips.map(ref=>({id:ref.id,...(ref.set==='course'?course:library).segments[ref.id]}))}]))};
+    const {readExpansion,expansionExerciseSource}=require('../lib/story-expansion.mjs');
+    const stories=[...course.stories.map(raw=>({...raw,nodes:Object.fromEntries(Object.entries(raw.nodes).map(([id,node])=>[id,{...node,clips:node.clips.map(ref=>({id:ref.id,...(ref.set==='course'?course:library).segments[ref.id]}))}]))})),...readExpansion().stories.map(expansionExerciseSource)];
+    assert.equal(stories.length,2246);
+    for(const story of stories){
       let node=story.start;const route=[node],path=[];while(story.nodes[node].choices.length){path.push(0);node=story.nodes[node].choices[0].next;route.push(node);}
       let state={path,heard:route,assisted:[],finishedAt:at,completedAt:at,endings:[node],updatedAt:at};const exercises=buildStoryExercises(story,path);assert(exercises,'Missing finished-route exercises: '+story.id);
       for(const question of exercises.questions)state=answerExercise(exercises,state,question.id,question.answerIds,at);p.journey.stories[story.id]=state;
     }
+    assert.equal(Object.keys(p.journey.stories).length,2246);
+    assert.equal(Object.values(p.journey.stories).filter(state=>state.exercises.version==='story-exercises-v2').length,246);
     for(const story of library.stories)p.audioPractice[story.id]={completedAt:at,correct:3,total:3,assisted:false};
     p.events=library.stories.map(story=>({id:'audio-library:'+story.id+':00000000-0000-0000-0000-000000000000',at,points:3}));
     p.tests=Array.from({length:50},(_,i)=>{const questionIds=Array.from({length:20},(_,j)=>'question-'+i+'-'+j);return {id:'test-'+i,kind:'control',language:'it',level:'B1',questionIds,finishedAt:at,answers:Object.fromEntries(questionIds.map(id=>[id,{value:'Una risposta di esempio per la verifica. '.repeat(4),correct:true,assisted:false,skill:'reading',checkedAt:at}]))};});

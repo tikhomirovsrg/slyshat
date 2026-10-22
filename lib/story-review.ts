@@ -1,5 +1,5 @@
 import type {Journey,JourneyProgress,StoryCard,StoryExerciseAttempt} from './story-course-types';
-import {STORY_EXERCISES_RELEASE_ID} from './story-exercises.mjs';
+import {STORY_EXERCISES_RELEASE_ID,AUTHORED_EXERCISES_RELEASE_ID} from './story-exercises.mjs';
 import {validateExerciseAttemptShape} from './story-exercise-state';
 import {reviewIntervals} from '../app/study-types';
 
@@ -12,7 +12,8 @@ function currentAttempt(storyId:string,progress:JourneyProgress|undefined):Story
  if(!progress?.finishedAt||!Number.isFinite(validTime(progress.finishedAt))||!progress.exercises)return null;
  try{
   const attempt=validateExerciseAttemptShape(progress.exercises);
-  if(attempt.version!==STORY_EXERCISES_RELEASE_ID||attempt.routeKey!==`${STORY_EXERCISES_RELEASE_ID}:${storyId}:${progress.path.join('.')}`||Object.keys(attempt.answers).some(id=>!questionIds.includes(id)))return null;
+  const release=storyId.startsWith('new-')?AUTHORED_EXERCISES_RELEASE_ID:STORY_EXERCISES_RELEASE_ID;
+  if(attempt.version!==release||attempt.routeKey!==`${release}:${storyId}:${progress.path.join('.')}`||Object.keys(attempt.answers).some(id=>!questionIds.includes(id)))return null;
   return attempt;
  }catch{return null;}
 }

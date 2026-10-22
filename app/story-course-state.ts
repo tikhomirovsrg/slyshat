@@ -15,7 +15,8 @@ export function storyRoute(story:Pick<CourseStory,'start'|'nodes'>,path:number[]
  return route;
 }
 export function validateJourney(value:unknown):Journey{
- const j=value as Journey;if(!j||!j.active||typeof j.active!=='object'||Array.isArray(j.active)||Object.keys(j.active).some(k=>!['en','it'].includes(k))||!j.stories||typeof j.stories!=='object'||Array.isArray(j.stories)||Object.keys(j.stories).length>2000)throw Error('Invalid story journey');
+ // Archived v1 routes and all new distinct stories can coexist in one profile.
+ const j=value as Journey;if(!j||!j.active||typeof j.active!=='object'||Array.isArray(j.active)||Object.keys(j.active).some(k=>!['en','it'].includes(k))||!j.stories||typeof j.stories!=='object'||Array.isArray(j.stories)||Object.keys(j.stories).length>2246)throw Error('Invalid story journey');
  const validId=(s:unknown)=>typeof s==='string'&&/^[a-zA-Z0-9_-]{1,120}$/.test(s);
  for(const id of Object.values(j.active))if(!validId(id))throw Error('Invalid active story');
  for(const [id,p] of Object.entries(j.stories)){

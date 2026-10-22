@@ -1,0 +1,2728 @@
+{
+  "stories": 246,
+  "counts": {
+    "en": {
+      "A1": 30,
+      "A2": 19,
+      "B1": 21,
+      "B2": 25,
+      "C1": 28
+    },
+    "it": {
+      "A1": 29,
+      "A2": 19,
+      "B1": 22,
+      "B2": 25,
+      "C1": 28
+    }
+  },
+  "checksum": "fe0c4f8569137d3de5e24d469a0c34e7bea66a70e491b0f60c8650601a8560a7",
+  "metrics": [
+    {
+      "id": "new-en-a1-ball-in-vase",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        82,
+        76
+      ]
+    },
+    {
+      "id": "new-en-a1-dinner-tools",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        77,
+        78
+      ]
+    },
+    {
+      "id": "new-en-a1-sweet-jar",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        81,
+        89
+      ]
+    },
+    {
+      "id": "new-en-a1-small-fingers",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        85,
+        86
+      ]
+    },
+    {
+      "id": "new-en-a1-puzzle-race",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        77,
+        82
+      ]
+    },
+    {
+      "id": "new-en-a1-mirror-step",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        74,
+        76
+      ]
+    },
+    {
+      "id": "new-en-a1-cake-and-camera",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        78,
+        86
+      ]
+    },
+    {
+      "id": "new-en-a1-stars-and-puddle",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        82,
+        86
+      ]
+    },
+    {
+      "id": "new-en-a1-hot-and-cold",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        82,
+        77
+      ]
+    },
+    {
+      "id": "new-en-a1-costume-door",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        87,
+        86
+      ]
+    },
+    {
+      "id": "new-en-a1-hat-and-hair",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        78,
+        77
+      ]
+    },
+    {
+      "id": "new-en-a1-paint-and-shirts",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        77,
+        76
+      ]
+    },
+    {
+      "id": "new-en-a1-cups-in-basket",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        82,
+        81
+      ]
+    },
+    {
+      "id": "new-en-a1-thirsty-plant",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        84,
+        83
+      ]
+    },
+    {
+      "id": "new-en-a1-heavy-sponge-bag",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        81,
+        92
+      ]
+    },
+    {
+      "id": "new-en-a1-real-cake-alert",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        87,
+        86
+      ]
+    },
+    {
+      "id": "new-en-a1-bike-pump-practice",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        79,
+        73
+      ]
+    },
+    {
+      "id": "new-en-a1-who-gets-applause",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        84,
+        90
+      ]
+    },
+    {
+      "id": "new-en-a1-flying-wig",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        83,
+        87
+      ]
+    },
+    {
+      "id": "new-en-a1-erased-portrait",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        83,
+        87
+      ]
+    },
+    {
+      "id": "new-en-a1-serious-neighbour",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        79,
+        79
+      ]
+    },
+    {
+      "id": "new-en-a1-candle-in-wind",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        82,
+        80
+      ]
+    },
+    {
+      "id": "new-en-a1-popcorn-button",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap103",
+      "routes": 2,
+      "routeWords": [
+        85,
+        84
+      ]
+    },
+    {
+      "id": "new-en-a1-chocolate-pocket",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap32",
+      "routes": 2,
+      "routeWords": [
+        81,
+        83
+      ]
+    },
+    {
+      "id": "new-en-a1-sticky-star",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap64",
+      "routes": 2,
+      "routeWords": [
+        89,
+        91
+      ]
+    },
+    {
+      "id": "new-en-a1-night-shoemaker",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap39",
+      "routes": 2,
+      "routeWords": [
+        81,
+        88
+      ]
+    },
+    {
+      "id": "new-en-a1-button-under-cushion",
+      "language": "en",
+      "level": "A1",
+      "source": "https://da.wikisource.org/wiki/Prindsessen_paa_%C3%86rten",
+      "routes": 2,
+      "routeWords": [
+        84,
+        86
+      ]
+    },
+    {
+      "id": "new-en-a1-painted-fly",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        86,
+        88
+      ]
+    },
+    {
+      "id": "new-en-a1-scrap-fabric",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap156",
+      "routes": 2,
+      "routeWords": [
+        86,
+        83
+      ]
+    },
+    {
+      "id": "new-en-a1-paper-bridge-button",
+      "language": "en",
+      "level": "A1",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap18",
+      "routes": 2,
+      "routeWords": [
+        85,
+        93
+      ]
+    },
+    {
+      "id": "new-en-a2-honest-hammer",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        129,
+        119
+      ]
+    },
+    {
+      "id": "new-en-a2-empty-room-service",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        129,
+        123
+      ]
+    },
+    {
+      "id": "new-en-a2-pancake-champion",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        126,
+        125
+      ]
+    },
+    {
+      "id": "new-en-a2-garden-treasure",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        133,
+        134
+      ]
+    },
+    {
+      "id": "new-en-a2-real-rain-sound",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        131,
+        125
+      ]
+    },
+    {
+      "id": "new-en-a2-sign-for-everyone",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        114,
+        121
+      ]
+    },
+    {
+      "id": "new-en-a2-rain-for-two",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        127,
+        138
+      ]
+    },
+    {
+      "id": "new-en-a2-silent-guitar",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        136,
+        141
+      ]
+    },
+    {
+      "id": "new-en-a2-warm-photo-room",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        128,
+        144
+      ]
+    },
+    {
+      "id": "new-en-a2-last-starter",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        145,
+        149
+      ]
+    },
+    {
+      "id": "new-en-a2-portrait-with-frame",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        145,
+        154
+      ]
+    },
+    {
+      "id": "new-en-a2-everyones-material",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/11339/pg11339-images.html",
+      "routes": 2,
+      "routeWords": [
+        142,
+        148
+      ]
+    },
+    {
+      "id": "new-en-a2-lighter-trades",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap83",
+      "routes": 2,
+      "routeWords": [
+        141,
+        147
+      ]
+    },
+    {
+      "id": "new-en-a2-missing-cupcakes",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap77",
+      "routes": 2,
+      "routeWords": [
+        144,
+        145
+      ]
+    },
+    {
+      "id": "new-en-a2-small-table-model",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap78",
+      "routes": 2,
+      "routeWords": [
+        158,
+        144
+      ]
+    },
+    {
+      "id": "new-en-a2-dancing-soles",
+      "language": "en",
+      "level": "A2",
+      "source": "https://www.gutenberg.org/cache/epub/5314/pg5314-images.html#chap133",
+      "routes": 2,
+      "routeWords": [
+        152,
+        141
+      ]
+    },
+    {
+      "id": "new-en-a2-blank-masterpiece",
+      "language": "en",
+      "level": "A2",
+      "source": "https://da.wikisource.org/wiki/Keiserens_nye_Kl%C3%A6der",
+      "routes": 2,
+      "routeWords": [
+        142,
+        138
+      ]
+    },
+    {
+      "id": "new-en-a2-old-toy-house",
+      "language": "en",
+      "level": "A2",
+      "source": "https://hcandersen.dk/vaerker/det-gamle-huus/",
+      "routes": 2,
+      "routeWords": [
+        152,
+        160
+      ]
+    },
+    {
+      "id": "new-en-a2-after-big-stage",
+      "language": "en",
+      "level": "A2",
+      "source": "https://da.wikisource.org/wiki/Grantr%C3%A6et",
+      "routes": 2,
+      "routeWords": [
+        151,
+        153
+      ]
+    },
+    {
+      "id": "new-en-b1-accidental-adventure",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Four_Million/The_Green_Door",
+      "routes": 2,
+      "routeWords": [
+        189,
+        184
+      ]
+    },
+    {
+      "id": "new-en-b1-better-after-every-fix",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/Sketches_by_Mark_Twain/My_Watch_%E2%80%94_An_Instructive_Little_Tale",
+      "routes": 2,
+      "routeWords": [
+        190,
+        186
+      ]
+    },
+    {
+      "id": "new-en-b1-confident-maze-guide",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/Three_Men_in_a_Boat_(1889)/Chapter_6",
+      "routes": 2,
+      "routeWords": [
+        196,
+        194
+      ]
+    },
+    {
+      "id": "new-en-b1-jar-that-won",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/Three_Men_in_a_Boat_(1889)/Chapter_12",
+      "routes": 2,
+      "routeWords": [
+        198,
+        189
+      ]
+    },
+    {
+      "id": "new-en-b1-jingle-relay",
+      "language": "en",
+      "level": "B1",
+      "source": "https://www.gutenberg.org/files/3184/3184-h/3184-h.htm",
+      "routes": 2,
+      "routeWords": [
+        201,
+        194
+      ]
+    },
+    {
+      "id": "new-en-b1-leaf-on-the-wall",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Trimmed_Lamp_(1907)/The_Last_Leaf",
+      "routes": 2,
+      "routeWords": [
+        216,
+        210
+      ]
+    },
+    {
+      "id": "new-en-b1-learning-with-an-audience",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/Taming_the_Bicycle",
+      "routes": 2,
+      "routeWords": [
+        203,
+        199
+      ]
+    },
+    {
+      "id": "new-en-b1-mysterious-cheese-smell",
+      "language": "en",
+      "level": "B1",
+      "source": "https://americanliterature.com/author/mark-twain/short-story/the-invalids-story",
+      "routes": 2,
+      "routeWords": [
+        208,
+        209
+      ]
+    },
+    {
+      "id": "new-en-b1-neutral-taste-test",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Four_Million/A_Cosmopolite_in_a_Cafe",
+      "routes": 2,
+      "routeWords": [
+        195,
+        206
+      ]
+    },
+    {
+      "id": "new-en-b1-private-line-public-label",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Four_Million/Springtime_a_la_Carte",
+      "routes": 2,
+      "routeWords": [
+        209,
+        214
+      ]
+    },
+    {
+      "id": "new-en-b1-quiet-kitchen-return",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Trimmed_Lamp_(1907)/The_Pendulum",
+      "routes": 2,
+      "routeWords": [
+        208,
+        212
+      ]
+    },
+    {
+      "id": "new-en-b1-sealed-too-soon",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/Three_Men_in_a_Boat_(1889)/Chapter_4",
+      "routes": 2,
+      "routeWords": [
+        220,
+        223
+      ]
+    },
+    {
+      "id": "new-en-b1-second-bowl",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Trimmed_Lamp_(1907)/Two_Thanksgiving_Day_Gentlemen",
+      "routes": 2,
+      "routeWords": [
+        209,
+        221
+      ]
+    },
+    {
+      "id": "new-en-b1-showcase-after-rain",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Trimmed_Lamp_(1907)/The_Purple_Dress",
+      "routes": 2,
+      "routeWords": [
+        207,
+        216
+      ]
+    },
+    {
+      "id": "new-en-b1-street-becomes-neighbours",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Trimmed_Lamp_(1907)/The_Making_of_a_New_Yorker",
+      "routes": 2,
+      "routeWords": [
+        221,
+        217
+      ]
+    },
+    {
+      "id": "new-en-b1-trophy-everyone-won",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/Three_Men_in_a_Boat_(1889)/Chapter_17",
+      "routes": 2,
+      "routeWords": [
+        203,
+        205
+      ]
+    },
+    {
+      "id": "new-en-b1-two-empty-boxes",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Four_Million/The_Gift_of_the_Magi",
+      "routes": 2,
+      "routeWords": [
+        205,
+        212
+      ]
+    },
+    {
+      "id": "new-en-b1-two-songs-one-stage",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/Three_Men_in_a_Boat_(1889)/Chapter_8",
+      "routes": 2,
+      "routeWords": [
+        206,
+        217
+      ]
+    },
+    {
+      "id": "new-en-b1-weighted-paper-plane",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Celebrated_Jumping_Frog_of_Calaveras_County",
+      "routes": 2,
+      "routeWords": [
+        205,
+        213
+      ]
+    },
+    {
+      "id": "new-en-b1-welcome-again",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/The_Four_Million/The_Romance_of_a_Busy_Broker",
+      "routes": 2,
+      "routeWords": [
+        218,
+        207
+      ]
+    },
+    {
+      "id": "new-en-b1-whose-splashed-jacket",
+      "language": "en",
+      "level": "B1",
+      "source": "https://en.wikisource.org/wiki/Three_Men_in_a_Boat_(1889)/Chapter_11",
+      "routes": 2,
+      "routeWords": [
+        218,
+        216
+      ]
+    },
+    {
+      "id": "new-en-b2-all-the-red-bicycles",
+      "language": "en",
+      "level": "B2",
+      "source": "https://www.gutenberg.org/files/3181/3181-h/3181-h.htm",
+      "routes": 2,
+      "routeWords": [
+        243,
+        236
+      ]
+    },
+    {
+      "id": "new-en-b2-escape-the-encore",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_ransom_of_Red_Chief_and_other_O._Henry_stories_for_boys/The_Cop_and_the_Anthem",
+      "routes": 2,
+      "routeWords": [
+        261,
+        262
+      ]
+    },
+    {
+      "id": "new-en-b2-borrowed-portrait",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Trimmed_Lamp_(1907)/The_Count_and_the_Wedding_Guest",
+      "routes": 2,
+      "routeWords": [
+        258,
+        258
+      ]
+    },
+    {
+      "id": "new-en-b2-circle-of-fame",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Trimmed_Lamp_(1907)/The_Social_Triangle",
+      "routes": 2,
+      "routeWords": [
+        266,
+        262
+      ]
+    },
+    {
+      "id": "new-en-b2-famous-for-the-wrong-column",
+      "language": "en",
+      "level": "B2",
+      "source": "https://www.gutenberg.org/files/3189/3189-h/3189-h.htm",
+      "routes": 2,
+      "routeWords": [
+        259,
+        265
+      ]
+    },
+    {
+      "id": "new-en-b2-farewell-that-failed",
+      "language": "en",
+      "level": "B2",
+      "source": "https://www.gutenberg.org/files/866/866-h/866-h.htm",
+      "routes": 2,
+      "routeWords": [
+        253,
+        260
+      ]
+    },
+    {
+      "id": "new-en-b2-final-batch-forever",
+      "language": "en",
+      "level": "B2",
+      "source": "https://www.gutenberg.org/files/3251/3251-h/3251-h.htm",
+      "routes": 2,
+      "routeWords": [
+        267,
+        265
+      ]
+    },
+    {
+      "id": "new-en-b2-friend-on-review-panel",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Four_Million/After_Twenty_Years",
+      "routes": 2,
+      "routeWords": [
+        263,
+        264
+      ]
+    },
+    {
+      "id": "new-en-b2-guest-who-tested-everything",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_ransom_of_Red_Chief_and_other_O._Henry_stories_for_boys/The_Ransom_Of_Red_Chief",
+      "routes": 2,
+      "routeWords": [
+        284,
+        277
+      ]
+    },
+    {
+      "id": "new-en-b2-help-that-erases",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/Sixes_and_Sevens/Witches'_Loaves",
+      "routes": 2,
+      "routeWords": [
+        256,
+        272
+      ]
+    },
+    {
+      "id": "new-en-b2-laughing-by-example",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/Three_Men_in_a_Boat_(1889)/Chapter_8",
+      "routes": 2,
+      "routeWords": [
+        275,
+        267
+      ]
+    },
+    {
+      "id": "new-en-b2-manufactured-chance",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Four_Million/Mammon_and_the_Archer",
+      "routes": 2,
+      "routeWords": [
+        270,
+        268
+      ]
+    },
+    {
+      "id": "new-en-b2-old-stage-trick",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/Roads_of_Destiny_(1909)/A_Retrieved_Reformation",
+      "routes": 2,
+      "routeWords": [
+        279,
+        278
+      ]
+    },
+    {
+      "id": "new-en-b2-overhelpful-reminders",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_McWilliamses_and_the_Burglar_Alarm",
+      "routes": 2,
+      "routeWords": [
+        277,
+        279
+      ]
+    },
+    {
+      "id": "new-en-b2-protest-at-copy",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/A_Ghost_Story",
+      "routes": 2,
+      "routeWords": [
+        282,
+        289
+      ]
+    },
+    {
+      "id": "new-en-b2-reward-for-not-taking",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Voice_of_the_City_(1908)/One_Thousand_Dollars",
+      "routes": 2,
+      "routeWords": [
+        274,
+        289
+      ]
+    },
+    {
+      "id": "new-en-b2-second-first-performance",
+      "language": "en",
+      "level": "B2",
+      "source": "https://www.gutenberg.org/files/868/868-h/868-h.htm",
+      "routes": 2,
+      "routeWords": [
+        282,
+        283
+      ]
+    },
+    {
+      "id": "new-en-b2-shared-secret-prize",
+      "language": "en",
+      "level": "B2",
+      "source": "https://www.gutenberg.org/files/3251/3251-h/3251-h.htm",
+      "routes": 2,
+      "routeWords": [
+        272,
+        273
+      ]
+    },
+    {
+      "id": "new-en-b2-singlehanded-helper",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/Three_Men_in_a_Boat_(1889)/Chapter_3",
+      "routes": 2,
+      "routeWords": [
+        279,
+        270
+      ]
+    },
+    {
+      "id": "new-en-b2-storm-behind-curtains",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/Mrs._McWilliams_and_the_Lightning",
+      "routes": 2,
+      "routeWords": [
+        282,
+        293
+      ]
+    },
+    {
+      "id": "new-en-b2-too-perfect-errand",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Voice_of_the_City_(1908)/Little_Speck_in_Garnered_Fruit",
+      "routes": 2,
+      "routeWords": [
+        289,
+        288
+      ]
+    },
+    {
+      "id": "new-en-b2-two-borrowed-roles",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Voice_of_the_City_(1908)/While_the_Auto_Waits",
+      "routes": 2,
+      "routeWords": [
+        279,
+        279
+      ]
+    },
+    {
+      "id": "new-en-b2-two-secret-shifts",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Four_Million/A_Service_of_Love",
+      "routes": 2,
+      "routeWords": [
+        293,
+        292
+      ]
+    },
+    {
+      "id": "new-en-b2-unspendable-voucher",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/The_Million_Pound_Bank_Note",
+      "routes": 2,
+      "routeWords": [
+        273,
+        288
+      ]
+    },
+    {
+      "id": "new-en-b2-wrong-turn-winner",
+      "language": "en",
+      "level": "B2",
+      "source": "https://en.wikisource.org/wiki/Luck_(Twain)",
+      "routes": 2,
+      "routeWords": [
+        296,
+        279
+      ]
+    },
+    {
+      "id": "new-it-a1-recognizable-flask",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXI",
+      "routes": 2,
+      "routeWords": [
+        86,
+        82
+      ]
+    },
+    {
+      "id": "new-it-a1-empty-clean-glass",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XLIII",
+      "routes": 2,
+      "routeWords": [
+        68,
+        76
+      ]
+    },
+    {
+      "id": "new-it-a1-two-shirts-one",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XCV",
+      "routes": 2,
+      "routeWords": [
+        83,
+        92
+      ]
+    },
+    {
+      "id": "new-it-a1-little-sun",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/LXVI",
+      "routes": 2,
+      "routeWords": [
+        88,
+        88
+      ]
+    },
+    {
+      "id": "new-it-a1-old-coat-pockets",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/LXXXIV",
+      "routes": 2,
+      "routeWords": [
+        89,
+        89
+      ]
+    },
+    {
+      "id": "new-it-a1-chair-rings-bell",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/LII",
+      "routes": 2,
+      "routeWords": [
+        86,
+        93
+      ]
+    },
+    {
+      "id": "new-it-a1-generous-zero",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXIII",
+      "routes": 2,
+      "routeWords": [
+        92,
+        88
+      ]
+    },
+    {
+      "id": "new-it-a1-my-broken-cup",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XLVIII",
+      "routes": 2,
+      "routeWords": [
+        100,
+        93
+      ]
+    },
+    {
+      "id": "new-it-a1-umbrella-surprises",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/LIII",
+      "routes": 2,
+      "routeWords": [
+        91,
+        94
+      ]
+    },
+    {
+      "id": "new-it-a1-last-years-haircut",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XCIII",
+      "routes": 2,
+      "routeWords": [
+        81,
+        91
+      ]
+    },
+    {
+      "id": "new-it-a1-final-cherry",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XI",
+      "routes": 2,
+      "routeWords": [
+        86,
+        91
+      ]
+    },
+    {
+      "id": "new-it-a1-unasked-bicycle",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXXIII",
+      "routes": 2,
+      "routeWords": [
+        98,
+        98
+      ]
+    },
+    {
+      "id": "new-it-a1-beautiful-useful-stones",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/I",
+      "routes": 2,
+      "routeWords": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "new-it-a1-bread-smell-candles",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/LXXX",
+      "routes": 2,
+      "routeWords": [
+        79,
+        82
+      ]
+    },
+    {
+      "id": "new-it-a1-shared-empty-wallets",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/LV",
+      "routes": 2,
+      "routeWords": [
+        81,
+        76
+      ]
+    },
+    {
+      "id": "new-it-a1-egg-endless-bread",
+      "language": "it",
+      "level": "A1",
+      "source": "https://en.wikisource.org/wiki/Italian_Popular_Tales/Chapter_6",
+      "routes": 2,
+      "routeWords": [
+        85,
+        87
+      ]
+    },
+    {
+      "id": "new-it-a1-paper-cushion",
+      "language": "it",
+      "level": "A1",
+      "source": "https://en.wikisource.org/wiki/Italian_Popular_Tales/Chapter_6",
+      "routes": 2,
+      "routeWords": [
+        86,
+        79
+      ]
+    },
+    {
+      "id": "new-it-a1-silent-puppet",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Storie_allegre/La_festa_di_Natale",
+      "routes": 2,
+      "routeWords": [
+        80,
+        76
+      ]
+    },
+    {
+      "id": "new-it-a1-roman-five",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Storie_allegre/Dopo_il_teatro",
+      "routes": 2,
+      "routeWords": [
+        75,
+        73
+      ]
+    },
+    {
+      "id": "new-it-a1-costume-nap",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Storie_allegre/Una_mascherata_di_carnevale/III",
+      "routes": 2,
+      "routeWords": [
+        84,
+        88
+      ]
+    },
+    {
+      "id": "new-it-a1-hat-over-eyes",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Storie_allegre/L%27omino_anticipato/II",
+      "routes": 2,
+      "routeWords": [
+        75,
+        87
+      ]
+    },
+    {
+      "id": "new-it-a1-three-season-coat",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Occhi_e_nasi/Scampolino",
+      "routes": 2,
+      "routeWords": [
+        81,
+        85
+      ]
+    },
+    {
+      "id": "new-it-a1-pear-peels",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Le_avventure_di_Pinocchio/Capitolo_7",
+      "routes": 2,
+      "routeWords": [
+        86,
+        90
+      ]
+    },
+    {
+      "id": "new-it-a1-rattle-in-box",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/II",
+      "routes": 2,
+      "routeWords": [
+        86,
+        88
+      ]
+    },
+    {
+      "id": "new-it-a1-too-many-first-figs",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/LXXIV",
+      "routes": 2,
+      "routeWords": [
+        84,
+        90
+      ]
+    },
+    {
+      "id": "new-it-a1-gift-of-hands",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XVI",
+      "routes": 2,
+      "routeWords": [
+        83,
+        87
+      ]
+    },
+    {
+      "id": "new-it-a1-old-fashioned-cart",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXVII",
+      "routes": 2,
+      "routeWords": [
+        87,
+        95
+      ]
+    },
+    {
+      "id": "new-it-a1-missing-sock-feet",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Novellino/LXXVII",
+      "routes": 2,
+      "routeWords": [
+        76,
+        82
+      ]
+    },
+    {
+      "id": "new-it-a1-one-minute-visitor",
+      "language": "it",
+      "level": "A1",
+      "source": "https://it.wikisource.org/wiki/Occhi_e_nasi/Giornali_e_giornalisti",
+      "routes": 2,
+      "routeWords": [
+        83,
+        83
+      ]
+    },
+    {
+      "id": "new-it-a2-above-the-top",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXVIII",
+      "routes": 2,
+      "routeWords": [
+        113,
+        114
+      ]
+    },
+    {
+      "id": "new-it-a2-appetite-not-job",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXXIX",
+      "routes": 2,
+      "routeWords": [
+        112,
+        110
+      ]
+    },
+    {
+      "id": "new-it-a2-before-the-trip",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/LXIX",
+      "routes": 2,
+      "routeWords": [
+        108,
+        119
+      ]
+    },
+    {
+      "id": "new-it-a2-box-under-sample",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/XCVII",
+      "routes": 2,
+      "routeWords": [
+        108,
+        108
+      ]
+    },
+    {
+      "id": "new-it-a2-change-backwards",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/XCVI",
+      "routes": 2,
+      "routeWords": [
+        129,
+        124
+      ]
+    },
+    {
+      "id": "new-it-a2-coat-at-table",
+      "language": "it",
+      "level": "A2",
+      "source": "https://en.wikisource.org/wiki/Italian_Popular_Tales/Chapter_6",
+      "routes": 2,
+      "routeWords": [
+        113,
+        121
+      ]
+    },
+    {
+      "id": "new-it-a2-customer-who-paid",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Occhi_e_nasi/Gli_ultimi_fiorentini/Usi_e_costumi_dell%27Elvetichino",
+      "routes": 2,
+      "routeWords": [
+        110,
+        108
+      ]
+    },
+    {
+      "id": "new-it-a2-endless-crossing",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXX",
+      "routes": 2,
+      "routeWords": [
+        105,
+        108
+      ]
+    },
+    {
+      "id": "new-it-a2-first-concert-debt",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/LVI",
+      "routes": 2,
+      "routeWords": [
+        128,
+        130
+      ]
+    },
+    {
+      "id": "new-it-a2-five-haircuts",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Occhi_e_nasi/Un_cavaliere_del_secolo_XIX",
+      "routes": 2,
+      "routeWords": [
+        117,
+        121
+      ]
+    },
+    {
+      "id": "new-it-a2-gift-inside-cake",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/LXXIX",
+      "routes": 2,
+      "routeWords": [
+        133,
+        134
+      ]
+    },
+    {
+      "id": "new-it-a2-one-actor-two-names",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Occhi_e_nasi/Il_Poeta_ed_il_Maestro_di_musica",
+      "routes": 2,
+      "routeWords": [
+        134,
+        119
+      ]
+    },
+    {
+      "id": "new-it-a2-pay-for-smell",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/VIII",
+      "routes": 2,
+      "routeWords": [
+        123,
+        123
+      ]
+    },
+    {
+      "id": "new-it-a2-perfect-bad-report",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Storie_allegre/L%27avvocatino",
+      "routes": 2,
+      "routeWords": [
+        132,
+        134
+      ]
+    },
+    {
+      "id": "new-it-a2-predicted-blackout",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/X",
+      "routes": 2,
+      "routeWords": [
+        115,
+        123
+      ]
+    },
+    {
+      "id": "new-it-a2-two-advisers-two-gifts",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXII",
+      "routes": 2,
+      "routeWords": [
+        124,
+        136
+      ]
+    },
+    {
+      "id": "new-it-a2-what-you-want",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/IX",
+      "routes": 2,
+      "routeWords": [
+        134,
+        134
+      ]
+    },
+    {
+      "id": "new-it-a2-words-not-kept",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/XXVI",
+      "routes": 2,
+      "routeWords": [
+        105,
+        135
+      ]
+    },
+    {
+      "id": "new-it-a2-wrong-audience",
+      "language": "it",
+      "level": "A2",
+      "source": "https://it.wikisource.org/wiki/Novellino/XLIV",
+      "routes": 2,
+      "routeWords": [
+        132,
+        134
+      ]
+    },
+    {
+      "id": "new-it-b1-racconto-che-salta",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Decameron/Giornata_sesta/Novella_prima",
+      "routes": 2,
+      "routeWords": [
+        224,
+        203
+      ]
+    },
+    {
+      "id": "new-it-b2-bottiglia-enorme",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Decameron/Giornata_sesta/Novella_seconda",
+      "routes": 2,
+      "routeWords": [
+        269,
+        258
+      ]
+    },
+    {
+      "id": "new-it-b1-biscotto-con-un-ala",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Decameron/Giornata_sesta/Novella_quarta",
+      "routes": 2,
+      "routeWords": [
+        210,
+        212
+      ]
+    },
+    {
+      "id": "new-it-b1-esperti-in-impermeabile",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Decameron/Giornata_sesta/Novella_quinta",
+      "routes": 2,
+      "routeWords": [
+        222,
+        217
+      ]
+    },
+    {
+      "id": "new-it-b2-quattro-domande",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/IV",
+      "routes": 2,
+      "routeWords": [
+        271,
+        266
+      ]
+    },
+    {
+      "id": "new-it-b1-uccello-rarissimo",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/VI",
+      "routes": 2,
+      "routeWords": [
+        207,
+        216
+      ]
+    },
+    {
+      "id": "new-it-b1-carte-nel-canale",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/XVII",
+      "routes": 2,
+      "routeWords": [
+        228,
+        234
+      ]
+    },
+    {
+      "id": "new-it-b1-terra-in-carriola",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/XXVII",
+      "routes": 2,
+      "routeWords": [
+        214,
+        226
+      ]
+    },
+    {
+      "id": "new-it-b1-stemma-di-attrezzi",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/LXIII",
+      "routes": 2,
+      "routeWords": [
+        227,
+        232
+      ]
+    },
+    {
+      "id": "new-it-b1-toppa-scarlatta",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/L",
+      "routes": 2,
+      "routeWords": [
+        240,
+        234
+      ]
+    },
+    {
+      "id": "new-it-b1-lite-con-un-libro",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/LXVI",
+      "routes": 2,
+      "routeWords": [
+        220,
+        232
+      ]
+    },
+    {
+      "id": "new-it-b1-calze-sul-muro",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/LXXX",
+      "routes": 2,
+      "routeWords": [
+        229,
+        231
+      ]
+    },
+    {
+      "id": "new-it-b1-moda-di-prendere-vigne",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/LXXXVIII",
+      "routes": 2,
+      "routeWords": [
+        233,
+        242
+      ]
+    },
+    {
+      "id": "new-it-b1-metro-che-si-accorcia",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/XCII",
+      "routes": 2,
+      "routeWords": [
+        230,
+        237
+      ]
+    },
+    {
+      "id": "new-it-b1-giacca-attaccata",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/LXVIII",
+      "routes": 2,
+      "routeWords": [
+        186,
+        186
+      ]
+    },
+    {
+      "id": "new-it-b1-versi-e-martelli",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXIV",
+      "routes": 2,
+      "routeWords": [
+        198,
+        187
+      ]
+    },
+    {
+      "id": "new-it-b1-foto-tristi",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXVIII",
+      "routes": 2,
+      "routeWords": [
+        208,
+        191
+      ]
+    },
+    {
+      "id": "new-it-b1-torta-per-grammatica",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXXIII",
+      "routes": 2,
+      "routeWords": [
+        189,
+        193
+      ]
+    },
+    {
+      "id": "new-it-b1-pasta-in-fuga",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXXIV",
+      "routes": 2,
+      "routeWords": [
+        186,
+        193
+      ]
+    },
+    {
+      "id": "new-it-b1-uova-nelle-tasche",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXLVII",
+      "routes": 2,
+      "routeWords": [
+        182,
+        187
+      ]
+    },
+    {
+      "id": "new-it-b1-orso-sul-cappello",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CL",
+      "routes": 2,
+      "routeWords": [
+        199,
+        200
+      ]
+    },
+    {
+      "id": "new-it-b1-promessa-alla-porta",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXLII",
+      "routes": 2,
+      "routeWords": [
+        205,
+        215
+      ]
+    },
+    {
+      "id": "new-it-b1-messaggio-dimenticato",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/XXXI",
+      "routes": 2,
+      "routeWords": [
+        221,
+        228
+      ]
+    },
+    {
+      "id": "new-it-b1-inchiostro-per-tutti",
+      "language": "it",
+      "level": "B1",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CLXIII",
+      "routes": 2,
+      "routeWords": [
+        199,
+        193
+      ]
+    },
+    {
+      "id": "new-it-b2-ricevuta-dimenticata",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/LII",
+      "routes": 2,
+      "routeWords": [
+        252,
+        265
+      ]
+    },
+    {
+      "id": "new-it-b2-promessa-sensazionale",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/XXXII",
+      "routes": 2,
+      "routeWords": [
+        250,
+        249
+      ]
+    },
+    {
+      "id": "new-it-b2-prima-divisa",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/LXII",
+      "routes": 2,
+      "routeWords": [
+        257,
+        251
+      ]
+    },
+    {
+      "id": "new-it-b2-verita-incredibili",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CIV",
+      "routes": 2,
+      "routeWords": [
+        261,
+        265
+      ]
+    },
+    {
+      "id": "new-it-b2-scatola-del-grande-numero",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Decameron/Giornata_sesta/Novella_decima",
+      "routes": 2,
+      "routeWords": [
+        250,
+        255
+      ]
+    },
+    {
+      "id": "new-it-b2-seconda-scatola",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXCVIII",
+      "routes": 2,
+      "routeWords": [
+        250,
+        248
+      ]
+    },
+    {
+      "id": "new-en-c1-portrait-after-dark",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Open_Window",
+      "routes": 2,
+      "routeWords": [
+        338,
+        347
+      ]
+    },
+    {
+      "id": "new-en-c1-unexpected-critic",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Schartz-Metterklume_Method",
+      "routes": 2,
+      "routeWords": [
+        347,
+        348
+      ]
+    },
+    {
+      "id": "new-en-c1-charger-as-proof",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/Dusk",
+      "routes": 2,
+      "routeWords": [
+        339,
+        344
+      ]
+    },
+    {
+      "id": "new-en-c1-improv-without-curtain",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/A_Touch_of_Realism",
+      "routes": 2,
+      "routeWords": [
+        331,
+        345
+      ]
+    },
+    {
+      "id": "new-en-c1-accidental-anthem",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/Cousin_Teresa",
+      "routes": 2,
+      "routeWords": [
+        348,
+        358
+      ]
+    },
+    {
+      "id": "new-en-c1-two-kitchen-promises",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Byzantine_Omelette",
+      "routes": 2,
+      "routeWords": [
+        338,
+        342
+      ]
+    },
+    {
+      "id": "new-en-c1-champion-of-everything",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/A_Defensive_Diamond",
+      "routes": 2,
+      "routeWords": [
+        343,
+        353
+      ]
+    },
+    {
+      "id": "new-en-c1-thank-you-autocomplete",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/%22Down_Pens%22",
+      "routes": 2,
+      "routeWords": [
+        369,
+        360
+      ]
+    },
+    {
+      "id": "new-en-c1-rulebook-in-the-attic",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Lumber_Room",
+      "routes": 2,
+      "routeWords": [
+        347,
+        350
+      ]
+    },
+    {
+      "id": "new-en-c1-the-perfect-gift-interpreter",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/Fur",
+      "routes": 2,
+      "routeWords": [
+        358,
+        350
+      ]
+    },
+    {
+      "id": "new-en-c1-the-toast-before-the-sale",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/On_Approval",
+      "routes": 2,
+      "routeWords": [
+        361,
+        357
+      ]
+    },
+    {
+      "id": "new-en-c1-rivals-refuse-the-show",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Unkindest_Blow",
+      "routes": 2,
+      "routeWords": [
+        354,
+        360
+      ]
+    },
+    {
+      "id": "new-en-c1-the-quince-tree-secret",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Quince_Tree",
+      "routes": 2,
+      "routeWords": [
+        366,
+        366
+      ]
+    },
+    {
+      "id": "new-en-c1-the-overattentive-host",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Forbidden_Buzzards",
+      "routes": 2,
+      "routeWords": [
+        368,
+        374
+      ]
+    },
+    {
+      "id": "new-en-c1-the-magic-demo",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_She-Wolf",
+      "routes": 2,
+      "routeWords": [
+        348,
+        359
+      ]
+    },
+    {
+      "id": "new-en-c1-the-chair-comes-home",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Brogue",
+      "routes": 2,
+      "routeWords": [
+        365,
+        365
+      ]
+    },
+    {
+      "id": "new-en-c1-the-local-who-knows",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Name-Day",
+      "routes": 2,
+      "routeWords": [
+        358,
+        366
+      ]
+    },
+    {
+      "id": "new-en-c1-the-installation-moves-in",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Stalled_Ox",
+      "routes": 2,
+      "routeWords": [
+        372,
+        371
+      ]
+    },
+    {
+      "id": "new-en-c1-the-accurate-minutes",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Chronicles_of_Clovis/Tobermory",
+      "routes": 2,
+      "routeWords": [
+        364,
+        377
+      ]
+    },
+    {
+      "id": "new-en-c1-the-worthy-breakfast",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Chronicles_of_Clovis/Filboid_Studge,_the_Story_of_a_Mouse_that_Helped",
+      "routes": 2,
+      "routeWords": [
+        375,
+        386
+      ]
+    },
+    {
+      "id": "new-en-c1-postcard-peace",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Chronicles_of_Clovis/The_Peace_of_Mowsle_Barton",
+      "routes": 2,
+      "routeWords": [
+        370,
+        388
+      ]
+    },
+    {
+      "id": "new-en-c1-three-saturdays",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Three_Sundays_in_a_Week",
+      "routes": 2,
+      "routeWords": [
+        381,
+        378
+      ]
+    },
+    {
+      "id": "new-en-c1-hidden-in-the-heading",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Works_of_the_Late_Edgar_Allan_Poe_(1850)/Volume_1/The_Purloined_Letter",
+      "routes": 2,
+      "routeWords": [
+        377,
+        367
+      ]
+    },
+    {
+      "id": "new-en-c1-the-paid-copyist",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Adventures_of_Sherlock_Holmes_(1892,_US)/The_Red-Headed_League",
+      "routes": 2,
+      "routeWords": [
+        384,
+        391
+      ]
+    },
+    {
+      "id": "new-en-c1-two-mentors-one-voice",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Adventures_of_Sherlock_Holmes_(1892,_US)/A_Case_of_Identity",
+      "routes": 2,
+      "routeWords": [
+        364,
+        356
+      ]
+    },
+    {
+      "id": "new-en-c1-the-blue-button",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Adventures_of_Sherlock_Holmes_(1892,_US)/The_Adventure_of_the_Blue_Carbuncle",
+      "routes": 2,
+      "routeWords": [
+        375,
+        376
+      ]
+    },
+    {
+      "id": "new-en-c1-light-in-the-workshop",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Memoirs_of_Sherlock_Holmes_1894_Burt/The_Yellow_Face",
+      "routes": 2,
+      "routeWords": [
+        406,
+        398
+      ]
+    },
+    {
+      "id": "new-en-c1-the-perfect-volunteer",
+      "language": "en",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/Beasts_and_Super-Beasts/The_Story-Teller",
+      "routes": 2,
+      "routeWords": [
+        390,
+        389
+      ]
+    },
+    {
+      "id": "new-it-c1-un-amico-eccellentissimo",
+      "language": "it",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Tales_of_Chekhov/Volume_13/Fat_and_Thin",
+      "routes": 2,
+      "routeWords": [
+        336,
+        343
+      ]
+    },
+    {
+      "id": "new-it-c1-la-bicicletta-importante",
+      "language": "it",
+      "level": "C1",
+      "source": "https://en.wikisource.org/wiki/The_Tales_of_Chekhov/Volume_12/A_Chameleon",
+      "routes": 2,
+      "routeWords": [
+        333,
+        341
+      ]
+    },
+    {
+      "id": "new-it-c1-la-lampada-di-ritorno",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Произведение_искусства_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        337,
+        345
+      ]
+    },
+    {
+      "id": "new-it-c1-scuse-in-copia",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Смерть_чиновника_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        350,
+        339
+      ]
+    },
+    {
+      "id": "new-it-c1-un-nome-da-mangiare",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Лошадиная_фамилия_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        339,
+        334
+      ]
+    },
+    {
+      "id": "new-it-c1-il-professore-del-balcone",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Письмо_к_учёному_соседу_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        358,
+        362
+      ]
+    },
+    {
+      "id": "new-it-c1-la-smentita-perfetta",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Клевета_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        358,
+        355
+      ]
+    },
+    {
+      "id": "new-it-c1-la-fila-per-niente",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Брожение_умов_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        349,
+        359
+      ]
+    },
+    {
+      "id": "new-it-c1-il-vincitore-sbagliato",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Счастливчик_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        355,
+        346
+      ]
+    },
+    {
+      "id": "new-it-c1-il-reclamo-senza-fine",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Беззащитное_существо_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        366,
+        370
+      ]
+    },
+    {
+      "id": "new-it-c1-quattro-libri-zero-frasi",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Дорогие_уроки_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        332,
+        341
+      ]
+    },
+    {
+      "id": "new-it-c1-la-visita-generosa",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Княгиня_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        344,
+        344
+      ]
+    },
+    {
+      "id": "new-it-c1-salvare-il-buon-nome",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Задача_(Чехов,_1887)",
+      "routes": 2,
+      "routeWords": [
+        339,
+        343
+      ]
+    },
+    {
+      "id": "new-it-c1-il-genio-ha-sete",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Тссс!_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        346,
+        351
+      ]
+    },
+    {
+      "id": "new-it-c1-il-ritratto-riciclato",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Альбом_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        347,
+        357
+      ]
+    },
+    {
+      "id": "new-it-c1-il-discorso-per-un-altro",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Оратор_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        354,
+        360
+      ]
+    },
+    {
+      "id": "new-it-c1-il-passeggero-formidabile",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Пересолил_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        347,
+        349
+      ]
+    },
+    {
+      "id": "new-it-b2-secondo-pittore",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CLXI",
+      "routes": 2,
+      "routeWords": [
+        281,
+        280
+      ]
+    },
+    {
+      "id": "new-it-b2-teiera-sulle-ruote",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CLV",
+      "routes": 2,
+      "routeWords": [
+        278,
+        279
+      ]
+    },
+    {
+      "id": "new-it-b2-due-regali-identici",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CLII",
+      "routes": 2,
+      "routeWords": [
+        318,
+        308
+      ]
+    },
+    {
+      "id": "new-it-b2-pesce-che-non-si-rifara",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CCXVI",
+      "routes": 2,
+      "routeWords": [
+        307,
+        296
+      ]
+    },
+    {
+      "id": "new-it-b2-meta-della-ricompensa",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXCV",
+      "routes": 2,
+      "routeWords": [
+        288,
+        287
+      ]
+    },
+    {
+      "id": "new-it-b2-invisibile-in-prova",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Decameron/Giornata_ottava/Novella_terza",
+      "routes": 2,
+      "routeWords": [
+        298,
+        305
+      ]
+    },
+    {
+      "id": "new-it-b2-pranzo-della-rivincita",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Decameron/Giornata_nona/Novella_ottava",
+      "routes": 2,
+      "routeWords": [
+        300,
+        291
+      ]
+    },
+    {
+      "id": "new-it-b2-trofeo-con-tecnico",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/La_giara_(Novella,_1928)",
+      "routes": 2,
+      "routeWords": [
+        293,
+        304
+      ]
+    },
+    {
+      "id": "new-it-b2-patente-di-guastafeste",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/La_patente_(novella)",
+      "routes": 2,
+      "routeWords": [
+        314,
+        318
+      ]
+    },
+    {
+      "id": "new-it-b2-fischio-dal-cortile",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_treno_ha_fischiato",
+      "routes": 2,
+      "routeWords": [
+        305,
+        308
+      ]
+    },
+    {
+      "id": "new-it-b2-farfalla-fuori-copione",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Il_Pipistrello",
+      "routes": 2,
+      "routeWords": [
+        328,
+        342
+      ]
+    },
+    {
+      "id": "new-it-b2-voce-del-duca",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Mondo_di_carta",
+      "routes": 2,
+      "routeWords": [
+        329,
+        323
+      ]
+    },
+    {
+      "id": "new-it-b2-parete-che-sospira",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/La_casa_del_Granella",
+      "routes": 2,
+      "routeWords": [
+        332,
+        341
+      ]
+    },
+    {
+      "id": "new-it-b2-manica-ribelle",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Marsina_stretta",
+      "routes": 2,
+      "routeWords": [
+        352,
+        354
+      ]
+    },
+    {
+      "id": "new-it-b2-pubblico-impermeabile",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/L'eresia_catara",
+      "routes": 2,
+      "routeWords": [
+        353,
+        344
+      ]
+    },
+    {
+      "id": "new-it-b2-minestra-cosmica",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/Pallottoline!",
+      "routes": 2,
+      "routeWords": [
+        346,
+        350
+      ]
+    },
+    {
+      "id": "new-it-b2-amico-che-non-ricordo",
+      "language": "it",
+      "level": "B2",
+      "source": "https://it.wikisource.org/wiki/I_nostri_ricordi",
+      "routes": 2,
+      "routeWords": [
+        354,
+        358
+      ]
+    },
+    {
+      "id": "new-it-c1-il-prezzo-della-liberta",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Загадочная_натура_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        399,
+        395
+      ]
+    },
+    {
+      "id": "new-it-c1-un-aiuto-di-troppo",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Нищий_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        416,
+        413
+      ]
+    },
+    {
+      "id": "new-it-c1-la-borsa-aperta",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Переполох_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        401,
+        402
+      ]
+    },
+    {
+      "id": "new-it-c1-la-vincita-immaginaria",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Выигрышный_билет_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        422,
+        414
+      ]
+    },
+    {
+      "id": "new-it-c1-il-quaderno-risponde",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Жалобная_книга_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        434,
+        428
+      ]
+    },
+    {
+      "id": "new-it-c1-cinque-esperti-un-bottone",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Налим_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        430,
+        438
+      ]
+    },
+    {
+      "id": "new-it-c1-la-firma-troppo-presto",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Неудача_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        365,
+        370
+      ]
+    },
+    {
+      "id": "new-it-c1-parenti-a-sorpresa",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Дачники_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        388,
+        389
+      ]
+    },
+    {
+      "id": "new-it-c1-il-pianista-si-nasconde",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Кто_виноват?_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        389,
+        381
+      ]
+    },
+    {
+      "id": "new-it-c1-lo-sportello-invisibile",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Справка_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        389,
+        399
+      ]
+    },
+    {
+      "id": "new-it-c1-la-medaglia-da-scontrino",
+      "language": "it",
+      "level": "C1",
+      "source": "https://ru.wikisource.org/wiki/Лев_и_Солнце_(Чехов)",
+      "routes": 2,
+      "routeWords": [
+        413,
+        393
+      ]
+    }
+  ]
+}

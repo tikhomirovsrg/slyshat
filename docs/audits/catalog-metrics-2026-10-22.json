@@ -1,0 +1,273 @@
+{
+  "auditDate": "2026-10-22",
+  "courseSha256": "5c5bdee17fb3c71bd4bfaa7f3d78adf33931621bdc313d4ed383a306834581d2",
+  "scope": "All 2000 source stories; metrics describe material, not automatic CEFR classification.",
+  "wordCountMethod": "Latin words including apostrophes plus numeric tokens; compound words split at hyphens.",
+  "audioRateMethod": "Opening scene word tokens / sum of character-manifest clip durations at playback 1x; synthetic recording, not native listener evaluation.",
+  "metrics": [
+    {
+      "language": "en",
+      "sourceLevel": "A1",
+      "variantCount": 197,
+      "openingWords": {
+        "min": 39,
+        "median": 44,
+        "max": 50
+      },
+      "openingWpmMedian": 193.0,
+      "answerWords": {
+        "median": 9.0,
+        "max": 14
+      }
+    },
+    {
+      "language": "en",
+      "sourceLevel": "A2",
+      "variantCount": 195,
+      "openingWords": {
+        "min": 68,
+        "median": 75,
+        "max": 84
+      },
+      "openingWpmMedian": 180.6,
+      "answerWords": {
+        "median": 9.0,
+        "max": 27
+      }
+    },
+    {
+      "language": "en",
+      "sourceLevel": "B1",
+      "variantCount": 195,
+      "openingWords": {
+        "min": 93,
+        "median": 101,
+        "max": 109
+      },
+      "openingWpmMedian": 174.2,
+      "answerWords": {
+        "median": 9.0,
+        "max": 41
+      }
+    },
+    {
+      "language": "en",
+      "sourceLevel": "B2",
+      "variantCount": 195,
+      "openingWords": {
+        "min": 119,
+        "median": 125,
+        "max": 132
+      },
+      "openingWpmMedian": 175.4,
+      "answerWords": {
+        "median": 9.0,
+        "max": 52
+      }
+    },
+    {
+      "language": "en",
+      "sourceLevel": "C1",
+      "variantCount": 198,
+      "openingWords": {
+        "min": 158,
+        "median": 168.0,
+        "max": 176
+      },
+      "openingWpmMedian": 159.1,
+      "answerWords": {
+        "median": 9.0,
+        "max": 88
+      }
+    },
+    {
+      "language": "it",
+      "sourceLevel": "A1",
+      "variantCount": 197,
+      "openingWords": {
+        "min": 33,
+        "median": 39,
+        "max": 46
+      },
+      "openingWpmMedian": 144.6,
+      "answerWords": {
+        "median": 9.0,
+        "max": 15
+      }
+    },
+    {
+      "language": "it",
+      "sourceLevel": "A2",
+      "variantCount": 195,
+      "openingWords": {
+        "min": 67,
+        "median": 73,
+        "max": 79
+      },
+      "openingWpmMedian": 157.1,
+      "answerWords": {
+        "median": 9.0,
+        "max": 23
+      }
+    },
+    {
+      "language": "it",
+      "sourceLevel": "B1",
+      "variantCount": 195,
+      "openingWords": {
+        "min": 89,
+        "median": 95,
+        "max": 103
+      },
+      "openingWpmMedian": 153.7,
+      "answerWords": {
+        "median": 9.0,
+        "max": 34
+      }
+    },
+    {
+      "language": "it",
+      "sourceLevel": "B2",
+      "variantCount": 195,
+      "openingWords": {
+        "min": 115,
+        "median": 121,
+        "max": 126
+      },
+      "openingWpmMedian": 146.9,
+      "answerWords": {
+        "median": 9.0,
+        "max": 49
+      }
+    },
+    {
+      "language": "it",
+      "sourceLevel": "C1",
+      "variantCount": 198,
+      "openingWords": {
+        "min": 155,
+        "median": 163.0,
+        "max": 170
+      },
+      "openingWpmMedian": 140.5,
+      "answerWords": {
+        "median": 9.0,
+        "max": 78
+      }
+    }
+  ],
+  "duplicateFamilies": [
+    {
+      "language": "en",
+      "family": "budget",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "en",
+      "family": "date",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "en",
+      "family": "entrance",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "en",
+      "family": "noise",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "en",
+      "family": "participation",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "en",
+      "family": "scope",
+      "stories": 105,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "en",
+      "family": "tasks",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "en",
+      "family": "time",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "it",
+      "family": "budget",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "it",
+      "family": "date",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "it",
+      "family": "entrance",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "it",
+      "family": "noise",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "it",
+      "family": "participation",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "it",
+      "family": "scope",
+      "stories": 105,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "it",
+      "family": "tasks",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    },
+    {
+      "language": "it",
+      "family": "time",
+      "stories": 125,
+      "distinctGraphsAndOutcomes": 1,
+      "distinctBodiesWithoutTopicIntro": 5
+    }
+  ]
+}

@@ -186,8 +186,26 @@ def render(job, cache):
 
 
 def encode_batch(batch, group, batch_number, results, staging):
+    # Isolate each attempt: stale or partially visible temporary files must not
+    # become a release. Every retry still passes the same full decode checks.
+    for attempt in range(1, 4):
+        with tempfile.TemporaryDirectory(prefix="packing-", dir=staging) as directory:
+            try:
+                return encode_batch_once(batch, group, batch_number, results, staging, Path(directory))
+            except (ValueError, subprocess.CalledProcessError) as error:
+                if attempt == 3:
+                    raise
+                print(f"RETRY PACK {'-'.join(group)} {batch_number} attempt {attempt}: {error}", flush=True)
+
+
+def sync_file(path):
+    with path.open("rb") as handle:
+        os.fsync(handle.fileno())
+
+
+def encode_batch_once(batch, group, batch_number, results, staging, work):
     """Keep a 1s silent guard; segment cues include a 250ms natural tail."""
-    wav_path = staging / "packing.wav"
+    wav_path = work / "packing.wav"
     cursor, cues = 0, {}
     with SF.SoundFile(wav_path, "w", samplerate=SAMPLE_RATE, channels=1, subtype="PCM_16") as output:
         for job_key in batch:
@@ -198,18 +216,26 @@ def encode_batch(batch, group, batch_number, results, staging):
             output.write(samples)
             output.write(NP.zeros(SAMPLE_RATE, dtype="float32"))
             cursor += len(samples) + SAMPLE_RATE
-    temporary = staging / "packing.mp3"
-    subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(wav_path),
-                    "-codec:a", "libmp3lame", "-b:a", "64k", str(temporary)], check=True)
+    sync_file(wav_path)
+    temporary = work / "packing.mp3"
+    decoded_path = work / "decoded.f32"
     # Seek metadata/Xing remains enabled, so decoded timing excludes encoder delay.
-    decoded_path = staging / "decoded.f32"
-    subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(temporary),
-                    "-f", "f32le", "-ac", "1", "-ar", str(SAMPLE_RATE), str(decoded_path)], check=True)
+    commands = [
+        ["ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y", "-i", str(wav_path),
+         "-codec:a", "libmp3lame", "-b:a", "64k", str(temporary)],
+        ["ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y", "-i", str(temporary),
+         "-f", "f32le", "-ac", "1", "-ar", str(SAMPLE_RATE), str(decoded_path)],
+    ]
+    for command in commands:
+        result = subprocess.run(command, stdin=subprocess.DEVNULL, capture_output=True, text=True, check=True)
+        if result.stderr.strip():
+            raise ValueError("ffmpeg reported an encoding/decoding error: " + result.stderr.strip())
+        sync_file(Path(command[-1]))
     decoded = NP.memmap(decoded_path, dtype="<f4", mode="r")
     validate_pcm(decoded, SAMPLE_RATE)
     duration = len(decoded) / SAMPLE_RATE
     if abs(duration - cursor / SAMPLE_RATE) > 0.02:
-        raise ValueError("MP3 decode duration differs from PCM timeline")
+        raise ValueError(f"MP3 decode duration {duration:.6f}s differs from PCM timeline {cursor / SAMPLE_RATE:.6f}s")
     for cue in cues.values():
         first, last = round(cue["start"] * SAMPLE_RATE), round(cue["end"] * SAMPLE_RATE)
         validate_pcm(decoded[first:last], SAMPLE_RATE)

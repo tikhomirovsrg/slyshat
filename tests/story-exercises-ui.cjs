@@ -18,6 +18,26 @@ test('An unanswered exercise uses labelled radios and does not render the explan
  assert(html.includes('Переслушать фрагмент'));assert(html.includes('Проверить'));
 });
 
+test('An unrecorded question offers exact reading evidence only after recording assistance',()=>{
+ const evidenceText=[{text:'La pioggia è cominciata dopo pranzo.',language:'it'}],events=[],states=[];
+ const properties={...props(),canReplay:false,evidenceText,onReadEvidence:()=>events.push('assistance')};
+ const original=React.useState;
+ const draw=extra=>{
+  let cursor=0;
+  React.useState=initial=>{const slot=cursor++;if(!(slot in states))states[slot]=typeof initial==='function'?initial():initial;return [states[slot],next=>{events.push('state');states[slot]=typeof next==='function'?next(states[slot]):next;}];};
+  try{return StoryExerciseCard({...properties,...extra});}finally{React.useState=original;}
+ };
+ function readingButton(tree){const buttons=[];function walk(node){if(Array.isArray(node))return node.forEach(walk);if(!node||typeof node!=='object')return;if(node.type==='button'&&node.props['aria-expanded']!==undefined)buttons.push(node);walk(node.props?.children);}walk(tree);return buttons[0]?.props;}
+ let tree=draw({}),html=renderToStaticMarkup(tree),button=readingButton(tree);
+ assert(html.includes('Перечитать фрагмент'));assert(!html.includes(evidenceText[0].text));assert(!html.includes('Переслушать фрагмент'));assert(!html.includes('Запись этого фрагмента пока недоступна'));assert.equal(button['aria-expanded'],false);assert.deepEqual(events,[]);
+ button.onClick();assert.deepEqual(events,['assistance','state']);
+ tree=draw({});html=renderToStaticMarkup(tree);button=readingButton(tree);
+ assert(html.includes('<p lang="it">'+evidenceText[0].text+'</p>'));assert.equal(button['aria-expanded'],true);assert(html.includes('Скрыть фрагмент'));assert(!html.includes(question.explanation));
+ button.onClick();assert.deepEqual(events,['assistance','state','state']);assert(!renderToStaticMarkup(draw({})).includes(evidenceText[0].text));
+ const locked=readingButton(draw({ready:false}));assert.equal(locked.disabled,true);locked.onClick();assert.deepEqual(events,['assistance','state','state']);
+ const recorded=renderToStaticMarkup(draw({canReplay:true}));assert(recorded.includes('Переслушать фрагмент'));assert(!recorded.includes('Перечитать фрагмент'));assert(!recorded.includes(evidenceText[0].text));
+});
+
 test('A checked answer reveals its explanation and locks the submitted options without changing the story',()=>{
  const answer={answerIds:['b'],correct:false,checkedAt:at,assisted:false};
  const html=renderToStaticMarkup(React.createElement(StoryExerciseCard,{...props(),answer}));

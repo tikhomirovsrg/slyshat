@@ -1,0 +1,2396 @@
+[
+  {
+    "id": "new-it-b2-secondo-pittore",
+    "language": "it",
+    "level": "B2",
+    "title": "Il secondo pittore",
+    "topic": "Creatività e collaborazione",
+    "summary": "I fiori dipinti da Elisa cambiano espressione durante la notte. Il responsabile è più vicino di quanto sembri.",
+    "context": "Sei Elisa, illustratrice. Stai preparando il pannello di un fioraio per una mostra, ma qualcuno continua a ritoccarlo.",
+    "hook": "Prima di accusare un rivale, conviene guardare chi ha le chiavi.",
+    "genre": "бытовой детектив с юмором",
+    "source": {
+      "title": "Il Trecentonovelle CLXI — Bonamico e la bertuccia",
+      "author": "Franco Sacchetti",
+      "url": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CLXI",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "nightly-mural-altered-by-own-client|separate-client-panel-or-reveal-context|toothy-flower-hit-or-client-makes-smiling-mess-worse",
+    "pedagogy": {
+      "rationaleRU": "B2: конкурирующие гипотезы, осторожное обвинение, ирония разрыва между намерением и результатом.",
+      "grammar": [
+        "ipotesi e attribuzione delle cause",
+        "concessive con ma e però",
+        "condizionale per attenuare una critica"
+      ],
+      "listeningFocusRU": "Различить добрые намерения, наблюдаемые изменения и неподтверждённое подозрение."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Elisa",
+        "roleRU": "Игрок: художница, оформляющая стенд"
+      },
+      {
+        "actorId": "host",
+        "name": "Dario",
+        "roleRU": "Хозяин цветочного магазина, решивший помочь"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "a mia insaputa",
+        "ru": "без моего ведома"
+      },
+      {
+        "term": "a fin di bene",
+        "ru": "из добрых побуждений"
+      },
+      {
+        "term": "mettere mano",
+        "ru": "вмешаться, взяться переделывать"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Dario, qualcuno continua a mettere mano al pannello a mia insaputa. Ieri i tulipani erano normali, stamattina sorridono tutti. Avevo persino preparato una protesta contro il negozio vicino, ma la porta era chiusa e tu sei l’unico ad avere le chiavi. Prima di parlare di sabotaggio, preferirei capire che cosa è successo.",
+            "ru": "Дарио, кто-то продолжает переделывать стенд без моего ведома. Вчера тюльпаны были обычными, а сегодня утром все улыбаются. Я даже подготовила жалобу на соседний магазин, но дверь была заперта, и ключи есть только у тебя. Прежде чем говорить о саботаже, я предпочла бы понять, что произошло."
+          },
+          {
+            "speaker": 1,
+            "text": "Sono stato io, ma a fin di bene. Volevo rendere i fiori più accoglienti. Non immaginavo che due piccoli denti potessero cambiare tanto l’atmosfera. Hai lavorato su una linea elegante; io pensavo soltanto ai clienti che passano senza fermarsi.",
+            "ru": "Это был я, но из добрых побуждений. Я хотел сделать цветы приветливее. Не представлял, что два маленьких зуба могут настолько изменить настроение. Ты работала над изящным стилем, а я думал лишь о клиентах, которые проходят мимо."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Ti lascio un riquadro separato: vediamo come immagini tu il negozio.",
+            "ru": "Оставлю тебе отдельную секцию: посмотрим, как ты представляешь магазин.",
+            "next": "a"
+          },
+          {
+            "text": "Guardiamo insieme il pannello accanto alla scritta della mostra.",
+            "ru": "Давай вместе посмотрим на стенд рядом с надписью для выставки.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "market",
+          "prop": "tools",
+          "mood": "thinking",
+          "caption": "Утренний осмотр стенда",
+          "clue": {
+            "title": "В кадре",
+            "body": "Рядом с кистями лежит связка ключей."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Un riquadro tutto mio? Allora provo con un fiore solo, così non invado il tuo lavoro. Però, visto da lontano, il sorriso sparisce. Gli allargo la bocca, aggiungo qualche dente e piego un poco il gambo. Non sarà raffinato, ma almeno non potrà lamentarsi nessuno che non si nota.",
+            "ru": "Целая секция для меня? Тогда попробую нарисовать один цветок, чтобы не вмешиваться в твою работу. Но издалека улыбка пропадает. Сделаю рот шире, добавлю несколько зубов и немного согну стебель. Получится не изысканно, зато никто не пожалуется, что его не видно."
+          },
+          {
+            "speaker": 0,
+            "text": "Non dobbiamo vincere una gara di denti. Il vantaggio di separarli è che il pubblico può scegliere fra due stili senza scambiarli per errori dello stesso autore. Lasciamo il tuo nome sotto quel fiore: se qualcuno chiede spiegazioni, questa volta sapremo chi chiamare.",
+            "ru": "Нам не нужно побеждать в состязании зубов. Разделение удобно тем, что публика сможет выбрать между двумя стилями, не принимая их за ошибки одного автора. Оставим под тем цветком твоё имя: если кто-нибудь потребует объяснений, на этот раз мы будем знать, кого позвать."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Firmalo e mettiamolo vicino alle piante carnivore.",
+            "ru": "Подпиши его, и поставим рядом с хищными растениями.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "market",
+          "prop": "tools",
+          "mood": "speaking",
+          "caption": "Отдельное место для второго автора",
+          "clue": {
+            "title": "В кадре",
+            "body": "На пустом участке стенда появляется крупный контур цветка."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Qui c’è scritto che il negozio presenta una composizione per una cerimonia molto sobria. Adesso guarda i tulipani: sembrano aspettare che qualcuno cada dalla sedia. Capisco che volevi essere gentile, ma la tua aggiunta racconta un’altra storia. Non basta che un dettaglio piaccia da solo: deve funzionare con tutto il resto.",
+            "ru": "Здесь написано, что магазин представляет композицию для очень сдержанной церемонии. Теперь посмотри на тюльпаны: будто они ждут, когда кто-нибудь упадёт со стула. Понимаю, что ты хотел добра, но твоя добавка рассказывает другую историю. Недостаточно, чтобы деталь нравилась сама по себе: она должна работать со всем остальным."
+          },
+          {
+            "speaker": 1,
+            "text": "Messa così, la mia allegria arriva proprio nel momento sbagliato. Provo a cancellare soltanto le bocche con questo panno. Aspetta: il colore si allunga ai lati. Adesso sembrano baffi. Forse il vero aiuto sarebbe smettere di aiutare e lasciarti la superficie libera.",
+            "ru": "Если так посмотреть, моя весёлость появляется совсем некстати. Попробую стереть только рты этой тряпкой. Подожди: краска растягивается в стороны. Теперь похоже на усы. Наверное, настоящая помощь — перестать помогать и оставить поверхность тебе."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Posa il panno: sistemeremo i colori, poi concordiamo ogni ritocco.",
+            "ru": "Положи тряпку: исправим краски, а дальше будем согласовывать каждую правку.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "market",
+          "prop": "tools",
+          "mood": "thinking",
+          "caption": "Два стиля рядом",
+          "clue": {
+            "title": "В кадре",
+            "body": "Под стендом стоит табличка будущей выставки."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Una cliente ha appena chiesto se la pianta coi denti sia in vendita. Le ho spiegato che è un disegno, e lei ha prenotato una pianta carnivora vera. Il tuo pannello elegante presenta il negozio; il mio mostro accompagna i clienti fino allo scaffale giusto. Non avrei mai trovato questa divisione continuando a dipingere di nascosto.",
+            "ru": "Клиентка только что спросила, продаётся ли растение с зубами. Я объяснил, что это рисунок, и она заказала настоящее хищное растение. Твой изящный стенд представляет магазин, а моё чудовище ведёт покупателей к нужной полке. Я бы никогда не нашёл такое разделение, продолжая рисовать тайком."
+          },
+          {
+            "speaker": 0,
+            "text": "Tieni pure il pennello, ma anche il tuo riquadro. La prossima protesta la userò contro i prezzi dei colori, non contro un rivale immaginario.",
+            "ru": "Кисть оставь себе, но вместе с твоей секцией. Следующую жалобу я использую против цен на краски, а не против воображаемого соперника."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "market",
+          "prop": "book",
+          "mood": "pleased",
+          "caption": "Два автора, два пространства",
+          "clue": {
+            "title": "В кадре",
+            "body": "Возле рисунка стоит маленький горшок с плотными листьями."
+          }
+        },
+        "outcome": {
+          "title": "У каждого свой цветок",
+          "body": "Хозяин получил отдельную секцию. Его зубастый цветок привлёк покупателей к хищным растениям, не разрушив работу художницы."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ti passo una tavolozza pulita e, per una volta, resto a guardare. Hai trasformato i miei baffi in ombre sotto i petali senza cancellare mezzo negozio. È curioso: quando facevo poco di nascosto, ti procuravo molto lavoro. Adesso che non tocco niente, finalmente sto collaborando.",
+            "ru": "Передаю тебе чистую палитру и хоть раз остаюсь наблюдателем. Ты превратила мои усы в тени под лепестками, не стирая полмагазина. Забавно: когда я понемногу действовал тайком, то создавал тебе много работы. Теперь, когда ничего не трогаю, наконец сотрудничаю."
+          },
+          {
+            "speaker": 0,
+            "text": "Allora scriviamo una regola sul retro del pannello: le idee si propongono prima di prendere il pennello. La mia grande denuncia può restare nel cassetto; magari un giorno ne farò una commedia.",
+            "ru": "Тогда напишем правило на обороте стенда: идеи предлагают до того, как взять кисть. Моя великая обвинительная речь может остаться в ящике; возможно, когда-нибудь сделаю из неё комедию."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "market",
+          "prop": "tools",
+          "mood": "pleased",
+          "caption": "Кисти отложены",
+          "clue": {
+            "title": "В кадре",
+            "body": "Хозяин держит чистую палитру за края."
+          }
+        },
+        "outcome": {
+          "title": "Помощь по договорённости",
+          "body": "Хозяин увидел, почему его дополнения мешали заказу. Художница исправила стенд, и они договорились согласовывать изменения заранее."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Что объясняет Дарио, говоря о своих правках?",
+        "options": [
+          "Он хотел привлечь проходящих клиентов, не понимая общего замысла.",
+          "Он намеренно копировал оформление соседнего магазина.",
+          "Он проверял, заметит ли художница работу соперника."
+        ],
+        "answer": 0,
+        "explanation": "Дарио хотел сделать цветы приветливее и думал о прохожих, но не учёл изящный стиль художницы."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что означает «a mia insaputa» в словах художницы?",
+        "options": [
+          "С моего предварительного согласия.",
+          "Без моего ведома.",
+          "В отсутствие других покупателей."
+        ],
+        "answer": 1,
+        "explanation": "Художница узнаёт о переделках только утром, поэтому речь о действиях без её ведома.",
+        "anchor": "a mia insaputa"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Для чего Элиза предлагает подписать отдельный цветок?",
+          "options": [
+            "Чтобы скрыть неудачную работу от покупателей.",
+            "Чтобы выдать обе части за рисунок одного мастера.",
+            "Чтобы разные замыслы и ответственность авторов были понятны."
+          ],
+          "answer": 2,
+          "explanation": "Она хочет, чтобы публика различала стили и знала, кто отвечает за отдельную часть."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 0,
+          "prompt": "В чём Элиза видит главную проблему улыбающихся тюльпанов?",
+          "options": [
+            "Они не соответствуют сдержанному характеру всего заказа.",
+            "Их невозможно рассмотреть издалека.",
+            "Они повторяют чужую выставочную композицию."
+          ],
+          "answer": 0,
+          "explanation": "Художница сопоставляет весёлые лица цветов с назначением стенда для сдержанной церемонии."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-teiera-sulle-ruote",
+    "language": "it",
+    "level": "B2",
+    "title": "La calma su quattro ruote",
+    "topic": "Immagine pubblica e imprevisti",
+    "summary": "Una piattaforma elegante mette in movimento il tranquillo video di un esperto di tè.",
+    "context": "Sei Chiara, assistente alle riprese. Devi aiutare il presentatore a decidere che cosa fare di un’inquadratura poco stabile.",
+    "hook": "Quanto può restare immobile una voce mentre tutto il resto si sposta?",
+    "genre": "медиакомедия",
+    "source": {
+      "title": "Il Trecentonovelle CLV — Maestro Gabbadeo",
+      "author": "Franco Sacchetti",
+      "url": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CLV",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "showy-moving-platform-undermines-expert-image|honest-retake-or-comic-outtake|broom-cupboard-cut-or-serene-voice-chaotic-background",
+    "pedagogy": {
+      "rationaleRU": "B2: контраст публичной речи и видимых обстоятельств, уступки и самоирония, оценка выгоды сомнительного приобретения.",
+      "grammar": [
+        "concessive e contrasto fra discorso e contesto",
+        "periodo ipotetico della possibilità",
+        "condizionale per una proposta motivata"
+      ],
+      "listeningFocusRU": "Услышать границу между сохранением публичного образа и честной самоиронией."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Chiara",
+        "roleRU": "Игрок: ассистентка на съёмке"
+      },
+      {
+        "actorId": "maker",
+        "name": "Renato",
+        "roleRU": "Ведущий видеоблога о чае"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "fare bella figura",
+        "ru": "произвести хорошее впечатление"
+      },
+      {
+        "term": "non era previsto",
+        "ru": "это не было предусмотрено"
+      },
+      {
+        "term": "salvare le apparenze",
+        "ru": "сохранить видимость благополучия"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Volevo fare bella figura con la nuova piattaforma, non limitarmi al solito tavolo. Sul catalogo girava soltanto su se stessa; che avanzasse anche verso il fondo del padiglione non era previsto. Per ora tengo la tazza e continuo a spiegare la calma. Tu però dimmi se sto per uscire dall’inquadratura.",
+            "ru": "Я хотел произвести хорошее впечатление новой платформой, а не ограничиваться обычным столом. В каталоге она лишь вращалась вокруг своей оси; то, что она ещё и едет в глубину павильона, не предусматривалось. Пока держу чашку и продолжаю рассказывать о спокойствии. Но ты скажи, если я начну выходить из кадра."
+          },
+          {
+            "speaker": 0,
+            "text": "La tazza è vuota per la prova, quindi non rischiamo di rovesciare il tè. Il problema è il fondale: dietro di te stanno comparendo le scope. Posso fermare tutto col comando. Possiamo rifare il video oppure trasformare questo tentativo in una parentesi comica, senza dover salvare le apparenze a ogni costo.",
+            "ru": "Для репетиции чашка пустая, так что чай мы не прольём. Проблема в фоне: за тобой появляются швабры. Я могу всё остановить пультом. Можно переснять видео или превратить эту попытку в комический эпизод, не сохраняя видимость благополучия любой ценой."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Fermiamoci subito e rifacciamo la scena su un tavolo stabile.",
+            "ru": "Остановимся сейчас и переснимем сцену за устойчивым столом.",
+            "next": "a"
+          },
+          {
+            "text": "Concludi la battuta, poi fermiamo la piattaforma e scendi.",
+            "ru": "Закончи шутку, затем остановим платформу, и ты сойдёшь.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "office",
+          "prop": "cup",
+          "mood": "thinking",
+          "caption": "Репетиция чайного ролика",
+          "clue": {
+            "title": "В кадре",
+            "body": "Ведущий держит пустую чашку, рядом виден пульт."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Ho premuto arresto: sei fermo proprio davanti all’armadio delle scope. Non taglierei soltanto gli ultimi secondi; la piattaforma si muove già mentre dici che la stabilità dipende dalla scelta del supporto. Se nascondessimo il guasto senza correggere la spiegazione, il consiglio sembrerebbe ancora più sicuro di quanto meriti.",
+            "ru": "Я нажала стоп: ты остановился прямо перед шкафом со швабрами. Я бы вырезала не только последние секунды: платформа уже движется, когда ты говоришь, что устойчивость зависит от выбора опоры. Если скрыть неполадку, не исправив объяснение, совет покажется ещё надёжнее, чем заслуживает."
+          },
+          {
+            "speaker": 1,
+            "text": "Hai ragione. Nel secondo tentativo dirò che ho scelto un supporto sbagliato e mostrerò quello semplice che usiamo davvero. Il modello costoso prometteva eleganza; il vecchio tavolo, almeno, non cerca un’altra stanza mentre parlo. Prima di registrare, però, lasciami controllare anche le sue gambe.",
+            "ru": "Ты права. Во второй попытке скажу, что выбрал неподходящую опору, и покажу простую, которой мы действительно пользуемся. Дорогая модель обещала изящество; старый стол, по крайней мере, не ищет другую комнату, пока я говорю. Но перед записью дай мне проверить ещё и его ножки."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Comincia dal controllo: questa volta sarà parte del consiglio.",
+            "ru": "Начни с проверки: на этот раз она станет частью совета.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "office",
+          "prop": "tools",
+          "mood": "speaking",
+          "caption": "Пауза у шкафа",
+          "clue": {
+            "title": "В кадре",
+            "body": "Платформа неподвижна рядом со шкафом для уборки."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Proseguo ancora una frase: per apprezzare il tè occorre lasciare passare i pensieri, e talvolta anche un secchio. Bene, ora fermiamo il pavimento viaggiante. Non voglio spacciarlo per una dimostrazione riuscita: se teniamo questo pezzo, deve essere chiaro che sto ridendo del mio acquisto, non consigliandolo al pubblico.",
+            "ru": "Продолжу ещё одну фразу: чтобы оценить чай, нужно дать мыслям пройти мимо, а иногда и ведру. Хорошо, теперь остановим этот путешествующий пол. Не хочу выдавать его за удачную демонстрацию: если оставим этот кусок, должно быть ясно, что я смеюсь над своей покупкой, а не рекомендую её публике."
+          },
+          {
+            "speaker": 0,
+            "text": "La battuta funziona proprio perché contraddice il tono serissimo. Spengo il motore e aspetto che tu sia sceso, poi filmiamo la spiegazione vera. Come apertura potremmo mostrare soltanto pochi secondi del tentativo, con una scritta che lo presenta per quello che è: una prova finita male.",
+            "ru": "Шутка работает именно потому, что противоречит серьёзнейшему тону. Выключаю мотор и жду, пока ты сойдёшь, затем снимем настоящее объяснение. В начале можно показать всего несколько секунд попытки с надписью, честно называющей её неудачной репетицией."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Teniamo la prova come apertura comica, separata dalla spiegazione.",
+            "ru": "Оставим пробу как комическое вступление отдельно от объяснения.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "office",
+          "prop": "camera",
+          "mood": "speaking",
+          "caption": "Последняя фраза первого дубля",
+          "clue": {
+            "title": "В кадре",
+            "body": "На экране камеры виден край шкафа."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Registriamo. Prima regola: controllare dove appoggiamo la tazza. Guarda, spingo il tavolo e non si muove. Sembra un gesto esagerato, ma dopo quello che hai visto posso permettermi di essere preciso. Nel montaggio lasceremo il rumore del primo arresto e questa verifica: il pubblico capirà perché abbiamo cambiato idea.",
+            "ru": "Записываем. Первое правило: проверить, куда ставим чашку. Смотри, толкаю стол, а он не двигается. Жест кажется чрезмерным, но после увиденного я могу позволить себе точность. В монтаже оставим звук первой остановки и эту проверку: зрители поймут, почему мы изменили решение."
+          },
+          {
+            "speaker": 0,
+            "text": "Perfetto. Ora puoi descrivere la serenità: questa volta le scope hanno deciso di restare fuori dal programma.",
+            "ru": "Отлично. Теперь можешь описывать безмятежность: на этот раз швабры решили не участвовать в программе."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "office",
+          "prop": "cup",
+          "mood": "pleased",
+          "caption": "Новый дубль за обычным столом",
+          "clue": {
+            "title": "В кадре",
+            "body": "Под чашкой лежит неподвижная салфетка."
+          }
+        },
+        "outcome": {
+          "title": "Совет проверен на месте",
+          "body": "Они остановили репетицию и пересняли объяснение. Ведущий открыто признал ошибку и показал проверку устойчивого стола."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Ho montato l’apertura. La tua voce resta calmissima mentre passa l’armadio, poi compare la scritta che annuncia una prova sbagliata. Subito dopo ti vediamo sul pavimento fermo, accanto al tavolo. La piattaforma può ancora servire per esporre le piante, purché nessuno pretenda di sedercisi durante una lezione.",
+            "ru": "Я смонтировала вступление. Твой голос остаётся совершенно спокойным, пока мимо проплывает шкаф, затем появляется надпись о неудачной репетиции. Сразу после этого мы видим тебя на неподвижном полу возле стола. Платформа ещё пригодится для выставки растений, если никто не станет сидеть на ней во время урока."
+          },
+          {
+            "speaker": 1,
+            "text": "D’accordo. Le piante sanno stare zitte quando si muovono; io avevo cercato di fare entrambe le cose al contrario.",
+            "ru": "Согласен. Растения умеют молчать, когда двигаются; я же пытался делать обе вещи наоборот."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "office",
+          "prop": "camera",
+          "mood": "pleased",
+          "caption": "Случайный эпизод становится вступлением",
+          "clue": {
+            "title": "В кадре",
+            "body": "Камера направлена на ведущего возле обычного стола."
+          }
+        },
+        "outcome": {
+          "title": "Неудачный дубль получил роль",
+          "body": "Неудачную репетицию открыто превратили в комическое вступление, а полезное объяснение сняли отдельно. Платформу оставили для растений."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Почему Ренато продолжает рассказывать о спокойствии?",
+        "options": [
+          "Он пока пытается удержать образ эксперта вопреки неожиданному движению.",
+          "Он специально проверяет у зрителей знание правил безопасности.",
+          "Он считает появление шкафа главной темой запланированного ролика."
+        ],
+        "answer": 0,
+        "explanation": "Он хотел произвести впечатление и продолжает объяснение, хотя движение вперёд оказалось неожиданным."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Какой смысл здесь имеет «salvare le apparenze»?",
+        "options": [
+          "Найти запасной фон для студии.",
+          "Сохранить видимость того, что всё идёт хорошо.",
+          "Получить разрешение на публикацию записи."
+        ],
+        "answer": 1,
+        "explanation": "Кьяра предлагает признать неудачу, а не поддерживать любой ценой впечатление безупречной съёмки.",
+        "anchor": "salvare le apparenze"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 0,
+          "prompt": "Почему Кьяра не советует просто обрезать конец записи?",
+          "options": [
+            "Она хочет включить в фильм больше уборочного инвентаря.",
+            "Зритель тогда не узнает стоимость оборудования.",
+            "Ошибочный совет об устойчивой опоре останется в начале."
+          ],
+          "answer": 2,
+          "explanation": "Платформа движется уже во время совета об опоре, поэтому удаление последних секунд скрывает проблему без исправления совета."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 0,
+          "prompt": "При каком условии Ренато согласен оставить комический дубль?",
+          "options": [
+            "Зрителям должно быть понятно, что это насмешка над ошибкой, а не рекомендация покупки.",
+            "Зрители должны поверить, что движение было предусмотрено с самого начала.",
+            "Платформу нужно продолжать использовать во всех следующих объяснениях."
+          ],
+          "answer": 0,
+          "explanation": "Ренато прямо различает самоиронию по поводу покупки и рекомендацию оборудования."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-due-regali-identici",
+    "language": "it",
+    "level": "B2",
+    "title": "Due orologi per fare colpo",
+    "topic": "Regali e aspettative",
+    "summary": "Carlo porta due orologi sonori a un amico che ama suonare in silenzio. Un regalo personale sembra difficile da superare.",
+    "context": "Sei Ada, amica di Carlo. Lo accompagni a una festa e noti che il suo dono funziona diversamente da come lo immaginava.",
+    "hook": "Se un regalo suona due volte, vale davvero il doppio?",
+    "genre": "комедия подарка",
+    "source": {
+      "title": "Il Trecentonovelle CLII — Giletto e Michelozzo",
+      "author": "Franco Sacchetti",
+      "url": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CLII",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "copying-prestige-gift-by-doubling-clocks|quiet-two-timezones-or-prestige-chime-demonstration|family-call-guide-or-donor-speech-drowned-by-chimes",
+    "pedagogy": {
+      "rationaleRU": "B2: социальное сравнение, непрямое выражение неудобства, различение подражания форме и понимания смысла.",
+      "grammar": [
+        "comparativi e valutazioni implicite",
+        "congiuntivo nelle ipotesi",
+        "contrasto fra prestigio e bisogno concreto"
+      ],
+      "listeningFocusRU": "Отличить желание превзойти чужой подарок от внимания к конкретной потребности получателя."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Ada",
+        "roleRU": "Игрок: подруга дарителя"
+      },
+      {
+        "actorId": "cartographer",
+        "name": "Carlo",
+        "roleRU": "Гость, желающий превзойти чужой подарок"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "all’altezza",
+        "ru": "на должном уровне"
+      },
+      {
+        "term": "fare colpo",
+        "ru": "произвести впечатление"
+      },
+      {
+        "term": "sfasati",
+        "ru": "не синхронизированные"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ho comprato due orologi da parete dello stesso modello: volevo un regalo all’altezza della casa nuova. Ieri il vicino ha portato una tazza a molla e tutti hanno riso, ricordando una vacanza insieme al padrone di casa. Io quella storia non la conosco, ma due oggetti di pregio dovrebbero fare colpo. Suonano entrambi allo scoccare dell’ora; ora però vedo che sono sfasati di due minuti.",
+            "ru": "Я купил двое настенных часов одной модели: хотел подарок на уровне нового дома. Вчера сосед принёс заводную кружку, и все смеялись, вспоминая совместный отпуск с хозяином. Я той истории не знаю, но два ценных предмета должны произвести впечатление. Оба бьют в начале часа; правда, теперь вижу, что между ними расхождение в две минуты."
+          },
+          {
+            "speaker": 0,
+            "text": "Il nostro amico ama provare il violoncello senza rumori improvvisi. Ci ha anche raccontato che sbaglia spesso l’orario delle chiamate alla figlia all’estero. Puoi chiedere che cosa gli serva davvero, oppure presentare il tuo grande concerto di precisione. I meccanismi permettono di escludere il suono: almeno questa possibilità non dobbiamo dimenticarla.",
+            "ru": "Наш друг любит репетировать на виолончели без внезапных шумов. Ещё он рассказал, что часто путает время звонков дочери за границу. Ты можешь спросить, что ему действительно нужно, или представить свой большой концерт точности. Механизмы позволяют выключать звук: по крайней мере не стоит забывать об этой возможности."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Spegniamo il suono e impostiamo gli orari delle due città.",
+            "ru": "Выключим звук и выставим время двух городов.",
+            "next": "a"
+          },
+          {
+            "text": "Presentali insieme: mostraci quanto sono precisi.",
+            "ru": "Представь их вместе: покажи нам, насколько они точны.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "clock",
+          "mood": "thinking",
+          "caption": "Подарок со звуковым сопровождением",
+          "clue": {
+            "title": "В кадре",
+            "body": "Рядом висят два одинаковых циферблата с разными минутами."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "La figlia ci ha appena confermato l’ora della sua città in un messaggio. Regoliamo un quadrante su quella e l’altro sull’ora di qui, poi mettiamo sotto due cartellini. Il nostro amico potrà scegliere quando telefonare senza fare calcoli mentre prova un pezzo. Non stiamo trovando un pretesto per tenere il regalo: questa esigenza esisteva prima degli orologi.",
+            "ru": "Дочь только что подтвердила время в своём городе сообщением. Настроим один циферблат по нему, а другой — по местному времени, затем подпишем их. Наш друг сможет выбирать время звонка без расчётов во время репетиции. Мы не придумываем предлог оставить подарок: эта потребность существовала до часов."
+          },
+          {
+            "speaker": 1,
+            "text": "Avevo pensato al raddoppio come a una dimostrazione di generosità. Adesso i quadranti diversi dicono qualcosa di più preciso del prezzo: collegano due persone. Spengo entrambe le suonerie e controllo le lancette. Per la prima volta sono contento che i due orologi non mostrino la stessa ora.",
+            "ru": "Я думал об удвоении как о доказательстве щедрости. Теперь разные циферблаты говорят кое-что точнее цены: они связывают двух людей. Выключаю оба звуковых сигнала и проверяю стрелки. Впервые я рад, что эти часы показывают разное время."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Scriviamo i nomi delle città e lasciamo riposare i campanelli.",
+            "ru": "Подпишем названия городов и дадим колокольчикам отдохнуть.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "phone",
+          "mood": "speaking",
+          "caption": "Два циферблата получают назначение",
+          "clue": {
+            "title": "В кадре",
+            "body": "На телефоне открыто сообщение с местным временем."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Comincio il discorso: questi due capolavori rappresentano la precisione. Ecco, il primo suona proprio mentre pronuncio precisione. Aspetto che finisca e riparto da capo. Però dopo due minuti parte il secondo, quando sto spiegando che il tempo non si perde. Avevo notato lo scarto, ma credevo che nessuno ci avrebbe fatto caso durante la presentazione.",
+            "ru": "Начинаю речь: эти два шедевра олицетворяют точность. Вот, первый бьёт, когда я произношу слово «точность». Подожду конца и начну заново. Но через две минуты вступает второй, когда я объясняю, что время нельзя терять. Я заметил расхождение, но думал, что во время презентации на него никто не обратит внимания."
+          },
+          {
+            "speaker": 0,
+            "text": "Gli orologi stanno dimostrando soltanto che avremmo dovuto regolarli prima. Il nostro amico non sa se applaudire al regalo o alla pausa fra i rintocchi. Non occorre difendere il discorso: puoi spegnere il suono, ammettere la fretta e chiedergli se desidera davvero due quadranti nella stessa stanza.",
+            "ru": "Часы доказывают лишь то, что нам следовало заранее их настроить. Наш друг не знает, аплодировать подарку или паузе между ударами. Необязательно защищать речь: можно выключить звук, признать спешку и спросить, действительно ли он хочет два циферблата в одной комнате."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Spegni il suono e lascia perdere il discorso sulla precisione.",
+            "ru": "Выключи звук и оставь речь о точности.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "home",
+          "prop": "clock",
+          "mood": "speaking",
+          "caption": "Речь получает два неожиданных вступления",
+          "clue": {
+            "title": "В кадре",
+            "body": "Карло держит лист с незаконченной речью."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Li abbiamo appesi vicino al telefono, con i nomi delle città ben leggibili. Il padrone di casa ha già scelto un momento per chiamare la figlia, poi ha ripreso il violoncello senza aspettarsi rintocchi. La tazza del vicino raccontava un ricordo condiviso; questi quadranti, finalmente, aiutano a prepararne altri. Non avrei trovato questo uso contando soltanto gli oggetti.",
+            "ru": "Мы повесили их возле телефона и разборчиво подписали города. Хозяин уже выбрал время звонка дочери, затем вернулся к виолончели, не ожидая боя часов. Кружка соседа рассказывала об общем воспоминании; эти циферблаты наконец помогают создавать новые. Я бы не нашёл такого применения, считая только предметы."
+          },
+          {
+            "speaker": 0,
+            "text": "E questa volta il segno che il regalo funziona è proprio quello che non sentiamo: nessun campanello durante la musica.",
+            "ru": "И на этот раз признак того, что подарок работает, — именно то, чего мы не слышим: никаких колокольчиков во время музыки."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "home",
+          "prop": "phone",
+          "mood": "pleased",
+          "caption": "Тихая связь двух городов",
+          "clue": {
+            "title": "В кадре",
+            "body": "Под циферблатами прикреплены две маленькие подписи."
+          }
+        },
+        "outcome": {
+          "title": "Два времени вместо двойной цены",
+          "body": "Карло выключил бой и настроил часы на два города. Подарок помог хозяину выбирать время звонков дочери, не прерывая музыкальные репетиции."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Mi ha detto che un orologio basta e mi ha proposto di tenere l’altro nel mio studio. Li abbiamo regolati insieme, in silenzio: per la prima volta il mio discorso sulla precisione ha avuto una conseguenza pratica. Tornerò a casa con metà del dono e una storia che non avevo previsto di raccontare.",
+            "ru": "Он сказал, что одних часов достаточно, и предложил оставить вторые в моём кабинете. Мы вместе настроили их, молча: впервые моя речь о точности привела к практическому результату. Я вернусь домой с половиной подарка и историей, которую не планировал рассказывать."
+          },
+          {
+            "speaker": 0,
+            "text": "Puoi dire che hai organizzato una donazione reciproca. Basta non raddoppiare anche la spiegazione: gli ospiti vorrebbero finalmente ascoltare il violoncello.",
+            "ru": "Можешь сказать, что устроил взаимное дарение. Только не удваивай ещё и объяснение: гости хотели бы наконец послушать виолончель."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "home",
+          "prop": "clock",
+          "mood": "pleased",
+          "caption": "Одна коробка остаётся у дарителя",
+          "clue": {
+            "title": "В кадре",
+            "body": "В закрываемой коробке лежат одни из двух часов."
+          }
+        },
+        "outcome": {
+          "title": "Часы прервали хвастовство",
+          "body": "Несинхронный бой разрушил торжественную речь о точности. Карло признал спешку, настроил часы и забрал одни домой, оставив хозяину удобное количество."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "На каком предположении основан выбор Карло?",
+        "options": [
+          "Два дорогих предмета произведут впечатление и без общей личной истории.",
+          "Хозяин заранее попросил два звуковых сигнала для репетиции.",
+          "Одинаковая модель гарантирует одинаковую настройку времени."
+        ],
+        "answer": 0,
+        "explanation": "Карло не знает историю кружки, но рассчитывает на эффект двух ценных вещей; разницу настройки он уже заметил."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что означает «sfasati» применительно к часам?",
+        "options": [
+          "Украшенные разными рисунками.",
+          "Не синхронизированные друг с другом.",
+          "Неспособные показывать местное время."
+        ],
+        "answer": 1,
+        "explanation": "Карло уточняет, что показания расходятся на две минуты.",
+        "anchor": "sfasati"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 0,
+          "prompt": "Почему Ада не считает два часовых пояса выдуманным оправданием подарка?",
+          "options": [
+            "Они увеличивают стоимость обоих механизмов.",
+            "Даритель заранее записал их в торжественную речь.",
+            "Хозяин уже нуждался в помощи с выбором времени звонков дочери."
+          ],
+          "answer": 2,
+          "explanation": "Ада говорит, что потребность существовала до появления подарка, и опирается на подтверждённое время из сообщения."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 0,
+          "prompt": "Что делает выступление Карло ироничным?",
+          "options": [
+            "Разные звуковые сигналы прерывают похвалу точности, хотя он заранее заметил расхождение.",
+            "Хозяин не разрешает дарителю произнести название модели.",
+            "Оба механизма перестали работать в момент объявления."
+          ],
+          "answer": 0,
+          "explanation": "Заявление о точности противоречит несогласованному бою; Карло признаёт, что знал о разнице, но надеялся скрыть её презентацией."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-pesce-che-non-si-rifara",
+    "language": "it",
+    "level": "B2",
+    "title": "Il pesce quasi uguale",
+    "topic": "Creatività e memoria",
+    "summary": "Un musicista ritrova la forma del suo vecchio pupazzo, ma non il momento che lo aveva reso famoso.",
+    "context": "Sei Lidia, amica di Piero. Lo aiuti a preparare un nuovo spettacolo dopo che ha perso il suo pesce di legno.",
+    "hook": "Se la copia è perfetta, perché manca ancora qualcosa?",
+    "genre": "комедия творчества",
+    "source": {
+      "title": "Il Trecentonovelle CCXVI — Il pesce di legno",
+      "author": "Franco Sacchetti",
+      "url": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CCXVI",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "lost-lucky-stage-fish-perfect-copy-fails|repeat-original-setting-or-create-search-story|empty-bench-perfect-dance-or-new-two-fish-act",
+    "pedagogy": {
+      "rationaleRU": "B2: причинность против совпадения, ностальгическое преувеличение, аргумент о невоспроизводимости ситуации.",
+      "grammar": [
+        "periodo ipotetico e relazioni causali",
+        "discorso indiretto e congiuntivo",
+        "contrasto fra ricordo e prova"
+      ],
+      "listeningFocusRU": "Различить реальную причину успеха, удачное совпадение и предположение героя."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Lidia",
+        "roleRU": "Игрок: подруга уличного музыканта"
+      },
+      {
+        "actorId": "conductor",
+        "name": "Piero",
+        "roleRU": "Музыкант, потерявший удачный реквизит"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "tale e quale",
+        "ru": "точь-в-точь"
+      },
+      {
+        "term": "per caso",
+        "ru": "случайно"
+      },
+      {
+        "term": "dare per scontato",
+        "ru": "считать само собой разумеющимся"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Il falegname ha finito: il pesce è tale e quale a quello che ho perso sull’autobus. Stesso legno, stessa coda che balla storta, perfino la macchia sulla pinna. Se torno sotto la vecchia finestra e suono la stessa canzone, dovrei ritrovare anche il successo. Altrimenti non saprei spiegare perché quella sera si fossero fermati in tanti.",
+            "ru": "Столяр закончил: рыба точь-в-точь как та, которую я потерял в автобусе. То же дерево, тот же криво танцующий хвост, даже пятно на плавнике. Если вернусь под прежнее окно и сыграю ту же песню, должен вернуть и успех. Иначе я не смог бы объяснить, почему в тот вечер остановилось столько людей."
+          },
+          {
+            "speaker": 0,
+            "text": "Quella sera avevi inventato una risposta alla vicina che chiedeva silenzio. Lei aveva cominciato a cantare dalla finestra e tutti ridevano del vostro duetto. Era successo per caso. Non possiamo dare per scontato che basti un oggetto identico: possiamo ripetere la prova oppure raccontare come il pesce sia sparito.",
+            "ru": "В тот вечер ты придумал ответ соседке, которая просила тишины. Она начала петь из окна, и все смеялись над вашим дуэтом. Это произошло случайно. Нельзя считать, что достаточно одинакового предмета: можно повторить опыт или рассказать, как рыба исчезла."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Riproviamo nello stesso posto e osserviamo la reazione.",
+            "ru": "Попробуем на том же месте и посмотрим на реакцию.",
+            "next": "a"
+          },
+          {
+            "text": "Facciamo cercare il vecchio pesce a quello nuovo.",
+            "ru": "Пусть новая рыба ищет старую.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "square",
+          "prop": "conversation",
+          "mood": "thinking",
+          "caption": "Возвращение с новым реквизитом",
+          "clue": {
+            "title": "В кадре",
+            "body": "На скамейке лежит деревянная рыба с шарнирным хвостом."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "La panchina è vuota, la finestra è chiusa e il mio pesce balla meglio di prima. Eppure tutti si sono fermati al chiosco di Mario. Non vende niente in questo momento: sta raccontando la sera in cui una signora cantò più forte del musicista. Perfino il pesce sembra ascoltare una versione della propria vita che non conosce.",
+            "ru": "Скамейка пуста, окно закрыто, а моя рыба танцует лучше прежней. И всё же все остановились у киоска Марио. Сейчас он ничего не продаёт: рассказывает о вечере, когда одна женщина пела громче музыканта. Даже рыба словно слушает неизвестную ей версию собственной жизни."
+          },
+          {
+            "speaker": 0,
+            "text": "Non è una prova che la copia sia sbagliata. È una prova che il pubblico seguiva un incontro, non un meccanismo. Possiamo finire la canzone senza inseguire quel ricordo. Se vuoi, poi chiediamo a Mario quali dettagli abbia aggiunto: dalla sua mimica direi che il nostro pesce ormai sa anche guidare l’autobus.",
+            "ru": "Это не доказательство того, что копия неправильная. Это доказательство того, что публика следила за встречей, а не за механизмом. Можно закончить песню, не гоняясь за тем воспоминанием. Если хочешь, потом спросим Марио, какие детали он добавил: судя по жестам, наша рыба теперь умеет ещё и водить автобус."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Finisci la canzone, poi andiamo ad ascoltare quella storia.",
+            "ru": "Закончи песню, потом пойдём слушать ту историю.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "square",
+          "prop": "conversation",
+          "mood": "speaking",
+          "caption": "Публика собралась в стороне",
+          "clue": {
+            "title": "В кадре",
+            "body": "У киоска видны несколько слушателей."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Questo pesce nuovo arriva alla fermata e domanda se qualcuno abbia visto un pesce vecchio. Poi si offende: tutti rispondono che i pesci non prendono l’autobus. Devo fare entrambe le voci, e intanto tenere il ritmo con il piede. Se continuo a discutere con il pupazzo, finirò per perdere anche il prossimo autobus.",
+            "ru": "Эта новая рыба приходит на остановку и спрашивает, не видел ли кто старую. Затем обижается: все отвечают, что рыбы в автобусах не ездят. Мне приходится изображать оба голоса и одновременно отбивать ритм ногой. Если продолжу спорить с куклой, то пропущу ещё и следующий автобус."
+          },
+          {
+            "speaker": 0,
+            "text": "Adesso il pubblico non deve ricordare la serata precedente per capire il numero. La perdita è diventata una domanda che porta avanti la scena. Non aggiungerei un lieto ritrovamento inventato: lasciamo che il pesce nuovo scopra di poter fare qualcosa che l’originale non aveva mai fatto, cioè cercare se stesso.",
+            "ru": "Теперь зрителям не нужно помнить предыдущий вечер, чтобы понять номер. Потеря стала вопросом, который двигает сцену. Я бы не добавляла выдуманную счастливую находку: пусть новая рыба обнаружит, что умеет то, чего оригинал никогда не делал, — искать саму себя."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Lasciamo la ricerca aperta e troviamo una canzone per due pesci.",
+            "ru": "Оставим поиски открытыми и найдём песню для двух рыб.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "square",
+          "prop": "map",
+          "mood": "speaking",
+          "caption": "Рыба отправляется на поиски",
+          "clue": {
+            "title": "В кадре",
+            "body": "Около музыканта разложена небольшая карта маршрута."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Mario mi ha offerto il suo sgabello perché ascoltassi fino in fondo. Nel suo racconto il pesce è lungo un metro e il mio cappello è volato sulla fontana. Non correggerò ogni dettaglio davanti a tutti, ma domani potrò partire da qui: il musicista incontra il racconto che è diventato più famoso di lui.",
+            "ru": "Марио предложил мне свой табурет, чтобы я дослушал до конца. В его рассказе рыба длиной в метр, а моя шляпа улетела на фонтан. Я не стану при всех исправлять каждую деталь, но завтра смогу начать отсюда: музыкант встречает рассказ, который стал известнее его самого."
+          },
+          {
+            "speaker": 0,
+            "text": "Intanto la tua copia può riposare. Non ha fallito: le avevamo chiesto di rifare una serata, quando sa soltanto muovere la coda.",
+            "ru": "А пока твоя копия может отдохнуть. Она не провалилась: мы просили её повторить целый вечер, хотя она умеет лишь двигать хвостом."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "square",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "Музыкант становится слушателем",
+          "clue": {
+            "title": "В кадре",
+            "body": "Деревянная рыба лежит поперёк колен Пьеро."
+          }
+        },
+        "outcome": {
+          "title": "Предмет не повторяет момент",
+          "body": "Повторение прежнего номера не вернуло публику. Пьеро понял, что успех создала неожиданная встреча, и нашёл новую отправную точку в рассказе о ней."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Una bambina mi ha chiesto quale dei due pesci stesse cantando, anche se sul palco ne vedeva uno solo. Ho risposto che l’altro si sentiva dalla fermata successiva. Non ho ritrovato il pupazzo perso, ma ora il numero ha una propria direzione. Devo soltanto ricordarmi quale voce appartiene a quello che sto tenendo.",
+            "ru": "Девочка спросила, какая из двух рыб поёт, хотя на сцене видела только одну. Я ответил, что другую слышно со следующей остановки. Потерянную куклу я не нашёл, но теперь у номера есть собственное направление. Нужно лишь помнить, какой голос принадлежит той рыбе, которую я держу."
+          },
+          {
+            "speaker": 0,
+            "text": "La pinna può restare storta. È l’unico membro della compagnia che non deve imparare nuove battute.",
+            "ru": "Плавник может остаться кривым. Он единственный участник труппы, которому не нужно учить новые реплики."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "square",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "У нового номера два голоса",
+          "clue": {
+            "title": "В кадре",
+            "body": "Хвост деревянной рыбы приподнят над скамейкой."
+          }
+        },
+        "outcome": {
+          "title": "Появился другой номер",
+          "body": "Пьеро превратил потерю реквизита в новую сцену о поисках. Идеальная копия стала участником самостоятельной истории."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что Пьеро пока принимает за главную причину прежнего успеха?",
+        "options": [
+          "Точное сочетание свойств реквизита и прежнего места.",
+          "Известность рассказчика у соседнего киоска.",
+          "Умение соседки управлять деревянной рыбой."
+        ],
+        "answer": 0,
+        "explanation": "Пьеро перечисляет совпадающие детали рыбы и считает, что повторение места и песни вернёт успех."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Что значит здесь «dare per scontato»?",
+        "options": [
+          "Попросить столяра о скидке.",
+          "Считать верным без дополнительной проверки.",
+          "Вспомнить событие во всех деталях."
+        ],
+        "answer": 1,
+        "explanation": "Лидия предупреждает, что нельзя заранее считать одинаковый предмет достаточной причиной успеха.",
+        "anchor": "dare per scontato"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Как Лидия объясняет отсутствие зрителей перед копией?",
+          "options": [
+            "Копия двигается хуже прежнего реквизита.",
+            "Публика ждёт, когда закончится дождь.",
+            "Интерес был связан с живым событием, а не только с устройством рыбы."
+          ],
+          "answer": 2,
+          "explanation": "Она противопоставляет встречу механизму и не считает отсутствие публики признаком плохой копии."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Почему Лидия считает новый замысел самостоятельным номером?",
+          "options": [
+            "Для его понимания больше не требуется помнить прежний вечер.",
+            "Он обещает обязательно найти потерянную куклу.",
+            "Он полностью повторяет прежнюю песню и место."
+          ],
+          "answer": 0,
+          "explanation": "Поиск даёт сцене понятную новую цель, и зрителям не нужно знать старую историю."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-meta-della-ricompensa",
+    "language": "it",
+    "level": "B2",
+    "title": "La metà di una ricompensa",
+    "topic": "Accordi e aspettative",
+    "summary": "Fabio pretende metà della ricompensa per un quaderno restituito, ma non ha chiesto in che cosa consista.",
+    "context": "Sei Serena, che ha riportato a un fornaio il suo quaderno di ricette. Fabio vuole essere incluso nel premio perché ti ha indicato l’indirizzo.",
+    "hook": "Si può dividere a metà una promessa che nessuno ha ancora definito?",
+    "genre": "комедия неожиданной награды",
+    "source": {
+      "title": "Il Trecentonovelle CXCV — Il contadino e la ricompensa",
+      "author": "Franco Sacchetti",
+      "url": "https://it.wikisource.org/wiki/Il_Trecentonovelle/CXCV",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "broker-demands-half-of-unspecified-reward|share-baking-lesson-or-release-claim-before-choice|proud-absurd-buns-or-spectator-misses-favourite-cake",
+    "pedagogy": {
+      "rationaleRU": "B2: невыраженные предположения об обещании, условное соглашение, ироническое расхождение формального права и реального желания.",
+      "grammar": [
+        "condizioni implicite e discorso riportato",
+        "futuro e periodo ipotetico",
+        "distinzione fra diritto e gesto volontario"
+      ],
+      "listeningFocusRU": "Выявить невысказанное денежное ожидание и границы договорённости."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Serena",
+        "roleRU": "Игрок: нашедшая тетрадь с рецептами"
+      },
+      {
+        "actorId": "host",
+        "name": "Fabio",
+        "roleRU": "Приятель, ожидающий долю награды"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "la mia parte",
+        "ru": "моя доля"
+      },
+      {
+        "term": "in cambio",
+        "ru": "в обмен"
+      },
+      {
+        "term": "senza condizioni",
+        "ru": "без условий"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Il fornaio ti ha detto che, in cambio del quaderno ritrovato, esaudirà un desiderio ragionevole. Io ti ho indicato il suo laboratorio, quindi vorrei la mia parte: metà della ricompensa, come avevamo scherzato ieri. Ho già detto agli amici che questa passeggiata avrebbe reso più di una giornata in ufficio.",
+            "ru": "Пекарь сказал тебе, что в обмен на найденную тетрадь исполнит одно разумное желание. Я указал тебе его мастерскую, поэтому хотел бы свою долю: половину награды, как мы вчера шутили. Я уже сказал друзьям, что эта прогулка принесёт больше, чем день в офисе."
+          },
+          {
+            "speaker": 0,
+            "text": "Avevamo parlato di una metà, ma non di denaro. La promessa non era senza condizioni: il desiderio deve restare ragionevole. Io penso a una lezione di pasticceria, non a una busta. Possiamo dividere il tempo del corso, oppure puoi rinunciare prima che io scelga definitivamente che cosa preparare.",
+            "ru": "Мы говорили о половине, но не о деньгах. Обещание было не без условий: желание должно оставаться разумным. Я думаю об уроке выпечки, а не о конверте. Можно разделить время занятия, или ты можешь отказаться до того, как я окончательно выберу, что готовить."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Dividiamo davvero la lezione: userai tu metà del tempo.",
+            "ru": "Давай действительно поделим урок: половину времени занимаешься ты.",
+            "next": "a"
+          },
+          {
+            "text": "Decidi ora se rinunciare; poi sceglierò io il dolce.",
+            "ru": "Реши сейчас, отказываешься ли ты; потом я выберу десерт.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "market",
+          "prop": "book",
+          "mood": "thinking",
+          "caption": "Разговор у мастерской пекаря",
+          "clue": {
+            "title": "В кадре",
+            "body": "Серена держит потрёпанную тетрадь в клетку."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Mi hanno dato un grembiule che potrebbe coprire anche il banco. Nella mia metà della lezione dovrei intrecciare tre strisce di pasta, ma per ora ho costruito qualcosa che assomiglia a un’antenna. Comunque il fornaio non ride: mi ha spiegato che la pasta si restringe se la tiro troppo e mi ha lasciato riprovare.",
+            "ru": "Мне дали фартук, которым можно накрыть ещё и прилавок. За мою половину урока я должен сплести три полоски теста, но пока соорудил нечто вроде антенны. Впрочем, пекарь не смеётся: объяснил, что тесто стягивается, если его слишком растягивать, и позволил попробовать ещё раз."
+          },
+          {
+            "speaker": 0,
+            "text": "Hai chiesto una parte del premio, non un premio diverso. Il tempo del corso lo dividiamo come promesso, e tutto quello che prepari resta tuo. Non devi fingere di divertirti per dimostrarmi che avevi ragione; però da quando hai smesso di contare i soldi stai facendo domande molto più interessanti.",
+            "ru": "Ты попросил долю награды, а не другую награду. Время урока делим, как обещано, и всё приготовленное тобой остаётся тебе. Не нужно притворяться, что весело, чтобы доказать свою правоту; но с тех пор как ты перестал считать деньги, задаёшь гораздо более интересные вопросы."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Finisci il tuo intreccio e porta a casa quello che viene.",
+            "ru": "Закончи свою плетёнку и отнеси домой то, что получится.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "market",
+          "prop": "tools",
+          "mood": "speaking",
+          "caption": "Половина урока принадлежит Фабио",
+          "clue": {
+            "title": "В кадре",
+            "body": "На рабочей доске лежат три полоски теста."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Se non si tratta di soldi, rinuncio. Aspetto qui e ti tengo la giacca; almeno evito di tornare a casa con la farina nelle tasche. Ora puoi scegliere senza chiedermi conferma. Però dimmi che cosa hai deciso: quel profumo che arriva dal forno mi sembra improvvisamente molto familiare.",
+            "ru": "Если речь не о деньгах, отказываюсь. Подожду здесь и подержу твою куртку; по крайней мере не вернусь домой с мукой в карманах. Теперь можешь выбирать без моего подтверждения. Но скажи, что ты решила: запах из печи вдруг кажется очень знакомым."
+          },
+          {
+            "speaker": 0,
+            "text": "Una torta di mele come quella che preparava mia nonna. Mi interessa imparare a fare la sfoglia sottile, non semplicemente portare via una torta pronta. Hai rinunciato prima della scelta, quindi non cambieremo l’accordo appena il premio comincia a sembrarti più appetitoso. A tavola potremo dividerla, ma sarà un invito, non un debito.",
+            "ru": "Яблочный пирог, как готовила моя бабушка. Мне интересно научиться тонко раскатывать тесто, а не просто унести готовый пирог. Ты отказался до выбора, поэтому мы не будем менять договорённость, едва награда покажется вкуснее. За столом можем поделиться, но это будет приглашение, а не долг."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Puoi assistere, senza pretendere una nuova metà.",
+            "ru": "Можешь посмотреть, не требуя новую половину.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "market",
+          "prop": "book",
+          "mood": "speaking",
+          "caption": "Решение до выбора рецепта",
+          "clue": {
+            "title": "В кадре",
+            "body": "Куртка Серены висит на руке Фабио."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Le mie trecce sono uscite dal forno come piccoli satelliti, ma sono cotte bene. Ne tengo una per mostrare agli amici che cosa intendevo per investimento. Mi toccherà spiegare che il rendimento si mangia e che, per ottenerlo, ho lavorato quasi un’ora. A essere sincero, non mi dispiace affatto.",
+            "ru": "Мои плетёнки вышли из печи похожими на маленькие спутники, но хорошо пропеклись. Одну оставлю, чтобы показать друзьям, что я понимал под вложением. Придётся объяснить, что доход съедобный и ради него я проработал почти час. Если честно, я совсем не против."
+          },
+          {
+            "speaker": 0,
+            "text": "Puoi portare anche il grembiule in lavanderia, se vuoi continuare a vantarti della dimensione della tua ricompensa.",
+            "ru": "Можешь ещё отнести фартук в прачечную, если хочешь и дальше хвастаться размером своей награды."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "market",
+          "prop": "parcel",
+          "mood": "pleased",
+          "caption": "Неожиданный результат занятия",
+          "clue": {
+            "title": "В кадре",
+            "body": "В открытом пакете лежат булочки необычной формы."
+          }
+        },
+        "outcome": {
+          "title": "Доля оказалась опытом",
+          "body": "Фабио принял половину занятия вместо ожидаемых денег. Его булочки получились забавными, а собственная работа неожиданно стала предметом гордости."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Da spettatore la lezione sembra molto più breve. Hai appena imparato a chiudere il bordo e il fornaio ti ha lasciato decorare la superficie con le iniziali di tua nonna. Non avevo previsto che il premio contenesse anche una storia di famiglia. La prossima volta, prima di chiedere una percentuale, farò almeno una domanda.",
+            "ru": "Со стороны урок кажется гораздо короче. Ты только что научилась закрывать край, и пекарь позволил украсить поверхность инициалами твоей бабушки. Я не предполагал, что в награде будет ещё и семейная история. В следующий раз, прежде чем требовать процент, задам хотя бы один вопрос."
+          },
+          {
+            "speaker": 0,
+            "text": "La domanda puoi farla anche adesso. Ma lontano dal forno: guardi la torta come se stessi ricalcolando l’accordo.",
+            "ru": "Вопрос можно задать и сейчас. Но подальше от печи: ты смотришь на пирог так, словно пересчитываешь договорённость."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "market",
+          "prop": "cup",
+          "mood": "pleased",
+          "caption": "Зритель наблюдает за выпечкой",
+          "clue": {
+            "title": "В кадре",
+            "body": "На пироге видны две буквы из теста."
+          }
+        },
+        "outcome": {
+          "title": "Сначала отказ, потом аромат",
+          "body": "Фабио отказался от доли до выбора рецепта и сохранил решение, хотя урок оказался привлекательнее, чем он ожидал."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Какое допущение сделал Фабио, рассказывая друзьям о прогулке?",
+        "options": [
+          "Найденную тетрадь нужно продать на аукционе.",
+          "Награду можно будет оценить как денежный заработок.",
+          "Пекарь заранее назначил обоим платную работу."
+        ],
+        "answer": 1,
+        "explanation": "Фабио сравнивает прогулку с заработком за день, хотя пекарь обещал исполнить разумное желание, а не заплатить."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Что подчёркивает Серена словами «non era senza condizioni»?",
+        "options": [
+          "В обещании есть ограничение: желание должно быть разумным.",
+          "Пекарь передумал благодарить за найденную тетрадь.",
+          "Фабио обязан оплатить чужую половину урока."
+        ],
+        "answer": 0,
+        "explanation": "Серена сразу называет условие разумности желания.",
+        "anchor": "senza condizioni"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Как Серена понимает их соглашение?",
+          "options": [
+            "Фабио может заменить награду наличными во время урока.",
+            "Премия принадлежит только человеку, знающему рецепты.",
+            "Делится выбранная награда, а не выдаётся другая по желанию посредника."
+          ],
+          "answer": 2,
+          "explanation": "Она различает долю того же приза и иной приз, сохраняя обещанное разделение времени."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Зачем Серена различает приглашение и долг?",
+          "options": [
+            "Чтобы запретить Фабио когда-либо пробовать пирог.",
+            "Чтобы возможное угощение не стало восстановлением уже снятой претензии.",
+            "Чтобы перенести оплату урока на семейный праздник."
+          ],
+          "answer": 1,
+          "explanation": "После отказа у Фабио нет права требовать долю; добровольное угощение за столом будет отдельным жестом."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-invisibile-in-prova",
+    "language": "it",
+    "level": "B2",
+    "title": "Invisibile, secondo gli amici",
+    "topic": "Prove e convinzioni",
+    "summary": "Giorgio si fida di un mantello verde e dell’accordo dei colleghi. La registrazione potrebbe avere un’altra opinione.",
+    "context": "Sei Tiziana, assistente di una piccola compagnia. Giorgio vuole provare un numero davanti alla telecamera, convinto che il suo mantello lo nasconda.",
+    "hook": "Quanti testimoni servono, se nessuno ha guardato lo schermo?",
+    "genre": "комедия самообмана",
+    "source": {
+      "title": "Decameron VIII, 3 — Calandrino e l’elitropia",
+      "author": "Giovanni Boccaccio",
+      "url": "https://it.wikisource.org/wiki/Decameron/Giornata_ottava/Novella_terza",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "friends-pretend-green-cape-is-invisible|independent-replay-or-unseen-prop-test|visible-vanity-reversal-or-flower-hides-only-face",
+    "pedagogy": {
+      "rationaleRU": "B2: достоверность свидетельства, условные предположения, разрыв между общим сговором и личным убеждением; без унижения и семейного насилия.",
+      "grammar": [
+        "congiuntivo nei dubbi e nelle domande indirette",
+        "conclusioni da prove contrapposte",
+        "distinzione fra simulazione e verifica"
+      ],
+      "listeningFocusRU": "Отличить согласие участников розыгрыша от независимого свидетельства."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Tiziana",
+        "roleRU": "Игрок: ассистентка, не участвовавшая в розыгрыше"
+      },
+      {
+        "actorId": "host",
+        "name": "Giorgio",
+        "roleRU": "Ведущий, поверивший словам коллег"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "a quanto pare",
+        "ru": "судя по всему"
+      },
+      {
+        "term": "stare al gioco",
+        "ru": "подыгрывать"
+      },
+      {
+        "term": "di persona",
+        "ru": "лично"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "A quanto pare, il mantello funziona benissimo. Quando sono entrato, tutti si sono messi a cercarmi: Paolo ha perfino chiesto dove fossi finito. Se tre persone dicono la stessa cosa, una prova ci sarà. Per il numero potrei attraversare la scena e spostare un fiore senza che il pubblico capisca chi lo porta.",
+            "ru": "Судя по всему, плащ отлично работает. Когда я вошёл, все начали меня искать: Паоло даже спросил, куда я делся. Если три человека говорят одно и то же, какое-то доказательство есть. Для номера я мог бы пройти через сцену и переставить цветок так, чтобы публика не поняла, кто его несёт."
+          },
+          {
+            "speaker": 0,
+            "text": "Io sono appena arrivata, quindi non so se stessero verificando l’effetto o cercando di stare al gioco. Non abbiamo ancora guardato la registrazione di persona. Inoltre porti il mantello al contrario: la fodera è fuori. Prima di annunciare un prodigio, possiamo controllare il monitor oppure fare una prova col fiore grande, qui davanti alla telecamera.",
+            "ru": "Я только пришла, поэтому не знаю, проверяли они эффект или пытались подыгрывать. Лично запись мы ещё не посмотрели. Кроме того, плащ на тебе наизнанку: подкладка снаружи. Прежде чем объявлять чудо, можно проверить монитор или провести пробу с большим цветком здесь, перед камерой."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Guardiamo la registrazione insieme: io non ho partecipato alla prova.",
+            "ru": "Посмотрим запись вместе: я не участвовала в проверке.",
+            "next": "a"
+          },
+          {
+            "text": "Prova prima a spostare il fiore mentre registriamo.",
+            "ru": "Сначала попробуй переставить цветок во время записи.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "camera",
+          "mood": "thinking",
+          "caption": "Репетиция перед камерой",
+          "clue": {
+            "title": "В кадре",
+            "body": "Зелёная подкладка плаща видна возле воротника."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Metto in pausa proprio qui. Sul monitor ti si vede intero, mentre ti sistemi il colletto e domandi se l’invisibilità ti stia bene. L’immagine non cambia quando i colleghi smettono di rispondere. La loro reazione, dunque, non dimostrava quello che pensavi: avevano concordato di fingere, non di controllare un effetto.",
+            "ru": "Останавливаю на этом месте. На мониторе ты виден целиком: поправляешь воротник и спрашиваешь, идёт ли тебе невидимость. Изображение не меняется, когда коллеги перестают отвечать. Значит, их реакция не доказывала того, что ты думал: они договорились притворяться, а не проверять эффект."
+          },
+          {
+            "speaker": 1,
+            "text": "E io ho scelto la spiegazione che mi piaceva di più. In fondo, ero più preoccupato di come apparivo che della possibilità di non apparire affatto. Non voglio vendicarmi con un’altra bugia. Preferisco chiamarli qui e inventare un numero nel quale il pubblico sappia che stiamo fingendo tutti insieme.",
+            "ru": "А я выбрал объяснение, которое мне больше нравилось. По сути, я больше беспокоился о том, как выгляжу, чем о возможности вообще не быть видимым. Не хочу мстить другой ложью. Лучше позову их сюда и придумаю номер, где публика будет знать, что мы все вместе притворяемся."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Invitali come assistenti invisibili: stavolta la finzione sarà dichiarata.",
+            "ru": "Пригласи их невидимыми помощниками: на этот раз выдумку объявим открыто.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "camera",
+          "mood": "speaking",
+          "caption": "Просмотр остановленного кадра",
+          "clue": {
+            "title": "В кадре",
+            "body": "На мониторе виден ведущий, поправляющий воротник."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ho preso il fiore per il gambo e l’ho portato davanti al viso. Non vedo più il monitor, quindi devi dirmi tu se sono sparito. Sento ridere dalla regia: prima lo avrei considerato un successo, ma dopo il tuo dubbio non so più che significato attribuirgli. Preferisco una descrizione precisa, anche se rovina il numero.",
+            "ru": "Я взял цветок за стебель и понёс перед лицом. Монитора больше не вижу, поэтому ты должна сказать, исчез ли я. Слышу смех из аппаратной: раньше я счёл бы это успехом, но после твоего сомнения уже не знаю, как его понимать. Лучше дай точное описание, даже если это испортит номер."
+          },
+          {
+            "speaker": 0,
+            "text": "Si vede tutto il corpo, compreso il mantello. Il viso no, ma soltanto perché il fiore è più largo della tua testa. Il programma non sta togliendo niente dall’immagine. La parte divertente è questa copertura enorme: potremmo rinunciare al trucco tecnico e giocare con quello che il pubblico vede davvero.",
+            "ru": "Видно всё тело вместе с плащом. Лица нет, но лишь потому, что цветок шире твоей головы. Программа ничего не удаляет из изображения. Забавна именно эта огромная заслонка: можно отказаться от технического трюка и поиграть с тем, что публика действительно видит."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Rinunciamo al mantello magico e usiamo il fiore come paravento.",
+            "ru": "Откажемся от волшебного плаща и используем цветок как ширму.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "speaking",
+          "caption": "Проверка с большим реквизитом",
+          "clue": {
+            "title": "В кадре",
+            "body": "Перед лицом ведущего возвышается бумажный цветок."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ho spiegato ai colleghi che il monitor mi vedeva benissimo. Ora li invito a portare sedie dichiarandosi invisibili, ma senza mantello e senza prendere in giro nessuno. Il pubblico vedrà tre persone impegnatissime a non farsi notare. Quando uno starnutirà, potrò chiedere cortesemente anche all’aria di abbassare la voce.",
+            "ru": "Я объяснил коллегам, что монитор прекрасно меня видел. Теперь предлагаю им носить стулья, объявив себя невидимыми, но без плащей и без насмешек над кем-либо. Публика увидит троих, старательно пытающихся остаться незамеченными. Когда один чихнёт, я смогу вежливо попросить ещё и воздух говорить тише."
+          },
+          {
+            "speaker": 0,
+            "text": "Questa finzione funziona perché tutti ne conoscono le regole. E per sapere come ti sta il mantello, la prossima volta basterà uno specchio.",
+            "ru": "Эта выдумка работает, потому что все знают её правила. А чтобы узнать, идёт ли тебе плащ, в следующий раз хватит зеркала."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "Новый номер без тайного сговора",
+          "clue": {
+            "title": "В кадре",
+            "body": "Зелёный плащ аккуратно сложен на стуле."
+          }
+        },
+        "outcome": {
+          "title": "Выдумка стала общей",
+          "body": "Независимый просмотр опроверг убеждение Джорджо. Он предложил коллегам открыто сыграть невидимых помощников, не обманывая зрителей."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Senza il mantello riesco a muovere il fiore molto meglio. Spunta prima la mia mano, poi una scarpa, mentre io continuo a chiedere se qualcuno mi abbia visto. Adesso la risata della regia ha un motivo che posso controllare: il pubblico noterà proprio i dettagli che il personaggio crede nascosti.",
+            "ru": "Без плаща мне гораздо легче двигать цветок. Сначала выглядывает рука, потом ботинок, а я всё спрашиваю, не видел ли меня кто-нибудь. Теперь у смеха в аппаратной есть причина, которую я могу проверить: публика заметит именно те детали, которые персонаж считает скрытыми."
+          },
+          {
+            "speaker": 0,
+            "text": "Perfetto. Ti svelo soltanto un’ultima cosa: se vuoi essere del tutto invisibile, puoi sempre passarmi il fiore e andare a bere un bicchiere d’acqua.",
+            "ru": "Отлично. Открою лишь последнюю тайну: если хочешь стать совсем невидимым, можешь передать мне цветок и уйти выпить воды."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "cup",
+          "mood": "pleased",
+          "caption": "Репетиция игры с цветком",
+          "clue": {
+            "title": "В кадре",
+            "body": "Из-за бумажных лепестков видна рука."
+          }
+        },
+        "outcome": {
+          "title": "Трюк оказался простым",
+          "body": "Проверка показала, что тело видно, а лицо закрывает сам цветок. Герои отказались от ложного технического обещания и нашли понятный комический приём."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "На чём Джорджо основывает уверенность в плаще?",
+        "options": [
+          "На реакции нескольких коллег, которую он считает доказательством.",
+          "На независимом просмотре готовой записи.",
+          "На сравнении двух проверенных режимов камеры."
+        ],
+        "answer": 0,
+        "explanation": "Он ссылается на согласие трёх человек, хотя монитор они ещё не проверяли."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Что значит «stare al gioco» в этом контексте?",
+        "options": [
+          "Стоять на отмеченном месте сцены.",
+          "Подыгрывать чужой выдумке.",
+          "Остановить запись в нужный момент."
+        ],
+        "answer": 1,
+        "explanation": "Тициана различает настоящую проверку и поведение коллег, поддерживающих выдумку.",
+        "anchor": "stare al gioco"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 0,
+          "prompt": "Какой вывод позволяет сделать остановленный кадр?",
+          "options": [
+            "Плащ работает лишь тогда, когда все молчат.",
+            "Джорджо забыл включить микрофон.",
+            "Поведение коллег не подтверждало невидимость изображения."
+          ],
+          "answer": 2,
+          "explanation": "На записи ведущий остаётся видимым независимо от ответов коллег."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Почему лица ведущего нет на экране?",
+          "options": [
+            "Цветок физически закрывает его, а программа не меняет изображение.",
+            "Камера автоматически скрывает всё зелёное.",
+            "Плащ делает невидимой только голову."
+          ],
+          "answer": 0,
+          "explanation": "Тициана сообщает, что тело и плащ видны, а лицо заслоняет большой цветок."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-pranzo-della-rivincita",
+    "language": "it",
+    "level": "B2",
+    "title": "La degustazione del niente",
+    "topic": "Scherzi e responsabilità",
+    "summary": "Dopo un falso invito a un dessert, una degustazione d’acqua rischia di diventare una rivincita poco elegante.",
+    "context": "Sei Viola, appassionata di cucina. Hai iscritto Riccardo a una presentazione per vendicarti di uno scherzo, ma puoi ancora cambiare il tono della serata.",
+    "hook": "Chi deve assaggiare per primo il sapore della propria battuta?",
+    "genre": "комедия взаимных розыгрышей",
+    "source": {
+      "title": "Decameron IX, 8 — Ciacco e Biondello",
+      "author": "Giovanni Boccaccio",
+      "url": "https://it.wikisource.org/wiki/Decameron/Giornata_nona/Novella_ottava",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "fake-feast-invitation-repaid-by-water-tasting-act|take-own-prank-role-or-reveal-and-duel|self-directed-empty-glass-speech-or-two-person-tasting",
+    "pedagogy": {
+      "rationaleRU": "B2: двухступенчатая интрига, передача чужого намерения, обсуждение соразмерности ответного действия.",
+      "grammar": [
+        "discorso riportato e motivi delle azioni",
+        "concessione e condizioni del consenso",
+        "lessico valutativo e ironia"
+      ],
+      "listeningFocusRU": "Различить намерение отплатить, согласие на общий юмор и восстановление доверия."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Viola",
+        "roleRU": "Игрок: дегустатор, задумавшая ответный розыгрыш"
+      },
+      {
+        "actorId": "host",
+        "name": "Riccardo",
+        "roleRU": "Приятель, которого пригласили к микрофону"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "rendere la pariglia",
+        "ru": "отплатить тем же"
+      },
+      {
+        "term": "all’insaputa",
+        "ru": "без ведома"
+      },
+      {
+        "term": "rimetterci la faccia",
+        "ru": "потерять лицо"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Ti devo spiegare perché sul programma compare il tuo nome. Dopo che mi hai mandato a quella serata promettendo un dessert straordinario, ho voluto rendere la pariglia: c’erano soltanto cracker, e mi sono sentita presa in giro. Così ti ho iscritto, all’insaputa degli organizzatori quanto allo scherzo, a descrivere pubblicamente il gusto dell’acqua.",
+            "ru": "Мне нужно объяснить, почему в программе стоит твоё имя. После того как ты отправил меня на тот вечер, обещая необыкновенный десерт, я решила отплатить тем же: там были только крекеры, и я почувствовала себя разыгранной. Поэтому я записала тебя на публичное описание вкуса воды; организаторы о розыгрыше не знают."
+          },
+          {
+            "speaker": 1,
+            "text": "Io credevo che fosse una vera degustazione e stavo aspettando il vassoio. Il presentatore non ci ha ancora chiamati, quindi possiamo chiarire tutto senza rischiare di rimetterci la faccia. Non mi dispiace ridere insieme, ma non vorrei scoprire sul palco di essere l’unico che non conosce la battuta.",
+            "ru": "Я думал, что это настоящая дегустация, и ждал поднос. Ведущий нас ещё не объявил, так что можно всё прояснить, не заставляя друг друга терять лицо. Я не против посмеяться вместе, но не хотел бы на сцене обнаружить, что я один не знаю шутки."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Prendo io il tuo posto e spiego agli organizzatori che sarà un numero comico.",
+            "ru": "Я займу твоё место и объясню организаторам, что это комический номер.",
+            "next": "a"
+          },
+          {
+            "text": "Chiediamo di salire insieme, ma solo se ti va di giocare.",
+            "ru": "Попросим выйти вместе, но только если ты согласен подыграть.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "cafe",
+          "prop": "cup",
+          "mood": "thinking",
+          "caption": "За минуту до объявления",
+          "clue": {
+            "title": "В кадре",
+            "body": "На небольшом столе стоит графин с водой."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Ho avvertito il presentatore e tolto il tuo nome dal cartoncino. Comincerò io: quest’acqua offre un profumo che preferisce non disturbare e un finale tanto discreto da essere già scomparso. Posso prendermi sul serio per trenta secondi, purché sia chiaro che sto parodiando il mio desiderio di darti una lezione.",
+            "ru": "Я предупредила ведущего и убрала твоё имя с карточки. Начну сама: у этой воды аромат, предпочитающий никого не беспокоить, и настолько деликатное послевкусие, что оно уже исчезло. Я могу тридцать секунд изображать серьёзность, если ясно, что высмеиваю собственное желание тебя проучить."
+          },
+          {
+            "speaker": 1,
+            "text": "Posso aiutarti senza diventare il bersaglio: porto i cracker che ho comprato al banco e li distribuisco alla fine. Almeno stavolta nessuno resterà in attesa di un dolce inesistente. E quando mi inviterai davvero a cena, prometto che chiederò soltanto l’orario, non il diritto di organizzare il seguito.",
+            "ru": "Я могу помочь, не становясь мишенью: принесу крекеры, которые купил у стойки, и раздам в конце. По крайней мере на этот раз никто не останется ждать несуществующего десерта. А когда ты по-настоящему позовёшь меня на ужин, обещаю спрашивать только время, а не право организовать продолжение."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Concludiamo con i cracker e un invito che significhi quello che dice.",
+            "ru": "Закончим крекерами и приглашением, которое означает именно то, что в нём сказано.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "cafe",
+          "prop": "cup",
+          "mood": "speaking",
+          "caption": "Виола репетирует собственное выступление",
+          "clue": {
+            "title": "В кадре",
+            "body": "Карточка с именем лежит перевёрнутой на столе."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Se il pubblico sa che è un gioco, ci sto. Tu puoi descrivere il gusto dell’attesa e io quello della delusione: non serve far credere che questa sia acqua speciale. Anzi, teniamo visibile la normale caraffa del locale. Il bello sarà ascoltare due esperti che cercano parole immense per un bicchiere piccolissimo.",
+            "ru": "Если публика знает, что это игра, я согласен. Ты можешь описать вкус ожидания, а я — разочарования: незачем убеждать людей, будто это особая вода. Наоборот, оставим на виду обычный графин заведения. Забавно будет слушать двух экспертов, ищущих огромные слова для крошечного стакана."
+          },
+          {
+            "speaker": 0,
+            "text": "D’accordo, lo annunciamo come una gara di descrizioni e lasciamo scegliere al pubblico quella più assurda. Ho avvisato il presentatore che nessuno deve essere presentato come una vittima. Non volevo soltanto restituirti lo scherzo: volevo che capissi com’ero rimasta. Adesso possiamo dirlo senza usare un altro invito ingannevole.",
+            "ru": "Согласна, объявим это состязанием описаний и позволим публике выбрать самое нелепое. Я предупредила ведущего, что никого не нужно представлять жертвой. Я хотела не просто вернуть розыгрыш, а чтобы ты понял мои чувства. Теперь можно сказать это без нового обманного приглашения."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Saliamo insieme e presentiamo la gara per quello che è.",
+            "ru": "Выйдем вместе и честно представим наше состязание.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "cafe",
+          "prop": "conversation",
+          "mood": "speaking",
+          "caption": "Условия совместного номера",
+          "clue": {
+            "title": "В кадре",
+            "body": "Рядом стоят два одинаковых пустых стакана."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Alla terza descrizione dell’acqua mi è venuto da ridere prima del pubblico. Ho detto che il retrogusto era arrivato in ritardo perché cercava parcheggio. Tu hai portato i cracker proprio in quel momento, e la battuta si è conclusa senza che nessuno dovesse pagare il conto di uno scherzo precedente.",
+            "ru": "На третьем описании воды я рассмеялась раньше публики. Я сказала, что послевкусие опоздало, потому что искало парковку. Ты принёс крекеры именно в этот момент, и шутка закончилась без того, чтобы кому-то пришлось расплачиваться за прежний розыгрыш."
+          },
+          {
+            "speaker": 1,
+            "text": "La prossima volta offro io il dessert, con il nome scritto sul menu. Se poi arriva soltanto acqua, almeno potrai darmi una recensione molto preparata.",
+            "ru": "В следующий раз десерт за мой счёт, и его название будет написано в меню. А если принесут только воду, по крайней мере ты сможешь дать очень подготовленную рецензию."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "cafe",
+          "prop": "cup",
+          "mood": "pleased",
+          "caption": "После комического выступления",
+          "clue": {
+            "title": "В кадре",
+            "body": "На подносе лежит несколько крекеров."
+          }
+        },
+        "outcome": {
+          "title": "Розыгрыш вернулся к автору",
+          "body": "Виола открыто взяла комический номер на себя. Риккардо помог с угощением, и ответный розыгрыш перестал быть наказанием."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Il pubblico ha scelto la tua descrizione: acqua con note di speranza e un leggero sentore di appuntamento mancato. Io ho perso per eccesso di aggettivi. Però abbiamo spiegato prima che il bicchiere era normalissimo e nessuno è stato invitato sul palco a propria insaputa. Mi sembra una sconfitta sopportabile.",
+            "ru": "Публика выбрала твоё описание: вода с нотами надежды и лёгким оттенком несостоявшейся встречи. Я проиграл из-за избытка прилагательных. Но мы заранее объяснили, что стакан совершенно обычный, и никого не вызывали на сцену без его ведома. По-моему, такое поражение можно пережить."
+          },
+          {
+            "speaker": 0,
+            "text": "Domani discutiamo il dessert vero. Per stasera basta così: abbiamo già bevuto abbastanza parole e possiamo finalmente mangiare qualcosa.",
+            "ru": "Завтра обсудим настоящий десерт. На сегодня достаточно: мы уже выпили довольно слов и можем наконец что-нибудь съесть."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "cafe",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "Состязание завершено",
+          "clue": {
+            "title": "В кадре",
+            "body": "Два стакана стоят рядом с обычным графином."
+          }
+        },
+        "outcome": {
+          "title": "Вместо мести — общий номер",
+          "body": "Риккардо согласился участвовать в открытом комическом состязании. Герои проговорили обиду и не повторили обманное приглашение."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Какую границу проводит Риккардо?",
+        "options": [
+          "Он согласен смеяться вместе, но не быть единственным, кому скрыли смысл происходящего.",
+          "Он отказывается от любых публичных выступлений независимо от условий.",
+          "Он требует заменить воду дорогим десертом до выхода на сцену."
+        ],
+        "answer": 0,
+        "explanation": "Он не против совместного смеха, но просит не делать его неосведомлённой мишенью."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что означает «rendere la pariglia» в мотиве Виолы?",
+        "options": [
+          "Вернуть организатору заполненный бланк.",
+          "Отплатить похожим поступком за прежний розыгрыш.",
+          "Разделить поровну стоимость угощения."
+        ],
+        "answer": 1,
+        "explanation": "Виола связывает ответную запись с обманным приглашением на десерт.",
+        "anchor": "rendere la pariglia"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 0,
+          "prompt": "На что Виола направляет комизм своего выступления?",
+          "options": [
+            "На недостаток знаний у организаторов.",
+            "На привычки незнакомых зрителей.",
+            "На собственное желание проучить приятеля."
+          ],
+          "answer": 2,
+          "explanation": "Она прямо говорит, что пародирует собственное желание дать Риккардо урок."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Что изменилось в цели Виолы после разговора?",
+          "options": [
+            "Вместо тайного наказания она хочет, чтобы приятель понял её чувства.",
+            "Она пытается сохранить обман до самого конца состязания.",
+            "Она хочет заменить настоящее угощение дорогой водой."
+          ],
+          "answer": 0,
+          "explanation": "Виола объясняет обиду словами и отказывается от ещё одного вводящего в заблуждение приглашения."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-trofeo-con-tecnico",
+    "language": "it",
+    "level": "B2",
+    "title": "Il trofeo prende la parola",
+    "topic": "Progetti e requisiti",
+    "summary": "Un cubo di rinforzo in più trasforma un grande trofeo di cartone in una discussione con il suo autore.",
+    "context": "Sei Elena, organizzatrice di una premiazione. Il tecnico Sandro sta terminando un enorme trofeo scenografico e deve ancora uscirne.",
+    "hook": "Quanto conta una facciata perfetta quando dietro c’è qualcuno che lavora?",
+    "genre": "предметная комедия",
+    "source": {
+      "title": "La giara",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/La_giara_(Novella,_1928)",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "overreinforced-hollow-trophy-with-maker-inside|remove-front-as-design-or-use-speaking-prop|maker-wears-award-label-or-demand-for-talking-trophies",
+    "pedagogy": {
+      "rationaleRU": "B2: противоречивые требования, причинно-следственная аргументация, иронический обмен о ценности вещи и труда; безопасная новая постановка.",
+      "grammar": [
+        "relazioni causali e requisiti contraddittori",
+        "congiuntivo e condizionale nelle proposte",
+        "ironia sul significato di perfezione"
+      ],
+      "listeningFocusRU": "Услышать различие между внешним совершенством, удобством работы и согласованной сценической шуткой."
+    },
+    "cast": [
+      {
+        "actorId": "traveler",
+        "name": "Elena",
+        "roleRU": "Игрок: организатор вручения наград"
+      },
+      {
+        "actorId": "maker",
+        "name": "Sandro",
+        "roleRU": "Техник, собирающий картонный кубок"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "per scrupolo",
+        "ru": "из предосторожности"
+      },
+      {
+        "term": "a regola d’arte",
+        "ru": "по всем правилам мастерства"
+      },
+      {
+        "term": "il punto debole",
+        "ru": "слабое место"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Elena, il trofeo è stabile. Sono entrato dalla porticina laterale per fissare l’ultima traversa, ma il rinforzo che hai chiesto per scrupolo ora impedisce di aprirla verso l’interno. Non sono bloccato: possiamo sganciare il pannello davanti oppure quello posteriore. Il punto debole del progetto, direi, era la domanda su come sarebbe uscito il suo autore.",
+            "ru": "Элена, кубок устойчив. Я вошёл через боковую дверцу закрепить последнюю перекладину, но усиление, которое ты попросила из предосторожности, теперь мешает открыть её внутрь. Я не заперт: можно отцепить переднюю или заднюю панель. Слабым местом проекта, я бы сказал, оказался вопрос о том, как выйдет его автор."
+          },
+          {
+            "speaker": 0,
+            "text": "Volevo un lavoro a regola d’arte, non un tecnico compreso nella fornitura. Il davanti però porta la scritta della premiazione: se lo togliamo si vedrà la giunzione. Da dietro puoi uscire senza toccarla, ma dovremo spostare un poco il fondale. Prima di scegliere, dimmi quale soluzione ti lascia lavorare meglio.",
+            "ru": "Я хотела работу по всем правилам, а не техника в комплекте поставки. Но спереди надпись награждения: если снимем панель, будет виден стык. Сзади можно выйти, не трогая её, но придётся немного сдвинуть фон. Прежде чем выбрать, скажи, какое решение удобнее для работы."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Togliamo il davanti e trasformiamo la giunzione in una cornice.",
+            "ru": "Снимем переднюю часть и превратим стык в рамку.",
+            "next": "a"
+          },
+          {
+            "text": "Esci dal retro, dopo una breve battuta del trofeo parlante.",
+            "ru": "Выйди сзади после короткой реплики говорящего кубка.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "tools",
+          "mood": "thinking",
+          "caption": "Последнее крепление изнутри",
+          "clue": {
+            "title": "В кадре",
+            "body": "На полу возле кубка лежит инструкция со схемой панелей."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Se stacchi prima i due ganci in alto, il pannello viene via senza piegarsi. Poi posso aggiungere una striscia dorata sul bordo: la giunzione diventa un elemento dichiarato, non una crepa da nascondere. Il cartone resta lo stesso, cambia soltanto l’idea di perfezione che vogliamo vendere al pubblico.",
+            "ru": "Если сначала отстегнуть два верхних крючка, панель снимется и не согнётся. Затем я могу добавить золотую полоску по краю: стык станет открытым элементом оформления, а не трещиной, которую нужно скрывать. Картон останется тем же, изменится лишь представление о совершенстве, которое мы хотим предложить публике."
+          },
+          {
+            "speaker": 0,
+            "text": "Allora sgancio. La grande etichetta con scritto vincitore si è attaccata al tuo grembiule, ma almeno ora vedo chi mi risponde. Avevo chiesto un rinforzo in più senza pensare al lavoro successivo. La cornice servirà anche a ricordarmi che aggiungere una richiesta non significa sempre migliorare il risultato.",
+            "ru": "Тогда отстёгиваю. Большая наклейка «победитель» прилипла к твоему фартуку, зато теперь я хотя бы вижу, кто мне отвечает. Я попросила дополнительное усиление, не подумав о следующем этапе работы. Рамка будет напоминать, что ещё одно требование не всегда улучшает результат."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Esci pure con l’etichetta: il primo premiato l’abbiamo trovato.",
+            "ru": "Выходи с наклейкой: первого награждённого мы уже нашли.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "tools",
+          "mood": "speaking",
+          "caption": "Панель становится частью отделки",
+          "clue": {
+            "title": "В кадре",
+            "body": "Элена держит край съёмной передней панели."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Posso dire una frase da qui e poi uscire dal retro: basta che il pubblico capisca che è un piccolo numero concordato, non un guasto da aspettare in silenzio. Ringrazierò tutti per la pazienza, ma non prometterò che ogni coppa contenga un tecnico. Sarebbe un servizio che il nostro bilancio non potrebbe sostenere.",
+            "ru": "Я могу сказать отсюда фразу и затем выйти сзади: нужно лишь, чтобы публика понимала, что это согласованный маленький номер, а не неполадка, которую молча пережидают. Поблагодарю всех за терпение, но не обещаю, что в каждом кубке есть техник. Такую услугу наш бюджет не выдержит."
+          },
+          {
+            "speaker": 0,
+            "text": "Sposto il fondale e preparo lo spazio dietro. Il pannello posteriore resta aperto finché non sei fuori; la battuta non deve ritardare l’uscita. Presenterò il trofeo come l’unico premio capace di ringraziare il proprio costruttore, poi passeremo al programma normale. La facciata perfetta, da sola, non meritava tutta questa discussione.",
+            "ru": "Я сдвину фон и освобожу место сзади. Задняя панель останется открытой, пока ты не выйдешь; шутка не должна задерживать выход. Представлю кубок как единственную награду, способную поблагодарить собственного изготовителя, затем вернёмся к обычной программе. Идеальный фасад сам по себе не стоил всей этой дискуссии."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Apriamo prima il passaggio e poi diamo la parola al trofeo.",
+            "ru": "Сначала откроем проход, затем дадим слово кубку.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "speaking",
+          "caption": "Подготовка прохода за декорацией",
+          "clue": {
+            "title": "В кадре",
+            "body": "Позади кубка свободно лежит снятая задняя панель."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Hai attraversato la sala con la scritta vincitore sul petto, e tutti hanno cominciato ad applaudire prima della cerimonia. Ho spiegato che premiavamo il primo uomo capace di fabbricare il proprio riconoscimento dall’interno. La cornice dorata è piaciuta tanto che ora sembra fosse prevista nel disegno iniziale.",
+            "ru": "Ты прошёл через зал с надписью «победитель» на груди, и все начали аплодировать ещё до церемонии. Я объяснила, что награждаем первого человека, способного изготовить себе награду изнутри. Золотая рамка понравилась настолько, что теперь кажется частью первоначального чертежа."
+          },
+          {
+            "speaker": 1,
+            "text": "Non cambiamo il disegno per farlo sembrare vero. Segniamo la modifica, così la prossima volta il vincitore avrà una porta funzionante invece di un applauso anticipato.",
+            "ru": "Не будем менять чертёж, чтобы это выглядело правдой. Отметим изменение, и в следующий раз победитель получит работающую дверцу, а не преждевременные аплодисменты."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "book",
+          "mood": "pleased",
+          "caption": "Первый обладатель награды",
+          "clue": {
+            "title": "В кадре",
+            "body": "Золотая полоска обрамляет переднюю панель кубка."
+          }
+        },
+        "outcome": {
+          "title": "Награда нашла мастера",
+          "body": "Переднюю панель сняли, а стык включили в оформление. Сандро вышел с наклейкой победителя на фартуке и получил первые аплодисменты."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Quando il trofeo ha ringraziato il pubblico, ho sentito ridere; poi sono uscito con calma e mi sono seduto dietro la regia. Adesso una signora vuole sapere se anche il secondo premio parlerà. Le ho spiegato che questa coppa aveva un costruttore molto loquace, non un impianto speciale da installare ovunque.",
+            "ru": "Когда кубок поблагодарил публику, я услышал смех; затем спокойно вышел и сел за аппаратной. Теперь одна женщина хочет узнать, заговорит ли вторая награда. Я объяснил, что у этого кубка был очень разговорчивый изготовитель, а не особая система, которую можно установить повсюду."
+          },
+          {
+            "speaker": 0,
+            "text": "Ho aggiornato la lista delle richieste: stabilità, passaggio libero e nessun obbligo di conversazione. Quest’ultima voce ci farà risparmiare più di tutte le altre.",
+            "ru": "Я обновила список требований: устойчивость, свободный проход и отсутствие обязанности поддерживать беседу. Последний пункт сэкономит нам больше всех остальных."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "gallery",
+          "prop": "conversation",
+          "mood": "pleased",
+          "caption": "Программа продолжается",
+          "clue": {
+            "title": "В кадре",
+            "body": "Сандро сидит за пультом возле открытого прохода."
+          }
+        },
+        "outcome": {
+          "title": "Кубок сказал спасибо",
+          "body": "Сначала освободили задний проход, затем обыграли голос мастера как согласованный номер. Сандро вышел, а зрители заинтересовались разговорчивыми наградами."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "В чём Сандро видит недочёт проектирования?",
+        "options": [
+          "Материал не выдерживает вес золотой краски.",
+          "Дополнительное усиление заказали без учёта выхода мастера.",
+          "Никто не согласовал текст надписи для победителя."
+        ],
+        "answer": 1,
+        "explanation": "Усиление перекрыло внутреннее открывание дверцы; вопрос выхода автора не был продуман."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что значит «per scrupolo» в объяснении Сандро?",
+        "options": [
+          "Чтобы отличиться перед другими мастерами.",
+          "Для повторения рисунка старого кубка.",
+          "Из дополнительной осторожности, на всякий случай."
+        ],
+        "answer": 2,
+        "explanation": "Так обозначен мотив запроса лишнего усиления.",
+        "anchor": "per scrupolo"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 0,
+          "prompt": "Как Сандро предлагает поступить с заметным стыком?",
+          "options": [
+            "Сделать его признанной частью оформления.",
+            "Скрыть его, навсегда закрыв все панели.",
+            "Назвать его трещиной и отказаться от кубка."
+          ],
+          "answer": 0,
+          "explanation": "Золотая полоска превращает соединение в элемент дизайна, который не нужно выдавать за отсутствие стыка."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 1,
+          "prompt": "Какой приоритет задаёт Элена при подготовке номера?",
+          "options": [
+            "Сохранить шутку любой ценой, даже задержав мастера внутри.",
+            "Сначала обеспечить свободный выход, а юмор не должен ему мешать.",
+            "Заменить технический выход публичным обещанием ремонта."
+          ],
+          "answer": 1,
+          "explanation": "Она требует открыть проход заранее и не задерживать выход ради шутки."
+        }
+      }
+    }
+  },
+  {
+    "id": "new-it-b2-patente-di-guastafeste",
+    "language": "it",
+    "level": "B2",
+    "title": "La patente di guastafeste",
+    "topic": "Reputazione e prove",
+    "summary": "Giacomo arriva al laboratorio con un attestato da portatore di guasti. Nadia propone di controllare la fama prima di crederci.",
+    "context": "Sei Nadia, riparatrice in un laboratorio di quartiere. Un conoscente sostiene di far impazzire ogni apparecchio e ha perfino preparato un certificato.",
+    "hook": "Una reputazione può sopravvivere a un apparecchio che funziona?",
+    "genre": "социальная комедия",
+    "source": {
+      "title": "La patente",
+      "author": "Luigi Pirandello",
+      "url": "https://it.wikisource.org/wiki/La_patente_(novella)",
+      "status": "Оригинал в общественном достоянии; первичный итальянский текст прочитан на Wikisource. Планируется новая свободная адаптация, не копирование современной обработки.",
+      "adaptation": "Самостоятельная учебная история по общему комическому мотиву; новые ситуации, персонажи, диалоги, переводы и развилки. Это не текст автора первоисточника."
+    },
+    "plotFingerprint": "reputation-as-jinx-turned-into-job|perform-controlled-demo-or-repeat-with-others|embarrassed-successful-jinx-or-ordinary-broken-button",
+    "pedagogy": {
+      "rationaleRU": "B2: социальная репутация, двойственный мотив, опровержение причинной ошибки, горькая ирония без утверждения суеверий.",
+      "grammar": [
+        "generalizzazioni e controesempi",
+        "discorso riportato e atteggiamento critico",
+        "concessive e limiti di una conclusione"
+      ],
+      "listeningFocusRU": "Отличить социальный ярлык от воспроизводимой проверки и не делать вывод шире имеющихся данных."
+    },
+    "cast": [
+      {
+        "actorId": "curator",
+        "name": "Nadia",
+        "roleRU": "Игрок: мастерица, проверяющая устройства"
+      },
+      {
+        "actorId": "conductor",
+        "name": "Giacomo",
+        "roleRU": "Посетитель с репутацией человека, при котором всё ломается"
+      }
+    ],
+    "vocabulary": [
+      {
+        "term": "a quanto dicono",
+        "ru": "как говорят"
+      },
+      {
+        "term": "mettere alla prova",
+        "ru": "проверить на практике"
+      },
+      {
+        "term": "un caso isolato",
+        "ru": "единичный случай"
+      }
+    ],
+    "start": "start",
+    "nodes": {
+      "start": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "A quanto dicono, basta che io mi avvicini e qualcosa smette di funzionare. Ho disegnato una patente di guastafeste: se devono parlare di me, almeno che rispettino la mia qualifica. Oggi voglio mettere alla prova questa fama davanti a te. Ho portato il telecomando del proiettore, quello che a casa mia ignora sempre il pulsante rosso.",
+            "ru": "Как говорят, достаточно мне подойти, и что-нибудь перестаёт работать. Я нарисовал удостоверение разрушителя веселья: раз уж говорят обо мне, пусть уважают квалификацию. Сегодня хочу проверить эту славу при тебе. Принёс пульт проектора, тот, который у меня дома всегда игнорирует красную кнопку."
+          },
+          {
+            "speaker": 0,
+            "text": "Abbiamo due telecomandi identici: il tuo e quello del laboratorio, che ieri funzionava. Non tratterei ogni guasto come un caso isolato prima di aver separato la persona dall’oggetto. Puoi provare il nostro sotto il mio controllo, oppure possiamo passare il tuo ad altre persone e ripetere esattamente lo stesso gesto. In entrambi i casi annotiamo il risultato, non la leggenda.",
+            "ru": "У нас два одинаковых пульта: твой и лабораторный, который вчера работал. Я бы не рассматривала каждую поломку как отдельный случай, пока не отделим человека от предмета. Можешь испытать наш под моим наблюдением или передать свой другим людям и повторить точно то же действие. В любом случае запишем результат, а не легенду."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Prova quello che funziona: vediamo se la tua presenza basta davvero.",
+            "ru": "Попробуй исправный: посмотрим, достаточно ли одного твоего присутствия.",
+            "next": "a"
+          },
+          {
+            "text": "Passiamo il tuo telecomando agli altri, mantenendo la stessa prova.",
+            "ru": "Передадим твой пульт другим, сохранив одинаковую проверку.",
+            "next": "b"
+          }
+        ],
+        "frame": {
+          "location": "office",
+          "prop": "tools",
+          "mood": "thinking",
+          "caption": "Посетитель предъявляет удостоверение",
+          "clue": {
+            "title": "В кадре",
+            "body": "На столе лежат два одинаковых пульта и самодельная карточка."
+          }
+        }
+      },
+      "a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Premo il pulsante del vostro telecomando e il proiettore si accende. Lo spengo, lo riaccendo: funziona ancora. Non dico che mi dispiaccia, ma adesso che cosa faccio della patente? Avevo persino preparato un discorso per spiegare come mai le persone dovessero invitarmi a collaudare gli apparecchi più robusti.",
+            "ru": "Нажимаю кнопку вашего пульта — проектор включается. Выключаю, снова включаю: всё ещё работает. Не скажу, что огорчён, но что теперь делать с удостоверением? Я даже подготовил речь о том, почему людям следует приглашать меня испытывать самые надёжные приборы."
+          },
+          {
+            "speaker": 0,
+            "text": "Puoi conservare il cartoncino come scherzo, senza usarlo per giustificare quello che non hai verificato. Questa prova non risolve tutti i guasti del mondo; basta però a smentire che la tua presenza faccia sempre fallire un dispositivo. La reputazione ti ha dato un ruolo, ma non sei obbligato a recitarlo anche quando i fatti lo contraddicono.",
+            "ru": "Можешь сохранить карточку как шутку, не оправдывая ею то, что не проверено. Эта проба не объясняет все поломки мира, но её достаточно, чтобы опровергнуть, будто твоё присутствие всегда вызывает отказ устройства. Репутация дала тебе роль, но ты не обязан играть её, когда факты ей противоречат."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Puoi tenere il cartoncino come ricordo, non come spiegazione tecnica.",
+            "ru": "Можешь оставить карточку как воспоминание, а не техническое объяснение.",
+            "next": "end-a"
+          }
+        ],
+        "frame": {
+          "location": "office",
+          "prop": "laptop",
+          "mood": "speaking",
+          "caption": "Контрольное устройство включается",
+          "clue": {
+            "title": "В кадре",
+            "body": "Над пультом светится маленький индикатор."
+          }
+        }
+      },
+      "b": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Ho premuto io, poi hanno provato due volontari: il pulsante rosso del tuo telecomando non risponde a nessuno. Non abbiamo cambiato distanza né proiettore. Questo non ci dice ancora quale componente sia guasto, ma rende inutile attribuire il difetto a chi tiene in mano l’apparecchio. La stessa difficoltà segue l’oggetto, non la persona.",
+            "ru": "Я нажала, затем попробовали два добровольца: красная кнопка твоего пульта ни у кого не отвечает. Мы не меняли расстояние и проектор. Это ещё не говорит, какая деталь неисправна, но делает бессмысленным приписывание дефекта человеку с устройством в руках. Та же проблема следует за предметом, а не за человеком."
+          },
+          {
+            "speaker": 1,
+            "text": "Allora la mia famosa influenza non c’entra. Se troviamo il difetto, posso almeno raccontare la storia senza trasformarla in una gara a chi mi prende in giro? Mi andava bene scherzare, ma quando tutti aspettavano un guasto prima ancora che toccassi qualcosa, cominciavo anch’io a vedere conferme dappertutto.",
+            "ru": "Значит, моё знаменитое влияние тут ни при чём. Если найдём дефект, можно хотя бы рассказать историю, не превращая её в состязание насмешек надо мной? Я был не против шуток, но когда все ждали поломки ещё до моего прикосновения, я и сам начал видеть повсюду подтверждения."
+          }
+        ],
+        "choices": [
+          {
+            "text": "Cerchiamo il difetto del tasto e raccontiamo anche come l’abbiamo verificato.",
+            "ru": "Поищем дефект кнопки и расскажем ещё и о том, как мы его проверили.",
+            "next": "end-b"
+          }
+        ],
+        "frame": {
+          "location": "office",
+          "prop": "tools",
+          "mood": "thinking",
+          "caption": "Одинаковый жест у разных людей",
+          "clue": {
+            "title": "В кадре",
+            "body": "На листе записаны результаты трёх одинаковых проверок."
+          }
+        }
+      },
+      "end-a": {
+        "lines": [
+          {
+            "speaker": 1,
+            "text": "Ho corretto la patente: adesso dice collaudatore che ha dimenticato come si guasta tutto. Non la userò come titolo professionale, ma come battuta per gli amici può bastare. Mi avevano attribuito un potere enorme; oggi mi è bastato premere un pulsante normale per restare senza mestiere. È una disoccupazione piuttosto piacevole.",
+            "ru": "Я исправил удостоверение: теперь там написано «испытатель, забывший, как всё ломать». Не буду пользоваться им как профессиональным званием, но для шутки с друзьями достаточно. Мне приписывали огромную силу; сегодня хватило нажать обычную кнопку, чтобы остаться без профессии. Довольно приятная безработица."
+          },
+          {
+            "speaker": 0,
+            "text": "Se vuoi tornare, ti insegno a descrivere un guasto senza indovinarne subito la causa. Non sarà misterioso, ma ci risparmierà parecchie leggende.",
+            "ru": "Если хочешь вернуться, научу описывать неполадку, не угадывая сразу причину. Это не таинственно, зато избавит нас от множества легенд."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "office",
+          "prop": "book",
+          "mood": "pleased",
+          "caption": "Удостоверение меняет смысл",
+          "clue": {
+            "title": "В кадре",
+            "body": "На карточке аккуратно зачёркнуто старое звание."
+          }
+        },
+        "outcome": {
+          "title": "Слава не прошла проверку",
+          "body": "Исправный пульт работал в руках Джакомо. Он оставил удостоверение лишь как самоироничную памятку, а не доказательство особой силы."
+        }
+      },
+      "end-b": {
+        "lines": [
+          {
+            "speaker": 0,
+            "text": "Ho aperto il telecomando spento: sotto il pulsante c’era un pezzetto dell’etichetta protettiva. Dopo averlo tolto, il tasto risponde sia a te sia a me. Sul foglio ho scritto che il difetto era ripetibile e poi è scomparso dopo un intervento preciso. Non c’è bisogno di aggiungere una colpa personale alla descrizione.",
+            "ru": "Я открыла выключенный пульт: под кнопкой оказался кусочек защитной наклейки. После его удаления кнопка отвечает и тебе, и мне. На листе я записала, что дефект воспроизводился, а затем исчез после конкретного действия. Не нужно добавлять личную вину к описанию."
+          },
+          {
+            "speaker": 1,
+            "text": "Perfetto. Il telecomando lo porto a casa, ma ridammi anche la patente: è il primo documento che dimostra quanto poco convenga credere a un documento scritto da me.",
+            "ru": "Отлично. Пульт отнесу домой, но верни и удостоверение: это первый документ, показывающий, как мало стоит доверять документу, который написал я сам."
+          }
+        ],
+        "choices": [],
+        "frame": {
+          "location": "office",
+          "prop": "tools",
+          "mood": "pleased",
+          "caption": "Причина найдена в устройстве",
+          "clue": {
+            "title": "В кадре",
+            "body": "Возле открытого пульта лежит маленький кусочек наклейки."
+          }
+        },
+        "outcome": {
+          "title": "Общая проблема нашла причину",
+          "body": "Одинаковая неисправность проявилась у разных людей. Надя нашла помеху под кнопкой, а Джакомо оставил удостоверение как напоминание о поспешных выводах."
+        }
+      }
+    },
+    "exercises": {
+      "opening": {
+        "nodeId": "start",
+        "line": 1,
+        "prompt": "Зачем Надя предлагает две разные проверки?",
+        "options": [
+          "Чтобы проверить, следует ли результат за человеком или за устройством.",
+          "Чтобы подтвердить репутацию без сравнения одинаковых действий.",
+          "Чтобы выбрать самый красивый пульт для демонстрации."
+        ],
+        "answer": 0,
+        "explanation": "Одна проба меняет устройство при том же человеке, другая — человека при том же устройстве."
+      },
+      "phrase": {
+        "nodeId": "start",
+        "line": 0,
+        "prompt": "Что означает «mettere alla prova» здесь?",
+        "options": [
+          "Оформить официальное удостоверение.",
+          "Проверить утверждение на практике.",
+          "Отложить сложный вопрос на потом."
+        ],
+        "answer": 1,
+        "explanation": "Джакомо хочет сопоставить свою репутацию с наблюдаемым результатом.",
+        "anchor": "mettere alla prova"
+      },
+      "branches": {
+        "a": {
+          "nodeId": "a",
+          "line": 1,
+          "prompt": "Какой вывод Надя считает допустимым после проверки?",
+          "options": [
+            "Любые неисправности устройств выдуманы.",
+            "У Джакомо появилась новая способность ремонтировать предметы.",
+            "Утверждение о неизбежном отказе из-за его присутствия не выдержало этой пробы."
+          ],
+          "answer": 2,
+          "explanation": "Она ограничивает вывод конкретным опровержением общего утверждения, не обещая объяснить все неисправности."
+        },
+        "b": {
+          "nodeId": "b",
+          "line": 0,
+          "prompt": "Что показывает одинаковый отказ пульта у трёх человек?",
+          "options": [
+            "Проблема связана с этим предметом, хотя точная деталь ещё не установлена.",
+            "Любой человек способен испортить исправный проектор.",
+            "Все три участника неправильно описали свою репутацию."
+          ],
+          "answer": 0,
+          "explanation": "Расстояние и проектор неизменны, а отказ повторяется независимо от человека; это указывает на предмет."
+        }
+      }
+    }
+  }
+]

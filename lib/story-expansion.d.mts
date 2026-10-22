@@ -1,0 +1,31 @@
+import type {Language} from '../app/episodes';
+import type {Level} from '../app/study-types';
+import type {ComicLocation,ComicProp,ComicMood} from './comic-types';
+import type {StoryExerciseSource} from './story-exercises.mjs';
+export type ExpansionQuestion={nodeId:string;line:number;prompt:string;options:string[];answer:number;explanation:string;anchor?:string};
+export type ExpansionStory={
+ id:string;language:Language;level:Level;title:string;topic:string;summary:string;context:string;hook:string;genre:string;plotFingerprint:string;
+ source:{title:string;author:string;url:string;status:string;adaptation:string};
+ pedagogy:{rationaleRU:string;grammar:string[];listeningFocusRU:string};
+ cast:{actorId:string;name:string;roleRU:string}[];
+ vocabulary:{term:string;ru:string}[];
+ start:string;
+ nodes:Record<string,{
+  lines:{speaker:number;text:string;ru:string}[];
+  choices:{text:string;ru:string;next:string}[];
+  frame:{location:ComicLocation;prop:ComicProp;mood:ComicMood;caption:string;clue:{title:string;body:string}};
+  outcome?:{title:string;body:string};
+ }>;
+ exercises:{opening:ExpansionQuestion;phrase:ExpansionQuestion;branches:Record<string,ExpansionQuestion>};
+};
+export type ExpansionRelease={releaseId:string;stories:ExpansionStory[];hashes:Record<string,string>;checksum:string;audit:{stories:number;counts:Record<string,Record<string,number>>}};
+export const EXPANSION_RELEASE:string;
+export const EXPANSION_PARTS:string[];
+export const EXPANSION_PLAN_PARTS:string[];
+export const EXPANSION_TARGETS:Record<string,Record<string,number>>;
+export function expansionClipId(storyId:string,nodeId:string,index:number):string;
+export function expansionChoiceId(storyId:string,nodeId:string,index:number):string;
+export function expansionRoutes(story:ExpansionStory):{path:number[];nodes:string[]}[];
+export function validateExpansion(stories:ExpansionStory[],options?:{complete?:boolean}):ExpansionRelease['audit'];
+export function readExpansion(root?:string,options?:{complete?:boolean}):ExpansionRelease;
+export function expansionExerciseSource(story:ExpansionStory):StoryExerciseSource;

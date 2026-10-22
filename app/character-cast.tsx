@@ -26,9 +26,9 @@ export function StoryChoices({choices,language,ready,canAdvance,textOpen,transla
   const letter=String.fromCharCode(65+index),recorded=hasRecordedClip(choice.clip),disabled=!ready||!canAdvance;
   const listening=recorded&&playingChoice===index,textVisible=!recorded||(canAdvance&&textOpen.includes(index)),translationVisible=canAdvance&&translationOpen;
   return <article className="character-choice" aria-label={`Ответ ${letter}`} key={index}>
-   <div className="character-choice-heading"><span className="comic-choice-letter">{letter}</span><span>{recorded?<><Headphones size={16}/> Ответ в аудио</>:<><BookOpen size={16}/> Запись ответа пока недоступна</>}</span></div>
-   <div className="character-choice-actions">{recorded&&<button className="button secondary" disabled={disabled} aria-pressed={listening} onClick={()=>onListen(index)}>{listening?<Square size={17}/>:<Play size={17}/>} {listening?`Остановить ${letter}`:`Слушать ${letter}`}</button>}<button className="button primary" disabled={disabled} onClick={()=>onChoose(index)}>Выбрать {letter}<ArrowRight size={17}/></button></div>
-   {textVisible&&<p className="character-choice-text" lang={language}>{choice.text}</p>}
+   <div className="character-choice-heading"><span className="comic-choice-letter">{letter}</span>{recorded&&<span className="character-choice-kind"><Headphones size={16}/> Ответ в аудио</span>}</div>
+   <div className="character-choice-actions">{recorded&&<button className="button secondary" disabled={disabled} aria-pressed={listening} onClick={()=>onListen(index)}>{listening?<Square size={17}/>:<Play size={17}/>} {listening?`Остановить ${letter}`:`Слушать ${letter}`}</button>}<button className={'button primary'+(recorded?'':' character-choice-answer')} lang={recorded?'ru':language} disabled={disabled} onClick={()=>onChoose(index)}><span>{recorded?`Выбрать ${letter}`:choice.text}</span><ArrowRight size={17} aria-hidden="true"/></button></div>
+   {recorded&&textVisible&&<p className="character-choice-text" lang={language}>{choice.text}</p>}
    {translationVisible&&<p className="character-choice-translation" lang="ru">{choice.label}</p>}
    {recorded&&<div className="character-choice-help"><button className="text-button" disabled={disabled} aria-expanded={textVisible} onClick={()=>onReveal(index)}><BookOpen size={15}/>{textVisible?`Скрыть текст ${letter}`:`Показать текст ${letter}`}</button></div>}
   </article>;

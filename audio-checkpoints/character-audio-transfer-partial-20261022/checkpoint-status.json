@@ -1,0 +1,18 @@
+{
+  "formatVersion": 1,
+  "kind": "incomplete-audio-transfer-checkpoint",
+  "ready": false,
+  "sourceRepository": "tikhomirovsrg/slyshat",
+  "sourceBranch": "codex/character-audio-transfer-20261021",
+  "sourceCommit": "a1e0cb67655807725fa3550cabc3acf9d49550ec",
+  "sourceTree": "af9782a4a5c28158aa9ce770d7873392baf57934",
+  "preservedParts": 440,
+  "requiredParts": 530,
+  "preservedBytes": 181305344,
+  "bundleBytes": 213445601,
+  "bundleSha256": "5791487ae7d0e86a4906cfd43fe2b8ba543fbb79ba32561efad3f367bd148d6b",
+  "completeBundleRestorable": false,
+  "preservedStoryCheckpoint": "checkpoints/story-expansion-2026-10-22",
+  "preservedNewStories": 218,
+  "note": "Existing committed Git objects only. No generation or new binary upload. Later unpushed local changes were unavailable because the current workspace was empty. This checkpoint does not activate audio or change the running application."
+}

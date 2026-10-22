@@ -59,4 +59,9 @@ test('Post-story questions stay hidden until the finished route has a fully hear
  const locked=draw(p);assert(locked.includes('Слушать финальную сцену'));assert(!locked.includes(exercises.questions[0].prompt));
  const open=draw({...p,heard:route});assert(open.includes(exercises.questions[0].prompt));assert(open.includes('Задание 1 из 4'));
  const unfinished=draw({...p,heard:route,finishedAt:null});assert(!unfinished.includes(exercises.questions[0].prompt));
+ // A final scene with no recording must not trap an already completed story
+ // behind an impossible listening action. Questions retain reading assistance.
+ for(const clip of story.nodes[route.at(-1)].clips)clip.source='';
+ const fallback=draw({...p,assisted:[route.at(-1)]});
+ assert(fallback.includes(exercises.questions[0].prompt));assert(!fallback.includes('Слушать финальную сцену'));
 });

@@ -103,18 +103,26 @@ test('Listening to an answer calls no selection handler; selecting is a separate
  buttons.find(button=>button.label==='Показать текст B').onClick();assert.deepEqual(calls.at(-1),['read',1]);
 });
 
-test('Unavailable answer audio hides its text until requested and cannot be selected blindly',()=>{
- const props={...choiceProps(),choices:[choice('fallback','end',false)]},draw=extra=>renderToStaticMarkup(React.createElement(StoryChoices,{...props,...extra}));
- const waiting=draw({canAdvance:false});assert(!waiting.includes(props.choices[0].text));assert(waiting.includes('Запись ответа пока недоступна'));assert(!waiting.includes('Слушать A'));
- const ready=draw({});assert(!ready.includes(props.choices[0].text));assert(!ready.includes(props.choices[0].label));assert(!ready.includes('Слушать A'));assert(ready.includes('Показать текст A'));
- const select=extra=>choiceButtons({...props,...extra}).find(button=>button.label.includes('Выбрать A'));
- assert.equal(select({}).disabled,true);
- assert.equal(select({textOpen:[0]}).disabled,false);
- assert.equal(select({translationOpen:true}).disabled,false);
- assert.equal(select({ready:false,textOpen:[0]}).disabled,true);
- const text=draw({textOpen:[0]});assert(text.includes(props.choices[0].text));assert(!text.includes(props.choices[0].label));
- const translation=draw({translationOpen:true});assert(!translation.includes(props.choices[0].text));assert(translation.includes(props.choices[0].label));
- assert(choiceButtons(props).every(button=>!button.label.toLowerCase().includes('перевод')));
+test('Unavailable answer audio shows text immediately and allows selection without revealing it',()=>{
+ for(const missingClip of [undefined,{...clip('fallback'),source:''}]){
+  const calls=[],props={...choiceProps(),choices:[{...choice('fallback','end',false),clip:missingClip}],onChoose:index=>calls.push(['choose',index]),onReveal:index=>calls.push(['reveal',index])};
+  const draw=extra=>renderToStaticMarkup(React.createElement(StoryChoices,{...props,...extra}));
+  const ready=draw({});assert(ready.includes(props.choices[0].text));assert(!ready.includes(props.choices[0].label));assert(!ready.includes('Слушать A'));assert(!ready.includes('Показать текст A'));assert(!ready.includes('Скрыть текст A'));
+  const select=extra=>choiceButtons({...props,...extra}).find(button=>button.label.includes('Выбрать A'));
+  assert.equal(select({}).disabled,false);select({}).onClick();assert.deepEqual(calls,[['choose',0]]);
+  for(const extra of [{canAdvance:false},{ready:false}]){assert(draw(extra).includes(props.choices[0].text));assert.equal(select(extra).disabled,true);}
+  const translated=draw({translationOpen:true});assert(translated.includes(props.choices[0].text));assert(translated.includes(props.choices[0].label));
+ }
+});
+
+test('Scene and route playback skip missing recordings while keeping the original clip indices',()=>{
+ const story=fixture();story.nodes.start.clips.unshift({...clip('text-only'),source:''});
+ const snapshot=structuredClone(story),scene=scenePlaylist(story,'start');
+ assert.deepEqual(scene.map(entry=>[entry.clip.id,entry.clipIndex]),[['intro-1',1],['intro-2',2]]);
+ assert(routePlaylist(story,[0]).every(entry=>!!entry.clip.source));
+ assert.deepEqual(exercisePlaylist(story,[],[{nodeId:'start',clipId:'text-only'}]),[]);
+ assert.deepEqual(story,snapshot);
+ story.nodes.start.clips=story.nodes.start.clips.slice(0,1);assert.deepEqual(scenePlaylist(story,'start'),[]);
 });
 
 test('Speaker labels use explicit story actors and never infer identity from a voice prefix',()=>{

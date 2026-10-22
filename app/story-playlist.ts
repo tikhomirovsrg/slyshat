@@ -5,7 +5,7 @@ export type StoryPlaylistEntry={clip:StoryClip;nodeId:string;kind:'scene'|'choic
 export const hasRecordedClip=(clip?:StoryClip):clip is StoryClip=>!!clip?.source;
 
 export function scenePlaylist(story:Pick<CourseStory,'nodes'>,nodeId:string):StoryPlaylistEntry[]{
- return story.nodes[nodeId].clips.map((clip,clipIndex)=>({clip,nodeId,kind:'scene',clipIndex}));
+ return story.nodes[nodeId].clips.map((clip,clipIndex)=>({clip,nodeId,kind:'scene' as const,clipIndex})).filter(entry=>hasRecordedClip(entry.clip));
 }
 
 function routeEntries(story:Pick<CourseStory,'start'|'nodes'>,path:number[]):StoryPlaylistEntry[]{

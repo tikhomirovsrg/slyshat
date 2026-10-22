@@ -65,10 +65,14 @@ def main():
     parser.add_argument("--cache", type=Path)
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--threads", type=int, default=2)
+    parser.add_argument("--batch-seconds", type=int, default=40,
+                        help="Target MP3 container length, 30–90 seconds; clips stay intact")
     parser.add_argument("--cache-only", action="store_true")
     parser.add_argument("--plan", action="store_true")
     parser.add_argument("--output", type=Path, default=ROOT / "public/audio/expansion")
     args = parser.parse_args()
+    if not 30 <= args.batch_seconds <= 90:
+        parser.error("Use a 30–90 second MP3 batch target")
     plan = make_plan(args.cache_only)
     print(json.dumps(dict(stories=len(plan["release"]["stories"]), jobs=len(plan["jobs"]), clips=len(plan["clips"]), sourceSha256=plan["release"]["checksum"])), flush=True)
     if args.plan:
@@ -115,7 +119,7 @@ def main():
                     castSha256=plan["castSha256"], modelSha256=renderer.MODEL_SHA, voicesSha256=renderer.VOICES_SHA,
                     model="Kokoro-82M v1.0", engine="kokoro-onnx 0.6.1", sampleRate=renderer.SAMPLE_RATE,
                     codec="mp3", bitrate=64000, readyStories=len(plan["release"]["stories"]),
-                    files={}, segments={}, levelSpeed=LEVEL_SPEED)
+                    files={}, segments={}, levelSpeed=LEVEL_SPEED, batchSeconds=args.batch_seconds)
     groups = collections.defaultdict(list)
     for job in plan["jobs"].values():
         groups[(job["language"], job["level"], job["actorId"])].append(job["key"])
@@ -126,7 +130,7 @@ def main():
             duration = results[key][1] / renderer.SAMPLE_RATE + 1 if key else 0
             # Small immutable files are easy to seek and transfer. A single
             # longer utterance remains intact instead of splitting a word.
-            if batch and (key is None or seconds + duration > 40):
+            if batch and (key is None or seconds + duration > args.batch_seconds):
                 filename, info, packed = renderer.encode_batch(batch, group, number, results, staging)
                 manifest["files"][filename] = info
                 cues.update(packed)

@@ -1,0 +1,59 @@
+{
+  "formatVersion": 1,
+  "kind": "partial-expansion-audio-checkpoint",
+  "ready": false,
+  "readyStories": 0,
+  "baseCommit": "66942b664ad54a6b51f1b94de01519f25d93faa5",
+  "sourceSha256": "fe0c4f8569137d3de5e24d469a0c34e7bea66a70e491b0f60c8650601a8560a7",
+  "targetStories": 246,
+  "targetClips": 3542,
+  "renderedClips": 946,
+  "uploadedMp3": 6,
+  "batchSeconds": 90,
+  "files": {
+    "en-a1-conductor-002-f68ed7ce48e7.mp3": {
+      "sha256": "f68ed7ce48e79424b92a5918b1bd6710a281515bed67d6107a3089dc859de8ac",
+      "bytes": 459693,
+      "duration": 57.382666666666665,
+      "sourceSha256": "fe0c4f8569137d3de5e24d469a0c34e7bea66a70e491b0f60c8650601a8560a7",
+      "sha": "bbef9c1debfb3fa6a30ff1908751994644e2c65a"
+    },
+    "en-a1-curator-001-bb9b9504eb92.mp3": {
+      "sha": "55618704fee331b8a06bec3dbc65d158b6c51df9",
+      "sha256": "bb9b9504eb923fe94a1f2ee18e311dd30ded3f24effb79fda7e9c7aff8d0abcc",
+      "bytes": 711981,
+      "duration": 88.90695833333334,
+      "sourceSha256": "fe0c4f8569137d3de5e24d469a0c34e7bea66a70e491b0f60c8650601a8560a7"
+    },
+    "en-a1-curator-003-974f729ea51a.mp3": {
+      "sha": "f8fa265a680a69e686268bb741226c95105b1daa",
+      "sha256": "974f729ea51aa75c840df3549b8869c24e69f4786834cd9a72ae41a869656733",
+      "bytes": 101613,
+      "duration": 12.604583333333334,
+      "sourceSha256": "fe0c4f8569137d3de5e24d469a0c34e7bea66a70e491b0f60c8650601a8560a7"
+    },
+    "en-a1-conductor-001-36663c2a6918.mp3": {
+      "sha": "f1926115f599b19718005bac710245799a3c8a0a",
+      "sha256": "36663c2a6918381302cfa4360fccab71e6cb893a1e29cf815f21eae1adc57b9b",
+      "bytes": 707181,
+      "duration": 88.31133333333334,
+      "sourceSha256": "fe0c4f8569137d3de5e24d469a0c34e7bea66a70e491b0f60c8650601a8560a7"
+    },
+    "en-a1-host-005-7c719f95f3b3.mp3": {
+      "sha256": "7c719f95f3b3f0258492346c3773be93fabbdebce5da34de1ee5e96164310ad8",
+      "bytes": 708333,
+      "duration": 88.46383333333333,
+      "sourceSha256": "fe0c4f8569137d3de5e24d469a0c34e7bea66a70e491b0f60c8650601a8560a7",
+      "sha": "2a23d6a169966f6fa1ab842a9bc1bfc6cafda08f"
+    },
+    "en-a1-curator-002-11fa023c4b8d.mp3": {
+      "sha": "3544bd43c758b0990e61c5adfa9606ba73d7e071",
+      "sha256": "11fa023c4b8da80648f60805e4c6f37046361ad518a7668c2f2966794fd922f0",
+      "bytes": 700653,
+      "duration": 87.497125,
+      "sourceSha256": "fe0c4f8569137d3de5e24d469a0c34e7bea66a70e491b0f60c8650601a8560a7"
+    }
+  },
+  "generatorBlobSha": "5e95d98598c6c40536f34b5240286746163284f7",
+  "note": "Verified MP3 checkpoint only. No final audio manifest is published here; stories remain in reading mode until the complete release passes validation."
+}

@@ -16,7 +16,7 @@ import {playbackSpeeds,speedLabel} from '../lib/playback-speed';
 import {CharacterCast,StoryChoices,characterName} from './character-cast';
 import {exercisePlaylist,hasRecordedClip,playStoryPlaylist,routePlaylist,scenePlaylist,type StoryPlaylistEntry} from './story-playlist';
 import {buildStoryExercises} from '../lib/story-exercises.mjs';
-import {answerExercise,assistExercises,exerciseSummary,restartExercises} from '../lib/story-exercise-state';
+import {answerExercise,assistExercises,exerciseSummary,getExerciseAttempt,restartExercises} from '../lib/story-exercise-state';
 import {StoryExercises} from './story-exercises';
 import {StorySpeakingPractice} from './story-speaking-practice';
 import {StoryVocabulary} from './story-vocabulary';
@@ -81,9 +81,10 @@ export function ComicStory({story,profile,old,speed,onSpeed,next,onNext,onClose}
  const sceneHasRecording=node.clips.some(hasRecordedClip),sceneFullyRecorded=!!node.clips.length&&node.clips.every(hasRecordedClip);
  const textFallback=!sceneFullyRecorded||(!finished&&node.choices.some(choice=>!hasRecordedClip(choice.clip)));
  const canAdvance=!sceneHasRecording||progress.heard.includes(nodeId)||progress.assisted.includes(nodeId);
- const exercisesReady=progress.heard.includes(nodeId)||(!sceneFullyRecorded&&canAdvance);
  const playing=playbackMode!==null,audible=playing&&state?.phase==='playing',fullPlaylist=finished?routePlaylist(story,progress.path):[];
  const exercises=useMemo(()=>finished?buildStoryExercises(story,progress.path):null,[finished,story,progress.path]);
+ // New recordings must not revoke saved answers from this finished route.
+ const exercisesReady=progress.heard.includes(nodeId)||(!sceneFullyRecorded&&canAdvance)||!!exercises&&Object.keys(getExerciseAttempt(exercises,progress).answers).length>0;
  const exerciseAudio=useMemo<Record<string,StoryPlaylistEntry[]>>(()=>Object.fromEntries((exercises?.questions||[]).map(question=>[question.id,exercisePlaylist(story,progress.path,question.evidence)])),[exercises,story,progress.path]);
  const exerciseEvidenceAvailable=useMemo<Record<string,boolean>>(()=>Object.fromEntries((exercises?.questions||[]).map(question=>[question.id,question.evidence.length>0&&question.evidence.every(ref=>exerciseAudio[question.id].some(entry=>entry.nodeId===ref.nodeId&&entry.clip.id===ref.clipId))])),[exercises,exerciseAudio]);
  const exerciseEvidenceText=useMemo(()=>Object.fromEntries((exercises?.questions||[]).map(question=>[question.id,question.evidence.flatMap(ref=>{const clip=route.includes(ref.nodeId)&&story.nodes[ref.nodeId]?.clips.find(clip=>clip.id===ref.clipId);return clip?[{text:clip.text,language:story.language}]:[];})])),[exercises,story,route.join('\0')]);
